@@ -1,0 +1,254 @@
+Group_Code,Menu_Code,Group_Name,Name,PNU,Default_Value,Minimum_Value,Maximum_Value,Unit,Scaling,Datatype,Enum,Read_Only,Help,Decimals,Variable_Name,Visibility_Index,Visibility_Rule,Alarm_Parameter_Idx,Unique_ID,ItemType,CopyType,Enum_Vis_List_Idx,Group_VisibilityIdx
+,MAIN,Basic Setting-Generic,Main switch,5001,1,0,1,,0,,"0:Off,1:On",0,"On -> Off: Valve makes a forced overdrive
+Off: Parameter configuration allowed for update
+Off -> On: Parameters are updated on transition
+If any Valve driver parameters are modified, then a forced overdrive is initiated using new parameters.
+On: Normal operation",0,Id_0,0,1,,0,S,S,[],0
+,B000,Basic Setting-Generic,Battery alarms enable,5016,0,0,1,,0,,"0:Off,1:On",0,"Off / On
+Alarm based on battery voltage",0,Id_0,0,1,,0,S,S,[],0
+,B001,Basic Setting-Generic,Factory reset,5017,0,0,1,,0,,"0:No,1:Yes",0,"0: No
+1: Yes, reset all parameters to factory settings",0,Id_0,0,1,,0,C,N,[],0
+,B002,Basic Setting-Generic,Relay position,5018,0,0,2,,0,,"0:Auto,1:Open,2:Close",0,"0: Auto - relay is controlled by alarm condition
+1: Open - forced open
+2: Close - forced closed",0,Id_0,0,1,,0,C,N,[],0
+,B100,Basic Setting-Driver 1,Driver enabling,5002,1,0,1,,0,,"0:Off,1:On",0,"Circuit enable, default On
+Option to use only one circuit without alarm on other circuit",0,Id_0,0,1,,0,S,S,[],0
+,B101,Basic Setting-Driver 1,Valve selection,5003,0,0,18,,0,,"0:DIP Switch,1:User defined,2:Group B,3:Group C,4:Group D,5:Group E,6:Group F,7:Group G,8:Group H,9:Group I,10:Group J,11:Group K,12:Group L,13:Group M,14:Group N,15:Group O,16:Group P,17:Group Q,18:Group R",0,"0: DIP switch
+1: User defined
+2-xx; DIP switch groups
+
+User defined: At transition to User defined all valve parameters are copied for user edit.",0,Id_0,0,1,,0,C,S,[],0
+,B102,Basic Setting-Driver 1,Valve positioning mode,5004,0,0,1,,0,,"0:From AI,1:From register",0,"0: From AI: Analog inputs to drive the valve
+1: From register: Used for test via serial interface, set OD by B103",0,Id_0,0,1,,0,C,S,[],0
+,B103,Basic Setting-Driver 1,Valve position,5005,0,0,100,%,-2,INT,,0,Manual opening degree set by parameter (0-100%),2,Id_0,3,GetVar(2) == 1,,0,S,N,[],0
+,B104,Basic Setting-Analog input 1,AI selection,5006,0,0,4,,0,,"0:DIP switch,1:0-10V,2:0-5V,3:4-20mA,4:0-20mA",0,"0: DIP switch AI type selected by DIP switch
+1: 0-10V DIP switch ignored
+2: 0-5V DIP switch ignored
+3: 4-20mA DIP switch ignored
+4: 0-20mA DIP switch ignored
+",0,Id_0,0,1,,0,C,S,[],0
+,B105,Basic Setting-Analog input 1,AI calibration offset V,5007,0,-1,1,V,-2,INT,,0,Offset added to measured signal,2,Id_0,0,1,,0,C,S,[],0
+,B106,Basic Setting-Analog input 1,AI calibration offset mA,5008,0,-2,2,mA,-2,INT,,0,Offset added to measured signal,2,Id_0,0,1,,0,C,S,[],0
+,B200,Basic Setting-Driver 2,Driver enabling,5009,1,0,1,,0,,"0:Off,1:On",0,"Circuit enable, default On
+Option to use only one circuit without alarm on other circuit",0,Id_0,4,GetVar(105) == 0,,0,S,S,[],1
+,B201,Basic Setting-Driver 2,Valve selection,5010,0,0,18,,0,,"0:DIP Switch,1:User defined,2:Group B,3:Group C,4:Group D,5:Group E,6:Group F,7:Group G,8:Group H,9:Group I,10:Group J,11:Group K,12:Group L,13:Group M,14:Group N,15:Group O,16:Group P,17:Group Q,18:Group R",0,"0: DIP switch
+1: User defined
+2-xx; DIP switch groups
+
+User defined: At transition to User defined all valve parameters are copied for user edit.",0,Id_0,0,1,,0,C,S,[],1
+,B202,Basic Setting-Driver 2,Valve positioning mode,5011,0,0,1,,0,,"0:From AI,1:From register",0,"0: From AI: Analog inputs to drive the valve
+1: From register: Used for test via serial interface, set OD by B203",0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,B203,Basic Setting-Driver 2,Valve position,5012,0,0,100,%,-2,INT,,0,Manual opening degree set by parameter (0-100%),2,Id_0,5,GetVar(9) == 1 and GetVar(105) == 0,,0,S,N,[],1
+,B204,Basic Setting-Analog input 2,AI selection,5013,0,0,4,,0,,"0:DIP switch,1:0-10V,2:0-5V,3:4-20mA,4:0-20mA",0,"0: DIP switch AI type selected by DIP switch
+1: 0-10V DIP switch ignored
+2: 0-5V DIP switch ignored
+3: 4-20mA DIP switch ignored
+4: 0-20mA DIP switch ignored",0,Id_0,0,1,,0,C,S,[],1
+,B205,Basic Setting-Analog input 2,AI calibration offset V,5014,0,-1,1,V,-2,INT,,0,Offset added to measured signal,2,Id_0,0,1,,0,C,S,[],1
+,B206,Basic Setting-Analog input 2,AI calibration offset mA,5015,0,-2,2,mA,-2,INT,,0,Offset added to measured signal,2,Id_0,0,1,,0,C,S,[],1
+,V100,Valve driver settings-Valve 1,User defined Motor type,5101,0,0,1,,0,,"0:Unipolar,1:Bipolar",0,"Bipolar or Unipolar
+Define the type of motor used in the stepper valve (Unipolar/Bipolar).
+Selecting the motor type will set the required valve decay mode.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V101,Valve driver settings-Valve 1,User defined Decay mode,5102,0,0,2,,0,,"0:Fast,1:Slow,2:Mixed",0,"Fast decay mode causes a rapid reduction in inductive current and allows the motor to coast toward zero velocity.
+Slow decay mode leads to a slower reduction in inductive current but produces rapid
+deceleration.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V102,Valve driver settings-Valve 1,User defined Step mode,5103,0,0,4,,0,,"0:Full,1:Half,2:1/4,3:1/8,4:1/16",0,"Valve drive mode: Full step 1/1, half step 1/2, or in micro steps (1/4, 1/8, 1/16).
+Danfoss recommends using 1/8 stepping mode as this provides a good balance between torque and speed and ensures smooth operation.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V103,Valve driver settings-Valve 1,User defined Step positioning,5104,2,0,2,,0,,"0:Fullstep,1:Halfstep,2:Auto",0,"Valve parking position.
+0: Full; 1:Half: 2: Auto
+relate to: 0: 0°; 1:45°; 2:Auto",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V104,Valve driver settings-Valve 1,User defined Total steps,5105,0,0,10000,stp,0,INT,,0,"The number of steps that correspond to a valve position of 100%.
+The total no of steps will vary according to the selected Valve motor type.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V105,Valve driver settings-Valve 1,User defined Speed,5106,10,10,300,pps,0,INT,,0,"The desired valve drive rate in steps per second.
+Please note that a higher valve speed will produce a lower torque.
+If the valve is used in system having high differential pressure, it is better to operate the valve with lower step rate.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V106,Valve driver settings-Valve 1,User defined Start speed,5107,100,1,100,%,0,INT,,0,"Valve start speed (1-100% of Valve speed)
+This is useful for high speed valve that runs at speed i.e. 200 to 400 pps. 
+This feature will limit starting speed of the valve in order to provide higher torque to the motor at start up and will prevent the valve from potential step loss.
+Refer to the diagram below for detail.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V107,Valve driver settings-Valve 1,User defined Emengency speed,5108,100,50,200,%,0,INT,,0,"Emergency speed defines the speed under emergency close.
+Emergency close is in use when the main power is lost, and the valve is closed using the battery backup.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V108,Valve driver settings-Valve 1,User defined Drive current,5109,10,10,1000,mA,0,INT,,0,The current applied to each phase of the stepper motor during actual valve movement.,0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V109,Valve driver settings-Valve 1,User defined Acceleration current,5110,100,100,150,%,0,INT,,0,The current supplied to the coils under acceleration of the stepper motor.,0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V110,Valve driver settings-Valve 1,User defined Acceleration time,5111,10,10,1000,ms,0,INT,,0,The time used to get from minimum speed to normal speed.,0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V111,Valve driver settings-Valve 1,User defined Holding current,5112,0,0,100,%,0,INT,,0,"The percent of Max Phase Current that should be applied to each phase of the stepper
+output when the valve is stationary.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V112,Valve driver settings-Valve 1,User defined Valve excitation time after stop,5113,10,0,1000,ms,0,INT,,0,"Valve excitation time after stop.
+The time that the drive current is continued after the motor has stopped movement.
+Next state is holding current.
+This will make sure that the valve has achieved the final position before going to holding current.",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V113,Valve driver settings-Valve 1,User defined Compensation backlash,5114,0,0,10,%,-1,INT,,0,"The number of steps needed to correct for mechanical hysteresis when a reduction gear is part of the valve design. Backlash compensation is made as extra steps in opening
+direction, extra steps are immediately turned into same movement in closing direction.
+This adjustment is only applied if an additional opening of the valve is requested.
+Compensation backlash ensure that force on spindle is on same edge of the spindle. ",1,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V114,Valve driver settings-Valve 1,User defined Valve thermal protection,5115,100,0,100,%,0,INT,,0,"Maximum allowed valve power, inclusive holding current.
+Allowed average valve power over a period of 60 sec.
+Note that excitation time also impact consumed power.
+Valve power must be stopped if average power is exceeded, except by a power loss where movement to power loss position is allowed (typical closed valve + overdrive).",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V115,Valve driver settings-Valve 1,User defined Overdrive,5116,5,0,20,%,0,INT,,0,"Overdrive in closing direction.
+The number of extra steps is scaled as a percentage of the valve [V104 - Total steps].",0,Id_0,6,GetVar(1) == 1,,0,C,S,[],0
+,V116,Valve driver settings-Valve 1,Overdrive enable OD,5117,0,0,100,%,0,INT,,0,"The parameter defines how much the valve must have been open before overdrive is
+allowed at next close position.
+Example: Overdrive enable OD = 10% means that the valve must have been above 10% before a new overdrive is allowed at 0% requested OD.",0,Id_0,0,1,,0,C,S,[],0
+,V117,Valve driver settings-Valve 1,Overdrive block time,5118,10,0,1440,min,0,INT,,0,"Defines the minimum allowed time between two overdrive actions. Overdrive within this
+time frame must be ignored.",0,Id_0,0,1,,0,C,S,[],0
+,V118,Valve driver settings-Valve 1,Neutral zone,5119,1,0,10,%,-1,INT,,0,"The Neutral zone around setpoint defines how much the requested OD can change before a new OD is set.
+Resolution: 0,1%
+Note: AI request for 0% or 100% ignore neutral zone OD move limitations.
+Example: Neutral zone value of 1.0% gives +/- 0,5% around setpoint.",1,Id_0,0,1,,0,C,S,[],0
+,V119,Valve driver settings-Valve 1,Valve OD on power failure,5120,0,0,100,%,0,INT,,0,"Battery backup is used for moving the valve to a predefined position during power failure.
+By default (0%) will close the valve, e.g. 80% will move the valve to 80% by the battery
+backup.",0,Id_0,0,1,,0,C,S,[],0
+,V120,Valve driver settings-Valve 1,Analog input selection,5121,0,0,2,,0,,"0:DIP switch,1:AI 1,2:AI 2",0,"Analog input signal to be used for driving the valve.
+
+0: DIP switch
+1: AI 1
+2: AI 2",0,Id_0,0,1,,0,C,S,[],0
+,V121,Valve driver settings-Valve 1,Input % scale to 0 position,5122,0,0,100,%,0,INT,,0,Signal type is defined by [B104 - AI selection].,0,Id_0,0,1,,0,C,S,[],0
+,V122,Valve driver settings-Valve 1,Input % scale to 100 position,5123,100,0,100,%,0,INT,,0,Signal type is defined by [B104 - AI selection].,0,Id_0,0,1,,0,C,S,[],0
+,V123,Valve driver settings-Valve 1,Force Overdrive,5124,0,0,1,,0,,"0:No,1:Yes",0,"Manually initiate a closing overdrive.
+After overdrive has been executed the valve will immediately return to requested position.",0,Id_0,0,1,,0,S,N,[],0
+,V124,Valve driver settings-Valve 1,Forced Overdrive time,5125,0,0,9000,hours,0,INT,,0,"Timer based overdrive.
+If no overdrive has been performed within this period, then a valve close is done (forced
+overdrive).
+0: function disabled
+xx: Forced overdrive time [hours]",0,Id_0,0,1,,0,C,S,[],0
+,V125,Valve driver settings-Valve 1,Valve size reduction,5126,0,0,80,%,0,INT,,0,"Option to limit maximum opening degree by parameter.
+An oversized valve can be downsized by this option.
+A reduction by 10% means that requested valve opening steps are reduced by a factor of 10%. (physical opening will be 0-90%).
+Physical related parameters are not affected.
+Example:  Overdrive and Compensation backlash, they must still relate to Total steps.",0,Id_0,0,1,,0,C,S,[],0
+,V126,Valve driver settings-Valve 1,Open wire detection,5127,1,0,1,,0,,"0:No,1:Yes",0,Option to disable the open circuit detection for valve wires.,0,Id_0,0,1,,0,C,S,[],0
+,V127,Valve driver settings-Valve 1,Manifolded valve type,5128,0,0,3,,0,,"0:Par,1:Seq,2:SeqEq,3:Optim",0,"0: Parallel
+1: Sequential: Valve A 0-50% - Valve B 50-100% (Valve A then Valve B)
+2: Sequential: Valve A/B 0-50% - Valve B/A 50-100% (alternate start)
+3: Optimized: Within [V128 - Single valve move band]
+Drive valve in an optimized sequence, mainly one valve per control.",0,Id_0,8,GetVar(96) == 1 and GetVar(105) == 1,,0,C,S,[],0
+,V128,Valve driver settings-Valve 1,Single valve move band,5129,5,0,10,%,-1,INT,,0,"Defines a band where only one of the two valves will move
+Related to V127, selection 3 - Optimized.",1,Id_0,9,GetVar(96) == 1 and GetVar(103) == 3,,0,C,S,[],0
+,V129,Valve driver settings-Valve 1,Cable length compensation,5130,100,100,150,%,0,INT,,0,"Current is scaled relative to nominal valve current and is new nominal valve current.
+If new nominal current setting exceeds maximum EKF current, then the current is limited
+and warning W03 is set.
+The parameter is not available for user defined valves as the user must set the valve
+current inclusive eventual extra current.",0,Id_0,10,GetVar(1) != 1,,0,C,S,[],0
+,V130,Valve driver settings-Valve 1,MOPD current,5131,100,100,150,%,0,INT,,0,"The boost current is added to nominal valve driver current when starting from 0% OD until final position.
+MOPD current is applied in opening direction up to 3 times or until parameter value
+MOPD OD stop.
+If MOPD current setting exceed maximum EKF current, then the current is limited and warning W03 is set.",0,Id_0,0,1,,0,C,S,[],0
+,V131,Valve driver settings-Valve 1,MOPD OD stop,5132,10,0,100,%,0,INT,,0,For function see parameter [V130 - MOPD current].,0,Id_0,0,1,,0,C,S,[],0
+,V200,Valve driver settings-Valve 2,User defined Motor type,5201,0,0,1,,0,,"0:Unipolar,1:Bipolar",0,"Bipolar or Unipolar
+Define the type of motor used in the stepper valve (Unipolar/Bipolar).
+Selecting the motor type will set the required valve decay mode.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V201,Valve driver settings-Valve 2,User defined Decay mode,5202,0,0,2,,0,,"0:Fast,1:Slow,2:Mixed",0,"Fast decay mode causes a rapid reduction in inductive current and allows the motor to coast toward zero velocity.
+Slow decay mode leads to a slower reduction in inductive current but produces rapid
+deceleration.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V202,Valve driver settings-Valve 2,User defined Step mode,5203,0,0,4,,0,,"0:Full,1:Half,2:1/4,3:1/8,4:1/16",0,"Valve drive mode: Full step 1/1, half step 1/2, or in micro steps (1/4, 1/8, 1/16).
+Danfoss recommends using 1/8 stepping mode as this provides a good balance between torque and speed and ensures smooth operation.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V203,Valve driver settings-Valve 2,User defined Step positioning,5204,2,0,2,,0,,"0:Fullstep,1:Halfstep,2:Auto",0,"Valve parking position.
+0: Full; 1:Half: 2: Auto
+relate to: 0: 0°; 1:45°; 2:Auto",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V204,Valve driver settings-Valve 2,User defined Total steps,5205,0,0,10000,stp,0,INT,,0,"The number of steps that correspond to a valve position of 100%.
+The total no of steps will vary according to the selected Valve motor type.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V205,Valve driver settings-Valve 2,User defined Speed,5206,10,10,300,pps,0,INT,,0,"The desired valve drive rate in steps per second.
+Please note that a higher valve speed will produce a lower torque.
+If the valve is used in system having high differential pressure, it is better to operate the valve with lower step rate.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V206,Valve driver settings-Valve 2,User defined Start speed,5207,100,1,100,%,0,INT,,0,"Valve start speed (1-100% of Valve speed)
+This is useful for high speed valve that runs at speed i.e. 200 to 400 pps. 
+This feature will limit starting speed of the valve in order to provide higher torque to the motor at start up and will prevent the valve from potential step loss.
+Refer to the diagram below for detail.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V207,Valve driver settings-Valve 2,User defined Emengency speed,5208,100,50,200,%,0,INT,,0,"Emergency speed defines the speed under emergency close.
+Emergency close is in use when the main power is lost, and the valve is closed using the battery backup.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V208,Valve driver settings-Valve 2,User defined Drive current,5209,10,10,1000,mA,0,INT,,0,The current applied to each phase of the stepper motor during actual valve movement.,0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V209,Valve driver settings-Valve 2,User defined Acceleration current,5210,100,100,150,%,0,INT,,0,The current supplied to the coils under acceleration of the stepper motor.,0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V210,Valve driver settings-Valve 2,User defined Acceleration time,5211,10,10,1000,ms,0,INT,,0,The time used to get from minimum speed to normal speed.,0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V211,Valve driver settings-Valve 2,User defined Holding current,5212,0,0,100,%,0,INT,,0,"The percent of Max Phase Current that should be applied to each phase of the stepper
+output when the valve is stationary.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V212,Valve driver settings-Valve 2,User defined Valve excitation time after stop,5213,10,0,1000,ms,0,INT,,0,"Valve excitation time after stop.
+The time that the drive current is continued after the motor has stopped movement.
+Next state is holding current.
+This will make sure that the valve has achieved the final position before going to holding current.",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V213,Valve driver settings-Valve 2,User defined Compensation backlash,5214,0,0,10,%,-1,INT,,0,"The number of steps needed to correct for mechanical hysteresis when a reduction gear is part of the valve design. Backlash compensation is made as extra steps in opening
+direction, extra steps are immediately turned into same movement in closing direction.
+This adjustment is only applied if an additional opening of the valve is requested.
+Compensation backlash ensure that force on spindle is on same edge of the spindle. ",1,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V214,Valve driver settings-Valve 2,User defined Valve thermal protection,5215,100,0,100,%,0,INT,,0,"Maximum allowed valve power, inclusive holding current.
+Allowed average valve power over a period of 60 sec.
+Note that excitation time also impact consumed power.
+Valve power must be stopped if average power is exceeded, except by a power loss where movement to power loss position is allowed (typical closed valve + overdrive).",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V215,Valve driver settings-Valve 2,User defined Overdrive,5216,5,0,20,%,0,INT,,0,"Overdrive in closing direction.
+The number of extra steps is scaled as a percentage of the valve [V204 - Total steps].",0,Id_0,7,GetVar(8) == 1 and GetVar(105) == 0,,0,C,S,[],1
+,V216,Valve driver settings-Valve 2,Overdrive enable OD,5217,0,0,100,%,0,INT,,0,"The parameter defines how much the valve must have been open before overdrive is
+allowed at next close position.
+Example: Overdrive enable OD = 10% means that the valve must have been above 10% before a new overdrive is allowed at 0% requested OD.",0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V217,Valve driver settings-Valve 2,Overdrive block time,5218,10,0,1440,min,0,INT,,0,"Defines the minimum allowed time between two overdrive actions. Overdrive within this
+time frame must be ignored.",0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V218,Valve driver settings-Valve 2,Neutral zone,5219,1,0,10,%,-1,INT,,0,"The Neutral zone around setpoint defines how much the requested OD can change before a new OD is set.
+Resolution: 0,1%
+Note: AI request for 0% or 100% ignore neutral zone OD move limitations.
+Example: Neutral zone value of 1.0% gives +/- 0,5% around setpoint.",1,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V219,Valve driver settings-Valve 2,Valve OD on power failure,5220,0,0,100,%,0,INT,,0,"Battery backup is used for moving the valve to a predefined position during power failure.
+By default (0%) will close the valve, e.g. 80% will move the valve to 80% by the battery
+backup.",0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V220,Valve driver settings-Valve 2,Analog input selection,5221,0,0,2,,0,,"0:DIP switch,1:AI 2,2:AI 1",0,"Analog input signal to be used for driving the valve.
+
+0: DIP switch
+1: AI 2
+2: AI 1",0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V221,Valve driver settings-Valve 2,Input % scale to 0 position,5222,0,0,100,%,0,INT,,0,Signal type is defined by [B204 - AI selection].,0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V222,Valve driver settings-Valve 2,Input % scale to 100 position,5223,100,0,100,%,0,INT,,0,Signal type is defined by [B204 - AI selection].,0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V223,Valve driver settings-Valve 2,Force Overdrive,5224,0,0,1,,0,,"0:No,1:Yes",0,"Manually initiate a closing overdrive.
+After overdrive has been executed the valve will immediately return to requested position.",0,Id_0,0,1,,0,S,N,[],1
+,V224,Valve driver settings-Valve 2,Forced Overdrive time,5225,0,0,9000,hours,0,INT,,0,"Timer based overdrive.
+If no overdrive has been performed within this period, then a valve close is done (forced
+overdrive).
+0: function disabled
+xx: Forced overdrive time [hours]",0,Id_0,0,1,,0,C,S,[],1
+,V225,Valve driver settings-Valve 2,Valve size reduction,5226,0,0,80,%,0,INT,,0,"Option to limit maximum opening degree by parameter.
+An oversized valve can be downsized by this option.
+A reduction by 10% means that requested valve opening steps are reduced by a factor of 10%. (physical opening will be 0-90%).
+Physical related parameters are not affected.
+Example:  Overdrive and Compensation backlash, they must still relate to Total steps.",0,Id_0,4,GetVar(105) == 0,,0,C,S,[],1
+,V226,Valve driver settings-Valve 2,Open wire detection,5227,1,0,1,,0,,"0:No,1:Yes",0,Option to disable the open circuit detection for valve wires.,0,Id_0,0,1,,0,C,S,[],1
+,V229,Valve driver settings-Valve 2,Cable length compensation,5228,100,100,150,%,0,INT,,0,"Current is scaled relative to nominal valve current and is new nominal valve current.
+If new nominal current setting exceeds maximum EKF current, then the current is limited
+and warning W05 is set.
+The parameter is not available for user defined valves as the user must set the valve
+current inclusive eventual extra current.",0,Id_0,11,GetVar(8) != 1,,0,C,S,[],1
+,V230,Valve driver settings-Valve 2,MOPD current,5229,100,100,150,%,0,INT,,0,"The boost current is added to nominal valve driver current when starting from 0% OD until final position.
+MOPD current is applied in opening direction up to 3 times or until parameter value
+MOPD OD stop.
+If MOPD current setting exceed maximum EKF current, then the current is limited and warning W05 is set.",0,Id_0,0,1,,0,C,S,[],1
+,V231,Valve driver settings-Valve 2,MOPD OD stop,5230,10,0,100,%,0,INT,,0,For function see parameter [V230 - MOPD current].,0,Id_0,0,1,,0,C,S,[],1
+,R100,Readouts-Driver 1,Valve position,5301,0,0,100,%,-2,INT,,0,Actual valve position,2,Id_0,0,1,,0,R,N,[],0
+,R101,Readouts-Driver 1,Analog input signal,5302,0,0,20000,uA/mV,0,INT,,0,Actual analog input signal,0,Id_0,0,1,,0,R,N,[],0
+,R200,Readouts-Driver 2,Valve position,5303,0,0,100,%,-2,INT,,0,Actual valve position,2,Id_0,0,1,,0,R,N,[],1
+,R201,Readouts-Driver 2,Analog input signal,5304,0,0,20000,uA/mV,0,INT,,0,Actual analog input signal,0,Id_0,0,1,,0,R,N,[],1
+,R000,Readouts-Generic,Battery voltage,5305,0,0,30000,mV,0,INT,,0,Measured battery voltage,0,Id_0,0,1,,0,R,N,[],0
+,R001,Readouts-Generic,Software version,5306,0,0,327.67,,-2,INT,,0,Software version high.low,2,Id_0,0,1,,0,R,N,[],0
+,R002,Readouts-Generic,Relay status,5307,0,0,1,,0,,"0:Open,1:Close",0,,0,Id_0,0,1,,0,R,N,[],0
+,T000,Test,Test mode DIP switch enable,5401,0,0,1,,0,,"0:Off,1:On",1,,0,Id_0,2,0,,0,S,N,[],2
+,T001,Test,Test mode AI enable,5402,0,0,1,,0,,"0:Off,1:On",1,,0,Id_0,2,0,,0,S,N,[],2
+,T100,Test,DIP switch 1,5403,0,0,255,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T101,Test,AI signal 1,5404,0,0,20000,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T102,Test,Valve Green LED pattern 1,5405,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T103,Test,Valve Red LED pattern 1,5406,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T200,Test,DIP Switch 2,5407,0,0,255,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T201,Test,AI signal 2,5408,0,0,20000,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T202,Test,Valve Green LED pattern 2,5409,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T203,Test,Valve Red LED pattern 2,5410,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T003,Test,App Green LED pattern,5411,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,T004,Test,App Red LED pattern,5412,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,S,N,[],2
+,I000,Internal,Variant,5501,0,0,1,,0,,"0:EKF 1A,1:EKF 2A",1,,0,Id_0,2,0,,0,R,N,[],2
+,I100,Internal,Driver state 1,5502,0,0,10,,0,,"0:INITIALIZATION,1:INITIAL CLOSE,2:STOP,3:OPERATION,4:TURNOFF CLOSE,5:OVERDRIVE,6:EMERGENCY CLOSE,7:EMERGENCY CLOSE COMPLETED,8:STEPPER FAULT,9:OPEN CIRCUIT DETECTION,10:OPEN CIRCUIT FAULT",1,,0,Id_0,2,0,,0,R,N,[],2
+,I101,Internal,Driver alarms 1,5503,0,0,100,,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I102,Internal,Driver steps 1,5504,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I103,Internal,Driver 1 current 1,5505,0,0,32767,mA,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I104,Internal,Driver 1 current 2,5506,0,0,32767,mA,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I105,Internal,Driver 1 filtered current,5507,0,0,32767,mA,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I200,Internal,Driver state 2,5508,0,0,10,,0,,"0:INITIALIZATION,1:INITIAL CLOSE,2:STOP,3:OPERATION,4:TURNOFF CLOSE,5:OVERDRIVE,6:EMERGENCY CLOSE,7:EMERGENCY CLOSE COMPLETED,8:STEPPER FAULT,9:OPEN CIRCUIT DETECTION,10:OPEN CIRCUIT FAULT",1,,0,Id_0,2,0,,0,R,N,[],2
+,I201,Internal,Driver alarms 2,5509,0,0,100,,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I202,Internal,Driver steps 2,5510,0,0,32767,,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I203,Internal,Driver 2 current 1,5511,0,0,32767,mA,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I204,Internal,Driver 2 current 2,5512,0,0,32767,mA,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I205,Internal,Driver 2 filtered current,5513,0,0,32767,mA,0,INT,,1,,0,Id_0,2,0,,0,R,N,[],2
+,I206,Internal,Manifolded valve configured,5514,0,0,1,,0,,"0:No,1:Yes",1,,0,Id_0,2,0,,0,R,N,[],2

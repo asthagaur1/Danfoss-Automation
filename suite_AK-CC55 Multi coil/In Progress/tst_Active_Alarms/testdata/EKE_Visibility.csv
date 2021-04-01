@@ -1,0 +1,345 @@
+﻿Name,Enum,Visibility,VariableName
+Main switch,"0:Off,1:On",,Par_main_switch
+Operation mode,"0:SH control,1:Valve driver",,Par_Operation_mode
+Application select,"0:ChillerPlate,1:AirCoil frost,2:AirCoil,3:HP A2W,4:HP W2W,5:Gen. SH Ctrl.",0,Par_ApplicationSelect
+Compressor capacity,,0,Par_Compressor_Capacity
+Sensor select,"0:S3,1:S4",Par_Operation_mode == 0,Par_SensorSelect
+Thermostatic mode,"0:Not Used,1:CutIn/CutOut,2:MTR",Par_Operation_mode == 0,Par_Thermostatic_mode
+Temperature setpoint,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Temperature_Setpoint
+Differential,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Differential
+Ext. ref offset max.,,Par_Operation_mode == 0 && Par_Mapping_AI4 == 1,Par_Ext_Ref_Offset_Max
+Ext. ref offset min,,Par_Operation_mode == 0 && Par_Mapping_AI4 == 1,Par_Ext_Ref_Offset_Min
+S2 Correction,,Par_Operation_mode == 0,Par_S2_Correction
+S3 Correction,,Par_Operation_mode == 0 && (Par_Mapping_AI1 == 1 || Par_Mapping_AI5 == 1),Par_S3_Correction
+S4 Correction,,Par_Operation_mode == 0 && (Par_Mapping_AI1 == 2 || Par_Mapping_AI5 == 2),Par_S4_Correction
+Pe Correction,,Par_Operation_mode == 0,Par_P0_Correction
+Pc Correction,,Par_Operation_mode == 0 && Par_Mapping_AI4 == 2,Par_Pc_Correction
+MTR Tn,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 2,Par_MtrCtrl_Tn
+MTR Kp,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 2,Par_MtrCtrl_Kp
+Refrigerant,"0:Undef,1:R12,2:R22,3:R134a,4:R502,5:R717,6:R13,7:R13b1,8:R23,9:R500,10:R503,11:R114,12:R142b,13:R user,14:R32,15:R227,16:R401A,17:R507,18:R402A,19:R404A,20:R407C,21:R407A,22:R407B,23:R410A,24:R170,25:R290,26:R600,27:R600a,28:R744,29:R1270,30:R417A,31:R422A,32:R413A,33:R422D,34:R427A,35:R438A,36:XP10,37:R407F,38:R1234ze,39:R1234yf,40:R448A,41:R449A,42:R452A",Par_Operation_mode == 0,Par_Refrigerant
+Antonie constant A1,,Par_Operation_mode == 0 && Par_Refrigerant == 13,Par_Refrigerant_A1
+Antonie constant A2,,Par_Operation_mode == 0 && Par_Refrigerant == 13,Par_Refrigerant_A2
+Antonie constant A3,,Par_Operation_mode == 0 && Par_Refrigerant == 13,Par_Refrigerant_A3
+Refrigerant min. temperature,,Par_Operation_mode == 0 && Par_Refrigerant == 13,Par_Refrigerant_T_Min
+Refrigerant max. temperature,,Par_Operation_mode == 0 && Par_Refrigerant == 13,Par_Refrigerant_T_Max
+Startup mode,"0:Prop. Ctrl,1:Fix OD w prot,2:Fix OD wo prot",Par_Operation_mode == 0,Par_Startup_Mode
+Startup time,,Par_Operation_mode == 0,Par_StartUpTime
+Min. startup time,,Par_Operation_mode == 0 && Par_Startup_Mode == 0,Par_Minimum_Startup_Time
+Startup OD,,Par_Operation_mode == 0,Par_StartUpOd
+SH reference mode,"0:Fixed sp.,1:Loadap,2:MSS,3:Delta temp",Par_Operation_mode == 0,Par_ShRef_Mode
+SH fixed setpoint,,Par_Operation_mode == 0 && Par_ShRef_Mode == 0,Par_SH_Reference
+SH max.,,Par_Operation_mode == 0 && Par_ShRef_Mode != 0,Par_ShMax
+SH min.,,Par_Operation_mode == 0 && Par_ShRef_Mode != 0,Par_ShMin
+SH ref. delta temp. factor,,Par_Operation_mode == 0 && Par_ShRef_Mode == 3,Par_SH_Ref_Delta_Temp_Factor
+SH Tn,,Par_Operation_mode == 0,Par_ShCtrl_Tn
+SH Kp Min.,,Par_Operation_mode == 0,Par_ShCtrl_KpMin
+SH Kp,,Par_Operation_mode == 0,Par_ShCtrl_Kp
+SH KpTe,,Par_Operation_mode == 0,Par_ShCtrl_KpT0
+Minimum OD,,Par_Operation_mode == 0,Par_Valve_Min_OD
+Maximum OD,,Par_Operation_mode == 0,Par_Valve_Max_OD
+SH close function,"0:Off,1:On",Par_Operation_mode == 0,Par_SH_Close_Used
+SH close setpoint,,Par_Operation_mode == 0 && Par_SH_Close_Used == 1,Par_ShClose_SetPoint
+SH close Tn divide,,Par_Operation_mode == 0 && Par_SH_Close_Used == 1,Par_SHCloseTnDivide
+SH close Kp factor,,Par_Operation_mode == 0 && Par_SH_Close_Used == 1,Par_SHCloseKpFactor
+Limit Kp,,Par_Operation_mode == 0,Par_LimitCtrl_Kp
+Limit Tn,,Par_Operation_mode == 0,Par_LimitCtrl_Tn
+Min. S4 mode,"0:Off,1:On",Par_Operation_mode == 0,Par_MinS4_mode
+Min. S4 setpoint,,Par_Operation_mode == 0 && Par_MinS4_mode == 1,Par_MinS4_SetPoint
+Stability,,Par_Operation_mode == 0 && Par_ShRef_Mode == 2,Par_Stability
+T0 varians factor,,Par_Operation_mode == 0 && Par_ShRef_Mode == 2,Par_T0_Varians_Factor
+MOP function,"0:Off,1:On",Par_Operation_mode == 0,Par_MOP_mode
+MOP setpoint,,Par_Operation_mode == 0 && Par_MOP_mode == 1,Par_MOP_SetPoint
+LOP function,"0:Off,1:On",Par_Operation_mode == 0,Par_LOP_mode
+LOP setpoint,,Par_Operation_mode == 0 && Par_LOP_mode == 1,Par_LOP_SetPoint
+LOP priority mode,"0:Off,1:On",Par_Operation_mode == 0 && Par_LOP_mode == 1,Par_LOPPriority_mode
+LOP max. time,,Par_Operation_mode == 0 && (Par_LOPPriority_mode == 1) && (Par_LOP_mode == 1),Par_LOPMaxTime
+High cond. temp protection function,"0:Off,1:On",Par_Operation_mode == 0,Par_HiCondTempPrte_mode
+High cond. temp. protection setpoint,,Par_Operation_mode == 0 && Par_HiCondTempPrte_mode == 1,Par_HiCondTempPrte_SetPoint
+Comp. speed feed forward Function,"0:Off,1:On",Par_Operation_mode == 0,Par_CompSpeedFeforward_mode
+Comp FF low cap. point,,Par_Operation_mode == 0 && Par_CompSpeedFeforward_mode == 1,Par_SHCompLoCapPoint
+Comp FF SH Tn factor,,Par_Operation_mode == 0 && Par_CompSpeedFeforward_mode == 1,Par_SHTnFactor
+Average  OD,,Par_Operation_mode == 0,Par_Estimated_OD
+Estimated KpTe,,Par_Operation_mode == 0,Par_Estimated_KpT0
+Average delta temperature,,Par_Operation_mode == 0,Par_Estimated_Delta_Temperature
+SH control sensor error action,"0:Stop,1:Fixed OD,2:Average",Par_Operation_mode == 0,Par_SHCtrl_sensor_error_action
+Thermostatic sensor error action,"0:Stop,1:Fixed OD,2:Average",Par_Operation_mode == 0,Par_Therm_sensor_error_action
+Fixed OD during emergency cooling,,Par_Operation_mode == 0 && Par_SHCtrl_sensor_error_action == 1 || Par_Therm_sensor_error_action == 1,Par_Fixed_OD_during_emergency
+Heat startup time,,Par_Operation_mode == 0,Par_Heat_StartUpTime
+Heat min. startup time,,Par_Operation_mode == 0 && Par_Startup_Mode == 0,Par_Heat_Minimum_Startup_Time
+Heat startup OD,,Par_Operation_mode == 0,Par_Heat_StartUpOd
+Heat SH fixed setpoint,,Par_Operation_mode == 0 && Par_ShRef_Mode == 0,Par_Heat_SH_Reference
+Heat SH max.,,Par_Operation_mode == 0 && Par_ShRef_Mode != 0,Par_Heat_ShMax
+Heat SH min.,,Par_Operation_mode == 0 && Par_ShRef_Mode != 0,Par_Heat_ShMin
+Heat SH ref. delta temp. factor,,Par_Operation_mode == 0 && Par_ShRef_Mode == 3,Par_Heat_SH_Ref_Delta_Temp_Factor
+Heat SH Tn,,Par_Operation_mode == 0,Par_Heat_ShCtrl_Tn
+Heat SH Kp min.,,Par_Operation_mode == 0,Par_Heat_ShCtrl_KpMin
+Heat SH Kp,,Par_Operation_mode == 0,Par_Heat_ShCtrl_Kp
+Heat SH KpTe,,Par_Operation_mode == 0,Par_Heat_ShCtrl_KpT0
+Heat SH close setpoint,,Par_Operation_mode == 0 && Par_SH_Close_Used == 1,Par_Heat_ShClose_SetPoint
+Heat limit Tn,,Par_Operation_mode == 0,Par_Heat_LimitCtrl_Tn
+Heat limit Kp,,Par_Operation_mode == 0,Par_Heat_LimitCtrl_Kp
+Defrost start low pressure limit,,Par_Def_start_time != 0,Par_Def_low_press_start
+Defrost start time,,,Par_Def_start_time
+Defrost OD,,,Par_Def_OD
+Defrost end closed time,,,Par_Def_end_close_time
+Defrost end OD time,,,Par_Def_end_time
+Defrost end OD,,Par_Def_end_time != 0,Par_Def_end_OD
+Low Min S4 delay,,Par_Operation_mode == 0 && Par_MinS4_mode == 1,Par_Low_min_s4_time
+Low Min S4 band,,Par_Operation_mode == 0 && Par_MinS4_mode == 1,Par_Low_min_s4_band
+Upper temperature alarm,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Upper_temp_alarm
+Lower temperature alarm,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Lower_temp_alarm
+Temperature alarm delay,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Temp_alarm_delay
+Battery alarm,"0:Off,1:On",,Par_Use_Battery_Backup
+MOP alarm delay,,Par_Operation_mode == 0 && Par_MOP_mode == 1,Par_High_MOP_time
+MOP alarm differential,,Par_Operation_mode == 0 && Par_MOP_mode == 1,Par_High_MOP_band
+LOP alarm delay,,Par_Operation_mode == 0 && Par_LOP_mode == 1,Par_Low_LOP_time
+LOP alarm differential,,Par_Operation_mode == 0 && Par_LOP_mode == 1,Par_Low_LOP_band
+Cond.temp alarm delay,,Par_Operation_mode == 0 && Par_HiCondTempPrte_mode == 1,Par_Cond_temp_time
+Cond. temp.alarm differential,,Par_Operation_mode == 0 && Par_HiCondTempPrte_mode == 1,Par_Cond_temp_band
+High SH alarm delay,,Par_Operation_mode == 0,Par_High_SH_time
+High SH alarm differential,,Par_Operation_mode == 0,Par_High_SH_band
+Low SH alarm delay,,Par_Operation_mode == 0,Par_Low_SH_time
+Low SH alarm differential,,Par_Operation_mode == 0,Par_Low_SH_band
+Lack of capacity alarm delay,,Par_Operation_mode == 0,Par_Lack_of_capacity_window
+AI1 configuration 1B/C,"0:Not Used,1:S3,2:S4",Par_Operation_mode == 0 && Par_EKE_1V_Variant != 0,Par_Mapping_AI1_BC
+AI4 configuration 1C,"0:Not Used,1:ExtRef,2:pc",Par_EKE_1V_Variant == 2,Par_Mapping_AI4_C
+AI4 configuration 1A/B,"0:Not Used,1:ExtRef",Par_EKE_1V_Variant != 2,Par_Mapping_AI4_AB
+AI5 configuration 1C,"0:Not Used,1:S3,2:S4",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_Mapping_AI5_C
+DI1 configuration,"0:Not Used,1:Main Switch",,Par_Mapping_DI1
+DI2 configuration,"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool",,Par_Mapping_DI2
+DI3 configuration,"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool",Par_EKE_1V_Variant == 0,Par_Mapping_DI3_A
+DO1 configuration,"0:Alarm,1:LLSV,2:Max cap",,Par_Mapping_DO1
+S2 sensor configuration 1C,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_s2_sensor_setup_C
+S2 sensor configuration 1B,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_s2_sensor_setup_B
+S2 sensor configuration 1A,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 0,Par_s2_sensor_setup_A
+S3 sensor configuration 1C,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_s3_sensor_setup_C
+S3 sensor configuration 1B,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_s3_sensor_setup_B
+S4 sensor configuration 1C,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_s4_sensor_setup_C
+S4 sensor configuration 1B,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_s4_sensor_setup_B
+Pe transmitter configuration 1C,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_p0_transmitter_setup_C
+Pe transmitter configuration 1B,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_p0_transmitter_setup_B
+Pe transmitter configuration 1A,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 0,Par_p0_transmitter_setup_A
+Pe ratio. low,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 4,Par_p0_ratio_low
+Pe ratio high,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 4,Par_p0_ratio_high
+Pe voltage low 1C,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 7 && Par_EKE_1V_Variant == 2,Par_p0_voltage_low_C
+Pe voltage low 1A/B,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 7 && Par_EKE_1V_Variant != 2,Par_p0_voltage_low_AB
+Pe voltage high 1C,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 7 && Par_EKE_1V_Variant == 2,Par_p0_voltage_high_C
+Pe voltage high 1A/B,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 7 && Par_EKE_1V_Variant != 2,Par_p0_voltage_high_AB
+Pe current low,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 14,Par_p0_current_low
+Pe current high,,Par_Operation_mode == 0 && Par_p0_transmitter_setup == 14,Par_p0_current_high
+Pe transmitter min.,,Par_Operation_mode == 0 && Par_p0_transmitter_setup != 0 && Par_p0_transmitter_setup != 8,Par_p0_transmitter_min
+Pe transmitter max.,,Par_Operation_mode == 0 && Par_p0_transmitter_setup != 0 && Par_p0_transmitter_setup != 8,Par_p0_transmitter_max
+Pc transmitter configuration 1C,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",Par_Operation_mode == 0 && Par_Mapping_AI4 == 2 && Par_EKE_1V_Variant == 2,Par_pc_transmitter_setup_C
+Pc ratio. low,,Par_Operation_mode == 0 && Par_pc_transmitter_setup == 4 && Par_Mapping_AI4 == 2,Par_pc_ratio_low
+Pc ratio high,,Par_Operation_mode == 0 && Par_pc_transmitter_setup == 4 && Par_Mapping_AI4 == 2,Par_pc_ratio_high
+Pc voltage low,,Par_Operation_mode == 0 && Par_pc_transmitter_setup == 7 && Par_Mapping_AI4 == 2,Par_pc_voltage_low
+Pc voltage high,,Par_Operation_mode == 0 && Par_pc_transmitter_setup == 7 && Par_Mapping_AI4 == 2,Par_pc_voltage_high
+Pc current low,,Par_Operation_mode == 0 && Par_pc_transmitter_setup == 14 && Par_Mapping_AI4 == 2,Par_pc_current_low
+Pc current high,,Par_Operation_mode == 0 && Par_pc_transmitter_setup == 14 && Par_Mapping_AI4 == 2,Par_pc_current_high
+Pc transmitter min.,,Par_Operation_mode == 0 && Par_pc_transmitter_setup != 0 && Par_pc_transmitter_setup != 8 && Par_Mapping_AI4 == 2,Par_pc_transmitter_min
+Pc transmitter max,,Par_Operation_mode == 0 && Par_pc_transmitter_setup != 0 && Par_pc_transmitter_setup != 8 && Par_Mapping_AI4 == 2,Par_pc_transmitter_max
+Valve configuration,"0:no valve,1:UserDef,2:ETS 12C,3:ETS 24C,4:ETS 25C,5:ETS 50C,6:ETS 100C,7:ETS 6,8:ETS 12.5,9:ETS 25,10:ETS 50,11:ETS 100,12:ETS 250,13:ETS 400,14:KVS 2C,15:KVS 3C,16:KVS 5C,17:KVS 15,18:KVS 42,19:CCMT 0,20:CCMT 1,21:CCMT 2,22:CCMT 4,23:CCMT 8,24:CCMT 16,25:CCMT 24,26:CCMT 30,27:CCMT 42,28:CCM 10,29:CCM 20,30:CCM 30,31:CCM 40,32:CTR 25",,Par_Valve_Setup
+Valve motor type,"0:Unipolar,1:Bipolar",Par_Valve_Setup == 1,Par_Valve_Motor_Type
+Valve drive current,,Par_Valve_Setup == 1,Par_Valve_Drive_Current
+Valve step positioning,"0:Fullstep,1:Halfstep,2:Auto",Par_Valve_Setup == 1,Par_Valve_Drive_Pattern
+Valve total steps,,Par_Valve_Setup == 1,Par_Valve_Total_Steps
+Valve speed,,Par_Valve_Setup == 1,Par_Valve_SPS
+Valve start speed,,Par_Valve_Setup == 1,Par_Valve_Start_Speed
+Valve emengency speed,,Par_Valve_Setup == 1,Par_Valve_Emer_Speed
+Valve acceleration current,,Par_Valve_Setup == 1,Par_Valve_Acceleration_Current
+Valve acceleration time,,Par_Valve_Setup == 1,Par_Valve_Acceleration_Time
+Valve holding current,,Par_Valve_Setup == 1,Par_Valve_Holding_Current
+Valve step mode,"0:Full,1:Half,2:1/4,3:1/8,4:1/16",Par_Valve_Setup == 1,Par_Valve_Step_Mode
+Valve duty cycle,,Par_Valve_Setup == 1,Par_Valve_Duty_Cycle
+Valve OD during stop,,,Par_Valve_OD_during_stop
+Start backlash,,Par_Valve_Setup == 1,Par_Valve_Start_Backlash
+Compensation backlash,,Par_Valve_Setup == 1,Par_Valve_Comp_Backlash
+Overdrive,,Par_Valve_Setup == 1,Par_Overdrive
+Overdrive enable OD,,,Par_Overdrive_Enable_OD
+Overdrive block time,,,Par_Overdrive_Blocktime
+Valve motor decay mode,"0:Fast,1:Slow,2:Mixed",0,Par_Valve_Motor_Decay_Mode
+Valve excitation time after stop,,Par_Valve_Setup == 1,Par_Valve_Excitation_Time_After_Stop
+Preset OD,,,Par_Manual_OD_Preset
+Valve neutral zone,,,Par_Valve_Neutral_Zone
+Ext ref. configuration 1A,"0:Not Used,1:V->SH,2:V->Max OD",Par_Operation_mode == 0 && Par_Mapping_AI4 == 1 && Par_EKE_1V_Variant == 0,Par_Ext_Ref_Setup_A
+Ext ref. configuration 1B,"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_Ext_Ref_Setup_B
+Ext ref. configuration 1C,"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.,7:mA->SH,8:mA->Max OD,9:mA->Temp",Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_Ext_Ref_Setup_C
+Ext ref. voltage high,,(Par_Operation_mode == 0 && Par_Ext_Ref_Setup >= 1 && Par_Ext_Ref_Setup <= 3) || (Par_Operation_mode == 1 && Par_Driver_Reference_Setup == 0),Par_Ext_Ref_Voltage_High
+Ext ref. current low,,(Par_Operation_mode == 0 && Par_Ext_Ref_Setup >= 7 && Par_Ext_Ref_Setup <= 9) || (Par_Operation_mode == 1 && Par_Driver_Reference_Setup == 3),Par_Ext_Ref_Current_Low
+Ext ref. current high,,(Par_Operation_mode == 0 && Par_Ext_Ref_Setup >= 7 && Par_Ext_Ref_Setup <= 9) || (Par_Operation_mode == 1 && Par_Driver_Reference_Setup == 3),Par_Ext_Ref_Current_High
+Ext ref voltage low,,(Par_Operation_mode == 0 && Par_Ext_Ref_Setup >= 1 && Par_Ext_Ref_Setup <= 3) || (Par_Operation_mode == 1 && Par_Driver_Reference_Setup == 0),Par_Ext_Ref_Voltage_Low
+Driver reference configuration 1B,"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps",Par_Operation_mode == 1 && Par_EKE_1V_Variant == 1,Par_Driver_Reference_Setup_B
+Driver reference configuration 1C,"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps,3:Current to OD",Par_Operation_mode == 1 && Par_EKE_1V_Variant == 2,Par_Driver_Reference_Setup_C
+AI4 lowpass bandwidth,"0:None,1:4 Hz,2:2 Hz,3:1 Hz,4:1/2 Hz,5:1/5 Hz",,Par_Filter_AI4
+Language,"0:English,1:Chinese,2:Portuguese,3:Russian,4:Spanish,5:French,6:German,7:Italian",,Par_Language
+Login timeout,,,Par_Login_timeout_min
+Backlight timeout,,,Par_Backlight_timeout_min
+Password daily,,,Par_Pswd_daily_user
+Password service,,,Par_Pswd_service
+Password commission,,,Par_Pswd_supervisor
+Contrast,,,Par_Contrast
+Brightness,,,Par_Brightness
+Display unit,"0:MET,1:IMP",,Par_UnitSystem
+Opening degree unit,"0:Percentage,1:Step",,Par_Opening_degree_unit
+Controller adr.,,,Par_ID
+CAN bus min. update interval,,,Par_CAN_bus_Min_Update_Interval
+Modbus min. update interval,,Par_EKE_1V_Variant != 0,Par_Modbus_Min_Update_Interval
+Modbus baudrate,"0:0,1:1200,2:2400,3:4800,4:9600,5:14400,6:19200,7:28800,8:38400",Par_EKE_1V_Variant != 0,Par_Modbus_baud
+Modbus mode,"0:8N1,1:8E1,2:8N2",Par_EKE_1V_Variant != 0,Par_Modbus_set
+Modbus mapping,"0:Operation,1:Configuration",Par_EKE_1V_Variant != 0,Par_Modbus_mapping
+Can baudrate,"0:20k,1:50k,2:125k,3:250k,4:500k,5:1M",,Par_CAN_baudrate
+Signal sharing Pe,"0:Off,1:On",Par_Operation_mode == 0,Par_Sharing_P0
+Signal sharing Pc,"0:Off,1:On",Par_Operation_mode == 0,Par_Sharing_Pc
+Signal sharing S3,"0:Off,1:On",Par_Operation_mode == 0,Par_Sharing_S3
+Operation status,"0:Power up,1:Stop,2:Manual,3:Service,4:Safe State,5:Defrosting,6:Valve driver,7:Ther. Cutout,8:Emer. cooling,9:SH ctrl err.,10:SH start Pctrl,11:SH start fix OD,12:SH ctrl normal,13:SH ctrl MTR,14:SH ctrl LOP,15:SH ctrl minPC,16:SH ctrl MOP,17:SH ctrl maxPc,18:SH ctrl SH cl,19:SH ctrl minS4,20:SH ctrl Tc",,Par_Operation_Status
+Actual SH reference,,Par_Operation_mode == 0,Par_Actual_SH_Reference
+Actual superheat,,Par_Operation_mode == 0,Par_Actual_Superheat
+Actual OD,,Par_Opening_degree_unit == 0,Par_Act_OD
+Actual step,,Par_Opening_degree_unit == 1,Par_Actual_OD_Stp
+Actual temperature reference,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Actual_Temperature_Reference
+S2 suction pipe,,Par_Operation_mode == 0,Par_s2
+S3 media inlet,,Par_Operation_mode == 0 && (Par_Mapping_AI1 == 1 || Par_Mapping_AI5 == 1),Par_s3
+S4 media outlet,,Par_Operation_mode == 0 && (Par_Mapping_AI1 == 2 || Par_Mapping_AI5 == 2),Par_s4
+Pe evaporator,,Par_Operation_mode == 0,Par_p0
+Te saturated evaporation temperature,,Par_Operation_mode == 0,Par_T0
+Pc condenser,,Par_Operation_mode == 0 && Par_Mapping_AI4 == 2,Par_pc
+Tc saturated condenser temperature,,Par_Operation_mode == 0 && Par_Mapping_AI4 == 2,Par_Tc
+Actual battery voltage,,Par_Use_Battery_Backup == 1,Par_Actual_Battery_Voltage
+Liquid line solenoid valve,"0:Off,1:On",Par_Mapping_DO1 == 1,Par_EVR
+Alarm relay,"0:Off,1:On",Par_Mapping_DO1 == 0,Par_Alarm_Relay
+External reference signal,,(Par_Ext_Ref_Setup >= 1 && Par_Ext_Ref_Setup <= 3),Par_Ext_Ref_Sig_Volt
+External reference signal,,(Par_Ext_Ref_Setup >= 7 && Par_Ext_Ref_Setup <= 9),Par_Ext_Ref_Sig_mA
+Act. ext. ref. temperature offset,,Par_Operation_mode == 0,Par_Actual_Ext_Ref_Temperature_Offset
+Act. ext. ref. SH offset,,Par_Operation_mode == 0,Par_Actual_Ext_Ref_SH_Offset
+Act. ext.ref. max. OD,,0,Par_Actual_Max_OD
+DI main switch,"0:Off,1:On",,Par_DI_main_switch
+DI defrost start,"0:Off,1:On",Par_Operation_mode == 0,Par_DI_defrost_start
+DI preset OD,"0:Off,1:On",,Par_DI_manual_preset_od
+DI heating,"0:Off,1:On",Par_Operation_mode == 0,Par_DI_heat_cool
+Thermostat cut-in time,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 1,Par_Thermostat_cut_in_time
+Thermostat average cut-in time,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 1,Par_Thermostat_average_cut_in_time
+Thermostat average cut-out time,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 1,Par_Thermostat_average_cut_out_time
+Average temperature,,Par_Operation_mode == 0,Par_Average_Temperature
+Average SH,,Par_Operation_mode == 0,Par_Average_Superheat
+Manual mode,"0:Off,1:On",Par_DI_manual_preset_od == 0,Par_Manual_mode
+Manual mode timeout,,Par_Manual_mode == 1,Par_Manual_mode_timeout
+Manual OD,,Par_Manual_mode == 1,Par_Manual_OD
+Manual step,,0,Par_Manual_Step
+Manual homeing,"0:Off,1:On",Par_Manual_mode == 1,Par_Manual_home
+Manual relay DO1,"0:Off,1:On",Par_Manual_mode == 1,Par_Manual_alm
+Apply defaults,"0:None,1:Factory,2:EKD 316 like,3:EKC 316 like",,Par_Apply_defaults
+Enter service state,"0:Off,1:On",,Par_Enter_Service_State
+Temperature difference,,Par_Wizard_operation_mode == 0,Par_Wizard_temp_diff
+Valve Dim,,Par_Wizard_operation_mode == 0,Par_Wizard_valve_dim
+Heat valve dim,,Par_Wizard_operation_mode == 0 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_heat_valve_dim
+Heat temperature difference,,Par_Wizard_operation_mode == 0 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_heat_temp_diff
+Modbus Heating,"0:Off,1:On",0,Par_ModHeating
+Modbus preset OD,"0:Off,1:On",0,Par_ModPresetOD
+Modbus defrost start,"0:Off,1:On",0,Par_ModDefrost
+Modbus main switch,"0:Off,1:On",0,Par_ModMainSwitch
+Bus shared Pc,,0,Par_modbus_pc
+Bus shared  Pe,,0,Par_modbus_p0
+Bus shared S2,,0,Par_BusSharedS2
+Bus shared S3,,0,Par_modbus_s3
+Bus shared S4,,0,Par_BusSharedS4
+Bus ext. ref.,,0,Par_BusExtRef
+event log Enabled,"0:Off,1:On",0,Params_ELOG_Enabled
+event log Clear,,0,Params_ELOG_Clear
+Life time,,0,Par_Life_time_hour
+Maximum execution time,,0,Par_Max_execution_time_ms
+Number of active alarms,,0,Par_Number_of_Active_alarms
+Alarm notification,"0:No alarms,1:Alarms active",0,Par_Alarm_notification
+Alarm status,"0:Off,1:On",0,Par_Alarm_Present
+Warning status,"0:Off,1:On",0,Par_Warning_Present
+Error status,"0:Off,1:On",0,Par_Error_Present
+Main switch status,,0,Par_main_switch_status
+Injection state,"0:Off,1:Startup,2:Injection,3:Error,4:Ther. Cutout",0,Par_Injection_State
+Controller state,"0:Powerup,1:Stop,2:Operation,3:Manual,4:Service,5:Safe",0,Par_Cont_state
+Injection details,"0:Off,1:SH ctrl normal,2:SH ctrl MTR,3:SH ctrl LOP,4:SH ctrl MOP,5:SH ctrl minPC,6:SH ctrl maxPc,7:SH ctrl SH cl,8:SH ctrl minS4,9:Start P.Control,10:Start Fixed,11:Manual,12:SH ctrl Tc",0,Par_Injection_Details
+Actual operation,"0:None,1:Defrosting,2:Thermostat,3:Injection,4:Driver,5:Emer. cooling",0,Par_Actual_Operation
+Valve Version High,,0,Par_Valve_Version_High
+Valve Version Low,,0,Par_Valve_Version_Low
+Valve Version Major,,0,Par_Valve_Version_Major
+Valve Version Minor,,0,Par_Valve_Version_Minor
+Valve Date High,,0,Par_Valve_Date_High
+Valve Date Low,,0,Par_Valve_Date_Low
+Valve current position,,0,Par_Valve_Current_Position
+Valve target position,,0,Par_Valve_Target_Position
+Valve current state,"0:Init,1:Config,2:Init Close,3:Auto,4:Manual,5:Service,6:Overdrive,7:Man. Overdrive,8:Emer Close,9:Emer Close Comp.,10:Batt Disable,11:Reset,12:Stepper Fault,13:OC Fault,14:Voltage too low",0,Par_Valve_Current_State
+Start overdrive command,"0:IDLE,1:START,2:CMD_SENT,3:RUNNING",0,Par_Start_Overdrive_Command
+Service number of steps,,0,Par_Service_steps
+EKE 1V Variant,"0:EKE 1A,1:EKE 1B,2:EKE 1C",0,Par_EKE_1V_Variant
+Power fault enabled,"0:Off,1:On",0,Par_PowerFaultEnabled
+Stepper fault enabled,"0:Off,1:On",0,Par_StepperFaultEnabled
+Communication fault enabled,"0:Off,1:On",0,Par_CommunicationFaultEnabled
+Open circuit fault enabled,"0:Off,1:On",0,Par_OpenCircuitFaultEnabled
+Max. diff. between coil current and setting,,0,Par_OpenCircuitFault_I1Is
+Max. diff. between coil currents,,0,Par_OpenCircuitFault_I1I2
+User controls LEDs,"0:Off,1:On",0,Par_User_Controls_LEDs
+Green LED pattern,,0,Par_Green_LED_Pattern
+Red LED pattern,,0,Par_Red_LED_Pattern
+AI1 configuration (internal),"0:Not Used,1:S3,2:S4",0,Par_Mapping_AI1
+AI4 configuration (internal),"0:Not Used,1:ExtRef,2:pc",0,Par_Mapping_AI4
+AI5 configuration (internal),"0:Not Used,1:S3,2:S4",0,Par_Mapping_AI5
+S2 sensor configuration (internal),"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",0,Par_s2_sensor_setup
+S3 sensor configuration (internal),"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",0,Par_s3_sensor_setup
+S4 sensor configuration (internal),"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",0,Par_s4_sensor_setup
+Pe transmitter configuration (internal),"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",0,Par_p0_transmitter_setup
+Pe voltage low (internal),,0,Par_p0_voltage_low
+Pe voltage high (internal),,0,Par_p0_voltage_high
+Pc transmitter configuration (internal),"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",0,Par_pc_transmitter_setup
+Ext ref. configuration (internal),"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.,7:mA->SH,8:mA->Max OD,9:mA->Temp",0,Par_Ext_Ref_Setup
+Driver reference configuration (internal),"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps,3:Current to OD",0,Par_Driver_Reference_Setup
+DI3 configuration (internal),"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool",0,Par_Mapping_DI3
+Valve configuration error,"0:Off,1:On",,Alm_stepper_config_error
+Configuration error,"0:Off,1:On",,Alm_configuration_error
+Sensor supply overload,"0:Off,1:On",,Alm_sensor_supply_overload
+S2 suction pipe sensor error,"0:Off,1:On",,Alm_s2_temperature_sensor
+S3 media inlet sensor error,"0:Off,1:On",,Alm_s3_temperature_sensor
+S4 media outlet sensor error,"0:Off,1:On",,Alm_s4_temperature_sensor
+Pe evaporator transmitter error,"0:Off,1:On",,Alm_p0_pressure_transmitter
+Pc condenser transmitter error,"0:Off,1:On",,Alm_pc_pressure_transmitter
+External reference signal alarm,"0:Off,1:On",,Alm_external_reference
+No refrigerant selected,"0:Off,1:On",,Alm_no_refrigerant_selected
+No valve configured,"0:Off,1:On",,Alm_no_valve_configured
+Shared signal timeout,"0:Off,1:On",,Alm_shared_signal_timeout
+Ext. ref. via modbus timeout,"0:Off,1:On",,Alm_ext_ref_modbus_timeout
+Battery critical low voltage,"0:Off,1:On",,Alm_battery_low_alarm
+Battery too high voltage,"0:Off,1:On",,Alm_battery_high_alarm
+Battery low voltage,"0:Off,1:On",,Alm_battery_warning
+Low S4 media outlet temperature,"0:Off,1:On",,Alm_low_min_s4
+High temperature,"0:Off,1:On",,Alm_high_temperature
+Low temperature,"0:Off,1:On",,Alm_low_temperature
+High evaporation pressure (MOP),"0:Off,1:On",,Alm_high_pressure
+Low evaporation pressure (LOP),"0:Off,1:On",,Alm_low_pressure
+High condensing temperature,"0:Off,1:On",,Alm_high_cond_temperature
+High superheat,"0:Off,1:On",,Alm_high_superheat
+Low superheat,"0:Off,1:On",,Alm_low_superheat
+Lack of valve capacity,"0:Off,1:On",,Alm_lack_of_valve_capacity
+Standby mode,"0:Off,1:On",,Alm_standby_mode
+Manual control,"0:Off,1:On",,Alm_manual_control
+SH reference too close to SH close setpoint,"0:Off,1:On",,Alm_SH_vs_Set
+LOP setpoint too close to MOP setpoint,"0:Off,1:On",,Alm_Lop_vs_Mop
+No sensor configured for S4,"0:Off,1:On",,Alm_S4_not_configured
+No sensor configured for S3,"0:Off,1:On",,Alm_S3_not_configured
+SH min higher than SH max,"0:Off,1:On",,Alm_SHMin_vs_SHMax
+OD min higher than OD max,"0:Off,1:On",,Alm_ODMin_vs_ODMax
+No transmitter configured for Pc,"0:Off,1:On",,Alm_No_Pc_configured
+Check valve step mode vs positioning,"0:Off,1:On",,Alm_Check_Stepping_Mode
+Valve speed too fast,"0:Off,1:On",,Alm_Speed_Too_Fast
+Valve speed to slow,"0:Off,1:On",,Alm_Speed_Too_Slow
+Valve emergency speed too fast,"0:Off,1:On",,Alm_Emer_Speed_Too_Fast
+Valve emergency speed too slow,"0:Off,1:On",,Alm_Emer_Speed_Too_Slow
+Valve start speed too slow,"0:Off,1:On",,Alm_Min_Speed_Too_Slow
+DI1 unstable input,"0:Off,1:On",,Alm_Unstable_DI1
+DI2 unstable input,"0:Off,1:On",,Alm_Unstable_DI2
+DI3 unstable input,"0:Off,1:On",,Alm_Unstable_DI3
+Open circuit on valve,"0:Off,1:On",,Alm_Open_Circuit_Valve
+AI5 cant operate with AKS sensor,"0:Off,1:On",,Alm_AI5_vs_AKS_sensor
+Valve short circuit or driver too hot,"0:Off,1:On",,Alm_Stepper_fault
+Thermostatic signal missing,"0:Off,1:On",,Alm_Thermostatic_signal_missing
+SH control signal missing,"0:Off,1:On",,Alm_SH_control_signal_missing
+Low supply voltage,"0:Off,1:On",,Alm_low_supply_voltage
+No sensor configured for S2,"0:Off,1:On",,Alm_No_S2_configured
+No transmitter configured for Pe,"0:Off,1:On",,Alm_No_P0_configured
+Ext. ref configuration error,"0:Off,1:On",,Alm_Ext_ref_configuration
