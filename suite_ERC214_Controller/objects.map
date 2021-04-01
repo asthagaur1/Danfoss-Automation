@@ -1,0 +1,1012 @@
+	
+:0_0_TableCell	{column='0' container=':KoolProg_Table_2' row='0' type='TableCell'}
+:0_1_Image	{container=':System.Windows.Controls.StackPanel.0_1_TableCell' type='Image'}
+:0_1_TableCell	{column='1' container=':KoolProg_Table_2' row='0' type='TableCell'}
+:0_2_TableCell	{column='2' container=':KoolProg_Table_2' row='0' type='TableCell'}
+:0_3.System.Windows.Controls.Image_Button	{container=':0_3_TableCell' text='System.Windows.Controls.Image' type='Button'}
+:0_3_TableCell	{column='3' container=':KoolProg_Table_2' row='0' type='TableCell'}
+:0_5_Label	{container=':System.Windows.Controls.StackPanel.0_5_TableCell' text='' type='Label'}
+:0_6.n10_Label	{container=':System.Windows.Controls.StackPanel.0_6_TableCell' text='n10' type='Label'}
+:0_7_ComboBox	{container=':System.Windows.Controls.StackPanel.0_7_TableCell' type='ComboBox'}
+:0_8_Label	{container=':System.Windows.Controls.StackPanel.0_8_TableCell' text='' type='Label'}
+:10_5.-50.00_Label	{container=':System.Windows.Controls.StackPanel.10_5_TableCell' text='-50.00' type='Label'}
+:10_6.0.00_Label	{container=':System.Windows.Controls.StackPanel.10_6_TableCell' text='0.00' type='Label'}
+:10_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.10_6_TableCell' text='xb0C' type='Label'}
+:10_8.20.00_Label	{container=':System.Windows.Controls.StackPanel.10_8_TableCell' text='20.00' type='Label'}
+:11_5.0_Label	{container=':System.Windows.Controls.StackPanel.11_5_TableCell' text='0' type='Label'}
+:11_6.0_Label	{container=':System.Windows.Controls.StackPanel.11_6_TableCell' text='0' type='Label'}
+:11_6.min_Label	{container=':System.Windows.Controls.StackPanel.11_6_TableCell' text='min' type='Label'}
+:11_7_Edit	{container=':System.Windows.Controls.StackPanel.11_7_TableCell' type='Edit'}
+:11_8.960_Label	{container=':System.Windows.Controls.StackPanel.11_8_TableCell' text='960' type='Label'}
+:12_2_CheckBox	{container=':System.Windows.Controls.StackPanel.12_2_TableCell' text='' type='CheckBox'}
+:12_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.12_5_TableCell' text='-100.00' type='Label'}
+:12_6.0.00_Label	{container=':System.Windows.Controls.StackPanel.12_6_TableCell' text='0.00' type='Label'}
+:12_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.12_6_TableCell' text='xb0C' type='Label'}
+:12_7_Edit	{container=':System.Windows.Controls.StackPanel.12_7_TableCell' type='Edit'}
+:12_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.12_8_TableCell' text='200.00' type='Label'}
+:13_5.0_Label	{container=':System.Windows.Controls.StackPanel.13_5_TableCell' text='0' type='Label'}
+:13_6.30_Label	{container=':System.Windows.Controls.StackPanel.13_6_TableCell' text='30' type='Label'}
+:13_6.min_Label	{container=':System.Windows.Controls.StackPanel.13_6_TableCell' text='min' type='Label'}
+:13_8.240_Label	{container=':System.Windows.Controls.StackPanel.13_8_TableCell' text='240' type='Label'}
+:14_1_Image	{container=':System.Windows.Controls.StackPanel.14_1_TableCell' type='Image'}
+:14_5.0_Label	{container=':System.Windows.Controls.StackPanel.14_5_TableCell' text='0' type='Label'}
+:14_6.60_Label	{container=':System.Windows.Controls.StackPanel.14_6_TableCell' text='60' type='Label'}
+:14_6.min_Label	{container=':System.Windows.Controls.StackPanel.14_6_TableCell' text='min' type='Label'}
+:14_8.240_Label	{container=':System.Windows.Controls.StackPanel.14_8_TableCell' text='240' type='Label'}
+:15_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.15_5_TableCell' text='-100.00' type='Label'}
+:15_6.8.00_Label	{container=':System.Windows.Controls.StackPanel.15_6_TableCell' text='8.00' type='Label'}
+:15_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.15_6_TableCell' text='xb0C' type='Label'}
+:15_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.15_8_TableCell' text='200.00' type='Label'}
+:16_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.16_5_TableCell' text='-100.00' type='Label'}
+:16_6.-30.00_Label	{container=':System.Windows.Controls.StackPanel.16_6_TableCell' text='-30.00' type='Label'}
+:16_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.16_6_TableCell' text='xb0C' type='Label'}
+:16_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.16_8_TableCell' text='200.00' type='Label'}
+:17_5.0_Label	{container=':System.Windows.Controls.StackPanel.17_5_TableCell' text='0' type='Label'}
+:17_6.30_Label	{container=':System.Windows.Controls.StackPanel.17_6_TableCell' text='30' type='Label'}
+:17_6.min_Label	{container=':System.Windows.Controls.StackPanel.17_6_TableCell' text='min' type='Label'}
+:17_8.240_Label	{container=':System.Windows.Controls.StackPanel.17_8_TableCell' text='240' type='Label'}
+:18_5.0.00_Label	{container=':System.Windows.Controls.StackPanel.18_5_TableCell' text='0.00' type='Label'}
+:18_6.80.00_Label	{container=':System.Windows.Controls.StackPanel.18_6_TableCell' text='80.00' type='Label'}
+:18_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.18_6_TableCell' text='xb0C' type='Label'}
+:18_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.18_8_TableCell' text='200.00' type='Label'}
+:19_5.0.00_Label	{container=':System.Windows.Controls.StackPanel.19_5_TableCell' text='0.00' type='Label'}
+:19_6.85.00_Label	{container=':System.Windows.Controls.StackPanel.19_6_TableCell' text='85.00' type='Label'}
+:19_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.19_6_TableCell' text='xb0C' type='Label'}
+:19_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.19_8_TableCell' text='200.00' type='Label'}
+:1_0_TableCell	{column='0' container=':KoolProg_Table_2' row='1' type='TableCell'}
+:1_1_Image	{container=':System.Windows.Controls.StackPanel.1_1_TableCell' type='Image'}
+:1_1_TableCell	{column='1' container=':KoolProg_Table_2' row='1' type='TableCell'}
+:1_2_TableCell	{column='2' container=':KoolProg_Table_2' row='1' type='TableCell'}
+:1_3.btnDeleteRow_Button	{container=':1_3_TableCell' name='btnDeleteRow' type='Button'}
+:1_3_TableCell	{column='3' container=':KoolProg_Table_2' row='1' type='TableCell'}
+:1_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.1_5_TableCell' text='-100.00' type='Label'}
+:1_6.2.00_Label	{container=':System.Windows.Controls.StackPanel.1_6_TableCell' text='2.00' type='Label'}
+:1_6.\\xb0C_Label	{container=':System.Windows.Controls.StackPanel.1_6_TableCell' text='xb0C' type='Label'}
+:1_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.1_6_TableCell' text='xb0C' type='Label'}
+:1_7_Edit	{container=':System.Windows.Controls.StackPanel.1_7_TableCell' type='Edit'}
+:1_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.1_8_TableCell' text='200.00' type='Label'}
+:20_6.No_Label	{container=':System.Windows.Controls.StackPanel.20_6_TableCell' text='No' type='Label'}
+:21_5.0_Label	{container=':System.Windows.Controls.StackPanel.21_5_TableCell' text='0' type='Label'}
+:21_6.0_Label	{container=':System.Windows.Controls.StackPanel.21_6_TableCell' text='0' type='Label'}
+:21_6.V_Label	{container=':System.Windows.Controls.StackPanel.21_6_TableCell' text='V' type='Label'}
+:21_8.270_Label	{container=':System.Windows.Controls.StackPanel.21_8_TableCell' text='270' type='Label'}
+:22_5.0_Label	{container=':System.Windows.Controls.StackPanel.22_5_TableCell' text='0' type='Label'}
+:22_6.0_Label	{container=':System.Windows.Controls.StackPanel.22_6_TableCell' text='0' type='Label'}
+:22_6.V_Label	{container=':System.Windows.Controls.StackPanel.22_6_TableCell' text='V' type='Label'}
+:22_8.270_Label	{container=':System.Windows.Controls.StackPanel.22_8_TableCell' text='270' type='Label'}
+:23_5.0_Label	{container=':System.Windows.Controls.StackPanel.23_5_TableCell' text='0' type='Label'}
+:23_6.270_Label	{container=':System.Windows.Controls.StackPanel.23_6_TableCell' text='270' type='Label'}
+:23_6.V_Label	{container=':System.Windows.Controls.StackPanel.23_6_TableCell' text='V' type='Label'}
+:23_8.270_Label	{container=':System.Windows.Controls.StackPanel.23_8_TableCell' text='270' type='Label'}
+:24_5.0.00_Label	{container=':System.Windows.Controls.StackPanel.24_5_TableCell' text='0.00' type='Label'}
+:24_6.6.00_Label	{container=':System.Windows.Controls.StackPanel.24_6_TableCell' text='6.00' type='Label'}
+:24_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.24_6_TableCell' text='xb0C' type='Label'}
+:24_8.50.00_Label	{container=':System.Windows.Controls.StackPanel.24_8_TableCell' text='50.00' type='Label'}
+:25_5.0_Label	{container=':System.Windows.Controls.StackPanel.25_5_TableCell' text='0' type='Label'}
+:25_6.8_Label	{container=':System.Windows.Controls.StackPanel.25_6_TableCell' text='8' type='Label'}
+:25_6.hour_Label	{container=':System.Windows.Controls.StackPanel.25_6_TableCell' text='hour' type='Label'}
+:25_8.240_Label	{container=':System.Windows.Controls.StackPanel.25_8_TableCell' text='240' type='Label'}
+:26_5.0_Label	{container=':System.Windows.Controls.StackPanel.26_5_TableCell' text='0' type='Label'}
+:26_6.30_Label	{container=':System.Windows.Controls.StackPanel.26_6_TableCell' text='30' type='Label'}
+:26_6.min_Label	{container=':System.Windows.Controls.StackPanel.26_6_TableCell' text='min' type='Label'}
+:26_8.480_Label	{container=':System.Windows.Controls.StackPanel.26_8_TableCell' text='480' type='Label'}
+:27_5.0_Label	{container=':System.Windows.Controls.StackPanel.27_5_TableCell' text='0' type='Label'}
+:27_6.0_Label	{container=':System.Windows.Controls.StackPanel.27_6_TableCell' text='0' type='Label'}
+:27_6.min_Label	{container=':System.Windows.Controls.StackPanel.27_6_TableCell' text='min' type='Label'}
+:27_8.240_Label	{container=':System.Windows.Controls.StackPanel.27_8_TableCell' text='240' type='Label'}
+:28_2_CheckBox	{container=':System.Windows.Controls.StackPanel.28_2_TableCell' text='' type='CheckBox'}
+:28_5.0_Label	{container=':System.Windows.Controls.StackPanel.28_5_TableCell' text='0' type='Label'}
+:28_6.0_Label	{container=':System.Windows.Controls.StackPanel.28_6_TableCell' text='0' type='Label'}
+:28_6.min_Label	{container=':System.Windows.Controls.StackPanel.28_6_TableCell' text='min' type='Label'}
+:28_7_Edit	{container=':System.Windows.Controls.StackPanel.28_7_TableCell' type='Edit'}
+:28_8.60_Label	{container=':System.Windows.Controls.StackPanel.28_8_TableCell' text='60' type='Label'}
+:29_5.0_Label	{container=':System.Windows.Controls.StackPanel.29_5_TableCell' text='0' type='Label'}
+:29_6.0_Label	{container=':System.Windows.Controls.StackPanel.29_6_TableCell' text='0' type='Label'}
+:29_6.hour_Label	{container=':System.Windows.Controls.StackPanel.29_6_TableCell' text='hour' type='Label'}
+:29_8.96_Label	{container=':System.Windows.Controls.StackPanel.29_8_TableCell' text='96' type='Label'}
+:2_0_TableCell	{column='0' container=':KoolProg_Table_2' row='2' type='TableCell'}
+:2_1_Image	{container=':System.Windows.Controls.StackPanel.2_1_TableCell' type='Image'}
+:2_1_TableCell	{column='1' container=':KoolProg_Table_2' row='2' type='TableCell'}
+:2_2_CheckBox	{container=':System.Windows.Controls.StackPanel.2_2_TableCell' text='' type='CheckBox'}
+:2_2_TableCell	{column='2' container=':KoolProg_Table_2' row='2' type='TableCell'}
+:2_3.System.Windows.Controls.Image_Button	{container=':2_3_TableCell' text='System.Windows.Controls.Image' type='Button'}
+:2_3_TableCell	{column='3' container=':KoolProg_Table_2' row='2' type='TableCell'}
+:2_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.2_5_TableCell' text='-100.00' type='Label'}
+:2_5.0.10_Label	{container=':System.Windows.Controls.StackPanel.2_5_TableCell' text='0.10' type='Label'}
+:2_6.2.00_Label	{container=':System.Windows.Controls.StackPanel.2_6_TableCell' text='2.00' type='Label'}
+:2_6.K_Label	{container=':System.Windows.Controls.StackPanel.2_6_TableCell' text='K' type='Label'}
+:2_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.2_6_TableCell' text='xb0C' type='Label'}
+:2_7_Edit	{container=':System.Windows.Controls.StackPanel.2_7_TableCell' type='Edit'}
+:2_8.20.00_Label	{container=':System.Windows.Controls.StackPanel.2_8_TableCell' text='20.00' type='Label'}
+:2_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.2_8_TableCell' text='200.00' type='Label'}
+:30_5.0_Label	{container=':System.Windows.Controls.StackPanel.30_5_TableCell' text='0' type='Label'}
+:30_6.0_Label	{container=':System.Windows.Controls.StackPanel.30_6_TableCell' text='0' type='Label'}
+:30_6.min_Label	{container=':System.Windows.Controls.StackPanel.30_6_TableCell' text='min' type='Label'}
+:30_8.960_Label	{container=':System.Windows.Controls.StackPanel.30_8_TableCell' text='960' type='Label'}
+:31_6.None_Label	{container=':System.Windows.Controls.StackPanel.31_6_TableCell' text='None' type='Label'}
+:32_6.None_Label	{container=':System.Windows.Controls.StackPanel.32_6_TableCell' text='None' type='Label'}
+:33_5.0_Label	{container=':System.Windows.Controls.StackPanel.33_5_TableCell' text='0' type='Label'}
+:33_6.0_Label	{container=':System.Windows.Controls.StackPanel.33_6_TableCell' text='0' type='Label'}
+:33_6.min_Label	{container=':System.Windows.Controls.StackPanel.33_6_TableCell' text='min' type='Label'}
+:33_8.30_Label	{container=':System.Windows.Controls.StackPanel.33_8_TableCell' text='30' type='Label'}
+:34_5.0_Label	{container=':System.Windows.Controls.StackPanel.34_5_TableCell' text='0' type='Label'}
+:34_6.2_Label	{container=':System.Windows.Controls.StackPanel.34_6_TableCell' text='2' type='Label'}
+:34_6.min_Label	{container=':System.Windows.Controls.StackPanel.34_6_TableCell' text='min' type='Label'}
+:34_8.30_Label	{container=':System.Windows.Controls.StackPanel.34_8_TableCell' text='30' type='Label'}
+:35_5.0_Label	{container=':System.Windows.Controls.StackPanel.35_5_TableCell' text='0' type='Label'}
+:35_6.0_Label	{container=':System.Windows.Controls.StackPanel.35_6_TableCell' text='0' type='Label'}
+:35_6.min_Label	{container=':System.Windows.Controls.StackPanel.35_6_TableCell' text='min' type='Label'}
+:35_8.15_Label	{container=':System.Windows.Controls.StackPanel.35_8_TableCell' text='15' type='Label'}
+:36_6.yes_Label	{container=':System.Windows.Controls.StackPanel.36_6_TableCell' text='yes' type='Label'}
+:37_5.0_Label	{container=':System.Windows.Controls.StackPanel.37_5_TableCell' text='0' type='Label'}
+:37_6.5_Label	{container=':System.Windows.Controls.StackPanel.37_6_TableCell' text='5' type='Label'}
+:37_6.sec_Label	{container=':System.Windows.Controls.StackPanel.37_6_TableCell' text='sec' type='Label'}
+:37_8.600_Label	{container=':System.Windows.Controls.StackPanel.37_8_TableCell' text='600' type='Label'}
+:38_6.Off_Label	{container=':System.Windows.Controls.StackPanel.38_6_TableCell' text='Off' type='Label'}
+:39_5.0_Label	{container=':System.Windows.Controls.StackPanel.39_5_TableCell' text='0' type='Label'}
+:39_6.0_Label	{container=':System.Windows.Controls.StackPanel.39_6_TableCell' text='0' type='Label'}
+:39_8.247_Label	{container=':System.Windows.Controls.StackPanel.39_8_TableCell' text='247' type='Label'}
+:3_1_Image	{container=':System.Windows.Controls.StackPanel.3_1_TableCell' type='Image'}
+:3_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.3_5_TableCell' text='-100.00' type='Label'}
+:3_5.0.10_Label	{container=':System.Windows.Controls.StackPanel.3_5_TableCell' text='0.10' type='Label'}
+:3_6.-35.00_Label	{container=':System.Windows.Controls.StackPanel.3_6_TableCell' text='-35.00' type='Label'}
+:3_6.2.00_Label	{container=':System.Windows.Controls.StackPanel.3_6_TableCell' text='2.00' type='Label'}
+:3_6.K_Label	{container=':System.Windows.Controls.StackPanel.3_6_TableCell' text='K' type='Label'}
+:3_6.\\xb0C_Label	{container=':System.Windows.Controls.StackPanel.3_6_TableCell' text='xb0C' type='Label'}
+:3_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.3_6_TableCell' text='xb0C' type='Label'}
+:3_7_ComboBox	{container=':System.Windows.Controls.StackPanel.3_7_TableCell' type='ComboBox'}
+:3_7_Edit	{container=':System.Windows.Controls.StackPanel.3_7_TableCell_2' type='Edit'}
+:3_8.20.00_Label	{container=':System.Windows.Controls.StackPanel.3_8_TableCell' text='20.00' type='Label'}
+:3_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.3_8_TableCell' text='200.00' type='Label'}
+:40_5.0_Label	{container=':System.Windows.Controls.StackPanel.40_5_TableCell' text='0' type='Label'}
+:40_6.0_Label	{container=':System.Windows.Controls.StackPanel.40_6_TableCell' text='0' type='Label'}
+:40_8.999_Label	{container=':System.Windows.Controls.StackPanel.40_8_TableCell' text='999' type='Label'}
+:41_6.Cooling_Label	{container=':System.Windows.Controls.StackPanel.41_6_TableCell' text='Cooling' type='Label'}
+:42_6.0.1_Label	{container=':System.Windows.Controls.StackPanel.42_6_TableCell' text='0.1' type='Label'}
+:44_6.No_Label	{container=':System.Windows.Controls.StackPanel.44_6_TableCell' text='No' type='Label'}
+:45_6.-d-_Label	{container=':System.Windows.Controls.StackPanel.45_6_TableCell' text='-d-' type='Label'}
+:46_6.no_Label	{container=':System.Windows.Controls.StackPanel.46_6_TableCell' text='no' type='Label'}
+:47_6.No_Label	{container=':System.Windows.Controls.StackPanel.47_6_TableCell' text='No' type='Label'}
+:4_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.4_5_TableCell' text='-100.00' type='Label'}
+:4_6.-35.00_Label	{container=':System.Windows.Controls.StackPanel.4_6_TableCell' text='-35.00' type='Label'}
+:4_6.50.00_Label	{container=':System.Windows.Controls.StackPanel.4_6_TableCell' text='50.00' type='Label'}
+:4_6.\\xb0C_Label	{container=':System.Windows.Controls.StackPanel.4_6_TableCell' text='xb0C' type='Label'}
+:4_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.4_6_TableCell' text='xb0C' type='Label'}
+:4_7.50.00_Label	{container=':System.Windows.Controls.StackPanel.4_7_TableCell' text='50.00' type='Label'}
+:4_7.\\xb0C_Label	{container=':System.Windows.Controls.StackPanel.4_7_TableCell' text='xb0C' type='Label'}
+:4_7.xb0C_Label	{container=':System.Windows.Controls.StackPanel.4_7_TableCell' text='xb0C' type='Label'}
+:4_7_Edit	{container=':System.Windows.Controls.StackPanel.4_7_TableCell' type='Edit'}
+:4_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.4_8_TableCell' text='200.00' type='Label'}
+:5_5.-10.00_Label	{container=':System.Windows.Controls.StackPanel.5_5_TableCell' text='-10.00' type='Label'}
+:5_5.-100.00_Label	{container=':System.Windows.Controls.StackPanel.5_5_TableCell' text='-100.00' type='Label'}
+:5_6.0.00_Label	{container=':System.Windows.Controls.StackPanel.5_6_TableCell' text='0.00' type='Label'}
+:5_6.50.00_Label	{container=':System.Windows.Controls.StackPanel.5_6_TableCell' text='50.00' type='Label'}
+:5_6.K_Label	{container=':System.Windows.Controls.StackPanel.5_6_TableCell' text='K' type='Label'}
+:5_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.5_6_TableCell' text='xb0C' type='Label'}
+:5_7_Edit	{container=':System.Windows.Controls.StackPanel.5_7_TableCell' type='Edit'}
+:5_8.10.00_Label	{container=':System.Windows.Controls.StackPanel.5_8_TableCell' text='10.00' type='Label'}
+:5_8.200.00_Label	{container=':System.Windows.Controls.StackPanel.5_8_TableCell' text='200.00' type='Label'}
+:65_2_CheckBox	{container=':System.Windows.Controls.StackPanel.65_2_TableCell' text='' type='CheckBox'}
+:65_7_Edit	{container=':System.Windows.Controls.StackPanel.65_7_TableCell' type='Edit'}
+:6_5.-10.00_Label	{container=':System.Windows.Controls.StackPanel.6_5_TableCell' text='-10.00' type='Label'}
+:6_6.0.00_Label	{container=':System.Windows.Controls.StackPanel.6_6_TableCell' text='0.00' type='Label'}
+:6_6.K_Label	{container=':System.Windows.Controls.StackPanel.6_6_TableCell' text='K' type='Label'}
+:6_8.10.00_Label	{container=':System.Windows.Controls.StackPanel.6_8_TableCell' text='10.00' type='Label'}
+:7_6.xb0C_Label	{container=':System.Windows.Controls.StackPanel.7_6_TableCell' text='xb0C' type='Label'}
+:8_5.-20.00_Label	{container=':System.Windows.Controls.StackPanel.8_5_TableCell' text='-20.00' type='Label'}
+:8_6.0.00_Label	{container=':System.Windows.Controls.StackPanel.8_6_TableCell' text='0.00' type='Label'}
+:8_6.K_Label	{container=':System.Windows.Controls.StackPanel.8_6_TableCell' text='K' type='Label'}
+:8_7_Edit	{container=':System.Windows.Controls.StackPanel.8_7_TableCell' type='Edit'}
+:97_2_CheckBox	{container=':System.Windows.Controls.StackPanel.97_2_TableCell' text='' type='CheckBox'}
+:97_7_Edit	{container=':System.Windows.Controls.StackPanel.97_7_TableCell' type='Edit'}
+:9_2_CheckBox	{container=':System.Windows.Controls.StackPanel.9_2_TableCell' text='' type='CheckBox'}
+:9_5.-50.00_Label	{container=':System.Windows.Controls.StackPanel.9_5_TableCell' text='-50.00' type='Label'}
+:9_6.0.00_Label	{container=':System.Windows.Controls.StackPanel.9_6_TableCell' text='0.00' type='Label'}
+:9_6.K_Label	{container=':System.Windows.Controls.StackPanel.9_6_TableCell' text='K' type='Label'}
+:9_7_Edit	{container=':System.Windows.Controls.StackPanel.9_7_TableCell' type='Edit'}
+:9_8.50.00_Label	{container=':System.Windows.Controls.StackPanel.9_8_TableCell' text='50.00' type='Label'}
+:About.3.1.7.25008_Label	{container=':About_Window' text='3.1.7.25008' type='Label'}
+:About.3.3.15.32739_Label	{container=':About_Window' text='3.3.15.32739' type='Label'}
+:About.3.3.23.29473_Label	{container=':About_Window' text='3.3.23.29473' type='Label'}
+:About.3.3.26.13353_Label	{container=':About_Window' text='3.3.26.13353' type='Label'}
+:About.3.3.29.22507_Label	{container=':About_Window' text='3.3.29.22507' type='Label'}
+:About.3.3.33.14444_Label	{container=':About_Window' text='3.3.33.14444' type='Label'}
+:About.3.3.36.23379_Label	{container=':About_Window' text='3.3.36.23379' type='Label'}
+:About.3.3.46.25792_Label	{container=':About_Window' text='3.3.46.25792' type='Label'}
+:About.About_Label	{container=':About_Window' text='About' type='Label'}
+:About.Close_Button	{container=':About_Window' text='Close' type='Button'}
+:About.GEM_Label	{container=':About_Window' text='GEM' type='Label'}
+:About.KoolProg®_Label	{container=':About_Window' text='KoolProg®' type='Label'}
+:About.License Id_Label	{container=':About_Window' text='License Id' type='Label'}
+:About.License Key_Label	{container=':About_Window' text='License Key' type='Label'}
+:About.Software update_Button	{container=':About_Window' text='Software update' type='Button'}
+:About.Standard_Label	{container=':About_Window' text='Standard' type='Label'}
+:About.UNILEVER_Label	{container=':About_Window' text='UNILEVER' type='Label'}
+:About.Update_Button	{container=':About_Window' text='Update' type='Button'}
+:About.Version_Label	{container=':About_Window' text='Version' type='Label'}
+:About.WESTERN_Label	{container=':About_Window' text='WESTERN' type='Label'}
+:About.X_Button	{container=':About_Window' text='X' type='Button'}
+:About.© 2015-2017 Danfoss A/S.All rights reserved_Label	{container=':About_Window' text='© 2015-2017 Danfoss A/S.All rights reserved' type='Label'}
+:About.© 2015-2018 Danfoss A/S.All rights reserved_Label	{container=':About_Window' text='© 2015-2018 Danfoss A/S.All rights reserved' type='Label'}
+:About_MenuItem	{text='About'}
+:About_Window	{text='About' type='Window'}
+:Actions_HeaderItem	{container=':KoolProg_Table_2' text='Actions' type='HeaderItem'}
+:All.Active Alarms_TreeItem	{container=':All_TreeItem_2' text='Active Alarms' type='TreeItem'}
+:All_TreeItem	{container=':KoolProg_Tree' text='All' type='TreeItem'}
+:All_TreeItem_2	{container=':KoolProg_Tree_3' text='All' type='TreeItem'}
+:Browse For Folder.Cancel_Button	{container=':Browse For Folder_Dialog' text='Cancel' type='Button'}
+:Browse For Folder.Make New Folder_Button	{container=':Browse For Folder_Dialog' text='Make New Folder' type='Button'}
+:Browse For Folder.OK_Button	{container=':Browse For Folder_Dialog' text='OK' type='Button'}
+:Browse For Folder_Dialog	{text='Browse For Folder' type='Dialog'}
+:Browse For Folder_Tree	{container=':Browse For Folder_Dialog' type='Tree'}
+:Close_Button	{text='Close' type='Button'}
+:Code Number.Cancel_Button	{container=':Code Number_Window' text='Cancel' type='Button'}
+:Code Number.Code Number:_Edit	{container=':Code Number_Window' leftObject='{container={text=\\'Code Number\\' type=\\'Window\\'} text=\\'Code Number:\\' type=\\'Label\\'}' type='Edit'}
+:Code Number.File Type:_ComboBox	{container=':Code Number_Window' leftObject='{container={text=\\'Code Number\\' type=\\'Window\\'} text=\\'File Type:\\' type=\\'Label\\'}' type='ComboBox'}
+:Code Number.Ok_Button	{container=':Code Number_Window' text='Ok' type='Button'}
+:Code Number_Window	{text='Code Number' type='Window'}
+:Computer.OS (C:)_TreeItem	{container=':Computer_TreeItem' text='OS (C:)' type='TreeItem'}
+:Computer_TreeItem	{container=':Browse For Folder_Tree' text='Computer' type='TreeItem'}
+:Configurations.New folder_TreeItem	{container=':KoolProg.Configurations_TreeItem' text='New folder' type='TreeItem'}
+:Confirm Save As.No_Button	{container=':Confirm Save As_Dialog' text='No' type='Button'}
+:Confirm Save As.Yes_Button	{container=':Confirm Save As_Dialog' text='Yes' type='Button'}
+:Confirm Save As_Dialog	{text='Confirm Save As' type='Dialog'}
+:Controller Model_Table	{container=':Newproject.Controller Model_TabItem' type='Table'}
+:Controller type_HeaderItem	{container=':KoolProg_Table_2' text='Controller type' type='HeaderItem'}
+:Danfoss.T4CClient.SetParameters+ListFileItems_ListItem	{container=':KoolProg_Window' name='imgSetParams' type='Image'}
+:Danfoss.T4CClient.SetParameters+ListFileItems_ListItem_2	{container=':SetParameters_List_2' text='Danfoss.T4CClient.SetParameters+ListFileItems' type='ListItem'}
+:Danfoss.T4CClient.SetParameters+ListFileItems_ListItem_3	{container=':SetParameters_List_3' text='Danfoss.T4CClient.SetParameters+ListFileItems' type='ListItem'}
+:Danfoss.T4CClient.SetParameters+ListFileItems_WPFControl	{class='System.Windows.Controls.Separator' container=':Danfoss.T4CClient.SetParameters+ListFileItems_ListItem_3' type='WPFControl'}
+:Danfoss.T4CClient.TreeViewParameters.Danfoss.T4CClient.TreeViewParameters_TreeItem	{container=':Danfoss.T4CClient.TreeViewParameters_TreeItem' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters.Danfoss.T4CClient.TreeViewParameters_TreeItem_2	{container=':Danfoss.T4CClient.TreeViewParameters_TreeItem' occurrence='2' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters.Danfoss.T4CClient.TreeViewParameters_TreeItem_3	{container=':Danfoss.T4CClient.TreeViewParameters_TreeItem_4' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters.Danfoss.T4CClient.TreeViewParameters_TreeItem_4	{container=':Danfoss.T4CClient.TreeViewParameters_TreeItem_4' name='name' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters_Image	{container=':Danfoss.T4CClient.TreeViewParameters_TreeItem_2' type='Image'}
+:Danfoss.T4CClient.TreeViewParameters_TreeItem	{container=':KoolProg_Tree' occurrence='2' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters_TreeItem_2	{container=':KoolProg_Tree' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters_TreeItem_3	{container=':KoolProg_Tree' occurrence='3' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters_TreeItem_4	{container=':KoolProg_Tree_2' occurrence='3' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.TreeViewParameters_TreeItem_5	{container=':KoolProg_Tree_2' name='name' text='Danfoss.T4CClient.TreeViewParameters' type='TreeItem'}
+:Danfoss.T4CClient.models.TreeViewParameters_TreeItem	{container=':KoolProg_Tree_2' occurrence='3' text='Danfoss.T4CClient.models.TreeViewParameters' type='TreeItem'}
+:Factory Reset.Cancel_Button	{container=':Factory Reset_Window' text='Cancel' type='Button'}
+:Factory Reset.Do you want to change to factory settings?_Label	{container=':Factory Reset_Window' text='Do you want to change to factory settings?' type='Label'}
+:Factory Reset.In Controller_Button	{container=':Factory Reset_Window' text='In Controller' type='Button'}
+:Factory Reset.In Project_Button	{container=':Factory Reset_Window' text='In Project' type='Button'}
+:Factory Reset.X_Button	{container=':Factory Reset_Window' text='X' type='Button'}
+:Factory Reset_Window	{text='Factory Reset' type='Window'}
+:File Type:..xml_ListItem	{container=':Code Number.File Type:_ComboBox' text='.xml' type='ListItem'}
+:Help.1_Button	{container=':Help_Window' text='1' type='Button'}
+:Help.Close_Button	{container=':Help_Window' text='Close' type='Button'}
+:Help.Help_Label	{container=':Help_Window' text='Help' type='Label'}
+:Help.X_Button	{container=':Help_Window' text='X' type='Button'}
+:Help_MenuItem	{container=':_MenuItem' text='Help' type='MenuItem'}
+:Help_Window	{text='Help' type='Window'}
+:Help_WindowsFormsControl	{class='Danfoss.T4CClient.PDFViewer' container=':Help_Window' type='WindowsFormsControl'}
+:Input/Output.Manual_RadioButton	{container=':KoolProg.Input/Output_TabItem' text='Manual' type='RadioButton'}
+:Input/Output.Standby_RadioButton	{container=':KoolProg.Input/Output_TabItem' text='Standby' type='RadioButton'}
+:Input/Output.Start_RadioButton	{container=':KoolProg.Input/Output_TabItem' text='Start' type='RadioButton'}
+:KoolProg-ServiceTest. Start _Button	{container=':KoolProg-ServiceTest_Window' text=' Start ' type='Button'}
+:KoolProg-ServiceTest.Label:_ComboBox	{container=':KoolProg-ServiceTest_Window' leftObject='{container={text=\\'KoolProg-ServiceTest\\' type=\\'Window\\'} text=\\'Label:\\' type=\\'Label\\'}' type='ComboBox'}
+:KoolProg-ServiceTest.Log interval:_ComboBox	{container=':KoolProg-ServiceTest_Window' leftObject='{container={text=\\'KoolProg-ServiceTest\\' type=\\'Window\\'} text=\\'Log interval:\\' type=\\'Label\\'}' type='ComboBox'}
+:KoolProg-ServiceTest.Reset view_Button	{container=':KoolProg-ServiceTest_Window' text='Reset view' type='Button'}
+:KoolProg-ServiceTest.Start_Button	{container=':KoolProg-ServiceTest_Window' text='Start' type='Button'}
+:KoolProg-ServiceTest.Stop_Button	{container=':KoolProg-ServiceTest_Window' text='Stop' type='Button'}
+:KoolProg-ServiceTest.System.Windows.Controls.Image_Button	{container=':KoolProg-ServiceTest_Window' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg-ServiceTest.Zoom Level:_ComboBox	{container=':KoolProg-ServiceTest_Window' leftObject='{container={text=\\'KoolProg-ServiceTest\\' type=\\'Window\\'} text=\\'Zoom Level:\\' type=\\'Label\\'}' type='ComboBox'}
+:KoolProg-ServiceTest_CheckBox	{container=':KoolProg-ServiceTest_Window' text='' type='CheckBox'}
+:KoolProg-ServiceTest_Window	{text='KoolProg-ServiceTest' type='Window'}
+:KoolProg-ServiceTest_WindowsFormsControl	{class='System.Windows.Forms.DataVisualization.Charting.Chart' container=':KoolProg-ServiceTest_Window' type='WindowsFormsControl'}
+:KoolProg. KoolProg-Version no. 3.1.7.25008_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.1.7.25008' type='Label'}
+:KoolProg. KoolProg-Version no. 3.2.0.25922_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.2.0.25922' type='Label'}
+:KoolProg. KoolProg-Version no. 3.2.11.28360_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.2.11.28360' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.13.16723_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.13.16723' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.13.25815_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.13.25815' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.15.32739_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.15.32739' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.23.29473_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.23.29473' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.26.13353_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.26.13353' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.29.22507_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.29.22507' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.33.14444_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.33.14444' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.36.14207_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.36.14207' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.36.23379_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.36.23379' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.37.27387_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.37.27387' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.40.17986_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.40.17986' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.41.22125_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.41.22125' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.44.26827_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.44.26827' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.46.25792_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.46.25792' type='Label'}
+:KoolProg. KoolProg-Version no. 3.3.47.20760_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3.3.47.20760' type='Label'}
+:KoolProg. KoolProg-Version no. 3NEW ETC.3.15.18575_Label	{container=':KoolProg_Window' text=' KoolProg-Version no. 3NEW ETC.3.15.18575' type='Label'}
+:KoolProg.080G3292_Label	{container=':KoolProg_Window' text='080G3292' type='Label'}
+:KoolProg.080G3500_Label	{container=':KoolProg_Window' text='080G3500' type='Label'}
+:KoolProg.080G4010 EEC Compact 1 Relay 230V_Label	{container=':KoolProg_Window' text='080G4010 EEC Compact 1 Relay 230V' type='Label'}
+:KoolProg.080G4010 ETC- LE 1 Relay 230V_Label	{container=':KoolProg_Window' text='080G4010 ETC- LE 1 Relay 230V' type='Label'}
+:KoolProg.080G4011 EEC Compact 2 Relay 230V_Label	{container=':KoolProg_Window' text='080G4011 EEC Compact 2 Relay 230V' type='Label'}
+:KoolProg.080G4011 ETC- LE 2 Relay 230V_Label	{container=':KoolProg_Window' text='080G4011 ETC- LE 2 Relay 230V' type='Label'}
+:KoolProg.080G4011_Label	{container=':KoolProg_Window' text='080G4011' type='Label'}
+:KoolProg.080G4012 EEC Compact 1 Relay 120V_Label	{container=':KoolProg_Window' text='080G4012 EEC Compact 1 Relay 120V' type='Label'}
+:KoolProg.080G4013 EEC Compact 2 Relay 120V_Label	{container=':KoolProg_Window' text='080G4013 EEC Compact 2 Relay 120V' type='Label'}
+:KoolProg.080G5350_Label	{container=':KoolProg_Window' text='080G5350' type='Label'}
+:KoolProg.080X4010 EEC Compact 1 Relay 230V_Label	{container=':KoolProg_Window' text='080X4010 EEC Compact 1 Relay 230V' type='Label'}
+:KoolProg.080X4011 EEC Compact 2 Relay 230V_Label	{container=':KoolProg_Window' text='080X4011 EEC Compact 2 Relay 230V' type='Label'}
+:KoolProg.080X4011_Label	{container=':KoolProg_Window' text='080X4011' type='Label'}
+:KoolProg.080X4012 EEC Compact 1 Relay 120V_Label	{container=':KoolProg_Window' text='080X4012 EEC Compact 1 Relay 120V' type='Label'}
+:KoolProg.080X4013 EEC Compact 2 Relay 120V_Label	{container=':KoolProg_Window' text='080X4013 EEC Compact 2 Relay 120V' type='Label'}
+:KoolProg.0_Label	{container=':KoolProg_Window' text='0' type='Label'}
+:KoolProg.1.04_Label	{container=':KoolProg_Window' text='1.04' type='Label'}
+:KoolProg.1.08_Label	{container=':KoolProg_Window' text='1.08' type='Label'}
+:KoolProg.1.09_Label	{container=':KoolProg_Window' text='1.09' type='Label'}
+:KoolProg.1.0_Label	{container=':KoolProg_Window' occurrence='2' text='1.0' type='Label'}
+:KoolProg.1.11_Label	{container=':KoolProg_Window' text='1.11' type='Label'}
+:KoolProg.1.12_Label	{container=':KoolProg_Window' text='1.12' type='Label'}
+:KoolProg.120Vac 60Hz_Label	{container=':KoolProg_Window' text='120Vac 60Hz' type='Label'}
+:KoolProg.1H3_STANDARD.xml_Label	{container=':KoolProg_Window' text='1H3_STANDARD.xml' type='Label'}
+:KoolProg.211_App0-squish.xml.xml_Label	{container=':KoolProg_Window' text='211_App0-squish.xml.xml' type='Label'}
+:KoolProg.3.3.13_ETC1RL.xml_Label	{container=':KoolProg_Window' text='3.3.13_ETC1RL.xml' type='Label'}
+:KoolProg.3.3.13_ETC2RL.xml_Label	{container=':KoolProg_Window' text='3.3.13_ETC2RL.xml' type='Label'}
+:KoolProg.3.3.15_EECc11.xml_Label	{container=':KoolProg_Window' text='3.3.15_EECc11.xml' type='Label'}
+:KoolProg.3.3.15_EECc12.xml_Label	{container=':KoolProg_Window' text='3.3.15_EECc12.xml' type='Label'}
+:KoolProg.3.3.15_EECc21.xml_Label	{container=':KoolProg_Window' text='3.3.15_EECc21.xml' type='Label'}
+:KoolProg.3.3.15_EECc22.xml_Label	{container=':KoolProg_Window' text='3.3.15_EECc22.xml' type='Label'}
+:KoolProg.3.3.23_EECc22.xml_Label	{container=':KoolProg_Window' text='3.3.23_EECc22.xml' type='Label'}
+:KoolProg.3.3.26_EECC21.xml_Label	{container=':KoolProg_Window' text='3.3.26_EECC21.xml' type='Label'}
+:KoolProg.3.3.26_EECc11.xml_Label	{container=':KoolProg_Window' text='3.3.26_EECc11.xml' type='Label'}
+:KoolProg.3.3.26_EECc12.xml_Label	{container=':KoolProg_Window' text='3.3.26_EECc12.xml' type='Label'}
+:KoolProg.3.3.26_EECc22.xml_Label	{container=':KoolProg_Window' text='3.3.26_EECc22.xml' type='Label'}
+:KoolProg.3.3.29_EECc11.xml_Label	{container=':KoolProg_Window' text='3.3.29_EECc11.xml' type='Label'}
+:KoolProg.3.3.29_EECc12.xml_Label	{container=':KoolProg_Window' text='3.3.29_EECc12.xml' type='Label'}
+:KoolProg.3.3.29_EECc21.xml_Label	{container=':KoolProg_Window' text='3.3.29_EECc21.xml' type='Label'}
+:KoolProg.3.3.29_EECc22.xml_Label	{container=':KoolProg_Window' text='3.3.29_EECc22.xml' type='Label'}
+:KoolProg.3.3.33_EECC21.xml_Label	{container=':KoolProg_Window' text='3.3.33_EECC21.xml' type='Label'}
+:KoolProg.3.3.33_EECC22.xml_Label	{container=':KoolProg_Window' text='3.3.33_EECC22.xml' type='Label'}
+:KoolProg.3.3.33_EECc11.xml_Label	{container=':KoolProg_Window' text='3.3.33_EECc11.xml' type='Label'}
+:KoolProg.3.3.33_EECc12.xml_Label	{container=':KoolProg_Window' text='3.3.33_EECc12.xml' type='Label'}
+:KoolProg.3.3.33_EECc21.xml_Label	{container=':KoolProg_Window' text='3.3.33_EECc21.xml' type='Label'}
+:KoolProg.3.3.33_EECc22.xml_Label	{container=':KoolProg_Window' text='3.3.33_EECc22.xml' type='Label'}
+:KoolProg.3.3.36_EECc22.xml_Label	{container=':KoolProg_Window' text='3.3.36_EECc22.xml' type='Label'}
+:KoolProg.3.3.37_EECc11.xml_Label	{container=':KoolProg_Window' text='3.3.37_EECc11.xml' type='Label'}
+:KoolProg.3.3.37_EECc12.xml_Label	{container=':KoolProg_Window' text='3.3.37_EECc12.xml' type='Label'}
+:KoolProg.3.3.37_EECc21.xml_Label	{container=':KoolProg_Window' text='3.3.37_EECc21.xml' type='Label'}
+:KoolProg.3.3.37_EECc22.xml_Label	{container=':KoolProg_Window' text='3.3.37_EECc22.xml' type='Label'}
+:KoolProg.3.Hoshizaki_Specialversion_Label	{container=':KoolProg_Window' text='3.Hoshizaki_Specialversion' type='Label'}
+:KoolProg.Admin_Label	{container=':KoolProg_Window' text='Admin' type='Label'}
+:KoolProg.Alarms_TabItem	{container=':KoolProg_Window' text='Alarms' type='TabItem'}
+:KoolProg.App0_Label	{container=':KoolProg_Window' text='App0' type='Label'}
+:KoolProg.App1_Label	{container=':KoolProg_Window' text='App1' type='Label'}
+:KoolProg.Application:_Label	{container=':KoolProg_Window' text='Application:' type='Label'}
+:KoolProg.BROWSE_Button	{container=':KoolProg_Window' text='BROWSE' type='Button'}
+:KoolProg.COPY TO CONTROLLER_Label	{container=':KoolProg_Window' text='COPY TO CONTROLLER' type='Label'}
+:KoolProg.Code Number : _Label	{container=':KoolProg_Window' text='Code Number : ' type='Label'}
+:KoolProg.Code Number:_Label	{container=':KoolProg_Window' text='Code Number:' type='Label'}
+:KoolProg.Configurations_TreeItem	{container=':OS (C:).KoolProg_TreeItem' text='Configurations' type='TreeItem'}
+:KoolProg.Configurations_TreeItem_2	{container=':OSDisk (C:).KoolProg_TreeItem' text='Configurations' type='TreeItem'}
+:KoolProg.Copy to controller_Label	{container=':KoolProg_Window' text='Copy to controller' type='Label'}
+:KoolProg.CountUp Timer(0-,,,)_RadioButton	{container=':KoolProg_Window' text='CountUp Timer(0-,,,)' type='RadioButton'}
+:KoolProg.Countdown Timer(,,,-0) _RadioButton	{container=':KoolProg_Window' text='Countdown Timer(,,,-0) ' type='RadioButton'}
+:KoolProg.Countdown Timer(,,,-0)_RadioButton	{container=':KoolProg_Window' text='Countdown Timer(,,,-0)' type='RadioButton'}
+:KoolProg.Counter:_Label	{container=':KoolProg_Window' text='Counter:' type='Label'}
+:KoolProg.Description:_Label	{container=':KoolProg_Window' text='Description:' type='Label'}
+:KoolProg.EECc11_080X4012.xml_Label	{container=':KoolProg_Window' text='EECc11_080X4012.xml' type='Label'}
+:KoolProg.EECc11_Label	{container=':KoolProg_Window' text='EECc11' type='Label'}
+:KoolProg.EECc12_080X4010.xml_Label	{container=':KoolProg_Window' text='EECc12_080X4010.xml' type='Label'}
+:KoolProg.EECc12_Label	{container=':KoolProg_Window' text='EECc12' type='Label'}
+:KoolProg.EECc21_080X4013.xml_Label	{container=':KoolProg_Window' text='EECc21_080X4013.xml' type='Label'}
+:KoolProg.EECc21_Label	{container=':KoolProg_Window' text='EECc21' type='Label'}
+:KoolProg.EECc22_080X4011.xml_Label	{container=':KoolProg_Window' text='EECc22_080X4011.xml' type='Label'}
+:KoolProg.EECc22_Label	{container=':KoolProg_Window' text='EECc22' type='Label'}
+:KoolProg.EKE 1B_Label	{container=':KoolProg_Window' text='EKE 1B' type='Label'}
+:KoolProg.ERC211_Label	{container=':KoolProg_Window' text='ERC211' type='Label'}
+:KoolProg.ERC214_Label	{container=':KoolProg_Window' text='ERC214' type='Label'}
+:KoolProg.ETC1H3_Label	{container=':KoolProg_Window' text='ETC1H3' type='Label'}
+:KoolProg.ETC1RL_Label	{container=':KoolProg_Window' text='ETC1RL' type='Label'}
+:KoolProg.ETC2RL_Label	{container=':KoolProg_Window' text='ETC2RL' type='Label'}
+:KoolProg.FAVOURITE FILES_Label	{container=':KoolProg_Window' text='FAVOURITE FILES' type='Label'}
+:KoolProg.Input/Output_TabItem	{container=':KoolProg_Window' text='Input/Output' type='TabItem'}
+:KoolProg.KoolProg®_Label	{container=':KoolProg_Window' text='KoolProg®' type='Label'}
+:KoolProg.Multiple controller programming_RadioButton	{container=':KoolProg_Window' text='Multiple controller programming' type='RadioButton'}
+:KoolProg.Not compliant controller_Label	{container=':KoolProg_Window' text='Not compliant controller' type='Label'}
+:KoolProg.PV01_Label	{container=':KoolProg_Window' text='PV01' type='Label'}
+:KoolProg.PV: PV02(SW 1.06.000)_Label	{container=':KoolProg_Window' text='PV: PV02(SW 1.06.000)' type='Label'}
+:KoolProg.Parameters_TabItem	{container=':KoolProg_Window' text='Parameters' type='TabItem'}
+:KoolProg.Please connect a controller!_Label	{container=':KoolProg_Window' text='Please connect a controller!' type='Label'}
+:KoolProg.Power supply:_Label	{container=':KoolProg_Window' text='Power supply:' type='Label'}
+:KoolProg.Product Name:_Label	{container=':KoolProg_Window' text='Product Name:' type='Label'}
+:KoolProg.Product Version:_Label	{container=':KoolProg_Window' text='Product Version:' type='Label'}
+:KoolProg.ProductName:_Label	{container=':KoolProg_Window' text='ProductName:' type='Label'}
+:KoolProg.Project Name:_Label	{container=':KoolProg_Window' text='Project Name:' type='Label'}
+:KoolProg.SERVICE TEST_Label	{container=':KoolProg_Window' text='SERVICE TEST' type='Label'}
+:KoolProg.SET AS FAVOURITE_Button	{container=':KoolProg_Window' text='SET AS FAVOURITE' type='Button'}
+:KoolProg.SET PARAMETERS_Label	{container=':KoolProg_Window' text='SET PARAMETERS' type='Label'}
+:KoolProg.STANDARD_Label	{container=':KoolProg_Window' text='STANDARD' type='Label'}
+:KoolProg.START_Label	{container=':KoolProg_Window' text='START' type='Label'}
+:KoolProg.SV: App0_Label	{container=':KoolProg_Window' text='SV: App0' type='Label'}
+:KoolProg.SV: App2_Label	{container=':KoolProg_Window' text='SV: App2' type='Label'}
+:KoolProg.SV: App4_Label	{container=':KoolProg_Window' text='SV: App4' type='Label'}
+:KoolProg.SW Version:_Label	{container=':KoolProg_Window' text='SW Version:' type='Label'}
+:KoolProg.SW: 1.05_Label	{container=':KoolProg_Window' text='SW: 1.05' type='Label'}
+:KoolProg.SW: 1.11_Label	{container=':KoolProg_Window' text='SW: 1.11' type='Label'}
+:KoolProg.SW: 1.12_Label	{container=':KoolProg_Window' text='SW: 1.12' type='Label'}
+:KoolProg.SWVersion: _Label	{container=':KoolProg_Window' text='SWVersion: ' type='Label'}
+:KoolProg.Select Setting file:_Label	{container=':KoolProg_Window' text='Select Setting file:' type='Label'}
+:KoolProg.Sensor type_Label	{container=':KoolProg_Window' text='Sensor type' type='Label'}
+:KoolProg.Service and test_Label	{container=':KoolProg_Window' text='Service and test' type='Label'}
+:KoolProg.Set Counter:_Label	{container=':KoolProg_Window' text='Set Counter:' type='Label'}
+:KoolProg.Set parameters_Label	{container=':KoolProg_Window' text='Set parameters' type='Label'}
+:KoolProg.Single controller programming_RadioButton	{container=':KoolProg_Window' text='Single controller programming' type='RadioButton'}
+:KoolProg.Single or multiple controller programming:_Label	{container=':KoolProg_Window' text='Single or multiple controller programming:' type='Label'}
+:KoolProg.Software version:_Label	{container=':KoolProg_Window' text='Software version:' type='Label'}
+:KoolProg.System.Windows.Controls.DockPanel_Button	{container=':KoolProg_Window' name='btnSetparameters' text='System.Windows.Controls.DockPanel' type='Button'}
+:KoolProg.System.Windows.Controls.DockPanel_Button_2	{container=':KoolProg_Window' occurrence='2' text='System.Windows.Controls.DockPanel' type='Button'}
+:KoolProg.System.Windows.Controls.DockPanel_Button_3	{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'}
+:KoolProg.System.Windows.Controls.DockPanel_Button_4	{container=':KoolProg_Window' text='System.Windows.Controls.DockPanel' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button	{container=':KoolProg_Window' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_10	{container=':KoolProg_Window' name='btnOpen' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_11	{container=':KoolProg_Window' name='btnOpen' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_12	{container=':KoolProg_Window' occurrence='13' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_13	{container=':KoolProg_Window' occurrence='11' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_14	{container=':KoolProg_Window' occurrence='8' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_15	{container=':KoolProg_Window' name='btnexpandParamHelp' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_16	{container=':KoolProg_Window' occurrence='10' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_17	{container=':KoolProg_Window' occurrence='12' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_2	{container=':KoolProg_Window' occurrence='18' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_3	{container=':KoolProg_Window' name='btnMoreinfo' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_4	{container=':KoolProg_Window' occurrence='3' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_5	{container=':KoolProg_Window' occurrence='4' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_6	{container=':KoolProg_Window' occurrence='5' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_7	{container=':KoolProg_Window' occurrence='6' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_8	{container=':KoolProg_Window' occurrence='17' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.System.Windows.Controls.Image_Button_9	{container=':KoolProg_Window' occurrence='9' text='System.Windows.Controls.Image' type='Button'}
+:KoolProg.This parameter defines the desired cabinet temperature at which compressor cuts out.\nThe set value can be locked or limited to a range with the settings in \\u201cr02\\u201d and \\u201cr03\\u201d._Label	{container=':KoolProg_Window' text='This parameter defines the desired cabinet temperature at which compressor cuts out.\nThe set value can be locked or limited to a range with the settings in u201cr02u201d and u201cr03u201d.' type='Label'}
+:KoolProg.UCconnectedcontrol_WPFControl	{container=':KoolProg_Window' name='UCconnectedcontrol' type='WPFControl'}
+:KoolProg.User_Label	{container=':KoolProg_Window' text='User' type='Label'}
+:KoolProg.View more_Label	{container=':KoolProg_Window' text='View more' type='Label'}
+:KoolProg.i_Button	{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'}
+:KoolProg.i_Button_2	{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'}
+:KoolProg.i_Button_3	{container=':KoolProg_Window' text='i' type='Button'}
+:KoolProg.ucCopyController_WPFControl	{container=':KoolProg_Window' name='ucCopyController' type='WPFControl'}
+:KoolProg.ucParameterDisplay_WPFControl	{container=':KoolProg_Window' name='ucParameterDisplay' type='WPFControl'}
+:KoolProg.www.danfoss.com_Label	{container=':KoolProg_Window' text='www.danfoss.com' type='Label'}
+:KoolProg.下载到控制器_Label	{container=':KoolProg_Window' text='下载到控制器' type='Label'}
+:KoolProg.维护和测试_Label	{container=':KoolProg_Window' text='维护和测试' type='Label'}
+:KoolProg.设置参数_Label	{container=':KoolProg_Window' text='设置参数' type='Label'}
+:KoolProg_Edit	{container=':KoolProg_Window' occurrence='2' type='Edit'}
+:KoolProg_Image	{container=':KoolProg_Window' name='imgSetParams' type='Image'}
+:KoolProg_Image_10	{container=':KoolProg_Window' source='images/setparametericongrey.png' type='Image'}
+:KoolProg_Image_11	{container=':KoolProg_Window' occurrence='20' type='Image'}
+:KoolProg_Image_2	{container=':KoolProg_Window' occurrence='14' type='Image'}
+:KoolProg_Image_3	{container=':KoolProg_Window' occurrence='15' type='Image'}
+:KoolProg_Image_4	{container=':KoolProg_Window' occurrence='17' type='Image'}
+:KoolProg_Image_5	{container=':KoolProg_Window' name='name' type='Image'}
+:KoolProg_Image_6	{container=':KoolProg_Window' type='Image'}
+:KoolProg_Image_7	{container=':KoolProg_Window' occurrence='19' type='Image'}
+:KoolProg_Image_8	{container=':KoolProg_Window' source='images/copyover.png' type='Image'}
+:KoolProg_Image_9	{container=':KoolProg_Window' name='imgProductleft' type='Image'}
+:KoolProg_Label	{container=':KoolProg_Window' occurrence='4' text='' type='Label'}
+:KoolProg_MenuBar	{container=':KoolProg_Window' type='MenuBar'}
+:KoolProg_TabFolder	{container=':KoolProg_Window' type='TabFolder'}
+:KoolProg_Table	{container=':KoolProg_Window' occurrence='5' type='Table'}
+:KoolProg_Table_2	{container=':KoolProg_Window' type='Table'}
+:KoolProg_Table_3	{container=':KoolProg_Window' occurrence='7' type='Table'}
+:KoolProg_Table_4	{container=':KoolProg_Window' occurrence='6' type='Table'}
+:KoolProg_Table_5	{container=':KoolProg_Window' occurrence='4' type='Table'}
+:KoolProg_Tree	{container=':KoolProg_Window' type='Tree'}
+:KoolProg_Tree_2	{container=':KoolProg_Window' occurrence='3' type='Tree'}
+:KoolProg_Tree_3	{container=':KoolProg_Window' occurrence='2' type='Tree'}
+:KoolProg_WPFControl	{class='Danfoss.T4CClient.UcHomePage' container=':KoolProg_Window' type='WPFControl'}
+:KoolProg_Window	{text='KoolProg' type='Window'}
+:Label:_Edit	{container=':KoolProg-ServiceTest.Label:_ComboBox' type='Edit'}
+:Language:.Chinese (Simplified) Legacy_ComboBoxItem	{container=':Settings.Language:_ComboBox' text='Chinese (Simplified) Legacy' type='ComboBoxItem'}
+:Language:.English (United States)_ComboBoxItem	{container=':Settings.Language:_ComboBox' text='English (United States)' type='ComboBoxItem'}
+:Manual_HeaderItem	{container=':KoolProg_Table_3' text='Manual' type='HeaderItem'}
+:MessageBoxDisplay.All parameters will be reset to selected application factory setting and controller will be disconnected_Label	{container=':MessageBoxDisplay_Window' text='All parameters will be reset to selected application factory setting and controller will be disconnected' type='Label'}
+:MessageBoxDisplay.Already added into favourite files._Label	{container=':MessageBoxDisplay_Window' text='Already added into favourite files.' type='Label'}
+:MessageBoxDisplay.Application will close!! Please reopen the tool!!_Label	{container=':MessageBoxDisplay_Window' text='Application will close!! Please reopen the tool!!' type='Label'}
+:MessageBoxDisplay.CANCEL_Button	{container=':MessageBoxDisplay_Window' text='CANCEL' type='Button'}
+:MessageBoxDisplay.Discard changes?_Label	{container=':MessageBoxDisplay_Window' text='Discard changes?' type='Label'}
+:MessageBoxDisplay.Do you want to save the Changes made?_Label	{container=':MessageBoxDisplay_Window' text='Do you want to save the Changes made?' type='Label'}
+:MessageBoxDisplay.Do you want to write data into connected device?_Label	{container=':MessageBoxDisplay_Window' text='Do you want to write data into connected device?' type='Label'}
+:MessageBoxDisplay.File already exists. Do you want to overwrite?_Label	{container=':MessageBoxDisplay_Window' text='File already exists. Do you want to overwrite?' type='Label'}
+:MessageBoxDisplay.Import completed._Label	{container=':MessageBoxDisplay_Window' text='Import completed.' type='Label'}
+:MessageBoxDisplay.Invalid User name and password_Label	{container=':MessageBoxDisplay_Window' text='Invalid User name and password' type='Label'}
+:MessageBoxDisplay.KoolProg_Label	{container=':MessageBoxDisplay_Window' text='KoolProg' type='Label'}
+:MessageBoxDisplay.License key update failed_Label	{container=':MessageBoxDisplay_Window' text='License key update failed' type='Label'}
+:MessageBoxDisplay.License key will be applied only after restarting KoolProg._Label	{container=':MessageBoxDisplay_Window' text='License key will be applied only after restarting KoolProg.' type='Label'}
+:MessageBoxDisplay.License key will be applied only after restarting KoolProg_Label	{container=':MessageBoxDisplay_Window' text='License key will be applied only after restarting KoolProg' type='Label'}
+:MessageBoxDisplay.NO_Button	{container=':MessageBoxDisplay_Window' text='NO' type='Button'}
+:MessageBoxDisplay.OK_Button	{container=':MessageBoxDisplay_Window' text='OK' type='Button'}
+:MessageBoxDisplay.Please Enter Project Name_Label	{container=':MessageBoxDisplay_Window' text='Please Enter Project Name' type='Label'}
+:MessageBoxDisplay.Project already open_Label	{container=':MessageBoxDisplay_Window' text='Project already open' type='Label'}
+:MessageBoxDisplay.Saved Successfully_Label	{container=':MessageBoxDisplay_Window' text='Saved Successfully' type='Label'}
+:MessageBoxDisplay.X_Button	{container=':MessageBoxDisplay_Window' text='X' type='Button'}
+:MessageBoxDisplay.YES_Button	{container=':MessageBoxDisplay_Window' text='YES' type='Button'}
+:MessageBoxDisplay.好_Button	{container=':MessageBoxDisplay_Window' text='好' type='Button'}
+:MessageBoxDisplay.已成功保存_Label	{container=':MessageBoxDisplay_Window' text='已成功保存' type='Label'}
+:MessageBoxDisplay.应用将重启!_Label	{container=':MessageBoxDisplay_Window' text='应用将重启!' type='Label'}
+:MessageBoxDisplay.是_Button	{container=':MessageBoxDisplay_Window' text='是' type='Button'}
+:MessageBoxDisplay.没有_Button	{container=':MessageBoxDisplay_Window' text='没有' type='Button'}
+:MessageBoxDisplay_Window	{text='MessageBoxDisplay' type='Window'}
+:Newproject.\nGive your project a good description and part number to identify it later_Label	{container=':Newproject_Window' text='\nGive your project a good description and part number to identify it later' type='Label'}
+:Newproject.< BACK _Button	{container=':Newproject_Window' text='< BACK ' type='Button'}
+:Newproject.< BACK_Button	{container=':Newproject_Window' text='< BACK' type='Button'}
+:Newproject.CANCEL_Button	{container=':Newproject_Window' text='CANCEL' type='Button'}
+:Newproject.Controller Model_TabItem	{container=':Newproject_Window' text='Controller Model' type='TabItem'}
+:Newproject.EECc11_Label	{container=':Newproject_Window' text='EECc11' type='Label'}
+:Newproject.EECc12_Label	{container=':Newproject_Window' text='EECc12' type='Label'}
+:Newproject.EECc21_Label	{container=':Newproject_Window' text='EECc21' type='Label'}
+:Newproject.EECc22_Label	{container=':Newproject_Window' text='EECc22' type='Label'}
+:Newproject.EKE 1A_Label	{container=':Newproject_Window' text='EKE 1A' type='Label'}
+:Newproject.EKE 1B_Label	{container=':Newproject_Window' text='EKE 1B' type='Label'}
+:Newproject.EKE 1C_Label	{container=':Newproject_Window' text='EKE 1C' type='Label'}
+:Newproject.ERC 211 is a smart multipurpose refrigeration controller designed to fulfill today\\u2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  \\u2022 2 inputs, 1 analogue/digital and 1 analogue only\r\n  \\u2022 1 output for compressor/ heating application (16 Amps)\r\n \r\nKey benefits:\r\n \\u2022 Can be used for both cooling and heating applications\r\n \\u2022 5 inbuilt pre-defined applications for quick set-up\r\n \\u2022 Bigger display with more attractive flat front which is easy to clean\r\n \\u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n \\u2022 Screw connectors\r\n \\u2022 Voltage protection\r\n \\u2022 Condenser cleaning alarm\r\n \\u2022 Day/Night mode\r\n \\u2022 Galvanic isolation_Label	{container=':Newproject_Window' text='ERC 211 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  u2022 2 inputs, 1 analogue/digital and 1 analogue only\r\n  u2022 1 output for compressor/ heating application (16 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation' type='Label'}
+:Newproject.ERC 211 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  u2022 2 inputs, 1 analogue/digital and 1 analogue only\r\n  u2022 1 output for compressor/ heating application (16 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation_Label	{container=':Newproject_Window' text='ERC 211 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  u2022 2 inputs, 1 analogue/digital and 1 analogue only\r\n  u2022 1 output for compressor/ heating application (16 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation' type='Label'}
+:Newproject.ERC 213 is a smart multipurpose refrigeration controller designed to fulfill today\\u2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n \\u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n \\u2022 3 outputs, 1 for compressor (16 Amps), 1 for defrost heater/external alarm (8 Amps) and 1 for evaporator fan (3 Amps)\r\n \r\nKey benefits:\r\n \\u2022 Can be used for both cooling and heating applications\r\n \\u2022 5 inbuilt pre-defined applications for quick set-up\r\n \\u2022 Bigger display with more attractive flat front which is easy to clean\r\n \\u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n \\u2022 Defrost on demand\r\n \\u2022 Smart fan control\r\n \\u2022 Screw connectors\r\n \\u2022 Voltage protection\r\n \\u2022 Condenser cleaning alarm\r\n \\u2022 Day/Night mode\r\n \\u2022 Galvanic isolation_Label	{container=':Newproject_Window' text='ERC 213 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n u2022 3 outputs, 1 for compressor (16 Amps), 1 for defrost heater/external alarm (8 Amps) and 1 for evaporator fan (3 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Defrost on demand\r\n u2022 Smart fan control\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation' type='Label'}
+:Newproject.ERC 213 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n u2022 3 outputs, 1 for compressor (16 Amps), 1 for defrost heater/external alarm (8 Amps) and 1 for evaporator fan (3 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Defrost on demand\r\n u2022 Smart fan control\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation_Label	{container=':Newproject_Window' text='ERC 213 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n u2022 3 outputs, 1 for compressor (16 Amps), 1 for defrost heater/external alarm (8 Amps) and 1 for evaporator fan (3 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Defrost on demand\r\n u2022 Smart fan control\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation' type='Label'}
+:Newproject.ERC 214 is a smart multipurpose refrigeration controller designed to fulfill today\\u2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  \\u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n  \\u2022 4 outputs, 1 for compressor (16 Amps), 1 for defrost heater (8 Amps),1 for evaporator fan (3 Amps), and 1 for external alarm/ cabinet light (2 Amps)\r\n \r\nKey benefits:\r\n \\u2022 Can be used for both cooling and heating applications\r\n \\u2022 5 inbuilt pre-defined applications for quick set-up\r\n \\u2022 Bigger display with more attractive flat front which is easy to clean\r\n \\u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n \\u2022 Defrost on demand\r\n \\u2022 Smart fan control\r\n \\u2022 Cabinet light control\r\n \\u2022 Screw connectors\r\n \\u2022 Voltage protection\r\n \\u2022 Condenser cleaning alarm\r\n \\u2022 Day/Night mode\r\n \\u2022 Galvanic isolation_Label	{container=':Newproject_Window' text='ERC 214 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n  u2022 4 outputs, 1 for compressor (16 Amps), 1 for defrost heater (8 Amps),1 for evaporator fan (3 Amps), and 1 for external alarm/ cabinet light (2 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Defrost on demand\r\n u2022 Smart fan control\r\n u2022 Cabinet light control\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation' type='Label'}
+:Newproject.ERC 214 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n  u2022 4 outputs, 1 for compressor (16 Amps), 1 for defrost heater (8 Amps),1 for evaporator fan (3 Amps), and 1 for external alarm/ cabinet light (2 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Defrost on demand\r\n u2022 Smart fan control\r\n u2022 Cabinet light control\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation_Label	{container=':Newproject_Window' text='ERC 214 is a smart multipurpose refrigeration controller designed to fulfill todayu2019s requirement of commercial refrigeration applications. This controller is suitable for high, medium and low temperature applications with natural, electrical and hot gas defrost compatibilities. Typical applications include Glass door merchandisers, commercial fridges and freezers, cold rooms and various other commercial refrigeration applications.\r\nThe controller comes with four push buttons, a big display, easy and intuitive menu structure and pre-defined applications that ensure ease of use. Controller is loaded with energy efficiency features like smart evaporator fan management, day/night mode and defrosts on demand features. It comes with screw terminal connections for inputs and outputs and Multi-sensor compatibility which gives additional flexibility. \r\n \r\nInput/output highlights:\r\n  u2022 4 inputs, 2 analogue, 1 analogue/digital and 1 digital\r\n  u2022 4 outputs, 1 for compressor (16 Amps), 1 for defrost heater (8 Amps),1 for evaporator fan (3 Amps), and 1 for external alarm/ cabinet light (2 Amps)\r\n \r\nKey benefits:\r\n u2022 Can be used for both cooling and heating applications\r\n u2022 5 inbuilt pre-defined applications for quick set-up\r\n u2022 Bigger display with more attractive flat front which is easy to clean\r\n u2022 Multi-sensor compatibility (NTC 5K, 10K, PTC, PT1000)\r\n u2022 Defrost on demand\r\n u2022 Smart fan control\r\n u2022 Cabinet light control\r\n u2022 Screw connectors\r\n u2022 Voltage protection\r\n u2022 Condenser cleaning alarm\r\n u2022 Day/Night mode\r\n u2022 Galvanic isolation' type='Label'}
+:Newproject.ETC1RL_Label	{container=':Newproject_Window' text='ETC1RL' type='Label'}
+:Newproject.ETC2RL_Label	{container=':Newproject_Window' text='ETC2RL' type='Label'}
+:Newproject.FINISH_Button	{container=':Newproject_Window' text='FINISH' type='Button'}
+:Newproject.NEXT >_Button	{container=':Newproject_Window' text='NEXT >' type='Button'}
+:Newproject.NEXT >_Button_2	{container=':Newproject_Window' occurrence='2' text='NEXT >' type='Button'}
+:Newproject.New project_Label	{container=':Newproject_Window' text='New project' type='Label'}
+:Newproject.One relay compact controller with 120V power supply_Label	{container=':Newproject_Window' text='One relay compact controller with 120V power supply' type='Label'}
+:Newproject.One relay compact controller with 230V power supply_Label	{container=':Newproject_Window' text='One relay compact controller with 230V power supply' type='Label'}
+:Newproject.One relay low cost controller with 120V power supply_Label	{container=':Newproject_Window' text='One relay low cost controller with 120V power supply' type='Label'}
+:Newproject.One relay low cost controller with 230V power supply_Label	{container=':Newproject_Window' text='One relay low cost controller with 230V power supply' type='Label'}
+:Newproject.Product Name_TabItem	{container=':Newproject_Window' text='Product Name' type='TabItem'}
+:Newproject.Select Controller Code number and Software version_Label	{container=':Newproject_Window' text='Select Controller Code number and Software version' type='Label'}
+:Newproject.Select controller model_Label	{container=':Newproject_Window' text='Select controller model' type='Label'}
+:Newproject.The new, maximum flexible pre-programmed EKE controller from Danfoss provides ultimate software control, allowing you to tailor the performance of your system to your exact requirements. EKE is Ideal for controlling a wide range of commercial air conditioning and refrigeration applications, that helps you to achieve the highest efficiency  in the system reducing the operational cost by upto 20% with minimal effort.\r\nEKE is generally used where there is requirement for accurate control of superheat or temperature control in connection with refrigeration. The superheat is regulated to the lowest possible value within short period of time.\r\nThe evaporator is charged optimally even when there are great variations of load resulting in reduction of energy consumption and the operational cost. \r\nApplications: \r\nChillers\r\n\\u2022Processing plant \r\n\\u2022Cold store (air coolers)\r\n\\u2022A/C plant\r\n\\u2022Heat pumps, Residential Heat Pump\r\n\\u2022Air conditioning\r\n\\u2022 Transportation cooling\r\n\\u2022Cabinet cooling \r\n\r\nEKD 316 is a superheat controller that can be used where there are requirements for accurate control of superheat.\r\nTypically it will operate in Commercial air conditioning, heat pumps, commercial refrigeration, food retail and\r\nindustrial application. Compatible valve - Danfoss ETS / ETS C, KVS / KVS C and CCM / CCMT valves._Label	{container=':Newproject_Window' text='The new, maximum flexible pre-programmed EKE controller from Danfoss provides ultimate software control, allowing you to tailor the performance of your system to your exact requirements. EKE is Ideal for controlling a wide range of commercial air conditioning and refrigeration applications, that helps you to achieve the highest efficiency  in the system reducing the operational cost by upto 20% with minimal effort.\r\nEKE is generally used where there is requirement for accurate control of superheat or temperature control in connection with refrigeration. The superheat is regulated to the lowest possible value within short period of time.\r\nThe evaporator is charged optimally even when there are great variations of load resulting in reduction of energy consumption and the operational cost. \r\nApplications: \r\nChillers\r\nu2022Processing plant \r\nu2022Cold store (air coolers)\r\nu2022A/C plant\r\nu2022Heat pumps, Residential Heat Pump\r\nu2022Air conditioning\r\nu2022 Transportation cooling\r\nu2022Cabinet cooling \r\n\r\nEKD 316 is a superheat controller that can be used where there are requirements for accurate control of superheat.\r\nTypically it will operate in Commercial air conditioning, heat pumps, commercial refrigeration, food retail and\r\nindustrial application. Compatible valve - Danfoss ETS / ETS C, KVS / KVS C and CCM / CCMT valves.' type='Label'}
+:Newproject.The new, maximum flexible pre-programmed EKE controller from Danfoss provides ultimate software control, allowing you to tailor the performance of your system to your exact requirements. EKE is Ideal for controlling a wide range of commercial air conditioning and refrigeration applications, that helps you to achieve the highest efficiency  in the system reducing the operational cost by upto 20% with minimal effort.\r\nEKE is generally used where there is requirement for accurate control of superheat or temperature control in connection with refrigeration. The superheat is regulated to the lowest possible value within short period of time.\r\nThe evaporator is charged optimally even when there are great variations of load resulting in reduction of energy consumption and the operational cost. \r\nApplications: \r\nChillers\r\nu2022Processing plant \r\nu2022Cold store (air coolers)\r\nu2022A/C plant\r\nu2022Heat pumps, Residential Heat Pump\r\nu2022Air conditioning\r\nu2022 Transportation cooling\r\nu2022Cabinet cooling \r\n\r\nEKD 316 is a superheat controller that can be used where there are requirements for accurate control of superheat.\r\nTypically it will operate in Commercial air conditioning, heat pumps, commercial refrigeration, food retail and\r\nindustrial application. Compatible valve - Danfoss ETS / ETS C, KVS / KVS C and CCM / CCMT valves._Label	{container=':Newproject_Window' text='The new, maximum flexible pre-programmed EKE controller from Danfoss provides ultimate software control, allowing you to tailor the performance of your system to your exact requirements. EKE is Ideal for controlling a wide range of commercial air conditioning and refrigeration applications, that helps you to achieve the highest efficiency  in the system reducing the operational cost by upto 20% with minimal effort.\r\nEKE is generally used where there is requirement for accurate control of superheat or temperature control in connection with refrigeration. The superheat is regulated to the lowest possible value within short period of time.\r\nThe evaporator is charged optimally even when there are great variations of load resulting in reduction of energy consumption and the operational cost. \r\nApplications: \r\nChillers\r\nu2022Processing plant \r\nu2022Cold store (air coolers)\r\nu2022A/C plant\r\nu2022Heat pumps, Residential Heat Pump\r\nu2022Air conditioning\r\nu2022 Transportation cooling\r\nu2022Cabinet cooling \r\n\r\nEKD 316 is a superheat controller that can be used where there are requirements for accurate control of superheat.\r\nTypically it will operate in Commercial air conditioning, heat pumps, commercial refrigeration, food retail and\r\nindustrial application. Compatible valve - Danfoss ETS / ETS C, KVS / KVS C and CCM / CCMT valves.' type='Label'}
+:Newproject.This is a one relay low cost controller with spindle_Label	{container=':Newproject_Window' text='This is a one relay low cost controller with spindle' type='Label'}
+:Newproject.This is a one relay low cost controller without spindle_Label	{container=':Newproject_Window' text='This is a one relay low cost controller without spindle' type='Label'}
+:Newproject.This is a two relay low cost controller with spindle_Label	{container=':Newproject_Window' text='This is a two relay low cost controller with spindle' type='Label'}
+:Newproject.Two relay compact controller with 120V power supply_Label	{container=':Newproject_Window' text='Two relay compact controller with 120V power supply' type='Label'}
+:Newproject.Two relay compact controller with 230V power supply_Label	{container=':Newproject_Window' text='Two relay compact controller with 230V power supply' type='Label'}
+:Newproject.Two relay low cost controller with 120V power supply_Label	{container=':Newproject_Window' text='Two relay low cost controller with 120V power supply' type='Label'}
+:Newproject.Two relay low cost controller with 230V power supply_Label	{container=':Newproject_Window' text='Two relay low cost controller with 230V power supply' type='Label'}
+:Newproject.Use a wizard for controller configuration_CheckBox	{container=':Newproject_Window' text='Use a wizard for controller configuration' type='CheckBox'}
+:Newproject.X_Button	{container=':Newproject_Window' text='X' type='Button'}
+:Newproject_Image	{container=':Newproject_Window' occurrence='2' type='Image'}
+:Newproject_Image_2	{container=':Newproject_Window' type='Image'}
+:Newproject_Image_3	{container=':Newproject_Window' occurrence='3' type='Image'}
+:Newproject_TabFolder	{container=':Newproject_Window' type='TabFolder'}
+:Newproject_Window	{text='Newproject' type='Window'}
+:OS (C:).KoolProg_TreeItem	{container=':Computer.OS (C:)_TreeItem' text='KoolProg' type='TreeItem'}
+:OSDisk (C:).KoolProg_TreeItem	{container=':This PC.OSDisk (C:)_TreeItem' text='KoolProg' type='TreeItem'}
+:Open.Cancel_Button	{container=':Open_Dialog' text='Cancel' type='Button'}
+:Open.File name:_Label	{container=':Open_Dialog' text='File name:' type='Label'}
+:Open.OK_Button	{container=':Open_Dialog' text='OK' type='Button'}
+:Open.Open_RadioButton	{container=':Open_Dialog' text='Open' type='RadioButton'}
+:Open_CheckBox	{container=':Open_Dialog' text='Open' type='CheckBox'}
+:Open_Dialog	{text='Open' type='Dialog'}
+:Open_Edit	{container=':Open_Dialog' type='Edit'}
+:Product Name.Application::_ComboBox	{container=':Newproject.Product Name_TabItem' leftObject='{container={container={text=\\'Newproject\\' type=\\'Window\\'} text=\\'Product Name\\' type=\\'TabItem\\'} text=\\'Application::\\' type=\\'Label\\'}' type='ComboBox'}
+:Product Name.Application:_ComboBox	{container=':Newproject.Product Name_TabItem' leftObject='{container={container={text=\\'Newproject\\' type=\\'Window\\'} text=\\'Product Name\\' type=\\'TabItem\\'} text=\\'Application:\\' type=\\'Label\\'}' type='ComboBox'}
+:Product Name.Code Number:_ComboBox	{container=':Newproject.Product Name_TabItem' leftObject='{container={container={text=\\'Newproject\\' type=\\'Window\\'} text=\\'Product Name\\' type=\\'TabItem\\'} text=\\'Code Number:\\' type=\\'Label\\'}' type='ComboBox'}
+:Product Name.Code Number:_Label	{container=':Newproject.Product Name_TabItem' text='Code Number:' type='Label'}
+:Product Name.Give your project filename and description_Label	{container=':Newproject.Product Name_TabItem' text='Give your project filename and description' type='Label'}
+:Product Name.Product Version:_Label	{container=':Newproject.Product Name_TabItem' text='Product Version:' type='Label'}
+:Product Name.Project Description (Max 250 Characters)_Edit	{aboveObject=':Product Name.Project Description (Max 250 Characters)_Label' container=':Newproject.Product Name_TabItem' type='Edit'}
+:Product Name.Project Description (Max 250 Characters)_Label	{container=':Newproject.Product Name_TabItem' text='Project Description (Max 250 Characters)' type='Label'}
+:Product Name.Project Name (Max 20 Characters)_Label	{container=':Newproject.Product Name_TabItem' text='Project Name (Max 20 Characters)' type='Label'}
+:Product Name.Spindle:_ComboBox	{container=':Newproject.Product Name_TabItem' leftObject='{container={container={text=\\'Newproject\\' type=\\'Window\\'} text=\\'Product Name\\' type=\\'TabItem\\'} text=\\'Spindle:\\' type=\\'Label\\'}' type='ComboBox'}
+:Product Name.System.Windows.Controls.StackPanel_Edit	{aboveObject=':Product Name.System.Windows.Controls.StackPanel_Label' container=':Newproject.Product Name_TabItem' type='Edit'}
+:Product Name.System.Windows.Controls.StackPanel_Label	{container=':Newproject.Product Name_TabItem' text='System.Windows.Controls.StackPanel' type='Label'}
+:Product Name_ComboBox	{container=':Newproject.Product Name_TabItem' occurrence='3' type='ComboBox'}
+:Product Name_ComboBox_2	{container=':Newproject.Product Name_TabItem' occurrence='4' type='ComboBox'}
+:Product information.EECc22_Label	{container=':Product information_Window' text='EECc22' type='Label'}
+:Product information.ETC2RL_Label	{container=':Product information_Window' text='ETC2RL' type='Label'}
+:Product information.Product information_Label	{container=':Product information_Window' text='Product information' type='Label'}
+:Product information.This is a two relay low cost controller with spindle_Label	{container=':Product information_Window' text='This is a two relay low cost controller with spindle' type='Label'}
+:Product information.Two relay compact controller with 230V power supply_Label	{container=':Product information_Window' text='Two relay compact controller with 230V power supply' type='Label'}
+:Product information.Two relay low cost controller with 230V power supply_Label	{container=':Product information_Window' text='Two relay low cost controller with 230V power supply' type='Label'}
+:Product information.X_Button	{container=':Product information_Window' text='X' type='Button'}
+:Product information_Image	{container=':Product information_Window' type='Image'}
+:Product information_Image_2	{container=':Product information_Window' occurrence='2' type='Image'}
+:Product information_ScrollBar	{container=':Product information_Window' orientation='vertical' type='ScrollBar'}
+:Product information_Window	{text='Product information' type='Window'}
+:Project name_HeaderItem	{container=':KoolProg_Table_2' text='Project name' type='HeaderItem'}
+:Project path_HeaderItem	{container=':KoolProg_Table_2' text='Project path' type='HeaderItem'}
+:Save As.Cancel_Button	{container=':Save As_Dialog' text='Cancel' type='Button'}
+:Save As.Save_Button	{container=':Save As_Dialog' text='Save' type='Button'}
+:Save As_ComboBox	{container=':Save As_Dialog' occurrence='2' type='ComboBox'}
+:Save As_Dialog	{text='Save As' type='Dialog'}
+:Save As_Edit	{container=':Save As_Dialog' type='Edit'}
+:SetParameters.Project_Label	{container=':SetParameters_Window' text='Project' type='Label'}
+:SetParameters.Recent Projects_Label	{container=':SetParameters_Window' text='Recent Projects' type='Label'}
+:SetParameters.Set parameter_Label	{container=':SetParameters_Window' text='Set parameter' type='Label'}
+:SetParameters.X_Button	{container=':SetParameters_Window' text='X' type='Button'}
+:SetParameters_List	{container=':SetParameters_Window' occurrence='2' type='List'}
+:SetParameters_List_2	{class='Danfoss.T4CClient.UcHomePage' container=':KoolProg_Window' type='WPFControl'}
+:SetParameters_List_3	{container=':SetParameters_Window' type='List'}
+:SetParameters_List_4	{container=':SetParameters_Window' occurrence='3' type='List'}
+:SetParameters_Window	{text='SetParameters' type='Window'}
+:Settings.* Passwords are case sensitive_Label	{container=':Settings_Window' text='* Passwords are case sensitive' type='Label'}
+:Settings.Browse.._Button	{container=':Settings_Window' text='Browse..' type='Button'}
+:Settings.CAN Baudrate:_ComboBox	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'CAN Baudrate:\\' type=\\'Label\\'}' type='ComboBox'}
+:Settings.CAN Baudrate:_Label	{container=':Settings_Window' text='CAN Baudrate:' type='Label'}
+:Settings.CAN 波特率:_ComboBox	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'CAN 波特率:\\' type=\\'Label\\'}' type='ComboBox'}
+:Settings.CAN 波特率:_Label	{container=':Settings_Window' text='CAN 波特率:' type='Label'}
+:Settings.Cancel_Button	{container=':Settings_Window' text='Cancel' type='Button'}
+:Settings.Confirm password:_Edit	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'Confirm password:\\' type=\\'Label\\'}' type='Edit'}
+:Settings.Confirm password:_Label	{container=':Settings_Window' text='Confirm password:' type='Label'}
+:Settings.Language:_ComboBox	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'Language:\\' type=\\'Label\\'}' type='ComboBox'}
+:Settings.Language:_Label	{container=':Settings_Window' text='Language:' type='Label'}
+:Settings.Password:_Edit	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'Password:\\' type=\\'Label\\'}' type='Edit'}
+:Settings.Password:_Label	{container=':Settings_Window' text='Password:' type='Label'}
+:Settings.Passwords Does not Match!_Label	{container=':Settings_Window' text='Passwords Does not Match!' type='Label'}
+:Settings.Preferences_Label	{container=':Settings_Window' text='Preferences' type='Label'}
+:Settings.Save Files on:_Edit	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'Save Files on:\\' type=\\'Label\\'}' type='Edit'}
+:Settings.Save Files on:_Label	{container=':Settings_Window' text='Save Files on:' type='Label'}
+:Settings.Save_Button	{container=':Settings_Window' text='Save' type='Button'}
+:Settings.Show password_CheckBox	{container=':Settings_Window' text='Show password' type='CheckBox'}
+:Settings.Temperature Unit:_Label	{container=':Settings_Window' text='Temperature Unit:' type='Label'}
+:Settings.Unit:_ComboBox	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'Unit:\\' type=\\'Label\\'}' type='ComboBox'}
+:Settings.Unit:_Label	{container=':Settings_Window' text='Unit:' type='Label'}
+:Settings.Use password protection_CheckBox	{container=':Settings_Window' text='Use password protection' type='CheckBox'}
+:Settings.X_Button	{container=':Settings_Window' text='X' type='Button'}
+:Settings.使用密码保护_CheckBox	{container=':Settings_Window' text='使用密码保护' type='CheckBox'}
+:Settings.保存_Button	{container=':Settings_Window' text='保存' type='Button'}
+:Settings.保存文件到 :_Label	{container=':Settings_Window' text='保存文件到 :' type='Label'}
+:Settings.单位:_ComboBox	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'单位:\\' type=\\'Label\\'}' type='ComboBox'}
+:Settings.单位:_Label	{container=':Settings_Window' text='单位:' type='Label'}
+:Settings.取消_Button	{container=':Settings_Window' text='取消' type='Button'}
+:Settings.属性设置_Label	{container=':Settings_Window' text='属性设置' type='Label'}
+:Settings.浏览..._Button	{container=':Settings_Window' text='浏览...' type='Button'}
+:Settings.语言:_ComboBox	{container=':Settings_Window' leftObject='{container={text=\\'Settings\\' type=\\'Window\\'} text=\\'语言:\\' type=\\'Label\\'}' type='ComboBox'}
+:Settings.语言:_Label	{container=':Settings_Window' text='语言:' type='Label'}
+:Settings_Edit	{container=':Settings_Window' occurrence='2' type='Edit'}
+:Settings_Edit_2	{container=':Settings_Window' occurrence='3' type='Edit'}
+:Settings_Edit_3	{container=':Settings_Window' occurrence='4' type='Edit'}
+:Settings_Window	{text='Settings' type='Window'}
+:System.Windows.Controls.DockPanel.New_Label	{container=':System.Windows.Controls.DockPanel_ListItem' text='New' type='Label'}
+:System.Windows.Controls.DockPanel.Open_Label	{container=':System.Windows.Controls.DockPanel_ListItem_3' text='Open' type='Label'}
+:System.Windows.Controls.DockPanel.Upload  from controller_Label	{container=':System.Windows.Controls.DockPanel_ListItem_2' text='Upload  from controller' type='Label'}
+:System.Windows.Controls.DockPanel_Image	{container=':System.Windows.Controls.DockPanel_ListItem' type='Image'}
+:System.Windows.Controls.DockPanel_ListItem	{container=':SetParameters_List' text='System.Windows.Controls.DockPanel' type='ListItem'}
+:System.Windows.Controls.DockPanel_ListItem_2	{container=':SetParameters_List' occurrence='2' text='System.Windows.Controls.DockPanel' type='ListItem'}
+:System.Windows.Controls.DockPanel_ListItem_3	{container=':SetParameters_List' occurrence='3' text='System.Windows.Controls.DockPanel' type='ListItem'}
+:System.Windows.Controls.StackPanel.0_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.0_1_TableCell	{column='1' container=':System.Windows.Controls.StackPanel_Expander_6' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.0_3_TableCell	{column='3' container=':System.Windows.Controls.StackPanel_Expander_6' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.0_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_6' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.0_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_6' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.0_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_6' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.0_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_6' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.0_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_6' row='0' type='TableCell'}
+:System.Windows.Controls.StackPanel.10_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_5' row='10' type='TableCell'}
+:System.Windows.Controls.StackPanel.10_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='10' type='TableCell'}
+:System.Windows.Controls.StackPanel.10_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='10' type='TableCell'}
+:System.Windows.Controls.StackPanel.10_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='10' type='TableCell'}
+:System.Windows.Controls.StackPanel.10_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='10' type='TableCell'}
+:System.Windows.Controls.StackPanel.11_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_3' row='11' type='TableCell'}
+:System.Windows.Controls.StackPanel.11_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_6' row='11' type='TableCell'}
+:System.Windows.Controls.StackPanel.11_4_TableCell_2	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='11' type='TableCell'}
+:System.Windows.Controls.StackPanel.11_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='11' type='TableCell'}
+:System.Windows.Controls.StackPanel.11_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='11' type='TableCell'}
+:System.Windows.Controls.StackPanel.11_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_6' row='11' type='TableCell'}
+:System.Windows.Controls.StackPanel.11_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='11' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_3' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_2_TableCell	{column='2' container=':System.Windows.Controls.StackPanel_Expander_6' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_6' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_7_TableCell_2	{column='7' container=':System.Windows.Controls.StackPanel_Expander_10' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.12_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='12' type='TableCell'}
+:System.Windows.Controls.StackPanel.13_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_3' row='13' type='TableCell'}
+:System.Windows.Controls.StackPanel.13_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='13' type='TableCell'}
+:System.Windows.Controls.StackPanel.13_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='13' type='TableCell'}
+:System.Windows.Controls.StackPanel.13_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='13' type='TableCell'}
+:System.Windows.Controls.StackPanel.13_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='13' type='TableCell'}
+:System.Windows.Controls.StackPanel.14_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_4' row='14' type='TableCell'}
+:System.Windows.Controls.StackPanel.14_0_TableCell_2	{column='0' container=':System.Windows.Controls.StackPanel_Expander_3' row='14' type='TableCell'}
+:System.Windows.Controls.StackPanel.14_1_TableCell	{column='1' container=':System.Windows.Controls.StackPanel_Expander_7' row='14' type='TableCell'}
+:System.Windows.Controls.StackPanel.14_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='14' type='TableCell'}
+:System.Windows.Controls.StackPanel.14_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='14' type='TableCell'}
+:System.Windows.Controls.StackPanel.14_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='14' type='TableCell'}
+:System.Windows.Controls.StackPanel.14_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='14' type='TableCell'}
+:System.Windows.Controls.StackPanel.15_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_4' row='15' type='TableCell'}
+:System.Windows.Controls.StackPanel.15_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='15' type='TableCell'}
+:System.Windows.Controls.StackPanel.15_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='15' type='TableCell'}
+:System.Windows.Controls.StackPanel.15_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='15' type='TableCell'}
+:System.Windows.Controls.StackPanel.15_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='15' type='TableCell'}
+:System.Windows.Controls.StackPanel.16_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_4' row='16' type='TableCell'}
+:System.Windows.Controls.StackPanel.16_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='16' type='TableCell'}
+:System.Windows.Controls.StackPanel.16_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='16' type='TableCell'}
+:System.Windows.Controls.StackPanel.16_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='16' type='TableCell'}
+:System.Windows.Controls.StackPanel.16_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='16' type='TableCell'}
+:System.Windows.Controls.StackPanel.17_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='17' type='TableCell'}
+:System.Windows.Controls.StackPanel.17_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='17' type='TableCell'}
+:System.Windows.Controls.StackPanel.17_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='17' type='TableCell'}
+:System.Windows.Controls.StackPanel.17_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='17' type='TableCell'}
+:System.Windows.Controls.StackPanel.18_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='18' type='TableCell'}
+:System.Windows.Controls.StackPanel.18_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='18' type='TableCell'}
+:System.Windows.Controls.StackPanel.18_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='18' type='TableCell'}
+:System.Windows.Controls.StackPanel.18_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='18' type='TableCell'}
+:System.Windows.Controls.StackPanel.19_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='19' type='TableCell'}
+:System.Windows.Controls.StackPanel.19_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='19' type='TableCell'}
+:System.Windows.Controls.StackPanel.19_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='19' type='TableCell'}
+:System.Windows.Controls.StackPanel.19_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='19' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_1_TableCell	{column='1' container=':System.Windows.Controls.StackPanel_Expander_6' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_3_TableCell	{column='3' container=':System.Windows.Controls.StackPanel_Expander_6' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_3_TableCell_2	{column='3' container=':System.Windows.Controls.StackPanel_Expander_7' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_4_TableCell_2	{column='4' container=':System.Windows.Controls.StackPanel_Expander_6' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_7' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.1_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='1' type='TableCell'}
+:System.Windows.Controls.StackPanel.20_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='20' type='TableCell'}
+:System.Windows.Controls.StackPanel.20_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='20' type='TableCell'}
+:System.Windows.Controls.StackPanel.21_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='21' type='TableCell'}
+:System.Windows.Controls.StackPanel.21_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='21' type='TableCell'}
+:System.Windows.Controls.StackPanel.21_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='21' type='TableCell'}
+:System.Windows.Controls.StackPanel.21_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='21' type='TableCell'}
+:System.Windows.Controls.StackPanel.22_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='22' type='TableCell'}
+:System.Windows.Controls.StackPanel.22_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='22' type='TableCell'}
+:System.Windows.Controls.StackPanel.22_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='22' type='TableCell'}
+:System.Windows.Controls.StackPanel.22_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='22' type='TableCell'}
+:System.Windows.Controls.StackPanel.23_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_10' row='23' type='TableCell'}
+:System.Windows.Controls.StackPanel.23_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_10' row='23' type='TableCell'}
+:System.Windows.Controls.StackPanel.23_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_10' row='23' type='TableCell'}
+:System.Windows.Controls.StackPanel.23_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_10' row='23' type='TableCell'}
+:System.Windows.Controls.StackPanel.24_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='24' type='TableCell'}
+:System.Windows.Controls.StackPanel.24_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_8' row='24' type='TableCell'}
+:System.Windows.Controls.StackPanel.24_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='24' type='TableCell'}
+:System.Windows.Controls.StackPanel.24_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_8' row='24' type='TableCell'}
+:System.Windows.Controls.StackPanel.25_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='25' type='TableCell'}
+:System.Windows.Controls.StackPanel.25_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_8' row='25' type='TableCell'}
+:System.Windows.Controls.StackPanel.25_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='25' type='TableCell'}
+:System.Windows.Controls.StackPanel.25_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_8' row='25' type='TableCell'}
+:System.Windows.Controls.StackPanel.26_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='26' type='TableCell'}
+:System.Windows.Controls.StackPanel.26_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_8' row='26' type='TableCell'}
+:System.Windows.Controls.StackPanel.26_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='26' type='TableCell'}
+:System.Windows.Controls.StackPanel.26_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_8' row='26' type='TableCell'}
+:System.Windows.Controls.StackPanel.27_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='27' type='TableCell'}
+:System.Windows.Controls.StackPanel.27_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_8' row='27' type='TableCell'}
+:System.Windows.Controls.StackPanel.27_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='27' type='TableCell'}
+:System.Windows.Controls.StackPanel.27_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_8' row='27' type='TableCell'}
+:System.Windows.Controls.StackPanel.28_2_TableCell	{column='2' container=':System.Windows.Controls.StackPanel_Expander_7' row='28' type='TableCell'}
+:System.Windows.Controls.StackPanel.28_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='28' type='TableCell'}
+:System.Windows.Controls.StackPanel.28_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_8' row='28' type='TableCell'}
+:System.Windows.Controls.StackPanel.28_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='28' type='TableCell'}
+:System.Windows.Controls.StackPanel.28_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_7' row='28' type='TableCell'}
+:System.Windows.Controls.StackPanel.28_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_8' row='28' type='TableCell'}
+:System.Windows.Controls.StackPanel.29_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='29' type='TableCell'}
+:System.Windows.Controls.StackPanel.29_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_8' row='29' type='TableCell'}
+:System.Windows.Controls.StackPanel.29_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='29' type='TableCell'}
+:System.Windows.Controls.StackPanel.29_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_8' row='29' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_1_TableCell	{column='1' container=':System.Windows.Controls.StackPanel_Expander_6' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_2_TableCell	{column='2' container=':System.Windows.Controls.StackPanel_Expander_7' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_7' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.2_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='2' type='TableCell'}
+:System.Windows.Controls.StackPanel.30_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='30' type='TableCell'}
+:System.Windows.Controls.StackPanel.30_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_8' row='30' type='TableCell'}
+:System.Windows.Controls.StackPanel.30_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='30' type='TableCell'}
+:System.Windows.Controls.StackPanel.30_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_8' row='30' type='TableCell'}
+:System.Windows.Controls.StackPanel.31_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='31' type='TableCell'}
+:System.Windows.Controls.StackPanel.31_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='31' type='TableCell'}
+:System.Windows.Controls.StackPanel.32_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_8' row='32' type='TableCell'}
+:System.Windows.Controls.StackPanel.32_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_8' row='32' type='TableCell'}
+:System.Windows.Controls.StackPanel.33_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_11' row='33' type='TableCell'}
+:System.Windows.Controls.StackPanel.33_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_11' row='33' type='TableCell'}
+:System.Windows.Controls.StackPanel.33_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_11' row='33' type='TableCell'}
+:System.Windows.Controls.StackPanel.33_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_11' row='33' type='TableCell'}
+:System.Windows.Controls.StackPanel.34_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_11' row='34' type='TableCell'}
+:System.Windows.Controls.StackPanel.34_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_11' row='34' type='TableCell'}
+:System.Windows.Controls.StackPanel.34_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_11' row='34' type='TableCell'}
+:System.Windows.Controls.StackPanel.34_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_11' row='34' type='TableCell'}
+:System.Windows.Controls.StackPanel.35_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_11' row='35' type='TableCell'}
+:System.Windows.Controls.StackPanel.35_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_11' row='35' type='TableCell'}
+:System.Windows.Controls.StackPanel.35_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_11' row='35' type='TableCell'}
+:System.Windows.Controls.StackPanel.35_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_11' row='35' type='TableCell'}
+:System.Windows.Controls.StackPanel.36_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_11' row='36' type='TableCell'}
+:System.Windows.Controls.StackPanel.36_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_11' row='36' type='TableCell'}
+:System.Windows.Controls.StackPanel.37_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='37' type='TableCell'}
+:System.Windows.Controls.StackPanel.37_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_9' row='37' type='TableCell'}
+:System.Windows.Controls.StackPanel.37_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='37' type='TableCell'}
+:System.Windows.Controls.StackPanel.37_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_9' row='37' type='TableCell'}
+:System.Windows.Controls.StackPanel.38_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='38' type='TableCell'}
+:System.Windows.Controls.StackPanel.38_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='38' type='TableCell'}
+:System.Windows.Controls.StackPanel.39_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='39' type='TableCell'}
+:System.Windows.Controls.StackPanel.39_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_9' row='39' type='TableCell'}
+:System.Windows.Controls.StackPanel.39_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='39' type='TableCell'}
+:System.Windows.Controls.StackPanel.39_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_9' row='39' type='TableCell'}
+:System.Windows.Controls.StackPanel.39_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_9' row='39' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_2' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_0_TableCell_2	{column='0' container=':System.Windows.Controls.StackPanel_Expander' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_1_TableCell	{column='1' container=':System.Windows.Controls.StackPanel_Expander_6' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_6' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_7_TableCell_2	{column='7' container=':System.Windows.Controls.StackPanel_Expander_7' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.3_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='3' type='TableCell'}
+:System.Windows.Controls.StackPanel.40_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='40' type='TableCell'}
+:System.Windows.Controls.StackPanel.40_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_9' row='40' type='TableCell'}
+:System.Windows.Controls.StackPanel.40_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='40' type='TableCell'}
+:System.Windows.Controls.StackPanel.40_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_9' row='40' type='TableCell'}
+:System.Windows.Controls.StackPanel.41_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='41' type='TableCell'}
+:System.Windows.Controls.StackPanel.41_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='41' type='TableCell'}
+:System.Windows.Controls.StackPanel.42_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='42' type='TableCell'}
+:System.Windows.Controls.StackPanel.42_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='42' type='TableCell'}
+:System.Windows.Controls.StackPanel.43_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='43' type='TableCell'}
+:System.Windows.Controls.StackPanel.43_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_9' row='43' type='TableCell'}
+:System.Windows.Controls.StackPanel.44_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='44' type='TableCell'}
+:System.Windows.Controls.StackPanel.44_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='44' type='TableCell'}
+:System.Windows.Controls.StackPanel.45_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_9' row='45' type='TableCell'}
+:System.Windows.Controls.StackPanel.45_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_9' row='45' type='TableCell'}
+:System.Windows.Controls.StackPanel.46_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_12' row='46' type='TableCell'}
+:System.Windows.Controls.StackPanel.46_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_12' row='46' type='TableCell'}
+:System.Windows.Controls.StackPanel.47_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_12' row='47' type='TableCell'}
+:System.Windows.Controls.StackPanel.47_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_12' row='47' type='TableCell'}
+:System.Windows.Controls.StackPanel.4_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_2' row='4' type='TableCell'}
+:System.Windows.Controls.StackPanel.4_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='4' type='TableCell'}
+:System.Windows.Controls.StackPanel.4_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='4' type='TableCell'}
+:System.Windows.Controls.StackPanel.4_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='4' type='TableCell'}
+:System.Windows.Controls.StackPanel.4_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_7' row='4' type='TableCell'}
+:System.Windows.Controls.StackPanel.4_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='4' type='TableCell'}
+:System.Windows.Controls.StackPanel.5_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_2' row='5' type='TableCell'}
+:System.Windows.Controls.StackPanel.5_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='5' type='TableCell'}
+:System.Windows.Controls.StackPanel.5_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='5' type='TableCell'}
+:System.Windows.Controls.StackPanel.5_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='5' type='TableCell'}
+:System.Windows.Controls.StackPanel.5_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_7' row='5' type='TableCell'}
+:System.Windows.Controls.StackPanel.5_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='5' type='TableCell'}
+:System.Windows.Controls.StackPanel.65_2_TableCell	{column='2' container=':System.Windows.Controls.StackPanel_Expander_8' row='65' type='TableCell'}
+:System.Windows.Controls.StackPanel.65_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_8' row='65' type='TableCell'}
+:System.Windows.Controls.StackPanel.6_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_2' row='6' type='TableCell'}
+:System.Windows.Controls.StackPanel.6_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='6' type='TableCell'}
+:System.Windows.Controls.StackPanel.6_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='6' type='TableCell'}
+:System.Windows.Controls.StackPanel.6_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='6' type='TableCell'}
+:System.Windows.Controls.StackPanel.6_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='6' type='TableCell'}
+:System.Windows.Controls.StackPanel.7_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_2' row='7' type='TableCell'}
+:System.Windows.Controls.StackPanel.7_0_TableCell_2	{column='0' container=':System.Windows.Controls.StackPanel_Expander_5' row='7' type='TableCell'}
+:System.Windows.Controls.StackPanel.7_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='7' type='TableCell'}
+:System.Windows.Controls.StackPanel.7_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='7' type='TableCell'}
+:System.Windows.Controls.StackPanel.8_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_5' row='8' type='TableCell'}
+:System.Windows.Controls.StackPanel.8_0_TableCell_2	{column='0' container=':System.Windows.Controls.StackPanel_Expander_2' row='8' type='TableCell'}
+:System.Windows.Controls.StackPanel.8_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_6' row='8' type='TableCell'}
+:System.Windows.Controls.StackPanel.8_4_TableCell_2	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='8' type='TableCell'}
+:System.Windows.Controls.StackPanel.8_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='8' type='TableCell'}
+:System.Windows.Controls.StackPanel.8_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='8' type='TableCell'}
+:System.Windows.Controls.StackPanel.8_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_6' row='8' type='TableCell'}
+:System.Windows.Controls.StackPanel.97_2_TableCell	{column='2' container=':System.Windows.Controls.StackPanel_Expander_9' row='97' type='TableCell'}
+:System.Windows.Controls.StackPanel.97_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_9' row='97' type='TableCell'}
+:System.Windows.Controls.StackPanel.9_0_TableCell	{column='0' container=':System.Windows.Controls.StackPanel_Expander_5' row='9' type='TableCell'}
+:System.Windows.Controls.StackPanel.9_2_TableCell	{column='2' container=':System.Windows.Controls.StackPanel_Expander_6' row='9' type='TableCell'}
+:System.Windows.Controls.StackPanel.9_4_TableCell	{column='4' container=':System.Windows.Controls.StackPanel_Expander_7' row='9' type='TableCell'}
+:System.Windows.Controls.StackPanel.9_5_TableCell	{column='5' container=':System.Windows.Controls.StackPanel_Expander_7' row='9' type='TableCell'}
+:System.Windows.Controls.StackPanel.9_6_TableCell	{column='6' container=':System.Windows.Controls.StackPanel_Expander_7' row='9' type='TableCell'}
+:System.Windows.Controls.StackPanel.9_7_TableCell	{column='7' container=':System.Windows.Controls.StackPanel_Expander_6' row='9' type='TableCell'}
+:System.Windows.Controls.StackPanel.9_8_TableCell	{column='8' container=':System.Windows.Controls.StackPanel_Expander_7' row='9' type='TableCell'}
+:System.Windows.Controls.StackPanel.Favourites_Label	{container=':System.Windows.Controls.StackPanel_TreeItem' text='Favourites' type='Label'}
+:System.Windows.Controls.StackPanel.Import controller model_Label	{container=':System.Windows.Controls.StackPanel_ListItem' text='Import controller model' type='Label'}
+:System.Windows.Controls.StackPanel_Expander	{container=':Controller Model_Table' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_10	{container=':KoolProg_Table' occurrence='3' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_11	{container=':KoolProg_Table' occurrence='5' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_12	{container=':KoolProg_Table' occurrence='7' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_13	{container=':KoolProg_Table' occurrence='8' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_14	{container=':KoolProg_Table' occurrence='12' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_15	{container=':KoolProg_Table' occurrence='11' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_16	{container=':KoolProg_Table' occurrence='10' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_17	{container=':KoolProg_Table' occurrence='9' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_2	{container=':Controller Model_Table' occurrence='2' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_3	{container=':Controller Model_Table' occurrence='4' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_4	{container=':Controller Model_Table' occurrence='5' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_5	{container=':Controller Model_Table' occurrence='3' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_6	{container=':KoolProg_Table' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_7	{container=':KoolProg_Table' occurrence='2' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_8	{container=':KoolProg_Table' occurrence='4' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Expander_9	{container=':KoolProg_Table' occurrence='6' text='System.Windows.Controls.StackPanel' type='Expander'}
+:System.Windows.Controls.StackPanel_Image	{container=':System.Windows.Controls.StackPanel_Expander_7' type='Image'}
+:System.Windows.Controls.StackPanel_Image_2	{container=':System.Windows.Controls.StackPanel_Expander_8' type='Image'}
+:System.Windows.Controls.StackPanel_Image_3	{container=':System.Windows.Controls.StackPanel_Expander_11' type='Image'}
+:System.Windows.Controls.StackPanel_Image_4	{container=':System.Windows.Controls.StackPanel_Expander_12' type='Image'}
+:System.Windows.Controls.StackPanel_Image_5	{container=':System.Windows.Controls.StackPanel_Expander_14' type='Image'}
+:System.Windows.Controls.StackPanel_Image_6	{container=':System.Windows.Controls.StackPanel_Expander_15' type='Image'}
+:System.Windows.Controls.StackPanel_ListItem	{container=':SetParameters_List_4' text='System.Windows.Controls.StackPanel' type='ListItem'}
+:System.Windows.Controls.StackPanel_TableRow	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_10	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='8' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_11	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='9' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_12	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='10' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_13	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='11' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_14	{container=':System.Windows.Controls.StackPanel_Expander_10' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_15	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_16	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='3' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_17	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='4' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_18	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='5' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_19	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='6' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_2	{container=':System.Windows.Controls.StackPanel_Expander_6' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_20	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='7' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_21	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='8' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_22	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='9' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_23	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='10' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_24	{container=':System.Windows.Controls.StackPanel_Expander_10' occurrence='11' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_25	{container=':System.Windows.Controls.StackPanel_Expander_8' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_26	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_27	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='3' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_28	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='4' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_29	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='5' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_3	{container=':System.Windows.Controls.StackPanel_Expander_7' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_30	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='6' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_31	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='7' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_32	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='8' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_33	{container=':System.Windows.Controls.StackPanel_Expander_8' occurrence='9' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_34	{container=':System.Windows.Controls.StackPanel_Expander_11' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_35	{container=':System.Windows.Controls.StackPanel_Expander_11' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_36	{container=':System.Windows.Controls.StackPanel_Expander_11' occurrence='3' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_37	{container=':System.Windows.Controls.StackPanel_Expander_11' occurrence='4' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_38	{container=':System.Windows.Controls.StackPanel_Expander_9' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_39	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_4	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_40	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='3' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_41	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='4' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_42	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='5' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_43	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='6' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_44	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='7' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_45	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='8' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_46	{container=':System.Windows.Controls.StackPanel_Expander_9' occurrence='9' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_47	{container=':System.Windows.Controls.StackPanel_Expander_12' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_48	{container=':System.Windows.Controls.StackPanel_Expander_12' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_49	{container=':System.Windows.Controls.StackPanel_Expander_13' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_5	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='3' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_50	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='2' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_51	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='3' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_52	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='4' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_53	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='5' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_54	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='6' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_55	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='7' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_56	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='8' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_57	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='9' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_58	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='10' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_59	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='11' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_6	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='4' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_60	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='12' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_61	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='13' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_62	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='14' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_63	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='15' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_64	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='16' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_65	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='17' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_66	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='18' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_67	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='19' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_68	{container=':System.Windows.Controls.StackPanel_Expander_13' occurrence='20' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_7	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='5' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_8	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='6' type='TableRow'}
+:System.Windows.Controls.StackPanel_TableRow_9	{container=':System.Windows.Controls.StackPanel_Expander_7' occurrence='7' type='TableRow'}
+:System.Windows.Controls.StackPanel_TreeItem	{container=':KoolProg_Tree' text='System.Windows.Controls.StackPanel' type='TreeItem'}
+:This PC.OSDisk (C:)_TreeItem	{container=':This PC_TreeItem' text='OSDisk (C:)' type='TreeItem'}
+:This PC_TreeItem	{container=':Browse For Folder_Tree' text='This PC' type='TreeItem'}
+:Title Title1_WindowsFormsAccessibleObject	{container=':KoolProg-ServiceTest_WindowsFormsControl' name='Title Title1' role='StaticText' type='WindowsFormsAccessibleObject'}
+:Unit:.Metric_ComboBoxItem	{container=':Settings.Unit:_ComboBox' text='Metric' type='ComboBoxItem'}
+:User.* Username and password are case sensitive_Label	{container=':User_Window' text='* Username and password are case sensitive' type='Label'}
+:User.Cancel_Button	{container=':User_Window' text='Cancel' type='Button'}
+:User.Change user_Label	{container=':User_Window' text='Change user' type='Label'}
+:User.OK_Button	{container=':User_Window' text='OK' type='Button'}
+:User.Password:_Edit	{container=':User_Window' leftObject='{container={text=\\'User\\' type=\\'Window\\'} text=\\'Password:\\' type=\\'Label\\'}' type='Edit'}
+:User.Password:_Label	{container=':User_Window' text='Password:' type='Label'}
+:User.Show password_CheckBox	{container=':User_Window' text='Show password' type='CheckBox'}
+:User.User_Label	{container=':User_Window' text='User' type='Label'}
+:User.X_Button	{container=':User_Window' text='X' type='Button'}
+:User_Window	{text='User' type='Window'}
+:Zoom Level:_Edit	{container=':KoolProg-ServiceTest.Zoom Level:_ComboBox' type='Edit'}
+:_Edit	{type='Edit'}
+:_ListView	{container=':_Window' type='ListView'}
+:_MenuItem	{container=':KoolProg_MenuBar' text='' type='MenuItem'}
+:_Pane	{occurrence='16' type='Pane'}
+:_Pane_2	{occurrence='5' type='Pane'}
+:_Pane_3	{occurrence='15' type='Pane'}
+:_Pane_4	{occurrence='13' type='Pane'}
+:_ScrollBar	{container=':KoolProg_Table' orientation='vertical' type='ScrollBar'}
+:_ScrollBar_2	{container=':_Pane' type='ScrollBar'}
+:_ScrollBar_3	{container=':_Pane_2' type='ScrollBar'}
+:_ScrollBar_4	{container=':Browse For Folder_Tree' occurrence='2' type='ScrollBar'}
+:_Toolbar	{container=':_Pane_3' type='Toolbar'}
+:_Toolbar_2	{container=':_Pane_4' type='Toolbar'}
+:_Window	{text='' type='Window'}
+:tbProductInfoValue0	{container=':KoolProg_Window' text='ERC211' type='Label'}
+:tbProductInfoValue1	{container=':KoolProg_Window' text='App0' type='Label'}

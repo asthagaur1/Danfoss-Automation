@@ -1,0 +1,15 @@
+ParameterName,CDF_Min,KP_Min,Result,CDF_Max,KP_Max,Result,CDF_Default,KP_Default,Result
+Cutout 1,-58.0,-58.0,True,122.0,122.0,True,35.6,35.6,True
+Max cutout limit,-58.0,-58.0,True,122.0,122.0,True,122.0,122.0,True
+Min cutout limit,-58.0,-58.0,True,122.0,122.0,True,-58.0,-58.0,True
+S4 frost protection,-58.0,-58.0,True,122.0,122.0,True,-58.0,-58.0,True
+Fan start temperature,-58.0,-58.0,True,50.0,50.0,True,23.0,23.0,True
+Fan stop high S5 temp.,-58.0,-58.0,True,122.0,122.0,True,122.0,122.0,True
+High alarm limit 1,-58.0,-58.0,True,122.0,122.0,True,46.4,46.4,True
+Low alarm limit 1,-58.0,-58.0,True,122.0,122.0,True,-22.0,-22.0,True
+MC Actual dewpoint,-328.0,-328.0,True,392.0,392.0,True,32.0,32.0,True
+Differential,0.18000000000000002,0.2,False,36.0,36.0,True,3.6,3.6,True
+Night offset,-90.0,-90.0,True,90.0,90.0,True,0.0,0.0,True
+Display readout adjustment,-18.0,-18.0,True,18.0,18.0,True,0.0,0.0,True
+S3 Air ON evap. A - Adjustment,-18.0,-18.0,True,18.0,18.0,True,0.0,0.0,True
+S4 Air OFF evap. A - Adjustment,-18.0,-18.0,True,18.0,18.0,True,0.0,0.0,True

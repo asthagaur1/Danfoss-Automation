@@ -1,0 +1,97 @@
+DB_Parameter_Name,KP_Parameter_Name,KP_Random_Value
+Fan Control Method,Fan Control Method,FPL
+ECO Mode ON/OFF,ECO Mode ON/OFF,Yes
+Voltage Protection function,Voltage Protection function,No
+Initial pull down ON/OFF,Initial pull down ON/OFF,Off
+Control sensor error handling type,Control sensor error handling type,No
+Zero Cross Config,Zero Cross Config,No
+Sensor Type,Sensor Type,NTC10K
+S2 Config,S2 Config,dES
+Relay 2 Config,Relay 2 Config,ALA
+Defrost type,Defrost type,nAt
+Defrost On accumulated Compressor Run Time,Defrost On accumulated Compressor Run Time,No
+Fan ON during Defrost,Fan ON during Defrost,No
+S3 Config,S3 Config,ESt
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),on
+Cabinet light control (ECO mode),Cabinet light control (ECO mode),oFF
+Holiday Mode ,Holiday Mode ,No
+Automatic Heater Control Mode ,Automatic Heater Control Mode ,Yes
+Fan Control Method,Fan Control Method,FFc
+ECO Mode ON/OFF,ECO Mode ON/OFF,No
+Voltage Protection function,Voltage Protection function,No
+Initial pull down ON/OFF,Initial pull down ON/OFF,On
+Control sensor error handling type,Control sensor error handling type,No
+Zero Cross Config,Zero Cross Config,No
+Sensor Type,Sensor Type,NTC5K
+S2 Config,S2 Config,doC
+Relay 2 Config,Relay 2 Config,Scc
+Defrost type,Defrost type,No
+Defrost On accumulated Compressor Run Time,Defrost On accumulated Compressor Run Time,No
+Fan ON during Defrost,Fan ON during Defrost,No
+S3 Config,S3 Config,doC
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),on
+Cabinet light control (ECO mode),Cabinet light control (ECO mode),on
+Holiday Mode ,Holiday Mode ,No
+Automatic Heater Control Mode ,Automatic Heater Control Mode ,Yes
+Lowest Temperature Differential,Lowest Temperature Differential,47.79
+Highest Temperature Differential,Highest Temperature Differential,9.96
+Fan Control Method,Fan Control Method,FPL
+Fan ON Delay,Fan ON Delay,69
+Fan Stop Delay,Fan Stop Delay,92
+Fan On Cycle,Fan On Cycle,85
+Fan Stop Cycle,Fan Stop Cycle,637
+Fan Stop Time on Door Open,Fan Stop Time on Door Open,215
+Fan Minimum Stop Time,Fan Minimum Stop Time,708
+Fan Limit Temperature,Fan Limit Temperature,7.53
+Min Run time,Min Run time,1626
+Min Stop time,Min Stop time,440
+Compressor Door open delay,Compressor Door open delay,11
+System Resume after door open,System Resume after door open,37
+Power On Delay,Power On Delay,146
+Low temp Alarm delay,Low temp Alarm delay,8
+High temp Alarm delay,High temp Alarm delay,24
+Alarm Door open delay,Alarm Door open delay,35
+ECO Mode ON/OFF,ECO Mode ON/OFF,Yes
+Voltage Protection function,Voltage Protection function,Yes
+Alarm delay during Pull Down/ Power up /defrost,Alarm delay during Pull Down/ Power up /defrost,783
+Initial pull down ON/OFF,Initial pull down ON/OFF,Off
+Maximum cut out Voltage,Maximum cut out Voltage,156
+IPD and Pull down Duration,IPD and Pull down Duration,44
+Pull down and IPD Initiate Temp,Pull down and IPD Initiate Temp,61.39
+Pull Down Limit Temp,Pull Down Limit Temp,31.15
+Eco Offset,Eco Offset,3.21
+Eco Door Delay,Eco Door Delay,200
+Control sensor error handling type,Control sensor error handling type,No
+Error Run Time,Error Run Time,21
+Error Stop Time,Error Stop Time,48
+Zero Cross Config,Zero Cross Config,Yes
+Sensor Type,Sensor Type,NTC5K
+S2 Config,S2 Config,doC
+Relay 2 Config,Relay 2 Config,ALA
+Defrost type,Defrost type,No
+Maximum defrost Time,Maximum defrost Time,475
+Defrost Terminate Temp,Defrost Terminate Temp,17.59
+Defrost On accumulated Compressor Run Time,Defrost On accumulated Compressor Run Time,No
+Defrost Start by Evap Temp,Defrost Start by Evap Temp,-11.31
+Drip Off time,Drip Off time,21
+Fan Delay After Defrost,Fan Delay After Defrost,653
+Fan Start Temperature after defrost,Fan Start Temperature after defrost,23.29
+Fan ON during Defrost,Fan ON during Defrost,No
+Initial Defrost Interval,Initial Defrost Interval,145
+Initial defrost duration,Initial defrost duration,823
+S3 Config,S3 Config,ESt
+Second Compressor start delay,Second Compressor start delay,911
+Leakage Alarm Compressor Run Time,Leakage Alarm Compressor Run Time,30
+Minimum defrost time,Minimum defrost time,156
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),on
+Cabinet light control (ECO mode),Cabinet light control (ECO mode),oFF
+Light OFF delay,Light OFF delay,298
+Holiday Mode ,Holiday Mode ,Yes
+Holiday Length,Holiday Length,725
+Holiday Temperature offset,Holiday Temperature offset,-6.07
+Automatic Heater Control Mode ,Automatic Heater Control Mode ,Yes
+Heater low set point,Heater low set point,91.4
+Heater high set point,Heater high set point,-8.89
+Heater low differential,Heater low differential,38.19
+Heater High differential,Heater High differential,2.62
+Energy mode delay,Energy mode delay,210

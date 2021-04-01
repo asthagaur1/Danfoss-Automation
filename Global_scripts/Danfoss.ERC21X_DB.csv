@@ -1,0 +1,217 @@
+﻿MenuCode,Name,Defaultvalue,App1DefaultValue,App2DefaultValue,App3DefaultValue,App4DefaultValue,App5DefaultValue,App6DefaultValue,Min,Max,Unit,Enum,Help
+A03,Alarm delay - Normal conditions,30,45,30,30,30,30,30,0,240,min,,"If the upper or the lower alarm limit values are exceeded, a timer function will commence.  The alarm will not become active until the set time delay has been passed."
+A12,Alarm delay - pulldown/startup/def,60,90,60,60,60,60,60,0,240,min,,"This time delay is used during start-up, during defrost, during pull-down. There will be change-over to the normal alarm time delay “A03” when the temperature falls within the alarm limits"
+A13,High temp alarm,8,10,8,-15,8,-15,8,-100,200,°C,,"If the cabinet temperature stays above this limit for the time mentioned by the alarm delay, high temperature alarm is raised."
+A14,Low temp alarm,-30,0,-2,30,-2,-30,-30,-100,200,°C,,"If the cabinet temperature stays below this limit for the time mentioned by the alarm delay, low temperature alarm is raised."
+A27,DI1 delay,30,30,30,30,30,30,30,0,240,min,,"If “DI1” is configured as a door open alarm or as an external alarm, this delay is used to raise the respective alarm."
+A28,DI2 delay,30,30,30,30,30,30,30,0,240,min,,"If “DI2” is configured as a door open alarm or as an external alarm, this delay is used to raise the respective alarm."
+A37,Condenser High temp alarm,80,80,80,80,80,80,80,0,200,°C,,"If the condenser temperature reaches above this limit, condenser alarm is raised immediately and no action is
+taken. The alarm is zeroset if temperature falls 5 K below the set temperature.
+ Note: Use only whole number."
+A54,Condenser High block limit,85,85,85,85,85,85,85,0,200,°C,,"If the condenser temperature continues to increase above the “A37” limit and reaches this temperature limit, condenser block alarm is raised and compressor is stopped. It is restricted to starting again until alarm is reset manually. Manual reset of condenser block alarm can be performed in two ways:
+- Power controller OFF and power ON controller again.
+- Switch controller OFF and ON again via main switch or front button.
+Note: Use only whole number."
+A72,Voltage protection,0,0,0,0,0,0,0,0,1,,"0:No,1:Yes","This parameter is to enable and disable the voltage protection feature, which protects compressor from adverse line voltage conditions."
+A73,Min cut-in voltage,0,0,0,0,0,0,0,0,270,V,,"When the compressor is due to start, the voltage of the power supply will be checked and the compressor will only be allowed to start if it is at least the value given in this parameter."
+A74,Min cut-out voltage,0,0,0,0,0,0,0,0,270,V,,"When the compressor is running, it will be switched OFF if the voltage goes below that given in this parameter."
+A75,Max voltage,270,270,270,270,270,270,270,0,270,V,,"When the compressor is running, it will be switched OFF if the voltage exceeds that given in this parameter.
+If the compressor is already stopped, it will remain switched OFF."
+C01,Compressor min ON time,0,0,0,0,0,0,0,0,30,min,,This parameter determines the minimum number of minutes the compressor must run before a cut-out can take effect based on temperature. This is to avoid sudden switching ON and OFF of the compressor.
+C02,Compressor min OFF time,2,2,2,2,2,2,2,0,30,min,,This parameter determines the minimum number of minutes the compressor must switched OFF before a cut-in can take effect based on temperature. This is to avoid sudden switching OFF and ON of the compressor.
+C04,Comp OFF delay at open door,0,0,0,0,0,0,1,0,15,min,,"This parameter sets the delay in minutes before the compressor stops when the door is opened. If set to zero, the function is disabled."
+C70,Zero crossing,1,1,1,1,1,1,1,0,1,,"0:No,1:yes","This feature will increase the relay life time, reduce the contact welding and switching noise by switching ON at Zero crossing. Disable zero crossing when external relay is used."
+r12,Main switch ,1,1,1,1,1,1,1,0,2,,"0:Service,1:Off,2:On","With this setting refrigeration can be started, stopped or a manual override of the outputs can be allowed.
+Stopped refrigeration will give a ”OFF” signal on the display.
+-1=service (manual control of outputs allowed)
+0=OFF
+1=ON"
+o61,Predefined applications,0,0,0,0,0,0,0,0,6,,"0:App0,1:App1,2:App2,3:App3,4:App4,5:App5,6:App6","Predefined applications is to give the user an easy and fast way to configure the controller refer to a specific
+application based on storage temperature, defrost type and defrost method.
+""App 0"" No predefined application
+""App 1""  Medium temperature ventilated refrigeration    units with timed natural defrost           
+""App 2"" Medium temperature ventilated refrigeration units
+with timed electrical defrost
+""App3"" Low temperature ventilated refrigeration units with
+timed electrical defrost
+""App4"" Medium temperature ventilated refrigeration units
+with electrical defrost (by temperature)
+""App5"" Low temperature ventilated refrigeration units with
+electrical defrost (by temperature)
+""App6"" No predefined application with simplified list of
+parameters"
+o06,Sensor type,1,1,1,1,1,1,1,0,3,,"0:n5,1:n10,2:pt1,3:ptc","This parameter is for defining type of temperature sensors connected to the controller.
+""n5"" NTC 5K
+""n10"" NTC10K 
+""ptc"" PTC
+""pt1""PT1000
+"
+o36,DO4 config,1,0,0,0,0,0,0,0,1,,"0:ALA,1:Lig","This parameter is to configure 4th relay as light or Alarm. 
+Lig=light
+ALA=alarm"
+r00,Temperature Setpoint,2,4,2,-24,2,-24,2,-100,200,°C,,"This parameter defines the desired cabinet temperature at which compressor cuts out.
+The set value can be locked or limited to a range with the settings in “r02” and “r03”."
+r01,Differential,2,2,2,2,2,2,2,0.1,20,K,,"This defines the difference between the cut-out and the cut-in of compressor relay.
+Compressor relay will cut-in when the cabinet temperature reaches the set point+differetial.
+In case of heating application, heater will cut-in when the temperature reaches the set point-differential."
+r02,Min set point limit,-35,2,0,-26,0,-26,-35,-100,200,°C,,The minimum allowable setpoint value can be configured here to avoid setting too low values by accident/mistake.
+r03,Max set point limit,50,6,4,-20,4,-20,50,-100,200,°C,,The maximum allowable setpoint value can be configured here to avoid setting too high values by accident/mistake.
+r04,Display offset,0,0,0,0,0,0,0,-10,10,K,,"Correction value in display temperature. If the temperature at the products and the temperature received by the controller are not identical, an offset adjustment of the display temperature can be carried out under this menu code."
+r05,Display Unit,0,0,0,0,0,0,0,0,1,,"0:°C,1:°F",Set here if the controller is to show temperature values in °C or in °F. Switching from one to the other will cause all temperature settings to be automatically updated to respective unit.
+r09,Calibration of Sair,0,0,0,0,0,0,0,-20,20,K,,"Offset for air temperature calibration.
+Compensation possibility due to long sensor cable."
+r13,Night Set back,0,0,0,0,0,0,0,-50,50,K,,"The thermostat’s reference will be the setpoint plus this value when the controller changes over to night operation. (Select a negative value if there is to be cold accumulation).
+Activation can take place via digital input."
+r40,Offset reference displacement,0,0,0,0,0,0,0,-50,20,°C,,The thermostat reference and the alarm values are shifted the following number of degrees when the reference displacement is activated. Activation can take place via digital input.
+r96,Pull down duration,0,0,0,0,0,0,0,0,960,min,,Maximum duration of the pull-down mode.
+r97,Pull down temp limit,0,0,0,0,0,0,0,-100,200,°C,,A safety feature; the lowest temperature allowed during pull-down.
+d01,Defrost Method,2,2,2,2,2,2,2,0,3,,"0:None,1:Natural,2:Electric,3:Hotgas","Here you set whether defrost is to be accomplished by electric, Hot gas or natural method.
+""No"" none
+""nAt"" natural
+""EL"" electrical
+""gAS"" gas"
+d02,Defrost stop temperature,6,0,0,8,6,6,6,0,50,°C,,"This parameter defines at what temperature the defrost cycle will stop.  The temperature is given by the evaporator sensor or by the cabinet temperature sensor as defined in menu
+code “d10”."
+d03,Defrost Interval,8,6,8,12,8,12,8,0,240,hour,,Defines the time period between the start of two defrost cycles. In case of power failure elapsed time is stored in the memory and next defrost will happen after completing the defined time interval.
+d04,Max defrost Time,30,45,15,15,30,30,30,0,480,min,,This parameter defines the defrost time when it is time based defrost. In case of temperature based defrost this is treated as safety time to stop the defrost if it is not terminated based on the temperature.
+d05,Defrost delay at power up,0,0,0,0,0,0,0,0,240,min,,This parameter decides the time offset when the defrost is triggered by digital inputs or during power up. This function is only relevant if you have several refrigeration appliances or groups where you want the defrost to be staggered in relation to one another.
+d06,Drip delay,0,0,0,0,0,0,5,0,60,min,,This parameter defines the time delay to start the compressor after defrost heater being switched OFF. This delay is generally provided to ensure all water droplets on the evaporator drips off before starting the refrigeration cycle.
+d07,Fan delay after defrost,0,0,0,0,0,0,5,0,60,min,,Defines how long the delay is between the start of the compressor and the fan after defrost cycle.
+d08,Fan start temp after defrost,-5,0,0,0,-5,-5,0,-50,0,°C,,"This only applies if an evaporator temperature sensor is fitted.
+This parameter determines at what evaporator temperature the fan will start after a defrost cycle is complete.
+If the time set in “d07” occurs before the temperature set in “d08”, the fan will start in line with “d07”.
+If the temperature set in “d08” occurs first, then the fan will start in line with “d08”."
+d09,Fan ON during defrost,1,1,1,1,1,1,1,0,1,,"0:Off,1:On",This parameter is to define whether fan is to operate during defrost or not.
+d10,Defrost stop sensor,0,0,0,0,2,2,0,0,2,,"0:None,1:Sair temp Sensor,2:S5 Defrost sensor","This parameter is to define which sensor has to be used to exit/terminate the defrost.
+""non"" none, defrost is based on time
+""Air"" Sair sensor
+""dEF"" S5 (defrost) sensor"
+d18,Comp accumulated runtime,0,0,0,0,0,0,0,0,96,hour,,"When the accumulated compressor runtime is equal to the value set in this Parameter, defrost will be triggered.  If the compressor runtime is less than the set value during the define defrost interval “d03”, defrost will be triggered based on the defrost interval “d03”. This feature is disabled when this parameter is set to zero."
+d19,Defrost on demand,20,20,20,20,20,20,20,0,20,K,,"The controller will constantly monitor the “S5” temperature to estimate the ice buildup.  In between two defrosts, if the “S5” temperature become lower than the value defined here controller will initiate the defrost on demand.  This feature is disabled when this parameter is set to 20. This function can only be used in 1:1 systems."
+d30,Defrost delay after pulldown ,0,0,0,0,0,0,0,0,960,min,,This parameter defines the time delay to start the defrost after pull down cycle. This has to ensure defrost doesn’t happen immediately after pull down cycle.
+F01,Fan at compressor cutout,0,0,0,0,0,0,0,0,2,,"0:FFC,1:FAo,2:FPL","This parameter define the fan operation during compressor OFF cycle.
+""Fao"" fan always ON
+""FFC"" fan follow compressor
+""FPL"" fan Pulsating"
+F04,Fan stop evaporator temp,50,50,50,50,50,50,50,-50,50,°C,,"This parameter defines the maximum evaporator temperature at which the Fan must switch OFF. If the defrost sensor registers a higher temperature than the one set here, the fans will be stopped to avoid the warm air circulation in the cabinet."
+F07,Fan ON time,2,2,2,2,2,2,2,0,15,min,,This parameter is applicable only when the Fan at Compressor cut out “F01” is set to Fan Pulsating mode. The Fan pulsating ON time will be as per the time set in this parameter.
+F08,Fan OFF time,2,2,2,2,2,2,2,0,15,min,,This parameter is applicable only when the Fan at Compressor cut out “F01” is set to Fan Pulsating mode. The Fan pulsating OFF time will be as per the time set in this parameter.
+o01,Delay of outputs at startup,5,5,5,5,5,5,5,0,600,sec,,After start-up the controller functions can be delayed by the time delay defined here so that overloading of the electricity supply network is avoided.
+o02,DI1 configuration,0,0,0,0,0,0,0,0,9,,"0:Off,1:Sdc,2:doo,3:doA,4:SCH,5:nig,6:rFd,7:EAL,8:dEF,9:Pud,10:Sc","Here you can configure the DI1 to one of the functions listed below.
+""oFF"" not used
+""Sdc"" status display output
+""doo"" door alarm with resumption (door function)
+""doA"" door alarm without resumption (door alarm)
+""SCH"" main switch
+""nig"" day/night mode
+""rFd""reference displacement.
+""EAL"" external alarm
+""dEF"" defrost
+""Pud"" pull down
+""Sc"" condenser sensor
+"
+o03,Serial address,0,0,0,0,0,0,0,0,247,,,Data communication is possible through external TTL to RS485 gateway.
+o05,Password,0,0,0,0,0,0,0,0,999,,,If the settings in the controller are to be protected with an access code you can set a numerical value between 0 and 999. You can cancel the function by setting to 0.
+o07,Cooling/Heating,0,0,0,0,0,0,0,0,1,,"0:Cooling,1:Heating",This parameter is applicable only for single relay controller (ERC211) for selecting cooling or heating application.
+o15,Display Resolution ,0,0,0,0,0,0,0,0,1,,"0:0.1,1:0.5,2:1",This parameter defines the steps in which the temperature must be displayed by 0.1 or 0.5 or 1.
+o23,Relay 1 counter,0,0,0,0,0,0,0,0,999,,,"The number of cycles for the “DO1” relay can be read in this menu.
+The read value is multiplied by 100 to obtain the number of cycles.
+On reaching 999x100 cycles the counts stops and is reset to 0."
+o24,Relay 2 counter,0,0,0,0,0,0,0,0,999,,,"The number of cycles for the “DO2” relay can be read in this menu.
+The read value is multiplied by 100 to obtain the number of cycles.
+On reaching 999x100 cycles the counts stops and is reset to 0."
+o25,Relay 3 counter,0,0,0,0,0,0,0,0,999,,,"The number of cycles for the DO3 relay can be read in this menu.
+The read value is multiplied by 100 to obtain the number of cycles.
+On reaching 999x100 cycles the counts stops and is reset to 0."
+o26,Relay 4 counter,0,0,0,0,0,0,0,0,999,,,"The number of cycles for the DO4 relay can be read in this menu.
+The read value is multiplied by 100 to obtain the number of cycles.
+On reaching 999x100 cycles the counts stops and is reset to 0."
+o37,DI2 configuration,0,0,0,0,0,0,0,0,9,,"0:Off,1:Sdc,2:doo,3:doA,4:SCH,5:nig,6:rFd,7:EAL,8:dEF,9:Pud,10:Sc","Here you can configure the DI2 to one of the functions listed below.
+""oFF"" not used
+""Sdc"" status display output
+""doo"" door alarm with resumption (door function)
+""doA"" door alarm without resumption (door alarm)
+""SCH"" main switch
+""nig"" day/night mode
+""rFd""reference displacement.
+""EAL"" external alarm
+""dEF"" defrost
+""Pud"" pull down
+""Sc"" condenser sensor
+"
+o38,Light Control ,0,0,0,0,0,0,0,0,2,,"0:ON,1:dAn,2:doo","This parameter defines the way the light must be controlled. Below are the three light control modes available.
+""On""always on
+""dAn""day/night
+""doo""based on door action"
+o67,"Save settings as factory
+",0,0,0,0,0,0,0,0,1,,"0:No,1:yes","This parameter when set to YES. The current controller Parameter settings are stored as Factory default.
+WARNING: original factory settings are overwritten."
+o91,"Display during defrost
+ ",2,2,2,2,2,2,2,0,2,,"0:Air,1:FrE,2:-d-","You can set what is to be displayed during defrost here.
+""Air""actual air temperature
+""FrE""=freezed temperature( display the temperature just before starting defrost)
+""-d”-d-” is displayed"
+P73,DI1 polarity,1,1,1,1,1,1,1,0,1,,"0:nc,1:no","""no (normally open)""associated functionality is activated when “DI1” port is short circuit. The associated function is deactivated when “DI1” port is open circuit.
+""nc (normally closed)""associated functionality is activated when “DI1” port is open circuit and deactivated
+when “DI1” port is short circuit"
+P74,DI2 polarity,1,1,1,1,1,1,1,0,1,,"0:nc,1:no","""no (normally open)""associated functionality is activated when “DI2” port is short circuit. The associated function is deactivated when “DI2” port is open circuit.
+""nc (normally closed)""associated functionality is activated when “DI2” port is open circuit and deactivated
+when “DI2” port is short circuit."
+P75,Invert alarm relay,0,0,0,0,0,0,0,0,1,,"0:Normal,1:Invert relay action","Alarm relay operation can be inverted ""0"" normal ""1"" invert relay action"
+P76,Keyboard lock,0,0,0,0,0,0,0,0,1,,"0:No,1:yes",YES=enable keyboard lock functionality after 5 minutes of no activity on the keypad.
+u00,"Controller status
+",0,0,0,0,0,0,0,0,12,,"0:S25,1:S32,2:S10,3:S30,4:S14,5:S4,6:S17,7:S15,8:S2,9:S3,10:S20,11:s0,12:S20",
+u01,Air temperature (Sair),0,0,0,0,0,0,0,-100,200,°C,,
+u02,Present regulation reference,0,0,0,0,0,0,0,-100,200,,,
+u09,Evaporator temperature (S5),0,0,0,0,0,0,0,-100,200,°C,,
+u10,DI1 status,0,0,0,0,0,0,0,0,1,,"0:Off,1:On",
+u13,Night mode,0,0,0,0,0,0,0,0,1,,"0:Off,1:On",
+u37,DI2 status,0,0,0,0,0,0,0,0,1,,"0:Off,1:On",
+U09,Condenser temperature (Sc),0,0,0,0,0,0,0,0,1,,,
+u58,Compressor relay status,0,0,0,0,0,0,0,0,1,,"0:Off,1:On",
+u59,Fan relay status,0,0,0,0,0,0,0,0,1,,"0:Off,1:On",
+u60,Defrost relay status,0,0,0,0,0,0,0,0,1,,"0:Off,1:On",
+u63,Light relay status,0,0,0,0,0,0,0,0,1,,"0:Off,1:On",
+u80,Firmware version,0,0,0,0,0,0,0,0,1,,,
+,Database version,7,0,0,0,0,0,0,-32768,32767,,,
+,Order No Low,7,0,0,0,0,0,0,-32768,32767,,, 
+d01,Defrost Method,0,0,0,0,0,0,0,0,1, ,"0:None,1:Natural","Here you set whether defrost is to be accomplished by electric, Hot gas or natural method.
+""No"" none
+""nAt"" natural
+""EL"" "
+d10,Defrost Stop Sensor,0,0,0,0,0,0,0,0,1,,"0:None,1:Sair temp Sensor","This parameter is to define which sensor has to be used to exit/terminate the defrost.
+""non"" none, defrost is based on time
+""Air"" Sair sensor
+"
+61,Predefined applications,1,0,0,0,0,0,0,0,5,,"0:App0,1:App1,2:App2,3:App3,4:App4,5:App5","Predefined applications is to give the user an easy and fast way to configure the controller refer to a specific
+application based on storage temperature, defrost type and defrost method.
+""App 0"" No predefined application
+""App 1""  Medium temperature ventilated refrigeration    units with timed natural defrost           
+""App 2"" Medium temperature ventilated refrigeration units
+with timed electrical defrost
+""App3"" Low temperature ventilated refrigeration units with
+timed electrical defrost
+""App4"" Medium temperature ventilated refrigeration units
+with electrical defrost (by temperature)
+""App5"" Low temperature ventilated refrigeration units with
+electrical defrost (by temperature)
+"
+o71,DO2 Config,0,0,0,0,0,0,0,0,1,,"0:def,1:ALA",
+E29,Air temperature sensor(Sair) error,0,0,0,0,0,0,0,0,0,,,
+E27,Defrost sensor (S5) error,0,0,0,0,0,0,0,0,0,,,
+E30,Condensor sensor(Sc) error,0,0,0,0,0,0,0,0,0,, ,
+A01,High temperature alarm,0,0,0,0,0,0,0,0,0,,,
+A02,Low temperature alarm,0,0,0,0,0,0,0,0,0,,,
+A99,High voltage alarm,0,0,0,0,0,0,0,0,0,,,
+AA1,Low voltage alarm,0,0,0,0,0,0,0,0,0,,,
+A61,High condenser temperature alarm,0,0,0,0,0,0,0,0,0,0,,
+A04,Door alarm,0,0,0,0,0,0,0,0,0,0, ,
+A15,DI external alarm,0,0,0,0,0,0,0,0,0,0, , 
+A01,High temperature alarm,0,0,0,0,0,0,0,0,0,,,
+A02,Low temperature alarm,0,0,0,0,0,0,0,0,0,,,
+A99,High voltage alarm,0,0,0,0,0,0,0,0,0,,,
+AA1,Low voltage alarm,0,0,0,0,0,0,0,0,0,,,
+A61,High condenser temperature alarm,0,0,0,0,0,0,0,0,0,0,,
+A04,Door alarm,0,0,0,0,0,0,0,0,0,0, ,
+A15,DI external alarm,0,0,0,0,0,0,0,0,0,0, ,0
+E27,Sensor 2 Error,0,0,0,0,0,0,0,0,0,,,

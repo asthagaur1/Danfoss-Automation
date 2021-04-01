@@ -1,0 +1,63 @@
+ParameterName,DB_Menucode,KP_Menucode,Result,DB_DefaultValue_4,KP_DefaultValue_4,Result,DB_MinValue,KP_MinValue,Result,DB_MaxValue,KP_MaxValue,Result,DB_Unit,KP_Unit,Result
+Alarm delay - Normal conditions,A03,A03,True,30,30,True,0,0,True,240,240,True,min,min,True
+Alarm delay - pulldown/startup/def,A12,A12,True,60,60,True,0,0,True,240,240,True,min,min,True
+High temp alarm,A13,A13,True,8,8.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True
+Low temp alarm,A14,A14,True,-2,-2.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True
+DI1 delay,A27,A27,True,30,30,True,0,0,True,240,240,True,min,min,True
+Voltage protection,A72,A72,True,No,No,True,0,,False,1,,False,,,True
+Min cut-in voltage,A73,A73,True,0,0,True,0,0,True,270,270,True,V,V,True
+Min cut-out voltage,A74,A74,True,0,0,True,0,0,True,270,270,True,V,V,True
+Max voltage,A75,A75,True,270,270,True,0,0,True,270,270,True,V,V,True
+Compressor min ON time,C01,C01,True,0,0,True,0,0,True,30,30,True,min,min,True
+Compressor min OFF time,C02,C02,True,2,2,True,0,0,True,30,30,True,min,min,True
+Comp OFF delay at open door,C04,C04,True,0,0,True,0,0,True,15,15,True,min,min,True
+Zero crossing,C70,C70,True,yes,yes,True,0,,False,1,,False,,,True
+Main switch ,r12,r12,True,Off,,False,0,,False,2,,False,,,True
+Predefined applications,o61,061,False,App0,,False,0,,False,6,,False,,,True
+Sensor type,o06,o06,True,n10,n10,True,0,,False,3,,False,,,True
+Temperature Setpoint,r00,r00,True,2,2.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True
+Differential,r01,r01,True,2,2.00,False,0.1,0.10,False,20,20.00,False,K,K,True
+Min set point limit,r02,r02,True,0,0.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True
+Max set point limit,r03,r03,True,4,4.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True
+Display offset,r04,r04,True,0,0.00,False,-10,-10.00,False,10,10.00,False,K,K,True
+Display Unit,r05,r05,True,°C,°C,True,0,,False,1,,False,,,True
+Calibration of Sair,r09,r09,True,0,0.00,False,-20,-20.00,False,20,20.00,False,K,K,True
+Night Set back,r13,r13,True,0,0.00,False,-50,-50.00,False,50,50.00,False,K,K,True
+Offset reference displacement,r40,r40,True,0,0.00,False,-50,-50.00,False,20,20.00,False,°C,°C,True
+Delay of outputs at startup,o01,o01,True,5,5,True,0,0,True,600,600,True,sec,sec,True
+DI1 configuration,o02,o02,True,Off,Off,True,0,,False,9,,False,,,True
+Serial address,o03,o03,True,0,0,True,0,0,True,247,247,True,,,True
+Password,o05,o05,True,0,0,True,0,0,True,999,999,True,,,True
+Display Resolution ,o15,o15,True,0.1,0.1,True,0,,False,1,,False,,,True
+Relay 1 counter,o23,o23,True,0,,False,0,,False,999,,False,,,True
+"Save settings as factory
+",o67,o67,True,No,No,True,0,,False,1,,False,,,True
+DI1 polarity,P73,P73,True,no,no,True,0,,False,1,,False,,,True
+Keyboard lock,P76,P76,True,No,No,True,0,,False,1,,False,,,True
+"Controller status
+",u00,u00,True,S25,,False,0,,False,12,,False,,,True
+Air temperature (Sair),u01,u01,True,0,,False,-100,,False,200,,False,°C,°C,True
+Present regulation reference,u02,u02,True,0,,False,-100,,False,200,,False,,,True
+DI1 status,u10,u10,True,Off,,False,0,,False,1,,False,,,True
+Night mode,u13,u13,True,Off,,False,0,,False,1,,False,,,True
+Condenser temperature (Sc),U09,U09,True,0,,False,0,,False,1,,False,,,True
+Compressor relay status,u58,u58,True,Off,,False,0,,False,1,,False,,,True
+Firmware version,u80,u80,True,0,,False,0,,False,1,,False,,,True
+Database version,,,True,0,,False,-32768,,False,32767,,False,,,True
+Order No Low,,,True,0,,False,-32768,,False,32767,,False,,,True
+Predefined applications,61,061,False,App0,,False,0,,False,5,,False,,,True
+Air temperature sensor(Sair) error,E29,E29,True,0,,False,0,,False,0,,False,,,True
+High temperature alarm,A01,A01,True,0,,False,0,,False,0,,False,,,True
+Low temperature alarm,A02,A02,True,0,,False,0,,False,0,,False,,,True
+High voltage alarm,A99,A99,True,0,,False,0,,False,0,,False,,,True
+Low voltage alarm,AA1,AA1,True,0,,False,0,,False,0,,False,,,True
+High condenser temperature alarm,A61,A61,True,0,,False,0,,False,0,,False,0,,False
+Door alarm,A04,A04,True,0,,False,0,,False,0,,False,0,,False
+DI external alarm,A15,A15,True,0,,False,0,,False,0,,False,0,,False
+High temperature alarm,A01,A01,True,0,,False,0,,False,0,,False,,,True
+Low temperature alarm,A02,A02,True,0,,False,0,,False,0,,False,,,True
+High voltage alarm,A99,A99,True,0,,False,0,,False,0,,False,,,True
+Low voltage alarm,AA1,AA1,True,0,,False,0,,False,0,,False,,,True
+High condenser temperature alarm,A61,A61,True,0,,False,0,,False,0,,False,0,,False
+Door alarm,A04,A04,True,0,,False,0,,False,0,,False,0,,False
+DI external alarm,A15,A15,True,0,,False,0,,False,0,,False,0,,False

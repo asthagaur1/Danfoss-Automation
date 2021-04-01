@@ -1,0 +1,306 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+2,:KoolProg_Window,Enable,,true,True
+3,:KoolProg_Window,Type,,Window,True
+4,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+5,:KoolProg.KoolProg®_Label,Enable,,true,True
+6,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+7,:_MenuItem,Enable,,true,True
+8,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+9,:KoolProg.User_Label,Enable,,true,True
+10,:KoolProg.User_Label,Text,,User,True
+11,:_MenuItem,Tooltip,Help,,True
+12,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+13,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,true,True
+14,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+15,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+16,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+17,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+18,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+19,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+20,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+21,:KoolProg.On,line service_Label,Text,,On
+22,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+23,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True
+25,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Click_Button,,,True
+26,:Settings_Window,Enable,,true,True
+27,:Settings_Window,Type,,Window,True
+28,:_MenuItem,Enable_Popup,,false,True
+29,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable_S,,true,True
+30,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable_Popup,,false,True
+31,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable_Popup,,false,True
+32,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable_Popup,,false,True
+33,:Settings.Preferences_Label,Enable,,true,True
+34,:Settings.Preferences_Label,Text,,Preferences,True
+35,:Settings.X_Button,Enable,,true,True
+36,:Settings.X_Button,Tooltip,Close,,True
+37,:Settings.Language:_Label,Enable,,true,True
+38,:Settings.Language:_Label,Text,,Language:,True
+39,:Settings.Language:_ComboBox,Enable,,true,True
+40,:Settings.Language:_ComboBox,Text_Checking,,English (United States),True
+41,:Settings.Save Files on:_Label,Enable,,true,True
+42,:Settings.Save Files on:_Label,Text,,Save Files on:,True
+43,:Settings.Save Files on:_Edit,Enable,,true,True
+44,:Settings.Save Files on:_Edit,Tooltip,C:\KoolProg\Configurations,,True
+45,:Settings.Save Files on:_Edit,Text,,C:\KoolProg\Configurations,True
+46,:Settings.Browse.._Button,Enable,,true,True
+47,:Settings.Browse.._Button,Text,,Browse..,True
+48,:Settings.Unit:_Label,Enable,,true,True
+49,:Settings.Unit:_Label,Text,,Unit:,True
+50,:Settings.Unit:_ComboBox,Enable,,true,True
+51,:Settings.Unit:_ComboBox,Text_Checking,,Metric,True
+52,:Settings.CAN Baudrate:_Label,Enable,,true,True
+53,:Settings.CAN Baudrate:_Label,Text,,CAN Baudrate:,True
+54,:Settings.CAN Baudrate:_ComboBox,Enable,,true,True
+55,:Settings.CAN Baudrate:_ComboBox,Text_Checking,,Auto,True
+56,:Settings.Use password protection_CheckBox,Enable,,true,True
+57,:Settings.Use password protection_CheckBox,Text,,Use password protection,True
+58,:Settings.Use password protection_CheckBox,Checked,,false,True
+59,:Settings.Save_Button,Enable,,true,True
+60,:Settings.Save_Button,Text,,Save,True
+61,:Settings.Cancel_Button,Enable,,true,True
+62,:Settings.Cancel_Button,Text,,Cancel,True
+63,:Settings.X_Button,Click_Button,,,True
+65,:KoolProg_Window,Enable,,true,True
+66,:KoolProg_Window,Type,,Window,True
+67,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+68,:KoolProg.KoolProg®_Label,Enable,,true,True
+69,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+70,:_MenuItem,Enable,,true,True
+71,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+72,:KoolProg.User_Label,Enable,,true,True
+73,:KoolProg.User_Label,Text,,User,True
+74,:_MenuItem,Tooltip,Help,,True
+75,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+76,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,true,True
+77,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+78,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+79,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+80,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+81,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+82,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+83,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+84,:KoolProg.On,line service_Label,Text,,On
+85,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+86,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True
+88,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Click_Button,,,True
+89,:Settings_Window,Enable,,true,True
+90,:Settings_Window,Type,,Window,True
+91,:_MenuItem,Enable_Popup,,false,True
+92,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable_S,,true,True
+93,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable_Popup,,false,True
+94,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable_Popup,,false,True
+95,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable_Popup,,false,True
+96,:Settings.Preferences_Label,Enable,,true,True
+97,:Settings.Preferences_Label,Text,,Preferences,True
+98,:Settings.X_Button,Enable,,true,True
+99,:Settings.X_Button,Tooltip,Close,,True
+100,:Settings.Language:_Label,Enable,,true,True
+101,:Settings.Language:_Label,Text,,Language:,True
+102,:Settings.Language:_ComboBox,Enable,,true,True
+103,:Settings.Language:_ComboBox,Text_Checking,,English (United States),True
+104,:Settings.Save Files on:_Label,Enable,,true,True
+105,:Settings.Save Files on:_Label,Text,,Save Files on:,True
+106,:Settings.Save Files on:_Edit,Enable,,true,True
+107,:Settings.Save Files on:_Edit,Tooltip,C:\KoolProg\Configurations,,True
+108,:Settings.Save Files on:_Edit,Text,,C:\KoolProg\Configurations,True
+109,:Settings.Browse.._Button,Enable,,true,True
+110,:Settings.Browse.._Button,Text,,Browse..,True
+111,:Settings.Unit:_Label,Enable,,true,True
+112,:Settings.Unit:_Label,Text,,Unit:,True
+113,:Settings.Unit:_ComboBox,Enable,,true,True
+114,:Settings.Unit:_ComboBox,Text_Checking,,Metric,True
+115,:Settings.CAN Baudrate:_Label,Enable,,true,True
+116,:Settings.CAN Baudrate:_Label,Text,,CAN Baudrate:,True
+117,:Settings.CAN Baudrate:_ComboBox,Enable,,true,True
+118,:Settings.CAN Baudrate:_ComboBox,Text_Checking,,Auto,True
+119,:Settings.Use password protection_CheckBox,Enable,,true,True
+120,:Settings.Use password protection_CheckBox,Text,,Use password protection,True
+121,:Settings.Use password protection_CheckBox,Checked,,false,True
+122,:Settings.Save_Button,Enable,,true,True
+123,:Settings.Save_Button,Text,,Save,True
+124,:Settings.Cancel_Button,Enable,,true,True
+125,:Settings.Cancel_Button,Text,,Cancel,True
+126,:Settings.Cancel_Button,Click_Button,,,True
+128,:KoolProg_Window,Enable,,true,True
+129,:KoolProg_Window,Type,,Window,True
+130,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+131,:KoolProg.KoolProg®_Label,Enable,,true,True
+132,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+133,:_MenuItem,Enable,,true,True
+134,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+135,:KoolProg.User_Label,Enable,,true,True
+136,:KoolProg.User_Label,Text,,User,True
+137,:_MenuItem,Tooltip,Help,,True
+138,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+139,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,true,True
+140,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+141,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+142,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+143,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+144,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+145,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+146,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+147,:KoolProg.On,line service_Label,Text,,On
+148,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+149,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True
+151,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Click_Button,,,True
+152,:Settings_Window,Enable,,true,True
+153,:Settings_Window,Type,,Window,True
+154,:_MenuItem,Enable_Popup,,false,True
+155,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable_S,,true,True
+156,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable_Popup,,false,True
+157,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable_Popup,,false,True
+158,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable_Popup,,false,True
+159,:Settings.Preferences_Label,Enable,,true,True
+160,:Settings.Preferences_Label,Text,,Preferences,True
+161,:Settings.X_Button,Enable,,true,True
+162,:Settings.X_Button,Tooltip,Close,,True
+163,:Settings.X_Button,Text,,X,True
+164,:Settings.Language:_Label,Enable,,true,True
+165,:Settings.Language:_Label,Text,,Language:,True
+166,:Settings.Language:_ComboBox,Enable,,true,True
+167,:Settings.Language:_ComboBox,Text_Checking,,English (United States),True
+168,:Settings.Save Files on:_Label,Enable,,true,True
+169,:Settings.Save Files on:_Label,Text,,Save Files on:,True
+170,:Settings.Save Files on:_Edit,Enable,,true,True
+171,:Settings.Save Files on:_Edit,Tooltip,C:\KoolProg\Configurations,,True
+172,:Settings.Save Files on:_Edit,Text,,C:\KoolProg\Configurations,True
+173,:Settings.Browse.._Button,Enable,,true,True
+174,:Settings.Browse.._Button,Text,,Browse..,True
+175,:Settings.Unit:_Label,Enable,,true,True
+176,:Settings.Unit:_Label,Text,,Unit:,True
+177,:Settings.Unit:_ComboBox,Enable,,true,True
+178,:Settings.Unit:_ComboBox,Text_Checking,,Metric,True
+179,:Settings.CAN Baudrate:_Label,Enable,,true,True
+180,:Settings.CAN Baudrate:_Label,Text,,CAN Baudrate:,True
+181,:Settings.CAN Baudrate:_ComboBox,Enable,,true,True
+182,:Settings.CAN Baudrate:_ComboBox,Text_Checking,,Auto,True
+183,:Settings.Use password protection_CheckBox,Enable,,true,True
+184,:Settings.Use password protection_CheckBox,Text,,Use password protection,True
+185,:Settings.Use password protection_CheckBox,Checked,,false,True
+186,:Settings.Save_Button,Enable,,true,True
+187,:Settings.Save_Button,Text,,Save,True
+188,:Settings.Cancel_Button,Enable,,true,True
+189,:Settings.Cancel_Button,Text,,Cancel,True
+190,:Settings.Save_Button,Click_Button,,,True
+191,:MessageBoxDisplay_Window,Enable,,true,True
+192,:MessageBoxDisplay_Window,Window,,Window,True
+193,:_MenuItem,Enable_Popup,,false,True
+194,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable_S,,true,True
+195,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable_Popup,,false,True
+196,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable_Popup,,false,True
+197,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable_Popup,,false,True
+198,:Settings.X_Button,Enable_Popup,,false,True
+199,:Settings.Browse.._Button,Enable_Popup,,false,True
+200,:Settings.Cancel_Button,Enable_Popup,,false,True
+201,:Settings.Save_Button,Enable_S,,true,True
+202,:MessageBoxDisplay.X_Button,Enable,,true,True
+203,:MessageBoxDisplay.X_Button,Tooltip,Close,,True
+204,:MessageBoxDisplay.X_Button,Text,,X,True
+205,:MessageBoxDisplay.Saved Successfully_Label,Enable,,true,True
+206,:MessageBoxDisplay.Saved Successfully_Label,Text,,Saved Successfully,True
+207,:MessageBoxDisplay.OK_Button,Enable,,true,True
+208,:MessageBoxDisplay.OK_Button,Text,,OK,True
+209,:MessageBoxDisplay.X_Button,Click_Button,,,True
+211,:KoolProg_Window,Enable,,true,True
+212,:KoolProg_Window,Type,,Window,True
+213,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+214,:KoolProg.KoolProg®_Label,Enable,,true,True
+215,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+216,:_MenuItem,Enable,,true,True
+217,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+218,:KoolProg.User_Label,Enable,,true,True
+219,:KoolProg.User_Label,Text,,User,True
+220,:_MenuItem,Tooltip,Help,,True
+221,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+222,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,true,True
+223,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+224,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+225,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+226,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+227,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+228,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+229,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+230,:KoolProg.On,line service_Label,Text,,On
+231,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+232,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True
+234,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Click_Button,,,True
+235,:Settings_Window,Enable,,true,True
+236,:Settings_Window,Type,,Window,True
+237,:_MenuItem,Enable_Popup,,false,True
+238,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable_S,,true,True
+239,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable_Popup,,false,True
+240,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable_Popup,,false,True
+241,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable_Popup,,false,True
+242,:Settings.Preferences_Label,Enable,,true,True
+243,:Settings.Preferences_Label,Text,,Preferences,True
+244,:Settings.X_Button,Enable,,true,True
+245,:Settings.X_Button,Tooltip,Close,,True
+246,:Settings.Language:_Label,Enable,,true,True
+247,:Settings.Language:_Label,Text,,Language:,True
+248,:Settings.Language:_ComboBox,Enable,,true,True
+249,:Settings.Language:_ComboBox,Text_Checking,,English (United States),True
+250,:Settings.Save Files on:_Label,Enable,,true,True
+251,:Settings.Save Files on:_Label,Text,,Save Files on:,True
+252,:Settings.Save Files on:_Edit,Enable,,true,True
+253,:Settings.Save Files on:_Edit,Tooltip,C:\KoolProg\Configurations,,True
+254,:Settings.Save Files on:_Edit,Text,,C:\KoolProg\Configurations,True
+255,:Settings.Browse.._Button,Enable,,true,True
+256,:Settings.Browse.._Button,Text,,Browse..,True
+257,:Settings.Unit:_Label,Enable,,true,True
+258,:Settings.Unit:_Label,Text,,Unit:,True
+259,:Settings.Unit:_ComboBox,Enable,,true,True
+260,:Settings.Unit:_ComboBox,Text_Checking,,Metric,True
+261,:Settings.CAN Baudrate:_Label,Enable,,true,True
+262,:Settings.CAN Baudrate:_Label,Text,,CAN Baudrate:,True
+263,:Settings.CAN Baudrate:_ComboBox,Enable,,true,True
+264,:Settings.CAN Baudrate:_ComboBox,Text_Checking,,Auto,True
+265,:Settings.Use password protection_CheckBox,Enable,,true,True
+266,:Settings.Use password protection_CheckBox,Text,,Use password protection,True
+267,:Settings.Use password protection_CheckBox,Checked,,false,True
+268,:Settings.Save_Button,Enable,,true,True
+269,:Settings.Save_Button,Text,,Save,True
+270,:Settings.Cancel_Button,Enable,,true,True
+271,:Settings.Cancel_Button,Text,,Cancel,True
+272,:Settings.Save_Button,Click_Button,,,True
+273,:MessageBoxDisplay_Window,Enable,,true,True
+274,:MessageBoxDisplay_Window,Window,,Window,True
+275,:_MenuItem,Enable_Popup,,false,True
+276,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable_S,,true,True
+277,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable_Popup,,false,True
+278,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable_Popup,,false,True
+279,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable_Popup,,false,True
+280,:Settings.X_Button,Enable_Popup,,false,True
+281,:Settings.Browse.._Button,Enable_Popup,,false,True
+282,:Settings.Cancel_Button,Enable_Popup,,false,True
+283,:Settings.Save_Button,Enable_S,,true,True
+284,:MessageBoxDisplay.X_Button,Enable,,true,True
+285,:MessageBoxDisplay.X_Button,Tooltip,Close,,True
+286,:MessageBoxDisplay.X_Button,Text,,X,True
+287,:MessageBoxDisplay.Saved Successfully_Label,Enable,,true,True
+288,:MessageBoxDisplay.Saved Successfully_Label,Text,,Saved Successfully,True
+289,:MessageBoxDisplay.OK_Button,Enable,,true,True
+290,:MessageBoxDisplay.OK_Button,Text,,OK,True
+291,:MessageBoxDisplay.OK_Button,Click_Button,,,True
+293,:KoolProg_Window,Enable,,true,True
+294,:KoolProg_Window,Type,,Window,True
+295,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+296,:KoolProg.KoolProg®_Label,Enable,,true,True
+297,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+298,:_MenuItem,Enable,,true,True
+299,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+300,:KoolProg.User_Label,Enable,,true,True
+301,:KoolProg.User_Label,Text,,User,True
+302,:_MenuItem,Tooltip,Help,,True
+303,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+304,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,true,True
+305,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+306,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+307,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+308,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+309,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+310,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+311,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+312,:KoolProg.On,line service_Label,Text,,On
+313,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+314,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True

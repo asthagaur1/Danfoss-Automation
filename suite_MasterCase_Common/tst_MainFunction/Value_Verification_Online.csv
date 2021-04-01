@@ -1,0 +1,73 @@
+DB_Parameter_Name,KP_Parameter_Name,KP_Random_Value,KP_Current_Value,Result
+Sensor Type,Sensor Type,"NTC5K",NTC5K,True
+S2 Configuration,S2 Configuration,"ESP",EuA,False
+S3 Configuration,S3 Configuration,"doo",ESP,False
+Relay 2 Config,Relay 2 Config,"ALA",dEF,False
+Initial pull down ON/OFF,Initial pull down ON/OFF,"ON",OFF,False
+Defrost type,Defrost type,"EL",EL,True
+Fan ON during Defrost,Fan ON during Defrost,"Yes",No,False
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),"dor",dor,True
+ECO Mode Enable,ECO Mode Enable,"No",No,True
+Holiday Mode ,Holiday Mode ,"Yes",No,False
+Voltage Protection function,Voltage Protection function,"No",Yes,False
+Control sensor error handling type,Control sensor error handling type,"Aut",Aut,True
+Sensor Type,Sensor Type,"NTC10K",NTC5K,False
+S2 Configuration,S2 Configuration,"dES",EuA,False
+S3 Configuration,S3 Configuration,"ESP",ESP,True
+Relay 2 Config,Relay 2 Config,"Fan",dEF,False
+Initial pull down ON/OFF,Initial pull down ON/OFF,"OFF",OFF,True
+Defrost type,Defrost type,"Hgd",EL,False
+Fan ON during Defrost,Fan ON during Defrost,"Yes",No,False
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),"OFF",dor,False
+ECO Mode Enable,ECO Mode Enable,"No",No,True
+Holiday Mode ,Holiday Mode ,"Yes",No,False
+Voltage Protection function,Voltage Protection function,"Yes",Yes,True
+Control sensor error handling type,Control sensor error handling type,"Aut",Aut,True
+Sensor Type,Sensor Type,"NTC5K",NTC5K,True
+S2 Configuration,S2 Configuration,"EuA",EuA,True
+S3 Configuration,S3 Configuration,"ESP",ESP,True
+Relay 2 Config,Relay 2 Config,"dEF",dEF,True
+Lowest Temperature Differential,Lowest Temperature Differential,"17.67",17.67,True
+Highest Temperature Differential,Highest Temperature Differential,"3.53",3.53,True
+Initial pull down ON/OFF,Initial pull down ON/OFF,"OFF",OFF,True
+IPD and Pull down Duration,IPD and Pull down Duration,"92",92,True
+Min Run time,Min Run time,"1633",1633,True
+Min Stop time,Min Stop time,"1144",1144,True
+System Resume after door open,System Resume after door open,"14",14,True
+Second Compressor start delay,Second Compressor start delay,"892",892,True
+Power On Delay,Power On Delay,"235",235,True
+Low temp Alarm delay,Low temp Alarm delay,"178",178,True
+High temp Alarm delay,High temp Alarm delay,"117",117,True
+Alarm Door open delay,Alarm Door open delay,"30",30,True
+Alarm delay during Pull Down/ Power up /defrost,Alarm delay during Pull Down/ Power up /defrost,"890",890,True
+Defrost type,Defrost type,"EL",EL,True
+Minimum defrost time,Minimum defrost time,"106",106,True
+Maximum defrost Time,Maximum defrost Time,"417",417,True
+Defrost Terminate Temp,Defrost Terminate Temp,"25.28",25.28,True
+Defrost Start by Evap Temp,Defrost Start by Evap Temp,"-95.41",-95.41,True
+Drip Off time,Drip Off time,"14",14,True
+Fan Delay After Defrost,Fan Delay After Defrost,"927",927,True
+Fan Start Temperature after defrost,Fan Start Temperature after defrost,"18.27",18.27,True
+Fan ON during Defrost,Fan ON during Defrost,"No",No,True
+Initial Defrost Interval,Initial Defrost Interval,"4222",4222,True
+Initial Defrost duration,Initial Defrost duration,"763",763,True
+Fan ON Delay,Fan ON Delay,"103",103,True
+Fan Stop Delay,Fan Stop Delay,"166",166,True
+Fan On Cycle,Fan On Cycle,"650",650,True
+Fan Stop Cycle,Fan Stop Cycle,"940",940,True
+Fan Minimum Stop Time,Fan Minimum Stop Time,"25",25,True
+Fan Limit Temperature,Fan Limit Temperature,"38.58",38.58,True
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),"dor",dor,True
+Light OFF delay,Light OFF delay,"125",125,True
+ECO Mode Enable,ECO Mode Enable,"No",No,True
+Holiday Mode ,Holiday Mode ,"No",No,True
+Holiday Length,Holiday Length,"138",138,True
+Holiday Temperature offset,Holiday Temperature offset,"-4.2",-4.2,True
+Heater low set point,Heater low set point,"-21.0",-21.0,True
+Heater high set point,Heater high set point,"57.65",57.65,True
+Heater low differential,Heater low differential,"25.4",25.4,True
+Energy mode delay,Energy mode delay,"262",262,True
+Voltage Protection function,Voltage Protection function,"Yes",Yes,True
+Control sensor error handling type,Control sensor error handling type,"Aut",Aut,True
+Error Run Time,Error Run Time,"2",2,True
+Error Stop Time,Error Stop Time,"49",49,True

@@ -1,0 +1,88 @@
+﻿GroupCode,MenuCode,Name
+Information (for internal use),TID,ID low part
+Information (for internal use),TID,ID high part
+Information (for internal use),TID,Serial Number
+Information (for internal use),TYN,Type Number 091X
+Information (for internal use),TYN,TypeNumber 077F
+Information (for internal use),TYN,TypeNumber
+Information (for internal use),SWV,Software version
+Service Information,HWV,Hardware version
+Information (for internal use),PAV,Parameter version
+Service Information,AID,Application ID
+Thermostat,CCO,Cold Cut-out
+Thermostat,WCO,Warm Cut-out
+Thermostat,DTS,Default Temp Set
+Thermostat,CDI,Cold Differential
+Thermostat,WDI,Warm Differential
+Fan,FSC,Fan stops on compressor cutout
+Compressor,MIR,Min Runtime
+Compressor,MIS,Min Stoptime
+Compressor,MRF,Max Runtime function
+Compressor,MSF,Max Stoptime Function
+Compressor,MAR,Max Runtime
+Compressor,MAS,Max Stoptime
+Compressor,ERT,Error RunTime
+Compressor,EST,Error StopTime
+Alarm,ALF,Alarm low function
+Alarm,AHF,Alarm high function
+Alarm,ARH,Alarm on Heater relay
+Alarm,ARF,Alarm on Fan relay 
+Alarm,ARI,Alarm on Relay Inverted
+Alarm,COA,Cold Overtemp Alarm
+Alarm,WOA,Warm Overtemp Alarm
+Alarm,CUA,Cold Undertemp Alarm
+Alarm,WUA,Warm Undertemp Alarm
+Alarm,ADL,Alarm Delay
+Defrost,DEM,Defrost Method (name)
+Defrost,FOD,Fan on during defrost
+Defrost,HGD,Hot-Gas Defrost
+Defrost,DTT,Defrost Terminate Temperature
+Defrost,DRT,Defrost Reset Temperature
+Defrost,DST,Defrost Start Temperature
+Defrost,DRT,Drip-off Time
+Defrost,MIT,Minimum Defrost Time
+Defrost,MAT,Maximum Defrost Time
+Defrost,MII,Minimum Defrost Interval
+Defrost,MAI,Maximum Defrost Interval
+Defrost,FAD,Fan delay After Defrost
+Fan,FSA,Fan Start Delay
+Fan,FSO,Fan Stop Delay
+Voltage Protection,CWT,Condenser Warning Temperature
+Voltage Protection,CST,Condenser Stop Temperature
+Voltage Protection,VPF,Voltage Protect function
+Voltage Protection,MIV,Minimum Cut-inVoltage
+Voltage Protection,VTR,Voltage Threshold
+Voltage Protection,MAV,Maximum Cut-in Voltage
+Compressor,STF,Stop function
+Compressor,ZCF,Zero-Cross switching Function
+Compressor,STY,Sensor Type (name)
+Compressor,ZCS,Zero-Cross Switching
+ETP R1 Remote Display,RCD,Remote display fahrenheit
+ETP R1 Remote Display,RSR,Remote display 1 decimal
+ETP R1 Remote Display,RLD,Remote Lock at Defrost
+ETP R1 Remote Display,RID,Remote Indicate Defrost
+ETP R1 Remote Display,RLS,Remote  Lock to Setpoint
+ETP R1 Remote Display,RSF,Remote Stop Function
+ETP R1 Remote Display,RSO,"Remote Sensor Offset
+"
+ETP R1 Remote Display,RSD,Remote Sensor Deviation
+ETP R1 Remote Display,RST,Remote Sample Time
+ETP R1 Remote Display,RDL,Remote Display Locktime
+Service Information,,Defrost temperature
+Service Information,,Condenser temperature
+Service Information,,User set
+Service Information,,Voltage
+Service Information,,RelayCount
+Service Information,,Cutin Cpr
+Service Information,,Cutout Cpr
+Service Information,,Alarm high temp
+Service Information,,Alarm low temp
+Service Information,,Compressor
+Service Information,,Fan
+Service Information,,Heater
+Service Information,,Status
+Service Information,,Alarm
+Service Information,,Factory test
+Service Information, ,Control temperature
+Thermostat, ,Panel Spindle Selection
+Voltage Protection,,Condensor Watch

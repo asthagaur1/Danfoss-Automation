@@ -1,0 +1,135 @@
+ParameterName,GroupName
+Main switch,
+,Start / Stop
+,Digital outputs
+,Virtual DI
+Defrost method,
+,Configuration
+,Defrost control
+Defrost stop method,
+,Configuration
+,Defrost control
+Defrost stop limit A,
+,Configuration
+,Defrost control
+Network address,
+,Configuration
+,Network
+Control state A,
+,Thermostat control
+,Alarm limits and delays
+,Humidity control
+,Injection control A
+,Defrost control
+,Fan control
+,Railheat control
+,Light/Cleaning control
+,Display control
+,Master control
+Control state B,
+,Thermostat control
+,Alarm limits and delays
+,Injection control B
+Control state C,
+,Thermostat control
+,Alarm limits and delays
+,Injection control C
+Thermostat air temp. A,
+,Thermostat control
+,Injection control A
+Thermostat air temp. B,
+,Thermostat control
+,Injection control B
+Thermostat air temp. C,
+,Thermostat control
+,Injection control C
+S4 Air OFF evap. A,
+,Thermostat control
+,Alarm limits and delays
+,Injection control A
+,Virtual AI
+,Analogue inputs
+S4 Air OFF evap. B,
+,Thermostat control
+,Alarm limits and delays
+,Injection control B
+,Analogue inputs
+S4 Air OFF evap. C,
+,Thermostat control
+,Alarm limits and delays
+,Injection control C
+,Analogue inputs
+Night condition,
+,Thermostat control
+,Light/Cleaning control
+Defrost sensor temperature B,
+,Alarm limits and delays
+,Defrost control
+Humidity sensor,
+,Humidity control
+,Analogue inputs
+AKV opening A,
+,Injection control A
+,Virtual DO
+,Digital outputs
+Pe Evap. pressure,
+,Injection control A
+,Injection control B
+,Injection control C
+,Virtual AI
+,Analogue inputs
+Te Evap. temp.,
+,Injection control A
+,Injection control B
+,Injection control C
+,Analogue inputs
+S2 Gas outlet A,
+,Injection control A
+,Virtual AI
+,Analogue inputs
+S2 Gas outlet B,
+,Injection control B
+,Analogue inputs
+S2 Gas outlet C,
+,Injection control C
+,Analogue inputs
+S5 Evaporator A,
+,Defrost control
+,Virtual AI
+,Analogue inputs
+S5 Evaporator B,
+,Defrost control
+,Virtual AI
+,Analogue inputs
+Defrost A,
+,Defrost control
+,Virtual DO
+,Digital outputs
+Defrost B,
+,Defrost control
+,Virtual DO
+,Digital outputs
+Fan,
+,Fan control
+,Virtual DO
+,Digital outputs
+Rail heat PWM,
+,Railheat control
+,Virtual AO
+,Analogue outputs
+Light,
+,Light/Cleaning control
+,Virtual DO
+,Digital outputs
+Humidifier,
+,Virtual DO
+,Digital outputs
+Air heater,
+,Virtual DO
+,Digital outputs
+Rail heat,
+,Virtual DO
+,Digital outputs
+Alarm,
+,Virtual DO
+,Digital outputs

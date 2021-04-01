@@ -1,0 +1,70 @@
+﻿Parameter Name,Code
+Sensor Type,SEn
+S2 Configuration,S2C
+Lowest Temperature Limit,LSE
+Highest Temperature Limit,HSE
+Lowest Temperature Differential,Ldi
+Highest Temperature Differential,Hdi
+Initial pull down  ON/OFF,IPE
+IPD and Pull down Duration,IPD
+IPD and Pull down Initiate temperature,Pit
+Pull Down Limit temperature,PLt
+Min Run time,Crt
+Min Stop time,CSt
+Compressor stop delay on door open,Cdd
+System Resume after door open,Srt
+Power On Delay,Pod
+Low temp alarm limit,LAt
+High temp alarm limit,HAt
+Low temp alarm delay,Ltd
+High temp alarm delay,Htd
+Alarm Door open delay,dod
+Alarm delay during Pull Down/ Power up /defrost,Pdd
+Defrost type,dFt
+Minimum defrost Interval,dii
+Maximum defrost Interval,dAi
+Minimum defrost time,dit
+Maximum defrost Time,dAt
+Defrost Terminate Temp,dtt
+Defrost On accumulated Compressor Run Time,dCt
+Defrost Start by Evap Temp,dEt
+Drip Off time,dot
+Initial Defrost Interval,idi
+Initial defrost duration,idd
+ECO Mode enable,Eco
+Eco Offset,Eto
+Eco Door Delay,Edd
+Voltage Protection function,uPt
+Minimum Cut-in Voltage 110V (230V),uLi
+Minimum Cut out Voltage 110V (230V),uL0
+Maximum cut out Voltage 110V (230V),uHi
+Condenser Alarm Limit,CAL
+Condenser Block Limit,CbL
+Condenser OK Limit,CoL
+Control sensor error handling type,EHd
+Error Run Time,Ert
+Error Stop Time,Est
+Zero Cross Config,ZC
+Operating mode,tSt
+Parameter Version ,Par
+Software Version,Fir
+Hardware Version ,Har
+Code number,onL
+OEM low ,oEL
+OEM High,oEH
+Thermostat cut in temperature,CTi
+Themostat cut out temperature,CTO
+Cabinet Air Temperature,Cab
+Evap Temperature,Eva
+Condenser Temperature,Con
+Door Status,Dor
+Di Switch Status,Di1
+Spindle position,uSp
+Compressor Relay Status,CPS
+Thermostat status,thS
+Defrost status (stages),dES
+Defrost interval counter - Comp. run time,InC
+Defrost Interval counter - Elapsed time,Int
+Alarm status,ALS
+Main Voltage ,uAC
+,

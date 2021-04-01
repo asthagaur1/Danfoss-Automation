@@ -1,0 +1,123 @@
+﻿MenuCode,Name,DefaultValue,Min,Max,Unit,Enum,Help
+TID,ID low part,1,0,65535, ,,
+TID,ID high part,2,0,65535, ,,
+TID,Serial Number,131072,0,10000000, ,,
+TYN,Type Number 091X,33302,0,65535, ,,
+TYN,Type Number 077F,33302,0,65535, ,,
+TYN,TypeNumber,33302,0,65535, ,,
+SWV,Software version,1.09,0,999, ,,
+HWV,Hardware version,0,0,65535, ,,
+PAV,Parameter version,1,0,65535, ,,
+AID,Application ID,1,0,65535, ,"1:STANDARD,2:WINECOOLER,3:DOUBLEDOOR,4:COND101,5:GDM101,6:DUALBAND102,7:DUALDEFROST,13:DFNOFROST100,14:VFGDM100,15:MEDICINECOOLER,16:CondMKS100,17:KIR_NOFROST100",
+CCO,Cold Cut-out,0,-65,50,°C,,"Desired cut-out temperature in coldest position/ set-point
+"
+WCO,Warm Cut-out,10,-65,50,°C,,"Desired cut-out temperature in warmest position/ set-point
+"
+DTS,Default Temp Set,50,0,100,%,,"In case of knob (potentiometer) failure, this setting would bring the temperature set-point to a particular desired position, between the warmest and coldest set-points, which could be set as the percentage between warmest (0%) and coldest(100%) positions/ set-points
+"
+CDI,Cold Differential,1,-1,50,°C,,"Difference in the cut-in and cut-out temperartures at the coldest position (set-point)
+"
+WDI,Warm Differential,1,-1,50,°C,,"Difference in the cut-in and cut-out temperartures at the warmest position (set-point)
+"
+FSC,Fan stops on compressor cutout,1024,0,1,,"1:Enable,0:Disable","If this pamater is enabled , the Fan will stop when the compressor stops."
+MIR,Min Runtime,300,0,1800,Sec,,"To prevent the compressor from frequent cut-outs, this parameter would ensure that the  compressor runs for atleast the specified time. This parameter overrides the cut-out temperature."
+MIS,Min Stoptime,300,0,1800,Sec,,
+MRF,Max Runtime function,1024,0,1,,"1:Enable,0:Disable","Tip: Setting this parameter too high could lead to unneccessary deep temperatures."""
+MSF,Max Stoptime Function,1024,0,1,,"1:Enable,0:Disable","
+""To prevent the compressor from frequent cut-ins, this parameter would ensure that the  compressor remains in idle state for atleast the specified time. This parameter overrides the cut-in temperatures.
+
+Tip: Setting this parameter too high could lead to unneccessary warm temperatures."
+MAR,Max Runtime,3600,0,10800,Sec,,"
+Enable or disable option for Max Run time."""
+MAS,Max Stoptime,5400,0,10800,Sec,,Enable or disable option for Max Stop time.
+ERT,Error RunTime,600,0,1800,Sec,,"To avoid compressor damage due to continuous running for long durations, this parameter would set maximum run time allowed for the compressor.
+"
+EST,Error StopTime,900,0,1800,Sec,,"To avoid long idle state of compressor, this parameter would set maximum stop time allowed, after which the compressor would start irrespective of cut-in temperature. 
+"
+ALF,Alarm low function,1024,0,1,,"1:Enable,0:Disable","This parameter only becomes active in the unlikely event of temperature sensor failure, the compressor would run for specified fixed run time, to maintain safe temprature of the application. 
+"
+AHF,Alarm high function,1024,0,1,,"1:Enable,0:Disable","This parameter only becomes active in the unlikely event of temperature sensor failure, the compressor would stop for specified fixed stop time, to maintain safe temprature of the application.
+"
+ARH,Alarm on Heater relay,1024,0,1,,"1:Enable,0:Disable",Enable or disable option for Alarm undertemp Function.
+ARF,Alarm on Fan relay ,1024,0,1,,"1:Enable,0:Disable",Enable or disable option for Alarm overtemp Function.
+ARI,Alarm on Relay Inverted,1024,0,1,,"1:Enable,0:Disable",Heater-relay will be used for alarm-output if this parameter is enabled.
+COA,Cold Overtemp Alarm,15,-65,50,°C,,Fan-relay will be used for alarm-output if this parameter is enabled.
+WOA,Warm Overtemp Alarm,15,-65,50,°C,,"When this function is enabled , the alarm relay contact will be open at alarm and closed under normal operation."
+CUA,Cold Undertemp Alarm,2,-65,50,°C,,"Warmest temperature allowed at the coldest set-point after which an alarm would be raised.
+"
+WUA,Warm Undertemp Alarm,2,-65,50,°C,,"Warmest temperature allowed at the warmest set-point after which an alarm would be raised.
+"
+ADL,Alarm Delay,60,0,120,Min,,"Coldest temperature allowed at the coldest set-point after which an alarm would be raised.
+"
+DEM,Defrost Method (name),0,0,3,,"0:No defrost,1:Start;Time Stop;Control temp,2:Start;Time Stop;Defrost temp,3:Start & Stop;Defrost temp","Coldest temperature allowed at the warmest set-point after which an alarm would be raised.
+"
+FOD,Fan on during defrost,1024,0,1,,"1:Enable,0:Disable","Time delay to raise over or undertemperature alarm signal. It is not active at power up.
+"
+HGD,Hot-Gas Defrost,1024,0,1,,"1:Enable,0:Disable",Selection of defrost method
+DTT,Defrost Terminate Temperature,5,0,50,°C,,"1. No Defrost: Select this option if you don't need defrost functionality. If this option is selected, it will disable all defrost related parameters."
+DRT,Defrost Reset Temperature,5,0,50,°C,,
+DST,Defrost Start Temperature,-10,-25,0,°C,,"2. Start by Time, Stop by Cabinet temperature: Select this option, if you want to start defrost after fixed specified accumulated compressor run time intervals, and stop the defrost when the desired Cabinet temperature (measures by temperature/ cabinet sensor) is reached as set in the Defrost Terminate temperatur (DTT) parameter."
+DRT,Drip-off Time,0,0,1800,Sec,,
+MIT,Minimum Defrost Time,900,0,3600,sec,,"3. Start by Time, Stop by Evaporator temperature: Select this option, if you want to start defrost after fixed specified accumulated compressor run time intervals, and stop the defrost when the desired evaporator temperature (measures by evaporator sensor) is reached as set in the Defrost Terminate temperatur (DTT) parameter."
+MAT,Maximum Defrost Time,1800,0,43200,sec,,
+MII,Minimum Defrost Interval,360,0,720,Min,,"4. Start and Stop by Evaporator temperature: Select this option, if you want to start and stop the defrost based on evaporator temperature."
+MAI,Maximum Defrost Interval,720,0,2160,Min,,"
+"
+FAD,Fan Start Delay After Defrost,300,0,1800,Sec,,Used in natural defrost method to accelerate the defrosting.
+FSA,Fan Start Delay,0,0,1800,Sec,,if set: The compressor will contine to run during defrost. The relay-output is used to control a Hot Gas By-pass valve instead of the defrost heater.
+FSO,Fan Stop Delay,0,0,1800,Sec,,"Temperature at which the defrost session will be terminated.
+"
+VPF,Voltage Protect function,1024,0,1,,"1:Enable,0:Disable","If the evaporator temperature is above the defrost Reset Temperature, the defrost interval counter will be reset to zero at this temperature. "
+MIV,Minimum Cut-inVoltage,185,80,210,V,,
+VTR,Voltage Threshold,15,0,20,V,,"TIP: This temperature should be set lower than the Defrost Terminate Temperature. The purpose of this function is to only count the time, where the evaporator is cold enough to build up frost."""""
+MAV,Maximum Cut-in Voltage,260,130,264,V,,"Evaporator Temperature at which the defrost can be triggered if option 4 (Start and Stop by Evaporator temperature sensor) is selected
+"
+STF,Stop function,1024,0,1,,"1:Enable,0:Disable","If a heater is used to run the defrost session, this is the delay for compressor start after defrost terminates (waiting for water to drip off the evaporator)
+"
+ZCF,Zero-Cross switching Function,1024,0,1,,"1:Enable,0:Disable","Minimum time limit defined for defrost duration
+"
+STY,Sensor Type (name),1,0,1,,"0:Shibuara,1:Epcos","Maximum time limit defined for defrost duration
+"
+ZCS,Zero-Cross Switching,0,-100,100,%,,"Minimum time interval between two defrost sessions
+"
+RCD,Remote display fahrenheit,2,0,1,,"1:Enable,0:Disable","Maximum time interval between two defrost sessions. Only used by defrost method 4 (Start and Stop by Evaporator temperature)
+"
+RSR,Remote display 1 decimal,2,0,1,,"1:Enable,0:Disable",This fan delay is to avoid circulating warm air from evaporator due to defrost seesion.
+RLD,Remote Lock at Defrost,2,0,1,,"1:Enable,0:Disable","Time delay to start the fan after compressor cut-in
+"
+RID,Remote Indicate Defrost,2,0,1,,"1:Enable,0:Disable","Time delay to stop the fan afer compressor cut-out
+"
+RLS,Remote  Lock to Setpoint,2,0,1,,"1:Enable,0:Disable",
+RSF,Remote Stop Function,2,0,1,,"1:Enable,0:Disable","The lowest voltage at which the compressor is allowed to Cut-in.
+"
+RSO,Remote Sensor Offset,0,-10,10,K,,"When voltage falls below the Minimum cut-in voltage, it waits until it reaches (MIV-VTR) after which it cuts-out the compressor. After this, the compressor would start again at Minimum Cut-in voltage (MIV) parameter."
+RSD,Remote Sensor Deviation,0,-10,10,K,,This parameter will avoid sudden switching on and off of compressor due to voltage fluctuations.
+RST,Remote Sample Time,20,0,255,Sec,,"This cut-off voltage will override compressor minimum run time."""
+RDL,Remote Display Locktime,15,0,1440,Min,,"
+High voltage limit. If the voltage exceeds this limit, the compressor will turn off and is not allowed to start until the line voltage goes below this limit or minimum compressor stop time."
+,Defrost temperature,0,0,0,°C,,"
+""
+""
+""
+This parameter enhaces the relay life and also avoid relay sparks during relay on and off.This parameter is normally set to 0, which means, that the relay will be switched on and off when the line-voltage crosses zero. Hovewer, if you exactly know the power-factor of your load, you can adjust the switching time to compensate for that. "
+,Condenser temperature,0,0,0,°C,,"
+If set, the display will show the temperature in Fahrenheit."""
+,User set,0,0,0,% 0: Warm 100%: Cold,,"If set, the display will show the temperature with one decimal point."
+,Voltage,0,0,0,V,,"If set, the display will not change value during defrost. The lock time is specified by Remote display Locktime""."""
+,RelayCount,0,0,0, ,,
+,Cutin Cpr,0,0,0,°C,,"Similar to RLD except that display will show set point value rather than display being locked as DEF""."""
+,Cutout Cpr,0,0,0,°C,,"If set, you can set the thermostat in stop-position by pressing the two buttons simultaneously for more than 5 seconds. Stop will then be indicated by 3 dashes at the display."
+,Alarm high temp,0,0,0,°C,,"This parameter can be used to calibrate for sensor tolerances. It cancels the deviation caused by long lengths of sensor cable.
+"
+,Alarm low temp,0,0,0,°C,,"This parameter is used to compensate for bad sensor placement, to minimize the influence of the ambient temperature to the sensor.
+"
+,Compressor,0,0,1, ,"1:On,0:Off","if RST parameter is set to zero, the temperature would be displayed immediately as it is read from the sensor.  If set to any other value for example 10, ETP R1 would sample the temperature every ten seconds and moving average of 20 samples would be calculated. So if there is a temperature change, the ETPR1 would take 20 multiplied by 10 seconds i.e., 200 Secs(Max) to reach the exact temperature.
+"
+,Fan,0,0,1, ,"1:On,0:Off","To avoid temperature fluctuations to be visible to the user, you can lock the display to show the temperature before a defrost was started. Or you can let the display show the setpoint. This parameter specifies how long time, it should be locked.
+"
+,Heater,0,0,1, ,"1:On,0:Off",
+,Status,0,0,1,,"0:Run,1:Standby,2:Defrost,3:Error,4:Start,5:Test,6:Off,7:Def End,8:Fac test",
+,Alarm,0,0,1,,"0:None,1:Control,2:Defrost,3:Condensor,4:Compressor,5:Heater,6:POT,7:Voltage_low,8:Voltage_high,9:Condensor_hot,10:Condensor_Warm,11:Over_Temp_Alarm,12:Under_Temp_Alarm",
+,Factory test,0,0,65535,,,
+ ,Control temperature,0,0,0,°C, ,
+ ,Panel Spindle Selection,0,0,2,,"0:Panel,1:Panel+Spindle with Stop Function,2:Panel + Spindle without stop function", 

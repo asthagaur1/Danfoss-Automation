@@ -1,0 +1,84 @@
+﻿MenuCode,Name,DefaultValue,Min,Max,Unit,Enum,Help
+TID,ID low part,1,0,65535, ,,
+TID,ID high part,2,0,65535, ,,
+TID,Serial Number,131072,0,10000000, ,,
+TYN,Type Number 091X,33302,0,65535, ,,
+TYN,TypeNumber 077F,33302,0,65535, ,,
+TYN,TypeNumber,33302,0,65535, ,,
+SWV,Software version,1.09,0,999, ,,
+HWV,Hardware version,0,0,65535, ,,
+PAV,Parameter version,1,0,65535, ,,
+AID,Application ID,1,0,65535, ,"1:STANDARD,2:WINECOOLER,3:DOUBLEDOOR,4:COND101,5:GDM101,6:DUALBAND102,7:DUALDEFROST,13:DFNOFROST100,14:VFGDM100,15:MEDICINECOOLER,16:CondMKS100,17:KIR_NOFROST100",
+CCO,Cold Cut-out,0,-30,50,°C,,"Desired cut-out temperature in coldest position/ set-point
+"
+WCO,Warm Cut-out,10,-30,50,°C,,"Desired cut-out temperature in warmest position/ set-point
+"
+TST,Temp Set Top,50,0,100,%,,"In case of knob (potentiometer) failure, this setting would bring the temperature set-point to a particular desired position, between the warmest and coldest set-points, which could be set as the percentage between warmest (0%) and coldest(100%) positions/ set-points
+"
+CDI,Compressor Differential,1,0,20,K,,"Difference in the cut-in and cut-out temperartures at the coldest position (set-point)
+"
+HDI,Heater Differential,1,0,20,K,,Difference in heater cut-in and cut-out temperartures.
+MIR,Min Runtime,300,0,1800,Sec,,"To prevent the compressor from frequent cut-outs, this parameter would ensure that the  compressor runs for atleast the specified time. This parameter overrides the cut-out temperature."
+MIS,Min Stoptime,300,1,1800,Sec,,
+ALF,Alarm low function,1024,0,1,,"1:Enable,0:Disable","Tip: Setting this parameter too high could lead to unneccessary deep temperatures."""
+AHF,Alarm high function,1024,0,1,,"1:Enable,0:Disable","
+""To prevent the compressor from frequent cut-ins, this parameter would ensure that the  compressor remains in idle state for atleast the specified time. This parameter overrides the cut-in temperatures.
+
+Tip: Setting this parameter too high could lead to unneccessary warm temperatures."
+COA,Cold Overtemp Alarm,15,0,30,°C,,"
+Enable or disable option for Alarm undertemp Function."""
+WOA,Warm Overtemp Alarm,15,0,30,°C,,Enable or disable option for Alarm overtemp Function.
+CUA,Cold Undertemp Alarm,2,0,30,°C,,"Warmest temperature allowed at the coldest set-point after which an alarm would be raised.
+"
+WUA,Warm Undertemp Alarm,2,0,30,°C,,"Warmest temperature allowed at the warmest set-point after which an alarm would be raised.
+"
+ADL,Alarm Delay,60,0,120,Min,,"Coldest temperature allowed at the coldest set-point after which an alarm would be raised.
+"
+FOD,Fan on during defrost,1024,0,1,,"1:Enable,0:Disable","Coldest temperature allowed at the warmest set-point after which an alarm would be raised.
+"
+FSA,Fan Start Delay,0,0,3600,Sec,,"Time delay to raise over or undertemperature alarm signal. It is not active at power up.
+"
+VPF,Voltage Protect function,1024,0,1,,"1:Enable,0:Disable",Used in natural defrost method to accelerate the defrosting.
+MIV,Minimum Cut-in Voltage,185,80,210,V,,"Time delay to start the fan after compressor cut-in
+"
+VTR,Voltage Threshold,15,0,20,V,,
+MAV,Maximum Cut-in Voltage,260,130,264,V,,"The lowest voltage at which the compressor is allowed to Cut-in.
+"
+ZCF,Zero-Cross switching Function,1024,0,1,,"1:Enable,0:Disable","When voltage falls below the Minimum cut-in voltage, it waits until it reaches (MIV-VTR) after which it cuts-out the compressor. After this, the compressor would start again at Minimum Cut-in voltage (MIV) parameter."
+ZCS,Zero-Cross Switchning,0,-100,100,%,,This parameter will avoid sudden switching on and off of compressor due to voltage fluctuations.
+RCD,Remote display fahrenheit,2,0,1,,"1:Enable,0:Disable","This cut-off voltage will override compressor minimum run time."""
+RSO,Remote Offset,0,-10,10,°C,,"
+High voltage limit. If the voltage exceeds this limit, the compressor will turn off and is not allowed to start until the line voltage goes below this limit or minimum compressor stop time."
+RSD,Remote Deviation,0,-10,10,°C,,"
+""
+This parameter enhaces the relay life and also avoid relay sparks during relay on and off.This parameter is normally set to 0, which means, that the relay will be switched on and off when the line-voltage crosses zero. Hovewer, if you exactly know the power-factor of your load, you can adjust the switching time to compensate for that. "
+RST,Remote Sample Time,20,0,255,Sec,,"
+If set, the display will show the temperature in Fahrenheit."""
+,Bottom Temp S2,0,0,0,°C,,"This parameter can be used to calibrate for sensor tolerances. It cancels the deviation caused by long lengths of sensor cable.
+"
+,User set,0,0,0,% 0: Warm 100%: Cold,,"This parameter is used to compensate for bad sensor placement, to minimize the influence of the ambient temperature to the sensor.
+"
+,Voltage,0,0,0,V,,"if RST parameter is set to zero, the temperature would be displayed immediately as it is read from the sensor.  If set to any other value for example 10, ETP R1 would sample the temperature every ten seconds and moving average of 20 samples would be calculated. So if there is a temperature change, the ETPR1 would take 20 multiplied by 10 seconds i.e., 200 Secs(Max) to reach the exact temperature.
+"
+,RelayCount,0,0,0, ,,
+,Cutin Cpr,0,0,0,°C,,
+,Cutout Cpr,0,0,0,°C,,
+,Alarm high temp,0,0,0,°C,,
+,Alarm low temp,0,0,0,°C,, 
+,Compressor,0,0,1, ,"1:On,0:Off",
+,Fan,0,0,1, ,"1:On,0:Off",
+,Heater,0,0,1, ,"1:On,0:Off",
+,Status,0,0,16,,"0:Run,1:Standby,2:Defrost,3:Error,4:Start,5:Test,6:Off,7:Def End,8:Fac test",
+,Alarm,0,0,16,,"0:None,1:Sensor1,2:Sensor2,3:Compressor,4:Heater,5:Voltage_low,6:Voltage_high,7:Over_Temp_Alarm,8:Under_Temp_Alarm",
+,Factory test,0,0,65535,,,
+ ,Top Temp S1,0,0,0,°C, ,
+ ,Panel Spindle Selection,0,0,2,,"0:Panel,1:Panel+Spindle with Stop Function,2:Panel + Spindle without stop function",
+TSB,Temp Set Bottom,50,0,100,%,,
+FDI,Fan Differential,1,0,20,K,,
+FMR,Fan Min Run Time,0,0,3600,Sec,,
+FMS,Fan Min Stop time,0,0,3600,Sec,,
+TSL,Temp Set Bottom Low,50,0,100,%,,Difference in Fan Cut-in and cut-out temperatures.
+DLT,Duration of bottom low setp,0,0,65535,Sec,,Minimum run time of fan in order to avoid sudden ON/OFF of fan.
+ATL,Add Temp for using lower setp,0,0,65535,°C,,Minimum stop time of fan in order to avoid sudden ON/OFF of fan.
+,Cutin Heater,0,0,0,°C,,
+,Cutout Heater,0,0,0,°C,,

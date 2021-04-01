@@ -1,0 +1,87 @@
+﻿Name,Enum
+ID low part,
+ID high part,
+Serial Number,
+Type Number 091X,
+Type Number 077F,
+TypeNumber,
+Software version,
+Hardware version,
+Parameter version,
+Application ID,"1:STANDARD,2:WINECOOLER,3:DOUBLEDOOR,4:COND101,5:GDM101,6:DUALBAND102,7:DUALDEFROST,13:DFNOFROST100,14:VFGDM100,15:MEDICINECOOLER,16:CondMKS100,17:KIR_NOFROST100"
+Refrigerator Cold Cut-out,
+Refrigerator Warm Cut-out,
+Refrigerator User Setpoint,
+Refrigerator Cold Differential,
+Refrigerator Warm Differential,
+Fan stops on compressor cutout,"1:Enable,0:Disable"
+Refrigerator Min Runtime,
+Refrigerator Min Stoptime,
+Super Cool Time,
+Refrigerator Error Runtime,
+Refrigerator Error Stoptime,
+Refrigerator Overtemp Alarm,"1:Enable,0:Disable"
+Refrigerator Undertemp Alarm,"1:Enable,0:Disable"
+Refrigerator Cold Overtemp Alarm,
+Refrigerator Warm Overtemp Alarm,
+Refrigerator Cold Undertemp Alarm,
+Refrigerator Warm Undertemp Alarm,
+Refrigerator Alarm Delay,
+Defrost method,"0:No defrost,1:Start;Time Stop;Control temp"
+Fan on during defrost,"1:Enable,0:Disable"
+Defrost Terminate Temperature,
+Minimum Defrost Time,
+Maximum Defrost Time,
+Minimum Defrost Interval,
+Fan Start Delay,
+Fan Stop Delay,
+Remote Lock at Defrost,"1:Enable,0:Disable"
+Refrigerator Remote Offset,
+Refrigerator Remote Deviation,
+Refrigerator Remote sample time,
+Refrigerator Remote Display Locktime,
+Control temp Freezer,
+Condenser temperature,
+User set,
+Voltage,
+RelayCount,
+Cutin Cpr Refrigerator,
+Cutout Cpr Refrigerator,
+Alarm high temp Refrigerator,
+Alarm low temp Refrigerator,
+Compressor freezer,"1:On,0:Off"
+Fan ref,"1:On,0:Off"
+Compressor ref,"1:On,0:Off"
+Status refrigerator,"0:CTR_Run,1:CTR_Standby,2:CTR_Defrost,3:CTR_Error,4:CTR_Start,5:CTR_Off,6:Def End,7:Fac test"
+Alarm,"1:Control Refrigerator,2:Control Freezzer,3:Alarm High Temp Freezer,4:Alarm Low Temp REfrigerator,5:Alarm High Temp REfrigerator,6:Alarm Low Temp Freezer"
+Factory test,
+Control temp Refrigerator, 
+Panel Spindle Selection,"0:Panel,1:Panel+Spindle with Stop Function,2:Panel + Spindle without stop function"
+Zero Cross Switching,"1:Enable,0:Disable"
+Freezer Undertemp Alarm,"1:Enable,0:Disable"
+Freezer Overtemp Alarm,"1:Enable,0:Disable"
+Freezer Cold Cut-out,
+Freezer Warm Cut-out,
+Freezer User Setpoint,
+Freezer Cold Differential,
+Freezer Warm Differential,
+Freezer Min Stoptime,
+Freezer Min Runtime,
+Freezer Error Stoptime,
+Freezer Error Runtime,
+Super freeze time,
+Freezer Zero-Cross switching,
+Freezer Cold Overtemp Alarm,
+Freezer Warm Overtemp Alarm, 
+Freezer Cold Undertemp Alarm,
+Freezer Warm Undertemp alarm,
+Freezer Alarm Delay,
+Freezer Remote Offset,
+Freezer Remote Deviation,
+Freezer Remote sample time,
+Type of application,"0:Double Door(combi),1:Refrigerator(Separate),2:Freezer(Separate)"
+Cutin Cpr Freezer,
+Cutout Cpr Freezer,
+Alarm high temp Freezer,
+Alarm low temp Freezer,
+Status freezer,"0:CTR_Run,1:CTR_Standby,2:CTR_Defrost,3:CTR_Error,4:CTR_Start,5:CTR_Off,6:Def End,7:Fac test"

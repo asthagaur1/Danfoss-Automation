@@ -1,0 +1,4 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+TC_0001,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Click_Button,?,,True
+,:KoolProg.ucParameterDisplay_WPFControl,Click_All,,,None
+TC_0002,,AKCC_Readouts,,,None

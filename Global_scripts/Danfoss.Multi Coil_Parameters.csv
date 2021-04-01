@@ -1,0 +1,428 @@
+Parameter_Index,ParameterName,Enum
+Id_1048586,Main switch,"-1:Manual,0:Stop,1:Start"
+Id_1054510,Delay of outputs at power up,
+Id_1056739,Application mode,"1:1. One evaporator MT/LT,2:2. Two evaporators MT/LT,3:3. Three evaporators MT,4:4. Coldroom 2 MT/HT,5:5. Coldroom 2 MT/LT"
+Id_1056251,AO1 Configuration,"0:None,1:Rail heat PWM"
+Id_1056200,DI1 Configuration,"0:None,1:DI status,2:Door function,3:Door alarm,4:Defrost start,5:Main switch,6:Night setback,7:Thermostat band,8:Alarm at closed,9:Alarm at open,10:Case cleaning,11:Forced cooling,12:Open blinds,13:Coordinated defrost,14:Forced closing,15:Shutdown,16:Light control,20:Leak detection,21:Adaptive liquid control"
+Id_1056217,DI2 Configuration,"0:None,1:DI status,2:Door function,3:Door alarm,4:Defrost start,5:Main switch,6:Night setback,7:Thermostat band,8:Alarm at closed,9:Alarm at open,10:Case cleaning,11:Forced cooling,12:Open blinds,13:Coordinated defrost,14:Forced closing,15:Shutdown,16:Light control,20:Leak detection,21:Adaptive liquid control"
+Id_1056234,DI3 Configuration,"0:None,1:DI status,2:Door function,3:Door alarm,4:Defrost start,5:Main switch,6:Night setback,7:Thermostat band,8:Alarm at closed,9:Alarm at open,10:Case cleaning,11:Forced cooling,12:Open blinds,13:Coordinated defrost,14:Forced closing,15:Shutdown,16:Light control,20:Leak detection,21:Adaptive liquid control"
+Id_1048610,Refrigerant,"0:Not seleted,6:R13,7:R13b1,2:R22,8:R23,14:R32,11:R114,3:R134a,12:R142b,24:R170,15:R227,25:R290,16:R401A,18:R402A,19:R404A,21:R407A,22:R407B,20:R407C,37:R407F,49:R407H,23:R410A,32:R413A,30:R417A,31:R422A,33:R422D,34:R427A,35:R438A,40:R448A,41:R449A,48:R449B,43:R450A,44:R452B,45:R454B,9:R500,4:R502,10:R503,17:R507,36:R513A,26:R600,27:R600a,5:R717,28:R744,46:R1233zdE,38:R1234ze,39:R1234yf,47:R1234zeZ,29:R1270,42:R452A,1:Custom display,13:Custom"
+Id_1048614,Refrigerant factor K1,
+Id_1048615,Refrigerant factor K2,
+Id_1048616,Refrigerant factor K3,
+Id_1048611,Refrigerant factor A1,
+Id_1048612,Refrigerant factor A2,
+Id_1048613,Refrigerant factor A3,
+Id_1053752,Pe sensor - Min range,
+Id_1053751,Pe sensor - Max range,
+Id_1053444,Temperature sensor type,"0:Pt 1000,1:PTC 1000,2:NTC 5k,3:NTC 10k"
+Id_1054083,Defrost method,"0:None,1:Electrical,4:Air/Offcycle"
+Id_1054087,Defrost stop method,"0:Time,1:S5 sensor,2:S4 sensor"
+Id_1053671,Defrost stop limit A,
+Id_1056768,Food type,"0:None,1:Vegetables,2:Dairy,3:Meat and fish,4:Frozen food,5:Ice cream"
+Id_1056740,Food temp. sensor,"1:Ther. air A,2:Average all,3:Maximum all"
+Id_1054564,Network address,
+Id_1056807,Service pin,"0:OFF,1:ON"
+Id_1056109,DO1 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056124,DO2 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056139,DO3 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056154,DO4 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056169,DO5 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056184,DO6 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056199,DO7 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056216,DI1 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056233,DI2 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056250,DI3 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056298,AI1 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056314,AI2 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056330,AI3 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056346,AI4 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056362,AI5 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056378,AI6 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056394,AI7 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1056266,AO1 Function,"30:Pe Evap. pressure,31:S2 Gas outlet A,33:S4 Air OFF evap. A,34:S5 Evaporator A,37:S5 Evaporator B,38:Humidity sensor,39:S4 Air OFF evap. B,40:S4 Air OFF evap. C,41:S2 Gas outlet B,42:S2 Gas outlet C,90:Rail heat PWM,60:Digital input status,61:Door function,62:Door alarm,63:Defrost start,64:Main switch,65:Night setback,66:Thermostat band,67:Alarm at closed,68:Alarm at open,69:Case cleaning,70:Forced cooling,71:Open blinds,72:Coordinated def.,73:Forced closing,74:Shut down,75:Light control,76:Leak detection,77:Adap liquid ctrl,0:None,1:AKV opening A,2:Fan,4:Defrost A,5:Rail heat,6:Alarm,7:Light,11:Air heater,15:Defrost B,16:Humidifier,17:AKV opening B,18:AKV opening C"
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053865,Control state B,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1055837,Control state C,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053472,Thermostat air temp. A,
+Id_1053583,Thermostat air temp. B,
+Id_1055750,Thermostat air temp. C,
+Id_1053451,Food temperature A,
+Id_1053726,S4 Air OFF evap. A,
+Id_1053921,S4 Air OFF evap. B,
+Id_1055893,S4 Air OFF evap. C,
+Id_1048672,Night condition,"0:OFF,1:ON"
+Id_1053475,Thermostat cutin temp.,
+Id_1053476,Thermostat cutout temp.,
+Id_1053474,Thermostat runtime A,
+Id_1053585,Thermostat runtime B,
+Id_1055752,Thermostat runtime C,
+Id_1053470,Thermostat band,"1:Band 1,2:Band 2"
+Id_1053442,Thermostat mode,"1:ON/OFF,2:Modulating,3:ON/OFF Common"
+Id_1056460,Thermostat sensor,"1:Ther. air A,2:Average all,3:Maximum all"
+Id_1053499,Cutout 1,
+Id_1053518,Cutout 2,
+Id_1053501,Differential,
+Id_1053467,Max cutout limit,
+Id_1053468,Min cutout limit,
+Id_1053461,Night offset,
+Id_1053465,Air heater neutral zone,
+Id_1053466,Air heater start delay,
+Id_1053464,Melt interval,
+Id_1053473,Melt period,
+Id_1048585,Alarm status,"0:OFF,1:ON"
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053865,Control state B,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1055837,Control state C,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053497,Alarm air temp. A,
+Id_1053608,Alarm air temp. B,
+Id_1055775,Alarm air temp. C,
+Id_1056813,High alarm limit,
+Id_1056814,Low alarm limit,
+Id_1053726,S4 Air OFF evap. A,
+Id_1053921,S4 Air OFF evap. B,
+Id_1055893,S4 Air OFF evap. C,
+Id_1054844,Reset alarms,"0:OFF,1:ON"
+Id_1053500,High alarm limit 1,
+Id_1053502,Low alarm limit 1,
+Id_1053519,High alarm limit 2,
+Id_1053521,Low alarm limit 2,
+Id_1053495,Alarm delay A,
+Id_1053496,Alarm delay pulldown A,
+Id_1054316,Door open alarm delay,
+Id_1054320,Door restart inj. delay,
+Id_1054334,Alarm delay DI 1,
+Id_1055016,Alarm delay DI 2,
+Id_1053869,Defrost sensor temperature B,
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1054315,Humidity sensor,
+Id_1056812,Humidity control,"0:No,1:Yes"
+Id_1054285,Humidity cutin,
+Id_1054290,Humidity differential,
+Id_1054287,Humidity high alarm limit,
+Id_1054288,Humidity low alarm limit,
+Id_1054289,Humidity alarm delay,
+Id_1054313,Humidity sensor - Min signal,
+Id_1054314,Humidity sensor - Max signal,
+Id_1054284,Humidity ctrl. at defrost,"0:No,1:Yes"
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053472,Thermostat air temp. A,
+Id_1053726,S4 Air OFF evap. A,
+Id_1053814,AKV opening A,
+Id_1053753,Pe Evap. pressure,
+Id_1053754,Te Evap. temp.,
+Id_1053700,S2 Gas outlet A,
+Id_1053779,Superheat A,
+Id_1053780,Superheat reference A,
+Id_1053776,Min superheat limit,
+Id_1053775,Max superheat limit,
+Id_1053777,MOP temperature,
+Id_1053813,AKV Period time,
+Id_1053797,Min superheat liquid ctrl,
+Id_1053796,Max superheat liquid ctrl.,
+Id_1053865,Control state B,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053583,Thermostat air temp. B,
+Id_1053921,S4 Air OFF evap. B,
+Id_1054009,AKV opening B,
+Id_1053753,Pe Evap. pressure,
+Id_1053754,Te Evap. temp.,
+Id_1053895,S2 Gas outlet B,
+Id_1053974,Superheat B,
+Id_1053975,Superheat reference B,
+Id_1055837,Control state C,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1055750,Thermostat air temp. C,
+Id_1055893,S4 Air OFF evap. C,
+Id_1055981,AKV opening C,
+Id_1053753,Pe Evap. pressure,
+Id_1053754,Te Evap. temp.,
+Id_1055867,S2 Gas outlet C,
+Id_1055946,Superheat C,
+Id_1055947,Superheat reference C,
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053674,Defrost sensor temperature A,
+Id_1053869,Defrost sensor temperature B,
+Id_1055841,Defrost sensor temperature C,
+Id_1053739,S5 Evaporator A,
+Id_1053934,S5 Evaporator B,
+Id_1053774,Defrost A,"0:OFF,1:ON"
+Id_1053969,Defrost B,"0:OFF,1:ON"
+Id_1053672,Defrost time A,
+Id_1053867,Defrost time B,
+Id_1055839,Defrost time C,
+Id_1054860,Start defrost,"0:OFF,1:ON"
+Id_1054926,Stop defrost,"0:OFF,1:ON"
+Id_1054083,Defrost method,"0:None,1:Electrical,4:Air/Offcycle"
+Id_1054087,Defrost stop method,"0:Time,1:S5 sensor,2:S4 sensor"
+Id_1053671,Defrost stop limit A,
+Id_1054086,Max defrost time,
+Id_1054098,Defrost start interval,
+Id_1054099,Time staggering power up,
+Id_1054107,Max thermostat runtime,
+Id_1054088,Pump down delay,
+Id_1054091,Drip off time,
+Id_1054090,Max hold time,
+Id_1054093,Fan control during defrost,"0:OFF,1:ON,2:OFF at drip,3:OFF at high temp"
+Id_1054094,Fan start delay,
+Id_1054095,Fan start temperature,
+Id_1054096,Fan stop temperature,
+Id_1054179,Rail heat during defrost,"0:OFF,1:ON,2:Normal control"
+Id_1054101,Display delay after defrost,
+Id_1054133,Defrost schedule,"0:No,1:Yes"
+Id_1054141,Def. start 1 - Hours,
+Id_1054142,Def. start 1 - Minutes,
+Id_1054143,Def. start 2 - Hours,
+Id_1054144,Def. start 2 - Minutes,
+Id_1054145,Def. start 3 - Hours,
+Id_1054146,Def. start 3 - Minutes,
+Id_1054147,Def. start 4 - Hours,
+Id_1054148,Def. start 4 - Minutes,
+Id_1054149,Def. start 5 - Hours,
+Id_1054150,Def. start 5 - Minutes,
+Id_1054151,Def. start 6 - Hours,
+Id_1054152,Def. start 6 - Minutes,
+Id_1055699,Monday - Follow schedule,"0:No,1:Yes"
+Id_1055700,Tuesday - Follow schedule,"0:No,1:Yes"
+Id_1055701,Wednesday - Follow schedule,"0:No,1:Yes"
+Id_1055702,Thursday - Follow schedule,"0:No,1:Yes"
+Id_1055703,Friday - Follow schedule,"0:No,1:Yes"
+Id_1055704,Saturday - Follow schedule,"0:No,1:Yes"
+Id_1055705,Sunday - Follow schedule,"0:No,1:Yes"
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1054224,Fan,"0:OFF,1:ON"
+Id_1054212,Fan pulsing mode,"0:No pulsing,1:Pulsing cutout,2:Pulsing cutout night"
+Id_1054213,Fan period time,
+Id_1054210,Fan ON cycle,
+Id_1054211,Fan stop high S5 temp.,
+Id_1054214,Fan at forced closing,"0:OFF,1:ON,2:OFF and suppress defrost,3:ON and suppress defrost"
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1054189,Dewpoint,
+Id_1054188,Railheat power,
+Id_1054209,Rail heat PWM,
+Id_1054178,Rail heat control mode,"0:ON,1:Day/Night timer,2:Dew point ctrl."
+Id_1054180,Rail heat ON cycle day,
+Id_1054181,Rail heat ON cycle night,
+Id_1054182,Rail heat period time,
+Id_1054208,Rail heat PWM - Period time,
+Id_1054185,Rail heat min ON cycle,
+Id_1054183,Dewpoint min limit,
+Id_1054184,Dewpoint max limit,
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1048672,Night condition,"0:OFF,1:ON"
+Id_1054249,Light,"0:OFF,1:ON"
+Id_1054235,Light control mode,"1:Day and night,2:Network,3:Door switch,4:Network (Fallback),5:Digital input"
+Id_1054237,Light at Main switch OFF,"0:OFF,1:Normal ctrl."
+Id_1054361,Case cleaning mode,"0:OFF,1:Fans run,2:Cleaning"
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053556,Display readout A,
+Id_1053667,Display readout B,
+Id_1056741,Display readout,"1:Ther. air A,2:Average all,3:Maximum all"
+Id_1053554,Display readout adjustment,
+Id_1048691,Temperature unit,"0:Celsius,1:Fahrenheit"
+Id_1048688,Display lock,"0:OFF,1:ON"
+Id_1056797,Alarm relay priority,"0:Not used,1:High Priority,2:Medium priority,3:All"
+Id_1056771,Mute alarm,"0:OFF,1:ON"
+Id_1054512,High temperature - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054514,Low temperature - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054516,Sensor errors - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054518,DI alarms - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054520,Defrost - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054522,Miscellaneous - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054524,Injection - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054526,Control stopped - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054528,Leak detection - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1054530,Humidity ctrl. - Priority,"0:Disabled,3:Low,2:Medium,1:High"
+Id_1048687,Access code 3,
+Id_1048686,Access code 2,
+Id_1048685,Access code 1,
+Id_1054563,Network status,
+Id_1054564,Network address,
+Id_1054565,Baudrate,"1:Auto,2:9600 Baud,3:19200 Baud,4:38400 Baud"
+Id_1054566,Parity and stop bit,"0:None,1:Even,2:Odd"
+Id_1053725,S4 Air OFF evap. A - Adjustment,
+Id_1053920,S4 Air OFF evap. B - Adjustment,
+Id_1055892,S4 Air OFF evap. C - Adjustment,
+Id_1056806,Make new factory,"0:OFF,1:ON"
+Id_1056805,Reset to factory settings,"0:OFF,1:ON"
+Id_1053782,Superheat ctrl. mode A,"1:Adaptive,2:Load based"
+Id_1053783,Superheat close A,
+Id_1053786,AFidentForce A,
+Id_1053784,Superheat Kp min A,
+Id_1053785,Superheat Kp max A,
+Id_1053787,Superheat Tn A,
+Id_1053788,Te feedback gain A,
+Id_1053792,Kp MTR control A,
+Id_1053793,Tn MTR control A,
+Id_1053794,AFident A,
+Id_1053795,Calculated Max OD A,
+Id_1053801,Superheat close liquid ctrl. A,
+Id_1056775,AFident Ee,
+Id_1056776,Aver.OD Ee,
+Id_1053981,AFidentForce B,
+Id_1053989,AFident B,
+Id_1053990,Calculated Max OD B,
+Id_1055953,AFidentForce C,
+Id_1055961,AFident C,
+Id_1055962,Calculated Max OD C,
+Id_1056780,AFident Ee,
+Id_1056781,Aver.OD Ee,
+Id_1056785,AFident Ee,
+Id_1056786,Aver.OD Ee,
+Id_1053670,Control state A,"0:Normal ctrl.,1:Hold after defrost,2:Min ON timer,3:Min OFF timer,4:Drip off,5:Restart timer,6:Ctrl_Sout,7:Ctrl_Sin,8:Cut in delay,9:Cut out delay,10:Main switch OFF,11:Thermostat cutout,12:Frost protection S4,13:Not_used,14:Defrost,15:Fan delay,17:Door open,18:Melt period,19:Modulating temp. control,20:Emergency control,21:Injection error,22:Charging evaporator,23:Adaptive superheat control,24:Start injection,25:Manual control,26:No refrigerant selected,16:Forced closing,27:Forced_cooling1,28:AmbientMode,29:Case cleaning,30:Forced cooling,31:Door open,32:Power up delay,33:Air heating,35:Cooling_ON_B,36:Cooling_OFF_B,37:Cooling_ON_C,38:Cooling_OFF_C,39:Cooling_ON_D,40:Cooling_OFF_D,41:High_Sc,42:Heat_Recovery,43:S43,44:Sensor_error_recovery,45:Shut down controller,46:Power_Module,47:Load_shed,48:Adaptive liquid control"
+Id_1053669,Regulation condition A,"0:Main switch OFF,1:Injection start,2:Superheat ctrl.,3:Fill evap.,4:Defrost,5:Post defrost,6:Forced closing,7:Injection fault,8:Emergency control,9:Modulating ctrl.,10:Melt period,11:Door open,12:Case cleaning,13:Cutout,14:Forced cooling,15:Shut down"
+Id_1053864,Regulation condition B,"0:Main switch OFF,1:Injection start,2:Superheat ctrl.,3:Fill evap.,4:Defrost,5:Post defrost,6:Forced closing,7:Injection fault,8:Emergency control,9:Modulating ctrl.,10:Melt period,11:Door open,12:Case cleaning,13:Cutout,14:Forced cooling,15:Shut down"
+Id_1055836,Regulation condition C,"0:Main switch OFF,1:Injection start,2:Superheat ctrl.,3:Fill evap.,4:Defrost,5:Post defrost,6:Forced closing,7:Injection fault,8:Emergency control,9:Modulating ctrl.,10:Melt period,11:Door open,12:Case cleaning,13:Cutout,14:Forced cooling,15:Shut down"
+Id_1053478,MC Actual cutin temp.,
+Id_1053477,MC Actual cutout temp.,
+Id_1053439,MC Ther. toggle,"0:No action,1:Toggle ON,2:Toggle OFF"
+Id_1053440,MC Load request,
+Id_1053798,MC Max Te offset,
+Id_1053799,MC Liquid control,"0:OFF,1:ON"
+Id_1048671,MC Night setback,"0:OFF,1:ON"
+Id_1053438,MC Case shutdown,"0:OFF,1:ON"
+Id_1053437,MC Forced closing,"0:OFF,1:ON"
+Id_1053436,MC Forced cooling,"0:OFF,1:ON"
+Id_1054102,MC Defrost start,"0:OFF,1:ON"
+Id_1056772,MC Defrost state,"0:OFF,1:ON"
+Id_1054103,MC Hold after defrost,"0:OFF,1:ON"
+Id_1054104,MC Stop defrost,"0:OFF,1:ON"
+Id_1054238,MC Light signal,"0:OFF,1:ON"
+Id_1054186,MC Actual dewpoint,
+Id_1053479,MC Po load factor,
+Id_1048596,MC Bluetooth lock,"0:OFF,1:ON"
+Id_1053802,MC Min delta T,
+Id_1053445,No. of case sections,
+Id_1056284,AI1 Simulering,
+Id_1056300,AI2 Simulering,
+Id_1056316,AI3 Simulering,
+Id_1056332,AI4 Simulering,
+Id_1056348,AI5 Simulering,
+Id_1056364,AI6 Simulering,
+Id_1056380,AI7 Simulering,
+Id_1056201,DI1 Simulate,
+Id_1056218,DI2 Simulate,
+Id_1056235,DI3 Simulate,
+Id_1048578,Ordering number,
+Id_1048577,Controller model,
+Id_1048590,Device ID,
+Id_1048581,Software version,
+Id_1056811,Ordering number low,
+Id_1056810,Software suffix,
+Id_1056809,Software reset,
+Id_1056804,Fast forward,
+Id_1056799,Wink state,"0:OFF,1:ON"
+Id_1056767,Restore mode,"0:OFF,1:ON"
+Id_1056073,Cooling state,"0:OFF,1:ON"
+Id_1055706,No. of alarms,
+Id_1056796,Application mode,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054583,Hardware failure,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054591,Clock lost time,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054727,Pe Evap. pressure A - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054719,S2 Gas outlet A - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054723,S4 Air OFF evap. A - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054725,S5 Evaporator A - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054753,S5 Evaporator B - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054786,Humidity sensor - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054751,S4 Air OFF evap. B - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1056059,S4 Air OFF evap. C - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054747,S2 Gas outlet B - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1056055,S2 Gas outlet C - Sensor error,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054684,High temperature alarm A,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054685,Low temperature alarm A,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054787,Door open alarm,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1056417,Max defrost hold time exceeded,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054590,Refrigerant not selected,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054790,DI alarm 1,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1055067,DI alarm 2,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054586,Main switch set OFF,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054796,Case in cleaning mode,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054696,High temperature alarm B,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054697,Low temperature alarm B,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054584,CO2 leak detected,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054585,Refrigerant leak detected,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054782,High humidity alarm,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054783,Low humidity alarm,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1056032,High temperature alarm C,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1056033,Low temperature alarm C,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054715,Max defrost time exceeded A,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1054743,Max defrost time exceeded B,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1056051,Max defrost time exceeded C,"1:1: Comp/Alarm/Light,2:2: Comp/Rail/Light,3:3: Comp/Alarm/Rail,4:4: Alarm/Rail/Light,5:5: Hotgas remote,6:6: Dual with 1 evap.,7:7: Dual with 2 evap.,8:8: Coldroom,9:9: Custom"
+Id_1053753,Pe Evap. pressure,
+Id_1053700,S2 Gas outlet A,
+Id_1053726,S4 Air OFF evap. A,
+Id_1053739,S5 Evaporator A,
+Id_1053934,S5 Evaporator B,
+Id_1054445,Digital input status,"0:OFF,1:ON"
+Id_1054956,Door function,"0:OFF,1:ON"
+Id_1054968,Door alarm,"0:OFF,1:ON"
+Id_1054164,Defrost start,"0:OFF,1:ON"
+Id_1048609,Main switch,"0:OFF,1:ON"
+Id_1048684,Night setback,"0:OFF,1:ON"
+Id_1053516,Thermostat band,"0:OFF,1:ON"
+Id_1054992,Alarm at closed,"0:OFF,1:ON"
+Id_1054980,Alarm at open,"0:OFF,1:ON"
+Id_1054373,Case cleaning,"0:OFF,1:ON"
+Id_1054409,Forced cooling,"0:OFF,1:ON"
+Id_1054271,Open blinds,"0:OFF,1:ON"
+Id_1054176,Coordinated def.,"0:OFF,1:ON"
+Id_1054397,Forced closing,"0:OFF,1:ON"
+Id_1054385,Shut down,"0:OFF,1:ON"
+Id_1054283,Light control,"0:OFF,1:ON"
+Id_1054433,Leak detection,"0:OFF,1:ON"
+Id_1054421,Adap liquid ctrl,"0:OFF,1:ON"
+Id_1054209,Rail heat PWM,
+Id_1053814,AKV opening A,
+Id_1054224,Fan,"0:OFF,1:ON"
+Id_1054300,Humidifier,"0:OFF,1:ON"
+Id_1054249,Light,"0:OFF,1:ON"
+Id_1053493,Air heater,"0:OFF,1:ON"
+Id_1053774,Defrost A,"0:OFF,1:ON"
+Id_1053969,Defrost B,"0:OFF,1:ON"
+Id_1054199,Rail heat,"0:OFF,1:ON"
+Id_1054560,Alarm,"0:OFF,1:ON"
+Id_1048634,Time hours,
+Id_1048635,Time minutes,
+Id_1048640,Time weekday,"1:Monday,2:Tuesday,3:Wednesday,4:Thursday,5:Friday,6:Saturday,7:Sunday"
+Id_1048639,Time seconds,
+Id_1048636,Time year,
+Id_1048637,Time month,
+Id_1048638,Time date,
+Id_1056773,Time zone,"-48:-12:00,-47:-11:45,-46:-11:30,-45:-11:15,-44:-11:00,-43:-10:45,-42:-10:30,-41:-10:15,-40:-10:00,-39:-09:45,-38:-09:30,-37:-09:15,-36:-09:00,-35:-08:45,-34:-08:30,-33:-08:15,-32:-08:00,-31:-07:45,-30:-07:30,-29:-07:15,-28:-07:00,-27:-06:45,-26:-06:30,-25:-06:15,-24:-06:00,-23:-05:45,-22:-05:30,-21:-05:15,-20:-05:00,-19:-04:45,-18:-04:30,-17:-04:15,-16:-04:00,-15:-03:45,-14:-03:30,-13:-03:15,-12:-03:00,-11:-02:45,-10:-02:30,-9:-02:15,-8:-02:00,-7:-01:45,-6:-01:30,-5:-01:15,-4:-01:00,-3:-00:45,-2:-00:30,-1:-00:15,0:None,1:+00:15,2:+00:30,3:+00:45,4:+01:00,5:+01:15,6:+01:30,7:+01:45,8:+02:00,9:+02:15,10:+02:30,11:+02:45,12:+03:00,13:+03:15,14:+03:30,15:+03:45,16:+04:00,17:+04:15,18:+04:30,19:+04:45,20:+05:00,21:+05:15,22:+05:30,23:+05:45,24:+06:00,25:+06:15,26:+06:30,27:+06:45,28:+07:00,29:+07:15,30:+07:30,31:+07:45,32:+08:00,33:+08:15,34:+08:30,35:+08:45,36:+09:00,37:+09:15,38:+09:30,39:+09:45,40:+10:00,41:+10:15,42:+10:30,43:+10:45,44:+11:00,45:+11:15,46:+11:30,47:+11:45,48:+12:00"
+Id_1056774,Daylight saving,"0:None,1:15 min,2:30 min,3:45 min,4:1 hour"
+Id_1048631,Current time,
+Id_1053753,Pe Evap. pressure,
+Id_1053754,Te Evap. temp.,
+Id_1053700,S2 Gas outlet A,
+Id_1053895,S2 Gas outlet B,
+Id_1055867,S2 Gas outlet C,
+Id_1053726,S4 Air OFF evap. A,
+Id_1053921,S4 Air OFF evap. B,
+Id_1055893,S4 Air OFF evap. C,
+Id_1053739,S5 Evaporator A,
+Id_1053934,S5 Evaporator B,
+Id_1054315,Humidity sensor,
+Id_1056202,DI1 Status,"0:OFF,1:ON"
+Id_1056219,DI2 Status,"0:OFF,1:ON"
+Id_1056236,DI3 Status,"0:OFF,1:ON"
+Id_1053814,AKV opening A,
+Id_1054560,Alarm,"0:OFF,1:ON"
+Id_1054199,Rail heat,"0:OFF,1:ON"
+Id_1053774,Defrost A,"0:OFF,1:ON"
+Id_1053969,Defrost B,"0:OFF,1:ON"
+Id_1054249,Light,"0:OFF,1:ON"
+Id_1054224,Fan,"0:OFF,1:ON"
+Id_1054300,Humidifier,"0:OFF,1:ON"
+Id_1053493,Air heater,"0:OFF,1:ON"
+Id_1048586,Main switch,"-1:Manual,0:Stop,1:Start"
+Id_1053812,AKV override A,
+Id_1054558,Alarm - override,"0:MAN OFF,1:MAN ON"
+Id_1054197,Rail heat - override,"0:MAN OFF,1:MAN ON"
+Id_1053772,Defrost A - override,"0:MAN OFF,1:MAN ON"
+Id_1053967,Defrost B - override,"0:MAN OFF,1:MAN ON"
+Id_1054247,Light - override,"0:MAN OFF,1:MAN ON"
+Id_1054222,Fan - override,"0:MAN OFF,1:MAN ON"
+Id_1054298,Humidifier - override,"0:MAN OFF,1:MAN ON"
+Id_1053491,Air heater - override,"0:MAN OFF,1:MAN ON"
+Id_1054007,AKV override B,
+Id_1055979,AKV override C,
+Id_1054209,Rail heat PWM,
+Id_1054207,Rail heat PWM - override,

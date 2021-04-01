@@ -1,0 +1,1762 @@
+ParameterName,DB_Menucode,KP_Menucode,Result,DB_DefaultValue,KP_DefaultValue,Result,DB_MinValue,KP_MinValue,Result,DB_MaxValue,KP_MaxValue,Result,DB_Unit,KP_Unit,Result,DB_Info,KP_Info,Result
+Set point adjustment ratio,SPr,SPr,True,0.5,0.50,False,0,0.00,False,1,1.00,False,,,True,"Current set point adjustment value diF * SPr
+The default value is set to 0.5 and the parameter is hidden by default.
+""Spr"" defines the position of the set point in relation to cut-in and cut-out.
+""Spr=0,5"" sets the set point mid between cut-in and cut-out.
+""Spr=0"" sets the set point at the cutout. ""Spr=1"" sets the set point at cut-in.","Current set point adjustment value diF * SPr
+The default value is set to 0.5 and the parameter is hidden by default.
+""Spr"" defines the position of the set point in relation to cut-in and cut-out.
+""Spr=0,5"" sets the set point mid between cut-in and cut-out.
+""Spr=0"" sets the set point at the cutout. ""Spr=1"" sets the set point at cut-in.",True
+Differential,diF,diF,True,2,2.00,False,0,0.00,False,20,20.00,False,K,K,True,"Thermostat differential
+This defines the difference between the cut-out and the cut-in.
+The desired temperature is determined by ""SPr"" and ""diF"".","Thermostat differential
+This defines the difference between the cut-out and the cut-in.
+The desired temperature is determined by ""SPr"" and ""diF"".",True
+High Set point,HSE,HSE,True,50,50.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"Upper limit of thermostat set point
+Define the temperature range limit of the controller.
+Once set, the desired temperatue (set point) can not go above ""HSE"" or
+below ""LSE"".","Upper limit of thermostat set point
+Define the temperature range limit of the controller.
+Once set, the desired temperatue (set point) can not go above ""HSE"" or
+below ""LSE"".",True
+Low Set point,LSE,LSE,True,-35,-35.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"Lower limit of thermostat set point
+Define the temperature range limit of the controller.
+Once set, the desired temperatue (set point) can not go below ""LSE"".","Lower limit of thermostat set point
+Define the temperature range limit of the controller.
+Once set, the desired temperatue (set point) can not go below ""LSE"".",True
+Initial cut in,iCi,iCi,True,No,No,True,0,,False,1,,False,,,True,"Initial cut in
+Comp relay action when Tair is between cut-in and cut-out at power-up:
+""yES"": cut in the compressor.
+""no"": cut out the compressor.","Initial cut in
+Comp relay action when Tair is between cut-in and cut-out at power-up:
+""yES"": cut in the compressor.
+""no"": cut out the compressor.",True
+Fan control method,FCt,FCt,True,FAo.png,FAo,False,0,,False,2,,False,,,True,"Fan control method
+""FAo"": fan always on
+""SEt"": fan follow compressor by manually settings
+""Aut"": automatical fan control","Fan control method
+""FAo"": fan always on
+""SEt"": fan follow compressor by manually settings
+""Aut"": automatical fan control",True
+Fan On Delay,Fod,Fod,True,0,0,True,0,0,True,240,240,True,Sec,Sec,True,Fod defines the fan delay (in seconds) after a compressor cut-in.,Fod defines the fan delay (in seconds) after a compressor cut-in.,True
+Fan Stop delay,FSd,FSd,True,0,0,True,0,0,True,240,240,True,Sec,Sec,True,"FSd defines the fan delay after a compressor cut-out.
+If both ""Fod"" and ""FSd"" are set to zero then the fan runs whenever the
+compressor runs.","FSd defines the fan delay after a compressor cut-out.
+If both ""Fod"" and ""FSd"" are set to zero then the fan runs whenever the
+compressor runs.",True
+Fan On Cycle,FoC,FoC,True,0,0,True,0,0,True,960,960,True,Sec,Sec,True,"
+When the compressor is OFF, and ""FoC"" or ""FSC"" are not zero, the fan
+runs in cycles according to ""FoC"" and ""FSC"".
+Example: ""FoC=120"" [sec] and ""FSC=120"" [sec] means that the fan runs
+for half the time when the compressor is OFF. When the compressor is
+on, the fan is always ON (according to ""FAo"" and ""Fod"").","
+When the compressor is OFF, and ""FoC"" or ""FSC"" are not zero, the fan
+runs in cycles according to ""FoC"" and ""FSC"".
+Example: ""FoC=120"" [sec] and ""FSC=120"" [sec] means that the fan runs
+for half the time when the compressor is OFF. When the compressor is
+on, the fan is always ON (according to ""FAo"" and ""Fod"").",True
+Fan Stop Cycle,FSC,FSC,True,0,0,True,0,0,True,960,960,True,Sec,Sec,True,"When the compressor is OFF, and ""FoC"" or ""FSC"" are not zero, the fan
+runs in cycles according to ""FoC"" and ""FSC"".
+Example: ""FoC=120"" [sec] and ""FSC=120"" [sec] means that the fan runs
+for half the time when the compressor is OFF. When the compressor is
+on, the fan is always ON (according to ""FAo"" and ""Fod"").","When the compressor is OFF, and ""FoC"" or ""FSC"" are not zero, the fan
+runs in cycles according to ""FoC"" and ""FSC"".
+Example: ""FoC=120"" [sec] and ""FSC=120"" [sec] means that the fan runs
+for half the time when the compressor is OFF. When the compressor is
+on, the fan is always ON (according to ""FAo"" and ""Fod"").",True
+Fan Minimum Stop time,FSt,FSt,True,10,10,True,0,0,True,960,960,True,Sec,Sec,True,"Fan Minimum Stop time
+Minimum stop time for fan protection.","Fan Minimum Stop time
+Minimum stop time for fan protection.",True
+Delta T For Fan cut in,FdC,FdC,True,0,0.00,False,-10,-10.00,False,10,10.00,False,K,K,True,"Fan Ät cut in
+Delta T for fan to cut in which the temperature offset comparing with
+thermostat cut in temperature.","Fan Ät cut in
+Delta T for fan to cut in which the temperature offset comparing with
+thermostat cut in temperature.",True
+Fan Stop on door open,Fdt,Fdt,True,0,0,True,0,0,True,999,999,True,Sec,Sec,True,"Fan stop time on door open
+The delay with wich the fan will be stopped after the door has been opened.
+""0"": fan stop immediately when door open.
+""1-998"": delay for fan stop after door open.
+""999"": fan keep running all the time during door open.","Fan stop time on door open
+The delay with wich the fan will be stopped after the door has been opened.
+""0"": fan stop immediately when door open.
+""1-998"": delay for fan stop after door open.
+""999"": fan keep running all the time during door open.",True
+Cabinet Light Control Source,CLC,CLC,True,on.png,on,False,0,,False,2,,False,,,True,"Cabinet Light Source Control
+This parameter can be set to one of these alternatives to control the light
+in the cabinet:
+""on"": always ON.
+""oFF"": always OFF.
+""dor"": door sensor only.","Cabinet Light Source Control
+This parameter can be set to one of these alternatives to control the light
+in the cabinet:
+""on"": always ON.
+""oFF"": always OFF.
+""dor"": door sensor only.",True
+Light off delay,Lod,Lod,True,0,0,True,0,0,True,300,300,True,Sec,Sec,True,"Light OFF delay
+Number of seconds the light will stay ON after the door has been closed.","Light OFF delay
+Number of seconds the light will stay ON after the door has been closed.",True
+Pull-down Initiate Temperature,Pit,Pit,True,50,50.00,False,-40,-40.00,False,50,50.00,False,°C,°C,True,"Pull Down Initiate Temperature
+This parameter indicates the temperature which causes a pull
+down to start. If the temperature measured inside the cabinet
+exceeds this value for longer than one hour, then pull down will
+start. The compressor will have already cut-in, so the only effect
+is to stop defrost cycles until the desired temperature is reached.
+The period of one hour is fixed and cannot be altered.","Pull Down Initiate Temperature
+This parameter indicates the temperature which causes a pull
+down to start. If the temperature measured inside the cabinet
+exceeds this value for longer than one hour, then pull down will
+start. The compressor will have already cut-in, so the only effect
+is to stop defrost cycles until the desired temperature is reached.
+The period of one hour is fixed and cannot be altered.",True
+Pull-down Cycling,PCy,PCy,True,30,30,True,0,0,True,360,360,True,min,min,True,"Pull Down Cycling
+This is the duration in minutes of the compressor cycling at the reduced
+set point temperature. Once the desired pull down limit temperature
+""PLt"" has been reached during pull down, the compressor will continue to
+cycle ON/OFF for the duration of ""PCy"". At the end of the period defined by
+""PCy"", the set point temperature will return to normal and pull down will
+cease.","Pull Down Cycling
+This is the duration in minutes of the compressor cycling at the reduced
+set point temperature. Once the desired pull down limit temperature
+""PLt"" has been reached during pull down, the compressor will continue to
+cycle ON/OFF for the duration of ""PCy"". At the end of the period defined by
+""PCy"", the set point temperature will return to normal and pull down will
+cease.",True
+Pull-down defrost Interval,Pdi,Pdi,True,15,15,True,0,0,True,48,48,True,hour,hour,True,"Pull Down Defrost Interval
+Even though most applications do not need Defrost during pull down, an
+extended defrost during pull down can be applied. This is the time
+between defrost cycles during pull down. It is measured in hours and can
+be up to 48 hours. During pull down, this setting overrides the defrost
+interval and defrost time settings (see the defrost section).","Pull Down Defrost Interval
+Even though most applications do not need Defrost during pull down, an
+extended defrost during pull down can be applied. This is the time
+between defrost cycles during pull down. It is measured in hours and can
+be up to 48 hours. During pull down, this setting overrides the defrost
+interval and defrost time settings (see the defrost section).",True
+Pull-down duration,Pdd,Pdd,True,24,24,True,0,0,True,48,48,True,hour,hour,True,"Pull Down Duration
+You can choose to limit the maximum pull down time. Once this time
+value (max. 48 hours) is reached, pull down will stop regardless of
+whether the desired pull-down temperature has been reached.","Pull Down Duration
+You can choose to limit the maximum pull down time. Once this time
+value (max. 48 hours) is reached, pull down will stop regardless of
+whether the desired pull-down temperature has been reached.",True
+Pull-down limit temp,PLt,PLt,True,0,0.00,False,-55,-55.00,False,55,55.00,False,°C,°C,True,"Pull Down Limit Temperature
+This parameter sets the minimum allowed temperature during pull-down.
+In order to protect valuable contents you must always specify the absolute
+minimum temperature allowed in your application.
+For glass door merchandisers 0°C/32°F protects bottles from freezing;
+for commercial fridges you may opt for a slightly higher temperature
+(e.g. 2°C)","Pull Down Limit Temperature
+This parameter sets the minimum allowed temperature during pull-down.
+In order to protect valuable contents you must always specify the absolute
+minimum temperature allowed in your application.
+For glass door merchandisers 0°C/32°F protects bottles from freezing;
+for commercial fridges you may opt for a slightly higher temperature
+(e.g. 2°C)",True
+Pull-down reduction temp Delta T,Prt,Prt,True,0.1,0.10,False,0,0.00,False,10,10.00,False,K,K,True,"Pull Down Reduction Temperature Ät
+The controller calculates a lower set point during pull down mode to
+increase the cooling capacity of your appliance. For each hour the
+cabinet temperature is above the pull down initiate temperature,
+the set point is reduced with the value of ""Prt"".","Pull Down Reduction Temperature Ät
+The controller calculates a lower set point during pull down mode to
+increase the cooling capacity of your appliance. For each hour the
+cabinet temperature is above the pull down initiate temperature,
+the set point is reduced with the value of ""Prt"".",True
+Def. type,dFt,dFt,True,no.png,no,False,0,,False,3,,False,,,True,"Defrost Type
+""no"": defrost function is disabled.
+""EL"": electrical or time defrost.
+""Hgd"": hot gas defrost (contact Danfoss for details).
+""nat"": OFF-cycle defrost (natural defrost).","Defrost Type
+""no"": defrost function is disabled.
+""EL"": electrical or time defrost.
+""Hgd"": hot gas defrost (contact Danfoss for details).
+""nat"": OFF-cycle defrost (natural defrost).",True
+Adaptive defrost,Add,Add,True,No,No,True,0,,False,1,,False,,,True,"Adaptive defrost
+""no"": defrost controlled by time.
+""yES"": automatic defrost control activated.","Adaptive defrost
+""no"": defrost controlled by time.
+""yES"": automatic defrost control activated.",True
+Def terminate temp,dtt,dtt,True,6,6.00,False,0,0.00,False,25,25.00,False,°C,°C,True,"Terminate Temperature
+This parameter defines at what temperature the defrost cycle will stop.
+The temperature is given by the evaporator sensor or by the cabinet
+temperature sensor if no evaporator sensor is used.","Terminate Temperature
+This parameter defines at what temperature the defrost cycle will stop.
+The temperature is given by the evaporator sensor or by the cabinet
+temperature sensor if no evaporator sensor is used.",True
+Def reset temp,drt,drt,True,5,5.00,False,0,0.00,False,200,200.00,False,°C,°C,True,"Defrost reset temperature
+The defrost counter is saved and restored at power-up, but if the
+temperature sensor, used for defrost, is higher than this value at
+power-up, it is assumed that the evaporator is free of ice and the
+defrost counter will be cleared.","Defrost reset temperature
+The defrost counter is saved and restored at power-up, but if the
+temperature sensor, used for defrost, is higher than this value at
+power-up, it is assumed that the evaporator is free of ice and the
+defrost counter will be cleared.",True
+Def Min Interval,dii,dii,True,6,6,True,1,1,True,96,96,True,hour,hour,True,"Defrost minimum Interval/dii
+Defines the minimum time period between the start of two defrost cycles.
+Once the minimum interval has expired, the defrost cycle will start at
+the following cut-out or once the maximum interval ""dAi"" has been
+reached.","Defrost minimum Interval/dii
+Defines the minimum time period between the start of two defrost cycles.
+Once the minimum interval has expired, the defrost cycle will start at
+the following cut-out or once the maximum interval ""dAi"" has been
+reached.",True
+Def Max Interval,dAi,dAi,True,7,7,True,1,1,True,96,96,True,hour,hour,True,"Maximum Interval
+Defines the maximum time period between the start of two defrost cycles.","Maximum Interval
+Defines the maximum time period between the start of two defrost cycles.",True
+Def Min Time,dit,dit,True,5,5,True,0,0,True,240,240,True,min,min,True,"Minimum Time
+Defines the minimum duration of a defrost cycle. During this period, the
+controller will not check the temperature. Once the minimum time has
+expired, the temperature will be checked and if the terminate temperature
+""dtt"" has been reached, the defrost cycle will end. If dtt has not been
+reached, defrost will continue until either dtt is reached or the
+maximum time ""dAt"" reached, whichever occurs first.","Minimum Time
+Defines the minimum duration of a defrost cycle. During this period, the
+controller will not check the temperature. Once the minimum time has
+expired, the temperature will be checked and if the terminate temperature
+""dtt"" has been reached, the defrost cycle will end. If dtt has not been
+reached, defrost will continue until either dtt is reached or the
+maximum time ""dAt"" reached, whichever occurs first.",True
+Def Max time,dAt,dAt,True,30,30,True,0,0,True,480,480,True,min,min,True,"Maximum Time
+Defines the maximum duration of a defrost cycle.
+The controller will not allow a maximum time to be entered which is
+less than the minimum time, or a minimum time which is more than the
+maximum time.","Maximum Time
+Defines the maximum duration of a defrost cycle.
+The controller will not allow a maximum time to be entered which is
+less than the minimum time, or a minimum time which is more than the
+maximum time.",True
+Drip off time,dot,dot,True,0,0,True,0,0,True,60,60,True,min,min,True,"Drip OFF Time
+This parameter can be set to between 0 and 60 minutes and defines how long the delay is between
+the heater being switched OFF and the compressor starting again.","Drip OFF Time
+This parameter can be set to between 0 and 60 minutes and defines how long the delay is between
+the heater being switched OFF and the compressor starting again.",True
+Fan delay after Defrost,Fdd,Fdd,True,0,0,True,0,0,True,600,600,True,sec,sec,True,"Fan Delay after Defrost
+Defines how long the delay is between the start of the compressor after
+defrost and the fan starting again.","Fan Delay after Defrost
+Defines how long the delay is between the start of the compressor after
+defrost and the fan starting again.",True
+Fan start Temp,Ftd,Ftd,True,25,25.00,False,-25,-25.00,False,25,25.00,False,°C,°C,True,"Fan Start Temperature
+This only applies if an evaporator temperature sensor is fitted.
+This parameter determines at what evaporator temperature the fan will
+start after a defrost cycle is complete.
+If the time set in ""Fdd"" occurs before the temperature set in ""Ftd"", the fan
+will start in line with ""Fdd"". If the temperature set in ""Ftd"" occurs first,
+then the fan will start in line with ""Ftd"". It is therefore a case of whichever
+parameter’s setting is reached first which determines when the fan starts.","Fan Start Temperature
+This only applies if an evaporator temperature sensor is fitted.
+This parameter determines at what evaporator temperature the fan will
+start after a defrost cycle is complete.
+If the time set in ""Fdd"" occurs before the temperature set in ""Ftd"", the fan
+will start in line with ""Fdd"". If the temperature set in ""Ftd"" occurs first,
+then the fan will start in line with ""Ftd"". It is therefore a case of whichever
+parameter’s setting is reached first which determines when the fan starts.",True
+Defrost Fan on ,dFA,dFA,True,No,No,True,0,,False,1,,False,,,True,"Defrost Fan On
+Set to ""yES"", the fan will constantly run during defrost cycles.
+Set to ""no"", the fan will not run during defrost cycles.","Defrost Fan On
+Set to ""yES"", the fan will constantly run during defrost cycles.
+Set to ""no"", the fan will not run during defrost cycles.",True
+Defrost on compressor time,dCt,dCt,True,No,No,True,0,,False,1,,False,,,True,"Defrost ON Compressor Time
+If this parameter is set to ""yES"", then defrost time is considered only when compressor is ON, so that defrost cycles are based on
+the total time the compressor has been running. If this parameter is set to no, then defrost cycles are related to elapsed time,
+regardless of how long and how often the compressor has been on.","Defrost ON Compressor Time
+If this parameter is set to ""yES"", then defrost time is considered only when compressor is ON, so that defrost cycles are based on
+the total time the compressor has been running. If this parameter is set to no, then defrost cycles are related to elapsed time,
+regardless of how long and how often the compressor has been on.",True
+Defrost by Comp. running time,doC,doC,True,0,0,True,0,0,True,24,24,True,hour,hour,True,"Defrost by Comp. running time
+Continuous compressor running can cause defrost.
+""0"" = deactived","Defrost by Comp. running time
+Continuous compressor running can cause defrost.
+""0"" = deactived",True
+Defrost start evaporator temp.,dEt,dEt,True,-50,-50.00,False,-50,-50.00,False,0,0.00,False,°C,°C,True,"Defrost start evaporator temp
+Defrost start trigger for adaptive defrost.","Defrost start evaporator temp
+Defrost start trigger for adaptive defrost.",True
+Defrost Delta T,ddt,ddt,True,5,5.00,False,0,0.00,False,30,30.00,False,K,K,True,"Defrost Ät
+Defrost Ät compare with evaporator temperature of first cut out after
+defrost to trigger defrost start.
+The defrost start if evaporator temperature has decreased more the ""ddt""","Defrost Ät
+Defrost Ät compare with evaporator temperature of first cut out after
+defrost to trigger defrost start.
+The defrost start if evaporator temperature has decreased more the ""ddt""",True
+Initial Defrost Interval,idi,idi,True,3,3,True,0,0,True,96,96,True,hour,hour,True,"Initial Defrost Interval
+The initial defrost interval determines the time for first defrost after
+power-up. The initial defrost is mainly intended for factory testing of the
+defrost functionality and can be set to expire after a number compressor
+cycles according to the setting of parameter idd. During normal operation,
+the defrost counter will be saved in memory and restored after power loss,
+making the initial defrost unnecessary.","Initial Defrost Interval
+The initial defrost interval determines the time for first defrost after
+power-up. The initial defrost is mainly intended for factory testing of the
+defrost functionality and can be set to expire after a number compressor
+cycles according to the setting of parameter idd. During normal operation,
+the defrost counter will be saved in memory and restored after power loss,
+making the initial defrost unnecessary.",True
+Initial Defrost Duration,idd,idd,True,100,100,True,0,0,True,999,999,True,cycle,cycle,True,"Initial Defrost Duration
+The initial defrost duration is the number of compressor cycles before
+the initial defrost is deactivated.
+""0"": ""idi"" No initial defrost.
+""1-998"": number of compressor cycles before deactivation.
+""999"": initial defrost always active.","Initial Defrost Duration
+The initial defrost duration is the number of compressor cycles before
+the initial defrost is deactivated.
+""0"": ""idi"" No initial defrost.
+""1-998"": number of compressor cycles before deactivation.
+""999"": initial defrost always active.",True
+Voltage protection,uPt,uPt,True,No,No,True,0,,False,1,,False,,,True,"Voltage protection
+""no"": no voltage protection.
+""yES"": voltage protection activated based on voltage related settings.","Voltage protection
+""no"": no voltage protection.
+""yES"": voltage protection activated based on voltage related settings.",True
+Minimum Cutin voltage,uLi,uLi,True,0,0,True,0,0,True,270,270,True,Vac,Vac,True,"""uLi"": when the compressor is due to start, the voltage of the power
+supply will be checked and the compressor will only be allowed to
+start if it is at least the value given in this parameter.","""uLi"": when the compressor is due to start, the voltage of the power
+supply will be checked and the compressor will only be allowed to
+start if it is at least the value given in this parameter.",True
+Minimum cut-out voltage,uLo,uLo,True,0,0,True,0,0,True,270,270,True,Vac,Vac,True,"""uLo"": when the compressor is running, it will be switched
+OFF if the voltage goes below that given in this
+parameter.","""uLo"": when the compressor is running, it will be switched
+OFF if the voltage goes below that given in this
+parameter.",True
+Maximum voltage,uHi,uHi,True,270,270,True,0,0,True,270,270,True,Vac,Vac,True,"""uHi"": when the compressor is running, it will be switched
+OFF if the voltage exceeds that given in this parameter.
+If the compressor is already stopped, it will remain
+switched OFF","""uHi"": when the compressor is running, it will be switched
+OFF if the voltage exceeds that given in this parameter.
+If the compressor is already stopped, it will remain
+switched OFF",True
+Sensor Error Type,EHd,EHd,True,no.png,no,False,0,,False,1,,False,,,True,"Sensor Error Type
+""no"": no sensor error handling.
+""SEt"": in case of control sensor error, follow error run/stop time.
+""Aut"": automatical sensor error handling.","Sensor Error Type
+""no"": no sensor error handling.
+""SEt"": in case of control sensor error, follow error run/stop time.
+""Aut"": automatical sensor error handling.",True
+Error run time,Ert,Ert,True,0,0,True,0,0,True,60,60,True,min,min,True,"Error Run Time
+The parameter only become active in the unlikely event of a broken
+temperature sensor. It is used to run the application in safety mode.
+At the same time the sensor error will be shown in the display.
+""Ert"" define the duration the compressor will run.
+Example: ""Ert=4"" [min] and ""ESt=16"" [min] will provide an average cooling
+system activity of 20%. Ert and ""ESt"" values are based on OEM experience
+and are by default inactive.","Error Run Time
+The parameter only become active in the unlikely event of a broken
+temperature sensor. It is used to run the application in safety mode.
+At the same time the sensor error will be shown in the display.
+""Ert"" define the duration the compressor will run.
+Example: ""Ert=4"" [min] and ""ESt=16"" [min] will provide an average cooling
+system activity of 20%. Ert and ""ESt"" values are based on OEM experience
+and are by default inactive.",True
+Error stop time,ESt,ESt,True,1,1,True,0,0,True,60,60,True,min,min,True,"Error Stop Time
+The parameter only become active in the unlikely event of a broken
+temperature sensor. It is used to run the application in safety mode.
+At the same time the sensor error will be shown in the display.
+""ESt"" define the duration the compressor will be ""idle"".","Error Stop Time
+The parameter only become active in the unlikely event of a broken
+temperature sensor. It is used to run the application in safety mode.
+At the same time the sensor error will be shown in the display.
+""ESt"" define the duration the compressor will be ""idle"".",True
+Min Stop time,CSt,CSt,True,2,2,True,0,0,True,30,30,True,min,min,True,"Minimum Stop Time
+It determines the minimum number of minutes the compressor must
+remain idle before a Temperature cut-in can take effect. For example,
+if the temperature sensor indicates that the cut-in temperature has been
+reached, but the number of minutes set in this parameter have not elapsed
+since the compressor last stopped, then the compressor will stay OFF.
+It will only start once the duration given by ""CSt"" has been reached
+provided the temperature is still high enough. ""CSt"" thus overrides the cut-in.
+""","Minimum Stop Time
+It determines the minimum number of minutes the compressor must
+remain idle before a Temperature cut-in can take effect. For example,
+if the temperature sensor indicates that the cut-in temperature has been
+reached, but the number of minutes set in this parameter have not elapsed
+since the compressor last stopped, then the compressor will stay OFF.
+It will only start once the duration given by ""CSt"" has been reached
+provided the temperature is still high enough. ""CSt"" thus overrides the cut-in.
+""",True
+Min run time,Crt,Crt,True,0,0,True,0,0,True,30,30,True,min,min,True,"Minimum Run Time
+It determines the minimum number of minutes the compressor must run
+before a Temperature cut-out can take effect. For example, if the
+temperature sensor indicated that the cut-out temperature has been
+reached, but the number of minutes set in this parameter have not
+elapsed since the compressor last started, then the compressor will
+continue. It will only stop once the duration given by ""Crt"" has been
+reached – provided the temperature is still low enough.
+""Crt"" thus overrides the cut-out.","Minimum Run Time
+It determines the minimum number of minutes the compressor must run
+before a Temperature cut-out can take effect. For example, if the
+temperature sensor indicated that the cut-out temperature has been
+reached, but the number of minutes set in this parameter have not
+elapsed since the compressor last started, then the compressor will
+continue. It will only stop once the duration given by ""Crt"" has been
+reached – provided the temperature is still low enough.
+""Crt"" thus overrides the cut-out.",True
+Max Off time,Cot,Cot,True,0,0,True,0,0,True,480,480,True,min,min,True,"Maximum OFF Time
+This is the maximum time in minutes the compressor is allowed to
+""idle"" – up to 480 minutes. Cot is set to zero by default (inactive).
+If the controller is used on a draft beer (ice bank) application, this
+parameter can be used to control the ice thickness.","Maximum OFF Time
+This is the maximum time in minutes the compressor is allowed to
+""idle"" – up to 480 minutes. Cot is set to zero by default (inactive).
+If the controller is used on a draft beer (ice bank) application, this
+parameter can be used to control the ice thickness.",True
+Compressor door open delay,Cdd,Cdd,True,0,0,True,0,0,True,15,15,True,min,min,True,"Compressor Door Open Delay/Cdd
+This parameter sets the delay in minutes before the compressor stops
+when the door is opened. If set to zero, the function is disabled.","Compressor Door Open Delay/Cdd
+This parameter sets the delay in minutes before the compressor stops
+when the door is opened. If set to zero, the function is disabled.",True
+System resume after door open,Srt,Srt,True,0,0,True,0,0,True,60,60,True,min,min,True,"System resume after door open
+Fan and Compressor resume after cut out by door open.","System resume after door open
+Fan and Compressor resume after cut out by door open.",True
+Power On Delay,Pod,Pod,True,300,300,True,0,0,True,300,300,True,Sec,Sec,True,"Power ON Delay
+This is the delay in seconds between power-on and the compressor being
+activated.
+Depends on the power ON temperature setting as explained below.","Power ON Delay
+This is the delay in seconds between power-on and the compressor being
+activated.
+Depends on the power ON temperature setting as explained below.",True
+Power-on temperature,Pot,Pot,True,-100,-100.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"Power ON Temperature
+This parameter is used to accelerate the first application test on the
+OEM assembly line; if the cabinet temperature is higher than this
+parameter the power ON Delay is overruled and the outputs are activated
+without delay.","Power ON Temperature
+This parameter is used to accelerate the first application test on the
+OEM assembly line; if the cabinet temperature is higher than this
+parameter the power ON Delay is overruled and the outputs are activated
+without delay.",True
+Condenser Alarm Limit,CAL,CAL,True,80,80.00,False,0,0.00,False,200,200.00,False,°C,°C,True,"Condenser Alarm Limit/CAL
+This parameter sets the temperature for the condenser at which an alarm
+will be generated.Note: Use only whole number.","Condenser Alarm Limit/CAL
+This parameter sets the temperature for the condenser at which an alarm
+will be generated.Note: Use only whole number.",True
+Condenser Block Limit,CbL,CbL,True,85,85.00,False,0,0.00,False,200,200.00,False,°C,°C,True,"Condenser Block Limit/CbL
+This parameter sets the temperature which if reached will cause the
+compressor to switch OFF.Note: Use only whole number.","Condenser Block Limit/CbL
+This parameter sets the temperature which if reached will cause the
+compressor to switch OFF.Note: Use only whole number.",True
+Condenser OK limit,CoL,CoL,True,60,60.00,False,0,0.00,False,200,200.00,False,°C,°C,True,"Condenser OK Limit/CoL
+This parameter sets the temperature at which the compressor is
+allowed to start again after the temperature set in ""CbL"" above has been
+exceeded and the compressor stopped.Note: Use only whole number.","Condenser OK Limit/CoL
+This parameter sets the temperature at which the compressor is
+allowed to start again after the temperature set in ""CbL"" above has been
+exceeded and the compressor stopped.Note: Use only whole number.",True
+Condenser Low Temp. Limit,CLL,CLL,True,-5,-5.00,False,-100,-100.00,False,20,20.00,False,°C,°C,True,"Condenser Low Limit/CLL
+This parameter sets the lowest (condenser) temperature at which the
+compressor is allowed to start.Note: Use only whole number.","Condenser Low Limit/CLL
+This parameter sets the lowest (condenser) temperature at which the
+compressor is allowed to start.Note: Use only whole number.",True
+Display intensity auto control,diC,diC,True,No,No,True,0,,False,1,,False,,,True,"Display intensity auto control
+""no"": display intensity use fixed value.","Display intensity auto control
+""no"": display intensity use fixed value.",True
+Display Intensity,din,din,True,10,10,True,2,2,True,10,10,True,,,True,"Display Intensity
+The controller can have its display intensity (brightness) set in one of
+two ways:
+A) With a Danfoss ambient light sensor attached, the brightness of the
+display is adjusted automatically according to the ambient light level
+(see the assignments section).
+B) When no ambient light sensor is attached, the display intensity can
+be set to a fixed intensity.
+Both options are on a scale of 1 to 10, where 10 is the brightest.","Display Intensity
+The controller can have its display intensity (brightness) set in one of
+two ways:
+A) With a Danfoss ambient light sensor attached, the brightness of the
+display is adjusted automatically according to the ambient light level
+(see the assignments section).
+B) When no ambient light sensor is attached, the display intensity can
+be set to a fixed intensity.
+Both options are on a scale of 1 to 10, where 10 is the brightest.",True
+Display Unit,CFu,CFu,True,C.png,C,False,0,,False,1,,False,,,True,"Display Unit
+This parameter sets the display to Fahrenheit or Celsius. Switching from
+one to the other will cause all temperature settings to be automatically
+updated accordingly.","Display Unit
+This parameter sets the display to Fahrenheit or Celsius. Switching from
+one to the other will cause all temperature settings to be automatically
+updated accordingly.",True
+Temp sensor to display,trS,trS,True,Sco.png,Sco,False,0,,False,3,,False,,,True,"Temp sensor to display
+""SCo"": temperature control.
+""EuA"": evaporator temperture.
+""Con"": condenser temperature (condenser cleaning).
+""AuS"": only for showing on display.","Temp sensor to display
+""SCo"": temperature control.
+""EuA"": evaporator temperture.
+""Con"": condenser temperature (condenser cleaning).
+""AuS"": only for showing on display.",True
+Display Resolution,rES,rES,True,0.1.png ,0.1,False,0,,False,2,,False,,,True,"Display Resolution
+This parameter can be set to 0.1, 0.5 or 1 and affects the way the
+temperature is displayed. With the parameter set to 1, the display will
+only ever show temperatures rounded to the nearest whole degree.
+At 0.5, it will round the temperature to the nearest half degree for display.
+For example, 3.3 degrees will be shown in the display as 3.5 degrees
+and 3.9 as 4.0. With the parameter set to 0.1, no rounding occurs.
+This parameter does not affect the temperature itself, merely the display.","Display Resolution
+This parameter can be set to 0.1, 0.5 or 1 and affects the way the
+temperature is displayed. With the parameter set to 1, the display will
+only ever show temperatures rounded to the nearest whole degree.
+At 0.5, it will round the temperature to the nearest half degree for display.
+For example, 3.3 degrees will be shown in the display as 3.5 degrees
+and 3.9 as 4.0. With the parameter set to 0.1, no rounding occurs.
+This parameter does not affect the temperature itself, merely the display.",True
+Display Range Limit,rLt,rLt,True,No,No,True,0,,False,1,,False,,,True,"Display Range Limit
+In some point of sales applications you may want to show the desired
+instead of the real temperature. This parameter sets whether the
+displayed temperature is the actual temperature or whether it is restricted
+to the cut-in / cut-out limits. Set to ""nO"" means that the actual temperature
+will de displayed. The parameter is set to ""nO"" by default.","Display Range Limit
+In some point of sales applications you may want to show the desired
+instead of the real temperature. This parameter sets whether the
+displayed temperature is the actual temperature or whether it is restricted
+to the cut-in / cut-out limits. Set to ""nO"" means that the actual temperature
+will de displayed. The parameter is set to ""nO"" by default.",True
+Display Delay,ddL,ddL,True,0,0,True,0,0,True,10,10,True,min,min,True,"Display Delay
+In order to provide a realistic temperature appearance for an application,
+a display delay can be set.
+The parameter sets the time constant ô (tau) of the moving average filter
+for the display.
+Physically, one time constant represents the time it takes the system’s
+step-response to reach 66% of its final value and five time-constants
+the time it takes to reach 99% of its final value.","Display Delay
+In order to provide a realistic temperature appearance for an application,
+a display delay can be set.
+The parameter sets the time constant ô (tau) of the moving average filter
+for the display.
+Physically, one time constant represents the time it takes the system’s
+step-response to reach 66% of its final value and five time-constants
+the time it takes to reach 99% of its final value.",True
+Display Offset,doF,doF,True,0,0.00,False,-10,-10.00,False,10,10.00,False,K,K,True,"Display Offset
+This parameter is a relative value and allows the temperature displayed
+to be different to the temperature measured.
+For instance, at a measured temperature of 7°C and ""doF"" set to -2K, the
+displayed temperature will be 5°C instead.","Display Offset
+This parameter is a relative value and allows the temperature displayed
+to be different to the temperature measured.
+For instance, at a measured temperature of 7°C and ""doF"" set to -2K, the
+displayed temperature will be 5°C instead.",True
+Lock-time After defrost,dLt,dLt,True,15,15,True,0,0,True,60,60,True,min,min,True,"Lock Time After Defrost
+In order not to show a rising temperature during defrosting, the displayed
+temperature is locked at the temperature shown at the start of the defrost
+cycle for the number of minutes set in this parameter.
+""0"": no lock.","Lock Time After Defrost
+In order not to show a rising temperature during defrosting, the displayed
+temperature is locked at the temperature shown at the start of the defrost
+cycle for the number of minutes set in this parameter.
+""0"": no lock.",True
+Show Economy/Night Mode,SEC,SEC,True,No,No,True,0,,False,1,,False,,,True,"Show Economy State
+If set to ""yES"", this parameter causes the display to show ECO when the
+system is in ECO mode.
+If set to ""nO"", the temperature continues to be displayed.","Show Economy State
+If set to ""yES"", this parameter causes the display to show ECO when the
+system is in ECO mode.
+If set to ""nO"", the temperature continues to be displayed.",True
+Show Holiday,SHo,SHo,True,No,No,True,0,,False,1,,False,,,True,"Show Holiday
+""no"": display will show temperature or ECO mode during holiday mode.
+""yES"": display will show ""HoL"" during holiday mode.","Show Holiday
+""no"": display will show temperature or ECO mode during holiday mode.
+""yES"": display will show ""HoL"" during holiday mode.",True
+Show Defrost,SdF,SdF,True,Yes,Yes,True,0,,False,1,,False,,,True,"Show Defrost
+If set to ""yES"", this parameter causes the display to show DEF when the
+system is in defrost mode. If set to ""nO"", the temperature continues to
+be displayed.","Show Defrost
+If set to ""yES"", this parameter causes the display to show DEF when the
+system is in defrost mode. If set to ""nO"", the temperature continues to
+be displayed.",True
+High Temp Alarm,HAt,HAt,True,15,15.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"High Temp Alarm
+Absolute value.
+By setting ""HAt"" to the maximum alarms will be deactivated.","High Temp Alarm
+Absolute value.
+By setting ""HAt"" to the maximum alarms will be deactivated.",True
+Low Temp Alarm,LAt,LAt,True,-50,-50.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"Low Temp Alarm
+Absolute value.
+By setting ""LAt"" to the minimum value, alarms will be deactivated.
+In most situations, the low alarm delay will be set to 0 to warn about
+too low a temperature immediately.","Low Temp Alarm
+Absolute value.
+By setting ""LAt"" to the minimum value, alarms will be deactivated.
+In most situations, the low alarm delay will be set to 0 to warn about
+too low a temperature immediately.",True
+High Alarm delay,Htd,Htd,True,30,30,True,0,0,True,240,240,True,min,min,True,"Alarm delay on high temperature alarm
+The number of minutes to wait before sounding an alarm once the
+high temperature alarm temperature is reached.","Alarm delay on high temperature alarm
+The number of minutes to wait before sounding an alarm once the
+high temperature alarm temperature is reached.",True
+Low Alarm delay,Ltd,Ltd,True,0,0,True,0,0,True,240,240,True,min,min,True,"Alarm delay on low temperature alarm
+The number of minutes to wait before sounding an alarm once the
+low temperature alarm temperature is reached.","Alarm delay on low temperature alarm
+The number of minutes to wait before sounding an alarm once the
+low temperature alarm temperature is reached.",True
+Pulldown delay,Pdd,Pdd,True,240,240,True,0,0,True,960,960,True,min,min,True,"Pull down delay
+Normally, it is not necessary or desirable to sound an alarm during a pull
+down (the initial phase of reaching the desired temperature). This
+parameter prevents the high temperature alarm ""HAt"" sounding during pull down
+and after a defrost for the number of minutes set for the parameter.
+NOTE: it does not apply to the low temperature alarm ""LAt"".","Pull down delay
+Normally, it is not necessary or desirable to sound an alarm during a pull
+down (the initial phase of reaching the desired temperature). This
+parameter prevents the high temperature alarm ""HAt"" sounding during pull down
+and after a defrost for the number of minutes set for the parameter.
+NOTE: it does not apply to the low temperature alarm ""LAt"".",True
+Door Open delay,dod,dod,True,2,2,True,0,0,True,60,60,True,min,min,True,"Door Open delay
+It is possible to indicate to customers that a door has accidentally been
+left open. This parameter sets the delay in minutes before the alarm sounds.
+This is useful in environments where customers/users may hold the door
+open while making their selection. If the door is closed again before
+the set number of minutes is reached, the alarm does not sound.
+NOTE: a door sensor is required if this parameter is to be activated.","Door Open delay
+It is possible to indicate to customers that a door has accidentally been
+left open. This parameter sets the delay in minutes before the alarm sounds.
+This is useful in environments where customers/users may hold the door
+open while making their selection. If the door is closed again before
+the set number of minutes is reached, the alarm does not sound.
+NOTE: a door sensor is required if this parameter is to be activated.",True
+Voltage alarm,uAL,uAL,True,No,No,True,0,,False,1,,False,,,True,"Voltage alarm
+""no"": no voltage alarm.
+""yES"": voltage alarm activated.","Voltage alarm
+""no"": no voltage alarm.
+""yES"": voltage alarm activated.",True
+Leakage alarm,LEA,LEA,True,0,0,True,0,0,True,96,96,True,hour,hour,True,"Leakage alarm
+Leakage detection for compressor protection.
+""0"": disable","Leakage alarm
+Leakage detection for compressor protection.
+""0"": disable",True
+Alarm Buzzer Duration,Abd,Abd,True,0,0,True,0,0,True,999,999,True,min,min,True,"Alarm Buzzer Duration
+The alarm sounds for 10 seconds, followed by silence for 50 seconds.
+One alarm sequence therefore lasts 60 seconds. These values cannot be
+changed. This parameter determines how long in minutes an audible
+alarm will continue while there is still a reason to have an alarm.
+If set to 999, the alarm will continue to sound until the reason for the
+alarm is cleared – for example the temperature has dropped enough or
+the door closed. In some cases, it may be necessary for a user or technician
+to take action in order to clear the alarm. If set to 0, the alarm will never
+sound.","Alarm Buzzer Duration
+The alarm sounds for 10 seconds, followed by silence for 50 seconds.
+One alarm sequence therefore lasts 60 seconds. These values cannot be
+changed. This parameter determines how long in minutes an audible
+alarm will continue while there is still a reason to have an alarm.
+If set to 999, the alarm will continue to sound until the reason for the
+alarm is cleared – for example the temperature has dropped enough or
+the door closed. In some cases, it may be necessary for a user or technician
+to take action in order to clear the alarm. If set to 0, the alarm will never
+sound.",True
+Auto Clearance of Alarm,ACA,ACA,True,Yes,Yes,True,0,,False,1,,False,,,True,"Auto Clear of Alarm/Error/ACA
+If this parameter is set to ""nO"":
+The alarm status will not disappear automatically even if the condition
+which caused the alarm is no longer valid or present.
+If set to ""yES"":
+As soon as the condition which caused the alarm is no longer valid or
+present, the alarm status will automatically change back to inactive.
+There will be no trace of the alarm having occurred.
+In general, glass door merchandise applications will be set to ""yES"" and
+commercial fridges and freezers set to ""nO"".
+For example, if the temperature goes too high for a period there may
+be food safety considerations in a freezer containing food but not in a
+fridge with cold drinks.","Auto Clear of Alarm/Error/ACA
+If this parameter is set to ""nO"":
+The alarm status will not disappear automatically even if the condition
+which caused the alarm is no longer valid or present.
+If set to ""yES"":
+As soon as the condition which caused the alarm is no longer valid or
+present, the alarm status will automatically change back to inactive.
+There will be no trace of the alarm having occurred.
+In general, glass door merchandise applications will be set to ""yES"" and
+commercial fridges and freezers set to ""nO"".
+For example, if the temperature goes too high for a period there may
+be food safety considerations in a freezer containing food but not in a
+fridge with cold drinks.",True
+Automatic heater mode enable,AuH,AuH,True,No,No,True,0,,False,1,,False,,,True,"Automatic Heater Mode Enable
+This setting is normally set to ""no"".
+When set to ""yES"", parameters ""End"" and ""Hdi"" apply.","Automatic Heater Mode Enable
+This setting is normally set to ""no"".
+When set to ""yES"", parameters ""End"" and ""Hdi"" apply.",True
+Energy mode delay,End,End,True,60,60,True,0,0,True,360,360,True,min,min,True,"Energy Mode Delay
+This is the delay in minutes between the heater and the compressor
+operation. The heater is not allowed to start until this number of minutes
+has expired after the compressor has cut out and vice versa.","Energy Mode Delay
+This is the delay in minutes between the heater and the compressor
+operation. The heater is not allowed to start until this number of minutes
+has expired after the compressor has cut out and vice versa.",True
+Auto Heat set point,AHS,AHS,True,2,2.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"Auto Heat set point
+Set point of auto heating.","Auto Heat set point
+Set point of auto heating.",True
+Auto heat differential,AHd,AHd,True,2,2.00,False,0,0.00,False,20,20.00,False,K,K,True,"Auto heat differential
+Thermostat differential for auto heatting.","Auto heat differential
+Thermostat differential for auto heatting.",True
+ECO on/off,ECo,ECo,True,Yes,Yes,True,0,,False,1,,False,,,True,"ECO ON/OFF
+ECO active or not. If no all other settings are not active.","ECO ON/OFF
+ECO active or not. If no all other settings are not active.",True
+Door Actions,EdA,EdA,True,1,1,True,1,1,True,10,10,True,,,True,"Door Actions
+Times of door action to trigger exiting ECO
+(Can only be accessed by Danfoss)","Door Actions
+Times of door action to trigger exiting ECO
+(Can only be accessed by Danfoss)",True
+Pir Actions,EPA,EPA,True,1,1,True,1,1,True,10,10,True,,,True,"Pir Actions
+Times of ""PIR"" action to trigger exiting ECO
+(Can only be accessed by Danfoss).","Pir Actions
+Times of ""PIR"" action to trigger exiting ECO
+(Can only be accessed by Danfoss).",True
+Action counter time,ECt,ECt,True,30,30,True,0,0,True,180,180,True,min,min,True,"Action counter time
+Door action or ""PIR"" action within action counter time can trigger
+exiting ECO (can only be accessed by Danfoss).","Action counter time
+Door action or ""PIR"" action within action counter time can trigger
+exiting ECO (can only be accessed by Danfoss).",True
+Door delay ,Edd,Edd,True,180,180,True,0,0,True,180,180,True,min,min,True,"Door delay
+Door delay after door close to trigger entering ECO
+(can only be accessed by Danfoss).","Door delay
+Door delay after door close to trigger entering ECO
+(can only be accessed by Danfoss).",True
+Pir delay,EPd,EPd,True,120,120,True,0,0,True,180,180,True,min,min,True,"Pir delay
+""PIR"" delay to trigger entering ECO
+(can only be accessed by Danfoss).","Pir delay
+""PIR"" delay to trigger entering ECO
+(can only be accessed by Danfoss).",True
+Shop Light Day,SLd,SLd,True,5,5,True,0,0,True,80,80,True,,,True,"""SLd"" is the amount of ambient light which will cause the device to
+move to normal/serving mode from ECO mode
+(normally occurs in the morning).","""SLd"" is the amount of ambient light which will cause the device to
+move to normal/serving mode from ECO mode
+(normally occurs in the morning).",True
+Shop Light Night,SLn,SLn,True,3,3,True,0,0,True,80,80,True,,,True,"""SLn"" is the amount of ambient light which will cause the device to
+move to ECO mode from normal/serving mode
+(normally occurs in the evening).","""SLn"" is the amount of ambient light which will cause the device to
+move to ECO mode from normal/serving mode
+(normally occurs in the evening).",True
+Time to pull down,tto,tto,True,0,0,True,0,0,True,168,168,True,hour,hour,True,"Time to pull down
+Time which ERC stay in ECO and holiday mode to decide to enter pull
+down or serving mode.","Time to pull down
+Time which ERC stay in ECO and holiday mode to decide to enter pull
+down or serving mode.",True
+Light Source delay on ECO ,LSd,LSd,True,0,0,True,0,0,True,180,180,True,min,min,True,"Light Source delay on ECO
+Time delay for light source to change from serving mode source to
+ECO mode source.","Light Source delay on ECO
+Time delay for light source to change from serving mode source to
+ECO mode source.",True
+Early Wake Up on/off,Euu,Euu,True,Yes,Yes,True,0,,False,1,,False,,,True,"EWU active on/OFF
+Enable or disable early wake up.","EWU active on/OFF
+Enable or disable early wake up.",True
+Shop close hour,CLH,CLH,True,6,6,True,0,0,True,24,24,True,hour,hour,True,"Shop close hour
+Shop is assumed to be closed when staying in ECO mode longer than
+shop close hour.","Shop close hour
+Shop is assumed to be closed when staying in ECO mode longer than
+shop close hour.",True
+Early wake up time offset,ErL,ErL,True,120,120,True,0,0,True,240,240,True,min,min,True,"Early wake up time offset
+Time of exiting ECO mode for next day=
+Time of first activity to exit ECO mode - the early wake-up time.
+""0"": early wake up function disabled.""","Early wake up time offset
+Time of exiting ECO mode for next day=
+Time of first activity to exit ECO mode - the early wake-up time.
+""0"": early wake up function disabled.""",True
+Holiday Length,HoL,HoL,True,72,72,True,0,0,True,999,999,True,hour,hour,True,"Holiday Length
+In case that no activity has been registered for a number of days,
+specified by the holiday, the early-wake-up is deactivated and the
+cooler must stay in holiday mode until activity is detected.","Holiday Length
+In case that no activity has been registered for a number of days,
+specified by the holiday, the early-wake-up is deactivated and the
+cooler must stay in holiday mode until activity is detected.",True
+ECO Temperature Offset,Eto,Eto,True,4,4.00,False,-25,-25.00,False,25,25.00,False,K,K,True,"Eco Temperature Offset
+This parameter gives a relative temperature in degrees. It is the difference
+in temperature for ECO mode operation compared to normal mode.
+NOTE: setting a temperature offset may be illegal in some jurisdictions.","Eco Temperature Offset
+This parameter gives a relative temperature in degrees. It is the difference
+in temperature for ECO mode operation compared to normal mode.
+NOTE: setting a temperature offset may be illegal in some jurisdictions.",True
+Holiday Temperature Offset,Hto,Hto,True,6,6.00,False,-25,-25.00,False,25,25.00,False,K,K,True,"Holiday Temperature Offset
+Increase or decrease of temperature with respect to normal mode
+during holiday mode.","Holiday Temperature Offset
+Increase or decrease of temperature with respect to normal mode
+during holiday mode.",True
+ECO Differential,diE,diE,True,2,2.00,False,0,0.00,False,10,10.00,False,K,K,True,"ECO Differential
+Thermostat differential for ECO.","ECO Differential
+Thermostat differential for ECO.",True
+ECO Fan on cycle,FoE,FoE,True,0,0,True,0,0,True,960,960,True,Sec,Sec,True,"ECO Fan on cycle
+On time for fan during compressor OFF period in ECO mode.","ECO Fan on cycle
+On time for fan during compressor OFF period in ECO mode.",True
+ECO Fan stop cycle,FSE,FSE,True,0,0,True,0,0,True,960,960,True,Sec,Sec,True,"ECO Fan stop cycle
+OFF time for fan during compressor OFF period in ECO mode.","ECO Fan stop cycle
+OFF time for fan during compressor OFF period in ECO mode.",True
+ECO Cabinet light control,ELC,ELC,True,on.png,on,False,0,,False,2,,False,,,True,"ECO Cabinet light control
+""on"": always ON (Button is default to control light for all these options).
+""oFF"": always OFF.
+""dor"": door sensor only.","ECO Cabinet light control
+""on"": always ON (Button is default to control light for all these options).
+""oFF"": always OFF.
+""dor"": door sensor only.",True
+Eco Light delay,ELd,ELd,True,5,5,True,0,0,True,10,10,True,min,min,True,"Eco Light Delay
+This parameter causes a delay to the switch from normal to ECO mode
+when the shop lights are switched ON or OFF. The ambient light sensor
+detects the change in light level and causes a switch mode. With this
+parameter set to zero, the switch OFF mode occurs immediately.
+If not set to zero (max: 10 minutes), then the change will be delayed by
+the number of minutes set.","Eco Light Delay
+This parameter causes a delay to the switch from normal to ECO mode
+when the shop lights are switched ON or OFF. The ambient light sensor
+detects the change in light level and causes a switch mode. With this
+parameter set to zero, the switch OFF mode occurs immediately.
+If not set to zero (max: 10 minutes), then the change will be delayed by
+the number of minutes set.",True
+MODBUS Safety,uSA,uSA,True,No,No,True,0,,False,1,,False,,,True,"MODBUS Safety
+""no"": MODBUS auto detection is enable and serial communication is available for configuration software tool.
+""yES"": MODBUS communication is deactivated.","MODBUS Safety
+""no"": MODBUS auto detection is enable and serial communication is available for configuration software tool.
+""yES"": MODBUS communication is deactivated.",True
+Temp Adj. for S1,t1A,t1A,True,0,0.00,False,-20,-20.00,False,20,20.00,False,K,K,True,"Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.","Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.",True
+Temp Adj. for S2,t2A,t2A,True,0,0.00,False,-20,-20.00,False,20,20.00,False,K,K,True,"Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.","Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.",True
+Temp Adj. for S3,t3A,t3A,True,0,0.00,False,-20,-20.00,False,20,20.00,False,K,K,True,"Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.","Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.",True
+Temp Adj. for S4,t4A,t4A,True,0,0.00,False,-20,-20.00,False,20,20.00,False,K,K,True,"Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.","Air Temperature Adjustment
+(applies to non-Danfoss temperature sensors only)
+This parameter is a relative value and allows adjustment of the control
+sensor temperature.
+For instance, at a measured temperature of 7*C and ""tAd"" set to -2 K,
+the input from the control sensor will be 5*C instead.",True
+S1 Config,S1C,S1C,True,Stn.png ,Stn,False,0,,False,3,,False,,,True,"S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).","S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).",True
+S2 Config,S2C,S2C,True,Stn.png ,Stn,False,0,,False,3,,False,,,True,"S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).","S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).",True
+S3 Config,S3C,S3C,True,Stn.png ,Stn,False,0,,False,3,,False,,,True,"S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).","S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).",True
+S4 Config,S4C,S4C,True,Stn.png ,Stn,False,0,,False,4,,False,,,True,"S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).","S1 Config/S1C
+S2 Config/S2C
+S3 Config/S3C
+S4 Config/S4C
+Available options are:
+""Stn"": for a standard temperature sensor NTC 5 K @ 25°C and TPE precision.
+""Htn"": for a high temperature sensor NTC 100 K @ 25°C.
+""Pt1"": for a temperature sensor Pt1000 ohm @ 0°C (only ""S4"").
+""Ldr"": for a light sensor (values given in Luminens).
+""dig"": for a digital sensor with simple ON/OFF indication
+(motion, magnet, switch, buttom).",True
+S1 Application,S1A,S1A,True,SCo.png,SCo,False,0,,False,8,,False,,,True,"S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").","S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").",True
+S2 Application,S2A,S2A,True,nC.png,nC,False,0,,False,8,,False,,,True,"S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").","S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").",True
+S3 Application,S3A,S3A,True,nC.png,nC,False,0,,False,9,,False,,,True,"S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").","S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").",True
+S4 Application,S4A,S4A,True,nC.png,nC,False,0,,False,9,,False,,,True,"S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").","S1 Application/S1A
+S2 Application/S2A
+S3 Application/S3A
+S4 Application/S4A
+Available options are:
+""nC"": not connected.
+""SCo"": temperature control.
+""EuA"": evaporator temperature.
+""Con"": condenser temperature (Condenser cleaning).
+""AuS"": only for showing temperature on display.
+""Ldr"": light sensor, Luminens.
+""ECo"": external input to control ECO mode.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""Pir"": motion sensor (only ""S3"").
+""bt5"": button 5 (only ""S4"").",True
+DI Config,diC,diC,True,non.png,non,False,0,,False,4,,False,,,True,"DI Config
+This is the digital input used for a digital sensor or bus communications.
+""non"": not used.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""ECo"": external input to control ECO mode.
+""Pir"": motion sensor. Passive infrared.","DI Config
+This is the digital input used for a digital sensor or bus communications.
+""non"": not used.
+""doC"": door contact, contact closed when door closed.
+""doo"": door contact, contact open when door closed.
+""ECo"": external input to control ECO mode.
+""Pir"": motion sensor. Passive infrared.",True
+DO1 Config,o1C,o1C,True,CoP.png,CoP,False,0,,False,3,,False,,,True,"D01 Config
+""CoP"": direct compressor control.
+""PiC"": pilot Relay (no zero cross) – if using pilot relay to control a
+compressor, this option must be used instead of ""CoP"".
+""HEt"": heating application, inverse output.
+""PiH"": pilot heat relay (no zero cross).","D01 Config
+""CoP"": direct compressor control.
+""PiC"": pilot Relay (no zero cross) – if using pilot relay to control a
+compressor, this option must be used instead of ""CoP"".
+""HEt"": heating application, inverse output.
+""PiH"": pilot heat relay (no zero cross).",True
+DO2 Config,o2C,o2C,True,dEF.png,dEF,False,0,,False,4,,False,,,True,"D02 Config/o2C
+D03 Config/o3C
+D04 Config/o4C
+""no"": not used.
+""dEF"": electric defrost heater/valve for hot gas.
+""ALA"": alamr output.
+""FAn"": fan control.
+""Lig"": light control.","D02 Config/o2C
+D03 Config/o3C
+D04 Config/o4C
+""no"": not used.
+""dEF"": electric defrost heater/valve for hot gas.
+""ALA"": alamr output.
+""FAn"": fan control.
+""Lig"": light control.",True
+DO3 Config,o3C,o3C,True,FAn.png,FAn,False,0,,False,4,,False,,,True,"D02 Config/o2C
+D03 Config/o3C
+D04 Config/o4C
+""no"": not used.
+""dEF"": electric defrost heater/valve for hot gas.
+""ALA"": alamr output.
+""FAn"": fan control.
+""Lig"": light control.","D02 Config/o2C
+D03 Config/o3C
+D04 Config/o4C
+""no"": not used.
+""dEF"": electric defrost heater/valve for hot gas.
+""ALA"": alamr output.
+""FAn"": fan control.
+""Lig"": light control.",True
+DO4 Config,o4C,o4C,True,"Lig.png
+",Lig,False,0,,False,4,,False,,,True,"D02 Config/o2C
+D03 Config/o3C
+D04 Config/o4C
+""no"": not used.
+""dEF"": electric defrost heater/valve for hot gas.
+""ALA"": alamr output.
+""FAn"": fan control.
+""Lig"": light control.","D02 Config/o2C
+D03 Config/o3C
+D04 Config/o4C
+""no"": not used.
+""dEF"": electric defrost heater/valve for hot gas.
+""ALA"": alamr output.
+""FAn"": fan control.
+""Lig"": light control.",True
+Button 1 Short Config,b1C,b1C,True,noP.png,noP,False,0,,False,9,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",True
+Button 1 Long Config,b1L,b1L,True,PoF.png,PoF,False,0,,False,12,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",True
+Button 2 Short Config,b2C,b2C,True,dEF.png,dEF,False,0,,False,9,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",True
+Button 2 Long Config,b2L,b2L,True,INf.png,INf,False,0,,False,12,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",True
+Button 3 Short Config,b3C,b3C,True, tP.png, tP,False,0,,False,9,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",True
+Button 3 Long Config,b3L,b3L,True,ECo.png,ECo,False,0,,False,12,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+'noP': not operating
+'tP': increase set point
+'tn': decrease set point
+'ECo': toggle Eco mode
+'Lig': toggle light
+'dEF': toggle defrost
+'SuP': toggle super-cool/pull down
+'diP' : increase display intensity
+'din' : decrease display intensity
+'CFA': toggle °C and °F
+'no': not operating
+'tP': increase set point
+'tn': decrease set point
+'ECo': toggle Eco mode
+'Lig': toggle light
+'dEF': toggle defrost
+'SuP': toggle super-cool/pull down
+'diP': increase display intensity
+'din': decrease display intensity
+'CFA': toggle °C and °F
+'PoF': ERC power ON/OFF
+'HoL': enter holiday mode
+'inF': enter info menu
+'tEc': Toggle Winter & Summer Eco mode
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",False
+Button 4 Short Config,b4C,b4C,True, tn.png, tn,False,0,,False,9,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+""inF"": enter info menu
+NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",True
+Button 4 Long Config,b4L,b4L,True,Lig.png,Lig,False,0,,False,12,,False,,,True,"The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+ NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.","The buttons can be programmed as follows:
+Short press function Long press function
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"" : increase display intensity
+""din"" : decrease display intensity
+""CFA"": toggle °C and °F
+""noP"": not operating
+""tP"": increase set point
+""tn"": decrease set point
+""ECo"": toggle Eco mode
+""Lig"": toggle light
+""dEF"": toggle defrost
+""SuP"": toggle super-cool/pull down
+""diP"": increase display intensity
+""din"": decrease display intensity
+""CFA"": toggle °C and °F
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode
+ NOTE: Your assignments may not be shown on the printed buttons. We advice to
+use this functionality together with the fully integrated mounting model only.",True
+Button 5 Short Config,b5C,b5C,True,noP.png,noP,False,0,,False,4,,False,,,True,"Short press function Long Press function
+""noP"": not operating
+""ECo"": toggle ECO mode
+""SuP"": toggle super-cool/pull down
+""Lig"": toggle light
+""dEF"": toggle defrost
+""noP"": Not operating
+""ECo"": Toggle Eco mode
+""SuP"": Toggle Super-Cool /Pull-down
+""Lig"": Toggle light
+""dEF"": Toggle defrost
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode","Short press function Long Press function
+""noP"": not operating
+""ECo"": toggle ECO mode
+""SuP"": toggle super-cool/pull down
+""Lig"": toggle light
+""dEF"": toggle defrost
+""noP"": Not operating
+""ECo"": Toggle Eco mode
+""SuP"": Toggle Super-Cool /Pull-down
+""Lig"": Toggle light
+""dEF"": Toggle defrost
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode",True
+Button 5 Long Config,b5L,b5L,True,noP.png,noP,False,0,,False,6,,False,,,True,"Short press function Long Press function
+""noP"": not operating
+""ECo"": toggle ECO mode
+""SuP"": toggle super-cool/pull down
+""Lig"": toggle light
+""dEF"": toggle defrost
+""noP"": Not operating
+""ECo"": Toggle Eco mode
+""SuP"": Toggle Super-Cool /Pull-down
+""Lig"": Toggle light
+""dEF"": Toggle defrost
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode","Short press function Long Press function
+""noP"": not operating
+""ECo"": toggle ECO mode
+""SuP"": toggle super-cool/pull down
+""Lig"": toggle light
+""dEF"": toggle defrost
+""noP"": Not operating
+""ECo"": Toggle Eco mode
+""SuP"": Toggle Super-Cool /Pull-down
+""Lig"": Toggle light
+""dEF"": Toggle defrost
+""PoF"": ERC power ON/OFF
+""HoL"": enter holiday mode",True
+Pass-word level1,PS1,PS1,True,0,0,True,0,0,True,999,999,True,,,True,"Password level 1 / PS1
+Password Level 2 / PS2
+Password Level 3 / PS3
+These assign passwords to the three levels of access. The password is a
+three-digit number. Access levels are Shop, Service and OEM.
+You may not therefore have access to change all the passwords.
+Passwords are entered by using the up and down arrow buttons.
+Danfoss advises against using passwords which are easy to remember
+or enter, for example 111, 222, 123 etc.
+NOTE: When accessing the controller with 3 wrong password in a sequence
+ERC will automatically block access for 15 minutes.","Password level 1 / PS1
+Password Level 2 / PS2
+Password Level 3 / PS3
+These assign passwords to the three levels of access. The password is a
+three-digit number. Access levels are Shop, Service and OEM.
+You may not therefore have access to change all the passwords.
+Passwords are entered by using the up and down arrow buttons.
+Danfoss advises against using passwords which are easy to remember
+or enter, for example 111, 222, 123 etc.
+NOTE: When accessing the controller with 3 wrong password in a sequence
+ERC will automatically block access for 15 minutes.",True
+Pass-word level2,PS2,PS2,True,0,0,True,0,0,True,999,999,True,,,True,"Password level 1 / PS1
+Password Level 2 / PS2
+Password Level 3 / PS3
+These assign passwords to the three levels of access. The password is a
+three-digit number. Access levels are Shop, Service and OEM.
+You may not therefore have access to change all the passwords.
+Passwords are entered by using the up and down arrow buttons.
+Danfoss advises against using passwords which are easy to remember
+or enter, for example 111, 222, 123 etc.
+NOTE: When accessing the controller with 3 wrong password in a sequence
+ERC will automatically block access for 15 minutes.","Password level 1 / PS1
+Password Level 2 / PS2
+Password Level 3 / PS3
+These assign passwords to the three levels of access. The password is a
+three-digit number. Access levels are Shop, Service and OEM.
+You may not therefore have access to change all the passwords.
+Passwords are entered by using the up and down arrow buttons.
+Danfoss advises against using passwords which are easy to remember
+or enter, for example 111, 222, 123 etc.
+NOTE: When accessing the controller with 3 wrong password in a sequence
+ERC will automatically block access for 15 minutes.",True
+Pass-word level3,PS3,PS3,True,0,0,True,0,0,True,999,999,True,,,True,"Password level 1 / PS1
+Password Level 2 / PS2
+Password Level 3 / PS3
+These assign passwords to the three levels of access. The password is a
+three-digit number. Access levels are Shop, Service and OEM.
+You may not therefore have access to change all the passwords.
+Passwords are entered by using the up and down arrow buttons.
+Danfoss advises against using passwords which are easy to remember
+or enter, for example 111, 222, 123 etc.
+NOTE: When accessing the controller with 3 wrong password in a sequence
+ERC will automatically block access for 15 minutes.","Password level 1 / PS1
+Password Level 2 / PS2
+Password Level 3 / PS3
+These assign passwords to the three levels of access. The password is a
+three-digit number. Access levels are Shop, Service and OEM.
+You may not therefore have access to change all the passwords.
+Passwords are entered by using the up and down arrow buttons.
+Danfoss advises against using passwords which are easy to remember
+or enter, for example 111, 222, 123 etc.
+NOTE: When accessing the controller with 3 wrong password in a sequence
+ERC will automatically block access for 15 minutes.",True
+OEM Code Low,oEL,oEL,True,0,0,True,0,0,True,999,999,True,,,True,OEM code Low,OEM code Low,True
+OEM Code middle,oEn,oEn,True,0,0,True,0,0,True,999,999,True,,,True,OEM code Middle,OEM code Middle,True
+OEM Code High,oEH,oEH,True,0,0,True,0,0,True,999,999,True,,,True,OEM code High,OEM code High,True
+Parameter Version,PAr,PAr,True,0,0,True,-32768,-32768,True,32767,32767,True,,,True,"Parameter version
+OEM parameter version number [requires EKA copy key update].","Parameter version
+OEM parameter version number [requires EKA copy key update].",True
+Show Compressor Symbol,SCS,SCS,True,Yes,Yes,True,0,,False,1,,False,,,True,"Show compressor symbol
+""no"": compressor symbol will not show on display.
+""yES"": show compressor symbol on display.","Show compressor symbol
+""no"": compressor symbol will not show on display.
+""yES"": show compressor symbol on display.",True
+Show Fan Symbol,SFS,SFS,True,Yes,Yes,True,0,,False,1,,False,,,True,"Show Fan symbol
+""no"": san symbol will not show on display.
+""yES"": show fan symbol on display.","Show Fan symbol
+""no"": san symbol will not show on display.
+""yES"": show fan symbol on display.",True
+Show Defrost Symbol,SdS,SdS,True,Yes,Yes,True,0,,False,1,,False,,,True,"Show Defrost symbol
+""no"": defrost symbol will not show on display.
+""yES"": show defrost symbol on display.","Show Defrost symbol
+""no"": defrost symbol will not show on display.
+""yES"": show defrost symbol on display.",True
+Show ECO Symbol,SES,SES,True,Yes,Yes,True,0,,False,1,,False,,,True,"Show ECO symbol
+""no"": ECO symbol will not show on display.
+""yES"": show ECO symbol on display.","Show ECO symbol
+""no"": ECO symbol will not show on display.
+""yES"": show ECO symbol on display.",True
+Info Menu Display Item,idP,idP,True,15,15,True,0,0,True,15,15,True,,,True,,,True
+Show Pull Down,SSC,SSC,True,No,No,True,0,,False,1,,False,,,True,"Show Pull down state
+If set to ""yES"", this parameter causes the display to show SC when the
+system is in pull down mode.
+If set to ""nO"", the temperature continues to be displayed.","Show Pull down state
+If set to ""yES"", this parameter causes the display to show SC when the
+system is in pull down mode.
+If set to ""nO"", the temperature continues to be displayed.",True
+Access Set point,SEt,SEt,True,63,RW RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Set point adjustment ratio,SPr,SPr,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Differential,diF,diF,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access High Set point,HSE,HSE,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Low Set point,LSE,LSE,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Initial cut in,iCi,iCi,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan control method,FCt,FCt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan On Delay,Fod,Fod,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan Stop delay,FSd,FSd,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan On Cycle,FoC,FoC,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan Stop Cycle,FSC,FSC,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan Minimum Stop time,FSt,FSt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Delta T For Fan cut in,FdC,FdC,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan Stop on door open,Fdt,Fdt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Cabinet Light Control Source,CLC,CLC,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Light off delay,Lod,Lod,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Pull-down Initiate Temperature,Pit,Pit,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Pull-down Cycling,PCy,PCy,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Pull-down defrost Interval,Pdi,Pdi,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Pull-down duration,Pdd,Pdd,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Pull-down limit temp,PLt,PLt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Pull-down reduction temp Delta T,Prt,Prt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Def. type,dFt,dFt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Adaptive defrost,Add,Add,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Def terminate temp,dtt,dtt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Def reset temp,drt,drt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Def Min Interval,dii,dii,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Def Max Interval,dAi,dAi,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Def Min Time,dit,dit,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Def Max time,dAt,dAt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Drip off time,dot,dot,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan delay after Defrost,Fdd,Fdd,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Fan start Temp,Ftd,Ftd,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Defrost Fan on ,dFA,dFA,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Defrost on compressor time,dCt,dCt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Defrost by Comp. running time,doC,doC,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Defrost start evaporator temp.,dEt,dEt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Defrost Delta T,ddt,ddt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Initial Defrost Interval,idi,idi,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Initial Defrost Duration,idd,idd,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Voltage protection,uPt,uPt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Minimum Cutin voltage,uLi,uLi,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Minimum cut-out voltage,uLo,uLo,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Maximum voltage,uHi,uHi,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Sensor Error Type,EHd,EHd,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Error run time,Ert,Ert,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Error stop time,ESt,ESt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Min Stop time,CSt,CSt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Min run time,Crt,Crt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Max Off time,Cot,Cot,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Compressor door open delay,Cdd,Cdd,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access System resume after door open,Srt,Srt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Power On Delay,Pod,Pod,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Power-on temperature,Pot,Pot,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Condenser Alarm Limit,CAL,CAL,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Condenser Block Limit,CbL,CbL,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Condenser OK limit,CoL,CoL,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Condenser Low Temp. Limit,CLL,CLL,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Display intensity auto control,diC,diC,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Display Intensity,din,din,True,63,RW RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Display Unit,CFu,CFu,True,63,RW RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Temp sensor to display,trS,trS,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Display Resolution,rES,rES,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Display Range Limit,rLt,rLt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Display Delay,ddL,ddL,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Display Offset,doF,doF,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Lock-time After defrost,dLt,dLt,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Show Economy/Night Mode,SEC,SEC,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Show Holiday,SHo,SHo,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Show Defrost,SdF,SdF,True,52,-- RO RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access High Temp Alarm,HAt,HAt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Low Temp Alarm,LAt,LAt,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access High Alarm delay,Htd,Htd,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True
+Access Low Alarm delay,Ltd,Ltd,True,60,-- RW RW,False,2,,False,15,,False, , ,True,Read/write access level settings,Read/write access level settings,True

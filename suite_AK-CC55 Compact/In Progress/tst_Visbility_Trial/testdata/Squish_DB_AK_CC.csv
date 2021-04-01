@@ -1,0 +1,1088 @@
+"Group_Code","Menu_Code","Group_Name","Name","PNU","Default_Value","Minimum_Value","Maximum_Value","Unit","Scaling","Datatype","Enum","Read_Only","Help","Decimals","Variable_Name","Visibility_Index","Visibility_Rule
+
+"
+"","r12","Start / Stop","Main switch","117","0","-1","1","","0","Enum","0:Manual,1:Standby,2:Run","1","","0","Id_0","0","
+
+
+"
+"","o61","Configuration","Application mode","2077","1","0","9","","0","Enum","0:Not selected,1:Standard Alarm/Comp/Light,2:Standard Railheat/Comp/Light,3:Standard Alarm/Comp/Railheat,4:Standard Alarm/Railheat/Light,5:Hotgas,6:Dual case w. 1 evap,7:Dual case w. 2 evap,8:Coldroom,9:Custom","1","","0","Id_124","0","
+
+
+"
+"","q02","Configuration","DO2 Configuration","2205","6","0","15","","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_125","28","Id_124 == 9
+
+"
+"","q03","Configuration","DO3 Configuration","2206","8","0","15","","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_126","28","Id_124 == 9
+
+"
+"","q04","Configuration","DO4 Configuration","2207","9","0","15","","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_128","28","Id_124 == 9
+
+"
+"","q05","Configuration","DO5 Configuration","2208","3","0","15","","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_127","28","Id_124 == 9
+
+"
+"","q06","Configuration","DO6 Configuration","2209","1","0","15","","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_133","28","Id_124 == 9
+
+"
+"","q09","Configuration","AO1 Configuration","2212","0","0","1","","0","Enum","0:Not used,1:PWM Railheat","1","","0","Id_149","0","
+
+"
+"","o02","Configuration","DI1 Configuration","2001","0","0","21","","0","Enum","0:Not used,1:Status only,2:Door switch function,3:Door alarm,4:Defrost start,5:Mainswitch,6:Night,7:Thermostat band,8:Alarm at closed,9:Alarm at open,10:Case cleaning,11:Forced cooling,12:Blinds open,13:Not used,14:Forced closing,15:Case shutdown,16:Not used,17:Not used,18:Not used,19:Not used,20:Leak detection,21:Flooded injection","1","","0","Id_134","30","Id_124 != 7 && Id_124 != 8
+
+"
+"","o37","Configuration","DI2 Configuration","2055","0","0","21","","0","Enum","0:Not used,1:Status only,2:Door switch function,3:Door alarm,4:Defrost start,5:Mainswitch,6:Night,7:Thermostat band,8:Alarm at closed,9:Alarm at open,10:Case cleaning,11:Forced cooling,12:Blinds open,13:Co-ordinated defrost,14:Forced closing,15:Case shutdown,16:Not used,17:Not used,18:Not used,19:Not used,20:Leak detection,21:Flooded injection","1","","0","Id_135","0","
+
+"
+"","o84","Configuration","DI3 Configuration","2115","0","0","21","","0","Enum","0:Not used,1:Status only,2:Door switch function,3:Door alarm,4:Defrost start,5:Mainswitch,6:Night,7:Thermostat band,8:Alarm at closed,9:Alarm at open,10:Case cleaning,11:Forced cooling,12:Blinds open,13:Not used,14:Forced closing,15:Case shutdown,16:Light on/off,17:Not used,18:Not used,19:Not used,20:Leak detection,21:Flooded injection","1","","0","Id_136","0","
+
+"
+"","o30","Configuration","Refrigerant","2551","0","0","37","","0","Enum","0:Not Selected,1:R12,2:R22,3:R134a,4:R502,5:R717,6:R13,7:R13b1,8:R23,9:R500,10:R503,11:R114,12:R142b,13:User Defined,14:R32,15:R227,16:R401A,17:R507,18:R402A,19:R404A,20:R407C,21:R407A,22:R407B,23:R410A,24:R170,25:R290,26:R600,27:R600a,28:R744,29:R1270,30:R417A,31:R422A,32:R413A,33:R422D,34:R427A,35:R438A,36:XP10,37:R407F","1","","0","Id_129","0","
+
+"
+"","P83","Configuration","Refrigerant factor K1","2201","300","-999","999","","0","INT","","1","","0","Id_130","29","Id_129 == 1
+
+"
+"","P84","Configuration","Refrigerant factor K2","2202","300","-999","999","","0","INT","","1","","0","Id_131","29","Id_129 == 1
+
+"
+"","P85","Configuration","Refrigerant factor K3","2203","300","-999","999","","0","INT","","1","","0","Id_132","29","Id_129 == 1
+
+"
+"","o20","Configuration","Pressure sensor min range","2034","-1","-1","5","","0","","","1","","1","Id_138","0","
+
+"
+"","o21","Configuration","Pressure sensor max range","2033","12","6","200","","0","","","1","","1","Id_139","0","
+
+"
+"","o06","Configuration","Temperature sensor type","2014","0","0","2","","0","Enum","0:Pt,1:PTC 1000,2:NTC 10k","1","","0","Id_137","0","
+
+"
+"","d01","Configuration","Defrost method","1000","1","0","4","","0","Enum","0:None,1:Electric,2:Hotgas,3:Brine,4:Air","1","","0","Id_23","0","
+
+"
+"","d10","Configuration","Defrost stop sensor","1009","0","0","3","","0","Enum","0:Time,1:S5 sensor,2:S4 sensor,3:Multiple S5","1","","0","Id_32","0","
+
+"
+"","d02","Configuration","Defrost stop temperature","1001","6","0","50","","0","","","1","","1","Id_24","11","Id_32 > 0
+
+"
+"","r89","Configuration","Food type","209","0","0","5","","0","Enum","0:Not selected,1:Vegetables,2:Dairy,3:Meat,4:Frozen food,5:Ice cream","1","","0","Id_282","0","
+
+"
+"","o03","Configuration","Network address","2008","0","0","240","","0","INT","","1","","0","Id_148","0","
+
+"
+"","o04","Configuration","Service pin","60029","0","0","1","","0","Enum","0:OFF,1:ON","1","","0","Id_326","0","
+
+"
+"","u00","Thermostat control-Status","Control state","2007","10","0","48","°C","0","Enum","0:(s0) Normal,1:(s1) Hold after defrost,2:(s2) Comp. Min ON,3:(s3) Comp. Min OFF,4:(s4) Drip off,5:(s5),6:(s6),7:(s7),8:(s8),9:(s9),10:(s10) Mainswitch OFF,11:(s11) Thermostat cutout,12:(s12) Low S4 temp.,13:(s13),14:(s14) Defrost,15:(s15) Fan delay,16:(s16) Forced Closing,17:(s17) Door open,18:(s18) Melt period,19:(s19) Modulating temp.,20:(s20) Emergency cooling,21:(s21) Injection error,22:(s22) Start Up,23:(s23) Adaptive SH control,24:(s24) Start injection,25:(s25) Manual control,26:(s26) No refrigerant selected,27:(s27),28:(s28),29:(s29) Cleaning,30:(s30) Forced Cooling,31:(s31),32:(s32) Power up,33:(s33) Heating,34:(s34),35:(s35),36:(s36),37:(s37),38:(s38),39:(s39),40:(s40),41:(s41),42:(s42),43:(s43),44:(s44),45:(s45) Shutdown,46:(s46),47:(s47),48:(s48) Flooded inj.","1","","0","Id_284","0","
+
+"
+"","u17","Thermostat control-Status","Thermostat air temp.","2532","0","-200","200","°C","0","","","1","","1","Id_285","0","
+
+"
+"","u16","Thermostat control-Status","S4 air off temp.","2531","0","-200","200","°C","0","","","1","","1","Id_286","0","
+
+"
+"","u12","Thermostat control-Status","S3 air on temp.","2530","0","-200","200","°C","0","","","1","","1","Id_287","0","
+
+"
+"","u76","Thermostat control-Status","S3B air on temp.","2596","0","-200","200","°C","0","","","1","","1","Id_288","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","u13","Thermostat control-Status","Night Condition","2533","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_247","0","
+
+"
+"","u90","Thermostat control-Status","Cutin temp.","2612","4","-200","200","°C","0","","","1","","1","Id_244","0","
+
+"
+"","u91","Thermostat control-Status","Cutout temp.","2613","2","-200","200","°C","0","","","1","","1","Id_245","0","
+
+"
+"","u18","Thermostat control-Status","Thermostat runtime","2539","0","0","999","°C","0","INT","","1","","0","Id_246","0","
+
+"
+"","u86","Thermostat control-Status","Thermostat band","2607","1","1","2","°C","0","Enum","0:Band 1,1:Band 2","1","","0","Id_248","7","(Id_134 == 7) || (Id_135 == 7) || (Id_136 == 7)
+
+"
+"","r14","Thermostat control-Settings","Thermostat mode","124","1","1","2","°C","0","Enum","0:ON/OFF,1:Modulating","1","","0","Id_1","0","
+
+"
+"","r00","Thermostat control-Settings","Cutout","100","2","-50","50","°C","0","","","1","","1","Id_2","0","
+
+"
+"","r21","Thermostat control-Settings","Cutout band 2","131","2","-50","50","°C","0","","","1","","1","Id_8","7","(Id_134 == 7) || (Id_135 == 7) || (Id_136 == 7)
+
+"
+"","r01","Thermostat control-Settings","Differential","101","2","0.1","20","°C","0","","","1","","1","Id_3","0","
+
+"
+"","r15","Thermostat control-Settings","Thermostat S4 %","123","100","0","100","°C","0","INT","","1","","0","Id_6","0","
+
+"
+"","r61","Thermostat control-Settings","Thermostat S4% night","182","100","0","100","°C","0","INT","","1","","0","Id_11","0","
+
+"
+"","r13","Thermostat control-Settings","Night offset","125","0","-50","50","°C","0","","","1","","1","Id_7","0","
+
+"
+"","r62","Thermostat control-Settings","Air heater neutralzone","183","5","0","50","°C","0","","","1","","1","Id_12","8","Id_124 == 9 && (Id_125 == 10 || Id_126 == 10 || Id_128 == 10 || Id_127 == 10 || Id_133 == 10)
+
+"
+"","r63","Thermostat control-Settings","Air heater start delay","184","240","0","240","°C","0","INT","","1","","0","Id_13","8","Id_124 == 9 && (Id_125 == 10 || Id_126 == 10 || Id_128 == 10 || Id_127 == 10 || Id_133 == 10)
+
+"
+"","r98","Thermostat control-Settings","S4 Frost protection","216","-50","-50","50","°C","0","","","1","","1","Id_14","0","
+
+"
+"","r16","Thermostat control-Settings","Melt Interval","122","1","0","10","°C","0","INT","","1","","0","Id_9","0","
+
+"
+"","r17","Thermostat control-Settings","Melt period","121","5","0","30","°C","0","INT","","1","","0","Id_10","0","
+
+"
+"","r02","Thermostat control-Settings","Max cutout limit","102","50","-49","50","°C","0","","","1","","1","Id_4","0","
+
+"
+"","r03","Thermostat control-Settings","Min cutout limit","103","-50","-50","49","°C","0","","","1","","1","Id_5","0","
+
+"
+"","u57","Alarm settings-Status","Alarm air temp.","2578","0","-200","200","K","0","","","1","","1","Id_263","0","
+
+"
+"","U34","Alarm settings-Status","Alarm air B temp.","2671","0","-200","200","K","0","","","1","","1","Id_264","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","u36","Alarm settings-Status","S6 Product temp. ","2555","0","-200","200","K","0","","","1","","1","Id_297","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","A36","Alarm settings-Settings","Alarm sensor S4 %","10037","100","0","100","K","0","INT","","1","","0","Id_85","0","
+
+"
+"","A13","Alarm settings-Settings","High alarm limit","10019","8","-50","50","K","0","","","1","","1","Id_74","0","
+
+"
+"","A20","Alarm settings-Settings","High alarm limit band 2","10021","8","-50","50","K","0","","","1","","1","Id_76","7","(Id_134 == 7) || (Id_135 == 7) || (Id_136 == 7)
+
+"
+"","A14","Alarm settings-Settings","Low alarm limit","10020","-30","-50","50","K","0","","","1","","1","Id_75","0","
+
+"
+"","A21","Alarm settings-Settings","Low alarm limit band 2","10022","-30","-50","50","K","0","","","1","","1","Id_77","7","(Id_134 == 7) || (Id_135 == 7) || (Id_136 == 7)
+
+"
+"","A03","Alarm settings-Settings","Alarm delay","10002","30","0","240","K","0","INT","","1","","0","Id_71","0","
+
+"
+"","A12","Alarm settings-Settings","Alarm delay pulldown","10018","90","0","240","K","0","INT","","1","","0","Id_73","0","
+
+"
+"","A53","Alarm settings-Settings","Alarm delay B","10054","30","0","240","K","0","INT","","1","","0","Id_86","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","a01","Alarm settings-Settings","S6 Product temperature","10096","0","0","1","K","0","Enum","0:No,1:Yes","1","","0","Id_88","23","Id_124 != 6 && Id_124 != 7
+
+"
+"","A22","Alarm settings-Settings","S6 High alarm limit","10023","8","-50","50","K","0","","","1","","1","Id_78","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","A24","Alarm settings-Settings","S6 High alarm limit band 2","10025","8","-50","50","K","0","","","1","","1","Id_80","19","Id_124 != 6 && Id_124 != 7 && Id_88 == 1 && (Id_134 == 7) || (Id_135 == 7) || (Id_136 == 7))
+
+"
+"","A23","Alarm settings-Settings","S6 Low alarm limit","10024","-30","-50","50","K","0","","","1","","1","Id_79","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","A25","Alarm settings-Settings","S6 Low alarm limit band 2","10026","-30","-50","50","K","0","","","1","","1","Id_81","19","Id_124 != 6 && Id_124 != 7 && Id_88 == 1 && (Id_134 == 7) || (Id_135 == 7) || (Id_136 == 7))
+
+"
+"","A26","Alarm settings-Settings","S6 Alarm delay","10027","60","0","240","K","0","INT","","1","","0","Id_82","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","A52","Alarm settings-Settings","S6 Alarm delay pulldown","10053","90","0","240","K","0","INT","","1","","0","Id_87","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","A04","Alarm settings-Settings","Door open delay","10003","60","0","240","K","0","INT","","1","","0","Id_72","17","(Id_134 == 2) || (Id_134 == 3) || (Id_135 == 2) || (Id_135 == 3) || (Id_136 == 2) || (Id_136 == 3)
+
+"
+"","o89","Alarm settings-Settings","Door restart injection delay","2120","30","0","240","K","0","INT","","1","","0","Id_150","31","(Id_134 == 2) || (Id_135 == 2) || (Id_136 == 2)
+
+"
+"","A27","Alarm settings-Settings","DI1 Alarm delay","10028","30","0","240","K","0","INT","","1","","0","Id_83","20","Id_124 != 7 && Id_124 != 8 && (Id_134 == 8) || (Id_134 == 9))
+
+"
+"","A28","Alarm settings-Settings","DI2 Alarm delay","10029","30","0","240","K","0","INT","","1","","0","Id_84","21","(Id_135 == 8) || (Id_135 == 9)
+
+"
+"","U57","Humidity control-Status","Humidity","2687","0","0","100","°C","0","INT","","1","","0","Id_283","2","Id_124 == 8
+
+"
+"","h23","Humidity control-Humidity control","Humidity cutin SP","2214","70","0","100","°C","0","INT","","1","","0","Id_140","2","Id_124 == 8
+
+"
+"","h24","Humidity control-Humidity control","Humidity differential","2215","5","1","30","°C","0","INT","","1","","0","Id_141","2","Id_124 == 8
+
+"
+"","h25","Humidity control-Humidity control","Humidity high alarm limit","2216","100","0","100","°C","0","INT","","1","","0","Id_142","2","Id_124 == 8
+
+"
+"","h26","Humidity control-Humidity control","Humidity low alarm limit","2217","0","0","100","°C","0","INT","","1","","0","Id_143","2","Id_124 == 8
+
+"
+"","h27","Humidity control-Humidity control","Humidity alarm delay","2218","60","0","240","°C","0","INT","","1","","0","Id_144","2","Id_124 == 8
+
+"
+"","h29","Humidity control-Humidity control","Humidity sensor min range","2220","0","0","100","°C","0","INT","","1","","0","Id_146","2","Id_124 == 8
+
+"
+"","h30","Humidity control-Humidity control","Humidity sensor max range","2221","100","0","100","°C","0","INT","","1","","0","Id_147","2","Id_124 == 8
+
+"
+"","h28","Humidity control-Humidity control","Humidity ctrl. at defrost","2219","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_145","2","Id_124 == 8
+
+"
+"","u00","Injection control-Status","Control state","2007","10","0","48","°C","0","Enum","0:(s0) Normal,1:(s1) Hold after defrost,2:(s2) Comp. Min ON,3:(s3) Comp. Min OFF,4:(s4) Drip off,5:(s5),6:(s6),7:(s7),8:(s8),9:(s9),10:(s10) Mainswitch OFF,11:(s11) Thermostat cutout,12:(s12) Low S4 temp.,13:(s13),14:(s14) Defrost,15:(s15) Fan delay,16:(s16) Forced Closing,17:(s17) Door open,18:(s18) Melt period,19:(s19) Modulating temp.,20:(s20) Emergency cooling,21:(s21) Injection error,22:(s22) Start Up,23:(s23) Adaptive SH control,24:(s24) Start injection,25:(s25) Manual control,26:(s26) No refrigerant selected,27:(s27),28:(s28),29:(s29) Cleaning,30:(s30) Forced Cooling,31:(s31),32:(s32) Power up,33:(s33) Heating,34:(s34),35:(s35),36:(s36),37:(s37),38:(s38),39:(s39),40:(s40),41:(s41),42:(s42),43:(s43),44:(s44),45:(s45) Shutdown,46:(s46),47:(s47),48:(s48) Flooded inj.","1","","0","Id_284","0","
+
+"
+"","u16","Injection control-Status","S4 air off temp.","2531","0","-200","200","°C","0","","","1","","1","Id_286","0","
+
+"
+"","u12","Injection control-Status","S3 air on temp.","2530","0","-200","200","°C","0","","","1","","1","Id_287","0","
+
+"
+"","u21","Injection control-Status","Superheat","2536","0","-200","200","°C","0","","","1","","1","Id_253","0","
+
+"
+"","u22","Injection control-Status","Superheat reference","2535","0","-200","200","°C","0","","","1","","1","Id_254","0","
+
+"
+"","x96","Injection control-Status","Valve opening","2636","0","0","100","°C","0","INT","","1","","0","Id_291","0","
+
+"
+"","u26","Injection control-Status","Te Evaporating temp.","2544","0","-200","200","°C","0","","","1","","1","Id_290","0","
+
+"
+"","u20","Injection control-Status","S2 Gas outlet temp.","2537","0","-200","200","°C","0","","","1","","1","Id_292","0","
+
+"
+"","u25","Injection control-Status","Pe Evaporating pressure","2543","0","-1","200","°C","0","","","1","","1","Id_268","0","
+
+"
+"","n10","Injection control-Settings","Min superheat limit","3021","3","2","20","°C","0","","","1","","1","Id_15","0","
+
+"
+"","n09","Injection control-Settings","Max superheat limit","3015","12","2","20","°C","0","","","1","","1","Id_16","0","
+
+"
+"","n11","Injection control-Settings","MOP temperature","3013","15","-50","15","°C","0","","","1","","1","Id_17","0","
+
+"
+"","n13","Injection control-Settings","AKV Period time","3019","6","3","6","°C","0","INT","","1","","0","Id_18","0","
+
+"
+"","P87","Injection control-Settings","Min superheat limit flooded","3153","1","0","20","°C","0","","","1","","1","Id_156","0","
+
+"
+"","P86","Injection control-Settings","Max superheat limit flooded","3152","3","0","20","°C","0","","","1","","1","Id_155","0","
+
+"
+"","x65","Injection control-Settings","Refrigerant factor A1","2548","8000","8000","12000","°C","0","INT","","1","","0","Id_107","27","Id_129 == 13
+
+"
+"","x66","Injection control-Settings","Refrigerant factor A2","2549","-1000","-4000","-1000","°C","0","INT","","1","","0","Id_108","27","Id_129 == 13
+
+"
+"","x67","Injection control-Settings","Refrigerant factor A3","2550","1000","1000","3000","°C","0","INT","","1","","0","Id_109","27","Id_129 == 13
+
+"
+"","n21","Injection control-Advanced","Superheat control","3026","1","1","1","°C","0","Enum","0:Adaptive superheat,1:Load based superheat","1","","0","Id_110","0","
+
+"
+"","x68","Injection control-Advanced"," SH close","3027","2","-1","15","°C","0","","","1","","1","Id_111","0","
+
+"
+"","x69","Injection control-Advanced"," AFidentForce","3127","0","0","20","°C","0","","","1","","1","Id_112","0","
+
+"
+"","x70","Injection control-Advanced"," SH Kp min","3128","2","0.1","5","°C","0","","","1","","1","Id_113","0","
+
+"
+"","x71","Injection control-Advanced"," SH Kp max","3129","4","0.1","20","°C","0","","","1","","1","Id_114","0","
+
+"
+"","x72","Injection control-Advanced"," SH Tn","3130","300","10","900","°C","0","INT","","1","","0","Id_115","0","
+
+"
+"","x73","Injection control-Advanced"," Te-gain","3133","-1","-1","20","°C","0","","","1","","1","Id_116","0","
+
+"
+"","x74","Injection control-Advanced"," SHref Tn","3136","240","30","900","°C","0","INT","","1","","0","Id_117","0","
+
+"
+"","x75","Injection control-Advanced"," SHref Kp","3137","0.4","0.04","4","°C","0","","","1","","2","Id_118","0","
+
+"
+"","x76","Injection control-Advanced"," S2 Stability","3138","30","1","100","°C","0","INT","","1","","0","Id_119","0","
+
+"
+"","x77","Injection control-Advanced"," MTR Kpfactor","3059","4","1","50","°C","0","","","1","","1","Id_120","0","
+
+"
+"","x78","Injection control-Advanced"," MTR Tn sec","3058","900","100","1800","°C","0","INT","","1","","0","Id_121","0","
+
+"
+"","x79","Injection control-Advanced"," AFident","3134","3","-200","200","°C","0","","","1","","1","Id_269","0","
+
+"
+"","x80","Injection control-Advanced"," Max OD %","3135","100","0","100","°C","0","INT","","1","","0","Id_270","0","
+
+"
+"","x87","Injection control-Advanced"," SHcloseFlood","3155","-3","-5","15","°C","0","","","1","","1","Id_123","0","
+
+"
+"","x86","Injection control-Advanced"," S2 StabFlood","3154","100","1","100","°C","0","INT","","1","","0","Id_122","0","
+
+"
+"","u00","Defrost control-Status","Control state","2007","10","0","48","%","0","Enum","0:(s0) Normal,1:(s1) Hold after defrost,2:(s2) Comp. Min ON,3:(s3) Comp. Min OFF,4:(s4) Drip off,5:(s5),6:(s6),7:(s7),8:(s8),9:(s9),10:(s10) Mainswitch OFF,11:(s11) Thermostat cutout,12:(s12) Low S4 temp.,13:(s13),14:(s14) Defrost,15:(s15) Fan delay,16:(s16) Forced Closing,17:(s17) Door open,18:(s18) Melt period,19:(s19) Modulating temp.,20:(s20) Emergency cooling,21:(s21) Injection error,22:(s22) Start Up,23:(s23) Adaptive SH control,24:(s24) Start injection,25:(s25) Manual control,26:(s26) No refrigerant selected,27:(s27),28:(s28),29:(s29) Cleaning,30:(s30) Forced Cooling,31:(s31),32:(s32) Power up,33:(s33) Heating,34:(s34),35:(s35),36:(s36),37:(s37),38:(s38),39:(s39),40:(s40),41:(s41),42:(s42),43:(s43),44:(s44),45:(s45) Shutdown,46:(s46),47:(s47),48:(s48) Flooded inj.","1","","0","Id_284","0","
+
+"
+"","u09","Defrost control-Status","S5 Evaporator temp.","1011","0","-200","200","%","0","","","1","","1","Id_293","39","Id_23 > 0 && (Id_32 == 1 || Id_32 == 3)
+
+"
+"","u75","Defrost control-Status","S5B Evaporator temp.","2595","0","-200","200","%","0","","","1","","1","Id_294","40","Id_124 == 7
+
+"
+"","u11","Defrost control-Status","Defrosting time","2508","0","0","900","%","0","INT","","1","","0","Id_258","0","
+
+"
+"","U01","Defrost control-Status","Adaptive defrost state","2628","0","0","6","%","0","Enum","0:Not used,1:Error,2:Tuning,3:No ice,4:Little ice,5:Medium ice,6:Heavy ice","1","","0","Id_259","0","
+
+"
+"","U10","Defrost control-Status","Accumulated defrosts","2648","0","0","32767","%","0","INT","","1","","0","Id_260","0","
+
+"
+"","U11","Defrost control-Status","Accumulated skipped defrosts","2649","0","0","32767","%","0","INT","","1","","0","Id_261","0","
+
+"
+"","x02","Defrost control-Status"," Tc temp. Ave","2635","0","-200","200","%","0","","","1","","1","Id_325","32","Id_37 >= 1
+
+"
+"","x09","Defrost control-Settings","Start defrost","1013","0","0","1","%","0","Enum","0:OFF,1:ON","1","","0","Id_168","0","
+
+"
+"","x10","Defrost control-Settings","Stop defrost","1060","0","0","1","%","0","Enum","0:OFF,1:ON","1","","0","Id_169","0","
+
+"
+"","d01","Defrost control-Settings","Defrost method","1000","1","0","4","%","0","Enum","0:None,1:Electric,2:Hotgas,3:Brine,4:Air","1","","0","Id_23","0","
+
+"
+"","d10","Defrost control-Settings","Defrost stop sensor","1009","0","0","3","%","0","Enum","0:Time,1:S5 sensor,2:S4 sensor,3:Multiple S5","1","","0","Id_32","0","
+
+"
+"","d02","Defrost control-Settings","Defrost stop temperature","1001","6","0","50","%","0","","","1","","1","Id_24","11","Id_32 > 0
+
+"
+"","d03","Defrost control-Settings","Defrost time interval","1002","8","0","240","%","0","INT","","1","","0","Id_25","0","
+
+"
+"","d05","Defrost control-Settings","Time staggering power up","1004","0","0","240","%","0","INT","","1","","0","Id_27","0","
+
+"
+"","d18","Defrost control-Settings","Max thermostat runtime","1020","0","0","240","%","0","INT","","1","","0","Id_35","0","
+
+"
+"","d04","Defrost control-Settings","Max defrost time","1003","45","0","360","%","0","INT","","1","","0","Id_26","0","
+
+"
+"","d16","Defrost control-Settings","Pump down delay","1018","0","0","60","%","0","INT","","1","","0","Id_33","0","
+
+"
+"","d23","Defrost control-Settings","Hot gas injection delay","1037","0","0","60","%","0","INT","","1","","0","Id_38","12","Id_124 == 5
+
+"
+"","d06","Defrost control-Settings","DripOff time","1005","0","0","60","%","0","INT","","1","","0","Id_28","0","
+
+"
+"","o16","Defrost control-Settings","Max hold time","2020","20","0","360","%","0","INT","","1","","0","Id_36","0","
+
+"
+"","d17","Defrost control-Settings","Drain delay","1019","0","0","60","%","0","INT","","1","","0","Id_34","12","Id_124 == 5
+
+"
+"","d09","Defrost control-Settings","Fan ctrl. during defrost","1008","1","0","3","%","0","Enum","0:OFF all the time,1:ON,2:ON / stop at drip,3:ON / stop at high temp.","1","","0","Id_31","0","
+
+"
+"","d07","Defrost control-Settings","Fan start delay","1007","0","0","60","%","0","INT","","1","","0","Id_29","0","
+
+"
+"","d08","Defrost control-Settings","Fan start temp.","1006","-5","-50","10","%","0","","","1","","1","Id_30","0","
+
+"
+"","d41","Defrost control-Settings","Fan stop temp.","1059","0","-200","200","%","0","","","1","","1","Id_41","13","Id_31 == 3
+
+"
+"","d27","Defrost control-Settings","Railheat at defrost","1045","1","0","2","%","0","Enum","0:No heat,1:Full heat,2:Normal control","1","","0","Id_39","5","Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))
+
+"
+"","d40","Defrost control-Settings","Display delay after defrost","1058","30","5","240","%","0","INT","","1","","0","Id_40","0","
+
+"
+"","d21","Defrost control-Settings","Adaptive defrost control","1029","0","0","4","%","0","Enum","0:Not used,1:Monitoring only,2:Skip day,3:Skip day/night,4:Full adaptive","1","","0","Id_37","0","
+
+"
+"","x88","Defrost control-Advanced"," AD FaultSens","1038","1","0.1","5","%","0","","","1","","1","Id_272","32","Id_37 >= 1
+
+"
+"","x89","Defrost control-Advanced"," FlashGasSens","1039","1","0.1","5","%","0","","","1","","1","Id_273","32","Id_37 >= 1
+
+"
+"","x90","Defrost control-Advanced"," AD AirTuning","1035","0","0","300","%","0","","","1","","1","Id_274","32","Id_37 >= 1
+
+"
+"","x91","Defrost control-Advanced"," FaultIndic.1","2630","0","0","300","%","0","","","1","","1","Id_275","32","Id_37 >= 1
+
+"
+"","x92","Defrost control-Advanced"," NewAirTunVal","2631","0","0","300","%","0","","","1","","1","Id_276","32","Id_37 >= 1
+
+"
+"","x93","Defrost control-Advanced"," Fl.Gas.Indic","2632","0","0","300","%","0","","","1","","1","Id_277","32","Id_37 >= 1
+
+"
+"","x94","Defrost control-Advanced"," AD def.req.","1041","0","0","1","%","0","Enum","0:OFF,1:ON","1","","0","Id_278","32","Id_37 >= 1
+
+"
+"","Y05","Defrost control-Advanced"," FaultIndic.2","5522","0","0","300","%","0","","","1","","1","Id_331","32","Id_37 >= 1
+
+"
+"","Y04","Defrost control-Advanced"," FaultIndic.0","5520","0","0","300","%","0","","","1","","1","Id_332","32","Id_37 >= 1
+
+"
+"","Y06","Defrost control-Advanced"," wTuningCount","5523","0","-32768","32767","%","0","INT","","1","","0","Id_333","32","Id_37 >= 1
+
+"
+"","Y07","Defrost control-Advanced"," flQdotAir","5524","0","-32768","32767","%","0","","","1","","1","Id_334","32","Id_37 >= 1
+
+"
+"","Y08","Defrost control-Advanced"," flQdotRfg","5525","0","-32768","32767","%","0","","","1","","1","Id_335","32","Id_37 >= 1
+
+"
+"","Y09","Defrost control-Advanced"," flAirEnthDif","5526","0","-32768","32767","%","0","","","1","","1","Id_336","32","Id_37 >= 1
+
+"
+"","Y10","Defrost control-Advanced"," flTuningSum","5527","0","-32768","32767","%","0","","","1","","1","Id_337","32","Id_37 >= 1
+
+"
+"","Y11","Defrost control-Advanced"," eADintState","5528","0","-32768","32767","%","0","INT","","1","","0","Id_338","32","Id_37 >= 1
+
+"
+"","Y12","Defrost control-Advanced"," wIntrpTimer","5529","0","-32768","32767","%","0","INT","","1","","0","Id_339","32","Id_37 >= 1
+
+"
+"","Y13","Defrost control-Advanced"," flHelp1","5530","0","-32768","32767","%","0","","","1","","1","Id_340","32","Id_37 >= 1
+
+"
+"","Y14","Defrost control-Advanced"," flHelp2","5531","0","-32768","32767","%","0","","","1","","1","Id_341","32","Id_37 >= 1
+
+"
+"","Y15","Defrost control-Advanced"," flHelp3","5532","0","-32768","32767","%","0","","","1","","1","Id_342","32","Id_37 >= 1
+
+"
+"","Y17","Defrost control-Advanced"," Light Fact","5540","0.5","0.1","1","%","0","","","1","","1","Id_165","32","Id_37 >= 1
+
+"
+"","Y18","Defrost control-Advanced"," Blocked Fact","5541","2","1","5","%","0","","","1","","1","Id_166","32","Id_37 >= 1
+
+"
+"","Y19","Defrost control-Advanced"," TimeConstLpf","5542","600","1","2400","%","0","INT","","1","","0","Id_167","32","Id_37 >= 1
+
+"
+"","t00","Defrost schedules","Defrost schedule","1200","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_42","0","
+
+"
+"","t01","Defrost schedules","Defrost 1   hr.","1201","0","0","23","K","0","INT","","1","","0","Id_43","14","Id_42 > 0
+
+"
+"","t11","Defrost schedules","Defrost 1   min","1211","0","0","59","K","0","INT","","1","","0","Id_44","14","Id_42 > 0
+
+"
+"","t02","Defrost schedules","Defrost 2   hr.","1202","0","0","23","K","0","INT","","1","","0","Id_45","14","Id_42 > 0
+
+"
+"","t12","Defrost schedules","Defrost 2   min","1212","0","0","59","K","0","INT","","1","","0","Id_46","14","Id_42 > 0
+
+"
+"","t03","Defrost schedules","Defrost 3   hr.","1203","0","0","23","K","0","INT","","1","","0","Id_47","14","Id_42 > 0
+
+"
+"","t13","Defrost schedules","Defrost 3   min","1213","0","0","59","K","0","INT","","1","","0","Id_48","14","Id_42 > 0
+
+"
+"","t04","Defrost schedules","Defrost 4   hr.","1204","0","0","23","K","0","INT","","1","","0","Id_49","14","Id_42 > 0
+
+"
+"","t14","Defrost schedules","Defrost 4   min","1214","0","0","59","K","0","INT","","1","","0","Id_50","14","Id_42 > 0
+
+"
+"","t05","Defrost schedules","Defrost 5   hr.","1205","0","0","23","K","0","INT","","1","","0","Id_51","14","Id_42 > 0
+
+"
+"","t15","Defrost schedules","Defrost 5   min","1215","0","0","59","K","0","INT","","1","","0","Id_52","14","Id_42 > 0
+
+"
+"","t06","Defrost schedules","Defrost 6   hr.","1206","0","0","23","K","0","INT","","1","","0","Id_53","14","Id_42 > 0
+
+"
+"","t16","Defrost schedules","Defrost 6   min","1216","0","0","59","K","0","INT","","1","","0","Id_54","14","Id_42 > 0
+
+"
+"","t07","Defrost schedules","Clock Hour","64045","0","0","23","K","0","INT","","1","","0","Id_158","0","
+
+"
+"","t08","Defrost schedules","Clock Minute","64046","0","0","59","K","0","INT","","1","","0","Id_159","0","
+
+"
+"","t09","Defrost schedules","Clock Weekday","64055","1","1","7","K","0","INT","","1","","0","Id_164","0","
+
+"
+"","t48","Defrost schedules","Clock Second","64050","0","0","59","K","0","INT","","1","","0","Id_160","0","
+
+"
+"","t47","Defrost schedules","Clock Year","64049","0","0","100","K","0","INT","","1","","0","Id_161","0","
+
+"
+"","t46","Defrost schedules","Clock Month","64048","1","1","12","K","0","INT","","1","","0","Id_162","0","
+
+"
+"","t45","Defrost schedules","Clock Date","64047","0","0","31","K","0","INT","","1","","0","Id_163","0","
+
+"
+"","t51","Defrost schedules","Monday schedule","1221","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_55","14","Id_42 > 0
+
+"
+"","t52","Defrost schedules","Tuesday schedule","1222","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_56","14","Id_42 > 0
+
+"
+"","t53","Defrost schedules","Wednesday schedule","1223","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_57","14","Id_42 > 0
+
+"
+"","t54","Defrost schedules","Thursday schedule","1224","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_58","14","Id_42 > 0
+
+"
+"","t55","Defrost schedules","Friday schedule","1225","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_59","14","Id_42 > 0
+
+"
+"","t56","Defrost schedules","Saturday schedule","1226","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_60","14","Id_42 > 0
+
+"
+"","t57","Defrost schedules","Sunday schedule","1227","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_61","14","Id_42 > 0
+
+"
+"","c01","Compressor control","Min ON time","500","0","0","30","°C","0","INT","","1","","0","Id_19","9","(Id_124 > 0 && Id_124 < 4) || (Id_124 == 9 && (Id_125 == 8 || Id_126 == 8 || Id_128 == 8 || Id_127 == 8 || Id_133 == 8))
+
+"
+"","c02","Compressor control","Min OFF time","501","0","0","30","°C","0","INT","","1","","0","Id_20","9","(Id_124 > 0 && Id_124 < 4) || (Id_124 == 9 && (Id_125 == 8 || Id_126 == 8 || Id_128 == 8 || Id_127 == 8 || Id_133 == 8))
+
+"
+"","c05","Compressor control","Delay between steps","505","5","0","999","°C","0","INT","","1","","0","Id_21","10","Id_124 == 9 && (Id_125 == 9 || Id_126 == 9 || Id_128 == 9 || Id_127 == 9 || Id_133 == 9)
+
+"
+"","c08","Compressor control","Step ctrl. mode","508","2","1","2","°C","0","Enum","0:Sequential,1:Cyclic","1","","0","Id_22","10","Id_124 == 9 && (Id_125 == 9 || Id_126 == 9 || Id_128 == 9 || Id_127 == 9 || Id_133 == 9)
+
+"
+"","F04","Fan control","Fan stop S5-temp","1505","50","-50","50","h","0","","","1","","1","Id_62","0","
+
+"
+"","F05","Fan control","Fan pulsing mode","1506","0","0","2","h","0","Enum","0:No pulsing,1:At cutout,2:At cutout night","1","","0","Id_63","0","
+
+"
+"","F06","Fan control","Fan cycle time","1507","5","1","30","h","0","INT","","1","","0","Id_64","15","Id_63 > 0
+
+"
+"","F07","Fan control","Fan ON time","1508","100","0","100","h","0","INT","","1","","0","Id_65","15","Id_63 > 0
+
+"
+"","o90","Fan control","Fan ctrl. forced closing","2121","1","0","3","h","0","Enum","0:OFF,1:ON,2:OFF and no defrost,3:ON and no defrost","1","","0","Id_66","0","
+
+"
+"","x18","Railheat control-Status","Dew point","2615","0","-200","200","min","0","","","1","","1","Id_267","25","(Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))) && Id_90 == 2
+
+"
+"","u85","Railheat control-Status","Railheat duty cycle","2606","0","0","100","min","0","INT","","1","","0","Id_266","25","(Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))) && Id_90 == 2
+
+"
+"","o85","Railheat control-Settings","Railheat ctrl. mode","2116","0","0","2","min","0","Enum","0:Always ON,1:Day/Night timer,2:Dewpoint control","1","","0","Id_90","5","Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))
+
+"
+"","o41","Railheat control-Settings","Railheat ON day","2060","100","0","100","min","0","INT","","1","","0","Id_91","5","Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))
+
+"
+"","o42","Railheat control-Settings","Railheat ON night","2061","100","0","100","min","0","INT","","1","","0","Id_92","5","Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))
+
+"
+"","o43","Railheat control-Settings","Railheat cycle time","2062","5","1","60","min","0","INT","","1","","0","Id_93","5","Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))
+
+"
+"","P82","Railheat control-Settings","Railheat cycle time (PWM)","2200","10","4","60","min","0","INT","","1","","0","Id_99","26","Id_149 == 1
+
+"
+"","o88","Railheat control-Settings","Railheat min duty cycle","2119","30","0","100","min","0","INT","","1","","0","Id_96","25","(Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))) && Id_90 == 2
+
+"
+"","o86","Railheat control-Settings","Dewpoint min limit","2117","8","-10","50","min","0","","","1","","1","Id_94","25","(Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))) && Id_90 == 2
+
+"
+"","o87","Railheat control-Settings","Dewpoint max limit","2118","17","-9","50","min","0","","","1","","1","Id_95","25","(Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))) && Id_90 == 2
+
+"
+"","o38","Light / Blinds","Light configuration","2057","1","1","5","%","0","Enum","0:Follow day/night,1:Network signal,2:Door switch,3:Ntwork signal - ON at error,4:Digital input","1","","0","Id_89","24","Id_124 < 3 || (Id_124 > 3 && Id_124 < 9) || (Id_124 == 9 && (Id_125 == 6 || Id_126 == 6 || Id_128 == 6 || Id_127 == 6 || Id_133 == 6))
+
+"
+"","o98","Light / Blinds","Light at Main switch OFF","2146","0","0","1","%","0","Enum","0:OFF,1:Normal control","1","","0","Id_101","24","Id_124 < 3 || (Id_124 > 3 && Id_124 < 9) || (Id_124 == 9 && (Id_125 == 6 || Id_126 == 6 || Id_128 == 6 || Id_127 == 6 || Id_133 == 6))
+
+"
+"","P60","Light / Blinds","Blinds opening time","2176","5","0","60","%","0","INT","","1","","0","Id_97","0","
+
+"
+"","P65","Light / Blinds","Blinds closing fan stop","2179","60","0","300","%","0","INT","","1","","0","Id_98","0","
+
+"
+"","u56","Display","Display air temp.","2576","0","-200","200","K","0","","","1","","1","Id_249","0","
+
+"
+"","U35","Display","Display air temp. B","2672","0","-200","200","K","0","","","1","","1","Id_250","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","o97","Display","Display control","2145","1","1","2","K","0","Enum","0:Display air,1:S6 product temp.","1","","0","Id_151","0","
+
+"
+"","o17","Display","Display sensor S4 %","2021","100","0","100","K","0","INT","","1","","0","Id_69","0","
+
+"
+"","r04","Display","Display adjustment","104","0","-10","10","K","0","","","1","","1","Id_70","0","
+
+"
+"","o92","Display","Display menu 2","2123","1","1","2","K","0","INT","","1","","0","Id_152","0","
+
+"
+"","r05","Display","Display temp. unit","105","0","0","1","K","0","Enum","0:Celcius,1:Fahrenheit","1","","0","Id_153","0","
+
+"
+"","o05","Display","Access code","2013","0","0","100","K","0","INT","","1","","0","Id_100","0","
+
+"
+"","o64","Display","Accesscode 2","2080","0","0","100","K","0","INT","","1","","0","Id_102","0","
+
+"
+"","P8x","Display","Display lock keyboard","60028","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_154","0","
+
+"
+"","o46","Miscellaneous","Case cleaning","2056","0","0","2","min","0","Enum","0:Normal,1:Fans run,2:All OFF","1","","0","Id_67","16","(Id_134 == 10) || (Id_135 == 10) || (Id_136 == 10)
+
+"
+"","o01","Miscellaneous","Delay of outputs at power up","2000","5","0","600","min","0","INT","","1","","0","Id_68","0","
+
+"
+"","Mod","Miscellaneous","Module software","60001","0.00","0.00","1000.00","min","-2","Float","","1","","2","Id_299","46","0
+
+"
+"","Tra","Miscellaneous","Transceiver type","60006","3","0","1000","min","0","INT","","1","","0","Id_300","46","0
+
+"
+"","x00","Miscellaneous"," Sw. version","2003","100","100","100","min","0","INT","","1","","0","Id_305","46","0
+
+"
+"","x01","Miscellaneous"," OrderNoLow","2011","55","0","9999","min","0","INT","","1","","0","Id_306","46","0
+
+"
+"","o67","Miscellaneous","Make factory settings","64053","0","0","1","min","0","Enum","0:OFF,1:ON","1","","0","Id_298","0","
+
+"
+"","fff","Miscellaneous"," SW suffix","60008","0","0","15","min","0","Enum","0:0,1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9,10:A,11:B,12:C,13:D,14:E,15:F","1","","0","Id_327","46","0
+
+"
+"","y01","Miscellaneous"," SW. reset","40011","0","0","255","min","0","INT","","1","","0","Id_328","0","
+
+"
+"","y02","Miscellaneous"," Fastforward","64152","0","-32768","32767","min","0","INT","","1","","0","Id_329","0","
+
+"
+"","P41","Alarm destinations","Alarm relay priority","2147","111","0","255","°C","0","INT","","1","","0","Id_157","0","
+
+"
+"","x15","Alarm destinations","Reset all alarms","2046","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_295","0","
+
+"
+"","x16","Alarm destinations","Alarm status","2541","1","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_296","0","
+
+"
+"","x29","Alarm destinations","Controller hardware error","20000","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_203","0","
+
+"
+"","x30","Alarm destinations","Real time clock error","20001","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_204","0","
+
+"
+"","x31","Alarm destinations","Pe Pressure sensor error","20002","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_205","0","
+
+"
+"","x32","Alarm destinations","S2 Gas outlet error","20003","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_206","0","
+
+"
+"","x34","Alarm destinations","S3 Air on sensor error","20004","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_208","0","
+
+"
+"","x35","Alarm destinations","S4 Air off sensor error","20005","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_209","0","
+
+"
+"","x36","Alarm destinations","S5 Evaporator sensor error","20006","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_210","39","Id_23 > 0 && (Id_32 == 1 || Id_32 == 3)
+
+"
+"","x39","Alarm destinations","S6 Product sensor error","20007","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_213","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","x37","Alarm destinations","S3B Air on sensor error","20008","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_211","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","x38","Alarm destinations","S5B Evaporator sensor error","20009","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_212","40","Id_124 == 7
+
+"
+"","x40","Alarm destinations","RH Humidity sensor error","20010","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_214","2","Id_124 == 8
+
+"
+"","x41","Alarm destinations","High temperature alarm","20011","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_215","0","
+
+"
+"","x42","Alarm destinations","Low temperature alarm","20012","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_216","0","
+
+"
+"","x43","Alarm destinations","Door open alarm","20013","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_217","17","(Id_134 == 2) || (Id_134 == 3) || (Id_135 == 2) || (Id_135 == 3) || (Id_136 == 2) || (Id_136 == 3)
+
+"
+"","x44","Alarm destinations","Max hold time exceeded","20014","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_218","41","Id_23 > 0
+
+"
+"","x33","Alarm destinations","No refrigerant selected","20015","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_207","38","Id_129 > 0
+
+"
+"","x45","Alarm destinations","High S6 product temp.","20016","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_219","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","x46","Alarm destinations","Low S6 product temp.","20017","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_220","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","x47","Alarm destinations","DI1 alarm","20018","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_221","20","Id_124 != 7 && Id_124 != 8 && (Id_134 == 8) || (Id_134 == 9))
+
+"
+"","x48","Alarm destinations","DI2 alarm","20019","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_222","21","(Id_135 == 8) || (Id_135 == 9)
+
+"
+"","x49","Alarm destinations","Standby mode (Main switch OFF)","20020","1","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_223","0","
+
+"
+"","x50","Alarm destinations","Case cleaning started","20021","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_224","0","
+
+"
+"","x51","Alarm destinations","Max defrost time exceeded","20022","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_225","11","Id_32 > 0
+
+"
+"","x52","Alarm destinations","S3B High temperature alarm","20023","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_226","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","x53","Alarm destinations","S3B Low temperature alarm","20024","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_227","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","x54","Alarm destinations","Adaptive defrost ctrl. error","20025","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_228","42","Id_23 > 0 && Id_124 != 5 && Id_37 >= 1
+
+"
+"","x55","Alarm destinations","Evaporator icing up","20026","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_229","42","Id_23 > 0 && Id_124 != 5 && Id_37 >= 1
+
+"
+"","x56","Alarm destinations","Evaporator not defrosted","20027","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_230","42","Id_23 > 0 && Id_124 != 5 && Id_37 >= 1
+
+"
+"","x57","Alarm destinations","Flashgas alarm","20028","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_231","42","Id_23 > 0 && Id_124 != 5 && Id_37 >= 1
+
+"
+"","x58","Alarm destinations","Leak detection CO2","20029","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_232","43","(Id_134 == 20 || Id_135 == 20 || Id_136 == 20) && Id_129 == 28
+
+"
+"","x59","Alarm destinations","Leak detection","20030","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_233","44","(Id_134 == 20) || (Id_135 == 20) || (Id_136 == 20)
+
+"
+"","x60","Alarm destinations","High humidity alarm","20031","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_234","2","Id_124 == 8
+
+"
+"","x61","Alarm destinations","Low humidity alarm","20032","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_235","2","Id_124 == 8
+
+"
+"","y03","Alarm destinations","Wrong IO configuration","20033","0","0","1","°C","0","Enum","0:OFF,1:ON","1","","0","Id_330","28","Id_124 == 9
+
+"
+"","u25","Service-Status","Pe Evaporating pressure","2543","0","-1","200","K","0","","","1","","1","Id_268","0","
+
+"
+"","u26","Service-Status","Te Evaporating temp.","2544","0","-200","200","K","0","","","1","","1","Id_290","0","
+
+"
+"","u20","Service-Status","S2 Gas outlet temp.","2537","0","-200","200","K","0","","","1","","1","Id_292","0","
+
+"
+"","u12","Service-Status","S3 air on temp.","2530","0","-200","200","K","0","","","1","","1","Id_287","0","
+
+"
+"","u76","Service-Status","S3B air on temp.","2596","0","-200","200","K","0","","","1","","1","Id_288","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","u16","Service-Status","S4 air off temp.","2531","0","-200","200","K","0","","","1","","1","Id_286","0","
+
+"
+"","u09","Service-Status","S5 Evaporator temp.","1011","0","-200","200","K","0","","","1","","1","Id_293","39","Id_23 > 0 && (Id_32 == 1 || Id_32 == 3)
+
+"
+"","u75","Service-Status","S5B Evaporator temp.","2595","0","-200","200","K","0","","","1","","1","Id_294","40","Id_124 == 7
+
+"
+"","u36","Service-Status","S6 Product temp. ","2555","0","-200","200","K","0","","","1","","1","Id_297","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","u10","Service-Status","DI1 status","2002","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_170","30","Id_124 != 7 && Id_124 != 8
+
+"
+"","u37","Service-Status","DI2 status","2556","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_171","0","
+
+"
+"","u87","Service-Status","DI3 status","2608","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_172","0","
+
+"
+"","u23","Service-Status","Valve opening","2528","0","0","100","K","0","INT","","1","","0","Id_173","1","Id_124 > 0
+
+"
+"","u58","Service-Status","Comprossor/LLSV relay","2510","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_174","4","Id_124 == 1 || Id_124 == 2 || Id_124 == 3 || (Id_124 == 9 && (Id_125 == 8 || Id_126 == 8 || Id_128 == 8 || Id_127 == 8 || Id_133 == 8))
+
+"
+"","u67","Service-Status","Compressor 2 relay","2588","0","0","1","K","0","INT","","1","","0","Id_279","10","Id_124 == 9 && (Id_125 == 9 || Id_126 == 9 || Id_128 == 9 || Id_127 == 9 || Id_133 == 9)
+
+"
+"","u59","Service-Status","Fan relay","2511","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_175","1","Id_124 > 0
+
+"
+"","U37","Service-Status","Fan Eco relay","2674","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_183","36","Id_124 == 9 && (Id_125 == 2 || Id_126 == 2 || Id_128 == 2 || Id_127 == 2 || Id_133 == 2)
+
+"
+"","u60","Service-Status","Defrost relay","2512","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_176","33","Id_124 > 0 && Id_124 != 5
+
+"
+"","u83","Service-Status","Defrost B relay","2603","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_281","40","Id_124 == 7
+
+"
+"","u80","Service-Status","Hotgas valve relay","2600","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_181","12","Id_124 == 5
+
+"
+"","U55","Service-Status","Drain valve relay","2684","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_182","12","Id_124 == 5
+
+"
+"","u64","Service-Status","Suction valve relay","2585","1","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_180","12","Id_124 == 5
+
+"
+"","u61","Service-Status","Railheat relay","2579","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_177","34","(Id_124 > 1 && Id_124 < 5) || Id_124 == 6 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))
+
+"
+"","u62","Service-Status","Alarm relay","2583","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_178","35","(Id_124 != 0 && Id_124 != 2 && Id_124 != 5 && Id_124 < 9) || (Id_124 == 9 && Id_125 == 5)
+
+"
+"","u63","Service-Status","Light relay","2584","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_179","6","(Id_124 > 0 && Id_124 != 3 && Id_124 < 9) || (Id_124 == 9 && (Id_125 == 6 || Id_126 == 6 || Id_128 == 6 || Id_127 == 6 || Id_133 == 6))
+
+"
+"","u82","Service-Status","Blinds relay","2602","0","0","1","K","0","INT","","1","","0","Id_280","45","Id_124 == 9 && (Id_125 == 7 || Id_126 == 7 || Id_128 == 7 || Id_127 == 7 || Id_133 == 7)
+
+"
+"","u84","Service-Status","Heat relay","2605","0","0","1","K","0","INT","","1","","0","Id_289","8","Id_124 == 9 && (Id_125 == 10 || Id_126 == 10 || Id_128 == 10 || Id_127 == 10 || Id_133 == 10)
+
+"
+"","U58","Service-Status","Humidifier relay","2688","0","0","1","K","0","INT","","1","","0","Id_324","2","Id_124 == 8
+
+"
+"","U59","Service-Status","AO1 %","2689","0","0","100","K","0","INT","","1","","0","Id_184","37","Id_124 > 0 && Id_149 > 0
+
+"
+"","U71","Service-Status","Application mode","2701","1","0","9","K","0","Enum","0:Not selected,1:Standard Alarm/Comp/Light,2:Standard Railheat/Comp/Light,3:Standard Alarm/Comp/Railheat,4:Standard Alarm/Railheat/Light,5:Hotgas,6:Dual case w. 1 evap,7:Dual case w. 2 evap,8:Coldroom,9:Custom","1","","0","Id_192","0","
+
+"
+"","U62","Service-Status","DO2 Function","2692","5","0","15","K","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_186","0","
+
+"
+"","U63","Service-Status","DO3 Function","2693","8","0","15","K","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_187","0","
+
+"
+"","U64","Service-Status","DO4 Function","2694","3","0","15","K","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_188","0","
+
+"
+"","U65","Service-Status","DO5 Function","2695","6","0","15","K","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_189","0","
+
+"
+"","U66","Service-Status","DO6 Function","2696","1","0","15","K","0","Enum","0:Not used,1:Fan,2:Fan ECO,3:Defrost,4:Railheat,5:Alarm,6:Light,7:Blinds,8:Compressor,9:Compressor 2,10:Air heater,11:Drain valve,12:Suction valve,13:Hotgas valve,14:Defrost B,15:Drain valve","1","","0","Id_190","0","
+
+"
+"","U69","Service-Status","AO1 Function","2699","0","0","1","K","0","Enum","0:Not used,1:PWM Railheat","1","","0","Id_191","0","
+
+"
+"","U45","Service-Status","Network status","2682","0","0","100","K","0","INT","","1","","0","Id_185","0","
+
+"
+"","x19","Service-Status"," AI1 Simulate","40001","-200","-200","200","K","0","","","0","","1","Id_193","0","
+
+"
+"","x20","Service-Status"," AI2 Simulate","40002","-200","-200","200","K","0","","","0","","1","Id_194","0","
+
+"
+"","x21","Service-Status"," AI3 Simulate","40003","-200","-200","200","K","0","","","0","","1","Id_195","0","
+
+"
+"","x22","Service-Status"," AI4 Simulate","40004","-200","-200","200","K","0","","","0","","1","Id_196","0","
+
+"
+"","x23","Service-Status"," AI5 Simulate","40005","-200","-200","200","K","0","","","0","","1","Id_197","0","
+
+"
+"","x24","Service-Status"," AI6 Simulate","40006","-200","-200","200","K","0","","","0","","1","Id_198","0","
+
+"
+"","x25","Service-Status"," AI7 Simulate","40007","-200","-200","200","K","0","","","0","","1","Id_199","0","
+
+"
+"","x26","Service-Status"," DI1 Simulate","40008","-200","-200","200","K","0","INT","","0","","0","Id_200","0","
+
+"
+"","x27","Service-Status"," DI2 Simulate","40009","-200","-200","200","K","0","INT","","0","","0","Id_201","0","
+
+"
+"","x28","Service-Status"," DI3 Simulate","40010","-200","-200","200","K","0","INT","","0","","0","Id_202","0","
+
+"
+"","r10","Service-Calibration","S3 Adjust sensor","114","0","-10","10","K","0","","","1","","1","Id_103","0","
+
+"
+"","r09","Service-Calibration","S4 Adjust sensor","113","0","-10","10","K","0","","","1","","1","Id_104","0","
+
+"
+"","r53","Service-Calibration","S3B Adjust sensor","165","0","-10","10","K","0","","","1","","1","Id_105","22","Id_124 == 6 || Id_124 == 7
+
+"
+"","r59","Service-Calibration","S6 Adjust sensor","180","0","-10","10","K","0","","","1","","1","Id_106","18","Id_124 != 6 && Id_124 != 7 && Id_88 == 1
+
+"
+"","r12","Service-Manual control","Main switch","117","1","-1","1","K","0","Enum","0:Manual,1:Standby,2:Run","1","","0","Id_0","0","
+
+"
+"","q11","Service-Manual control","Valve opening","2222","0","0","100","K","0","INT","","1","","0","Id_307","1","Id_124 > 0
+
+"
+"","q12","Service-Manual control","Compressor/LLSV","2223","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_308","4","Id_124 == 1 || Id_124 == 2 || Id_124 == 3 || (Id_124 == 9 && (Id_125 == 8 || Id_126 == 8 || Id_128 == 8 || Id_127 == 8 || Id_133 == 8))
+
+"
+"","q19","Service-Manual control","Compressor 2","2230","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_315","10","Id_124 == 9 && (Id_125 == 9 || Id_126 == 9 || Id_128 == 9 || Id_127 == 9 || Id_133 == 9)
+
+"
+"","q13","Service-Manual control","Fan","2224","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_309","1","Id_124 > 0
+
+"
+"","q24","Service-Manual control","Fan Eco","2235","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_320","36","Id_124 == 9 && (Id_125 == 2 || Id_126 == 2 || Id_128 == 2 || Id_127 == 2 || Id_133 == 2)
+
+"
+"","q14","Service-Manual control","Defrost","2225","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_310","33","Id_124 > 0 && Id_124 != 5
+
+"
+"","q22","Service-Manual control","Defrost B","2233","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_318","40","Id_124 == 7
+
+"
+"","q20","Service-Manual control","Hotgas valve","2231","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_316","12","Id_124 == 5
+
+"
+"","q25","Service-Manual control","Drain valve","2236","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_321","12","Id_124 == 5
+
+"
+"","q18","Service-Manual control","Suction Valve","2229","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_314","12","Id_124 == 5
+
+"
+"","q15","Service-Manual control","Railheat","2226","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_311","34","(Id_124 > 1 && Id_124 < 5) || Id_124 == 6 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))
+
+"
+"","q16","Service-Manual control","Alarm","2227","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_312","35","(Id_124 != 0 && Id_124 != 2 && Id_124 != 5 && Id_124 < 9) || (Id_124 == 9 && Id_125 == 5)
+
+"
+"","q17","Service-Manual control","Light","2228","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_313","6","(Id_124 > 0 && Id_124 != 3 && Id_124 < 9) || (Id_124 == 9 && (Id_125 == 6 || Id_126 == 6 || Id_128 == 6 || Id_127 == 6 || Id_133 == 6))
+
+"
+"","q21","Service-Manual control","Blinds","2232","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_317","45","Id_124 == 9 && (Id_125 == 7 || Id_126 == 7 || Id_128 == 7 || Id_127 == 7 || Id_133 == 7)
+
+"
+"","q23","Service-Manual control","Air heater","2234","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_319","8","Id_124 == 9 && (Id_125 == 10 || Id_126 == 10 || Id_128 == 10 || Id_127 == 10 || Id_133 == 10)
+
+"
+"","q26","Service-Manual control","Humidifier","2237","0","0","1","K","0","Enum","0:MAN OFF,1:MAN ON","1","","0","Id_322","2","Id_124 == 8
+
+"
+"","q27","Service-Manual control","AO 1","2238","0","0","100","K","0","INT","","1","","0","Id_323","37","Id_124 > 0 && Id_149 > 0
+
+"
+"","x62","Master control"," Reg. Cond.","2554","0","0","14","K","0","Enum","0:MS Off,1:Start Up,2:Sup Heat Ctrl,3:Fill Evap,4:Defrost,5:Post Defrost,6:Forced Closed,7:Inject Fail,8:Sensor Err,9:Therm Ctrl,10:Melting,11:Door Open,12:Cleaning,13:Cutout,14:Forced Refr","1","","0","Id_236","0","
+
+"
+"","x63","Master control"," Cutin temp.","2553","4","-200","200","K","0","","","1","","1","Id_237","0","
+
+"
+"","x64","Master control"," Cutout temp.","2501","2","-200","200","K","0","","","1","","1","Id_238","0","
+
+"
+"","x81","Master control"," TherToggle","3146","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_239","0","
+
+"
+"","x82","Master control"," LoadReq","3147","0","-100","100","K","0","INT","","0","","0","Id_240","0","
+
+"
+"","x84","Master control"," MaxTeOffset","3151","0","-180","100","K","0","","","1","","1","Id_242","0","
+
+"
+"","x85","Master control"," Flood evap.","3149","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_271","0","
+
+"
+"","x06","Master control"," Night setbck","126","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_243","0","
+
+"
+"","x17","Master control"," Case shutdwn","2650","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_302","0","
+
+"
+"","x07","Master control"," Forced close","3022","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_251","0","
+
+"
+"","x08","Master control"," Forced cool.","3044","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_252","0","
+
+"
+"","x13","Master control"," MC def.start","1042","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_257","0","
+
+"
+"","x14","Master control"," DefrostState","1036","0","0","1","K","0","Enum","0:OFF,1:ON","1","","0","Id_262","0","
+
+"
+"","x11","Master control"," HoldAfterDef","2022","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_255","0","
+
+"
+"","x12","Master control"," Disable def.","1031","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_256","0","
+
+"
+"","o39","Master control","Light remote","2058","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_265","24","Id_124 < 3 || (Id_124 > 3 && Id_124 < 9) || (Id_124 == 9 && (Id_125 == 6 || Id_126 == 6 || Id_128 == 6 || Id_127 == 6 || Id_133 == 6))
+
+"
+"","x03","Master control"," Act.DewPoint","2138","0","-200","200","K","0","","","0","","1","Id_303","25","(Id_124 < 8 || (Id_124 == 9 && (Id_125 == 4 || Id_126 == 4 || Id_128 == 4 || Id_127 == 4 || Id_133 == 4))) && Id_90 == 2
+
+"
+"","x04","Master control"," TcTempMean","2634","0","-200","200","K","0","","","0","","1","Id_304","32","Id_37 >= 1
+
+"
+"","x83","Master control"," Load factor","2572","0","0","10","K","0","","","1","","1","Id_241","0","
+
+"
+"","aaa","Master control"," BT lock","1062","0","0","1","K","0","Enum","0:OFF,1:ON","0","","0","Id_301","0","
+
+"
+"","y04","Master control"," Min Delta T","1061","0","-180","100","K","0","","","1","","1","Id_343","0","
+
+"

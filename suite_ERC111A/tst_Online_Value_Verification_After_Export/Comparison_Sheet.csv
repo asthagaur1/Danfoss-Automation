@@ -1,0 +1,147 @@
+Parameter_Name,Random_Value,,
+Adaptive defrost,yES
+Defrost on compressor time,no
+Voltage protection,no
+Display Range Limit,yES 
+Show Pull Down,No
+Show Holiday,No
+Show Defrost,Yes
+Voltage alarm,yES
+Auto Clearance of Alarm,yES 
+MODBUS Safety,yES 
+Def. type,no
+Sensor Error Type,SEt
+Display Unit,C
+Temp sensor to display,AuS
+Display Resolution,0.5
+S1 Config,Stn
+S2 Config,Stn
+S1 Application,nC
+S2 Application,EuA
+DO1 Config,CoP
+Button 1 Short Config, tn
+Button 1 Long Config,PoF
+Button 2 Short Config,dEF
+Button 2 Long Config,noP
+Button 3 Short Config,SuP
+Button 3 Long Config,PoF
+Button 4 Short Config,din
+Button 4 Long Config,SuP
+Show Compressor Symbol,Yes
+Show Defrost Symbol,Yes
+Adaptive defrost,no
+Defrost on compressor time,no
+Voltage protection,yES
+Display Range Limit,no 
+Show Pull Down,No
+Show Holiday,Yes
+Show Defrost,Yes
+Voltage alarm,yES
+Auto Clearance of Alarm,no
+MODBUS Safety,yES 
+Def. type,nAt
+Sensor Error Type,SEt
+Display Unit,F
+Temp sensor to display,SPt
+Display Resolution,0.5
+S1 Config,Stn
+S2 Config,Stn
+S1 Application,EuA
+S2 Application,Con
+DO1 Config,PiH
+Button 1 Short Config,SuP
+Button 1 Long Config,noP
+Button 2 Short Config,CFA
+Button 2 Long Config,HoL
+Button 3 Short Config,SuP
+Button 3 Long Config,din
+Button 4 Short Config,SuP
+Button 4 Long Config,din
+Show Compressor Symbol,No
+Show Defrost Symbol,No
+Adaptive defrost,no
+Defrost on compressor time,yES
+Voltage protection,yES
+Display Range Limit,no 
+Show Pull Down,Yes
+Show Holiday,Yes
+Show Defrost,No
+Voltage alarm,yES
+Auto Clearance of Alarm,no
+MODBUS Safety,yES 
+Def. type,nAt
+Sensor Error Type,no
+Display Unit,C
+Temp sensor to display,Sco
+Display Resolution,0.1
+S1 Config,Stn
+S2 Config,Htn
+S1 Application,Sco
+S2 Application,nC
+DO1 Config,PiH
+Button 1 Short Config, tn
+Button 1 Long Config,inF
+Button 2 Short Config,noP
+Button 2 Long Config,CFA
+Button 3 Short Config,dEF
+Button 3 Long Config, tn
+Button 4 Short Config, tn
+Button 4 Long Config,PoF
+Set point,40.36
+Set point adjustment ratio,0.76
+Differential,17.4
+High Set point,60.31
+Low Set point,-84.71
+Pull-down limit temp,6.27
+Def terminate temp,20.89
+Defrost start evaporator temp.,-46.06
+Defrost Delta T (ddt),26.82
+Def reset temp,16.28
+Power-on temperature,47.33
+Display Offset,-3.35
+High Temp Alarm,72.14
+Low Temp Alarm,95.22
+Holiday Temperature Offset,18.76
+Temp Adj. for S1,12.11
+Temp Adj. for S2,8.54
+Pull-down Cycling,252
+Pull-down defrost Interval,4
+Pull-down duration,20
+Def Min Interval,10
+Def Max time,295
+Def Max Interval,8
+Def Min Time,46
+Defrost by Comp. running time,20
+Initial Defrost Interval,14
+Initial Defrost Duration,994
+Minimum Cutin voltage,270
+Minimum cut-out voltage,31
+Maximum voltage,232
+Error run time,35
+Error stop time,11
+Min Stop time,6
+Min run time,2
+Max Off time,224
+Power On Delay,89
+Condenser Alarm Limit,0.05
+Condenser Block Limit,157.37
+Condenser OK limit,68.07
+Condenser Low Temp. Limit,-43.88
+Display Intensity,3
+Display Delay,6
+Lock-time After defrost,41
+High Alarm delay,145
+Low Alarm delay,152
+Pulldown delay,625
+Leakage alarm,36
+Alarm Buzzer Duration,450
+Time to pull down,52
+Pass-word level1,495
+Pass-word level2,81
+Pass-word level3,454
+OEM Code Low,188
+OEM Code middle,214
+OEM Code High,598
+Parameter Version,-21206
+Show Compressor Symbol,No
+Show Defrost Symbol,Yes

@@ -1,0 +1,37 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+1,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Click_Button,?,,True
+2,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Tooltip,Home,,True
+3,:_MenuItem,Tooltip,Help,,True
+4,,Snooze,,,True
+5,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+6,:KoolProg_Image_4,Enable,,true,True
+7,:KoolProg.BROWSE_Button,Enable,,true,True
+16,,File_Generation,,,True
+18,,Snooze,,,True
+27,{container=':KoolProg_Window' text='System.Windows.Controls.DockPanel' type='Button'},Enable,,true,True
+28,:KoolProg.START_Label,Click_Button,,,True
+29,,Snooze,,,True
+30,:MessageBoxDisplay_Window,Window,,Window,True
+31,:MessageBoxDisplay.OK_Button,Click_Button,,,True
+32,:KoolProg_Window,Window,,Window,True
+33,,Snooze,,,True
+42,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+42,:KoolProg.Single controller programming_RadioButton,Click_Button,,,True
+35,:KoolProg.Multiple controller programming_RadioButton,Click_Button,,,True
+36,:KoolProg_Edit,Enable,,true,True
+37,:KoolProg_Edit,Text,,1,True
+38,":KoolProg.Countdown Timer(,,,",0)_RadioButton,Click_Button,,
+39,:KoolProg_Edit,Text,,1,True
+40,,CountDownrange,,3,True
+41,,Snooze,,,True
+42,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+42,:KoolProg.Single controller programming_RadioButton,Click_Button,,,True
+43,:KoolProg.Multiple controller programming_RadioButton,Click_Button,,,True
+44,:KoolProg_Edit,Text,,1,True
+45,:KoolProg.CountUp Timer(0,",,,)_RadioButton",Click_Button,,
+46,,Snooze,,,True
+49,:KoolProg.START_Label,Click_Button,,,True
+50,:MessageBoxDisplay_Window,Window,,Window,True
+51,:MessageBoxDisplay.OK_Button,Click_Button,,,True
+52,,Snooze,,,True
+53,:KoolProg_Window,Window,,Window,True

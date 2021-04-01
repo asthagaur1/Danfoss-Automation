@@ -1,0 +1,159 @@
+ParameterName,DB_Menucode,KP_Menucode,Result,DB_DefaultValue,KP_DefaultValue,Result,DB_MinValue,KP_MinValue,Result,DB_MaxValue,KP_MaxValue,Result,DB_Unit,KP_Unit,Result,DB_Info,KP_Info,Result
+Sensor Type,SEn,SEn,True,NTC10K,NTC10K,True,,,True,,,True,,,True,"Sensor type (All sensors must be of same type)
+NTC5K - NTC 5000 Ohm at 25 °C (Beta value=3980 @ 25/100 °C)
+NTC10K - NTC 10000 Ohm at 25 °C (Beta Value 3980 @ 25/100 °C)
+PTC - PTC 990 ","Sensor type being used (All sensors must be of same type)NTC5K - NTC 5000 Ohm at 25 °C, (Beta value=3980 at 25/100 °C )NTC10K - NTC 10000 Ohm at 25 °C, (Beta value=3435 at 25/85 °C)PTC - PTC 990 ",False
+S2 Configuration,S2C,S2c,False,EuA,EuA,True,,,True,,,True,,,True,"Desired configuration for S2 port
+nC- Not used/configured
+Con- Condenser Sensor
+EuA- Defrost/evap Sensor
+doC- Door Sensor (Normally closed type)
+doo- Door Sensor (Normally open type)
+ESP- Eco Switch - Push button type
+ESt- ECO Switch - Toggle type
+Pud- Pull down switch - Push Button type only
+dES- Defrost switch -- Push Button type only","Desired configuration for S2 portnC- Not used/configuredCon- Condenser SensorEuA- Defrost/evap SensordoC- Door Sensor (Normally closed type)doo- Door Sensor (Normally open type)ESP- Eco Switch - Push button typeESt- ECO Switch - Toggle typePud- Pull down switch - Push Button type onlydES- Defrost switch -- Push Button type only",False
+S3 Configuration,S3C,S3c,False,nC,nC,True,,,True,,,True,,,True,"Desired configuration for S3 port
+nC- Not used/configured
+Con- Condenser Sensor
+EuA- Defrost/evap Sensor
+doC- Door Sensor (Normally closed type)
+doo- Door Sensor (Normally open type)
+ESP- Eco Switch - Push button type
+ESt- ECO Switch - Toggle type
+Pud- Pull down switch - Push Button type only
+dES- Defrost switch -- Push Button type only","Desired configuration for S3 portnC- Not used/configuredCon- Condenser SensorEuA- Defrost/evap SensordoC- Door Sensor (Normally closed type)doo- Door Sensor (Normally open type)ESP- Eco Switch - Push button typeEST- ECO Switch - Toggle typePud- Pull down switch - Push Button type onlydES- Defrost switch -- Push Button type only",False
+Relay 2 Config,o2C,o2C,True,dEF,dEF,True,,,True,,,True,,,True,"Desired configuration for relay 2
+nC-Not Connected
+dEF- Configured for defrost heater or defrost valve
+FAn- Configured for evaporator fan
+LIg - Configured for Cabinet Light
+ALA- Configured for External Alarm
+Scc - Second compressor","Desired configuration for relay 2nC-Not ConnecteddEF- Configured for defrost heater or defrost valveFAn- Configured for evaporator fanLIg - Configured for Cabinet LightALA- Configured for External AlarmScc - Second compressor",False
+Lowest Temperature Limit,LSE,LSE,True,0,0.00,True,-100,-100.00,True,120,120.00,True,°C,°C,True,Cut out temperature at coldest position of the spindle (thermostat kNob),Cut out temperature at coldest position of the spindle (thermostat kNob),True
+Highest Temperature Limit,HSE,HSE,True,10,10.00,True,-100,-100.00,True,120,120.00,True,°C,°C,True,Cut out temperature at warmest position of the spindle (thermostat kNob),Cut out temperature at warmest position of the spindle (thermostat kNob),True
+Lowest Temperature Differential,Ldi,Ldi,True,2,2.00,True,1,1.00,True,50,50.00,True,°K,K,False,This defines the difference between the cut-out and the cut-in at coldest position of thermostat,This defines the difference between the cut-out and the cut-in at coldest position of thermostat,True
+Highest Temperature Differential,Hdi,Hdi,True,2,2.00,True,1,1.00,True,50,50.00,True,°K,K,False,This defines the difference between the cut-out and the cut-in at warmest position of thermostat,This defines the difference between the cut-out and the cut-in at warmest position of thermostat,True
+Initial pull down ON/OFF,IPE,IPE,True,OFF,Off,False,,,True,,,True,,,True,"Initial Pull down 
+oFF- Disable
+on- Enable
+Initial pull down (IPD) is to provide faster cooling when the cabinet is powered up with warmer inside temperature.  During IPD, defrost will be skipped until cabinet air temperature reaches cut out temperature or IPD duration expires. IPD operates only during power up and can be enabled/disabled using this parameter","Initial Pull down oFF- Disableon- EnableInitial pull down (IPD) is to provide faster cooling when the cabinet is powered up with warmer inside temperature.  During IPD, defrost will be skipped until cabinet air temperature reaches cut out temperature or IPD duration expires. IPD operates only during power up and can be enabled/disabled using this parameter",False
+IPD and Pull down Duration,IPD,IPD,True,0,0,True,0,0,True,120,120,True,Hrs,Hrs,True,Maximum time IPD and Pull down can run. IPD and Pull down will terminate as soon as this time expires regardless of cab air temperature,Maximum time IPD and Pull down can run. IPD and Pull down will terminate as soon as this time expires regardless of cab air temperature,True
+Min Run time,Crt,Crt,True,0,0,True,0,0,True,1800,1800,True,Secs,Secs,True,"To prevent the compressor from frequent cut-outs, this parameter would ensure that the  compressor runs for atleast the specified time. This parameter overrides the cut-out temperature. [Tip: Setting this parameter too high could lead to unneccessary deep temperatures]","To prevent the compressor from frequent cut-outs, this parameter would ensure that the  compressor runs for atleast the specified time. This parameter overrides the cut-out temperature. [Tip: Setting this parameter too high could lead to unneccessary deep temperatures]",True
+Min Stop time,CSt,CSt,True,120,120,True,0,0,True,1800,1800,True,Secs,Secs,True,"To prevent the compressor from frequent cut-ins, this parameter would ensure that the  compressor remains off for atleast the specified time under this parameter. This parameter overrides the cut-in temperatures. [Tip: Setting this parameter too high could lead to unneccessary warm temperatures]","To prevent the compressor from frequent cut-ins, this parameter would ensure that the  compressor remains off for atleast the specified time under this parameter. This parameter overrides the cut-in temperatures. [Tip: Setting this parameter too high could lead to unneccessary warm temperatures]",True
+System Resume after door open,Srt,Srt,True,0,0,True,0,0,True,60,60,True,Mins,Mins,True,"If door is kept open for long time, compressor and fan will resume after this time if they switched off due to door open. [Note : 'Srt' must be always greater than' Cdd' and 'Fdt']
+If Srt=0, System resume feature disabled and system will resume only when the door is closed.","If door is kept open for long time, compressor and fan will resume after this time if they switched off due to door open. [Note : 'Srt' must be always greater than' Cdd' and 'Fdt']If Srt=0, System resume feature disabled and system will resume only when the door is closed.",False
+Second Compressor start delay,Scd,Scd,True,15,15,True,0,0,True,960,960,True,Secs,Secs,True,Delay time for starting second compressor in dual compressor control,Delay time for starting second compressor in dual compressor control,True
+Power On Delay,Pod,Pod,True,120,120,True,0,0,True,300,300,True,Secs,Secs,True,This is the delay in seconds between power-on and the output relays being activated,This is the delay in seconds between power-on and the output relays being activated,True
+Low temp Alarm limit,LAt,LAt,True,-5,-5.00,True,-100,-100.00,True,120,120.00,True,°C,°C,True,If cabinet air temperature goes below this value will raise low temperature alarm  (All these alarm status can be viewed only in KoolProg),If cabinet air temperature goes below this value will raise low temperature alarm (Note: All of these alarm status will be displayed only in koolprog),False
+High temp Alarm limit,HAt,HAt,True,15,15.00,True,-100,-100.00,True,120,120.00,True,°C,°C,True,If cabinet air temperature goes above this value will raise low temperature alarm ,If cabinet air temperature goes above this value will raise low temperature alarm,True
+Low temp Alarm delay,Ltd,Ltd,True,0,0,True,0,0,True,240,240,True,Mins,Mins,True,Time delay to raise alarm once low temperature alarm limit is reached,Time delay to raise alarm once low temperature alarm limit is reached,True
+High temp Alarm delay,Htd,Htd,True,30,30,True,0,0,True,240,240,True,Mins,Mins,True,Time delay to raise alarm once high temperature alarm limit is reached,Time delay to raise alarm once high temperature alarm limit is reached,True
+Alarm Door open delay,dod,dod,True,2,2,True,0,0,True,60,60,True,Mins,Mins,True,"Time delay to raise alarm if the door is kept open. If the door is closed before the delay time, it will not raise alarm","Time delay to raise alarm if the door is kept open. If the door is closed before the delay time, it will not raise alarm",True
+Alarm delay during Pull Down/ Power up /defrost,Pdd,Pdd,True,60,60,True,0,0,True,960,960,True,Mins,Mins,True,"Time delay to raise high temperature alarm during pull down, power up and defrost in order to avoid wrong alarm signal during these conditions","Time delay to raise high temperature alarm during pull down, power up and defrost in order to avoid wrong alarm signal during these conditions",True
+Leakage Alarm Compressor Run Time,LEA,LEA,True,0,0,True,0,0,True,96,96,True,Hrs,Hrs,True,"If compressor operates continuosly for more than the time configured in this parameter Leakage alarm will be triggered. Generally this value to be set higher than pull down duration ""Pdd"". 
+""0"": disable","If compressor operates continuosly for more than the time configured in this parameter Leakage alarm will be triggered. Generally this value to be set higher than pull down duration ""Pdd"". ""0"": disable",False
+Defrost type,dFt,dFt,True,nAt,nAt,True,,,True,,,True,,,True,"This parameter defines the required type of defrost
+""no"": defrost function is disabled.
+""nAt"": Natural defrost (OFF-cycle defrost)
+""EL"": electrical defrost.
+""Hgd"": hot gas defrost ","This parameter defines the required type of defrostno- Defrost function is disablednAt- Natural defrost (OFF-cycle defrost)EL- Electrical defrostHgd- Hot gas defrost",False
+Minimum defrost Interval,dii,dii,True,360,360,True,1,1,True,4320,4320,True,Mins,Mins,True,"Defines the minimum time period between the start of two defrost cycles. If the evaporator temperature goes below the defrost start temperature (dEt) controller triggers the defrost after this period, if not trigger the defrost at Maximum defrost interval (dAi)
+","Defines the minimum time period between the start of two defrost cycles. If the evaporator temperature goes below the defrost start temperature (dEt) controller triggers the defrost after this period, if not trigger the defrost at Maximum defrost interval (dAi)",True
+Maximum defrost Interval,dAi,dAi,True,420,420,True,1,1,True,4320,4320,True,Mins,Mins,True,Maximum time period between the start of two defrost cycles,Maximum time period between the start of two defrost cycles,True
+Minimum defrost time,dit,dit,True,5,5,True,0,0,True,240,240,True,Mins,Mins,True,"Defines the minimum duration of a defrost cycle. During this period, the controller will not check the temperature. Once the minimum time has expired, the temperature will be checked and if the terminate temperature ""dtt"" has been reached, the defrost cycle will end. If dtt has not been reached, defrost will continue until maximum defrost time ""dAt"" reached","Defines the minimum duration of a defrost cycle. During this period, the controller will not check the temperature. Once the minimum time has expired, the temperature will be checked and if the terminate temperature ""dtt"" has been reached, the defrost cycle will end. If dtt has not been reached, defrost will continue until maximum defrost time ""dAt"" reached.",False
+Maximum defrost Time,dAt,dAt,True,30,30,True,0,0,True,480,480,True,Mins,Mins,True,"Maximum duration of a defrost cycle. Controller will terminate the defrost after this time, even if evap sensor is configured and evaporator temperature is less than defrost terminate temperature (dtt)","Maximum duration of a defrost cycle. Controller will terminate the defrost after this time, even if evap sensor is configured and evaporator temperature is less than terminate temperature (dtt)",False
+Defrost Terminate Temp,dtt,dtt,True,6,6.00,True,0,0.00,True,50,50.00,True,°C,°C,True,"This parameter defines the evaporator temperature at which defrost must be terminated. controller will terminate the defrost based on the defrost terminate temperature (dtt) or Maximum defrost time (dAt). If no evaporator sensor is used, defrost would be terminated based on the maximum defrost time (dAt)","This parameter defines the evaporator temperature at which defrot must be terminated. controller will terminate the defrost based on the defrost terminate temperature (dtt) or Maximum defrost time (dAt). If no evaporator sensor is used, defrost would be terminated based on the maximum defrost time (dAt)",False
+Defrost on accumulated Compressor Run Time,dCt,dCt,True,No,No,True,,,True,,,True,,,True,"If this parameter is set to ""Yes"", defrost interval is calculated based on the total time the compressor has been running. If this parameter is set to No, then defrost interval is based on the elapsed time,regardless of compressor ON time","If this parameter is set to ""Yes"", defrost interval is calculated based on the total time the compressor has been running. If this parameter is set to no, then defrost interval is based on the elapsed time,regardless of compressor On time",False
+Defrost Start by Evap Temp,dEt,dEt,True,-100,-100.00,True,-100,-100.00,True,0,0.00,True,°C,°C,True,Evaporator Temperature at which the defrost to be triggered after minimum defrost interval to avoid excess frost on the evaporator (Active only if evaporator sensor is configured),Evaporator Temperature at which the defrost to be triggered after minimum defrost interval to avoid excess frost on the evaporator (Active only if evaporator sensor is configured),True
+Drip Off time,dot,dot,True,2,2,True,0,0,True,60,60,True,Mins,Mins,True,Defines the time delay to start compressor after terminating defrost. This feature is to ensure no water droplet on the evaporator before starting the cooling cycle,Defines the time delay to start compressor after terminating defrost. This feature is to ensure no water droplet on the evaporator before starting the cooling cycle,True
+Fan Delay After Defrost,Fdd,Fdd,True,0,0,True,0,0,True,960,960,True,Secs,Secs,True,Defines delay in switching ON the fan  from compressor start after defrost to avoid warm air circulation,Defines delay in switching ON the fan  from compressor start after defrost to avoid warm air circulation,True
+Fan Start Temperature after defrost,Ftd,Ftd,True,25,25.00,True,-25,-25.00,True,25,25.00,True,°C,°C,True,"This parameter determines at what evaporator temperature the fan will start after a defrost cycle. If the time set in ""Fdd"" occurs before the temperature set in ""Ftd"", the fan will start in line with ""Fdd"". If the temperature set in ""Ftd"" occurs first, then the fan will start in line with ""Ftd""","This parameter determines at what evaporator temperature the fan will start after a defrost cycle. If the time set in ""Fdd"" occurs before the temperature set in ""Ftd"", the fan will start in line with ""Fdd"". If the temperature set in ""Ftd"" occurs first, then the fan will start in line with ""Ftd""",True
+Fan ON during Defrost,dFa,dFa,True,No,No,True,,,True,,,True,,,True,"Defines the status of fan during defrost. Set to ""Yes"", the fan will run during defrost cycles and set to ""No"", will keep the fan off during defrost cycles
+""","Defines the status of fan during defrost. Set to ""Yes"", the fan will run during defrost cycles and set to ""No"", will keep the fan off during defrost cycles",False
+Initial Defrost Interval,idi,idi,True,180,180,True,0,0,True,4320,4320,True,"
+Mins",Mins,True,The initial defrost interval determines the time for first defrost after power-up. The initial defrost is mainly intended for factory testing of the defrost functionality and can be set to expire after a number compressor cycles according to the setting of parameter idd,"The initial defrost interval determines the time for first defrost after power-up. The initial defrost is mainly intended for factory testing of the defrost functionality and can be set to expire after a number compressor cycles according to the setting of parameter ""idd""",False
+Initial Defrost duration,idd,idd,True,0,0,True,0,0,True,999,999,True,Cycles,Cycles,True,"The initial defrost duration is the number of compressor cycles after which initial defrost is deactivated.
+""0"":  No initial defrost.
+""1-998"": number of compressor cycles before deactivation.
+""999"": initial defrost always active","The initial defrost duration is the number of compressor cycles after which initial defrost is deactivated.
+""0""-  No initial defrost
+""1-998""- number of compressor cycles before deactivation
+""999""- initial defrost always active",False
+Fan ON Delay,Fod,Fod,True,0,0,True,0,0,True,240,240,True,Secs,Secs,True,Time delay to start the fan after compressor cut-in,Time delay to start the fan after compressor cut-in,True
+Fan Stop Delay,FSd,FSd,True,0,0,True,0,0,True,240,240,True,Secs,Secs,True,Time delay to stop the fan after compressor cut-out,Time delay to stop the fan after compressor cut-out,True
+Fan On Cycle,Foc,Foc,True,0,0,True,0,0,True,960,960,True,Secs,Secs,True,"If fan control method is selected as ""FPL"" this parameter defines the fan ON time during fan pulsating cycle","If fan control method is selected as ""FPL"" this parameter defines the fan ON time during fan pulsating cycle",True
+Fan Stop Cycle,FSc,FSC,False,0,0,True,0,0,True,960,960,True,Secs,Secs,True,"If fan control method is selected as ""FPL"" this parameter defines the fan OFF time during fan pulsating cycle","If fan control method is selected as ""FPL"" this parameter defines the fan OFF time during fan pulsating cycle",True
+Fan Minimum Stop Time,FSt,FSt,True,10,10,True,0,0,True,960,960,True,Secs,Secs,True,Minimum time fan must stop whenever it is switched off,Minimum time fan must stop whenever it is switched off,True
+Fan Limit Temperature,FLt,FLt,True,50,50.00,True,0,0.00,True,50,50.00,True,°C,°C,True,"This function prevents the evaporator fan to operate if the temperature is above the fan limit temperature. If the defrost sensor registers a higher temperature than the one set here, the fan will be stopped to avoid the warm air circulation in the cabinet. Fan will restart when evap temperature goes 2 degC less than FLt (FLt-2 DegC). This parameter is active only when evaporator sensor is configured","This function prevents the evaporator fan to operate if the temperature is above the fan limit temperature. If the defrost sensor registers a higher temperature than the one set here, the fan will be stopped to avoid the warm air circulation in the cabinet. Fan will restart when evap temperature goes 2 degC less than FLt (FLt-2 DegC). This parameter is active only when evaporator sensor is configured",True
+Cabinet Light Control (Normal mode),CLC,CLC,True,ON,on,False,,,True,,,True,,,True,"on: Always ON (Button is default to control light for all these options)
+0FF: Always OFF
+dor: Door sensor only ","on: Always ON (Button is default to control light for all these options)oFF: Always OFFdor: Door sensor only ",False
+Light OFF delay,Lod,Lod,True,0,0,True,0,0,True,300,300,True,Secs,Secs,True,Delay to turn off the cabinet light after door close,Delay to turn off the cabinet light after door close.,False
+ECO Mode Enable,Eco,Eco,True,No,No,True,,,True,,,True,,,True,"ECO mode is active or not. If selected ""No""  all other settings related to ECO mode are not active.","ECO mode is active or not. If selected ""No"" all other settings related to ECO mode are not active",False
+Holiday Mode ,HLY,HLY,True,No,No,True,,,True,,,True,,,True,"Holiday mode is active or not. If selected ""No""  all other settings related to holiday mode are not active","Holiday mode is active or Not. If selected ""No""  all other settings related to holiday mode are Not active",False
+Holiday Length,HoL,HoL,True,72,72,True,0,0,True,999,999,True,Hrs,Hrs,True,Criteria for entering holiday mode based on number of hours of no activity in ECO mode. If controller does not detect any activity after enetering ECO mode for these many hours it will trigger the Holiday mode and set the temperature as per holiday offset,Criteria for entering holiday mode based on number of hours of no activity in ECO mode. If controller doesnot detect any activity after enetering ECO mode for these many hours it will trigger the Holiday mode and set the temperature as per holiday offset. ,False
+Holiday Temperature offset,Hto,Hto,True,6,6.00,True,-25,-25.00,True,25,25.00,True,°K,K,False,Defines the offset temperature during holiday mode. Offset can be positive or negative,Defines the offset temperature during holiday mode. Offset can be possitive or negative.,False
+Automatic Heater Control Mode ,AuH,AuH,True,No,No,True,,,True,,,True,,,True,"Automatic heater control /dual mode is to protect food items stored in cabinet from frozen during the winter when installed outdoor. Automatic heater control uses the defrost heater to increase the cabinet temperature when it goes below the cut out temperature during Cooling mode.
+No: This feature is disabled
+Yes: Feature is active","Automatic heater control /dual mode is to protect food items stored in cabinet from frozen during the winter when installed outdoor. Automatic heater control uses the defrost heater to increase the cabinet temperature when it goes below the cut out temperature during Cooling mode.No: This feature is disabledYes: Feature is active",False
+Heater low set point,CHI,CHI,True,-100,-100.00,True,-100,-100.00,True,120,120.00,True,°C,°C,True,Heater Cut out temperature at coldest position of the spindle (thermostat knob) auto heating,Heater Cut out temperature at coldest position of the spindle (thermostat knob) auto heating,True
+Heater high set point,WHI,WHI,True,-100,-100.00,True,-100,-100.00,True,120,120.00,True,°C,°C,True,Heater Cut out temperature at warmest position of the spindle (thermostat knob) auto heating,Heater Cut out temperature at warmest position of the spindle (thermostat knob) auto heating,True
+Heater low differential,CDH,CDH,True,2,2.00,True,1,1.00,True,50,50.00,True,°K,K,False,This defines the difference between the heater cut-out and the cut-in at coldest position of thermostat for auto heating,This defines the difference between the heater cut-out and the cut-in at coldest position of thermostat for auto heating,True
+Energy mode delay,End,End,True,60,60,True,0,0,True,360,360,True,Mins,Mins,True,This is the delay in minutes between the heater and the compressor operation. The heater is not allowed to start until this number of minutes has expired after the compressor has cut out and vice versa,This is the delay in minutes between the heater and the compressor operation. The heater is not allowed to start until this number of minutes has expired after the compressor has cut out and vice versa,True
+Voltage Protection function,uPt,uPt,True,No,No,True,,,True,,,True,,,True,This feature protects the compressor if the line voltage goes beyond the operating range,This feature protects the compressor if the line voltage goes beyond the operating range,True
+Minimum Cut-in Voltage,uLi,uLi,True,100,100,True,70,70,True,230,230,True,V ,V,True,The lowest voltage at which the compressor is allowed to Cut-in,The lowest voltage at which the compressor is allowed to Cut-in,True
+Minimum Cut out Voltage,uL0,uLO,False,90,90,True,70,70,True,225,230,False,V,V,True,"When the compressor is running, if voltage goes below this value, it will switch off the compressor.  This parameter is to avoid sudden switching on and off of compressor due to voltage fluctuations. This cut-off voltage will override compressor minimum run time","When the compressor is running, if voltage goes below this value, it will switch off the compressor.  This parameter is to avoid sudden switching on and off of compressor due to voltage fluctuations. This cut-off voltage will override compressor minimum run time",True
+Maximum cut out Voltage,uHi,uHi,True,260,260,True,110,110,True,270,270,True,V ,V,True,"when the compressor is running, it will be switched OFF if the voltage exceeds this value
+If the compressor is already stopped, it will remain switched off","When the compressor is running, it will be switched Off if the voltage exceeds this value.
+If the compressor is already stopped, it will remain switched Off.",False
+Condenser Alarm Limit,CAL,CAL,True,80,80.00,True,0,0.00,True,120,120.00,True,°C,°C,True,This parameter sets the condenser temperature at which an alarm will be generated,This parameter sets the condenser temperature at which an alarm will be generated,True
+Condenser Block Limit,CbL,CbL,True,85,85.00,True,0,0.00,True,120,120.00,True,°C,°C,True,This parameter sets the compressor switched off due to high condenser temperature.,This parameter sets the compressor switched off due to high condenser temperature,False
+Condenser OK Limit,CoL,CoL,True,60,60.00,True,0,0.00,True,120,120.00,True,°C,°C,True,This parameter sets the compressor to switch ON again after switched off due to  high condenser temperature respecting minimum compressor stop time,This parameter sets the compressor to switch On again after switched off due to  high condenser temperature respecting minimum compressor stop time,False
+Control sensor error handling type,EHd,EHd,True,Aut,Aut,True,,,True,,,True,,,True,"Method to control the cooling cycle in case of cabinet air sensor error
+""No"": No sensor error handling.
+""SEt"": Follow configured error run and stop time
+""Aut"" : Control automaticaly based on past cycles time","Method to control the cooling cycle in case of cabinet air sensor error.No- No sensor error handlingSet- Follow configured error run and stop timeAut- Control automatically based on past cycles time",False
+Error Run Time,Ert,Ert,True,0,0,True,0,0,True,60,60,True,Mins,Mins,True,Cooling cycle ON time in case of cabinet sensor error (Active only if EHd=SEt),Cooling cycle ON time in case of cabinet sensor error (Active only if EHd=SEt),True
+Error Stop Time,Est,Est,True,0,0,True,0,0,True,60,60,True,Mins,Mins,True,Cooling cycle off time in case of cabinet sensor error (Active only if EHd=SEt),Cooling cycle off time in case of cabinet sensor error (Active only if EHd=SEt),True
+Zero Cross Config,ZC,ZC,True,Yes,Yes,True,,,True,,,True,,,True,"This parameter enhaces the relay life and also avoid relay sparks during relay on and off.If selected ""Yes""relays will be switched on and off when the line-voltage is closeer to zero","This parameter enhances the relay life and also avoid relay sparks during relay on and off.If selected ""Yes"" relays will be switched on and off when the line-voltage is closer to zero",False
+Parameter Version,Par,Par,True,0,0,True,0,0,True,65535,65535,True,NA,,False,OEM/Customer can use this parameter to assign Parameter version,OEM/Customer can use this parameter to assign Parameter version,True
+Software Version,Fir,Fir,True,,,True,,,True,,,True,,,True,Controller Software Version,Software Version,False
+Hardware Version,Har,Har,True,,,True,,,True,,,True,,,True,Danfoss Hardware version of the controller,"HW version
+Danfoss hardware version number",False
+Cabinet Air temperature,att,att,True,,,True,,,True,,,True,°C,°C,True,Temperature of Cabinet Air sensor,Cabinet Air Temp,False
+Evaporator 1 temperature,Et1,Et1,True,,,True,,,True,,,True,°C,°C,True,Temperature of Evaporator 1 sensor,Temperature of the evaporator sensor,False
+Evaporator 2 temperature,Et2,Et2,True,,,True,,,True,,,True,°C,°C,True,Temperature of evaporator 2 Sensor,,False
+Condenser temperature,Ct1,Ct1,True,,,True,,,True,,,True,°C,°C,True,Temperature of condenser sensor,Temperature of condenser sensor,True
+Door Status on S2,dr1,dr1,True,,,True,,,True,,,True,,,True,"Status of the door switch configured on S2 Port
+Close: Door is closed
+Open: Door is open
+Not Configured: Door switch is not configured to this port","Status of the door switch configured on S2 PortClose: Door is closedOpen: Door is openNot Configured: Door switch is not configured to this port",False
+Door Status on S3,dr2,dr2,True,,,True,,,True,,,True,,,True,"Status of the door switch configured on S3 Port
+Close: Door is closed
+Open: Door is open
+Not Configured: Door switch is not configured to this port","Status of the door switch configured on S3 PortClose: Door is closedOpen: Door is openNot Configured: Door switch is not configured to this port",False
+Spindle position,uSp,uSp,True,,,True,,,True,,,True,%,%,True,"""Current position of the spindle 
+Warm- 0%
+Cold-100%""
+","Current position of the spindle Warm- 0%Cold-100%""",False
+Relay 1 Status,R1S,R1S,True,,,True,,,True,,,True,,,True,"This parameter displays the status of Relay 1
+(ON / OFF)","1- Off
+2- On",False
+Relay 2 Status,R2S,R2S,True,,,True,,,True,,,True,,,True,"This parameter displays the status of Relay 2
+(ON / OFF)","1- Off
+2- On",False
+Thermostat status,thS,thS,True,,,True,,,True,,,True,,,True,"Controller operating status
+1- Initial state
+2-Serving
+3-Eco Mode
+4-Initial Pull down (IPD)
+5- Pull down /Super cool Mode
+6-Emergency Mode
+7-Main Switch Off
+8. Holiday mode
+9. Automatic Heater Control mode
+10. Energy mode delay","1- Initial state2- Serving3- Eco Mode4- Initial Pull down (IPD)5- Pull down /Super cool Mode6- Emergency Mode7- Main Switch Off8- Holiday",False
+Defrost interval counter - Comp. run time,InC,InC,True,,,True,,,True,,,True,Mins,Mins,True,Defrost interval counter based on accumulated compressor run time,Defrost interval counter based on accumulated compressor run time,True
+Defrost Interval counter - Elapsed time,Int,Int,True,,,True,,,True,,,True,Mins,Mins,True,Defrost interval counter based on elapsed time,Defrost interval counter based on elapsed time,True
+Main Voltage,uAC,uAC,True,,,True,,,True,,,True,V,V,True,Main power supply voltage,Current main power supply voltage,False

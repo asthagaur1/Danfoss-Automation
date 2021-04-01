@@ -1,0 +1,546 @@
+﻿MenuCode,Name,DefaultValue,Min,Max,Unit,Enum,Help
+R012,Main switch,0,0,1,,"0:Off,1:On","Injection control ON/OFF
+With this setting, refrigeration can be started and stopped. Injection control ON/OFF can also be accomplished with the external Digital input DI switch function. 
+
+
+
+"
+R102,Operation mode,0,0,1,,"0:SH control,1:Valve driver",EKE can be used as superheat controller or as a driver. Select how you want to configure the controller in the system.
+O061,Application select,0,0,5,,"0:ChillerPlate,1:AirCoil frost,2:AirCoil,3:HP A2W,4:HP W2W,5:Gen. SH Ctrl.","Selection of application
+The controller can be defined in various application mode. Here you set the desired application, the controller will auto tune the PI values based on selected application.
+This menu can only be set when regulation is stopped, i.e. “main switch” is set to 0.
+
+
+
+"
+R100,Compressor capacity,0,0,100,%,,"Via bus communication, the compressor capacity is reported for the superheat regulation to adapt actual compressor 0-100%."
+R015,Sensor select,0,0,1,,"0:S3,1:S4","Not valid for EKE 1A.
+Its optional to connect a media sensor. Media sensor will be used to measure media temperature (air or water). Depending on needs it is placed on inlet or outlet of evaporator
+0: S3 media inlet
+1: S4 media outlet"
+R014,Thermostatic mode,0,0,2,,"0:Not Used,1:CutIn/CutOut,2:MTR","Use for controlling media temperature
+0 not used:  No media temperature control, only the superheat is regulated
+1 Cutin/Cutout:  media temperature control based on temperature setpoint and differential as well as regulation of superheat. 
+2 MTR: Modulating thermostat , active evaporator area is adjusted to match cooling demand, reference is temperature setpoint + ½ differential"
+R101,Temperature setpoint,3,-70,70,°C,,This  parameter is to be used if thermostatic mode has been enabled. This is a reference value to maintain the temperature of the media to a desired temperature level.
+R001,Differential,2,0.1,10,K,,When the temperature is higher than the reference plus the set differential the super control will start. It will become deactivated when the temperature drops below the set reference.
+R006,Ext. ref offset max.,0,-50,50,K,,"External contribution to the reference 
+This setting determines how large a contribution is to be added to the set setpoint when the input signal is max."
+R106,Ext. ref offset min,0,-50,50,K,,"External contribution to the reference 
+This setting determines how large a contribution is to be added to the set setpoint when the input signal is min. "
+R009,S2 Correction,0,-10,10,K,,"Correction of signal from S2
+(Compensation possibility through long sensor cable)."
+R010,S3 Correction,0,-10,10,K,,"Correction of signal from S3
+(Compensation possibility through long sensor cable)."
+R105,S4 Correction,0,-10,10,K,,"Correction of signal from S4
+(Compensation possibility through long sensor cable)."
+R107,Pe Correction,0,-5,5,barg,,Correction of signal from Pe
+R108,Pc Correction,0,-5,5,barg,,Correction of signal from Pc
+N100,MTR Tn,1800,20,3600,,,"Integration time for  MTR. Use long integration time  for S3 sensor and short for S4 sensor
+Expert setting for injection function
+The value should only be changed by specially trained staff."
+N101,MTR Kp,3,0.2,20,,,"Amplication factor for MTR
+Expert setting for injection function
+The value should only be changed by specially trained staff."
+O030,Refrigerant,0,0,42,,"0:Undef,1:R12,2:R22,3:R134a,4:R502,5:R717,6:R13,7:R13b1,8:R23,9:R500,10:R503,11:R114,12:R142b,13:R user,14:R32,15:R227,16:R401A,17:R507,18:R402A,19:R404A,20:R407C,21:R407A,22:R407B,23:R410A,24:R170,25:R290,26:R600,27:R600a,28:R744,29:R1270,30:R417A,31:R422A,32:R413A,33:R422D,34:R427A,35:R438A,36:XP10,37:R407F,38:R1234ze,39:R1234yf,40:R448A,41:R449A,42:R452A","Refrigerant setting
+Before refrigeration can be started, the refrigerant must be defined. You can select the following refrigerants:
+1=R12.  2=R22.  3=R134a.  4=R502.  5=R717.  6=R13.  7=R13b1.  8=R23.  9=R500.  10=R503.  11=R114.  12=R142b. 13=User defined. 14=R32. 15=R227.  16=R401A.  17=R507. 18=R402A.  19=R404A. 20=R407C.  21=R407A.  22=R407B.  23=R410A.  24=R170.  25=R290.  26=R600.  27=R600a.  28=R744.  29=R1270. 30=R417A. 31=R422A. 32=R413A. 33=R422D. 34=R427A. 35=R438A. 36=R513A. 37=R407F. 38=R1234ze. 39=R1234yf. 40=R448A. 41=R449A. 42=R452A.
+(Warning: Wrong selection of refrigerant may cause damage to the compressor)."
+O100,Antonie constant A1,9.8,8,12,,,"Antoine constant A for user defined/new refrigerant.  Set parameter O030 = 13, before defining this value"
+O101,Antonie constant A2,-2250,-3000,-1300,,,"Antoine constant B for user defined/new refrigerant.Set parameter O030 = 13, before defining this value"
+O102,Antonie constant A3,253,210,300,,,"Antoine constant C for user defined/new refrigerant. Set parameter O030 = 13, before defining this value"
+O103,Refrigerant min. temperature,-100,-100,100,°C,,"The minimum temperature for  user defined refrigerant. Set parameter O030 = 13, before defining this value"
+O104,Refrigerant max. temperature,100,-100,100,°C,,"The maximum temperature for the  user defined refrigerant. Set parameter O030 = 13, before defining this value"
+N102,Startup mode,0,0,2,,"0:Prop. Ctrl,1:Fix OD w prot,2:Fix OD wo prot","Selection of different startup modes.
+0 = Prop. Ctrl : The controller is programmed for automatic proportional control, OD will change fast based on Te and SH
+ 1 = Start opening degree with protection: Start valve opening degree (OD), where OD can be change due to low superheat, MOP, and other limiters. 
+2: Fixed defined: fixed defined valve opening degree (OD),which is unchanged during startup time. 
+
+This feature is used when it is necessary to open the valve quickly when the compressor turns on , to prevent too low suction pressure."
+N015,Startup time,90,1,600,s,,"Start-up time for superheat control. 
+
+With Proportional startup i.e P-control, auto superheat control will start when superheat is down at reference or when startup time is exceeded.
+
+For Start opening degree with protection or fixed opening degree without protection, the auto superheat control starts once the start up time is expired.
+"
+N104,Min. startup time,15,1,240,s,,"For proportional startup this is the minimum startup time, used for to get stable signal on sensors"
+N017,Startup OD,32,1,100,%,,"Starting opening degree of valve. 
+For startup mode, this OD will be fixed during startup time, except for overrides by SH close, LOP, MOP. etc.
+With Proportional startup, Startup OD"" is starting point for control."""
+N021,SH reference mode,2,0,3,,"0:Fixed sp.,1:Loadap,2:MSS,3:Delta temp","Definition of superheat regulation
+0 = Fixed SH.: fixed superheat setpoint defined by N107 SH fixed SH setpoint"""
+N107,SH fixed setpoint,7,2,40,K,,
+N009,SH max.,9,2,40,K,,
+N010,SH min.,4,2,40,K,,
+N116,SH ref. delta temp. factor,65,20,100,%,,"This feature can be used In those application where fixed superheat is needed at all time. SH fixed setpoint can be varied according to the need of the application
+Warning! Due to the risk of liquid flow the setting should not be lower than approx. 2-4 K. It is recommended to keep this value 2k above the SH closed value."
+N005,SH Tn,90,20,900,s,,Max. value for the superheat reference when using adaptive control
+N019,SH Kp Min.,0.6,0.1,1,,,"Min. value for the superheat reference when using adaptive control
+Warning! Due to the risk of liquid flow the setting should not be lower than approx. 2-4 K. It is recommended to keep this value 2k above the SH closed value."
+N004,SH Kp,1.5,0.1,20,,,"Only relevant  for SH reference mode = Delta temp
+Superheat reference is set as ratio of the  average difference from S3 to Te  "
+N020,SH KpTe,3,0,20,,,"Integration time Tn for superheat control
+If the Tn value is increased the regulation becomes slower. Lowering  the value will create a faster superheat control.Too low value will create superheat fluctuation."
+I066,Minimum OD,0,0,100,%,,"Damping of amplification near reference value
+This setting damps the normal amplification Kp, but only just around the reference value. A setting of 0.5 will reduce the KP value by half.
+The value should only be changed by specially trained staff."
+N032,Maximum OD,100,0,100,%,," Amplification factor Kp for superheat control.
+If the Kp value is reduced the regulation becomes slower. Increasing the Kp value will make faster regulation. Too high value will create superheat fluctuation."
+N117,SH close function,1,0,1,,"0:Off,1:On","This setting determines the valve’s opening degree as a function of the change in evaporating pressure. An increase of the evaporating pressure will result in a reduced opening degree. When there is a drop-out on the low-pressure thermostat during start-up the value must be raised a bit. If there is fluctuation during start-up the value must be reduced a little.
+The value should only be changed by specially trained staff."
+N119,SH close setpoint,2,-5,20,K,,"During superheat control, OD can be set to have a minimum value. This can be useful to overcome a undefined open sequence."
+N120,SH close Tn divide,3,1,5,,,"During superheat control, OD can be set to have a maximum value. The value is set in %.  This feature is beneficial specially for oversized valve."
+N121,SH close Kp factor,1.5,0.5,10,,,"This is a safety feature that prevents the flooding of the  liquid into the compressor.  When the measured superheat goes below the setpoint, the valve will close faster."
+N123,Limit Kp,5,1,20,,,"It is recommended to set the SH close setpoint valve 2k below the Min Superheat.
+Warning! Due to the risk of liquid flow the setting should not be lower than approx. 2 K. "
+N125,Limit Tn,45,20,900,s,,"When superheat is below setpoint, a fast response is needed. Sh close Tn defines how much normal Tn is reduced."
+N126,Min. S4 mode,0,0,1,,"0:Off,1:On",When superheat is below setpoint a fast response is needed. Sh close Kp factor defines how much the normal Sh Kp is increased.
+N127,Min. S4 setpoint,5,-50,60,°C,,"LOP, MOP, S4 min, high condensing temperature protect share the same gain factor (Kp).
+Review the limit settings when adjusting the general SH control."
+N018,Stability,5,0,10,,,"LOP, MOP, S4 min, high condensing temperature protect share the same integration time (Tn).
+Review the limit settings when adjusting the general SH control."
+N129,T0 varians factor,0,0,1,,,"Minimum S4 (media outlet) protection function. If S4 get below setpoint, the valve will close to reduce capacity.
+1 = On: Function is active "
+N130,MOP function,0,0,1,,"0:Off,1:On",Minimum S4 (media outlet) protection setpoint
+N011,MOP setpoint,0,-70,60,°C,,"only relevant for MSS.
+Stability factor for regulation of superheat, only relevant for MSS
+With a higher value the control function will allow a greater fluctuation of the superheat before the reference is changed. "
+N140,LOP function,0,0,1,,"0:Off,1:On","only relevant for MSS. T0 varians factor  defines if variation in suction pressure will influence superheat reference. The sh reference change can be adjusted to the value 0-1 (1= max Te influence and S2, 0 only S2). With often change in suction pressure due compressor start/stop some Te influence on MSS is recommended."
+N141,LOP setpoint,-40,-90,40,°C,,"In order to reduce the strain on the compressor, a maximum
+operating pressure can be set. This usefull at compressor startup and during pulldown period.
+If the pressure comes to this limit the controller will control the valve to provide a lower pressure instead of a low superheat. "
+N142,LOP priority mode,0,0,1,,"0:Off,1:On","MOP setpoint
+Setpoint unit is saturated temperature in evaporator. If the suction pressure reaches the set MOP limit, the valve will close faster irrespective of superheat."
+N131,LOP max. time,120,0,600,s,,"Lowest Operating Pressure function will keep the pressure than LOP setpoint. In case of pressure below setpoint the valve will open faster
+On: function is active"
+N133,High cond. temp protection function,0,0,1,,"0:Off,1:On","Lowest Operating Pressure setpoint
+Setpoint unit is saturated temperature in evaporator."
+N134,High cond. temp. protection setpoint,50,0,100,°C,,"In case of conflict between low pressure and SH close, LOP function can be set to override SH close actions.(could be needed a startup in low ambient temperature)
+On: Lop can override  low superheat 
+The value should only be changed by specially trained staff."
+N135,Comp. speed feed forward Function,0,0,1,,"0:Off,1:On",Maximum time for LOP to override SH close
+N136,Comp FF low cap. point,25,0,100,%,,"Only relevant for EKE 1C. 
+High condensing temperture protection will reduce valve opening when setpoint  is exceeded. This function require Pc transmitter
+On: the function is active."
+N137,Comp FF SH Tn factor,2,1,5,,,"High condensing temperature protection  setpoint.
+Setpoint unit is saturated temperature in condenser."
+N138,Average  OD,0,0,100,,,"Compressor speed feed forward adapt superheat control reaction to compressor speed. In case of low speed, superheat control will react slower (greater integration time Tn). Information on compressor speed is feed vis bus communication (0-100%). 
+On: the function is active"
+N139,Estimated KpTe,0,0,100,,,The  point where sh control is starting to slower. Below this speed superheat control is slower 
+N128,Average delta temperature,0,0,50,,,The maximum add to the integration time. At 0 % the TN  =  normal Tn * Comp FF SH Tn factor
+N143,SH control sensor error action,0,0,2,,"0:Stop,1:Fixed OD,2:Average","Average OD, updated and saved every 3
+hours. After power up the last saved average OD is used as starting average OD."
+N144,Thermostatic sensor error action,0,0,2,,"0:Stop,1:Fixed OD,2:Average","If S3 sensor is used , Eke will calculate an estimated KpTe. If this value is found ok, it be be transferred to N020 Sh KpTe or Heat KpTe"
+N145,Fixed OD during emergency cooling,0,0,100,%,,Diagnostic information.  If S3 is used the average temperature between S3 and Te is captured. Useful to estimate the correct superheat reference being 0.65 x Average delta temperature
+N112,Heat startup time,90,1,600,s,,"If SH control sensor such as  temperature sensor S2 and pressure transmitter Pe has an error then an action can be set  to position the valve OD to the desired level.  
+0 = Stop:  close the valve and Sh control
+1 = Fixed OD: Keep the refrigeration running with setting a fixed valve OD  (N145 Fixed OD during error emergency cooling)
+ 2 = Average: Used  the average OD (calculated as an average of the last hour) to set a reduced OD which will be fixed during error period.
+The value should only be changed by specially trained staff."
+N103,Heat min. startup time,15,1,240,s,,"If Thermostatic sensor  such as  temperature sensor S3 or S4 has an error then an action can be set to position the valve OD to the desired level.  
+0 = Stop:  close the valve and Sh control and temperature control 
+1 = Fixed OD: Keep the refrigeration running  (constant with setting a fixed valve OD  (N145 Fixed OD during error emergency cooling)
+2 = Average: for Cutin/cutout use average on and off time to continue cooling.
+For MTR use reduced OD based average OD
+The value should only be changed by specially trained staff."
+N105,Heat startup OD,32,1,100,%,,relevant if fixed od is selected as option during emergency cooling 
+N106,Heat SH fixed setpoint,7,2,40,K,,"Start-up time for superheat control in heat mode. For startup mode with fixed OD, the OD will be fixed during startup time.
+With Proportional startup, auto superheat control will start when superheat is down at reference or when startup time is exceeded."
+N108,Heat SH max.,9,2,40,K,,"For proportional startup in heat mode this is the minimum startup time, used for to get stable signal on sensors"
+N109,Heat SH min.,4,2,40,K,,"Starting opening degree of valve in heat mode. For startup mode this OD will be fixed during startup time, except for overrides by SH close, LOP, MOP. etc.
+With Proprotional startup Startup OD"" is starting point for control. A higher value will lead to a more aggressive control"""
+N115,Heat SH ref. delta temp. factor,65,20,100,%,,"This feature can be used In those application where fixed superheat in heating mode is needed at all time. SH fixed setpoint can be varied according to the need of the application
+Warning! Due to the risk of liquid flow the setting should not be lower than approx. 2-4 K. It is recommended to keep this value 2k above the SH closed value."
+N110,Heat SH Tn,90,20,900,s,,Max. value for the superheat reference in heat mode when using adaptive control
+N111,Heat SH Kp min.,0.6,0.1,1,,,"Min. value for the superheat reference in heat mode when using adaptive control
+Warning! Due to the risk of liquid flow the setting should not be lower than approx. 2-4 K. It is recommended to keep this value 2k above the SH closed value."
+N113,Heat SH Kp,1.5,0.1,20,,,"Only relevant  for SH reference mode = Delta temp
+Superheat reference is set as ratio of the average difference from S3 to Te.  "
+N114,Heat SH KpTe,3,0,20,,,"Integration time Tn for superheat control in heat mode
+If the Tn value is increased the regulation becomes slower. Lowering  the value will create a faster superheat control.Too low value will create superheat fluctuation."
+N118,Heat SH close setpoint,2,-5,20,K,,"Damping of amplification near reference value in heat mode
+This setting damps the normal amplification Kp, but only just around the reference value. A setting of 0.5 will reduce the KP value by half.
+The value should only be changed by specially trained staff."
+N124,Heat limit Tn,45,20,900,s,," Amplification factor Kp for superheat control in heat mode
+If the Kp value is reduced the regulation becomes slower. Increasing the Kp value will make faster regulation. Too high value will create superheat fluctuation."
+N122,Heat limit Kp,5,1,20,,,"This setting determines the valve’s opening degree as a function of the change in evaporating pressure in heat mode. An increase of the evaporating pressure will result in a reduced opening degree. When there is a drop-out on the low-pressure thermostat during start-up the value must be raised a bit. If there is fluctuation during start-up the value must be reduced a little.
+The value should only be changed by specially trained staff."
+D101,Defrost start low pressure limit,1,0.1,20,barg,,"It is recommended to set the SH close setpoint valve 2k below the Min Superheat.
+Warning! Due to the risk of liquid flow the setting should not be lower than approx. 2 K. "
+D102,Defrost start time,0,0,600,s,,"LOP, MOP, S4 min, high condensing temperature protect share the same gain factor (Kp).
+Review the limit settings when adjusting the general SH control."
+D100,Defrost OD,0,0,100,%,,"LOP, MOP, S4 min, high condensing temperature protect share the same integration time (Tn)
+review the limit settings when adjusting the general SH control."
+D104,Defrost end closed time,0,0,600,s,,"Defrost start is used to empty the evaporator
+The defrost seqvence start with closing the valve. The valve is kept closed until D101 defrost start low pressure limit is reached or ""D102 defrost start time"" is exceeded, then the defrost seqvence will continue."""
+D103,Defrost end OD time,0,0,600,s,,"Defrost start is used to empty the evaporator
+The defrost sequence start with closing the valve. The valve is kept closed until D101 defrost start low pressure limit is reached or D102 defrost start time"" is exceeded, then the defrost sequence will continue."""""
+D105,Defrost end OD,50,0,100,%,,"After defrost start, the defrost is performed. Valve opening is set by D100 Defrost OD and this OD is kept until defrost stop signal""."""
+A100,Low Min S4 delay,60,0,1200,s,,"After the defrost stop signal the is kept closed and kept closed during D104 Defrost end closed time"". Useful during 4 way valve change over"""
+A101,Low Min S4 band,2,0,30,K,,"Before startup of SH contro,l D103 Defrost end OD time and ""D105 Defrost end OD""  can be used overcome the dynamic in the 4way valve  changeover and rapid signal change which make normal SH control unsafe""."""
+A001,Upper temperature alarm,5,0,40,K,,"Before startup of sh control D103 Defrost end OD time"" and ""D105 Defrost end OD""  can be used overcome the dynamic in the 4way valve  change over and rapid signal change which make normal SH control unsafe"""
+A002,Lower temperature alarm,3,0,40,K,,Delay time for low min S4 alarm
+A003,Temperature alarm delay,30,0,90,min,,"S4 has be to be below Min S4 setpoint"" - ""Low min S4 band"" before an low min S4 alarm can be raised."""
+A034,Battery alarm,0,0,1,,"0:Off,1:On","Alarm for upper deviation
+The alarm for too high thermostat temperature is set here. The value is set in Kelvin. The alarm becomes active when the S3 temperature exceeds the actual reference plus A001. (The actual reference can be seen U028)."
+A103,MOP alarm delay,60,0,1200,s,,"Alarm for lower deviation
+The alarm for too low thermostat temperature is set here. The value is set in Kelvin. The alarm becomes active when the S3 temperature drops below the actual reference minus A002.(The actual reference can be seen U028)."
+A104,MOP alarm differential,5,0,40,K,,"Alarm delay
+If one of the two limit values is exceeded, a timer function will commence. The alarm will not become active until the set time delay has been passed. The time delay is set in minutes."
+A105,LOP alarm delay,60,0,1200,s,,"If the backup battery voltage is too high or too low, crtical an alarm will be raised.
+0 = Off: no alarm on battery voltage
+1 = On: Battery voltage is monitored"
+A106,LOP alarm differential,5,0,40,K,,Alarm delay on Maximum operating pressure (MOP)
+A107,Cond.temp alarm delay,120,0,1200,s,,"Te has to be above MOP setpoint + ""MOP alarm differential"" before an high pressure (MOP) alarm can be raised."""""
+A113,Cond. temp.alarm differential,5,0,40,K,,Alarm delay on Low operating pressure (LOP)
+A108,High SH alarm delay,600,0,1800,s,,"Te has be to be below LOP setpoint"" - ""LOP alarm differential"" before an low  pressure (LOP) alarm can be raised."""
+A109,High SH alarm differential,5,0,40,K,,alarm delay on condensing temperature 
+A110,Low SH alarm delay,60,0,1200,s,,Tc has to be above High cond. temp. protection setpoint + Cond. temp.alarm differential before an High condensing temperature alarm can be raised
+A102,Low SH alarm differential,3,0,40,K,,Alarm delay on high superheat
+A112,Lack of capacity alarm delay,0,0,120,min,,Superheat has to be above actual sh reference + High SH alarm differential before an low SH alarm can be raised 
+I020,AI1 configuration 1B/C,0,0,2,,"0:Not Used,1:S3,2:S4",Alarm delay on low superheat
+I021,AI4 configuration 1C,0,0,2,,"0:Not Used,1:ExtRef,2:pc",Superheat has to be below actual sh reference - low SH alarm differential before an low SH alarm can be raised 
+I080,AI4 configuration 1A/B,0,0,1,,"0:Not Used,1:ExtRef","Alarm delay on lack of capacity 
+Valve opening degree is monitored  to observe if the valve capacity can control Sh to desired level. If OD is close to 100 %, Lack of capacity alarm raised."
+I022,AI5 configuration 1C,0,0,2,,"0:Not Used,1:S3,2:S4",select the Analog input
+O002,DI1 configuration,1,0,1,,"0:Not Used,1:Main Switch",select the Analog input
+O022,DI2 configuration,0,0,3,,"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool",select the Analog input
+O037,DI3 configuration,0,0,3,,"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool",select the Analog input
+O013,DO1 configuration,0,0,2,,"0:Alarm,1:LLSV,2:Max cap","DI1 is reserved main switch function
+0 = Not used: no digital switch for main switch
+1= main switch: dry contact for main switch connected to DI1"
+I040,S2 sensor configuration 1C,0,0,6,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS","DI2 can have multiple functions
+0 = Not Used: nothing connected
+1 = Defrost Start: dry contact for defrost start signal
+2 = Preset OD: dry contact for preset of OD
+3 = Heat/Cool: dry contact for set of heat/cool mode"
+I081,S2 sensor configuration 1B,0,0,5,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared",Select the DI type
+I082,S2 sensor configuration 1A,0,0,4,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP","DO1 can multiple functions (Software configurable)
+0 = Alarm: Alarm relay in case of alarm, contact is made on  C and NC terminals.
+1= LLSV: Liquid line solenoid valve. If flow is need and contact is made on C and NO terminals"
+I041,S3 sensor configuration 1C,0,0,6,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",Select the type of temperature sensor 
+I083,S3 sensor configuration 1B,0,0,5,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared",Select the type of temperature sensor 
+I042,S4 sensor configuration 1C,0,0,6,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS",Select the type of temperature sensor 
+I084,S4 sensor configuration 1B,0,0,5,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared",Select the type of temperature sensor 
+I043,Pe transmitter configuration 1C,0,0,14,,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",Select the type of temperature sensor 
+I085,Pe transmitter configuration 1B,0,0,8,,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared",Select the type of temperature sensor 
+I086,Pe transmitter configuration 1A,0,0,7,,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage",Select the type of temperature sensor 
+I045,Pe ratio. low,10,3,97,%,,Select the type of pressure transmitter 
+I046,Pe ratio high,90,3,97,%,,Select the type of pressure transmitter 
+I047,Pe voltage low 1C,0,0,10,V,,Select the type of pressure transmitter 
+I087,Pe voltage low 1A/B,0,0,5,V,,"only relevant for OEM ratio pressure tranmitter. Define the ratio at minimum pressure"""""
+I048,Pe voltage high 1C,10,0,10,V,,"only relevant for OEM ratio pressure transmitter. Define the ratio at maximum pressure"""""
+I088,Pe voltage high 1A/B,5,0,5,V,,Define pressure transmitter voltage low
+I049,Pe current low,4,0,20,mA,,Define pressure transmitter voltage low
+I050,Pe current high,20,0,20,mA,,Define pressure transmitter voltage high
+O020,Pe transmitter min.,-1,-1,200,barg,,Define pressure transmitter voltage high
+O021,Pe transmitter max.,12,-1,200,barg,,USE only for non Danfoss/ OEM current signal pressure transmitter. Define the lower current range for Pe pressure transmitter
+I044,Pc transmitter configuration 1C,0,0,14,,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",USE only for non Danfoss/ OEM current signal pressure transmitter. Define the higher current range for Pe pressure transmitter
+I023,Pc ratio. low,3,3,97,%,,"Working range for pressure transmitter
+Depending on the application a pressure transmitter with a given working range is used. This working range (say, -1 to 12 bar g) must be set in the controller. The min. Gauge pressure value is set."
+I024,Pc ratio high,97,3,97,%,,The max. Gauge pressure value is set for the selected Pe pressure transmitter.
+I025,Pc voltage low,0,0,10,V,,Select the type of pressure transmitter 
+I026,Pc voltage high,10,0,10,V,,"only relevant for OEM ratio. Define the ratio at minimum pressure"""""
+I038,Pc current low,4,0,20,mA,,"only relevant for OEM ratio"". Define the ratio at maximum pressure"""
+I039,Pc current high,20,0,20,mA,,USE only for non Danfoss/ OEM voltage pressure transmitter. Define the lower voltage range for Pc pressure transmitter
+O047,Pc transmitter min.,-1,-1,0,barg,,USE only for non Danfoss/ OEM  voltage pressure transmitter. Define the higher voltage range for Pc pressure transmitter
+O048,Pc transmitter max,34,1,200,barg,,USE only for non Danfoss/ OEM current signal pressure transmitter. Define the lower current range for Pc pressure transmitter
+I067,Valve configuration,0,0,32,,"0:no valve,1:UserDef,2:ETS 12C,3:ETS 24C,4:ETS 25C,5:ETS 50C,6:ETS 100C,7:ETS 6,8:ETS 12.5,9:ETS 25,10:ETS 50,11:ETS 100,12:ETS 250,13:ETS 400,14:KVS 2C,15:KVS 3C,16:KVS 5C,17:KVS 15,18:KVS 42,19:CCMT 0,20:CCMT 1,21:CCMT 2,22:CCMT 4,23:CCMT 8,24:CCMT 16,25:CCMT 24,26:CCMT 30,27:CCMT 42,28:CCM 10,29:CCM 20,30:CCM 30,31:CCM 40,32:CTR 25",USE only for non Danfoss/ OEM current signal pressure transmitter. Define the higher current range for Pc pressure transmitter
+I027,Valve motor type,0,0,1,,"0:Unipolar,1:Bipolar",The min. Gauge pressure (barg) value is set for the selected Pc pressure transmitter.
+I028,Valve drive current,10,10,1000,mA,,The max. Gauge (barg) pressure value is set for the selected Pc pressure transmitter.
+I029,Valve step positioning,0,0,2,,"0:Fullstep,1:Halfstep,2:Auto","Select the type of Danfoss stepper motor valve from the list.   For non Danfoss valve  define I067 =1 i.e UserDef and set the motor parameters i.e I027, I028,I029, I030, I031, I032,I061, I063,I077, I064,I065
+If you want to correct a danfoss given valve profile then first the relevant valve and then select user def"
+I030,Valve total steps,1,1,8000,stp,,"Only for non Danfoss stepper motor valve. 
+Define type of motor used in the valve, such as Unipolar or Bipolar. Basically unipolar valve will have 5-6 wires coming out of its coil whereas bipolar will have 4 wires coming out of its motor."
+I031,Valve speed,10,10,400,PPS,,Only for non Danfoss stepper motor valve. Set the current requirement of the motor in mA Peak.  Note: 1mA RMS = 1.41 mA Peak
+I032,Valve start speed,20,1,100,%,,"Only for non Danfoss stepper motor valve. 
+Define the valve step positioning. In general, Unipolar valve are positioned in halfstep whereas bipolar are position  at Full step. "
+I061,Valve emergency speed,100,50,200,%,,"Only for non Danfoss stepper motor valve. 
+Define the total number of steps. Remember to set if the valve should position in Half or Full step in para I029"
+I062,Valve acceleration current,100,100,150,%,,"The valve will be driven with high, low or balanced speed as set in this parameter. Note: higher speed will provide low torque to the motor, on the other hand low speed will provide the higher torque. There should be balance between speed and torque depending on the application. Unit is Pulses per second, a pulse is either a full or a half step as defined in I029 Valve step positioning"""""
+I063,Valve acceleration time,10,10,150,ms,,"Only for non Danfoss stepper motor valve. 
+This feature is useful with high valve speeds. The first will be taken with a lower speed than normal to avoid too big acceleration of the motor.
+Make sure to select a start speed which is recommended for the valve
+Unit is % taken from normal speed."
+I077,Valve holding current,0,0,300,%,,"In case of emergency i.e power loss  valve can be driven with high or low speed. 
+Unit is % taken from normal speed"
+I064,Valve step mode,3,0,4,,"0:Full,1:Half,2:1/4,3:1/8,4:1/16","Only for non Danfoss stepper motor valve. 
+To give higher/lower torque in the start and stop sequence, the motor currrent can be adjusted. 
+Unit is % taken from normal current."
+I065,Valve duty cycle,100,5,100,%,,"Only for non Danfoss stepper motor valve.  
+Define how long time  the start/stop sequence with acceleration/deceleration. "
+I069,Valve OD during stop,0,0,100,%,,"Only for non Danfoss stepper motor valve.  
+Holding current is too secure the actual position. Not all valve designs require holding current. heck with the valve manufacturer if not mentioned on their literature."
+I070,Start backlash,0,0,5,%,,"Only for non Danfoss stepper motor valve.  
+Valve stepper stepper mode define the resolution of current current through use of microstepping. For Bipolar motors 1/8 is recommend to have smooth and powerful operation.
+0 = Full: only 1 current level pr step
+1 = Half: 2 current levels (microsteps) pr full step
+2 = 1/4: 4 current levels (microsteps) pr full step
+3 = 1/8: 8 current levels (microsteps) pr full step
+4 = 1/16: 16 current levels (microsteps) pr full step"
+I071,Compensation backlash,0,0,5,%,,"Only for non Danfoss stepper motor valve. 
+Useful if continous operation of the valve is not allowed. Most valve design don't have continous operation constraint. 
+Check with the valve manufacturer if not mentioned on their literature."
+I072,Overdrive,4,0,20,%,,"In some applications, i.e reversible system,  the valve must remain open when the controller is off. This can be done by setting a fixed opening degree. When normal control is switched off with the main switch, the valve will keep this opening degree. "
+I073,Overdrive enable OD,0,0,100,%,,"When the valve open from closed position, the start backlash value decides how much to overdive in % of the full stroke.
+This can be useful to overcome a undefined open sequence
+Note: setting this value to Zero means disabling the feature."
+I074,Overdrive block time,10,0,1440,min,,"When the valve change direction compensation backlash is used to overcome turning play. In the direction more step is added. Unit is in % of the full stroke  
+Note: setting this value to Zero means disabling the feature."
+I075,Valve motor decay mode,0,0,2,,"0:Fast,1:Slow,2:Mixed","Overdrive is performed when the valve goes to closed postion. Extra steps is taken to secure the valve is closed. This is useful to regain lost stepps during operation. I073 Overdrive enable OD and I174 Overdrive block time can influence it override is done 
+Note: setting this value to Zero means disabling the feature."
+I076,Valve excitation time after stop,10,0,1000,ms,,"To do a overdrive, OD has to be higher than Overdrive enable OD during operation. This is useful feature to avoid frequent overdrive specially when the valve is most of the time operating at low OD%."
+I078,Preset OD,50,0,100,%,,"A timer protects the system from frequent overdriving , by preventing repeated overdrive within a settable timer after a overdrive is performed. 
+The default value is Zero meaning that the overdrive block timer is OFF."
+I068,Valve neutral zone,0.5,0,5,%,,only consider to change to slow decay if the cable distance between the controller and the valve is longer i.e 30m and issue with step loss because of EMC 
+I090,Ext ref. configuration 1A,0,0,2,,"0:Not Used,1:V->SH,2:V->Max OD",After last step before going into holding mode full current is kept for some time
+I089,Ext ref. configuration 1B,0,0,6,,"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.",The (software configurable DI can  be used to force a specific OD to valve.
+O010,Ext ref. configuration 1C,0,0,9,,"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.,7:mA->SH,8:mA->Max OD,9:mA->Temp",The feature is useful to prevent the unnecessary movement of the valve because of  fluctuating signal from the master control. This feature will  maintain the lifetime of the valve. In the neutral zone  there is no valve movement. The valve will only move if the signal from the master controller is higher/lower than the actual position ± Valve neutral zone .
+I035,Ext ref. voltage high,10,0,10,V,,Select the type of the external reference signal 
+I036,Ext ref. current low,4,0,20,mA,,Select the type of the external reference signal 
+I037,Ext ref. current high,20,0,20,mA,,Select the type of the external reference signal 
+I034,Ext ref voltage low,0,0,10,V,,Define the external  maximum  reference voltage used as analogue signal
+I091,Driver reference configuration 1B,0,0,2,,"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps",Define the external minimum reference current used as analogue signal 
+I033,Driver reference configuration 1C,0,0,3,,"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps,3:Current to OD",Define the external maximum  reference current used as analogue signal 
+I079,AI4 lowpass bandwidth,5,0,5,,"0:None,1:4 Hz,2:2 Hz,3:1 Hz,4:1/2 Hz,5:1/5 Hz",Define the external  minimum reference voltage used as analogue signal 
+O011,Language,0,0,0,,"0:English,1:Chinese,2:Portuguese,3:Russian,4:Spanish,5:French,6:German,7:Italian",Select the type of the external reference signal 
+K004,Login timeout,10,1,120,min,,Select the type of the external reference signal 
+K006,Backlight timeout,2,0,120,min,,"External signal can be filtered using a lowpass filter. Lowpass cutoff freqvency is defined. 
+0 = None: no filtering applied'
+1 = 4 Hz: signal uptill a freq of 4 hz will pass
+2 = 2 Hz | 3 = 1 Hz | 4 = 1/2 Hz
+5 = 1/5 Hz signal uptil a freqvency of 0.2Hz will pass"
+O005,Password daily,100,0,999,,,Use only in MMI display. Select your choice of system language from the given list
+K002,Password service,200,0,999,,,After some time of inactivity on the local display the user is logout to secure that a third person don't make change based on an other person login.
+K003,Password commission,300,0,999,,,After some time of inactivity on the local display the backlight is switched off
+K005,Contrast,40,0,100,%,,"Use only for MMI display. Set the password for the user , all parameters can be seen a few can be changed on using this password"
+K001,Brightness,80,0,100,%,,"Use only for MMI display. Set the password for the service User. All parameters can be seen, most parameters can be can be changed on using this password."
+R005,Display unit,0,0,1,,"0:MET,1:IMP",Use only for MMI display. Set the password for the commissioning User . All the parameters can be seen and changed.
+K010,Opening degree unit,0,0,1,,"0:Percentage,1:Step",Use only in MMI display. Adjustable LCD contrast of the MMIGRS
+G001,Controller adr.,1,1,127,,,Used for MMI display to set the LCD brightness of the MMIGRS
+G003,CAN bus min. update interval,5,0,20,s,,"Change of the unit of measurement
+0= METRIC temperature unit in display °C and  pressure unit is bar, barg,
+1= IMPERIAL temperature unit in display °F pressure unit in display  psia, psig
+Note: The unit used in MODBus are °C and bar g
+"
+G004,Modbus min. update interval,5,0,60,s,,"Read the unit of  opening degree of the valve
+0 = Percent: OD % 
+1= step: OD in number of steps"
+G005,Modbus baudrate,6,0,8,,"0:0,1:1200,2:2400,3:4800,4:9600,5:14400,6:19200,7:28800,8:38400",The unique device address of the controller. This is use when multiple controller are used in a network as a daisy chain. 
+G008,Modbus mode,1,0,2,,"0:8N1,1:8E1,2:8N2",When measurement signal/ control data is transferred via CAN bus all value most update within the CAN bus min. update interval
+G007,Modbus mapping,0,0,1,,"0:Operation,1:Configuration",When measurement signal/ control data is transferred via MODbus all value most update within the MODbus min. update interval
+G002,Can baudrate,1,0,5,,"0:20k,1:50k,2:125k,3:250k,4:500k,5:1M",Set the required modbus RS 485 RTU baudrate ( all units on bus must have same baudrate)
+G012,Signal sharing Pe,0,0,1,,"0:Off,1:On",Set the required modbus RS 485 RTU data bit ( all units on bus must have same mode)
+G013,Signal sharing Pc,0,0,1,,"0:Off,1:On","To facilitate fast read for the master controller a selected number of parameters can be grouped to fit into one telegram
+0=operation: groups is defined ready to write or read
+1= setup: Groups of parameters can be configured"
+G014,Signal sharing S3,0,0,1,,"0:Off,1:On",Set the device baud rate on the CAN network  ( all unit on bus must have same baudrate)
+U118,Operation status,0,0,20,,"0:Power up,1:Stop,2:Manual,3:Service,4:Safe State,5:Defrosting,6:Valve driver,7:Ther. Cutout,8:Emer. cooling,9:SH ctrl err.,10:SH start Pctrl,11:SH start fix OD,12:SH ctrl normal,13:SH ctrl MTR,14:SH ctrl LOP,15:SH ctrl minPC,16:SH ctrl MOP,17:SH ctrl maxPc,18:SH ctrl SH cl,19:SH ctrl minS4,20:SH ctrl Tc","sharing of an evaporating  pressure transmitter with multiple controllers  via CANbus
+0=Off :  the local sensor is not shared
+1=On: the local sensor is shared with multiple controllers"
+U022,Actual SH reference,0,0,100,K,,"sharing of an condenser pressure transmitter with multiple controllers  via CANbus
+0=Off :  the local sensor is not shared
+1=On: the local sensor is shared with multiple controllers"
+U021,Actual superheat,0,0,100,K,,"sharing of an S3 media inlet  with multiple controllers  via CANbus
+0=Off :  the local sensor is not shared
+1=On: the local sensor is shared with multiple controllers"
+U024,Actual OD,0,0,100,%,,Read actual operation status
+U100,Actual step,0,0,10000,stp,,Read the actual superheat reference
+U028,Actual temperature reference,0,0,100,K,,Read measured superheat at suction line
+U020,S2 suction pipe,-50,-50,150,°C,,Read the actual valve opening degree in %
+U027,S3 media inlet,-50,-50,150,°C,,Read the actual valve opening degree in step
+U016,S4 media outlet,-50,-50,150,°C,,"Read actual temperature reference
+(active setpoint + any contribution from external signal)"
+U025,Pe evaporator,0,-1,200,barg,,Read the temperature of the S2 Suction line sensor measured at the evaporator outlet
+U026,Te saturated evaporation temperature,0,0,100,°C,,Read  temperature of  the S3  sensor at the media inlet
+U104,Pc condenser,0,-1,200,barg,,Read  temperature of  the S4 sensor at the media outlet
+U105,Tc saturated condenser temperature,0,0,100,°C,,Read evaporating pressure measured by pressure transmitter at evaporator outlet
+U101,Actual battery voltage,0,0,30,V,,Read saturated evaporating temperature
+U058,Liquid line solenoid valve,0,0,1,,"0:Off,1:On",Read condensing pressure
+U114,Alarm relay,0,0,1,,"0:Off,1:On",Read saturated  condensing temperature
+U007,External reference signal,0,0,12,V,,Read the actual  voltage of the battery connected to the  backup battery terminals of the controller
+U006,External reference signal,0,0,24,mA,,read the status of Liquid line solenoid valve
+U107,Act. ext. ref. temperature offset,0,0,40,K,,read the status of alarm relay
+U108,Act. ext. ref. SH offset,0,0,40,K,,Read value of external voltage signal 
+U124,Act. ext.ref. max. OD,0,0,100,%,,Read value of external voltage signal 
+U109,DI main switch,0,0,1,,"0:Off,1:On",read the external signal contribution to temperature reference
+U110,DI defrost start,0,0,1,,"0:Off,1:On",Read the external signal contribution to sh reference
+U111,DI preset OD,0,0,1,,"0:Off,1:On",OD when external signal is at max
+U112,DI heating,0,0,1,,"0:Off,1:On",read the status of DI main switch signal
+U018,Thermostat cut-in time,0,0,16300,min,,read the status of DI defrost start signal
+U119,Thermostat average cut-in time,15,0,16300,min,,read the status of DI preset OD signal
+U120,Thermostat average cut-out time,15,0,16300,min,,read the status of DI heating signal
+U122,Average temperature,0,0,100,°C,,Read the ongoing cut-in time for the thermostat or the duration of the last completed cut-in.
+U121,Average SH,0,0,100,K,,Read the average cutin time taken over the 5 latest cutin
+O018,Manual mode,0,0,1,,"0:Off,1:On",Read the average cutout time taken over the 5 latest cutin
+B101,Manual mode timeout,60,0,3600,s,,Average temperature on the thermostat sensor
+O045,Manual OD,0,0,100,%,,"Average superheat, only updated when superheat control is active"
+B100,Manual step,0,0,8000,stp,,"Manual control of outputs
+For service purposes the individual relay outputs and valve can be controlled.
+0=OFF:  No override
+1=ON: valve relay can be controlled.
+Going into manual mode no output will change from the current position/OD."
+B104,Manual homing,0,0,1,,"0:Off,1:On",Manual mode time out and go to off when  Manual mode timeout is exceeded. Setting to zero no timeout will happen.
+B103,Manual relay DO1,0,0,1,,"0:Off,1:On","This feature is basically use in a service mode to drive the stepper motor valve to the desired level.  
+The desired valve OD is provided in OD%. "
+B007,Apply defaults,0,0,3,,"0:None,1:Factory,2:EKD 316 like,3:EKC 316 like","This feature is basically use in a service mode to drive the stepper motor valve to the desired level.  
+The desired valve OD is provided in steps??  "
+B105,Enter service state,0,0,1,,"0:Off,1:On","This feature is basically use in a service mode. On enabling Manual homing the valve will close to zero OD% and overdrives it in the closing direction.
+1=on: start the homing, when done the value will revert to off."
+w03,Temperature difference,10,3,20,K,,"This feature is basically use in a service mode to drive the DO1 to the desired position.  
+0= off: alarmrelay contact on C and NO, LLSV contact on C  and NC
+1= on: alarmrelay contact on C and NC, LLSV contact on C  and NO"
+w04,Valve Dim,40,30,70,%,,"On setting the Apply defaults, the original factory default values corresponds to its software version will be loaded.  Warning: All the customized settings will deleted and cannot be recovered on setting this value. The value will revert back to Zero once factory setting has been applied."
+w05,Heat valve dim,40,10,100,%,,"EKE has a service mode which is a simple and direct way to control the valve. MMIGRS is need to run this mode
+1=ON: EKE  will restart and go into the service mode. It will stay in the service mode until the service mode is cancel by the user on the MMIGRS"
+w06,Heat temperature difference,10,3,20,K,,Give in  typical temperature difference for cooling operation (media in- evap. temp.) S3-Te in typical condition where desired SH is established.
+X001,Modbus Heating,0,0,1,,"0:Off,1:On",Give the designed OD for normal cooling  operation at steady state.  Take the help of Coolselector 2 to caluclate the load if needed.
+X002,Modbus preset OD,0,0,1,,"0:Off,1:On",Give the designed OD for normal heating operation at steady state. Take the help of Coolselector 2 to caluclate the load if needed.
+X003,Modbus defrost start,0,0,1,,"0:Off,1:On",Give in  typical temperature difference for heating operation (media in- evap. temp.) S3-Te in typical condition where desired SH is established
+X004,Modbus main switch,0,0,1,,"0:Off,1:On","Modbus communication is needed for this feature
+Enable or disable the feature."
+X005,Bus shared Pc,0,-1,200,barg,,"Modbus communication is needed for this feature
+Enable or disable the feature.
+
+"
+X006,Bus shared  Pe,0,-1,200,barg,,"Modbus communication is needed for this feature
+Enable or disable the feature.
+"
+X007,Bus shared S2,0,-200,200,°C,,"Modbus communication is needed for this feature
+Enable or disable the feature."
+X008,Bus shared S3,0,-200,200,°C,,"Pc Condenser pressure signal shared to EKE via modbus in the unit barg, if used signalmust be updated constantly"
+X009,Bus shared S4,0,-200,200,°C,,"Pe Suction pressure signal shared to EKE via modbus in the unit barg,  if used signalmust be updated constantly"
+X010,Bus ext. ref.,0,-100,100,,,"S2 suction pipe temperature signal shared to EKE via modbus in the unit °C, if used signalmust be updated constantly"
+X011,event log Enabled,1,0,1,,"0:Off,1:On","S3 media inlet temperature signal shared to EKE via modbus in the unit °C, if used signalmust be updated constantly"
+X012,event log Clear,0,0,1,,,"S4 media outlet pipe temperature signal shared to EKE via modbus in the unit °C, if used signalmust be updated constantly"
+X013,Life time,0,0,2147483647,h,,"External signal shared to EKE via modbus in the unit %, if used signalmust be updated constantly"
+X014,Maximum execution time,0,0,1000,ms,,
+X015,Number of active alarms,0,0,100,,,
+X016,Alarm notification,0,0,1,,"0:No alarms,1:Alarms active",
+X040,Alarm status,0,0,1,,"0:Off,1:On",
+X017,Warning status,0,0,1,,"0:Off,1:On",Number af active alarms
+X018,Error status,0,0,1,,"0:Off,1:On",One or more active alarms or warrings
+X020,Main switch status,0,0,1,,,active at one or more active application alarms
+U102,Injection state,0,0,4,,"0:Off,1:Startup,2:Injection,3:Error,4:Ther. Cutout",active at one or more active warnings
+U117,Controller state,0,0,5,,"0:Powerup,1:Stop,2:Operation,3:Manual,4:Service,5:Safe",active at one or more active errors
+U103,Injection details,0,0,12,,"0:Off,1:SH ctrl normal,2:SH ctrl MTR,3:SH ctrl LOP,4:SH ctrl MOP,5:SH ctrl minPC,6:SH ctrl maxPc,7:SH ctrl SH cl,8:SH ctrl minS4,9:Start P.Control,10:Start Fixed,11:Manual,12:SH ctrl Tc",
+U116,Actual operation,0,0,5,,"0:None,1:Defrosting,2:Thermostat,3:Injection,4:Driver,5:Emer. cooling",Read state of injection operation
+X021,Valve Version High,0,0,65535,,,Read main state machine state 
+X022,Valve Version Low,0,0,65535,,,Read detailed info on SH control incl limitors
+X023,Valve Version Major,0,0,65535,,,Read consolidated controller status
+X024,Valve Version Minor,0,0,65535,,,
+X025,Valve Date High,0,0,65535,,,
+X026,Valve Date Low,0,0,65535,,,
+X027,Valve current position,0,0,10000,steps,,
+X028,Valve target position,0,0,10000,steps,,
+X029,Valve current state,0,0,14,,"0:Init,1:Config,2:Init Close,3:Auto,4:Manual,5:Service,6:Overdrive,7:Man. Overdrive,8:Emer Close,9:Emer Close Comp.,10:Batt Disable,11:Reset,12:Stepper Fault,13:OC Fault,14:Voltage too low",
+X030,Start overdrive command,0,0,3,,"0:IDLE,1:START,2:CMD_SENT,3:RUNNING",Read the valve status
+X031,Service number of steps,0,-32767,32767,,,Read the valve targeted position
+X032,EKE 1V Variant,2,0,2,,"0:EKE 1A,1:EKE 1B,2:EKE 1C",
+X033,Power fault enabled,1,0,1,,"0:Off,1:On",
+X034,Stepper fault enabled,1,0,1,,"0:Off,1:On",input the number of steps which must be taken in service mode
+X035,Communication fault enabled,1,0,1,,"0:Off,1:On",
+X036,Open circuit fault enabled,0,0,1,,"0:Off,1:On",
+X054,Max. diff. between coil current and setting,80,0,100,,,
+X055,Max. diff. between coil currents,40,0,100,,,
+X037,User controls LEDs,0,0,1,,"0:Off,1:On",
+X038,Green LED pattern,0,0,65535,,,
+X039,Red LED pattern,0,0,65535,,,
+X041,AI1 configuration (internal),0,0,2,,"0:Not Used,1:S3,2:S4",Set the function to control behavior of LEDs at the powerport
+X042,AI4 configuration (internal),0,0,2,,"0:Not Used,1:ExtRef,2:pc","Bit code to control behavaior of green LED at  thepower port
+The period is 2 sec, the parameter define the on time.
+ (ex: 0x0FF = 1 sec off pause, 1 sec on = 1/2 Hz, 0x0F0F = blink every sec = 1 Hz)"
+X043,AI5 configuration (internal),0,0,2,,"0:Not Used,1:S3,2:S4","Bit code to control behavaior of red LED at the power port
+The period is 2 sec, the parameter define the on time.
+ (ex: 0x0FF = 1 sec off pause, 1 sec on = 1/2 Hz, 0x0F0F = blink every sec = 1 Hz)"
+X044,S2 sensor configuration (internal),0,0,6,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS","AI1 can have multiple functions
+0 = Not Used: nothing connected 
+1 = S3: S3 media inlet connected
+2 = S4: S4 media outlet connected"
+X045,S3 sensor configuration (internal),0,0,6,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS","AI4 can have multiple functions
+0 = Not Used: nothing connected
+1 = ExtRef: External reference signal connected
+2= Pc : Condenser pressure transmitter connected(only relevant for EKE 1C)
+"
+X046,S4 sensor configuration (internal),0,0,6,,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS","AI5 can have multiple functions
+0 = Not Used: nothing connected
+1 = S3: S3 media inlet connected
+2 = S4: S4 media outlet connected"
+X047,Pe transmitter configuration (internal),0,0,14,,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",S2 is the temperature sensor mounted at the evaporator outlet.  This is the main sensor used for superheat calculation. Define the type of Danfoss Temperature sensor / OEM temperature sensor
+X048,Pe voltage low (internal),0,0,10,V,,S3 is the temperature sensor that measures the media inlet temperature. Define the type of Danfoss Temperature sensor / OEM temperature sensor
+X049,Pe voltage high (internal),10,0,10,V,,S4 is the temperature sensor that measures the media outlet temperature. Define the type of Danfoss Temperature sensor / OEM temperature sensor
+X050,Pc transmitter configuration (internal),0,0,14,,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current",Pe is the Pressure Transmitter mounted at the evaporator outlet.  This is the main Pressure transmitter used for superheat calculation. Define the type of Danfoss Pressure Transmitter / OEM Pressure Transmitter
+X051,Ext ref. configuration (internal),0,0,9,,"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.,7:mA->SH,8:mA->Max OD,9:mA->Temp",USE only for non Danfoss/ OEM ratiometric voltage pressure transmitter. Define the lower voltage range for Pe pressure transmitter
+X052,Driver reference configuration (internal),0,0,3,,"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps,3:Current to OD",USE only for non Danfoss/ OEM ratiometric voltage pressure transmitter. Define the higher voltage range for Pe pressure transmitter
+X053,DI3 configuration (internal),0,0,3,,"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool",Pc measures the saturated Pressure in condenser. Define the type of Danfoss Pressure Transmitter / OEM Pressure Transmitter.
+E100,Valve configuration error,0,0,1,,"0:Off,1:On","define how the external refernce signal is used
+0 = Not Used: no external signal
+1 = mA->Temp: External current signal offset temperature reference
+2 = V->Temp:External voltage signal offset temperature reference
+3 = mA->SH: External current signal offset superheat reference
+4 = V->SH: External voltage signal offset superheat reference
+5 = Modbus->SH : Modbus give offset to superheat reference 
+6 = Modbus->T: Modbus give offset to temperature reference "
+E101,Configuration error,0,0,1,,"0:Off,1:On","EKE can be used as a Valve driver using analogue signal or via Modbus signal. Note: If master controller has possibility to use both voltage and a current signal then use current signal as a prefered signal.
+0 = Voltage to OD:  valve OD controlled via voltage signal
+1 = Current to OD  valve OD controlled via current signal
+ 2 = Modbus to OD: Valve OD controlled over modbus (unit %)
+3 = Modbus to steps: Valve OD controlled over modbus (unit %)"
+E102,Sensor supply overload,0,0,1,,"0:Off,1:On","only relevant for EKE 1A
+DI3 can multiple functions
+0 = Not Used: nothing connected
+1 = Defrost Start: dry contact for defrost start signal
+2 = Preset OD: dry contact for preset of OD signal
+3 = Heat/Cool: dry contact for set of heat/cool mode"
+E024,S2 suction pipe sensor error,0,0,1,,"0:Off,1:On",One or more valve configuration errors is blocking operation of stepper valve. Check the other active alarms to identify the valve configuration problem
+E025,S3 media inlet sensor error,0,0,1,,"0:Off,1:On",One or more configuration errors is blocking operation to start. Check the other active alarms to identify the configuration problem
+E026,S4 media outlet sensor error,0,0,1,,"0:Off,1:On","Sensor supply is overloaded. The output is set off until the load is reduced, Check for short to COM  "
+E020,Pe evaporator transmitter error,0,0,1,,"0:Off,1:On","S2 suction pipe sensor signal is found to be out of out of range, please check connection and I040 S2 sensor configuration"
+E121,Pc condenser transmitter error,0,0,1,,"0:Off,1:On","S3 media inlet sensor signal is found to be out of  range, please check connection and I041- S3 sensor configuration."
+E019,External reference signal alarm,0,0,1,,"0:Off,1:On","S4 media outlet sensor signal is found to be out of out of range, please check connection and I042 S4 sensor configuration"
+E011,No refrigerant selected,0,0,1,,"0:Off,1:On","Pe evaporator transmitter  signal is found to be out of out of range, please check connection and I043 Pe transmitter configuration"
+E103,No valve configured,0,0,1,,"0:Off,1:On","Pc transmitter  signal is found to be out of out of range, please check connection and I044 Pc transmitter configuration"
+E122,Shared signal timeout,0,0,1,,"0:Off,1:On","External offset/reference signal is out of range, please check connection and O010 Ext ref configuration and relevant high/low settings"
+E128,Ext. ref. via modbus timeout,0,0,1,,"0:Off,1:On","No refrigerant is selected, configure the correct refrigerant. See O030 Refrigerant"""""
+A997,Battery critical low voltage,0,0,1,,"0:Off,1:On",No valve selected. Please configure the correct valve in I067 Valve configuration
+A996,Battery too high voltage,0,0,1,,"0:Off,1:On",A needed control / sensor /  reference signal via CAN bus is missing. Check CAN bus connection and operation of other CAN bus controllers.
+W001,Battery low voltage,0,0,1,,"0:Off,1:On",A needed control / sensor /  reference signal via Modbus is missing. Check Modbus connection and operation of other Modbus controllers.
+A994,Low S4 media outlet temperature,0,0,1,,"0:Off,1:On","Battery voltage is found to be critical low, valve will not be closed in case of power fail. Replace battery /check connections"
+A993,High temperature,0,0,1,,"0:Off,1:On",Battery voltage is too high. Valve will not be closed in case of power fail. Replace battery with one of correct type (18-24V.).
+A992,Low temperature,0,0,1,,"0:Off,1:On","Battery voltage is found to be low, replace battery."
+A991,High evaporation pressure (MOP),0,0,1,,"0:Off,1:On",Media out temperature is below alarm limit and alarm delay has expired.
+A990,Low evaporation pressure (LOP),0,0,1,,"0:Off,1:On",Thermostat temperature is higher than alarm limit and alarm delay has expired
+A989,High condensing temperature,0,0,1,,"0:Off,1:On",Thermostat temperature is lower than alarm limit and alarm delay has expired
+A988,High superheat,0,0,1,,"0:Off,1:On",Pe / Te is higher than alarm limit and alarm delay has expired.
+A987,Low superheat,0,0,1,,"0:Off,1:On",Pe / Te is lower than alarm limit and alarm delay has expired.
+A986,Lack of valve capacity,0,0,1,,"0:Off,1:On",Pc / Tc is higher than alarm limit and alarm delay has expired.
+W002,Standby mode,0,0,1,,"0:Off,1:On",Superheat is higher  than alarm limit and alarm delay has expired.
+W003,Manual control,0,0,1,,"0:Off,1:On",Superheat is below alarm limit and alarm delay has expired.
+E104,SH reference too close to SH close setpoint,0,0,1,,"0:Off,1:On",Valve is running close to full capacity for long time. 
+E105,LOP setpoint too close to MOP setpoint,0,0,1,,"0:Off,1:On",The controller is standby due R012 Main switch and/or DI main switch is off
+E129,No sensor configured for S4,0,0,1,,"0:Off,1:On","The controller is manual control, no automatic control is active and many alarm are disabled"
+E106,No sensor configured for S3,0,0,1,,"0:Off,1:On","SH reference can come to close to the SH close safety functions et point, which can result in unstable operation. Keep min. 0,5K  separation between minimum SH reference and N119 SH close set point. "
+E107,SH min higher than SH max,0,0,1,,"0:Off,1:On",The set point for the 2 pressure safety function Lop and Mop is to close. Keep min. 5K  separation between N011 MOP set point and N140 LOP set point
+E108,OD min higher than OD max,0,0,1,,"0:Off,1:On","Operation is configured to use S4 (media out) sensor, but no S4 sensor is configured,  Correct I020 AI1 configuration or AI5 configuration and check I042 S4 sensor configuration"
+E109,No transmitter configured for Pc,0,0,1,,"0:Off,1:On","Operation is configured to use S3 (media in) sensor, but no S3 sensor is configured,  Correct I020 AI1 configuration or AI5 configuration and check I041 S3 sensor configuration"
+E114,Check valve step mode vs positioning,0,0,1,,"0:Off,1:On",N010 SH min. is set higher than N009 SH max..
+E115,Valve speed too fast,0,0,1,,"0:Off,1:On",I066 Minimum OD is set higher than N032 Maximum OD
+E116,Valve speed to slow,0,0,1,,"0:Off,1:On","Operation is configured to use Pc transmitter, but no Pc transmitter is configured. Correct I022 AI4 configuration and check I044 Pc transmitter configuration"
+E117,Valve emergency speed too fast,0,0,1,,"0:Off,1:On","With I064 Valve step mode set to full"" and I029 Valve step positioning set Half step operation is possible, Correct either I029 or I064"""
+E118,Valve emergency speed too slow,0,0,1,,"0:Off,1:On","Number of micro steps/sec is too high (higher than 12800 micro step/sec), Reduce I031 Valve speed or use less micro step per full step (I064 Valve step mode)"
+E119,Valve start speed too slow,0,0,1,,"0:Off,1:On","Number of micro steps/sec is low (higher than 8 micro step/sec),increase I031 Valve speed or increase I032 Valve start speed or  use more micro step per full step (I064 Valve step mode)"
+A999,DI1 unstable input,0,0,1,,"0:Off,1:On","Number of micro steps/sec is too high (higher than 12800 micro step/sec), Reduce I061 Valve emergency speed"
+A998,DI2 unstable input,0,0,1,,"0:Off,1:On","Number of micro steps/sec is low (higher than 8 micro step/sec),increase I061 Valve emergency speed "
+A983,DI3 unstable input,0,0,1,,"0:Off,1:On","Number of micro steps/sec is low (higher than 8 micro step/sec),increase I031 Valve speed or increase I032 Valve start speed or  use more micro step per full step (I064 Valve step mode)"
+E124,Open circuit on valve,0,0,1,,"0:Off,1:On",DI 1 is found be unstable (many on/off within a short time). DI1 is set off until stable value is present. Check connection
+E125,AI5 cant operate with AKS sensor,0,0,1,,"0:Off,1:On",DI 2 is found be unstable (many on/off within a short time). DI2 is set off until stable value is present. Check connection
+E126,Valve short circuit or driver too hot,0,0,1,,"0:Off,1:On",DI 3 is found be unstable (many on/off within a short time). 3 is set off until stable value is present. Check connection
+A982,Thermostatic signal missing,0,0,1,,"0:Off,1:On",Valve have a open circuit on one or more coils. Check connections to valve.
+A981,SH control signal missing,0,0,1,,"0:Off,1:On",EKE 1C does not support AKS sensor on AI5. Please use a temperature sensor on NTC type on AI5. Correct  I022 AI5 configuration
+E123,Low supply voltage,0,0,1,,"0:Off,1:On",Valve driver is unable to drive valve. Check for short the coils or if ambient is higher than 60 °C
+E132,No sensor configured for S2,0,0,1,,"0:Off,1:On","Signal for thermostat is missing  due to sensor errors, check S3 or S4"
+E133,No transmitter configured for Pe,0,0,1,,"0:Off,1:On","Signal for superheat calculation is missing , check S2 and Pe"
+E134,Ext. ref configuration error,0,0,1,,"0:Off,1:On",Supply voltage is found to be lower than expected tolerance
+,,,,,,,No sensor type defined for S2
+,,,,,,,No pressure  transmitter type defined for Pe
+,,,,,,,Check the external reference signal.

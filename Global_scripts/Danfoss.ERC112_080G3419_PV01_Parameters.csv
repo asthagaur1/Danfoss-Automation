@@ -1,0 +1,200 @@
+﻿Parameter Name,Enum
+SetPoint,
+Set Point Adjustment Ratio,
+Differential,
+High Set Point,
+Low Set Point,
+Initial Cut In,"0:No,1:Yes"
+Setpoint - Mode II ,
+Differential - Mode II,
+High Set Point - Mode II,
+Low Set Point - Mode II,
+Operating Mode,"0:du1 ( Mode 1),1:du2 ( Mode 2)"
+Fan Control Method,"0: Fao,1:Set,2:Aut"
+Fan ON Delay ,
+Fan Stop Delay,
+Fan ON Cycle ,
+Fan Stop Cycle,
+Fan Minimum Stop Time,
+Delta T for Fan cut in ,
+Fan Stop Time ON Door Open ,
+Fan Limit Temperature,
+Fan Limit Delta Temperature,
+Fan control Method - Mode II,"0: Fao,1:Set,2:Aut"
+Fan on cycle - Mode II,
+Fan stop cycle - Mode II,
+Cabinet Light Control ,"0:on,1:oFF,2:dor"
+Light Off Delay,
+Pull Down Initiate Temperature (Pit),
+Pull Down Cycling (PCy),
+Pull Down Defrost Interval (Pdi),
+Pull Down Duration (Pdd),
+Pull Down Reduction Temperature ∆t (Prt),
+Defrost Type,"0:no,1:nat:,2:EL,3:Hgd                                                                                                                                                                                   "
+Adaptive Defrost ,"0:no,1:yES"
+Defrost Terminate Temperature,
+Defrost Reset Temperature ,
+Minimum Interval ,
+Maximum Interval,
+Minimum Time,
+Maximum Time ,
+Drip Off Time,
+Fan Delay After Defrost ,
+Fan Start Temperature ,
+Defrost Fan On ,"0:yES,1:no"
+Defrost On Compressor Time ," 0:no,1:yES   "
+Defrost by compressor running time,
+Defrost Start Evaporator temperature ,
+Defrost Delta T ,
+Initial Defrost Interval ,
+Initial Defrost Duration ,
+Door heater ON percentage -Mode 1,
+Door heater cycle time,
+Door heater start temperature ,
+Defrost Start Delay,
+Defrost type - Mode II,"0:no,1:nat,2:EL,3:Hgd"
+Defrost start temp - Mode II,
+Defrost terminate  temp- Mode II,
+Defrost Fan On- Mode II ,"0:no,1:yES"
+Door heater ON percentage - Mode II,
+Mini Defrost Terminate Temperature,
+Mini Defrost Mode,"0:No,1:YES"
+Defrost Start Occurrence /method,"0: Off ,1: Ci,2: Co"
+Voltage Protection(uPt),"0:no,1:yES"
+Minimum Cutin Voltage(uLi),
+Minimum cutout   Voltage(uLo),
+Maximum Voltage(uHi),
+Sensor Error Type (EHd),"0:no,1:SEt                                                                                                                                                                           "
+Error Run Time (Ert),
+Error Stop Time (ESt),
+Minimum Stop Time (CSt),
+Minimum Run Time (Crt),
+Maximum Off time(Cot),
+Compressor Door Open Delay,
+System Resume After Door Open,
+Power on delay,
+Power on temperature,
+Compressor start delay (Second and third compressor),
+Condenser Alarm Limit (CAL),
+Condenser Block Limit (CbL),
+Condenser OK Limit (CoL),
+Condenser Low Limit (CLL),
+Display Intensity Automatic Control (dCi),"0:No,1:Yes                                                                                                                                                                              "
+Display Intensity (din),
+Display Unit (CFu),"0:Celsius,1:Fahrenheit                                                                                                                                                                                                                                                                                                                                                                                                                                                    "
+Temperature Sensor to Display (trS),"0:SCo,1:EuA,2:Con,3:AuS,4:SPt"
+Display Resolution (rES),"0:0.1,1:0.5,2:1.0"
+Display Range Limit(rLt),"0:no,1:yES                                                                                                                                                 "
+Display Delay (ddL),
+Display Offset (doF),
+Lock Time After Defrost (dLt),
+Show Economy state (SEC),"0:No,1:Yes                                                                                                                                                                       "
+Show Holiday (SHo),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                           "
+Show Defrost(SdF),"0:No,1:Yes                                                                                                                                                                                  "
+Show Compressor Symbol (SCS),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                         "
+Show Fan Symbol(SFS),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                                                "
+Show Defrost Symbol(SdS),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                               "
+Show ECO Symbol(SES),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Show Pull down(SSC),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Minimum Display Value  (Ld),
+Maximum Display Value (Hd),
+Signalling threshold value(St),
+High Temperature Alarm (HAt),
+Low Temperature Alarm (LAt),
+High Alarm Delay (Htd),
+Low Alarm Delay (Ltd),
+Pull Down Delay (PAd),
+Door Open Delay (dod),
+Voltage Alarm(uAL),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Leakage alarm (LEA),
+Alarm Buzzer Duration (Abd),
+Auto Clear of Alarm/Error (ACA),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Automatic Heater Mode Enable(AuH),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Energy Mode Delay (End),
+Auto heat SetPoint (AHS),
+Auto heat differential (AHd),
+ECo On/Off (ECo),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+ECo On/Off (ECo)- Mode II,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Door Action (EdA),
+Pir Action (EPA),
+Action Counter Time (ECt),
+Door delay (Edd),
+Pir delay (EPd),
+Shop Light Day (SLd),
+Shop Light Night (SLn),
+Time to Pull down (tto),
+Light Source delay on ECO(LSd),
+Early wake up ON/Off (Euu),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Shop close hour (CLH),
+Early wake up time offset (ErL),
+Holiday Length (HoL),
+Door Frame Heater On cycle- ECO mode,
+Eco Temperature Offset (Eto),
+Holiday Temperature Offset (Hto),
+ECO Differential (diE),
+ECO Fan On Cycle (FoE),
+ECO Fan Stop Cycle (FSE),
+ECO cabinet light control(ELC),"0:On,1:Off, 2:dor                                                                                                     "
+Eco Light Delay (ELd),
+Modbus Safety (uSA),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Sensor1 Air Temperature Adjust(t1A),
+Sensor2 Air Temperature Adjust(t2A),
+Sensor3 Air Temperature Adjust(t3A),
+Sensor3 Air Temperature Adjust(t4A),
+S1 Config (S1C),"0:Stn,1:Htn,2:Ldr,3:dig"
+S2 Config (S2C),"0:Stn,1:Htn,2:Ldr,3:dig"
+S3 Config (S3C),"0:Stn,1:Htn,2:Ldr,3:dig"
+S4 Config (S4C),"0:Stn,1:Htn,2:Pt1,3:Ldr,4:dig"
+S1 Application (S1A),"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo"
+S2 Application (S2A),"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo"
+S3 Application (S3A),"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo,9:Pir,10:duA"
+S4 Application (S4A),"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo,9:bt5,10:duA"
+DI Config(diC),"0:non,1:dCo,2:doo,3:ECo,4:duA,5:Pir                                                                                                                                                                                                                                                                                                                                                                                           "
+DO1 Config (o1C),"0:CoP,1:PiC,2:Het,3:PiH"
+DO2 Config (o2C),"0:no,1:dEF,2: ALA,3:FAn,4:Lig,5:SCC,6:tCC,7:dFH"
+DO3 Config (o3C),"0:no,1:dEF,2: ALA,3:FAn,4:Lig,5:SCC,6:tCC,7:dFH"
+DO4 Config (o4C),"0:no,1:dEF,2: ALA,3:FAn,4:Lig,5:SCC,6:tCC,7:dFH"
+Key Board Lock,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    "
+Button 1 Short Config (b1C),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA"
+Button 1 Long Config (b1L),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL,12:inF,13:tog"
+Button 2 Short Config (b2C),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA"
+Button 2 Long Config (b2L),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL,12:inF,13:tog"
+Button 3 Short Config (b3C),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA"
+Button 3 Long Config (b3L),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL,12:inF,13:tog"
+Button 4 Short Config (b4C),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA"
+Button 4 Long Config (b4L),"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL"
+Button 5 Short Config (b5C),"0:noP,1:Eco,2:SuP,3:Lig,4:dEF,5:PoF,6:HoL"
+Button 5 Long Config (b5L),"0:noP,1:Eco,2:SuP,3:Lig,4:dEF,5:PoF,6:HoL"
+Password Customer (PS1),
+Password Service (PS2),
+Password OEM (PS3),
+  Accumulated Compressor Run Time (ACt),
+  Accumulated Fan Run Time (AFt)  ,
+ Accumulated Light Run Time (ALt),
+ Accumulated ERC Up Time (AEt),
+ DI Pin State(Sdi),"0:CLS,1:oPn"
+ Voltage Value(uAC),
+ Digital Output Status(ouS),
+ Relay1 Counter (rL1),
+ Relay2 Counter (rL2),
+ Relay3 Counter (rL3),
+ Relay4 Counter (rL4),
+ Interval Counter(int),
+ Defrost Time Counter(dnt),
+ Door Open Counter(ont),
+ Serial Number(Snu),
+ Software Version(Fir),
+ Hardware Version(HAr),
+ OrderNoLow (onL),
+ OrderNoHigh (onH),
+OEM Code Low (oEL),
+OEM Code middle (oEn),
+OEM Code High (oEH),
+Parameter Version (PAr),
+Motion Sensor State(Pir),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                                                                    "
+External ECO Switch State (ESS),"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                                                                    "
+Sensor 1 Status(S1S),
+Sensor 2 Status(S2S),
+Sensor 3 Status(S3S),
+Sensor 4 Status(S4S),
+Door Switch Switch(drr),"0:CLS,1:oPn                                                                                                                                                                                                                                                                                                                                                                                                                                                 "

@@ -1,0 +1,212 @@
+GroupCode,Menu Code,Parameter Name (ERC113D-True Mfg)
+,SEt,SetPoint
+,SPr,Set Point Adjustment Ratio
+,diF,Differential
+,HSE,High Set Point
+,LSE,Low Set Point
+,iCi,Initial Cut In
+,SSA,Spindle Stop Angle
+,SE2 ,Setpoint - Mode II 
+,dI2,Differential - Mode II
+,HS2,High Set Point - Mode II
+,LS2,Low Set Point - Mode II
+,duA,Operating Mode
+,FCt,Fan Control Method
+,Fod,Fan ON Delay 
+,FSd,Fan Stop Delay
+,FoC,Fan ON Cycle 
+,FSC,Fan Stop Cycle
+,FSt,Fan Minimum Stop Time
+,FdC,Delta T for Fan cut in 
+,Fdt,Fan Stop Time ON Door Open 
+,FLt,Fan Limit Temperature
+,FdF,Fan Limit Delta Temperature
+,FC2,Fan control Method - Mode II
+,F02,Fan on cycle - Mode II
+,FS2,Fan stop cycle - Mode II
+,CLC,Cabinet Light Control 
+,Lod,Light Off Delay
+,Pit,Pull Down Initiate Temperature (Pit)
+,PCy,Pull Down Cycling (PCy)
+,Pdi,Pull Down Defrost Interval (Pdi)
+,Pdd,Pull Down Duration (Pdd)
+,Prt,Pull Down Reduction Temperature ?t (Prt)
+,dFt,Defrost Type
+,Add,Adaptive Defrost 
+,dtt,Defrost Terminate Temperature
+,drt,Defrost Reset Temperature 
+,dii,Minimum Interval 
+,dAi,Maximum Interval
+,dit,Minimum Time
+,dAt,Maximum Time 
+,dot,Drip Off Time
+,Fdd,Fan Delay After Defrost 
+,Ftd,Fan Start Temperature 
+,dFA,Defrost Fan On 
+,dCt,Defrost On Compressor Time 
+,doC,Defrost by compressor running time
+,dEt,Defrost Start Evaporator temperature 
+,ddt,Defrost Delta T 
+,idi,Initial Defrost Interval 
+,idd,Initial Defrost Duration 
+,don,Door heater ON percentage -Mode 1
+,HCt,Door heater cycle time
+,dHt,Door heater start temperature 
+,dSd,Defrost Start Delay
+,dF2,Defrost type - Mode II
+,dE2,Defrost start temp - Mode II
+,dt2,Defrost terminate  temp- Mode II
+,Fd2,Defrost Fan On- Mode II 
+,d02,Door heater ON percentage - Mode II
+,SPd,Mini Defrost Terminate Temperature
+,Ed2,Mini Defrost Mode
+,dSo,Defrost Start Occurrence /method
+,uPt,Voltage Protection(uPt)
+,uLi,Minimum Cutin Voltage(uLi)
+,uLo,Minimum cutout   Voltage(uLo)
+,uHi,Maximum Voltage(uHi)
+,EHd,Sensor Error Type (EHd)
+,Ert,Error Run Time (Ert)
+,ESt,Error Stop Time (ESt)
+,CSt,Minimum Stop Time (CSt)
+,Crt,Minimum Run Time (Crt)
+,Cot,Maximum Off time(Cot)
+,Cdd,Compressor Door Open Delay
+,Srt,System Resume After Door Open
+,Pod,Power on delay
+,Pot,Power on temperature
+,Scd,Compressor start delay (Second and third compressor)
+,CAL,Condenser Alarm Limit (CAL)
+,CbL,Condenser Block Limit (CbL)
+,CoL,Condenser OK Limit (CoL)
+,CLL,Condenser Low Limit (CLL)
+,dCi,Display Intensity Automatic Control (dCi)
+,din,Display Intensity (din)
+,CFu,Display Unit (CFu)
+,trS,Temperature Sensor to Display (trS)
+,rES,Display Resolution (rES)
+,rLt,Display Range Limit(rLt)
+,ddL,Display Delay (ddL)
+,doF,Display Offset (doF)
+,dLt,Lock Time After Defrost (dLt)
+,SEC,Show Economy state (SEC)
+,SHo,Show Holiday (SHo)
+,SdF,Show Defrost(SdF)
+,SCS,Show Compressor Symbol (SCS)
+,SFS,Show Fan Symbol(SFS)
+,SdS,Show Defrost Symbol(SdS)
+,SES,Show ECO Symbol(SES)
+,SSC,Show Pull down(SSC)
+,Ld,Minimum Display Value  (Ld)
+,Hd,Maximum Display Value (Hd)
+,St,Signalling threshold value(St)
+,HAt,High Temperature Alarm (HAt)
+,LAt,Low Temperature Alarm (LAt)
+,Htd,High Alarm Delay (Htd)
+,Ltd,Low Alarm Delay (Ltd)
+,PAd,Pull Down Delay (PAd)
+,dod,Door Open Delay (dod)
+,uAL,Voltage Alarm(uAL)
+,LEA,Leakage alarm (LEA)
+,Abd,Alarm Buzzer Duration (Abd)
+,ACA,Auto Clear of Alarm/Error (ACA)
+,AuH,Automatic Heater Mode Enable(AuH)
+,End,Energy Mode Delay (End)
+,AHS,Auto heat SetPoint (AHS)
+,Ahd,Auto heat differential (AHd)
+,ECo,ECo On/Off (ECo)
+,EC2,ECo On/Off (ECo)- Mode II
+,EdA,Door Action (EdA)
+,EPA,Pir Action (EPA)
+,ECt,Action Counter Time (ECt)
+,Edd,Door delay (Edd)
+,EPd,Pir delay (EPd)
+,SLd,Shop Light Day (SLd)
+,SLn,Shop Light Night (SLn)
+,tto,Time to Pull down (tto)
+,LSd,Light Source delay on ECO(LSd)
+,Euu,Early wake up ON/Off (Euu)
+,CLH,Shop close hour (CLH)
+,ErL,Early wake up time offset (ErL)
+,HoL,Holiday Length (HoL)
+,doE,Door Frame Heater On cycle- ECO mode
+,Eto,Eco Temperature Offset (Eto)
+,Hto,Holiday Temperature Offset (Hto)
+,diE,ECO Differential (diE)
+,FoE,ECO Fan On Cycle (FoE)
+,FSE,ECO Fan Stop Cycle (FSE)
+,ELC,ECO cabinet light control(ELC)
+,ELd,Eco Light Delay (ELd)
+,uSA,Modbus Safety (uSA)
+,t1A,Sensor1 Air Temperature Adjust(t1A)
+,t2A,Sensor2 Air Temperature Adjust(t2A)
+,t3A,Sensor3 Air Temperature Adjust(t3A)
+,t4A,Sensor4 Air Temperature Adjust(t4A)
+,t5A,Sensor5 Air Temperature Adjust(t5A)
+,t6A,Sensor6 Air Temperature Adjust(t6A)
+,S1C,S1 Config (S1C)
+,S2C,S2 Config (S2C)
+,S3C,S3 Config (S3C)
+,S4C,S4 Config (S4C)
+,S5C,S5 Config (S5C)
+,S6C,S6 Config (S6C)
+,S1A,S1 Application (S1A)
+,S2A,S2 Application (S2A)
+,S3A,S3 Application (S3A)
+,S4A,S4 Application (S4A)
+,S5A,S5 Application (S5A)
+,S6A,S6 Application (S6A)
+,diC,DI Config(diC)
+,o1C,DO1 Config (o1C)
+,o2C,DO2 Config (o2C)
+,o3C,DO3 Config (o3C)
+,o4C,DO4 Config (o4C)
+,o5C,DO5 Config (o5C)
+,Loc,Key Board Lock
+,b1C,Button 1 Short Config (b1C)
+,b1L,Button 1 Long Config (b1L)
+,b2C,Button 2 Short Config (b2C)
+,b2L,Button 2 Long Config (b2L)
+,b3C,Button 3 Short Config (b3C)
+,b3L,Button 3 Long Config (b3L)
+,b4C,Button 4 Short Config (b4C)
+,b4L,Button 4 Long Config (b4L)
+,b5C,Button 5 Short Config (b5C)
+,b5L,Button 5 Long Config (b5L)
+,PS1,Password Customer (PS1)
+,PS2,Password Service (PS2)
+,PS3,Password OEM (PS3)
+,ACt,  Accumulated Compressor Run Time (ACt)
+,AFt,  Accumulated Fan Run Time (AFt)  
+,ALt, Accumulated Light Run Time (ALt)
+,AEt, Accumulated ERC Up Time (AEt)
+,Sdi, DI Pin State(Sdi)
+,uAC, Voltage Value(uAC)
+,ouS, Digital Output Status(ouS)
+,rL1, Relay1 Counter (rL1)
+,rL2, Relay2 Counter (rL2)
+,rL3, Relay3 Counter (rL3)
+,rL4, Relay4 Counter (rL4)
+,rL5, Relay5 Counter (rL5)
+,int, Interval Counter(int)
+,dnt, Defrost Time Counter(dnt)
+,ont, Door Open Counter(ont)
+,Snu, Serial Number(Snu)
+,Fir, Software Version(Fir)
+,HAr, Hardware Version(HAr)
+,onL, OrderNoLow (onL)
+,onH, OrderNoHigh (onH)
+,oEL,OEM Code Low (oEL)
+,oEn,OEM Code middle (oEn)
+,oEH,OEM Code High (oEH)
+,PAr,Parameter Version (PAr)
+,Pir,Motion Sensor State(Pir)
+,ESS,External ECO Switch State (ESS)
+,SAS,Spindle Angle State
+,S1S,Sensor 1 Status(S1S)
+,S2S,Sensor 2 Status(S2S)
+,S3S,Sensor 3 Status(S3S)
+,S4S,Sensor 4 Status(S4S)
+,S5S,Sensor 5 Status (S5S)
+,S6S,Sensor 6 Status (S6S)
+,drr,Door Switch Switch(drr)

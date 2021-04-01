@@ -1,0 +1,200 @@
+﻿Menu Code,Parameter Name,TRUE Default,Min,Max,Unit,Enum,,,Access Settings,,,PNU 
+Set,SetPoint,2.2,-100,200,Deg C,,,,RW,RW,RW,100
+SPr,Set Point Adjustment Ratio,0.5,0,1,NA,,,,NV,RO,RW,180
+diF,Differential,3.3,0,20,K,,,,NV,RO,RW,101
+HSE,High Set Point,5,-100,200,°C,,,,NV,RO,RW,102
+LSE,Low Set Point,0.6,-100,200,°C,,,,NV,RO,RW,103
+iCi,Initial Cut In,No,No,Yes,Enum,"0:No,1:Yes",,,NV,RO,RW,547
+SE2 ,Setpoint - Mode II ,2.2,-100,200,°C,,,,RW,RW,RW,106
+dI2,Differential - Mode II,3.3,0,20,K,,,,NV,RO,RW,107
+HS2,High Set Point - Mode II,5,-100,200,°C,,,,NV,RO,RW,108
+LS2,Low Set Point - Mode II,0.6,-100,200,°C,,,,NV,RO,RW,109
+duA,Operating Mode,du1 ( Mode 1),du1 ( Mode 1),du2 ( Mode 2),Enum,"0:du1 ( Mode 1),1:du2 ( Mode 2)",,,NV,RO,RW,181
+FCt,Fan Control Method,Set,Fao,Aut,Enum,"0: Fao,1:Set,2:Aut",,,NV,RO,RW,1520
+Fod,Fan ON Delay ,0,0,240,Sec,,,,NV,RO,RW,1503
+FSd,Fan Stop Delay,0,0,240,Sec,,,,NV,RO,RW,1500
+FoC,Fan ON Cycle ,60,0,960,Sec,,,,NV,RO,RW,1521
+FSC,Fan Stop Cycle,300,0,960,Sec,,,,NV,RO,RW,1522
+FSt,Fan Minimum Stop Time,5,0,960,Sec,,,,NV,RO,RW,1524
+FdC,Delta T for Fan cut in ,0,-10,10,K,,,,NV,RO,RW,1525
+Fdt,Fan Stop Time ON Door Open ,999,0,999,Sec,,,,NV,RO,RW,1523
+FLt,Fan Limit Temperature,50,0,50,°C,,,,RW,RW,RW,1526
+FdF,Fan Limit Delta Temperature,2,1,10,K,,,,RW,RW,RW,1527
+FC2,Fan control Method - Mode II,Set,Fao,Aut,Enum,"0: Fao,1:Set,2:Aut",,,NV,RO,RW,1528
+F02,Fan on cycle - Mode II,60,0,960,Sec,,,,NV,RO,RW,1529
+FS2,Fan stop cycle - Mode II,300,0,960,Sec,,,,NV,RO,RW,1530
+CLC,Cabinet Light Control ,oFF,on,dor,Enum,"0:on,1:oFF,2:dor",,,NV,RO,RW,2324
+Lod,Light Off Delay,0,0,300,Sec,,,,NV,RO,RW,2325
+Pit,Pull Down Initiate Temperature (Pit),15.6,-40,50,°C,,,,NV,RO,RW,600
+PCy,Pull Down Cycling (PCy),0,0,360,min,,,,NV,RO,RW,602
+Pdi,Pull Down Defrost Interval (Pdi),12,0,48,hr,,,,NV,RO,RW,603
+Pdd,Pull Down Duration (Pdd),12,0,48,hr,,,,NV,RO,RW,604
+Prt,Pull Down Reduction Temperature ∆t (Prt),0,0,10,K,,,,NV,RO,RW,605
+dFt,Defrost Type,nat,no,Hgd,Enum,"0:no,1:nat:,2:EL,3:Hgd                                                                                                                                                                                   ",,,NV,RW,RW,1000
+Add,Adaptive Defrost ,yES,no,yES,Enum,"0:no,1:yES",,,NV,RW,RW,1037
+dtt,Defrost Terminate Temperature,4.4,0,25,Deg C,,,,NV,RW,RW,1001
+drt,Defrost Reset Temperature ,5.6,0,200,Deg C,,,,NV,RW,RW,1004
+dii,Minimum Interval ,60,1,999,Minutes,,,,NV,RW,RW,1030
+dAi,Maximum Interval,4,1,96,Hrs,,,,NV,RW,RW,1031
+dit,Minimum Time,4,0,240,min,,,,NV,RW,RW,1032
+dAt,Maximum Time ,60,0,480,min,,,,NV,RW,RW,1003
+dot,Drip Off Time,2,0,60,min,,,,NV,RO,RW,1005
+Fdd,Fan Delay After Defrost ,60,0,600,Sec,,,,NV,RO,RW,1006
+Ftd,Fan Start Temperature ,-5,-25,25,Deg C,,,,NV,RO,RW,1007
+dFA,Defrost Fan On ,no,yES,no,Enum,"0:yES,1:no",,,NV,RO,RW,1008
+dCt,Defrost On Compressor Time ,yES,no,yES,Enum," 0:no,1:yES   ",,,NV,RO,RW,1033
+doC,Defrost by compressor running time,120,0,999,min,,,,NV,RO,RW,1034
+dEt,Defrost Start Evaporator temperature ,-11.1,-50,0,Deg C,,,,NV,RO,RW,1035
+ddt,Defrost Delta T ,30,0,30,K,,,,NV,RO,RW,1036
+idi,Initial Defrost Interval ,0,0,96,Hrs,,,,NV,RW,RW,1002
+idd,Initial Defrost Duration ,0,0,999,cycles,,,,NV,RW,RW,1009
+don,Door heater ON percentage -Mode 1,40,0,100,Percent,,,,NV,RW,RW,2060
+HCt,Door heater cycle time,10,0,240,Minutes,,,,NV,RW,RW,2062
+dHt,Door heater start temperature ,10,-50,50,Deg C,,,,NV,RW,RW,2063
+dSd,Defrost Start Delay,30,0,120,Minutes,,,,NV,RW,RW,2071
+dF2,Defrost type - Mode II,nat,no,Hgd,Enum,"0:no,1:nat,2:EL,3:Hgd",,,NV,RW,RW,2064
+dE2,Defrost start temp - Mode II,-11.1,-50,0,Deg C,,,,NV,RW,RW,2065
+dt2,Defrost terminate  temp- Mode II,4.4,0,25,Deg C,,,,NV,RW,RW,2066
+Fd2,Defrost Fan On- Mode II ,yES,no,yES,Enum,"0:no,1:yES",,,NV,RO,RW,2072
+d02,Door heater ON percentage - Mode II,40,0,100,Percent,,,,NV,RW,RW,2067
+SPd,Mini Defrost Terminate Temperature,1.1,0,7,Deg C,,,,NV,RW,RW,2068
+Ed2,Mini Defrost Mode,YES,No,YES,Enum,"0:No,1:YES",,,NV,RW,RW,2069
+dSo,Defrost Start Occurrence /method,Co,Off,Co,Enum,"0: Off ,1: Ci,2: Co",,,NV,RW,RW,2070
+uPt,Voltage Protection(uPt),no,no,yES,Enum,"0:no,1:yES",,,NV,RO,RW,550
+uLi,Minimum Cutin Voltage(uLi),95,0,270,Vac,,,,NV,RO,RW,543
+uLo,Minimum cutout   Voltage(uLo),95,0,270,Vac,,,,NV,RO,RW,544
+uHi,Maximum Voltage(uHi),270,0,270,Vac,,,,NV,RO,RW,545
+EHd,Sensor Error Type (EHd),SEt,no,Set,Enum,"0:no,1:SEt                                                                                                                                                                           ",,,NV,RO,RW,551
+Ert,Error Run Time (Ert),10,0,60,min,,,,NV,RO,RW,541
+ESt,Error Stop Time (ESt),10,0,60,min,,,,NV,RO,RW,542
+CSt,Minimum Stop Time (CSt),4,0,30,min,,,,NV,RW,RW,501
+Crt,Minimum Run Time (Crt),4,0,30,min,,,,NV,RW,RW,500
+Cot,Maximum Off time(Cot),0,0,480,min,,,,NV,RO,RW,540
+Cdd,Compressor Door Open Delay,999,0,999,Sec,,,,NV,RO,RW,549
+Srt,System Resume After Door Open,5,0,60,min,,,,NV,RO,RW,555
+Pod,Power on delay,60,0,300,Sec,,,,NV,RW,RW,2000
+Pot,Power on temperature,200,-100,200,Deg C,,,,NV,RO,RW,548
+Scd,Compressor start delay (Second and third compressor),10,0,960,Sec,,,,NV,RW,RW,505
+CAL,Condenser Alarm Limit (CAL),80,0,200,Deg C,,,,NV,RW,RW,800
+CbL,Condenser Block Limit (CbL),85,0,200,Deg C,,,,NV,RW,RW,801
+CoL,Condenser OK Limit (CoL),60,0,200,Deg C,,,,NV,RW,RW,802
+CLL,Condenser Low Limit (CLL),-5,-100,20,Deg C,,,,NV,RW,RW,803
+dCi,Display Intensity Automatic Control (dCi),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                              ",,,NV,RO,RW,907
+din,Display Intensity (din),10,2,10,NA,,,,RW,RW,RW,904
+CFu,Display Unit (CFu),Celsius,Celsius,Fahrenheit,Enum,"0:Celsius,1:Fahrenheit                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",,,RW,RW,RW,105
+trS,Temperature Sensor to Display (trS),SCo,SCo,SPt,Enum,"0:SCo,1:EuA,2:Con,3:AuS,4:SPt",,,NV,RO,RW,908
+rES,Display Resolution (rES),0.5,0.1,1.0,Enum,"0:0.1,1:0.5,2:1.0",,,NV,RO,RW,2019
+rLt,Display Range Limit(rLt),no,no,yES,Enum,"0:no,1:yES                                                                                                                                                 ",,,NV,RO,RW,900
+ddL,Display Delay (ddL),10,0,10,min,,,,NV,RO,RW,901
+doF,Display Offset (doF),0,-10,10,K,,,,NV,RO,RW,104
+dLt,Lock Time After Defrost (dLt),15,0,60,min,,,,NV,RO,RW,902
+SEC,Show Economy state (SEC),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                       ",,,NV,RO,RW,905
+SHo,Show Holiday (SHo),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                           ",,,NV,RO,RW,914
+SdF,Show Defrost(SdF),Yes,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                  ",,,NV,RO,RW,903
+SCS,Show Compressor Symbol (SCS),Yes,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                         ",,,NV,RO,RW,909
+SFS,Show Fan Symbol(SFS),Yes,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                                                ",,,NV,RO,RW,910
+SdS,Show Defrost Symbol(SdS),Yes,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                               ",,,NV,RO,RW,911
+SES,Show ECO Symbol(SES),Yes,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RO,RW,912
+SSC,Show Pull down(SSC),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RO,RW,906
+Ld,Minimum Display Value  (Ld),-100,-100,200,Deg C,,,,RW,RW,RW,915
+Hd,Maximum Display Value (Hd),200,-100,200,Deg C,,,,RW,RW,RW,916
+St,Signalling threshold value(St),200,-100,200,Deg C,,,,RW,RW,RW,917
+HAt,High Temperature Alarm (HAt),200,-100,200,Deg C,,,,NV,RW,RW,10019
+LAt,Low Temperature Alarm (LAt),-100,-100,200,Deg C,,,,NV,RW,RW,10020
+Htd,High Alarm Delay (Htd),60,0,240,min,,,,NV,RW,RW,10000
+Ltd,Low Alarm Delay (Ltd),60,0,240,min,,,,NV,RW,RW,10001
+PAd,Pull Down Delay (PAd),960,0,960,min,,,,NV,RW,RW,10018
+dod,Door Open Delay (dod),5,0,60,min,,,,NV,RW,RW,10003
+uAL,Voltage Alarm(uAL),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RO,RW,10005
+LEA,Leakage alarm (LEA),0,0,96,Hrs,,,,NV,RW,RW,10006
+Abd,Alarm Buzzer Duration (Abd),999,0,999,min,,,,NV,RW,RW,10004
+ACA,Auto Clear of Alarm/Error (ACA),Yes,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RW,RW,10050
+AuH,Automatic Heater Mode Enable(AuH),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RO,RW,2024
+End,Energy Mode Delay (End),60,0,360,min,,,,NV,RO,RW,700
+AHS,Auto heat SetPoint (AHS),2,-100,200,Deg C,,,,NV,RO,RW,701
+Ahd,Auto heat differential (AHd),2,0,20,K,,,,NV,RO,RW,702
+ECo,ECo On/Off (ECo),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RW,RW,2106
+EC2,ECo On/Off (ECo)- Mode II,No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RW,RW,2124
+EdA,Door Action (EdA),1,1,10,NA,,,,NV,RO,RW,2107
+EPA,Pir Action (EPA),1,1,10,NA,,,,NV,RO,RW,2108
+ECt,Action Counter Time (ECt),30,0,180,min,,,,NV,RO,RW,2109
+Edd,Door delay (Edd),180,0,180,min,,,,NV,RO,RW,2110
+EPd,Pir delay (EPd),120,0,180,min,,,,NV,RO,RW,2111
+SLd,Shop Light Day (SLd),5,0,80,NA,,,,NV,RW,RW,2100
+SLn,Shop Light Night (SLn),3,0,80,NA,,,,NV,RW,RW,2101
+tto,Time to Pull down (tto),0,0,168,Hrs,,,,NV,RW,RW,2112
+LSd,Light Source delay on ECO(LSd),0,0,180,min,,,,NV,RW,RW,2113
+Euu,Early wake up ON/Off (Euu),Yes,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RW,RW,2114
+CLH,Shop close hour (CLH),6,0,24,Hrs,,,,NV,RO,RW,2115
+ErL,Early wake up time offset (ErL),120,0,240,min,,,,NV,RO,RW,2116
+HoL,Holiday Length (HoL),72,0,999,Hrs,,,,NV,RO,RW,2117
+doE,Door Frame Heater On cycle- ECO mode,40,0,100,percent,,,,NV,RW,RW,2061
+Eto,Eco Temperature Offset (Eto),0,-25,25,K,,,,NV,RW,RW,2104
+Hto,Holiday Temperature Offset (Hto),0,-25,25,K,,,,NV,RW,RW,2118
+diE,ECO Differential (diE),3.3,0,10,K,,,,NV,RW,RW,2119
+FoE,ECO Fan On Cycle (FoE),60,0,960,Sec,,,,NV,RO,RW,2120
+FSE,ECO Fan Stop Cycle (FSE),300,0,960,Sec,,,,NV,RO,RW,2121
+ELC,ECO cabinet light control(ELC),Off,On,dor,Enum,"0:On,1:Off, 2:dor                                                                                                     ",,,NV,RO,RW,2122
+ELd,Eco Light Delay (ELd),5,0,10,min,,,,NV,RW,RW,2103
+uSA,Modbus Safety (uSA),No,No,Yes,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,NV,RW,2329
+t1A,Sensor1 Air Temperature Adjust(t1A),0,-20,20,K,,,,NV,RO,RW,114
+t2A,Sensor2 Air Temperature Adjust(t2A),0,-20,20,K,,,,NV,RO,RW,2330
+t3A,Sensor3 Air Temperature Adjust(t3A),0,-20,20,K,,,,NV,RO,RW,2331
+t4A,Sensor3 Air Temperature Adjust(t4A),0,-20,20,K,,,,NV,RO,RW,2332
+S1C,S1 Config (S1C),Stn,Stn,dig,Enum,"0:Stn,1:Htn,2:Ldr,3:dig",,,NV,RO,RW,2014
+S2C,S2 Config (S2C),Stn,Stn,dig,Enum,"0:Stn,1:Htn,2:Ldr,3:dig",,,NV,RO,RW,2309
+S3C,S3 Config (S3C),Stn,Stn,dig,Enum,"0:Stn,1:Htn,2:Ldr,3:dig",,,NV,RO,RW,2079
+S4C,S4 Config (S4C),Stn,Stn,dig,Enum,"0:Stn,1:Htn,2:Pt1,3:Ldr,4:dig",,,NV,RO,RW,2333
+S1A,S1 Application (S1A),SCo,nC,doo,Enum,"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo",,,NV,RO,RW,2310
+S2A,S2 Application (S2A),EuA,nC,doo,Enum,"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo",,,NV,RO,RW,2311
+S3A,S3 Application (S3A),nC,nC,duA,Enum,"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo,9:Pir,10:duA",,,NV,RO,RW,2312
+S4A,S4 Application (S4A),nC,nC,duA,Enum,"0:nC,1:SCo,2:EuA,3:Con,4:AuS,5:Ldr,6:ECo,7:dCo,8:doo,9:bt5,10:duA",,,NV,RO,RW,2334
+diC,DI Config(diC),non,non,Pir,Enum,"0:non,1:dCo,2:doo,3:ECo,4:duA,5:Pir                                                                                                                                                                                                                                                                                                                                                                                           ",,,NV,RO,RW,2313
+o1C,DO1 Config (o1C),CoP,CoP,PiH,Enum,"0:CoP,1:PiC,2:Het,3:PiH",,,NV,RO,RW,2314
+o2C,DO2 Config (o2C),no,no,dFH,Enum,"0:no,1:dEF,2: ALA,3:FAn,4:Lig,5:SCC,6:tCC,7:dFH",,,NV,RO,RW,2315
+o3C,DO3 Config (o3C),Fan,no,dFH,Enum,"0:no,1:dEF,2: ALA,3:FAn,4:Lig,5:SCC,6:tCC,7:dFH",,,NV,RO,RW,2316
+o4C,DO4 Config (o4C),no,no,dFH,Enum,"0:no,1:dEF,2: ALA,3:FAn,4:Lig,5:SCC,6:tCC,7:dFH",,,NV,RO,RW,2317
+Loc,Key Board Lock,Yes,No,No,Enum,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                    ",,,NV,RO,RW,2190
+b1C,Button 1 Short Config (b1C),noP,noP,CFA,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA",,,NV,RO,RW,2318
+b1L,Button 1 Long Config (b1L),PoF,noP,tog,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL,12:inF,13:tog",,,NV,RO,RW,2326
+b2C,Button 2 Short Config (b2C),CFA,noP,CFA,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA",,,NV,RO,RW,2319
+b2L,Button 2 Long Config (b2L),dEF,noP,tog,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL,12:inF,13:tog",,,NV,RO,RW,2335
+b3C,Button 3 Short Config (b3C),tP,noP,CFA,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA",,,NV,RO,RW,2320
+b3L,Button 3 Long Config (b3L),noP,noP,tog,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL,12:inF,13:tog",,,NV,RO,RW,2327
+b4C,Button 4 Short Config (b4C),tn,noP,CFA,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA",,,NV,RO,RW,2321
+b4L,Button 4 Long Config (b4L),noP,noP,HoL,Enum,"0:noP,1:tP,2:tn,3:ECo,4:Lig,5:dEF,6:SuP,7:diP,8:din,9:CFA,10:PoF11:HoL",,,NV,RO,RW,2328
+b5C,Button 5 Short Config (b5C),noP,noP,HoL,Enum,"0:noP,1:Eco,2:SuP,3:Lig,4:dEF,5:PoF,6:HoL",,,NV,RO,RW,2336
+b5L,Button 5 Long Config (b5L),noP,noP,HoL,Enum,"0:noP,1:Eco,2:SuP,3:Lig,4:dEF,5:PoF,6:HoL",,,NV,RO,RW,2339
+PS1,Password Customer (PS1),0,0,999,Enum,,,,RW,RW,RW,2013
+PS2,Password Service (PS2),989,0,999,Enum,,,,NV,RW,RW,2080
+PS3,Password OEM (PS3),747,0,999,Enum,,,,NV,NV,RW,2323
+ACt,  Accumulated Compressor Run Time (ACt),NA,0,999,NA,,,,NV,RO,RO,2616
+AFt,  Accumulated Fan Run Time (AFt)  ,NA,0,999,NA,,,,NV,RO,RO,2617
+ALt, Accumulated Light Run Time (ALt),NA,0,999,NA,,,,NV,RO,RO,2618
+AEt, Accumulated ERC Up Time (AEt),NA,0,999,NA,,,,NV,RO,RO,2619
+Sdi, DI Pin State(Sdi),NA,CLS,oPn,NA,"0:CLS,1:oPn",,,NV,RO,RO,2002
+uAC, Voltage Value(uAC),NA,0,270,NA,,,,NV,RO,RO,2600
+ouS, Digital Output Status(ouS),NA,0,255,NA,,,,NV,RO,RO,2601
+rL1, Relay1 Counter (rL1),NA,0,999,NA,,,,NV,RO,RO,2602
+rL2, Relay2 Counter (rL2),NA,0,999,NA,,,,NV,RO,RO,2603
+rL3, Relay3 Counter (rL3),NA,0,999,NA,,,,NV,RO,RO,2604
+rL4, Relay4 Counter (rL4),NA,0,999,NA,,,,NV,RO,RO,2605
+int, Interval Counter(int),NA,0,999,NA,,,,NV,RO,RO,2606
+dnt, Defrost Time Counter(dnt),NA,0,999,NA,,,,NV,RO,RO,2607
+ont, Door Open Counter(ont),NA,0,999,NA,,,,NV,RO,RO,2608
+Snu, Serial Number(Snu),NA,-32768,32767,NA,,,,NV,RO,RO,2609
+Fir, Software Version(Fir),NA,-32768,32767,NA,,,,RO,RO,RO,2003
+HAr, Hardware Version(HAr),NA,-32768,32767,NA,,,,RO,RO,RO,2610
+onL, OrderNoLow (onL),NA,-32768,32767,NA,,,,RO,RO,RO,2011
+onH, OrderNoHigh (onH),NA,-32768,32767,NA,,,,RO,RO,RO,2015
+oEL,OEM Code Low (oEL),NA,0,999,NA,,,,RO,RO,RO,2016
+oEn,OEM Code middle (oEn),NA,0,999,NA,,,,RO,RO,RO,2017
+oEH,OEM Code High (oEH),NA,0,999,NA,,,,RO,RO,RO,2018
+PAr,Parameter Version (PAr),NA,-32768,32767,NA,,,,RO,RO,RO,2611
+Pir,Motion Sensor State(Pir),NA,No,Yes,NA,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",,,RO,RO,RO,2903
+ESS,External ECO Switch State (ESS),NA,No,Yes,NA,"0:No,1:Yes                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",,,RO,RO,RO,2904
+S1S,Sensor 1 Status(S1S),NA,-100,200,Deg C,,,,RO,RO,RO,2535
+S2S,Sensor 2 Status(S2S),NA,-100,200,Deg C,,,,RO,RO,RO,2536
+S3S,Sensor 3 Status(S3S),NA,-100,200,Deg C,,,,RO,RO,RO,2537
+S4S,Sensor 4 Status(S4S),NA,-100,200,Deg C,,,,RO,RO,RO,2538
+drr,Door Switch Switch(drr),NA,CLS,oPn,NA,"0:CLS,1:oPn                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",,,RO,RO,RO,2902

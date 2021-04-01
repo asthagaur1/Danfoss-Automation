@@ -1,0 +1,64 @@
+Idx,Parameter_Name,Random_value,KP_value,Result
+Voltage protection,"No",,No,False
+Sensor type,"ptc",,pt1,False
+Display Unit,"°F",,°F,False
+Defrost Method,"None",,Natural,False
+DI1 configuration,"Sdc",,Sc,False
+Cooling/Heating,"Heating",,Heating,False
+Display Resolution ,"1",,0.1,False
+DI1 polarity,"nc",,nc,False
+Defrost Method,"None",,Natural,False
+Defrost Stop Sensor,"Sair temp Sensor",,Sair temp Sensor,False
+Voltage protection,"Yes",,No,False
+Sensor type,"ptc",,pt1,False
+Display Unit,"°F",,°F,False
+Defrost Method,"Natural",,Natural,False
+DI1 configuration,"SCH",,Sc,False
+Cooling/Heating,"Heating",,Heating,False
+Display Resolution ,"0.5",,0.1,False
+DI1 polarity,"no",,nc,False
+Defrost Method,"None",,Natural,False
+Defrost Stop Sensor,"None",,Sair temp Sensor,False
+Alarm delay - Normal conditions,Alarm delay - Normal conditions,"18",18,True
+Alarm delay - pulldown/startup/def,Alarm delay - pulldown/startup/def,"98",98,True
+High temp alarm,High temp alarm,"153.86",153.86,True
+Low temp alarm,Low temp alarm,"71.94",71.94,True
+DI1 delay,DI1 delay,"211",211,True
+Condenser High temp alarm,Condenser High temp alarm,"163.19",163.19,True
+Condenser High block limit,Condenser High block limit,"20.34",20.34,True
+Voltage protection,"Yes",,No,False
+Min cut-in voltage,Min cut-in voltage,"176",176,True
+Min cut-out voltage,Min cut-out voltage,"39",39,True
+Max voltage,Max voltage,"7",7,True
+Compressor min ON time,Compressor min ON time,"14",14,True
+Compressor min OFF time,Compressor min OFF time,"19",19,True
+Comp OFF delay at open door,Comp OFF delay at open door,"1",1,True
+Sensor type,"ptc",,pt1,False
+Temperature Setpoint,Temperature Setpoint,"90.75",90.75,True
+Differential,Differential,"3.76",3.76,True
+Min set point limit,Min set point limit,"63.96",63.96,True
+Max set point limit,Max set point limit,"186.58",186.58,True
+Display offset,Display offset,"-5.26",-5.26,True
+Display Unit,"°C",,°F,False
+Calibration of Sair,Calibration of Sair,"-12.38",-12.38,True
+Night Set back,Night Set back,"32.33",32.33,True
+Offset reference displacement,Offset reference displacement,"-29.06",-29.06,True
+Pull down duration,Pull down duration,"210",210,True
+Pull down temp limit,Pull down temp limit,"143.75",143.75,True
+Defrost Method,"Hotgas",,Natural,False
+Defrost stop temperature,Defrost stop temperature,"12.78",12.78,True
+Defrost Interval,Defrost Interval,"103",103,True
+Max defrost Time,Max defrost Time,"440",440,True
+Defrost delay at power up,Defrost delay at power up,"204",204,True
+Drip delay,Drip delay,"7",7,True
+Comp accumulated runtime,Comp accumulated runtime,"5",5,True
+Defrost delay after pulldown ,Defrost delay after pulldown ,"209",209,True
+Delay of outputs at startup,Delay of outputs at startup,"91",91,True
+DI1 configuration,"Sc",,Sc,False
+Serial address,Serial address,"182",182,True
+Password,Password,"552",552,True
+Cooling/Heating,"Heating",,Heating,False
+Display Resolution ,"0.1",,0.1,False
+DI1 polarity,"no",,nc,False
+Defrost Method,"Natural",,Natural,False
+Defrost Stop Sensor,"None",,Sair temp Sensor,False

@@ -1,0 +1,124 @@
+﻿MenuCode,Name,DefaultValue,Min,Max,Unit,Enum,Help
+TID,ID low part,1,0,65535, ,,
+TID,ID high part,2,0,65535, ,,
+TID,Serial Number,131072,0,10000000, ,,
+TYN,Type Number 091X,33302,0,65535, ,,
+TYN,Type Number 077F,33302,0,65535, ,,
+TYN,TypeNumber,33302,0,65535, ,,
+SWV,Software version,1.09,0,999, ,,
+HWV,Hardware version,0,0,65535, ,,
+PAV,Parameter version,1,0,65535, ,,
+AID,Application ID,1,0,65535, ,"1:STANDARD,2:WINECOOLER,3:DOUBLEDOOR,4:COND101,5:GDM101,6:DUALBAND102,7:DUALDEFROST,13:DFNOFROST100,14:VFGDM100,15:MEDICINECOOLER,16:CondMKS100,17:KIR_NOFROST100",
+RCC,Refrigerator Cold Cut-out,0,-50,70,°C,,"Desired cut-out temperature in coldest position/ set-point
+"
+RWC,Refrigerator Warm Cut-out,10,-50,70,°C,,"Desired cut-out temperature in warmest position/ set-point
+"
+RUS,Refrigerator User Setpoint,50,0,100,%,,"In case of knob (potentiometer) failure, this setting would bring the temperature set-point to a particular desired position, between the warmest and coldest set-points, which could be set as the percentage between warmest (0%) and coldest(100%) positions/ set-points
+"
+RCD,Refrigerator Cold Differential,1,-1,50,K,,"If set, the display will show the temperature in Fahrenheit."
+RWD,Refrigerator Warm Differential,1,-1,50,K,,"Difference in the cut-in and cut-out temperartures at the warmest position (set-point)
+"
+FSC,Fan stops on compressor cutout,42,0,1,,"1:Enable,0:Disable","If this pamater is enabled , the Fan will stop when the compressor stops."
+RMR,Refrigerator Min Runtime,300,0,1800,Sec,,"To prevent the compressor from frequent cut-outs, this parameter would ensure that the  compressor runs for atleast the specified time. This parameter overrides the cut-out temperature."
+RMS,Refrigerator Min Stoptime,300,0,1800,Sec,,
+SCT,Super Cool Time,120,0,1440,Min,,"Tip: Setting this parameter too high could lead to unneccessary deep temperatures."""
+RER,Refrigerator Error Runtime,600,0,3600,Sec,,"
+""To prevent the compressor from frequent cut-ins, this parameter would ensure that the  compressor remains in idle state for atleast the specified time. This parameter overrides the cut-in temperatures.
+
+Tip: Setting this parameter too high could lead to unneccessary warm temperatures."
+RES,Refrigerator Error Stoptime,900,0,3600,Sec,,"
+To avoid long idle state of compressor, this parameter would set maximum stop time allowed, after which the compressor would start irrespective of cut-in temperature. "
+RUA,Refrigerator Overtemp Alarm,42,0,1,,"1:Enable,0:Disable","
+This parameter only becomes active in the unlikely event of temperature sensor failure, the compressor would run for specified fixed run time, to maintain safe temprature of the application. "
+ROA,Refrigerator Undertemp Alarm,42,0,1,,"1:Enable,0:Disable","
+This parameter only becomes active in the unlikely event of temperature sensor failure, the compressor would stop for specified fixed stop time, to maintain safe temprature of the application."
+RCO,Refrigerator Cold Overtemp Alarm,25,-50,70,°C,,"
+""
+""
+Warmest temperature allowed at the coldest set-point after which an alarm would be raised."
+RWO,Refrigerator Warm Overtemp Alarm,25,-50,70,°C,,"
+Warmest temperature allowed at the warmest set-point after which an alarm would be raised."
+RCU,Refrigerator Cold Undertemp Alarm,2,-50,70,°C,,"
+Coldest temperature allowed at the coldest set-point after which an alarm would be raised."
+RWU,Refrigerator Warm Undertemp Alarm,2,-50,70,°C,,"
+Coldest temperature allowed at the warmest set-point after which an alarm would be raised."
+RAD,Refrigerator Alarm Delay,60,0,120,Min,,"
+Time delay to raise over or undertemperature alarm signal. It is not active at power up."
+DEM,Defrost method,0,0,3,,"0:No defrost,1:Start;Time Stop;Control temp","
+""Selection of defrost method
+1. No Defrost: Select this option if you don't need defrost functionality. If this option is selected, it will disable all defrost related parameters.
+
+2. Start by Time, Stop by Cabinet temperature: Select this option, if you want to start defrost after fixed specified accumulated compressor run time intervals, and stop the defrost when the desired Cabinet temperature (measures by temperature/ cabinet sensor) is reached as set in the Defrost Terminate temperatur (DTT) parameter.
+
+3. Start by Time, Stop by Evaporator temperature: Select this option, if you want to start defrost after fixed specified accumulated compressor run time intervals, and stop the defrost when the desired evaporator temperature (measures by evaporator sensor) is reached as set in the Defrost Terminate temperatur (DTT) parameter.
+
+4. Start and Stop by Evaporator temperature: Select this option, if you want to start and stop the defrost based on evaporator temperature.
+"
+FOD,Fan on during defrost,42,0,1,,"1:Enable,0:Disable","
+Used in natural defrost method to accelerate the defrosting."""
+DTT,Defrost Terminate Temperature,5,0,50,°C,,"Temperature at which the defrost session will be terminated.
+"
+MIT,Minimum Defrost Time,900,0,21600,sec,,"Minimum time limit defined for defrost duration
+"
+MAT,Maximum Defrost Time,1800,0,43200,sec,,"Maximum time limit defined for defrost duration
+"
+MII,Minimum Defrost Interval,30,0,720,Min,,"Minimum time interval between two defrost sessions
+"
+FSA,Fan Start Delay,0,0,1800,Sec,,"Time delay to start the fan after compressor cut-in
+"
+FSO,Fan Stop Delay,0,0,1800,Sec,,"Time delay to stop the fan afer compressor cut-out
+"
+RLD,Remote Lock at Defrost,4,0,1,,"1:Enable,0:Disable","If set, the display will not change value during defrost. The lock time is specified by Remote display Locktime""."""
+RSO,Refrigerator Remote Offset,0,-10,10,°C,,"This parameter can be used to calibrate for sensor tolerances. It cancels the deviation caused by long lengths of sensor cable.
+"
+RSD,Refrigerator Remote Deviation,0,-10,10,°C,,"This parameter is used to compensate for bad sensor placement, to minimize the influence of the ambient temperature to the sensor.
+"
+RST,Refrigerator Remote sample time,10,0,255,Sec,,"if RST parameter is set to zero, the temperature would be displayed immediately as it is read from the sensor.  If set to any other value for example 10, ETP R1 would sample the temperature every ten seconds and moving average of 20 samples would be calculated. So if there is a temperature change, the ETPR1 would take 20 multiplied by 10 seconds i.e., 200 Secs(Max) to reach the exact temperature.
+"
+RDL,Refrigerator Remote Display Locktime,15,0,1440,Min,,"To avoid temperature fluctuations to be visible to the user, you can lock the display to show the temperature before a defrost was started. Or you can let the display show the setpoint. This parameter specifies how long time, it should be locked.
+"
+,Control temp Freezer,0,0,0,°C,,
+,Condenser temperature,0,0,0,°C,,
+,User set,0,0,0,% 0: Warm 100%: Cold,,
+,Voltage,0,0,0,V,,
+,RelayCount,0,0,0, ,,
+,Cutin Cpr Refrigerator,0,0,0,°C,, 
+,Cutout Cpr Refrigerator,0,0,0,°C,,
+,Alarm high temp Refrigerator,0,0,0,°C,,
+,Alarm low temp Refrigerator,0,0,0,°C,,
+,Compressor freezer,0,0,1, ,"1:On,0:Off",
+,Fan ref,0,0,1, ,"1:On,0:Off",
+,Compressor ref,0,0,1, ,"1:On,0:Off",
+,Status refrigerator,0,0,16,,"0:CTR_Run,1:CTR_Standby,2:CTR_Defrost,3:CTR_Error,4:CTR_Start,5:CTR_Off,6:Def End,7:Fac test",
+,Alarm,0,0,16,,"1:Control Refrigerator,2:Control Freezzer,3:Alarm High Temp Freezer,4:Alarm Low Temp REfrigerator,5:Alarm High Temp REfrigerator,6:Alarm Low Temp Freezer",
+,Factory test,0,0,65535,,,
+ ,Control temp Refrigerator,0,0,0,°C, ,
+ ,Panel Spindle Selection,0,0,2,,"0:Panel,1:Panel+Spindle with Stop Function,2:Panel + Spindle without stop function",
+,Zero Cross Switching,42,0,1,,"1:Enable,0:Disable",
+FUA,Freezer Undertemp Alarm,42,0,1,,"1:Enable,0:Disable",
+FOA,Freezer Overtemp Alarm,42,0,1,,"1:Enable,0:Disable",
+FCC,Freezer Cold Cut-out,-25,-50,70,°C,,
+FWC,Freezer Warm Cut-out,-16,-50,70,°C,,
+FUS,Freezer User Setpoint,50,0,100,%,,
+FCD,Freezer Cold Differential,1,-1,20,K,,
+FWD,Freezer Warm Differential,1,-1,20,K,,
+FMS,Freezer Min Stoptime,300,0,1800,sec,,Minimum stop time of fan in order to avoid sudden ON/OFF of fan.
+FMR,Freezer Min Runtime,300,0,1800,Sec,,Minimum run time of fan in order to avoid sudden ON/OFF of fan.
+FES,Freezer Error Stoptime,900,0,3600,sec,,
+FER,Freezer Error Runtime,600,0,3600,Secs,,
+SFT,Super freeze time,1440,0,2880,min,,This is the time at which compressor will run continously when the controller is set to superccoll/superfreeze mode. During this mode controller will run at lowest set point and will restore the original setpoint after expiry of supercool/freeze time expires.
+FZC,Freezer Zero-Cross switching,0,-100,100,%,,
+FCO,Freezer Cold Overtemp Alarm,-10,-50,70,°C,,
+FWO,Freezer Warm Overtemp Alarm,-10,-50,70,°C, ,
+FCU,Freezer Cold Undertemp Alarm,-50,-50,70,°C,,
+FWU,Freezer Warm Undertemp alarm,-50,-50,70,°C,,
+FAD,Freezer Alarm Delay,60,0,120,Min,,This fan delay is to avoid circulating warm air from evaporator due to defrost seesion.
+RSO,Freezer Remote Offset,0,-10,10,k,,
+RSD,Freezer Remote Deviation,0,-10,10,K,,
+RST,Freezer Remote sample time,5,0,30,Min,,
+,Type of application,1,0,3,,"0:Double Door(combi),1:Refrigerator(Separate),2:Freezer(Separate)",
+,Cutin Cpr Freezer,0,0,0,°C,,
+,Cutout Cpr Freezer,0,0,0,°C,,
+,Alarm high temp Freezer,0,0,0,°C,,
+,Alarm low temp Freezer,0,0,0,°C,,
+,Status freezer,0,0,16,,"0:CTR_Run,1:CTR_Standby,2:CTR_Defrost,3:CTR_Error,4:CTR_Start,5:CTR_Off,6:Def End,7:Fac test",

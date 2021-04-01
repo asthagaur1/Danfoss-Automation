@@ -1,0 +1,370 @@
+MenuCode,Parameter_Name,Param_ID,Min,Max,Default_Value,Unit,Wizard_Screen,Visibility,Variable_Name
+R012,Main switch,57,0,1,0,,,,Par_main_switch
+R102,Operation mode,296,0,1,0,,Screen1Parameter,,Par_Operation_mode
+O061,Application,587,0,5,0,,Screen1Parameter,0,Par_ApplicationSelect
+R100,Compressor capacity,384,0.0,100.0,0.0,%,,0,Par_Compressor_Capacity
+R014,Thermostatic mode,325,0,2,0,,Screen2Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant != 0,Par_Thermostatic_mode
+R015,Sensor,316,0,1,0,,Screen2Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant != 0 && Par_Thermostatic_mode != 0,Par_SensorSelect
+R101,Temperature setpoint,326,-70.0,70.0,3.0,°C,Screen2Parameter,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Temperature_Setpoint
+R001,Differential,328,0.1,10.0,2.0,K,Screen2Parameter,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Differential
+R006,External reference offset max.,395,Par_Ext_Ref_Offset_Min,50.0,0.0,K,,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant != 2 && Par_Mapping_AI4_AB == 1) || (Par_EKE_1V_Variant == 2 && Par_Mapping_AI4_C == 1) || Par_Ext_Ref_Setup == 4 || Par_Ext_Ref_Setup == 6),Par_Ext_Ref_Offset_Max
+R106,External reference offset min.,394,-50.0,Par_Ext_Ref_Offset_Max,0.0,K,,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant != 2 && Par_Mapping_AI4_AB == 1) || (Par_EKE_1V_Variant == 2 && Par_Mapping_AI4_C == 1) || Par_Ext_Ref_Setup == 4 || Par_Ext_Ref_Setup == 6),Par_Ext_Ref_Offset_Min
+R009,S2 Correction,275,-10.0,10.0,0.0,K,,Par_Operation_mode == 0,Par_S2_Correction
+R010,S3 Correction,276,-10.0,10.0,0.0,K,,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 1 && Par_Mapping_AI1_BC == 1) || (Par_EKE_1V_Variant == 2 && (Par_Mapping_AI1_BC == 1 || Par_Mapping_AI5_C == 1))),Par_S3_Correction
+R105,S4 Correction,277,-10.0,10.0,0.0,K,,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 1 && Par_Mapping_AI1_BC == 2) || (Par_EKE_1V_Variant == 2 && (Par_Mapping_AI1_BC == 2 || Par_Mapping_AI5_C == 2))),Par_S4_Correction
+R107,Pe Correction,279,-5.0,5.0,0.0,barg,,Par_Operation_mode == 0,Par_P0_Correction
+R108,Pc Correction,280,-5.0,5.0,0.0,barg,,Par_Operation_mode == 0 && (Par_EKE_1V_Variant == 2 && Par_Mapping_AI4_C == 2),Par_Pc_Correction
+N100,MTR Tn,362,20,3600,1800,,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 2,Par_MtrCtrl_Tn
+N101,MTR Kp,363,0.2,20.0,3.0,,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 2,Par_MtrCtrl_Kp
+O030,Refrigerant,243,0,49,0,,Screen1Parameter,,Par_Refrigerant
+O100,Antoine constant A1,249,8.000,12.000,9.800,,Screen1Parameter,Par_Refrigerant == 13,Par_Refrigerant_A1
+O101,Antoine constant A2,250,-3000.0,-1300.0,-2250.0,,Screen1Parameter,Par_Refrigerant == 13,Par_Refrigerant_A2
+O102,Antoine constant A3,251,210.0,300.0,253.0,,Screen1Parameter,Par_Refrigerant == 13,Par_Refrigerant_A3
+O103,Refrigerant min. temperature,373,-100.0,Par_Refrigerant_T_Max_Rem,-100.0,°C,,0,Par_Refrigerant_T_Min_Rem
+O104,Refrigerant max. temperature,374,Par_Refrigerant_T_Min_Rem,100.0,100.0,°C,,0,Par_Refrigerant_T_Max_Rem
+N102,Startup mode,312,0,2,0,,,,Par_Startup_Mode
+N015,Startup time,313,1,600,90,s,,,Par_StartUpTime
+N104,Minimum startup time,560,1,240,15,s,,Par_Startup_Mode == 0,Par_Minimum_Startup_Time
+N017,Startup OD,314,1,100,32,%,,,Par_StartUpOd
+N021,SH reference mode,317,0,3,2,,,,Par_ShRef_Mode
+N107,SH fixed setpoint,397,2.0,40.0,7.0,K,,Par_ShRef_Mode == 0,Par_SH_Reference
+N009,SH maximum,319,Par_ShMin,40.0,9.0,K,,Par_ShRef_Mode != 0,Par_ShMax
+N010,SH minimum,320,2.0,Par_ShMax,4.0,K,,Par_ShRef_Mode != 0,Par_ShMin
+N116,SH reference delta temp. factor,564,20,100,65,%,,Par_ShRef_Mode == 3,Par_SH_Ref_Delta_Temp_Factor
+N005,SH Tn,352,20,900,90,s,,,Par_ShCtrl_Tn
+N019,SH Kp Min.,348,0.1,1.0,0.6,,,,Par_ShCtrl_KpMin
+N004,SH Kp,349,0.1,20.0,1.5,,,,Par_ShCtrl_Kp
+N020,SH KpTe,353,0.0,20.0,3.0,,,,Par_ShCtrl_KpT0
+I066,Minimum OD,301,0,Par_Valve_Max_OD,0,%,,,Par_Valve_Min_OD
+N032,Maximum OD,302,Par_Valve_Min_OD,100,100,%,,,Par_Valve_Max_OD
+N117,SH close function,385,0,1,1,,,,Par_SH_Close_Used
+N119,SH close setpoint,342,-5.0,20.0,2.0,K,,Par_SH_Close_Used == 1,Par_ShClose_SetPoint
+N120,SH close Tn divide,344,1,5,3,,,Par_SH_Close_Used == 1,Par_SHCloseTnDivide
+N121,SH close Kp factor,343,0.5,10.0,1.5,,,Par_SH_Close_Used == 1,Par_SHCloseKpFactor
+N123,Limit Kp,355,1.0,20.0,5.0,,,,Par_LimitCtrl_Kp
+N125,Limit Tn,354,20,900,45,s,,,Par_LimitCtrl_Tn
+N126,Minimum S4 mode,321,0,1,0,,,Par_EKE_1V_Variant != 0,Par_MinS4_mode
+N127,Minimum S4 setpoint,322,-50.0,60.0,5.0,°C,,Par_MinS4_mode == 1,Par_MinS4_SetPoint
+N018,MSS Stability,318,0.0,10.0,5.0,,,Par_ShRef_Mode == 2,Par_Stability
+N129,MSS T0 stability factor ,563,0.0,1.0,0.0,,,Par_ShRef_Mode == 2,Par_T0_Varians_Factor
+N130,MOP function,332,0,1,0,,,,Par_MOP_mode
+N011,MOP setpoint,333,-70.0,60.0,0.0,°C,,Par_MOP_mode == 1,Par_MOP_SetPoint
+N140,LOP function,335,0,1,0,,,,Par_LOP_mode
+N141,LOP setpoint,336,-90.0,40.0,-40.0,°C,,Par_LOP_mode == 1,Par_LOP_SetPoint
+N142,LOP priority mode,338,0,1,0,,,Par_LOP_mode == 1,Par_LOPPriority_mode
+N131,LOP maximum time,339,0,600,120,s,,(Par_LOPPriority_mode == 1) && (Par_LOP_mode == 1),Par_LOPMaxTime
+N133,High condensing temp. protection function,346,0,1,0,,,Par_EKE_1V_Variant == 2,Par_HiCondTempPrte_mode
+N134,High condensing temp. protection setpoint,347,0.0,100.0,50.0,°C,,Par_HiCondTempPrte_mode == 1,Par_HiCondTempPrte_SetPoint
+N135,Compressor speed feedforward function,358,0,1,0,,,,Par_CompSpeedFeforward_mode
+N136,FF low capacity turning point,369,0.0,100.0,25.0,%,,Par_CompSpeedFeforward_mode == 1,Par_SHCompLoCapPoint
+N137,FF maximum factor for Tn tuning,370,1,5,2,,,Par_CompSpeedFeforward_mode == 1,Par_SHTnFactor
+N138,Average  OD,566,0,100,0,,,,Par_Estimated_OD
+N139,Estimated KpTe,565,0.0,100.0,0.0,,,,Par_Estimated_KpT0
+N128,Average delta temperature,567,0.0,50.0,0.0,,,Par_EKE_1V_Variant != 0,Par_Estimated_Delta_Temperature
+N143,SH control sensor error action,698,0,2,0,,,,Par_SHCtrl_sensor_error_action
+N144,Thermostatic sensor error action,699,0,2,0,,,Par_EKE_1V_Variant != 0,Par_Therm_sensor_error_action
+N145,Fixed OD during emergency cooling,697,0,100,0,%,,Par_SHCtrl_sensor_error_action == 1 || Par_Therm_sensor_error_action == 1,Par_Fixed_OD_during_emergency
+N112,Heat startup time,573,1,600,90,s,,Par_Thermostatic_mode == 0,Par_Heat_StartUpTime
+N103,Heat minimum startup time,574,1,240,15,s,,Par_Startup_Mode == 0 && Par_Thermostatic_mode == 0,Par_Heat_Minimum_Startup_Time
+N105,Heat startup OD,575,1,100,32,%,,Par_Thermostatic_mode == 0,Par_Heat_StartUpOd
+N106,Heat SH fixed setpoint,576,2.0,40.0,7.0,K,,Par_ShRef_Mode == 0 && Par_Thermostatic_mode == 0,Par_Heat_SH_Reference
+N108,Heat SH maximum,577,Par_Heat_ShMin,40.0,9.0,K,,Par_ShRef_Mode != 0 && Par_Thermostatic_mode == 0,Par_Heat_ShMax
+N109,Heat SH minimum,578,2.0,Par_Heat_ShMax,4.0,K,,Par_ShRef_Mode != 0 && Par_Thermostatic_mode == 0,Par_Heat_ShMin
+N115,Heat SH ref. delta temp. factor,583,20,100,65,%,,Par_ShRef_Mode == 3 && Par_Thermostatic_mode == 0,Par_Heat_SH_Ref_Delta_Temp_Factor
+N110,Heat SH Tn,579,20,900,90,s,,Par_Thermostatic_mode == 0,Par_Heat_ShCtrl_Tn
+N111,Heat SH Kp minimum,580,0.1,1.0,0.6,,,Par_Thermostatic_mode == 0,Par_Heat_ShCtrl_KpMin
+N113,Heat SH Kp,581,0.1,20.0,1.5,,,Par_Thermostatic_mode == 0,Par_Heat_ShCtrl_Kp
+N114,Heat SH KpTe,582,0.0,20.0,3.0,,,Par_Thermostatic_mode == 0,Par_Heat_ShCtrl_KpT0
+N118,Heat SH close setpoint,584,-5.0,20.0,2.0,K,,Par_SH_Close_Used == 1 && Par_Thermostatic_mode == 0,Par_Heat_ShClose_SetPoint
+N124,Heat limit Tn,586,20,900,45,s,,Par_Thermostatic_mode == 0,Par_Heat_LimitCtrl_Tn
+N122,Heat limit Kp,585,1.0,20.0,5.0,,,Par_Thermostatic_mode == 0,Par_Heat_LimitCtrl_Kp
+D101,Defrost start low pressure limit,255,0.1,20.0,1.0,barg,,Par_Def_start_time != 0,Par_Def_low_press_start
+D102,Defrost start time,256,0,600,0,s,,,Par_Def_start_time
+D100,Defrost OD,257,0.0,100.0,0.0,%,,,Par_Def_OD
+D104,Defrost end closed time,260,0,600,0,s,,,Par_Def_end_close_time
+D103,Defrost end OD time,262,0,600,0,s,,,Par_Def_end_time
+D105,Defrost end OD,261,0.0,100.0,50.0,%,,Par_Def_end_time != 0,Par_Def_end_OD
+A100,Low Min S4 delay,216,0,1200,60,s,,Par_Operation_mode == 0 && Par_MinS4_mode == 1,Par_Low_min_s4_time
+A101,Low Min S4 band,217,0.0,30.0,2.0,K,,Par_Operation_mode == 0 && Par_MinS4_mode == 1,Par_Low_min_s4_band
+A001,Upper temperature alarm,218,0.0,40.0,5.0,K,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Upper_temp_alarm
+A002,Lower temperature alarm,219,0.0,40.0,3.0,K,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Lower_temp_alarm
+A003,Temperature alarm delay,220,0,90,30,min,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Temp_alarm_delay
+A034,Battery alarm,559,0,1,0,,,,Par_Use_Battery_Backup
+A103,MOP alarm delay,221,0,1200,60,s,,Par_Operation_mode == 0 && Par_MOP_mode == 1,Par_High_MOP_time
+A104,MOP alarm differential,222,0.0,40.0,5.0,K,,Par_Operation_mode == 0 && Par_MOP_mode == 1,Par_High_MOP_band
+A105,LOP alarm delay,223,0,1200,60,s,,Par_Operation_mode == 0 && Par_LOP_mode == 1,Par_Low_LOP_time
+A106,LOP alarm differential,224,0.0,40.0,5.0,K,,Par_Operation_mode == 0 && Par_LOP_mode == 1,Par_Low_LOP_band
+A107,Condensing temp. alarm delay,225,0,1200,120,s,,Par_Operation_mode == 0 && Par_HiCondTempPrte_mode == 1,Par_Cond_temp_time
+A113,Condensing temp. alarm differential,226,0.0,40.0,5.0,K,,Par_Operation_mode == 0 && Par_HiCondTempPrte_mode == 1,Par_Cond_temp_band
+A108,High SH alarm delay,227,0,1800,600,s,,Par_Operation_mode == 0,Par_High_SH_time
+A109,High SH alarm differential,228,0.0,40.0,5.0,K,,Par_Operation_mode == 0,Par_High_SH_band
+A110,Low SH alarm delay,229,0,1200,60,s,,Par_Operation_mode == 0,Par_Low_SH_time
+A102,Low SH alarm differential,230,0.0,40.0,3.0,K,,Par_Operation_mode == 0,Par_Low_SH_band
+A112,Lack of capacity alarm delay,669,0,120,0,min,,Par_Operation_mode == 0,Par_Lack_of_capacity_window
+I020,AI1 configuration,377,0,2,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant != 0,Par_Mapping_AI1_BC
+I021,AI4 configuration,181,0,2,0,,,Par_EKE_1V_Variant == 2,Par_Mapping_AI4_C
+I080,AI4 configuration,707,0,1,0,,,Par_EKE_1V_Variant != 2,Par_Mapping_AI4_AB
+I022,AI5 configuration,531,0,2,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_Mapping_AI5_C
+O003,DI1 configuration,184,0,1,1,,,Par_EKE_1V_Variant == 0,Par_Mapping_DI1_A
+O002,DI1 configuration,746,0,1,1,,,Par_EKE_1V_Variant != 0,Par_Mapping_DI1_BC
+O022,DI2 configuration,185,0,3,0,,,,Par_Mapping_DI2
+O037,DI3 configuration,186,0,3,0,,,Par_EKE_1V_Variant == 0,Par_Mapping_DI3_A
+O013,DO1 configuration,187,0,2,0,,Screen4Parameter,,Par_Mapping_DO1
+I040,S2 sensor configuration,188,0,6,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_s2_sensor_setup_C
+I081,S2 sensor configuration,714,0,5,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_s2_sensor_setup_B
+I082,S2 sensor configuration,715,0,4,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 0,Par_s2_sensor_setup_A
+I041,S3 sensor configuration,189,0,6,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_s3_sensor_setup_C
+I083,S3 sensor configuration,712,0,5,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_s3_sensor_setup_B
+I042,S4 sensor configuration,190,0,6,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_s4_sensor_setup_C
+I084,S4 sensor configuration,710,0,5,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_s4_sensor_setup_B
+I043,Pe transmitter configuration,191,0,14,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_p0_transmitter_setup_C
+I085,Pe transmitter configuration,717,0,8,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_p0_transmitter_setup_B
+I086,Pe transmitter configuration,718,0,7,0,,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 0,Par_p0_transmitter_setup_A
+I045,Pe ratio. low,194,3,Par_p0_ratio_high,10,%,Screen3Parameter,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_p0_transmitter_setup_A == 4) || (Par_EKE_1V_Variant == 1 && Par_p0_transmitter_setup_B == 4) || (Par_EKE_1V_Variant == 2 && Par_p0_transmitter_setup_C == 4)),Par_p0_ratio_low
+I046,Pe ratio high,193,Par_p0_ratio_low,97,90,%,Screen3Parameter,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_p0_transmitter_setup_A == 4) || (Par_EKE_1V_Variant == 1 && Par_p0_transmitter_setup_B == 4) || (Par_EKE_1V_Variant == 2 && Par_p0_transmitter_setup_C == 4)),Par_p0_ratio_high
+I047,Pe voltage low,198,0.0,Par_p0_voltage_high_C,0.0,V,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_p0_transmitter_setup_C == 7,Par_p0_voltage_low_C
+I087,Pe voltage low,721,0.0,Par_p0_voltage_high_AB,0.0,V,Screen3Parameter,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_p0_transmitter_setup_A == 7) || (Par_EKE_1V_Variant == 1 && Par_p0_transmitter_setup_B == 7)),Par_p0_voltage_low_AB
+I048,Pe voltage high,197,Par_p0_voltage_low_C,10.0,10.0,V,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_p0_transmitter_setup_C == 7,Par_p0_voltage_high_C
+I088,Pe voltage high,720,Par_p0_voltage_low_AB,5.0,5.0,V,Screen3Parameter,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_p0_transmitter_setup_A == 7) || (Par_EKE_1V_Variant == 1 && Par_p0_transmitter_setup_B == 7)),Par_p0_voltage_high_AB
+I049,Pe current low,202,0.0,Par_p0_current_high,4.0,mA,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_p0_transmitter_setup_C == 14,Par_p0_current_low
+I050,Pe current high,201,Par_p0_current_low,20.0,20.0,mA,Screen3Parameter,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_p0_transmitter_setup_C == 14,Par_p0_current_high
+O020,Pe transmitter min.,270,-1.0,Par_p0_transmitter_max,-1.0,barg,Screen3Parameter,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_p0_transmitter_setup_A != 0) || (Par_EKE_1V_Variant == 1 && (Par_p0_transmitter_setup_B != 0 && Par_p0_transmitter_setup_B != 8)) || (Par_EKE_1V_Variant == 2 && (Par_p0_transmitter_setup_C != 0 && Par_p0_transmitter_setup_C != 8))),Par_p0_transmitter_min
+O021,Pe transmitter max.,271,Par_p0_transmitter_min,200.0,12.0,barg,Screen3Parameter,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_p0_transmitter_setup_A != 0) || (Par_EKE_1V_Variant == 1 && (Par_p0_transmitter_setup_B != 0 && Par_p0_transmitter_setup_B != 8)) || (Par_EKE_1V_Variant == 2 && (Par_p0_transmitter_setup_C != 0 && Par_p0_transmitter_setup_C != 8))),Par_p0_transmitter_max
+I044,Pc transmitter configuration,192,0,14,0,,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_pc_transmitter_setup_C
+I023,Pc ratio. low,196,3,Par_pc_ratio_high,3,%,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C == 4,Par_pc_ratio_low
+I024,Pc ratio high,195,Par_pc_ratio_low,97,97,%,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C == 4,Par_pc_ratio_high
+I025,Pc voltage low,200,0.0,Par_pc_voltage_high,0.0,V,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C == 7,Par_pc_voltage_low
+I026,Pc voltage high,199,Par_pc_voltage_low,10.0,10.0,V,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C == 7,Par_pc_voltage_high
+I038,Pc current low,204,0.0,Par_pc_current_high,4.0,mA,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C == 14,Par_pc_current_low
+I039,Pc current high,203,Par_pc_current_low,20.0,20.0,mA,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C == 14,Par_pc_current_high
+O047,Pc transmitter min.,272,-1.0,0.0,-1.0,barg,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C != 0 && Par_pc_transmitter_setup_C != 8,Par_pc_transmitter_min
+O048,Pc transmitter max,273,1.0,200.0,34.0,barg,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_pc_transmitter_setup_C != 0 && Par_pc_transmitter_setup_C != 8,Par_pc_transmitter_max
+I067,Valve configuration,284,0,32,0,,Screen4Parameter,,Par_Valve_Setup
+I027,Valve motor type,406,0,1,0,,,Par_Valve_Setup == 1,Par_Valve_Motor_Type
+I028,Valve drive current,286,10,1000,10,mA,Screen4Parameter,Par_Valve_Setup == 1,Par_Valve_Drive_Current
+I029,Valve step positioning,287,0,2,0,,,Par_Valve_Setup == 1,Par_Valve_Drive_Pattern
+I030,Valve total steps,288,1,8000,1,stp,Screen4Parameter,Par_Valve_Setup == 1,Par_Valve_Total_Steps
+I031,Valve speed,289,10,400,10,PPS,Screen4Parameter,Par_Valve_Setup == 1,Par_Valve_SPS
+I032,Valve start speed,290,1,100,20,%,,Par_Valve_Setup == 1,Par_Valve_Start_Speed
+I061,Valve emengency speed,300,50,200,100,%,,Par_Valve_Setup == 1,Par_Valve_Emer_Speed
+I062,Valve acceleration current,291,100,150,100,%,,Par_Valve_Setup == 1,Par_Valve_Acceleration_Current
+I063,Valve acceleration time,292,10,150,10,ms,,Par_Valve_Setup == 1,Par_Valve_Acceleration_Time
+I077,Valve holding current,293,0,300,0,%,,Par_Valve_Setup == 1,Par_Valve_Holding_Current
+I064,Valve step mode,294,0,4,3,,,Par_Valve_Setup == 1,Par_Valve_Step_Mode
+I065,Valve duty cycle,295,5,100,100,%,,Par_Valve_Setup == 1,Par_Valve_Duty_Cycle
+I069,Valve OD during stop,557,0,100,0,%,,,Par_Valve_OD_during_stop
+I070,Start backlash,303,0.0,50.0,0.0,%,,Par_Valve_Setup == 1,Par_Valve_Start_Backlash
+I071,Compensation backlash,304,0.0,10.0,0.0,%,,Par_Valve_Setup == 1,Par_Valve_Comp_Backlash
+I072,Overdrive,305,0.0,20.0,4.0,%,,Par_Valve_Setup == 1,Par_Overdrive
+I073,Overdrive enable OD,306,0,100,0,%,,,Par_Overdrive_Enable_OD
+I074,Overdrive block time,307,0,1440,10,min,,,Par_Overdrive_Blocktime
+I075,Valve motor decay mode,416,0,2,0,,,0,Par_Valve_Motor_Decay_Mode
+I076,Valve excitation time after stop,417,0,1000,10,ms,,Par_Valve_Setup == 1,Par_Valve_Excitation_Time_After_Stop
+I078,Preset OD,235,0.0,100.0,50.0,%,,,Par_Manual_OD_Preset
+I068,Valve neutral zone,418,0.0,5.0,0.5,%,,,Par_Valve_Neutral_Zone
+I090,Ext ref. configuration,726,0,2,0,,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 0 && Par_Mapping_AI4_AB == 1,Par_Ext_Ref_Setup_A
+I089,Ext ref. configuration,725,0,6,0,,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_Ext_Ref_Setup_B
+O010,Ext ref. configuration,396,0,9,0,,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_Ext_Ref_Setup_C
+I035,Ext ref. voltage high,392,Par_Ext_Ref_Voltage_Low,10.0,10.0,V,Screen3Parameter,(Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_Ext_Ref_Setup_A != 0) || (Par_EKE_1V_Variant == 1 && Par_Ext_Ref_Setup_B >= 1 && Par_Ext_Ref_Setup_B <= 3) || (Par_EKE_1V_Variant == 2 && Par_Ext_Ref_Setup_C >= 1 && Par_Ext_Ref_Setup_C <= 3))) || (Par_Operation_mode == 1 && ((Par_EKE_1V_Variant == 0) || (Par_EKE_1V_Variant == 1 && Par_Driver_Reference_Setup_B == 0) || (Par_EKE_1V_Variant == 2 && Par_Driver_Reference_Setup_C == 0))),Par_Ext_Ref_Voltage_High
+I036,Ext ref. current low,391,0.0,Par_Ext_Ref_Current_High,4.0,mA,Screen3Parameter,(Par_Operation_mode == 0 && (Par_EKE_1V_Variant == 2 && Par_Ext_Ref_Setup_C >= 7 && Par_Ext_Ref_Setup_C <= 9)) || (Par_Operation_mode == 1 && Par_EKE_1V_Variant == 2 && Par_Driver_Reference_Setup_C == 3),Par_Ext_Ref_Current_Low
+I037,Ext ref. current high,390,Par_Ext_Ref_Current_Low,20.0,20.0,mA,Screen3Parameter,(Par_Operation_mode == 0 && (Par_EKE_1V_Variant == 2 && Par_Ext_Ref_Setup_C >= 7 && Par_Ext_Ref_Setup_C <= 9)) || (Par_Operation_mode == 1 && Par_EKE_1V_Variant == 2 && Par_Driver_Reference_Setup_C == 3),Par_Ext_Ref_Current_High
+I034,Ext ref. voltage low,393,0.0,Par_Ext_Ref_Voltage_High,0.0,V,Screen3Parameter,(Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_Ext_Ref_Setup_A != 0) || (Par_EKE_1V_Variant == 1 && Par_Ext_Ref_Setup_B >= 1 && Par_Ext_Ref_Setup_B <= 3) || (Par_EKE_1V_Variant == 2 && Par_Ext_Ref_Setup_C >= 1 && Par_Ext_Ref_Setup_C <= 3))) || (Par_Operation_mode == 1 && ((Par_EKE_1V_Variant == 0) || (Par_EKE_1V_Variant == 1 && Par_Driver_Reference_Setup_B == 0) || (Par_EKE_1V_Variant == 2 && Par_Driver_Reference_Setup_C == 0))),Par_Ext_Ref_Voltage_Low
+I091,Driver reference configuration,728,0,2,0,,,Par_Operation_mode == 1 && Par_EKE_1V_Variant == 1,Par_Driver_Reference_Setup_B
+I033,Driver reference configuration,570,0,3,0,,,Par_Operation_mode == 1 && Par_EKE_1V_Variant == 2,Par_Driver_Reference_Setup_C
+I079,AI4 lowpass bandwidth,705,0,5,5,,,,Par_Filter_AI4
+O011,Language,30,0,0,0,,Screen1Parameter,,Par_Language
+K004,Login timeout,31,1,120,10,min,,,Par_Login_timeout_min
+K006,Backlight timeout,33,0,120,2,min,,,Par_Backlight_timeout_min
+O005,Password daily,27,0,999,100,,,,Par_Pswd_daily_user
+K002,Password service,28,0,999,200,,,,Par_Pswd_service
+K003,Password commission,29,0,999,300,,,,Par_Pswd_supervisor
+K005,Contrast,34,0,100,40,%,,,Par_Contrast
+K001,Brightness,35,0,100,80,%,,,Par_Brightness
+R005,Display unit,177,0,1,0,,,,Par_UnitSystem
+K010,Opening degree unit,568,0,1,0,,,,Par_Opening_degree_unit
+G001,Controller address,10,1,127,1,,,,Par_ID
+G003,CANbus minimum update interval,380,0,20,5,s,,,Par_CAN_bus_Min_Update_Interval
+G004,Modbus maximum update interval,379,0,60,5,s,,Par_EKE_1V_Variant != 0,Par_Modbus_Min_Update_Interval
+G005,Modbus baudrate,14,0,8,6,,,Par_EKE_1V_Variant != 0,Par_Modbus_baud
+G008,Modbus mode,79,0,2,1,,,Par_EKE_1V_Variant != 0,Par_Modbus_set
+G007,Modbus mapping,169,0,1,0,,,Par_EKE_1V_Variant != 0,Par_Modbus_mapping
+G002,CANbus baudrate,11,0,5,1,,,,Par_CAN_baudrate
+G012,Signal sharing Pe,246,0,1,0,,,Par_Operation_mode == 0,Par_Sharing_P0
+G013,Signal sharing Pc,247,0,1,0,,,Par_Operation_mode == 0,Par_Sharing_Pc
+G014,Signal sharing S3,248,0,1,0,,,Par_Operation_mode == 0,Par_Sharing_S3
+U118,Operation status,668,0,20,0,,,,Par_Operation_Status
+U022,Actual SH reference,398,0.0,100.0,0.0,K,,Par_Operation_mode == 0,Par_Actual_SH_Reference
+U021,Actual superheat,309,0.0,100.0,0.0,K,,Par_Operation_mode == 0,Par_Actual_Superheat
+U024,Actual OD,237,0.0,100.0,0.0,%,,Par_Opening_degree_unit == 0,Par_Act_OD
+U100,Actual step,569,0,10000,0,stp,,Par_Opening_degree_unit == 1,Par_Actual_OD_Stp
+U028,Actual temperature reference,399,0.0,100.0,0.0,K,,Par_Operation_mode == 0 && Par_Thermostatic_mode != 0,Par_Actual_Temperature_Reference
+U020,S2 suction pipe,205,-50.0,150.0,-50.0,°C,,Par_Operation_mode == 0,Par_s2
+U027,S3 media inlet,206,-50.0,150.0,-50.0,°C,,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 1 && Par_Mapping_AI1_BC == 1) || (Par_EKE_1V_Variant == 2 && (Par_Mapping_AI1_BC == 1 || Par_Mapping_AI5_C == 1))),Par_s3
+U016,S4 media outlet,207,-50.0,150.0,-50.0,°C,,Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 1 && Par_Mapping_AI1_BC == 2) || (Par_EKE_1V_Variant == 2 && (Par_Mapping_AI1_BC == 2 || Par_Mapping_AI5_C == 2))),Par_s4
+U025,Pe evaporator,208,-1.00,200.00,0.00,barg,,Par_Operation_mode == 0,Par_p0
+U026,Te saturated evaporation temperature,232,0.0,100.0,0.0,°C,,Par_Operation_mode == 0,Par_T0
+U104,Pc condenser,209,-1.00,200.00,0.00,barg,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_Mapping_AI4_C == 2,Par_pc
+U105,Tc saturated condenser temperature,231,0.0,100.0,0.0,°C,,Par_Operation_mode == 0 && Par_EKE_1V_Variant == 2 && Par_Mapping_AI4_C == 2,Par_Tc
+U101,Actual battery voltage,558,0.0,30.0,0.0,V,,Par_Use_Battery_Backup == 1,Par_Actual_Battery_Voltage
+U058,Liquid line solenoid valve,308,0,1,0,,,Par_Mapping_DO1 == 1,Par_EVR
+U114,Alarm relay,281,0,1,0,,,Par_Mapping_DO1 == 0,Par_Alarm_Relay
+U007,External reference signal,588,0.0,12.0,0.0,V,,(Par_Operation_mode == 0 && ((Par_EKE_1V_Variant == 0 && Par_Ext_Ref_Setup_A != 0) || (Par_EKE_1V_Variant == 1 && Par_Ext_Ref_Setup_B >= 1 && Par_Ext_Ref_Setup_B <= 3) || (Par_EKE_1V_Variant == 2 && Par_Ext_Ref_Setup_C >= 1 && Par_Ext_Ref_Setup_C <= 3))) || (Par_Operation_mode == 1 && ((Par_EKE_1V_Variant == 0) || (Par_EKE_1V_Variant == 1 && Par_Driver_Reference_Setup_B == 0) || (Par_EKE_1V_Variant == 2 && Par_Driver_Reference_Setup_C == 0))),Par_Ext_Ref_Sig_Volt
+U006,External reference signal,378,0.0,24.0,0.0,mA,,(Par_Operation_mode == 0 && (Par_EKE_1V_Variant == 2 && Par_Ext_Ref_Setup_C >= 7 && Par_Ext_Ref_Setup_C <= 9)) || (Par_Operation_mode == 1 && Par_EKE_1V_Variant == 2 && Par_Driver_Reference_Setup_C == 3),Par_Ext_Ref_Sig_mA
+U107,Act. ext. ref. temperature offset,533,0.0,40.0,0.0,K,,Par_Operation_mode == 0,Par_Actual_Ext_Ref_Temperature_Offset
+U108,Act. ext. ref. SH offset,534,0.0,40.0,0.0,K,,Par_Operation_mode == 0,Par_Actual_Ext_Ref_SH_Offset
+U124,Act. ext. ref. maximum OD,743,0.0,100.0,0.0,%,,0,Par_Actual_Max_OD
+U109,DI main switch,238,0,1,0,,,,Par_DI_main_switch
+U110,DI defrost start,239,0,1,0,,,Par_Operation_mode == 0,Par_DI_defrost_start
+U111,DI preset OD,240,0,1,0,,,,Par_DI_manual_preset_od
+U112,DI heating,241,0,1,0,,,Par_Operation_mode == 0,Par_DI_heat_cool
+U018,Thermostat cut-in time,376,0,16300,0,min,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 1,Par_Thermostat_cut_in_time
+U119,Thermostat average cut-in time,702,0,16300,15,min,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 1,Par_Thermostat_average_cut_in_time
+U120,Thermostat average cut-out time,703,0,16300,15,min,,Par_Operation_mode == 0 && Par_Thermostatic_mode == 1,Par_Thermostat_average_cut_out_time
+U122,Average temperature,741,0.0,100.0,0.0,°C,,Par_Operation_mode == 0,Par_Average_Temperature
+U121,Average SH,740,0.0,100.0,0.0,K,,Par_Operation_mode == 0,Par_Average_Superheat
+O018,Manual mode,233,0,1,0,,,Par_DI_manual_preset_od == 0,Par_Manual_mode
+B101,Manual mode timeout,236,0,3600,60,s,,Par_Manual_mode == 1,Par_Manual_mode_timeout
+O045,Manual OD,234,0.0,100.0,0.0,%,,Par_Manual_mode == 1,Par_Manual_OD
+B100,Manual step,571,0,8000,0,stp,,0,Par_Manual_Step
+B104,Manual homeing,245,0,1,0,,,Par_Manual_mode == 1,Par_Manual_home
+B103,Manual relay DO1,244,0,1,0,,,Par_Manual_mode == 1,Par_Manual_alm
+B007,Apply defaults,81,0,3,0,,,,Par_Apply_defaults
+B105,Enter service state,299,0,1,0,,,,Par_Enter_Service_State
+ddd,Wizard lock,173,0,1,0,,,,Par_Wizard_lock
+wcm,Wizard command,666,0,100,0,,,,Par_Wizard_command
+wcp,Wizard completed,91,0,1,1,,,0,Par_wizard_completed
+w00,Apply defaults,674,0,1,0,,,Par_wizard_completed == 1,Par_Wizard_Apply_defaults
+w01,Operation mode,604,0,1,0,,,,Par_Wizard_operation_mode
+w02,Application,605,0,5,0,,,Par_Wizard_operation_mode == 0,Par_Wizard_applicationSelect
+w03,Temperature difference,602,3.0,20.0,10.0,K,Screen2Parameter,Par_Wizard_operation_mode == 0,Par_Wizard_temp_diff
+w04,Valve Dim,603,30,70,40,%,Screen2Parameter,Par_Wizard_operation_mode == 0,Par_Wizard_valve_dim
+w05,Heat Valve dim,606,10,100,40,%,Screen2Parameter,Par_Wizard_operation_mode == 0 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_heat_valve_dim
+w06,Heat temperature difference,607,3.0,20.0,10.0,K,Screen2Parameter,Par_Wizard_operation_mode == 0 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_heat_temp_diff
+w07,Refrigerant,608,0,49,0,,,Par_Wizard_operation_mode == 0,Par_Wizard_refrigerant
+w08,Antonie constant A1,609,8.000,12.000,9.800,,,Par_Wizard_operation_mode == 0 && Par_Wizard_refrigerant == 13,Par_Wizard_refrigerant_A1
+w09,Antonie constant A2,610,-3000.0,-1300.0,-2250.0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_refrigerant == 13,Par_Wizard_refrigerant_A2
+w10,Antonie constant A3,611,210.0,300.0,253.0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_refrigerant == 13,Par_Wizard_refrigerant_A3
+w11,Thermostatic mode,612,0,2,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant != 0,Par_Wizard_thermostatic_mode
+w12,Temperature setpoint,613,-70.0,70.0,3.0,°C,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant != 0 && Par_Wizard_thermostatic_mode != 0,Par_Wizard_temperature_Setpoint
+w13,Differential,614,0.1,10.0,2.0,K,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant != 0 && Par_Wizard_thermostatic_mode != 0,Par_Wizard_Differential
+w14,Sensor,615,0,1,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant != 0 && Par_Wizard_thermostatic_mode != 0,Par_Wizard_sensorSelect
+wcf,Confirm estimated settings,640,0,1,0,,,,Par_Wizard_confirm_estimated
+w15,SH reference mode,616,0,3,1,,,Par_Wizard_confirm_estimated == 1,Par_Wizard_ShRef_Mode
+w16,SH KpTe,617,0.0,20.0,3.0,,,0,Par_Wizard_ShCtrl_KpT0
+w17,SH Kp,618,0.1,20.0,1.5,,,0,Par_Wizard_ShCtrl_Kp
+w18,SH Tn,619,20,900,90,s,,0,Par_Wizard_ShCtrl_Tn
+w19,Heat SH Tn,620,20,900,90,s,,0,Par_Wizard_Heat_ShCtrl_Tn
+w20,Heat SH KpTe,621,0.0,20.0,3.0,,,0,Par_Wizard_Heat_ShCtrl_KpT0
+w21,Heat SH Kp,622,0.1,20.0,1.5,,,0,Par_Wizard_Heat_ShCtrl_Kp
+w22,Startup mode,623,0,2,0,,,0,Par_Wizard_Startup_Mode
+w23,Startup time,624,1,600,90,s,,0,Par_Wizard_StartUpTime
+w24,Minimum startup time,625,1,240,15,s,,0,Par_Wizard_Minimum_Startup_Time
+w25,SH close function,626,0,1,0,,,0,Par_Wizard_SH_Close_Used
+w26,Startup OD,627,1,100,32,%,,0,Par_Wizard_StartUpOd
+w27,SH fixed setpoint,628,2.0,40.0,7.0,K,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode == 0,Par_Wizard_SH_Reference
+w28,SH max.,629,Par_Wizard_ShMin,40.0,9.0,K,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode != 0,Par_Wizard_ShMax
+w29,SH min.,630,2.0,Par_Wizard_ShMax,4.0,K,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode != 0,Par_Wizard_ShMin
+w30,SH ref. delta temp. factor,672,20,100,65,%,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode == 3,Par_Wizard_SH_Ref_Delta_Temp_Factor
+w31,SH close setpoint,631,-5.0,20.0,2.0,K,,0,Par_Wizard_ShClose_SetPoint
+w33,Heat startup time,633,1,600,90,s,,0,Par_Wizard_Heat_StartUpTime
+w34,Heat min. startup time,634,1,240,15,s,,0,Par_Wizard_Heat_Minimum_Startup_Time
+w35,Heat startup OD,635,1,100,32,%,,0,Par_Wizard_Heat_StartUpOd
+w36,Heat SH fixed setpoint,636,2.0,40.0,7.0,K,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode == 0 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_Heat_SH_Reference
+w37,Heat SH max.,637,Par_Wizard_Heat_ShMin,40.0,9.0,K,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode != 0 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_Heat_ShMax
+w38,Heat SH min.,638,2.0,Par_Wizard_Heat_ShMax,4.0,K,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode != 0 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_Heat_ShMin
+w39,Heat SH ref. delta temp. factor,673,20,100,65,%,,Par_Wizard_confirm_estimated == 1 && Par_Wizard_ShRef_Mode == 3 && (Par_Wizard_applicationSelect == 3 || Par_Wizard_applicationSelect == 4),Par_Wizard_Heat_SH_Ref_Delta_Temp_Factor
+w40,Heat SH close setpoint,639,-5.0,20.0,2.0,K,,0,Par_Wizard_Heat_ShClose_SetPoint
+w41,MTR Tn,670,20,3600,1800,,,0,Par_Wizard_MtrCtrl_Tn
+w42,MTR Kp,671,0.2,20.0,3.0,,,0,Par_Wizard_MtrCtrl_Kp
+w43c,Driver reference configuration,661,0,3,0,,,Par_Wizard_operation_mode == 1 && Par_EKE_1V_Variant == 2,Par_Wizard_Driver_Reference_Setup_C
+w43b,Driver reference configuration,739,0,2,0,,,Par_Wizard_operation_mode == 1 && Par_EKE_1V_Variant == 1,Par_Wizard_Driver_Reference_Setup_B
+w50c,S2 sensor configuration,641,0,6,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_Wizard_s2_sensor_setup_C
+w50b,S2 sensor configuration,731,0,5,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_Wizard_s2_sensor_setup_B
+w50a,S2 sensor configuration,732,0,4,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant == 0,Par_Wizard_s2_sensor_setup_A
+w51c,S3 sensor configuration,642,0,6,0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_thermostatic_mode != 0 && Par_Wizard_sensorSelect == 0 && Par_EKE_1V_Variant == 2,Par_Wizard_s3_sensor_setup_C
+w51b,S3 sensor configuration,733,0,5,0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_thermostatic_mode != 0 && Par_Wizard_sensorSelect == 0 && Par_EKE_1V_Variant == 1,Par_Wizard_s3_sensor_setup_B
+w52c,S4 sensor configuration,643,0,6,0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_thermostatic_mode != 0 && Par_Wizard_sensorSelect == 1 && Par_EKE_1V_Variant == 2,Par_Wizard_s4_sensor_setup_C
+w52b,S4 sensor configuration,734,0,5,0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_thermostatic_mode != 0 && Par_Wizard_sensorSelect == 1 && Par_EKE_1V_Variant == 1,Par_Wizard_s4_sensor_setup_B
+w53,AI1 configuration,644,0,2,0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_thermostatic_mode != 0 && Par_EKE_1V_Variant != 0,Par_Wizard_Mapping_AI1_BC
+w54,AI5 configuration,645,0,2,0,,,Par_Wizard_operation_mode == 0 && Par_Wizard_thermostatic_mode != 0 && Par_Wizard_Mapping_AI1_BC == 0 && Par_EKE_1V_Variant == 2,Par_Wizard_Mapping_AI5_C
+w55c,Pe transmitter configuration,646,0,14,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant == 2,Par_Wizard_p0_transmitter_setup_C
+w55b,Pe transmitter configuration,735,0,8,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant == 1,Par_Wizard_p0_transmitter_setup_B
+w55a,Pe transmitter configuration,736,0,7,0,,,Par_Wizard_operation_mode == 0 && Par_EKE_1V_Variant == 0,Par_Wizard_p0_transmitter_setup_A
+w56,Pe ratio. low,648,3,Par_Wizard_p0_ratio_high,10,%,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_C == 4 || Par_Wizard_p0_transmitter_setup_B == 4 || Par_Wizard_p0_transmitter_setup_A == 4),Par_Wizard_p0_ratio_low
+w57,Pe ratio high,647,Par_Wizard_p0_ratio_low,97,90,%,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_C == 4 || Par_Wizard_p0_transmitter_setup_B == 4 || Par_Wizard_p0_transmitter_setup_A == 4),Par_Wizard_p0_ratio_high
+w58c,Pe voltage low,649,0.0,Par_Wizard_p0_voltage_high_C,0.0,V,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_C == 7),Par_Wizard_p0_voltage_low_C
+w57a,Pe voltage low,737,0.0,Par_Wizard_p0_voltage_high_AB,0.0,V,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_B == 7 || Par_Wizard_p0_transmitter_setup_A == 7),Par_Wizard_p0_voltage_low_AB
+w59c,Pe voltage high,650,Par_Wizard_p0_voltage_low_C,10.0,10.0,V,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_C == 7),Par_Wizard_p0_voltage_high_C
+w59a,Pe voltage high,738,Par_Wizard_p0_voltage_low_AB,5.0,5.0,V,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_B == 7 || Par_Wizard_p0_transmitter_setup_A == 7),Par_Wizard_p0_voltage_high_AB
+w60,Pe current low,651,0.0,Par_Wizard_p0_current_high,0.0,mA,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_C == 14 || Par_Wizard_p0_transmitter_setup_B == 14 || Par_Wizard_p0_transmitter_setup_A == 14),Par_Wizard_p0_current_low
+w61,Pe current high,652,Par_Wizard_p0_current_low,20.0,20.0,mA,,Par_Wizard_operation_mode == 0 && (Par_Wizard_p0_transmitter_setup_C == 14 || Par_Wizard_p0_transmitter_setup_B == 14 || Par_Wizard_p0_transmitter_setup_A == 14),Par_Wizard_p0_current_high
+w62,Pe transmitter min.,653,-1.0,Par_Wizard_p0_transmitter_max,0.0,barg,,Par_Wizard_operation_mode == 0 && ((Par_Wizard_p0_transmitter_setup_C != 0 && Par_Wizard_p0_transmitter_setup_C != 8) || (Par_Wizard_p0_transmitter_setup_B != 0 && Par_Wizard_p0_transmitter_setup_B != 8) || (Par_Wizard_p0_transmitter_setup_A != 0 && Par_Wizard_p0_transmitter_setup_A != 8)),Par_Wizard_p0_transmitter_min
+w63,Pe transmitter max.,654,Par_Wizard_p0_transmitter_min,200.0,12.0,barg,,Par_Wizard_operation_mode == 0 && ((Par_Wizard_p0_transmitter_setup_C != 0 && Par_Wizard_p0_transmitter_setup_C != 8) || (Par_Wizard_p0_transmitter_setup_B != 0 && Par_Wizard_p0_transmitter_setup_B != 8) || (Par_Wizard_p0_transmitter_setup_A != 0 && Par_Wizard_p0_transmitter_setup_A != 8)),Par_Wizard_p0_transmitter_max
+w64,Ext ref. current low,662,0.0,Par_Wizard_Ext_Ref_Current_High,4.0,mA,,Par_Wizard_operation_mode == 1 && ((Par_Wizard_Driver_Reference_Setup_C == 3) || (Par_Wizard_Driver_Reference_Setup_B == 3)),Par_Wizard_Ext_Ref_Current_Low
+w65,Ext ref. current high,663,Par_Wizard_Ext_Ref_Current_Low,20.0,20.0,mA,,Par_Wizard_operation_mode == 1 && ((Par_Wizard_Driver_Reference_Setup_C == 3) || (Par_Wizard_Driver_Reference_Setup_B == 3)),Par_Wizard_Ext_Ref_Current_High
+w66,Ext ref voltage low,664,0.0,Par_Wizard_Ext_Ref_Voltage_High,0.0,V,,Par_Wizard_operation_mode == 1 && ((Par_Wizard_Driver_Reference_Setup_C == 0) || (Par_Wizard_Driver_Reference_Setup_B == 0)),Par_Wizard_Ext_Ref_Voltage_Low
+w67,Ext ref. voltage high,665,Par_Wizard_Ext_Ref_Voltage_Low,10.0,10.0,V,,Par_Wizard_operation_mode == 1 && ((Par_Wizard_Driver_Reference_Setup_C == 0) || (Par_Wizard_Driver_Reference_Setup_B == 0)),Par_Wizard_Ext_Ref_Voltage_High
+w80,Valve configuration,655,0,32,0,,,,Par_Wizard_Valve_Setup
+w81,Valve total steps,656,1,8000,1,stp,,Par_Wizard_Valve_Setup == 1,Par_Wizard_Valve_Total_Steps
+w82,Valve drive current,657,10,1000,10,mA,,Par_Wizard_Valve_Setup == 1,Par_Wizard_Valve_Drive_Current
+w83,Valve speed,658,10,400,10,PPS,,Par_Wizard_Valve_Setup == 1,Par_Wizard_Valve_SPS
+w84,DO1 configuration,659,0,2,0,,,,Par_Wizard_Mapping_DO1
+w90,Choose to go to,660,0,1,0,,,,Par_Wizard_Go_to
+X001,Modbus Heating,592,0,1,0,,,0,Par_ModHeating
+X002,Modbus preset OD,591,0,1,0,,,0,Par_ModPresetOD
+X003,Modbus defrost start,590,0,1,0,,,0,Par_ModDefrost
+X004,Modbus main switch,589,0,1,0,,,0,Par_ModMainSwitch
+X005,Bus shared Pc,212,-1.00,200.00,0.00,barg,,0,Par_modbus_pc
+X006,Bus shared Pe,211,-1.00,200.00,0.00,barg,,0,Par_modbus_p0
+X007,Bus shared S2,600,-200.0,200.0,0.0,°C,,0,Par_BusSharedS2
+X008,Bus shared S3,210,-200.0,200.0,0.0,°C,,0,Par_modbus_s3
+X009,Bus shared S4,601,-200.0,200.0,0.0,°C,,0,Par_BusSharedS4
+X010,Bus ext. ref.,599,-100.0,100.0,0.0,,,0,Par_BusExtRef
+X011,Event log Enabled,297,0,1,1,,,0,Params_ELOG_Enabled
+X012,Event log Clear,298,0,1,0,,,0,Params_ELOG_Clear
+X013,Life time,149,0,2147483647,0,h,,0,Par_Life_time_hour
+X014,Maximum execution time,82,0,1000,0,ms,,0,Par_Max_execution_time_ms
+X015,Number of active alarms,172,0,100,0,,,0,Par_Number_of_Active_alarms
+X016,Alarm notification,86,0,1,0,,,0,Par_Alarm_notification
+X040,Alarm status,704,0,1,0,,,0,Par_Alarm_Present
+X017,Warning status,283,0,1,0,,,0,Par_Warning_Present
+X018,Error status,282,0,1,0,,,0,Par_Error_Present
+X020,Main switch status,109,0,1,0,,,0,Par_main_switch_status
+U102,Injection state,381,0,4,0,,,0,Par_Injection_State
+U117,Controller state,168,0,5,0,,,0,Par_Cont_state
+U103,Injection details,382,0,12,0,,,0,Par_Injection_Details
+U116,Actual operation,552,0,5,0,,,0,Par_Actual_Operation
+X021,Valve Version High,410,0,65535,0,,,0,Par_Valve_Version_High
+X022,Valve Version Low,411,0,65535,0,,,0,Par_Valve_Version_Low
+X023,Valve Version Major,412,0,65535,0,,,0,Par_Valve_Version_Major
+X024,Valve Version Minor,413,0,65535,0,,,0,Par_Valve_Version_Minor
+X025,Valve Date High,414,0,65535,0,,,0,Par_Valve_Date_High
+X026,Valve Date Low,415,0,65535,0,,,0,Par_Valve_Date_Low
+X027,Valve current position,419,0,10000,0,steps,,0,Par_Valve_Current_Position
+X028,Valve target position,420,0,10000,0,steps,,0,Par_Valve_Target_Position
+X029,Valve current state,421,0,14,0,,,0,Par_Valve_Current_State
+X030,Start overdrive command,532,0,3,0,,,0,Par_Start_Overdrive_Command
+X031,Service number of steps,535,-32767,32767,0,,,0,Par_Service_steps
+X032,EKE 1V Variant,553,0,2,2,,,0,Par_EKE_1V_Variant
+X033,Power fault enabled,593,0,1,1,,,0,Par_PowerFaultEnabled
+X034,Stepper fault enabled,594,0,1,1,,,0,Par_StepperFaultEnabled
+X035,Communication fault enabled,595,0,1,1,,,0,Par_CommunicationFaultEnabled
+X036,Open circuit fault enabled,596,0,0,0,,,0,Par_OpenCircuitFaultEnabled
+X054,Max. diff. between coil current and set.,744,0,100,80,,,0,Par_OpenCircuitFault_I1Is
+X055,Max. diff. between coil currents,745,0,100,40,,,0,Par_OpenCircuitFault_I1I2
+X037,User controls LEDs,408,0,1,0,,,0,Par_User_Controls_LEDs
+X038,Green LED pattern,407,0,65535,0,,,0,Par_Green_LED_Pattern
+X039,Red LED pattern,409,0,65535,0,,,0,Par_Red_LED_Pattern
+X041,AI1 configuration (internal),706,0,2,0,,,0,Par_Mapping_AI1
+X042,AI4 configuration (internal),708,0,2,0,,,0,Par_Mapping_AI4
+X043,AI5 configuration (internal),709,0,2,0,,,0,Par_Mapping_AI5
+X044,S2 sensor configuration (internal),716,0,6,0,,,0,Par_s2_sensor_setup
+X045,S3 sensor configuration (internal),713,0,6,0,,,0,Par_s3_sensor_setup
+X046,S4 sensor configuration (internal),711,0,6,0,,,0,Par_s4_sensor_setup
+X047,Pe transmitter configuration (internal),719,0,14,0,,,0,Par_p0_transmitter_setup
+X048,Pe voltage low (internal),722,0.0,Par_p0_voltage_high,0.0,V,,0,Par_p0_voltage_low
+X049,Pe voltage high (internal),723,Par_p0_voltage_low,10.0,10.0,V,,0,Par_p0_voltage_high
+X050,Pc transmitter configuration (internal),724,0,14,0,,,0,Par_pc_transmitter_setup
+X051,Ext ref. configuration (internal),727,0,9,0,,,0,Par_Ext_Ref_Setup
+X052,Driver reference configuration (internal),729,0,3,0,,Screen1Parameter,0,Par_Driver_Reference_Setup
+X053,DI3 configuration (internal),730,0,3,0,,,0,Par_Mapping_DI3

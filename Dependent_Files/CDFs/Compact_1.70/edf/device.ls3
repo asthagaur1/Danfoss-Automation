@@ -1,0 +1,13 @@
+<DANFOSS DEVICE LIB REVISION> 1.00
+<LST_FILE_LAYOUT_TYPE> 3
+-------------------------------------------------------
+$Workfile:   device.ls3  $
+-------------------------------------------------------
+Comments may exist here (before START)
+The only text field allowing spaces is INFO (ex. NAME "AK2 CC-303A" is invalid).
+<START>
+Model    Name        Cat Sub Ser Ver  Filename     |Info
+MC540000 MGTW          8   0  24 0220 MC540000.ed3 |Multigateway
+084B4081 AK-CC55       1   0  24 017x 084B4081.ed3 |AK-CC55 Compact
+<END>
+Comments may exist here

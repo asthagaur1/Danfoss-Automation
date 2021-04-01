@@ -1,0 +1,53 @@
+var custom_vr = { "CheckVisibilityRules" : function(RuleId)  {
+var GetVar = function(x){ return this.p(x); }.bind(this);
+
+	if (RuleId == 0) return 1;
+	if (RuleId == 1) return GetVar(303) > 0;
+	if (RuleId == 2) return GetVar(303) == 8;
+	if (RuleId == 3) return GetVar(303) > 0 && GetVar(216) > 0;
+	if (RuleId == 4) return GetVar(303) == 1 || GetVar(303) == 2 || GetVar(303) == 3 || (GetVar(303) == 9 && (GetVar(304) == 8 || GetVar(305) == 8 || GetVar(307) == 8 || GetVar(306) == 8 || GetVar(312) == 8));
+	if (RuleId == 5) return GetVar(303) < 8 || (GetVar(303) == 9 && (GetVar(304) == 4 || GetVar(305) == 4 || GetVar(307) == 4 || GetVar(306) == 4 || GetVar(312) == 4));
+	if (RuleId == 6) return (GetVar(303) > 0 && GetVar(303) != 3 && GetVar(303) < 9) || (GetVar(303) == 9 && (GetVar(304) == 6 || GetVar(305) == 6 || GetVar(307) == 6 || GetVar(306) == 6 || GetVar(312) == 6));
+	if (RuleId == 7) return GetVar(303) != 7 && GetVar(303) != 8;
+	if (RuleId == 8) return GetVar(303) > 0 && GetVar(303) != 5;
+	if (RuleId == 9) return (GetVar(303) > 1 && GetVar(303) < 5) || GetVar(303) == 6 || (GetVar(303) == 9 && (GetVar(304) == 4 || GetVar(305) == 4 || GetVar(307) == 4 || GetVar(306) == 4 || GetVar(312) == 4));
+	if (RuleId == 10) return (GetVar(303) != 0 && GetVar(303) != 2 && GetVar(303) != 5 && GetVar(303) < 9) || (GetVar(303) == 9 && GetVar(304) == 5);
+	if (RuleId == 11) return GetVar(303) == 5;
+	if (RuleId == 12) return GetVar(303) == 9 && (GetVar(304) == 2 || GetVar(305) == 2 || GetVar(307) == 2 || GetVar(306) == 2 || GetVar(312) == 2);
+	if (RuleId == 13) return GetVar(303) > 0 && GetVar(328) > 0;
+	if (RuleId == 14) return GetVar(308) > 0;
+	if (RuleId == 15) return GetVar(202) > 0 && (GetVar(211) == 1 || GetVar(211) == 3);
+	if (RuleId == 16) return GetVar(303) == 6 || GetVar(303) == 7;
+	if (RuleId == 17) return GetVar(303) == 7;
+	if (RuleId == 18) return GetVar(303) != 6 && GetVar(303) != 7 && GetVar(267) == 1;
+	if (RuleId == 19) return (GetVar(313) == 2) || (GetVar(313) == 3) || (GetVar(314) == 2) || (GetVar(314) == 3) || (GetVar(315) == 2) || (GetVar(315) == 3);
+	if (RuleId == 20) return GetVar(202) > 0;
+	if (RuleId == 21) return GetVar(303) != 7 && GetVar(303) != 8 && ((GetVar(313) == 8) || (GetVar(313) == 9));
+	if (RuleId == 22) return (GetVar(314) == 8) || (GetVar(314) == 9);
+	if (RuleId == 23) return GetVar(211) > 0;
+	if (RuleId == 24) return GetVar(202) > 0 && GetVar(303) != 5 && GetVar(216) >= 1;
+	if (RuleId == 25) return (GetVar(313) == 20 || GetVar(314) == 20 || GetVar(315) == 20) && GetVar(308) == 28;
+	if (RuleId == 26) return (GetVar(313) == 20) || (GetVar(314) == 20) || (GetVar(315) == 20);
+	if (RuleId == 27) return (GetVar(313) == 7) || (GetVar(314) == 7) || (GetVar(315) == 7);
+	if (RuleId == 28) return GetVar(303) < 3 || (GetVar(303) > 3 && GetVar(303) < 9) || (GetVar(303) == 9 && (GetVar(304) == 6 || GetVar(305) == 6 || GetVar(307) == 6 || GetVar(306) == 6 || GetVar(312) == 6));
+	if (RuleId == 29) return (GetVar(303) < 8 || (GetVar(303) == 9 && (GetVar(304) == 4 || GetVar(305) == 4 || GetVar(307) == 4 || GetVar(306) == 4 || GetVar(312) == 4))) && GetVar(269) == 2;
+	if (RuleId == 30) return GetVar(216) >= 1;
+	if (RuleId == 31) return 0;
+	if (RuleId == 32) return GetVar(303) == 9 && (GetVar(304) == 9 || GetVar(305) == 9 || GetVar(307) == 9 || GetVar(306) == 9 || GetVar(312) == 9);
+	if (RuleId == 33) return GetVar(303) == 9 && (GetVar(304) == 7 || GetVar(305) == 7 || GetVar(307) == 7 || GetVar(306) == 7 || GetVar(312) == 7);
+	if (RuleId == 34) return GetVar(303) == 9 && (GetVar(304) == 10 || GetVar(305) == 10 || GetVar(307) == 10 || GetVar(306) == 10 || GetVar(312) == 10);
+	if (RuleId == 35) return GetVar(303) == 9;
+	if (RuleId == 36) return (GetVar(303) > 0 && GetVar(303) < 4) || (GetVar(303) == 9 && (GetVar(304) == 8 || GetVar(305) == 8 || GetVar(307) == 8 || GetVar(306) == 8 || GetVar(312) == 8));
+	if (RuleId == 37) return GetVar(210) == 3;
+	if (RuleId == 38) return GetVar(221) > 0;
+	if (RuleId == 39) return GetVar(242) > 0;
+	if (RuleId == 40) return (GetVar(313) == 10) || (GetVar(314) == 10) || (GetVar(315) == 10);
+	if (RuleId == 41) return GetVar(303) != 6 && GetVar(303) != 7 && GetVar(267) == 1 && ((GetVar(313) == 7) || (GetVar(314) == 7) || (GetVar(315) == 7));
+	if (RuleId == 42) return GetVar(303) != 6 && GetVar(303) != 7;
+	if (RuleId == 43) return GetVar(328) == 1;
+	if (RuleId == 44) return GetVar(308) == 13;
+	if (RuleId == 45) return GetVar(308) == 1;
+	if (RuleId == 46) return (GetVar(313) == 2) || (GetVar(314) == 2) || (GetVar(315) == 2);
+	return 1;
+
+}}

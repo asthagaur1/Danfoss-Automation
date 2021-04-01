@@ -1,0 +1,112 @@
+ParameterName,DB_Menucode,KP_Menucode,Result,DB_DefaultValue,KP_DefaultValue,Result,DB_MinValue,KP_MinValue,Result,DB_MaxValue,KP_MaxValue,Result,DB_Unit,KP_Unit,Result,DB_Info,KP_Info,Result
+Alarm delay - Normal conditions,A03,A03,True,30,30,True,0,0,True,240,240,True,min,min,True,"If the upper or the lower alarm limit values are exceeded, a timer function will commence.  The alarm will not become active until the set time delay has been passed.","If the upper or the lower alarm limit values are exceeded, a timer function will commence.  The alarm will not become active until the set time delay has been passed.",True
+Alarm delay - pulldown/startup/def,A12,A12,True,60,60,True,0,0,True,240,240,True,min,min,True,"This time delay is used during start-up, during defrost, during pull-down. There will be change-over to the normal alarm time delay “A03” when the temperature falls within the alarm limits","This time delay is used during start-up, during defrost, during pull-down. There will be change-over to the normal alarm time delay “A03” when the temperature falls within the alarm limits",True
+High temp alarm,A13,A13,True,8,8.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"If the cabinet temperature stays above this limit for the time mentioned by the alarm delay, high temperature alarm is raised.","If the cabinet temperature stays above this limit for the time mentioned by the alarm delay, high temperature alarm is raised.",True
+Low temp alarm,A14,A14,True,-2,-2.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"If the cabinet temperature stays below this limit for the time mentioned by the alarm delay, low temperature alarm is raised.","If the cabinet temperature stays below this limit for the time mentioned by the alarm delay, low temperature alarm is raised.",True
+DI1 delay,A27,A27,True,30,30,True,0,0,True,240,240,True,min,min,True,"If “DI1” is configured as a door open alarm or as an external alarm, this delay is used to raise the respective alarm.","If “DI1” is configured as a door open alarm or as an external alarm, this delay is used to raise the respective alarm.",True
+Condenser High temp alarm,A37,A37,True,80,80.00,False,0,0.00,False,200,200.00,False,°C,°C,True,"If the condenser temperature reaches above this limit, condenser alarm is raised immediately and no action is
+taken. The alarm is zeroset if temperature falls 5 K below the set temperature.
+ Note: Use only whole number.","If the condenser temperature reaches above this limit, condenser alarm is raised immediately and no action is
+taken. The alarm is zeroset if temperature falls 5 K below the set temperature.
+ Note: Use only whole number.",True
+Condenser High block limit,A54,A54,True,85,85.00,False,0,0.00,False,200,200.00,False,°C,°C,True,"If the condenser temperature continues to increase above the “A37” limit and reaches this temperature limit, condenser block alarm is raised and compressor is stopped. It is restricted to starting again until alarm is reset manually. Manual reset of condenser block alarm can be performed in two ways:
+- Power controller OFF and power ON controller again.
+- Switch controller OFF and ON again via main switch or front button.
+Note: Use only whole number.","If the condenser temperature continues to increase above the “A37” limit and reaches this temperature limit, condenser block alarm is raised and compressor is stopped. It is restricted to starting again until alarm is reset manually. Manual reset of condenser block alarm can be performed in two ways:
+- Power controller OFF and power ON controller again.
+- Switch controller OFF and ON again via main switch or front button.
+Note: Use only whole number.",True
+Voltage protection,A72,A72,True,No,No,True,0,,False,1,,False,,,True,"This parameter is to enable and disable the voltage protection feature, which protects compressor from adverse line voltage conditions.","This parameter is to enable and disable the voltage protection feature, which protects compressor from adverse line voltage conditions.",True
+Min cut-in voltage,A73,A73,True,0,0,True,0,0,True,270,270,True,V,V,True,"When the compressor is due to start, the voltage of the power supply will be checked and the compressor will only be allowed to start if it is at least the value given in this parameter.","When the compressor is due to start, the voltage of the power supply will be checked and the compressor will only be allowed to start if it is at least the value given in this parameter.",True
+Min cut-out voltage,A74,A74,True,0,0,True,0,0,True,270,270,True,V,V,True,"When the compressor is running, it will be switched OFF if the voltage goes below that given in this parameter.","When the compressor is running, it will be switched OFF if the voltage goes below that given in this parameter.",True
+Max voltage,A75,A75,True,270,270,True,0,0,True,270,270,True,V,V,True,"When the compressor is running, it will be switched OFF if the voltage exceeds that given in this parameter.
+If the compressor is already stopped, it will remain switched OFF.","When the compressor is running, it will be switched OFF if the voltage exceeds that given in this parameter.
+If the compressor is already stopped, it will remain switched OFF.",True
+Compressor min ON time,C01,C01,True,0,0,True,0,0,True,30,30,True,min,min,True,This parameter determines the minimum number of minutes the compressor must run before a cut-out can take effect based on temperature. This is to avoid sudden switching ON and OFF of the compressor.,This parameter determines the minimum number of minutes the compressor must run before a cut-out can take effect based on temperature. This is to avoid sudden switching ON and OFF of the compressor.,True
+Compressor min OFF time,C02,C02,True,2,2,True,0,0,True,30,30,True,min,min,True,This parameter determines the minimum number of minutes the compressor must switched OFF before a cut-in can take effect based on temperature. This is to avoid sudden switching OFF and ON of the compressor.,This parameter determines the minimum number of minutes the compressor must switched OFF before a cut-in can take effect based on temperature. This is to avoid sudden switching OFF and ON of the compressor.,True
+Comp OFF delay at open door,C04,C04,True,0,0,True,0,0,True,15,15,True,min,min,True,"This parameter sets the delay in minutes before the compressor stops when the door is opened. If set to zero, the function is disabled.","This parameter sets the delay in minutes before the compressor stops when the door is opened. If set to zero, the function is disabled.",True
+Zero crossing,C70,C70,True,yes,yes,True,0,,False,1,,False,,,True,"This feature will increase the relay life time, reduce the contact welding and switching noise by switching ON at Zero crossing. Disable zero crossing when external relay is used.","This feature will increase the relay life time, reduce the contact welding and switching noise by switching ON at Zero crossing. Disable zero crossing when external relay is used.",True
+Sensor type,o06,o06,True,n10,n10,True,0,,False,3,,False,,,True,"This parameter is for defining type of temperature sensors connected to the controller.
+""n5"" NTC 5K
+""n10"" NTC10K 
+""ptc"" PTC
+""pt1""PT1000
+","This parameter is for defining type of temperature sensors connected to the controller.
+""n5"" NTC 5K
+""n10"" NTC10K 
+""ptc"" PTC
+""pt1""PT1000
+",True
+Temperature Setpoint,r00,r00,True,2,2.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,"This parameter defines the desired cabinet temperature at which compressor cuts out.
+The set value can be locked or limited to a range with the settings in “r02” and “r03”.","This parameter defines the desired cabinet temperature at which compressor cuts out.
+The set value can be locked or limited to a range with the settings in “r02” and “r03”.",True
+Differential,r01,r01,True,2,2.00,False,0.1,0.10,False,20,20.00,False,K,K,True,"This defines the difference between the cut-out and the cut-in of compressor relay.
+Compressor relay will cut-in when the cabinet temperature reaches the set point+differetial.
+In case of heating application, heater will cut-in when the temperature reaches the set point-differential.","This defines the difference between the cut-out and the cut-in of compressor relay.
+Compressor relay will cut-in when the cabinet temperature reaches the set point+differetial.
+In case of heating application, heater will cut-in when the temperature reaches the set point-differential.",True
+Min set point limit,r02,r02,True,0,0.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,The minimum allowable setpoint value can be configured here to avoid setting too low values by accident/mistake.,The minimum allowable setpoint value can be configured here to avoid setting too low values by accident/mistake.,True
+Max set point limit,r03,r03,True,4,4.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,The maximum allowable setpoint value can be configured here to avoid setting too high values by accident/mistake.,The maximum allowable setpoint value can be configured here to avoid setting too high values by accident/mistake.,True
+Display offset,r04,r04,True,0,0.00,False,-10,-10.00,False,10,10.00,False,K,K,True,"Correction value in display temperature. If the temperature at the products and the temperature received by the controller are not identical, an offset adjustment of the display temperature can be carried out under this menu code.","Correction value in display temperature. If the temperature at the products and the temperature received by the controller are not identical, an offset adjustment of the display temperature can be carried out under this menu code.",True
+Display Unit,r05,r05,True,°C,°C,True,0,,False,1,,False,,,True,Set here if the controller is to show temperature values in °C or in °F. Switching from one to the other will cause all temperature settings to be automatically updated to respective unit.,Set here if the controller is to show temperature values in °C or in °F. Switching from one to the other will cause all temperature settings to be automatically updated to respective unit.,True
+Calibration of Sair,r09,r09,True,0,0.00,False,-20,-20.00,False,20,20.00,False,K,K,True,"Offset for air temperature calibration.
+Compensation possibility due to long sensor cable.","Offset for air temperature calibration.
+Compensation possibility due to long sensor cable.",True
+Night Set back,r13,r13,True,0,0.00,False,-50,-50.00,False,50,50.00,False,K,K,True,"The thermostat’s reference will be the setpoint plus this value when the controller changes over to night operation. (Select a negative value if there is to be cold accumulation).
+Activation can take place via digital input.","The thermostat’s reference will be the setpoint plus this value when the controller changes over to night operation. (Select a negative value if there is to be cold accumulation).
+Activation can take place via digital input.",True
+Offset reference displacement,r40,r40,True,0,0.00,False,-50,-50.00,False,20,20.00,False,°C,°C,True,The thermostat reference and the alarm values are shifted the following number of degrees when the reference displacement is activated. Activation can take place via digital input.,The thermostat reference and the alarm values are shifted the following number of degrees when the reference displacement is activated. Activation can take place via digital input.,True
+Pull down duration,r96,r96,True,0,0,True,0,0,True,960,960,True,min,min,True,Maximum duration of the pull-down mode.,Maximum duration of the pull-down mode.,True
+Pull down temp limit,r97,r97,True,0,0.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,A safety feature; the lowest temperature allowed during pull-down.,A safety feature; the lowest temperature allowed during pull-down.,True
+Defrost Interval,d03,d03,True,8,8,True,0,0,True,240,240,True,hour,hour,True,Defines the time period between the start of two defrost cycles. In case of power failure elapsed time is stored in the memory and next defrost will happen after completing the defined time interval.,Defines the time period between the start of two defrost cycles. In case of power failure elapsed time is stored in the memory and next defrost will happen after completing the defined time interval.,True
+Max defrost Time,d04,d04,True,15,15,True,0,0,True,480,480,True,min,min,True,This parameter defines the defrost time when it is time based defrost. In case of temperature based defrost this is treated as safety time to stop the defrost if it is not terminated based on the temperature.,This parameter defines the defrost time when it is time based defrost. In case of temperature based defrost this is treated as safety time to stop the defrost if it is not terminated based on the temperature.,True
+Defrost delay at power up,d05,d05,True,0,0,True,0,0,True,240,240,True,min,min,True,This parameter decides the time offset when the defrost is triggered by digital inputs or during power up. This function is only relevant if you have several refrigeration appliances or groups where you want the defrost to be staggered in relation to one another.,This parameter decides the time offset when the defrost is triggered by digital inputs or during power up. This function is only relevant if you have several refrigeration appliances or groups where you want the defrost to be staggered in relation to one another.,True
+Drip delay,d06,d06,True,0,0,True,0,0,True,60,60,True,min,min,True,This parameter defines the time delay to start the compressor after defrost heater being switched OFF. This delay is generally provided to ensure all water droplets on the evaporator drips off before starting the refrigeration cycle.,This parameter defines the time delay to start the compressor after defrost heater being switched OFF. This delay is generally provided to ensure all water droplets on the evaporator drips off before starting the refrigeration cycle.,True
+Comp accumulated runtime,d18,d18,True,0,0,True,0,0,True,96,96,True,hour,hour,True,"When the accumulated compressor runtime is equal to the value set in this Parameter, defrost will be triggered.  If the compressor runtime is less than the set value during the define defrost interval “d03”, defrost will be triggered based on the defrost interval “d03”. This feature is disabled when this parameter is set to zero.","When the accumulated compressor runtime is equal to the value set in this Parameter, defrost will be triggered.  If the compressor runtime is less than the set value during the define defrost interval “d03”, defrost will be triggered based on the defrost interval “d03”. This feature is disabled when this parameter is set to zero.",True
+Defrost delay after pulldown ,d30,d30,True,0,0,True,0,0,True,960,960,True,min,min,True,This parameter defines the time delay to start the defrost after pull down cycle. This has to ensure defrost doesn’t happen immediately after pull down cycle.,This parameter defines the time delay to start the defrost after pull down cycle. This has to ensure defrost doesn’t happen immediately after pull down cycle.,True
+Delay of outputs at startup,o01,o01,True,5,5,True,0,0,True,600,600,True,sec,sec,True,After start-up the controller functions can be delayed by the time delay defined here so that overloading of the electricity supply network is avoided.,After start-up the controller functions can be delayed by the time delay defined here so that overloading of the electricity supply network is avoided.,True
+DI1 configuration,o02,o02,True,Off,Off,True,0,,False,9,,False,,,True,"Here you can configure the DI1 to one of the functions listed below.
+""oFF"" not used
+""Sdc"" status display output
+""doo"" door alarm with resumption (door function)
+""doA"" door alarm without resumption (door alarm)
+""SCH"" main switch
+""nig"" day/night mode
+""rFd""reference displacement.
+""EAL"" external alarm
+""dEF"" defrost
+""Pud"" pull down
+""Sc"" condenser sensor
+","Here you can configure the DI1 to one of the functions listed below.
+""oFF"" not used
+""Sdc"" status display output
+""doo"" door alarm with resumption (door function)
+""doA"" door alarm without resumption (door alarm)
+""SCH"" main switch
+""nig"" day/night mode
+""rFd""reference displacement.
+""EAL"" external alarm
+""dEF"" defrost
+""Pud"" pull down
+""Sc"" condenser sensor
+",True
+Serial address,o03,o03,True,0,0,True,0,0,True,247,247,True,,,True,Data communication is possible through external TTL to RS485 gateway.,Data communication is possible through external TTL to RS485 gateway.,True
+Password,o05,o05,True,0,0,True,0,0,True,999,999,True,,,True,If the settings in the controller are to be protected with an access code you can set a numerical value between 0 and 999. You can cancel the function by setting to 0.,If the settings in the controller are to be protected with an access code you can set a numerical value between 0 and 999. You can cancel the function by setting to 0.,True
+Display Resolution ,o15,o15,True,0.1,0.1,True,0,,False,1,,False,,,True,This parameter defines the steps in which the temperature must be displayed by 0.1 or 0.5 or 1.,This parameter defines the steps in which the temperature must be displayed by 0.1 or 0.5 or 1.,True
+"Save settings as factory
+",o67,o67,True,No,No,True,0,,False,1,,False,,,True,"This parameter when set to YES. The current controller Parameter settings are stored as Factory default.
+WARNING: original factory settings are overwritten.","This parameter when set to YES. The current controller Parameter settings are stored as Factory default.
+WARNING: original factory settings are overwritten.",True
+"Display during defrost
+ ",o91,o91,True,-d-,-d-,True,0,,False,2,,False,,,True,"You can set what is to be displayed during defrost here.
+""Air""actual air temperature
+""FrE""=freezed temperature( display the temperature just before starting defrost)
+""-d”-d-” is displayed","You can set what is to be displayed during defrost here.
+""Air""actual air temperature
+""FrE""=freezed temperature( display the temperature just before starting defrost)
+""-d”-d-” is displayed",True
+DI1 polarity,P73,P73,True,no,no,True,0,,False,1,,False,,,True,"""no (normally open)""associated functionality is activated when “DI1” port is short circuit. The associated function is deactivated when “DI1” port is open circuit.
+""nc (normally closed)""associated functionality is activated when “DI1” port is open circuit and deactivated
+when “DI1” port is short circuit","""no (normally open)""associated functionality is activated when “DI1” port is short circuit. The associated function is deactivated when “DI1” port is open circuit.
+""nc (normally closed)""associated functionality is activated when “DI1” port is open circuit and deactivated
+when “DI1” port is short circuit",True

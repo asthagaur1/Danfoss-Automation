@@ -1,0 +1,75 @@
+DB_Parameter_Name,KP_Parameter_Name,Result_Parameter_Name,DB_Menu_Code,KP_Menu_Code,Result_Menu_Code,DB_Default_Value,KP_Default_Value,Result_Default_Value,DB_Unit,KP_Unit,Result_Unit,KP_Text_Old_Value,,,
+Lowest Temperature Limit,Lowest Temperature Limit,True,LSE,LSE,True,0,0.00,True,°C,°C,True,0.00
+Highest Temperature Limit,Highest Temperature Limit,True,HSE,HSE,True,10,10.00,True,°C,°C,True,10.00
+Lowest Temperature Differential,Lowest Temperature Differential,True,Ldi,Ldi,True,2,2.00,True,K,K,True,23.08
+Highest Temperature Differential,Highest Temperature Differential,True,Hdi,Hdi,True,2,2.00,True,K,K,True,3.95
+Fan Control Method,Fan Control Method,True,FCt,FCt,True,FAo,FAo,True,,,True,FAo
+Fan ON Delay,Fan ON Delay,True,Fod,Fod,True,0,0,True,Secs,Secs,True,114
+Fan Stop Delay,Fan Stop Delay,True,FSd,FSd,True,0,0,True,Secs,Secs,True,191
+Fan On Cycle,Fan On Cycle,True,Foc,Foc,True,0,0,True,Secs,Secs,True,737
+Fan Stop Cycle,Fan Stop Cycle,True,FSC,FSC,True,0,0,True,Secs,Secs,True,27
+Fan Stop Time on Door Open,Fan Stop Time on Door Open,True,Fdt,Fdt,True,900,900,True,Secs,Secs,True,631
+Fan Minimum Stop Time,Fan Minimum Stop Time,True,FSt,FSt,True,10,10,True,Secs,Secs,True,313
+Fan Limit Temperature,Fan Limit Temperature,True,FLt,FLt,True,50,50.00,True,°C,°C,True,18.11
+Min Run time,Min Run time,True,Crt,Crt,True,0,0,True,Secs,Secs,True,667
+Min Stop time,Min Stop time,True,CSt,CSt,True,120,120,True,Secs,Secs,True,1726
+Compressor Door open delay,Compressor Door open delay,True,Cdd,Cdd,True,0,0,True,Mins,Mins,True,8
+System Resume after door open,System Resume after door open,True,Srt,Srt,True,0,0,True,Mins,Mins,True,20
+Power On Delay,Power On Delay,True,Pod,Pod,True,300,300,True,Secs,Secs,True,173
+Low temp Alarm limit,Low temp Alarm limit,True,LAt,LAt,True,-5,-5.00,True,°C,°C,True,-5.00
+High temp Alarm limit,High temp Alarm limit,True,HAt,HAt,True,15,15.00,True,°C,°C,True,15.00
+Low temp Alarm delay,Low temp Alarm delay,True,Ltd,Ltd,True,0,0,True,Mins,Mins,True,229
+High temp Alarm delay,High temp Alarm delay,True,Htd,Htd,True,30,30,True,Mins,Mins,True,16
+Alarm Door open delay,Alarm Door open delay,True,dod,dod,True,2,2,True,Mins,Mins,True,24
+ECO Mode ON/OFF,ECO Mode ON/OFF,True,Eco,Eco,True,No,No,True,,,True,No
+Voltage Protection function,Voltage Protection function,True,uPt,uPt,True,No,No,True,,,True,No
+Alarm delay during Pull Down/ Power up /defrost,Alarm delay during Pull Down/ Power up /defrost,True,Pdd,Pdd,True,60,60,True,Mins,Mins,True,751
+Initial pull down ON/OFF,Initial pull down ON/OFF,True,IPE,IPE,True,Off,Off,True,,,True,Off
+Minimum Cut-in Voltage,Minimum Cut-in Voltage,True,uLi,uLi,True,100,100,True,V,V,True,100
+Minimum Cut out Voltage,Minimum Cut out Voltage,True,uLo,uLo,True,90,90,True,V,V,True,90
+Maximum cut out Voltage,Maximum cut out Voltage,True,uHi,uHi,True,260,260,True,V,V,True,225
+IPD and Pull down Duration,IPD and Pull down Duration,True,IPD,IPD,True,0,0,True,Hrs,Hrs,True,118
+Pull down and IPD Initiate Temp,Pull down and IPD Initiate Temp,True,Pit,Pit,True,50,50.00,True,°C,°C,True,-7.87
+Pull Down Limit Temp,Pull Down Limit Temp,True,PLt,PLt,True,0,0.00,True,°C,°C,True,-69.91
+Eco Offset,Eco Offset,True,Eto,Eto,True,6,6.00,True,K,K,True,-11.65
+Eco Door Delay,Eco Door Delay,True,Edd,Edd,True,180,180,True,Mins,Mins,True,336
+Condenser Alarm Limit,Condenser Alarm Limit,True,CAL,CAL,True,80,80.00,True,°C,°C,True,80.00
+Condenser Block Limit,Condenser Block Limit,True,CbL,CbL,True,85,85.00,True,°C,°C,True,85.00
+Condenser OK Limit,Condenser OK Limit,True,CoL,CoL,True,60,60.00,True,°C,°C,True,60.00
+Control sensor error handling type,Control sensor error handling type,True,EHd,EHd,True,Aut,Aut,True,,,True,Aut
+Error Run Time,Error Run Time,True,Ert,Ert,True,0,0,True,Mins,Mins,True,47
+Error Stop Time,Error Stop Time,True,Est,Est,True,0,0,True,Mins,Mins,True,34
+Zero Cross Config,Zero Cross Config,True,ZC,ZC,True,Yes,Yes,True,,,True,Yes
+Sensor Type,Sensor Type,True,SEn,SEn,True,NTC5K,NTC5K,True,,,True,PTC
+S2 Config,S2 Config,True,S2c,S2c,True,EUA,EUA,True,,,True,dES
+Relay 2 Config,Relay 2 Config,True,o2C,o2C,True,dEF,dEF,True,,,True,FAn
+Defrost type,Defrost type,True,dFt,dFt,True,nAt,nAt,True,,,True,EL
+Minimum defrost Interval,Minimum defrost Interval,True,dii,dii,True,360,360,True,Mins,Mins,True,360
+Maximum defrost Interval,Maximum defrost Interval,True,dAi,dAi,True,420,420,True,Mins,Mins,True,420
+Maximum defrost Time,Maximum defrost Time,True,dAt,dAt,True,30,30,True,Mins,Mins,True,295
+Defrost Terminate Temp,Defrost Terminate Temp,True,dtt,dtt,True,6,6.00,True,°C,°C,True,48.15
+Defrost On accumulated Compressor Run Time,Defrost On accumulated Compressor Run Time,True,dCt,dCt,True,No,No,True,,,True,Yes
+Defrost Start by Evap Temp,Defrost Start by Evap Temp,True,dEt,dEt,True,-100,-100.00,True,°C,°C,True,-88.54
+Drip Off time,Drip Off time,True,dot,dot,True,2,2,True,Mins,Mins,True,50
+Fan Delay After Defrost,Fan Delay After Defrost,True,Fdd,Fdd,True,0,0,True,Secs,Secs,True,282
+Fan Start Temperature after defrost,Fan Start Temperature after defrost,True,Ftd,Ftd,True,25,25.00,True,°C,°C,True,16.73
+Fan ON during Defrost,Fan ON during Defrost,True,dFa,dFa,True,No,No,True,,,True,Yes
+Initial Defrost Interval,Initial Defrost Interval,True,idi,idi,True,180,180,True,Mins,Mins,True,885
+Initial defrost duration,Initial defrost duration,True,idd,idd,True,100,100,True,Cycles,Cycles,True,670
+S3 Config,S3 Config,True,S3c,S3c,True,nc,nc,True,,,True,ESP
+Relay 3 Config,Relay 3 Config,True,o3C,o3C,True,FAn,FAn,True,,,True,Scc
+Second Compressor start delay,Second Compressor start delay,True,Scd,Scd,True,15,15,True,Secs,Secs,True,558
+Leakage Alarm Compressor Run Time,Leakage Alarm Compressor Run Time,True,LEA,LEA,True,0,0,True,Hrs,Hrs,True,65
+Minimum defrost time,Minimum defrost time,True,dit,dit,True,5,5,True,Mins,Mins,True,45
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),True,CLC,CLC,True,on,on,True,,,True,oFF
+Cabinet light control (ECO mode),Cabinet light control (ECO mode),True,ELC,ELC,True,oFF,oFF,True,,,True,dor
+Light OFF delay,Light OFF delay,True,Lod,Lod,True,0,0,True,Secs,Secs,True,200
+Holiday Mode ,Holiday Mode ,True,HLY,HLY,True,No,No,True,,,True,No
+Holiday Length,Holiday Length,True,HoL,HoL,True,72,72,True,Hrs,Hrs,True,373
+Holiday Temperature offset,Holiday Temperature offset,True,Hto,Hto,True,8,8.00,True,K,K,True,-7.49
+Automatic Heater Control Mode ,Automatic Heater Control Mode ,True,AuH,AuH,True,No,No,True,,,True,No
+Heater low set point,Heater low set point,True,CHI,CHI,True,-100,-100.00,True,°C,°C,True,14.59
+Heater high set point,Heater high set point,True,WHI,WHI,True,-100,-100.00,True,°C,°C,True,-65.11
+Heater low differential,Heater low differential,True,CDH,CDH,True,2,2.00,True,K,K,True,34.01
+Heater High differential,Heater High differential,True,CDH,CDH,True,2,2.00,True,K,K,True,21.92
+Energy mode delay,Energy mode delay,True,End,End,True,60,60,True,Mins,Mins,True,286

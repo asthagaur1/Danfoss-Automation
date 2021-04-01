@@ -1,0 +1,17 @@
+<DANFOSS DEVICE LIB REVISION> 1.00
+<LST_FILE_LAYOUT_TYPE> 2 
+This list will only be permitted to install DEVLST(1000) - 10 devices in the list.
+This reserves space for 10 devices not contained in this file.
+
+-------------------------------------------------------
+$Workfile:   csdevice.lst  $
+-------------------------------------------------------
+Comments may exist here
+
+No spaces allowed in any text field ex. "AK2 CC-303A" is invalid.
+<START>
+Model    Name        Cat Sub Ver  Filename     Info
+MC250000 AK-PC551      2   0  24 0150 MC250000.edf AK-PC 551 Mid Pack Controller,,,,,,,
+084B4081 AK-CC55       1   0  24 019x 084B4081.edf AK-CC55 Compact,,,,,,,
+<END>
+Comments may exist here

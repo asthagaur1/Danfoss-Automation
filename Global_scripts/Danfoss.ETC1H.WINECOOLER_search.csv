@@ -1,0 +1,68 @@
+﻿GroupCode,MenuCode,Name
+Information (for internal use),TID,ID low part
+Information (for internal use),TID,ID high part
+Information (for internal use),TID,Serial Number
+Information (for internal use),TYN,Type Number 091X
+Information (for internal use),TYN,TypeNumber 077F
+Information (for internal use),TYN,TypeNumber
+Information (for internal use),SWV,Software version
+Service Information,HWV,Hardware version
+Information (for internal use),PAV,Parameter version
+Service Information,AID,Application ID
+Thermostat,CCO,Cold Cut-out
+Thermostat,WCO,Warm Cut-out
+Thermostat,TST,Temp Set Top
+Thermostat,CDI,Compressor Differential
+Compressor,MIR,Min Runtime
+Compressor,MIS,Min Stoptime
+Alarm,ALF,Alarm low function
+Alarm,AHF,Alarm high function
+Alarm,COA,Cold Overtemp Alarm
+Alarm,WOA,Warm Overtemp Alarm
+Alarm,CUA,Cold Undertemp Alarm
+Alarm,WUA,Warm Undertemp Alarm
+Alarm,ADL,Alarm Delay
+Defrost,FOD,Fan on during defrost
+Defrost,DTT,Defrost Terminate Temperature
+Defrost,MIT,Minimum Defrost Time
+Defrost,MAT,Maximum Defrost Time
+Defrost,MII,Minimum Defrost Interval
+Fan,FSA,Fan Start Delay
+Voltage Protection,VPF,Voltage Protect function
+Voltage Protection,MIV,Minimum Cut-in Voltage
+Voltage Protection,VTR,Voltage Threshold
+Voltage Protection,MAV,Maximum Cut-in Voltage
+Compressor,ZCF,Zero-Cross switching Function
+Compressor,ZCS,Zero-Cross Switchning
+ETP R1 Remote Display,RSO,Remote Offset
+ETP R1 Remote Display,RSD,Remote Deviation
+ETP R1 Remote Display,RST,Remote Sample Time
+Service Information,,Defrost temperature
+Service Information,,Condenser temperature
+Service Information,,User set
+Service Information,,Voltage
+Service Information,,RelayCount
+Service Information,,Cutin Cpr
+Service Information,,Cutout Cpr
+Service Information,,Alarm high temp
+Service Information,,Alarm low temp
+Service Information,,Compressor
+Service Information,,Fan
+Service Information,,Heater
+Service Information,,Status
+Service Information,,Alarm
+Service Information,,Factory test
+Service Information, ,Control temperature
+Thermostat, ,Panel Spindle Selection
+Fan,FMR,Fan Min Run Time
+Fan,FMS,Fan Min Stop Time
+Thermostat,HDI,Heater Differential
+Thermostat,FDI,Fan Differential
+ETP R1 Remote Display,RCD,Remote display fahrenheit
+Service Information,,Cutout heater
+Service Information,,Cutin heater
+Thermostat,,Operating mode
+Service Information,,Output
+Thermostat,TSB,Temp Set Bottom
+Service Information,,Top temp (S1)
+Service Information,,Bottom temp (S2)

@@ -1,0 +1,132 @@
+ParameterName,DB_Menucode,KP_Menucode,Result,DB_DefaultValue_1,KP_DefaultValue_1,Result,DB_MinValue,KP_MinValue,Result,DB_MaxValue,KP_MaxValue,Result,DB_Unit,KP_Unit,Result,DB_Info,KP_Info,Result
+Alarm delay - Normal conditions,A03,A03,True,45,45,True,0,0,True,240,240,True,min,min,True,,"If the upper or the lower alarm limit values are exceeded, a timer function will commence.  The alarm will not become active until the set time delay has been passed.",False
+Alarm delay - pulldown/startup/def,A12,A12,True,90,90,True,0,0,True,240,240,True,min,min,True,,"This time delay is used during start-up, during defrost, during pull-down. There will be change-over to the normal alarm time delay “A03” when the temperature falls within the alarm limits",False
+High temp alarm,A13,A13,True,10,10.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,,"If the cabinet temperature stays above this limit for the time mentioned by the alarm delay, high temperature alarm is raised.",False
+Low temp alarm,A14,A14,True,0,0.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,,"If the cabinet temperature stays below this limit for the time mentioned by the alarm delay, low temperature alarm is raised.",False
+DI1 delay,A27,A27,True,30,30,True,0,0,True,240,240,True,min,min,True,,"If “DI1” is configured as a door open alarm or as an external alarm, this delay is used to raise the respective alarm.",False
+Condenser High temp alarm,A37,A37,True,80,80.00,False,0,0.00,False,200,200.00,False,°C,°C,True,,"If the condenser temperature reaches above this limit, condenser alarm is raised immediately and no action is
+taken. The alarm is zeroset if temperature falls 5 K below the set temperature.
+ Note: Use only whole number.",False
+Condenser High block limit,A54,A54,True,85,85.00,False,0,0.00,False,200,200.00,False,°C,°C,True,,"If the condenser temperature continues to increase above the “A37” limit and reaches this temperature limit, condenser block alarm is raised and compressor is stopped. It is restricted to starting again until alarm is reset manually. Manual reset of condenser block alarm can be performed in two ways:
+- Power controller OFF and power ON controller again.
+- Switch controller OFF and ON again via main switch or front button.
+Note: Use only whole number.",False
+Voltage protection,A72,A72,True,No,No,True,0,,False,1,,False,,,True,,"This parameter is to enable and disable the voltage protection feature, which protects compressor from adverse line voltage conditions.",False
+Min cut-in voltage,A73,A73,True,0,0,True,0,0,True,270,270,True,V,V,True,,"When the compressor is due to start, the voltage of the power supply will be checked and the compressor will only be allowed to start if it is at least the value given in this parameter.",False
+Min cut-out voltage,A74,A74,True,0,0,True,0,0,True,270,270,True,V,V,True,,"When the compressor is running, it will be switched OFF if the voltage goes below that given in this parameter.",False
+Max voltage,A75,A75,True,270,270,True,0,0,True,270,270,True,V,V,True,,"When the compressor is running, it will be switched OFF if the voltage exceeds that given in this parameter.
+If the compressor is already stopped, it will remain switched OFF.",False
+Compressor min ON time,C01,C01,True,0,0,True,0,0,True,30,30,True,min,min,True,,This parameter determines the minimum number of minutes the compressor must run before a cut-out can take effect based on temperature. This is to avoid sudden switching ON and OFF of the compressor.,False
+Compressor min OFF time,C02,C02,True,2,2,True,0,0,True,30,30,True,min,min,True,,This parameter determines the minimum number of minutes the compressor must switched OFF before a cut-in can take effect based on temperature. This is to avoid sudden switching OFF and ON of the compressor.,False
+Comp OFF delay at open door,C04,C04,True,0,0,True,0,0,True,15,15,True,min,min,True,,"This parameter sets the delay in minutes before the compressor stops when the door is opened. If set to zero, the function is disabled.",False
+Zero crossing,C70,C70,True,yes,yes,True,0,,False,1,,False,,,True,,"This feature will increase the relay life time, reduce the contact welding and switching noise by switching ON at Zero crossing. Disable zero crossing when external relay is used.",False
+Main switch ,r12,r12,True,Off,,False,0,,False,2,,False,,,True,,"With this setting refrigeration can be started, stopped or a manual override of the outputs can be allowed.
+Stopped refrigeration will give a ”OFF” signal on the display.
+-1=service (manual control of outputs allowed)
+0=OFF
+1=ON",False
+Predefined applications,o61,061,False,App0,,False,0,,False,6,,False,,,True,,"Predefined applications is to give the user an easy and fast way to configure the controller refer to a specific
+application based on storage temperature, defrost type and defrost method.
+""App 0"" No predefined application
+""App 1"" : Medium temperature without defrost.
+Temperature is 4-20 °C.
+Defrost type is None.
+Defrost end is None.           
+""App 2"" Medium temperature ventilated refrigeration units
+with timed electrical defrost
+""App3"" Low temperature ventilated refrigeration units with
+timed electrical defrost
+""App4"" Medium temperature ventilated refrigeration units
+with electrical defrost (by temperature)
+""App5"" Low temperature ventilated refrigeration units with
+electrical defrost (by temperature)
+",False
+Sensor type,o06,o06,True,n10,n10,True,0,,False,3,,False,,,True,,"This parameter is for defining type of temperature sensors connected to the controller.
+""n5"" NTC 5K
+""n10"" NTC10K 
+""ptc"" PTC
+""pt1""PT1000
+",False
+Temperature Setpoint,r00,r00,True,4,4.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,,"This parameter defines the desired cabinet temperature at which compressor cuts out.
+The set value can be locked or limited to a range with the settings in “r02” and “r03”.",False
+Differential,r01,r01,True,2,2.00,False,0.1,0.10,False,20,20.00,False,K,K,True,,"This defines the difference between the cut-out and the cut-in of compressor relay.
+Compressor relay will cut-in when the cabinet temperature reaches the set point+differetial.
+In case of heating application, heater will cut-in when the temperature reaches the set point-differential.",False
+Min set point limit,r02,r02,True,2,2.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,,The minimum allowable setpoint value can be configured here to avoid setting too low values by accident/mistake.,False
+Max set point limit,r03,r03,True,6,6.00,False,-100,-100.00,False,200,200.00,False,°C,°C,True,,The maximum allowable setpoint value can be configured here to avoid setting too high values by accident/mistake.,False
+Display offset,r04,r04,True,0,0.00,False,-10,-10.00,False,10,10.00,False,K,K,True,,"Correction value in display temperature. If the temperature at the products and the temperature received by the controller are not identical, an offset adjustment of the display temperature can be carried out under this menu code.",False
+Display Unit,r05,r05,True,°C,°C,True,0,,False,1,,False,,,True,,Set here if the controller is to show temperature values in °C or in °F. Switching from one to the other will cause all temperature settings to be automatically updated to respective unit.,False
+Calibration of Sair,r09,r09,True,0,0.00,False,-20,-20.00,False,20,20.00,False,K,K,True,,"Offset for air temperature calibration.
+Compensation possibility due to long sensor cable.",False
+Night Set back,r13,r13,True,0,0.00,False,-50,-50.00,False,50,50.00,False,K,K,True,,"The thermostat’s reference will be the setpoint plus this value when the controller changes over to night operation. (Select a negative value if there is to be cold accumulation).
+Activation can take place via digital input.",False
+Offset reference displacement,r40,r40,True,0,0.00,False,-50,-50.00,False,20,20.00,False,°C,°C,True,,The thermostat reference and the alarm values are shifted the following number of degrees when the reference displacement is activated. Activation can take place via digital input.,False
+Delay of outputs at startup,o01,o01,True,5,5,True,0,0,True,600,600,True,sec,sec,True,,After start-up the controller functions can be delayed by the time delay defined here so that overloading of the electricity supply network is avoided.,False
+DI1 configuration,o02,o02,True,Off,Off,True,0,,False,9,,False,,,True,,"Here you can configure the DI1 to one of the functions listed below.
+""oFF"" not used
+""Sdc"" status display output
+""doo"" door alarm with resumption (door function)
+""doA"" door alarm without resumption (door alarm)
+""SCH"" main switch
+""nig"" day/night mode
+""rFd""reference displacement.
+""EAL"" external alarm
+""dEF"" defrost
+""Pud"" pull down
+""Sc"" condenser sensor
+",False
+Serial address,o03,o03,True,0,0,True,0,0,True,247,247,True,,,True,,Data communication is possible through external TTL to RS485 gateway.,False
+Password,o05,o05,True,0,0,True,0,0,True,999,999,True,,,True,,If the settings in the controller are to be protected with an access code you can set a numerical value between 0 and 999. You can cancel the function by setting to 0.,False
+Display Resolution ,o15,o15,True,0.1,0.1,True,0,,False,1,,False,,,True,,This parameter defines the steps in which the temperature must be displayed by 0.1 or 0.5 or 1.,False
+Relay 1 counter,o23,o23,True,0,,False,0,,False,999,,False,,,True,,"The number of cycles for the “DO1” relay can be read in this menu.
+The read value is multiplied by 100 to obtain the number of cycles.
+On reaching 999x100 cycles the counts stops and is reset to 0.",False
+"Save settings as factory
+",o67,o67,True,No,No,True,0,,False,1,,False,,,True,,"This parameter when set to YES. The current controller Parameter settings are stored as Factory default.
+WARNING: original factory settings are overwritten.",False
+DI1 polarity,P73,P73,True,no,no,True,0,,False,1,,False,,,True,,"""no (normally open)""associated functionality is activated when “DI1” port is short circuit. The associated function is deactivated when “DI1” port is open circuit.
+""nc (normally closed)""associated functionality is activated when “DI1” port is open circuit and deactivated
+when “DI1” port is short circuit",False
+Keyboard lock,P76,P76,True,No,No,True,0,,False,1,,False,,,True,,YES=enable keyboard lock functionality after 5 minutes of no activity on the keypad.,False
+"Controller status
+",u00,u00,True,S25,,False,0,,False,12,,False,,,True,,,True
+Air temperature (Sair),u01,u01,True,0,,False,-100,,False,200,,False,°C,°C,True,,,True
+Present regulation reference,u02,u02,True,0,,False,-100,,False,200,,False,,,True,,,True
+DI1 status,u10,u10,True,Off,,False,0,,False,1,,False,,,True,,,True
+Night mode,u13,u13,True,Off,,False,0,,False,1,,False,,,True,,,True
+Condenser temperature (Sc),U09,U09,True,0,,False,0,,False,1,,False,,,True,,,True
+Compressor relay status,u58,u58,True,Off,,False,0,,False,1,,False,,,True,,,True
+Firmware version,u80,u80,True,0,,False,0,,False,1,,False,,,True,,,True
+Database version,,,True,0,,False,-32768,,False,32767,,False,,,True,,,True
+Order No Low,,,True,0,,False,-32768,,False,32767,,False,,,True,, ,False
+Predefined applications,61,061,False,App0,,False,0,,False,5,,False,,,True,,"Predefined applications is to give the user an easy and fast way to configure the controller refer to a specific
+application based on storage temperature, defrost type and defrost method.
+""App 0"" No predefined application
+""App 1"" : Medium temperature without defrost.
+Temperature is 4-20 °C.
+Defrost type is None.
+Defrost end is None.           
+""App 2"" Medium temperature ventilated refrigeration units
+with timed electrical defrost
+""App3"" Low temperature ventilated refrigeration units with
+timed electrical defrost
+""App4"" Medium temperature ventilated refrigeration units
+with electrical defrost (by temperature)
+""App5"" Low temperature ventilated refrigeration units with
+electrical defrost (by temperature)
+",False
+Air temperature sensor(Sair) error,E29,E29,True,0,,False,0,,False,0,,False,,,True,,,True
+High temperature alarm,A01,A01,True,0,,False,0,,False,0,,False,,,True,,,True
+Low temperature alarm,A02,A02,True,0,,False,0,,False,0,,False,,,True,,,True
+High voltage alarm,A99,A99,True,0,,False,0,,False,0,,False,,,True,,,True
+Low voltage alarm,AA1,AA1,True,0,,False,0,,False,0,,False,,,True,,,True
+High condenser temperature alarm,A61,A61,True,0,,False,0,,False,0,,False,0,,False,,,True
+Door alarm,A04,A04,True,0,,False,0,,False,0,,False,0,,False,,,True
+DI external alarm,A15,A15,True,0,,False,0,,False,0,,False,0,,False,,0,False
+High temperature alarm,A01,A01,True,0,,False,0,,False,0,,False,,,True,,,True
+Low temperature alarm,A02,A02,True,0,,False,0,,False,0,,False,,,True,,,True
+High voltage alarm,A99,A99,True,0,,False,0,,False,0,,False,,,True,,,True
+Low voltage alarm,AA1,AA1,True,0,,False,0,,False,0,,False,,,True,,,True
+High condenser temperature alarm,A61,A61,True,0,,False,0,,False,0,,False,0,,False,,,True
+Door alarm,A04,A04,True,0,,False,0,,False,0,,False,0,,False,,,True
+DI external alarm,A15,A15,True,0,,False,0,,False,0,,False,0,,False,,0,False

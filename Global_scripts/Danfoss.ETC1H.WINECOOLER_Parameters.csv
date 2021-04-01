@@ -1,0 +1,68 @@
+﻿Name,Enum
+ID low part,
+ID high part,
+Serial Number,
+Type Number 091X,
+TypeNumber 077F,
+TypeNumber,
+Software version,
+Hardware version,
+Parameter version,
+Application ID,"1:STANDARD,2:WINECOOLER,3:DOUBLEDOOR,4:COND101,5:GDM101,6:DUALBAND102,7:DUALDEFROST,13:DFNOFROST100,14:VFGDM100,15:MEDICINECOOLER,16:CondMKS100,17:KIR_NOFROST100"
+Cold Cut-out,
+Warm Cut-out,
+Temp Set Top,
+Compressor Differential,
+Min Runtime,
+Min Stoptime,
+Alarm low function,"1:Enable,0:Disable"
+Alarm high function,"1:Enable,0:Disable"
+Cold Overtemp Alarm,
+Warm Overtemp Alarm,
+Cold Undertemp Alarm,
+Warm Undertemp Alarm,
+Alarm Delay,
+Fan on during defrost,"1:Enable,0:Disable"
+Defrost Terminate Temperature,
+Minimum Defrost Time,
+Maximum Defrost Time,
+Minimum Defrost Interval,
+Fan Start Delay,
+Voltage Protect function,"1:Enable,0:Disable"
+Minimum Cut-in Voltage,
+Voltage Threshold,
+Maximum Cut-in Voltage,
+Zero-Cross switching Function,"1:Enable,0:Disable"
+Zero-Cross Switchning,
+Remote Offset,
+Remote Deviation,
+Remote Sample Time,
+Defrost temperature,
+Condenser temperature,
+User set,
+Voltage,
+RelayCount,
+Cutin Cpr,
+Cutout Cpr,
+Alarm high temp,
+Alarm low temp,
+Compressor,"1:On,0:Off"
+Fan,"1:On,0:Off"
+Heater,"1:On,0:Off"
+Status,"0:Run,1:Standby,2:Defrost,3:Error,4:Start,5:Test,6:Off,7:Def End,8:Fac test"
+Alarm,"0:None,1:Sensor1,2:Sensor2,3:Compressor,4:Heater,5:Voltage_low,6:Voltage_high,7:Over_Temp_Alarm,8:Under_Temp_Alarm"
+Factory test,
+Control temperature, 
+Panel Spindle Selection,"0:Panel,1:Panel+Spindle with Stop Function,2:Panel + Spindle without stop function"
+Fan Min Run Time,
+Fan Min Stop Time,
+Heater Differential,
+Fan Differential,
+Remote display fahrenheit,"1:Enable,0:Disable"
+Cutout heater,
+Cutin heater,
+Operating mode,
+Output,
+Temp Set Bottom,
+Top temp (S1),
+Bottom temp (S2),

@@ -1,0 +1,139 @@
+ParameterName,GroupName
+Main switch,
+,Start / Stop
+,Digital outputs
+,Virtual DI
+Defrost method,
+,Configuration
+,Defrost control
+Defrost stop method,
+,Configuration
+,Defrost control
+Defrost stop limit A,
+,Configuration
+,Defrost control
+Network address,
+,Configuration
+,Network
+Control state A,
+,Thermostat control
+,Alarm limits and delays
+,Humidity control
+,Injection control
+,Defrost control
+,Fan control
+,Railheat control
+,Light/Blinds/Cleaning control
+,Display control
+,Master control
+Thermostat air temp. A,
+,Thermostat control
+,Injection control
+S3 Air ON evap. A,
+,Thermostat control
+,Alarm limits and delays
+,Injection control
+,Virtual AI
+,Analogue inputs
+S3 Air ON evap. B,
+,Thermostat control
+,Alarm limits and delays
+,Injection control
+,Virtual AI
+,Analogue inputs
+S4 Air OFF evap. A,
+,Thermostat control
+,Alarm limits and delays
+,Injection control
+,Virtual AI
+,Analogue inputs
+Night condition,
+,Thermostat control
+,Light/Blinds/Cleaning control
+S6 product temp.,
+,Alarm limits and delays
+,Virtual AI
+,Analogue inputs
+Humidity sensor,
+,Humidity control
+,Analogue inputs
+AKV opening A,
+,Injection control
+,Virtual DO
+,Digital outputs
+Pe Evap. pressure,
+,Injection control
+,Virtual AI
+,Analogue inputs
+Te Evap. temp.,
+,Injection control
+,Analogue inputs
+S2 Gas outlet A,
+,Injection control
+,Virtual AI
+,Analogue inputs
+S5 Evaporator A,
+,Defrost control
+,Virtual AI
+,Analogue inputs
+S5 Evaporator B,
+,Defrost control
+,Virtual AI
+,Analogue inputs
+Defrost A,
+,Defrost control
+,Virtual DO
+,Digital outputs
+Defrost B,
+,Defrost control
+,Virtual DO
+,Digital outputs
+Compressor 1,
+,Compressor
+,Virtual DO
+,Digital outputs
+Compressor 2,
+,Compressor
+,Virtual DO
+,Digital outputs
+Fan,
+,Fan control
+,Virtual DO
+,Digital outputs
+Fan ECO,
+,Fan control
+,Virtual DO
+,Digital outputs
+Rail heat PWM,
+,Railheat control
+,Virtual AO
+,Analogue outputs
+Light,
+,Light/Blinds/Cleaning control
+,Virtual DO
+,Digital outputs
+Blinds,
+,Light/Blinds/Cleaning control
+,Virtual DO
+,Digital outputs
+Humidifier,
+,Virtual DO
+,Digital outputs
+Air heater,
+,Virtual DO
+,Digital outputs
+Drain valve,
+,Virtual DO
+,Digital outputs
+Suction valve,
+,Virtual DO
+,Digital outputs
+Hotgas valve,
+,Virtual DO
+,Digital outputs
+Rail heat,
+,Virtual DO
+,Digital outputs
+Alarm,
+,Virtual DO
+,Digital outputs

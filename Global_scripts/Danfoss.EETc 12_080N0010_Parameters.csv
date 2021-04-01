@@ -1,0 +1,71 @@
+﻿Parameter Name,Enum
+Sensor Type,"0:NTC5K,1:NTC10K"
+S2 Configuration,"0:nC,1:Con,2:EuA,3:doC,4:doo,5:ESP,6:Est,7:Pud,8:dES
+"
+Lowest Temperature Limit,
+Highest Temperature Limit,
+Lowest Temperature Differential,
+Highest Temperature Differential,
+Initial pull down  ON/OFF,"0:OFF,1:ON"
+IPD and Pull down Duration,
+IPD and Pull down Initiate temperature,
+Pull Down Limit temperature,
+Min Run time,
+Min Stop time,
+Compressor stop delay on door open,
+System Resume after door open,
+Power On Delay,
+Low temp alarm limit,
+High temp alarm limit,
+Low temp alarm delay,
+High temp alarm delay,
+Alarm Door open delay,
+Alarm delay during Pull Down/ Power up /defrost,
+Defrost type,"0:no,1:nAt"
+Minimum defrost Interval,
+Maximum defrost Interval,
+Minimum defrost time,
+Maximum defrost Time,
+Defrost Terminate Temp,
+Defrost On accumulated Compressor Run Time,"0:No,1:Yes"
+Defrost Start by Evap Temp,
+Drip Off time,
+Initial Defrost Interval,
+Initial defrost duration,
+ECO Mode enable,"0:No,1:Yes"
+Eco Offset,
+Eco Door Delay,
+Voltage Protection function,"0:No,1:Yes"
+Minimum Cut-in Voltage 110V (230V),
+Minimum Cut out Voltage 110V (230V),
+Maximum cut out Voltage 110V (230V),
+Condenser Alarm Limit,
+Condenser Block Limit,
+Condenser OK Limit,
+Control sensor error handling type,"0:no,1:Set,2:Aut"
+Error Run Time,
+Error Stop Time,
+Zero Cross Config,"0:No,1:Yes"
+Operating mode,"0:Manual,1:Normal"
+Parameter Version ,
+Software Version,
+Hardware Version ,
+Code number,
+OEM low ,
+OEM High,
+Thermostat cut in temperature,
+Themostat cut out temperature,
+Cabinet Air Temperature,
+Evap Temperature,
+Condenser Temperature,
+Door Status,"0:Open,1:Close,2:Not Configured"
+Di Switch Status,"0:Open,1:Close,2:Not Configured"
+Spindle position,
+Compressor Relay Status,"0:OFF,1:ON"
+Thermostat status,"0:Initial state,1:Serving mode,2:Eco Mode,3:Initial pull down,4:Pull down,5:Emergency mode,6:Main Switch off"
+Defrost status (stages),"0:Idle,1:Ice off,2:Drip off,3:Cooling Preperation"
+Defrost interval counter - Comp. run time,
+Defrost Interval counter - Elapsed time,
+Alarm status,
+Main Voltage ,
+,

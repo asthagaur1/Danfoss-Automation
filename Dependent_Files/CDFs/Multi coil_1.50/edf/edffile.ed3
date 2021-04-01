@@ -1,0 +1,615 @@
+﻿-------------------------------------------------------
+Created by MCXShape 4.01
+App: 084B4084 1.50
+Description: AK-CC55 Multi coil
+-------------------------------------------------------
+$Workfile: $
+$Revision: $
+$Date:     $
+$Author:   $
+-------------------------------------------------------
+
+<EDF_FILE_VERSION> 10
+<EDF_FILE_LAYOUT_TYPE> 4
+
+<BASE_DESCRIPTION_START>
+
+// category 1=evap,2=pack,8=hvac, subcat 0=single,1=multi
+<BASICINFO_SECTION_START>
+<MODEL> 084B4084
+<NAME> AK-CC55
+<CATEGORY> 1
+<SUBCATEGORY> 1
+<BOARD_TYPE> 62
+<SECTIONS> 3
+<VERSION> 015x
+<BASICINFO_SECTION_END>
+
+<XMLNAME_SECTION_START>
+46
+alm_hi1,                 94|High Temp Alarm
+alm_lo1,                 95|Low Temp Alarm
+ash_cycle_time,         105|ASH Cycle
+ash_high,               107|Ash High
+ash_low,                106|Ash Low
+ash_min,                108|ASH Min On
+case_setpoint_a,          3|Case Setpoint A
+case_setpoint_diff_a,     4|Case Setpoint Diff A
+casetemp1,              153|Case Temp 1
+cleaning1,               60|Cleaning
+def_disable,             87|Disable Def
+def_interval,            21|Def Interval
+def_maxtime,             22|Max Def Time
+def_start,               17|Def Start
+def_termtmp,             20|Def Stop Temp
+def1_h,                  36|Def 1 Hr
+def1_m,                  37|Def 1 Min
+def2_h,                  38|Def 2 Hr
+def2_m,                  39|Def 2 Min
+def3_h,                  40|Def 3 Hr
+def3_m,                  41|Def 3 Min
+def4_h,                  42|Def 4 Hr
+def4_m,                  43|Def 4 Min
+def5_h,                  44|Def 5 Hr
+def5_m,                  45|Def 5 Min
+def6_h,                  46|Def 6 Hr
+def6_m,                  47|Def 6 Min
+defstat1,                90|Defrost
+deftemp1,               240|Def Temp
+dewpoint,               111|Dewpoint
+ekcerror,               158|Error
+ekcstate,               152|State
+evapouttemp1,           229|Air Out
+fanstatus,              242|Fans
+light_remote,           101|Light Remote
+lightstatus,            248|Lights
+liquidin1,              155|Liquid In
+mainswitch,               1|Main Switch
+night_setback1,          73|Night Setback
+nightstatus,             77|Night Status
+pressure1,              239|Po
+setpoint1,               68|Setpoint
+shutdown1,               82|Forced Close
+superref1,               85|Reference
+supertemp1,              84|Superheat
+vaporout1,              236|Vapor Out
+<XMLNAME_SECTION_END>
+
+<DEVICE_COMPONENT_SECTION_START>
+7
+  1,   0,   0|Device                | 1,   0,   1,   0, 158, 152,  75, 153
+  2,   1,   0|Section A             |11,   0,   1,   0, 158, 152,  75, 153
+  3,   1,   0|Section B             |11,  29,   7,   0,   0, 204,  75, 206
+  4,   1,   0|Section C             |11,  30,   0,   0,   0, 205,  75, 207
+  5,   1,   0|Dashboard             | 0,   0,   0,   0,   0,   0,   0, 153
+  6,   1,   0|Controls              | 0,   0,   0,   0,   0,   0,   0,   0
+  7,   1,   0|Alarms                | 0,   0,   0,   0,   0,   0,   0,   0
+<DEVICE_COMPONENT_SECTION_END>
+<DEVICE_COMPONENT_TAGS_START>
+51
+1,MainSwitch,1
+1,AppMode,132
+2,ValveOD,233
+2,TeTemp,155
+2,PePressure,239
+2,S2Temp,236
+2,S4Temp,229
+2,S5Temp,240
+2,FoodTemp,200
+2,DefStopTemp,201
+2,Fan,242
+2,SH,84
+2,SHref,85
+2,AlarmAir,222
+3,S5Temp,241
+3,ValveOD,234
+3,TeTemp,155
+3,PePressure,239
+3,S2Temp,237
+3,S4Temp,230
+3,FoodTemp,200
+3,Fan,242
+3,SH,210
+3,SHref,212
+3,AlarmAir,223
+4,ValveOD,235
+4,TeTemp,155
+4,PePressure,239
+4,S2Temp,238
+4,S4Temp,231
+4,FoodTemp,200
+4,Fan,242
+4,SH,211
+4,SHref,213
+4,AlarmAir,226
+5,ActualCutin,74
+5,ActualCutout,75
+5,CurrentHumidity,232
+5,NightState,77
+5,CoolingState,285
+5,DefrostState,90
+5,FanState,242
+6,MainSwitch,1
+6,CaseCleaning,60
+6,Setpoint,3
+6,DefrostTime,89
+6,StartDefrost,17
+6,StopDefrost,18
+7,NoOfAlarms,284
+7,MuteAlarms,283
+7,ResetAlarms,157
+<DEVICE_COMPONENT_TAGS_END>
+
+<MENU_SECTION_START>
+16
+  1|  0|  0|  0|  1|Overview                      |0|0|12| 158| 152| 204| 205| 153| 206| 207| 200|   1| 233| 234| 235|
+  2|  1|  0|  0|  2|Start / Stop                  |0|0|4 |   1| 158| 152| 153|
+  3|  1|  0|  0|  3|Configuration                 |0|0|21| 158| 132| 156| 137| 138| 139| 133| 134| 135| 136| 141| 142| 140| 203|  19|  28|  20| 143| 199| 154| 178|
+  4|  1|  0|  0|  4|Thermostat control            |0|0|29| 158| 152| 204| 205| 153| 206| 207| 229| 230| 231| 200|  77|  74|  75|  76| 208| 209|  78|   2|   3|   8|   4|   7|  11|  12|   9|  10|   5|   6|
+  5|  1|  0|  0|  5|Alarm settings                |0|0|17| 158| 152| 204| 205| 222| 223| 226|  94|  96|  95|  97|  91|  93|  92| 159|  98|  99|
+  6|  1|  0| 39|  6|Humidity control              |0|0|12| 158| 152| 232| 228| 144| 145| 146| 147| 148| 150| 151| 149|
+  7|  1|  0|  0|  7|Injection control             |0|0|27| 158| 152| 204| 205| 229| 230| 231| 233| 234| 235| 155| 236| 237| 238|  84|  85| 210| 212| 211| 213| 239|  13|  14|  15|  16| 164| 163|
+  8|  1|  0|  0|  8|Defrost control               |0|0|25| 158| 152| 153| 201| 240| 241|  89|  17|  18|  19|  28|  20|  21|  23|  30|  22|  29|  24|  31|  27|  25|  26|  34|  32|  33|
+  9|  1|  0|  0|  9|Defrost schedules             |0|0|29| 158| 152|  35|  36|  37|  38|  39|  40|  41|  42|  43|  44|  45|  46|  47| 180| 181| 182| 187| 183| 184| 185|  48|  49|  50|  51|  52|  53|  54|
+ 10|  1|  0|  0| 10|Fan Light Railheat            |0|0|19| 158| 152| 111| 110|  55|  56|  57|  58|  59| 102| 103| 104| 105| 109| 108| 106| 107| 100| 113|
+ 11|  1|  0|  0| 11|Miscellaneous                 |0|0|13| 158| 152|  79|  81| 160|  80| 161| 188| 114| 112|  60|  61| 162|
+ 12|  1|  0|  0| 12|Alarm groups and priorities   |0|0|13| 158| 157| 186| 189| 190| 191| 192| 193| 194| 195| 196| 197| 198|
+ 13|  1|  0|  0| 13|Service                       |0|0|47| 158| 152| 204| 205| 153| 206| 207| 229| 230| 231| 239| 155| 240| 241| 236| 237| 238|  62|  63|  64| 233| 234| 235| 242| 243| 244| 245| 246| 247| 248| 249| 250|  65|   1| 168| 224| 225| 169| 170| 174| 171| 172| 173| 175| 176| 177| 115|
+ 14|  1|  0| 40| 14|Alarm status                  |0|0|32| 251| 252| 253| 254| 255| 256| 257| 258| 259| 260| 261| 262| 263| 264| 265| 266| 267| 268| 269| 270| 271| 272| 273| 274| 275| 276| 277| 278| 279| 280| 281| 282|
+ 15|  1|  0|  0| 15|Master control                |0|0|24| 158|  66| 214| 215|  67|  68|  69|  70|  72| 130|  73| 166|  82|  83|  88|  90|  86|  87| 101| 167|  71| 165| 179| 227|
+ 16|  1|  0|  0| 16|For Danfoss only              |0|0|22| 116| 117| 118| 119| 120| 131| 123| 122| 124| 125| 126| 127| 121| 216| 217| 128| 218| 219| 129| 220| 221| 202|
+<MENU_SECTION_END>
+
+FPN  U  X   L scaling  CID   VID m 2          def          min          max gp exp RW name               arg showfn_name
+<PARAMETER_SECTION_START>
+285,285,1
+001, 0, 8,  1,     0,    0,  117,I,I,           0,          -1,           1, 0,  0, W|r12 Main switch|0
+002, 0, 8,  2,     0,    0,  124,I,I,           1,           1,           3, 3,  0, W|r14 Therm. mode|0
+003, 4, 8,  0,     0,    0,  100,G,F,          20,        -500,         500, 3,255, W|r00 Cutout|0
+004,16, 8,  0,     0,    0,  101,G,F,          20,           1,         200, 3,255, W|r01 Differential|0
+005, 4, 8,  0,     0,    0,  102,G,F,         500,        -500,         500, 3,255, W|r02 Max cutout|0
+006, 4, 8,  0,     0,    0,  103,G,F,        -500,        -500,         500, 3,255, W|r03 Min cutout|0
+007,16, 8,  0,     0,    0,  125,G,F,           0,        -500,         500, 3,255, W|r13 Night offset|0
+008, 4, 8,  0,     0,    0,  131,G,F,          20,        -500,         500, 3,255, W|r21 Cutout 2|1
+009,18, 8,  0,     0,    0,  122,W,W,           1,           0,          10, 3,  0, W|r16 MeltInterval|0
+010,17, 8,  0,     0,    0,  121,W,W,           5,           0,          30, 3,  0, W|r17 Melt period|0
+011,16, 8,  0,     0,    0,  183,G,F,          50,           0,         500, 3,255, W|r62 Heat NZ|2
+012,17, 8,  0,     0,    0,  184,W,W,         240,           0,         240, 3,  0, W|r63 HeatStartDel|2
+013,16, 8,  0,     0,    0, 3021,G,F,          30,          20,         200, 6,255, W|n10 Min SH|0
+014,16, 8,  0,     0,    0, 3015,G,F,         120,          20,         200, 6,255, W|n09 Max SH|0
+015, 4, 8,  0,     0,    0, 3013,G,F,         150,        -500,         150, 6,255, W|n11 MOP temp.|0
+016, 0, 8,  0,     0,    0, 3019,W,W,           6,           3,           6, 6,  0, W|n13 AKV Period|0
+017, 0, 8,  3,     0,    0, 1013,I,I,           0,           0,           1, 7,  0, W|--- Def. Start|0
+018, 0, 8,  3,     0,    0, 1060,I,I,           0,           0,           1, 7,  0, W|--- Def. Stop|0
+019, 0, 8,  4,     0,    0, 1000,I,I,           1,           0,           4, 2,  0, W|d01 Def. method|0
+020, 4, 8,  0,     0,    0, 1001,G,F,          60,           0,         500, 2,255, W|d02 Def.StopTemp|3
+021,18, 8,  0,     0,    0, 1002,W,W,           8,           0,         240, 7,  0, W|d03 Def.Interval|0
+022,17, 8,  0,     0,    0, 1003,W,W,          45,           0,         360, 7,  0, W|d04 Max Def.time|0
+023,17, 8,  0,     0,    0, 1004,W,W,           0,           0,         240, 7,  0, W|d05 Time stagg.|0
+024,17, 8,  0,     0,    0, 1005,W,W,           0,           0,          60, 7,  0, W|d06 DripOff time|0
+025,17, 8,  0,     0,    0, 1007,W,W,           0,           0,          60, 7,  0, W|d07 FanStartDel|0
+026, 4, 8,  0,     0,    0, 1006,G,F,        -500,        -500,         100, 7,255, W|d08 FanStartTemp|4
+027, 0, 8,  5,     0,    0, 1008,I,I,           1,           0,           3, 7,  0, W|d09 FanDuringDef|0
+028, 0, 8,  6,     0,    0, 1009,I,I,           0,           0,           2, 2,  0, W|d10 DefStopSens.|0
+029,17, 8,  0,     0,    0, 1018,W,W,           0,           0,          60, 7,  0, W|d16 Pump dwn del|0
+030,18, 8,  0,     0,    0, 1020,W,W,           0,           0,         240, 7,  0, W|d18 MaxTherRunT.|0
+031,17, 8,  0,     0,    0, 2020,W,W,          20,           0,         360, 7,  0, W|o16 MaxHoldTime|0
+032, 0, 8,  7,     0,    0, 1045,I,I,           1,           0,           2, 7,  0, W|d27 Railh.at def|5
+033,17, 8,  0,     0,    0, 1058,W,W,          30,           5,         240, 7,  0, W|d40 Disp. d del.|0
+034, 4, 8,  0,     0,    0, 1059,G,F,           0,        -200,         200, 7,255, W|d41 Def Fan Stop|6
+035, 0, 8,  8,     0,    0, 1200,I,I,           0,           0,           1, 8,  0, W|t00 Def.Schedule|0
+036,18, 8,  0,     0,    0, 1201,W,W,           0,           0,          23, 8,  0, W|t01 Def. 1   hr.|7
+037,17, 8,  0,     0,    0, 1211,W,W,           0,           0,          59, 8,  0, W|t11 Def. 1  min.|7
+038,18, 8,  0,     0,    0, 1202,W,W,           0,           0,          23, 8,  0, W|t02 Def. 2   hr.|7
+039,17, 8,  0,     0,    0, 1212,W,W,           0,           0,          59, 8,  0, W|t12 Def. 2  min.|7
+040,18, 8,  0,     0,    0, 1203,W,W,           0,           0,          23, 8,  0, W|t03 Def. 3   hr.|7
+041,17, 8,  0,     0,    0, 1213,W,W,           0,           0,          59, 8,  0, W|t13 Def. 3  min.|7
+042,18, 8,  0,     0,    0, 1204,W,W,           0,           0,          23, 8,  0, W|t04 Def. 4   hr.|7
+043,17, 8,  0,     0,    0, 1214,W,W,           0,           0,          59, 8,  0, W|t14 Def. 4  min.|7
+044,18, 8,  0,     0,    0, 1205,W,W,           0,           0,          23, 8,  0, W|t05 Def. 5   hr.|7
+045,17, 8,  0,     0,    0, 1215,W,W,           0,           0,          59, 8,  0, W|t15 Def. 5  min.|7
+046,18, 8,  0,     0,    0, 1206,W,W,           0,           0,          23, 8,  0, W|t06 Def. 6   hr.|7
+047,17, 8,  0,     0,    0, 1216,W,W,           0,           0,          59, 8,  0, W|t16 Def. 6  min.|7
+048, 0, 8,  8,     0,    0, 1221,I,I,           1,           0,           1, 8,  0, W|t51 Mon.Schedule|7
+049, 0, 8,  8,     0,    0, 1222,I,I,           1,           0,           1, 8,  0, W|t52 Tue.Schedule|7
+050, 0, 8,  8,     0,    0, 1223,I,I,           1,           0,           1, 8,  0, W|t53 Wed.Schedule|7
+051, 0, 8,  8,     0,    0, 1224,I,I,           1,           0,           1, 8,  0, W|t54 Thu.Schedule|7
+052, 0, 8,  8,     0,    0, 1225,I,I,           1,           0,           1, 8,  0, W|t55 Fri.Schedule|7
+053, 0, 8,  8,     0,    0, 1226,I,I,           1,           0,           1, 8,  0, W|t56 Sat.Schedule|7
+054, 0, 8,  8,     0,    0, 1227,I,I,           1,           0,           1, 8,  0, W|t57 Sun.Schedule|7
+055, 4, 8,  0,     0,    0, 1505,G,F,         500,        -500,         500, 9,255, W|F04 FanStop temp|0
+056, 0, 8,  9,     0,    0, 1506,I,I,           0,           0,           2, 9,  0, W|F05 FanPulseMode|0
+057,17, 8,  0,     0,    0, 1507,W,W,           5,           1,          30, 9,  0, W|F06 Fan cycle|8
+058, 5, 8,  0,     0,    0, 1508,I,I,         100,           0,         100, 9,  0, W|F07 Fan ON %|8
+059, 0, 8, 10,     0,    0, 2121,I,I,           1,           0,           3, 9,  0, W|o90 Fan ForcedCl|0
+060, 0, 8, 11,     0,    0, 2056,I,I,           0,           0,           2,10,  0, W|o46 Case clean|0
+061, 0, 8,  0,     0,    0, 2000,W,W,           5,           0,         600,10,  0, W|o01 DelayOfOutp.|0
+062, 0, 8,  3,     0,    0, 2002,I,I,           0,           0,           1,12,  0, R|u10 DI1 status|9
+063, 0, 8,  3,     0,    0, 2556,I,I,           0,           0,           1,12,  0, R|u37 DI2 status|0
+064, 0, 8,  3,     0,    0, 2608,I,I,           0,           0,           1,12,  0, R|u87 DI3 status|0
+065, 5, 8,  0,     0,    0, 2682,I,I,           0,           0,         100,12,  0, R|U45 Comm. status|0
+066, 0, 8, 12,     0,    0, 2554,I,I,           0,           0,          15,14,  0, R|--- Reg. Cond.|0
+067, 4, 8,  0,     0,    0, 2553,G,F,          40,       -2000,        2000,14,255, R|--- Cutin temp.|0
+068, 4, 8,  0,     0,    0, 2501,G,F,          20,       -2000,        2000,14,255, R|--- Cutout temp.|0
+069, 0, 8, 13,     0,    0, 3146,I,I,           0,           0,           2,14,  0, W|--- TherToggle|0
+070, 5, 8,  0,     0,    0, 3147,I,I,           0,        -100,         100,14,  0, W|--- LoadReq|0
+071, 0, 8,  0,     0,    0, 2572,G,F,           0,           0,         100,14,255, R|--- Load factor|0
+072,16, 8,  0,     0,    0, 3151,G,F,           0,       -1800,        1000,14,255, R|--- MaxTeOffset|0
+073, 0, 8,  3,     0,    0,  126,I,I,           0,           0,           1,14,  0, W|--- Night setbck|0
+074, 4, 8,  0,     0,    0, 2612,G,F,          40,       -2000,        2000, 3,255, R|u90 Cutin temp.|0
+075, 4, 8,  0,     0,    0, 2613,G,F,          20,       -2000,        2000, 3,255, R|u91 Cutout temp.|0
+076,17, 8,  0,     0,    0, 2539,W,W,           0,           0,         999, 3,  0, R|u18 Ther runtime|0
+077, 0, 8,  3,     0,    0, 2533,I,I,           0,           0,           1, 3,  0, R|u13 Night Cond.|0
+078, 0, 8, 14,     0,    0, 2607,I,I,           1,           1,           2, 3,  0, R|u86 Ther. band|1
+079, 4, 8,  0,     0,    0, 2576,G,F,           0,       -2000,        2000,10,255, R|u56 Display air|0
+080,16, 8,  0,     0,    0,  104,G,F,           0,        -100,         100,10,255, W|r04 Disp. Adj. K|0
+081, 4, 8,  0,     0,    0, 2672,G,F,           0,       -2000,        2000,10,255, R|U35 Display airB|0
+082, 0, 8,  3,     0,    0, 3022,I,I,           0,           0,           1,14,  0, W|--- Forced close|0
+083, 0, 8,  3,     0,    0, 3044,I,I,           0,           0,           1,14,  0, W|--- Forced cool.|0
+084,16, 8,  0,     0,    0, 2536,G,F,           0,       -2000,        2000, 6,255, R|u21 Superheat|0
+085,16, 8,  0,     0,    0, 2535,G,F,           0,       -2000,        2000, 6,255, R|u22 SuperheatRef|0
+086, 0, 8,  3,     0,    0, 2022,I,I,           0,           0,           1,14,  0, W|--- HoldAfterDef|0
+087, 0, 8,  3,     0,    0, 1031,I,I,           0,           0,           1,14,  0, W|--- Disable def.|0
+088, 0, 8,  3,     0,    0, 1042,I,I,           0,           0,           1,14,  0, W|--- MC def.start|0
+089,17, 8,  0,     0,    0, 2508,W,W,           0,           0,         900, 7,  0, R|u11 Defrost time|0
+090, 0, 8,  3,     0,    0, 1036,I,I,           0,           0,           1,14,  0, R|--- DefrostState|0
+091,17, 8,  0,     0,    0,10002,W,W,          30,           0,         240, 4,  0, W|A03 Alarm delay|0
+092,17, 8,  0,     0,    0,10003,W,W,          60,           0,         240, 4,  0, W|A04 DoorOpen del|10
+093,17, 8,  0,     0,    0,10018,W,W,          90,           0,         240, 4,  0, W|A12 Pulldown del|0
+094, 4, 8,  0,     0,    0,10019,G,F,          80,        -500,         500, 4,255, W|A13 HighLim Air|0
+095, 4, 8,  0,     0,    0,10020,G,F,        -300,        -500,         500, 4,255, W|A14 LowLim Air|0
+096, 4, 8,  0,     0,    0,10021,G,F,          80,        -500,         500, 4,255, W|A20 HighLim2 Air|1
+097, 4, 8,  0,     0,    0,10022,G,F,        -300,        -500,         500, 4,255, W|A21 LowLim2 Air|1
+098,17, 8,  0,     0,    0,10028,W,W,          30,           0,         240, 4,  0, W|A27 Al.Delay DI1|11
+099,17, 8,  0,     0,    0,10029,W,W,          30,           0,         240, 4,  0, W|A28 Al.Delay DI2|12
+100, 0, 8, 15,     0,    0, 2057,I,I,           1,           1,           5, 9,  0, W|o38 Light config|0
+101, 0, 8,  3,     0,    0, 2058,I,I,           0,           0,           1,14,  0, W|o39 Light remote|0
+102, 0, 8, 16,     0,    0, 2116,I,I,           0,           0,           2, 9,  0, W|o85 Railh. mode|5
+103, 5, 8,  0,     0,    0, 2060,I,I,         100,           0,         100, 9,  0, W|o41 Railh.ONday%|5
+104, 5, 8,  0,     0,    0, 2061,I,I,         100,           0,         100, 9,  0, W|o42 Railh.ONngt%|5
+105,17, 8,  0,     0,    0, 2062,W,W,           5,           1,          60, 9,  0, W|o43 Railh.cycle|5
+106, 4, 8,  0,     0,    0, 2117,G,F,          80,        -100,         500, 9,255, W|o86 DewP Min lim|13
+107, 4, 8,  0,     0,    0, 2118,G,F,         170,        -100,         500, 9,255, W|o87 DewP Max lim|13
+108, 5, 8,  0,     0,    0, 2119,I,I,          30,           0,         100, 9,  0, W|o88 Rail Min ON%|13
+109, 0, 8,  0,     0,    0, 2200,W,W,          10,           4,          60, 9,  0, W|P82 RailCyclePWM|14
+110, 5, 8,  0,     0,    0, 2606,I,I,           0,           0,         100, 9,  0, R|u85 Rail DutyC %|13
+111, 4, 8,  0,     0,    0, 2615,G,F,           0,       -2000,        2000, 9,255, R|--- Dew point|13
+112, 0, 8,  0,     0,    0, 2013,I,I,           0,           0,         999,10,  0, W|o05 Acc. code 3|0
+113, 0, 8, 17,     0,    0, 2146,I,I,           0,           0,           1, 9,  0, W|o98 Light MS=Off|0
+114, 0, 8,  0,     0,    0, 2080,I,I,           0,           0,         999,10,  0, W|o64 Acc. code 2|0
+115,16, 8,  0,     0,    0,  113,G,F,           0,        -100,         100,12,255, W|r09 Adjust S4|0
+116, 0, 0,  0,     0,    0, 2548,I,I,        8000,        8000,       12000,15,  0, W|--- Rfg.Fac.A1|15
+117, 0, 0,  0,     0,    0, 2549,I,I,       -1000,       -4000,       -1000,15,  0, W|--- Rfg.Fac.A2|15
+118, 0, 0,  0,     0,    0, 2550,I,I,        1000,        1000,        3000,15,  0, W|--- Rfg.Fac.A3|15
+119, 0, 8, 18,     0,    0, 3026,I,I,           1,           1,           2,15,  0, W|n21 SH mode|0
+120,16, 8,  0,     0,    0, 3027,G,F,          20,         -10,         150,15,255, W|--- SH close|0
+121, 0, 8,  0,     0,    0, 3127,G,F,           0,           0,         200,15,255, W|--- AFidentForce|0
+122, 0, 8,  0,     0,    0, 3128,G,F,          20,           1,          50,15,255, W|--- SH Kp min|0
+123, 0, 8,  0,     0,    0, 3129,G,F,          40,           1,         200,15,255, W|--- SH Kp max|0
+124, 0, 8,  0,     0,    0, 3130,W,W,         300,          10,         900,15,  0, W|--- SH Tn|0
+125, 0, 8,  0,     0,    0, 3133,G,F,         -10,         -10,         200,15,255, W|--- Te-gain|0
+126, 0, 8,  0,     0,    0, 3059,G,F,          40,          10,         500,15,255, W|--- MTR Kpfactor|0
+127, 0, 8,  0,     0,    0, 3058,W,W,         900,         100,        1800,15,  0, W|--- MTR Tn sec|0
+128, 0, 8,  0,     0,    0, 3134,G,F,          30,       -2000,        2000,15,255, R|--- AFident|0
+129, 5, 8,  0,     0,    0, 3135,I,I,         100,           0,         100,15,  0, R|--- Max OD %|0
+130, 0, 8,  3,     0,    0, 3149,I,I,           0,           0,           1,14,  0, W|--- MC Liq. Ctrl|0
+131,16, 8,  0,     0,    0, 3155,G,F,         -30,         -50,         150,15,255, W|--- SH close Liq|0
+132, 0, 0, 19,     0,    0, 2077,I,I,           1,           1,           5, 2,  0, W|o61 Appl. mode|0
+133, 0, 0, 20,     0,    0, 2551,I,I,           0,           0,          49, 2,  0, W|o30 Refrigerant|0
+134, 0, 0,  0,     0,    0, 2201,I,I,         300,        -999,         999, 2,  0, W|P83 RfgFac.K1|16
+135, 0, 0,  0,     0,    0, 2202,I,I,        -900,        -999,         999, 2,  0, W|P84 RfgFac.K2|16
+136, 0, 0,  0,     0,    0, 2203,I,I,         300,        -999,         999, 2,  0, W|P85 RfgFac.K3|16
+137, 0, 0, 21,     0,    0, 2001,I,I,           0,           0,          21, 2,  0, W|o02 DI1 Config.|9
+138, 0, 0, 21,     0,    0, 2055,I,I,           0,           0,          21, 2,  0, W|o37 DI2 Config.|0
+139, 0, 0, 21,     0,    0, 2115,I,I,           0,           0,          21, 2,  0, W|o84 DI3 Config|0
+140, 0, 0, 22,     0,    0, 2014,I,I,           0,           0,           3, 2,  0, W|o06 SensorConfig|0
+141, 2, 0,  0,     0,    0, 2034,G,F,         -10,         -10,          50, 2,255, W|o20 MinTransPres|0
+142, 2, 0,  0,     0,    0, 2033,G,F,         120,          60,        2000, 2,255, W|o21 MaxTransPres|0
+143, 0, 0, 23,     0,    0,  209,I,I,           0,           0,           5, 2,  0, W|r89 Food type|0
+144, 5, 8,  0,     0,    0, 2214,I,I,          70,           0,         100, 5,  0, W|h23 RH Cutin SP|17
+145, 5, 8,  0,     0,    0, 2215,I,I,           5,           1,          30, 5,  0, W|h24 RH Diff.|17
+146, 5, 8,  0,     0,    0, 2216,I,I,         100,           0,         100, 5,  0, W|h25 RH HighLimAl|17
+147, 5, 8,  0,     0,    0, 2217,I,I,           0,           0,         100, 5,  0, W|h26 RH LowLimAl|17
+148,17, 8,  0,     0,    0, 2218,W,W,          60,           0,         240, 5,  0, W|h27 RH Al. delay|17
+149, 0, 8,  8,     0,    0, 2219,I,I,           0,           0,           1, 5,  0, W|h28 RH CtrlAtDef|17
+150, 5, 0,  0,     0,    0, 2220,I,I,           0,           0,         100, 5,  0, W|h29 RH Min Value|17
+151, 5, 0,  0,     0,    0, 2221,I,I,         100,           0,         100, 5,  0, W|h30 RH Max Value|17
+152, 0,12, 24,     0,    0, 2007,I,I,           0,           0,          48, 0,  0, R|u00 Ctrl. state|0
+153, 4,12,  0,     0,    0, 2532,G,F,           0,       -2000,        2000, 0,255, R|u17 Ther. air|0
+154, 0, 0,  0,     0,    0, 2008,I,I,           0,           0,         240, 2,  0, W|o03 Unit addr.|0
+155, 4, 8,  0,     0,    0, 2544,G,F,           0,       -2000,        2000, 6,255, R|u26 EvapTemp Te|0
+156, 0, 0, 25,     0,    0, 2212,I,I,           0,           0,           1, 2,  0, W|q09 AO1 Config.|0
+157, 0, 8,  3,     0,    0, 2046,I,I,           0,           0,           1,11,  0, W|--- Reset alarm|0
+158, 0, 8,  3,     0,    0, 2541,I,I,           0,           0,           1, 0,  0, R|--- Sum alarm|0
+159,17, 8,  0,     0,    0, 2120,W,W,          30,           0,         240, 4,  0, W|o89 DoorInjStart|18
+160, 0, 8, 26,     0,    0, 2145,I,I,           1,           1,           3,10,  0, W|o97 Displ. Ctrl.|0
+161, 0, 8, 27,     0,    0,  105,I,I,           0,           0,           1,10,  0, W|r05 Temp.unit|0
+162, 0, 0,  3,     0,    0,64053,I,I,           0,           0,           1,10,  0, W|o67 Make factory|0
+163,16, 8,  0,     0,    0, 3152,G,F,          30,           0,         200, 6,255, W|P86 SH Max Liq.|0
+164,16, 8,  0,     0,    0, 3153,G,F,          10,           0,         200, 6,255, W|P87 SH Min Liq.|0
+165, 0, 8,  3,     0,    0, 1062,I,I,           0,           0,           1,14,  0, W|--- BT lock|0
+166, 0, 8,  3,     0,    0, 2650,I,I,           0,           0,           1,14,  0, W|--- Case shutdwn|0
+167, 4, 8,  0,     0,    0, 2138,G,F,           0,       -2000,        2000,14,255, W|--- Act.DewPoint|0
+168, 5, 8,  0,     0,    0, 2222,I,I,           0,           0,         100,12,  0, W|q11 AKV OD %|19
+169, 0, 8, 28,     0,    0, 2224,I,I,           0,           0,           1,12,  0, W|q13 Fan relay|19
+170, 0, 8, 28,     0,    0, 2225,I,I,           0,           0,           1,12,  0, W|q14 Def. relay|20
+171, 0, 8, 28,     0,    0, 2226,I,I,           0,           0,           1,12,  0, W|q15 Railh. relay|21
+172, 0, 8, 28,     0,    0, 2227,I,I,           0,           0,           1,12,  0, W|q16 Alarm relay|22
+173, 0, 8, 28,     0,    0, 2228,I,I,           0,           0,           1,12,  0, W|q17 Light relay|19
+174, 0, 8, 28,     0,    0, 2233,I,I,           0,           0,           1,12,  0, W|q22 Def. relay 2|23
+175, 0, 8, 28,     0,    0, 2234,I,I,           0,           0,           1,12,  0, W|q23 Heat relay|24
+176, 0, 8, 28,     0,    0, 2237,I,I,           0,           0,           1,12,  0, W|q26 RH relay|25
+177, 5, 8,  0,     0,    0, 2238,I,I,           0,           0,         100,12,  0, W|q27 Railheat PWM|26
+178, 0, 8,  3,     0,    0,60029,I,I,           0,           0,           1, 2,  0, W|o04 Service pin|0
+179,16, 8,  0,     0,    0, 1061,G,F,           0,       -1800,        1000,14,255, R|--- Min Delta T|0
+180,18, 8,  0,     0,    0,64045,W,W,           0,           0,          23, 8,  0, W|t07 Clock Hour|0
+181,17, 8,  0,     0,    0,64046,W,W,           0,           0,          59, 8,  0, W|t08 Clock Minute|0
+182, 0, 8, 29,     0,    0,64055,I,I,           1,           1,           7, 8,  0, R|t09 Clock Day|0
+183, 0, 8,  0,     0,    0,64049,I,I,           0,           0,         100, 8,  0, W|t47 Clock Year|0
+184, 0, 8,  0,     0,    0,64048,I,I,           1,           1,          12, 8,  0, W|t46 Clock Month|0
+185, 0, 8,  0,     0,    0,64047,I,I,           1,           1,          31, 8,  0, W|t45 Clock Date|0
+186, 0, 8, 30,     0,    0, 2147,I,I,           2,           0,           3,11,  0, W|P41 Al.Rel.Prio|0
+187, 0, 8,  0,     0,    0,64050,W,W,           0,           0,          59, 8,  0, W|t48 Clock Second|0
+188, 0, 8,  0,     0,    0, 3156,I,I,           0,           0,         999,10,  0, W|P88 Acc. code 1|0
+189, 0, 8, 31,     0,    0, 2239,I,I,           1,           0,           3,11,  0, W|q28 Hi Temp Prio|0
+190, 0, 8, 31,     0,    0, 2240,I,I,           1,           0,           3,11,  0, W|q29 Lo Temp Prio|0
+191, 0, 8, 31,     0,    0, 2241,I,I,           1,           0,           3,11,  0, W|q30 Sensor Prio|0
+192, 0, 8, 31,     0,    0, 2242,I,I,           2,           0,           3,11,  0, W|q31 DIAlarm Prio|0
+193, 0, 8, 31,     0,    0, 2243,I,I,           3,           0,           3,11,  0, W|q32 Defrost Prio|0
+194, 0, 8, 31,     0,    0, 2244,I,I,           2,           0,           3,11,  0, W|q33 Misc Prio|0
+195, 0, 8, 31,     0,    0, 2245,I,I,           2,           0,           3,11,  0, W|q34 Inject Prio|0
+196, 0, 8, 31,     0,    0, 2246,I,I,           3,           0,           3,11,  0, W|q35 CtrlOFF Prio|0
+197, 0, 8, 31,     0,    0, 2247,I,I,           2,           0,           3,11,  0, W|q36 Leak Prio|0
+198, 0, 8, 31,     0,    0, 2248,I,I,           2,           0,           3,11,  0, W|q37 Humid Prio|0
+199, 0, 0, 26,     0,    0, 2250,I,I,           1,           1,           3, 2,  0, W|q39 Food sensor|0
+200, 4,12,  0,     0,    0, 2702,G,F,           0,       -2000,        2000, 0,255, R|U72 Food temp.|0
+201, 4, 8,  0,     0,    0, 2703,G,F,           0,       -2000,        2000, 7,255, R|U73 Def.StopTemp|27
+202, 0, 0,  3,     0,    0, 2252,I,I,           0,           0,           1,15,  0, W|--- Restore mode|0
+203, 0, 8, 26,     0,    0,  217,I,I,           1,           1,           3, 2,  0, W|r99 Ther. sensor|28
+204, 0, 8, 24,     0,    0, 2734,I,I,           0,           0,          48, 0,  0, R|U74 Ctrl.State B|29
+205, 0, 8, 24,     0,    0, 2743,I,I,           0,           0,          48, 0,  0, R|U83 Ctrl.State C|30
+206, 4, 8,  0,     0,    0, 2737,G,F,           0,       -2000,        2000, 0,255, R|U77 Ther. Air B|31
+207, 4, 8,  0,     0,    0, 2746,G,F,           0,       -2000,        2000, 0,255, R|U86 Ther. Air C|32
+208,17, 8,  0,     0,    0, 2738,W,W,           0,           0,         999, 3,  0, R|U78 TherRuntimeB|31
+209,17, 8,  0,     0,    0, 2747,W,W,           0,           0,         999, 3,  0, R|U87 TherRuntimeC|32
+210,16, 8,  0,     0,    0, 2740,G,F,           0,       -2000,        2000, 6,255, R|U80 Superheat B|29
+211,16, 8,  0,     0,    0, 2749,G,F,           0,       -2000,        2000, 6,255, R|U89 Superheat C|30
+212,16, 8,  0,     0,    0, 2741,G,F,           0,       -2000,        2000, 6,255, R|U81 SH Ref B|29
+213,16, 8,  0,     0,    0, 2750,G,F,           0,       -2000,        2000, 6,255, R|U90 SH Ref C|30
+214, 0, 8, 12,     0,    0, 2752,I,I,           0,           0,          15,14,  0, R|--- Reg. Cond B|0
+215, 0, 8, 12,     0,    0, 2756,I,I,           0,           0,          15,14,  0, R|--- Reg. Cond C|0
+216, 0, 8,  0,     0,    0, 2753,G,F,           0,           0,         200,15,255, W|--- AFidenForceB|29
+217, 0, 8,  0,     0,    0, 2757,G,F,           0,           0,         200,15,255, W|--- AFidenForceC|30
+218, 0, 8,  0,     0,    0, 2754,G,F,          30,       -2000,        2000,15,255, R|--- AFident B|29
+219, 0, 8,  0,     0,    0, 2758,G,F,          30,       -2000,        2000,15,255, R|--- AFident C|30
+220, 5, 8,  0,     0,    0, 2755,I,I,           0,           0,         100,15,  0, R|--- Max OD % B|29
+221, 5, 8,  0,     0,    0, 2759,I,I,           0,           0,         100,15,  0, R|--- Max OD % C|30
+222, 4, 8,  0,     0,    0, 2578,G,F,           0,       -2000,        2000, 4,255, R|u57 Alarm air|0
+223, 4, 8,  0,     0,    0, 2671,G,F,           0,       -2000,        2000, 4,255, R|U34 Alarm air B|29
+224, 5, 8,  0,     0,    0, 2256,I,I,           0,           0,         100,12,  0, W|q41 AKV OD % B|29
+225, 5, 8,  0,     0,    0, 2257,I,I,           0,           0,         100,12,  0, W|q42 AKV OD % C|30
+226, 4, 8,  0,     0,    0, 2762,G,F,           0,       -2000,        2000, 4,255, R|U92 Alarm air C|30
+227, 0, 8,  0,     0,    0, 2765,L,L,           1,           1,           3,14,  0, R|--- NoOfEvap|0
+228, 0, 8,  8,     0,    0, 2261,I,I,           0,           0,           1, 5,  0, W|h31 RH function|2
+229, 4,12,  0,     0,    0, 2531,G,F,           0,       -2000,        2000, 3,255, R|u16 S4 air temp.|0
+230, 4, 8,  0,     0,    0, 2736,G,F,           0,       -2000,        2000, 3,255, R|U76 S4 temp B|29
+231, 4, 8,  0,     0,    0, 2745,G,F,           0,       -2000,        2000, 3,255, R|U85 S4 temp C|30
+232, 5, 8,  0,     0,    0, 2687,I,I,           0,           0,         100, 5,  0, R|U57 RH level %|17
+233, 5, 8,  0,     0,    0, 2528,I,I,           0,           0,         100, 0,  0, R|u23 AKV OD %|0
+234, 5, 8,  0,     0,    0, 2742,I,I,           0,           0,         100, 0,  0, R|U82 AKV OD % B|29
+235, 5, 8,  0,     0,    0, 2751,I,I,           0,           0,         100, 0,  0, R|U91 AKV OD % C|30
+236, 4, 8,  0,     0,    0, 2537,G,F,           0,       -2000,        2000, 6,255, R|u20 S2 temp.|0
+237, 4, 8,  0,     0,    0, 2739,G,F,           0,       -2000,        2000, 6,255, R|U79 S2 temp. B|29
+238, 4, 8,  0,     0,    0, 2748,G,F,           0,       -2000,        2000, 6,255, R|U88 S2 temp. C|30
+239, 2, 8,  0,     0,    0, 2543,G,F,           0,         -10,        2000, 6,255, R|u25 EvapPress Pe|0
+240, 4, 8,  0,     0,    0, 1011,G,F,           0,       -2000,        2000, 7,255, R|u09 S5 temp.|33
+241, 4, 8,  0,     0,    0, 2595,G,F,           0,       -2000,        2000, 7,255, R|u75 S5 temp. B|34
+242, 0, 8,  3,     0,    0, 2511,I,I,           0,           0,           1,12,  0, R|u59 Fan relay|0
+243, 0, 8,  3,     0,    0, 2512,I,I,           0,           0,           1,12,  0, R|u60 Def. relay|35
+244, 0, 8,  3,     0,    0, 2603,I,I,           0,           0,           1,12,  0, R|u83 Def. relay B|36
+245, 0, 8,  3,     0,    0, 2579,I,I,           0,           0,           1,12,  0, R|u61 Railh. relay|37
+246, 5, 8,  0,     0,    0, 2689,I,I,           0,           0,         100,12,  0, R|U59 Railheat PWM|14
+247, 0, 8,  3,     0,    0, 2583,I,I,           0,           0,           1,12,  0, R|u62 Alarm relay|38
+248, 0, 8,  3,     0,    0, 2584,I,I,           0,           0,           1,12,  0, R|u63 Light relay|0
+249, 0, 8,  3,     0,    0, 2605,I,I,           0,           0,           1,12,  0, R|u84 Heat relay|2
+250, 0, 8,  3,     0,    0, 2688,I,I,           0,           0,           1,12,  0, R|U58 RH relay|17
+251, 0, 0,  3,     0,    0,20000,B,B,           0,           0,           1,13,  0, R|--- Contr. error|0
+252, 0, 0,  3,     0,    0,20001,B,B,           0,           0,           1,13,  0, R|--- RTC error|0
+253, 0, 0,  3,     0,    0,20002,B,B,           0,           0,           1,13,  0, R|--- Pe error|0
+254, 0, 0,  3,     0,    0,20003,B,B,           0,           0,           1,13,  0, R|--- S2 error|0
+255, 0, 0,  3,     0,    0,20004,B,B,           0,           0,           1,13,  0, R|--- S4 error|0
+256, 0, 0,  3,     0,    0,20005,B,B,           0,           0,           1,13,  0, R|--- S5 error|0
+257, 0, 0,  3,     0,    0,20006,B,B,           0,           0,           1,13,  0, R|--- S5 error B|0
+258, 0, 0,  3,     0,    0,20007,B,B,           0,           0,           1,13,  0, R|--- RH input err|0
+259, 0, 0,  3,     0,    0,20008,B,B,           0,           0,           1,13,  0, R|--- S4 error B|0
+260, 0, 0,  3,     0,    0,20009,B,B,           0,           0,           1,13,  0, R|--- S4 error C|0
+261, 0, 0,  3,     0,    0,20010,B,B,           0,           0,           1,13,  0, R|--- S2 error B|0
+262, 0, 0,  3,     0,    0,20011,B,B,           0,           0,           1,13,  0, R|--- S2 error C|0
+263, 0, 0,  3,     0,    0,20012,B,B,           0,           0,           1,13,  0, R|--- High t.alarm|0
+264, 0, 0,  3,     0,    0,20013,B,B,           0,           0,           1,13,  0, R|--- Low t. alarm|0
+265, 0, 0,  3,     0,    0,20014,B,B,           0,           0,           1,13,  0, R|--- Door alarm|0
+266, 0, 0,  3,     0,    0,20015,B,B,           0,           0,           1,13,  0, R|--- Max HoldTime|0
+267, 0, 0,  3,     0,    0,20016,B,B,           0,           0,           1,13,  0, R|--- No Rfg. sel.|0
+268, 0, 0,  3,     0,    0,20017,B,B,           0,           0,           1,13,  0, R|--- DI1 alarm|0
+269, 0, 0,  3,     0,    0,20018,B,B,           0,           0,           1,13,  0, R|--- DI2 alarm|0
+270, 0, 0,  3,     0,    0,20019,B,B,           0,           0,           1,13,  0, R|--- Standby mode|0
+271, 0, 0,  3,     0,    0,20020,B,B,           0,           0,           1,13,  0, R|--- Case clean|0
+272, 0, 0,  3,     0,    0,20023,B,B,           0,           0,           1,13,  0, R|--- CO2 Alarm|0
+273, 0, 0,  3,     0,    0,20024,B,B,           0,           0,           1,13,  0, R|--- Refg.Leak|0
+274, 0, 0,  3,     0,    0,20021,B,B,           0,           0,           1,13,  0, R|--- High Temp. B|0
+275, 0, 0,  3,     0,    0,20022,B,B,           0,           0,           1,13,  0, R|--- Low Temp. B|0
+276, 0, 0,  3,     0,    0,20025,B,B,           0,           0,           1,13,  0, R|--- HighHumidity|0
+277, 0, 0,  3,     0,    0,20026,B,B,           0,           0,           1,13,  0, R|--- Low Humidity|0
+278, 0, 0,  3,     0,    0,20027,B,B,           0,           0,           1,13,  0, R|--- High Temp. C|0
+279, 0, 0,  3,     0,    0,20028,B,B,           0,           0,           1,13,  0, R|--- Low Temp. C|0
+280, 0, 0,  3,     0,    0,20029,B,B,           0,           0,           1,13,  0, R|--- Max Def.Time|0
+281, 0, 0,  3,     0,    0,20030,B,B,           0,           0,           1,13,  0, R|--- MaxDefTime B|0
+282, 0, 0,  3,     0,    0,20031,B,B,           0,           0,           1,13,  0, R|--- MaxDefTime C|0
+283, 0, 8,  3,     0,    0, 2249,I,I,           0,           0,           1,-1,  0, W|q38 Mute Alarm|0
+284, 0, 8,  0,     0,    0, 2732,I,I,           0,           0,         100,-1,  0, R|No. of alarms|0
+285, 0, 8,  3,     0,    0, 2253,I,I,           0,           0,           1,-1,  0, R|--- CoolingState|0
+<PARAMETER_SECTION_END>
+FPN  U  X   L scaling  CID   VID m 2          def          min          max gp exp RW name               arg showfn_name
+
+<ALARM_GROUP_START>
+16
+001,0,Alarm group 1
+002,0,Alarm group 2
+003,0,Alarm group 3
+004,0,Alarm group 4
+005,0,Alarm group 5
+006,0,Alarm group 6
+007,0,Alarm group 7
+008,0,Alarm group 8
+009,0,Alarm group 9
+010,0,Alarm group 10
+011,0,Alarm group 11
+012,0,Alarm group 12
+013,0,Alarm group 13
+014,0,Alarm group 14
+015,0,Alarm group 15
+016,0,Alarm group 16
+<ALARM_GROUP_END>
+<ALARM_SECTION_START>
+32
+001,   0,   0,--- Contr. error
+002,   0,   0,--- RTC error
+003,   0,   0,--- Pe error
+004,   0,   0,--- S2 error
+005,   0,   0,--- S4 error
+006,   0,   0,--- S5 error
+007,   0,   0,--- S5 error B
+008,   0,   0,--- RH input err
+009,   0,   0,--- S4 error B
+010,   0,   0,--- S4 error C
+011,   0,   0,--- S2 error B
+012,   0,   0,--- S2 error C
+013,   0,   0,--- High t.alarm
+014,   0,   0,--- Low t. alarm
+015,   0,   0,--- Door alarm
+016,   0,   0,--- Max HoldTime
+017,   0,   0,--- No Rfg. sel.
+018,   0,   0,--- DI1 alarm
+019,   0,   0,--- DI2 alarm
+020,   0,   0,--- Standby mode
+021,   0,   0,--- Case clean
+022,   0,   0,--- High Temp. B
+023,   0,   0,--- Low Temp. B
+024,   0,   0,--- CO2 Alarm
+025,   0,   0,--- Refg.Leak
+026,   0,   0,--- HighHumidity
+027,   0,   0,--- Low Humidity
+028,   0,   0,--- High Temp. C
+029,   0,   0,--- Low Temp. C
+030,   0,   0,--- Max Def.Time
+031,   0,   0,--- MaxDefTime B
+032,   0,   0,--- MaxDefTime C
+<ALARM_SECTION_END>
+
+<DYN_LIST_START>
+31
+01,e,MainSwitch,3,Manual,-1,Stop,0,Start,1
+02,e,ThermostatMode,3,ON/OFF,1,Modulating,2,ON/OFF Common,3
+03,e,OffOn,2,OFF,0,ON,1
+04,e,DefrostMethod,5,None,0,Electrical,1,Hot gas,2,Brine,3,Air/Offcycle,4
+05,e,FanDuringDefrost,4,OFF,0,ON,1,OFF at drip,2,OFF at high temp,3
+06,e,DefrostStopMethod,3,Time,0,S5 sensor,1,S4 sensor,2
+07,e,RailheatDuringDefrost,3,OFF,0,ON,1,Normal control,2
+08,e,NoYes,2,No,0,Yes,1
+09,e,FanPulsingMode,3,No pulsing,0,Pulsing cutout,1,Pulsing night,2
+10,e,FanAtForcedClosing,4,OFF,0,ON,1,OFF/No defrost,2,ON/No defrost,3
+11,e,CaseCleaning,3,OFF,0,Fans only,1,All OFF,2
+12,e,RegulationConditionCase,16,Main switch OFF,0,Injection start,1,Superheat ctrl.,2,Fill evap.,3,Defrost,4,Post defrost,5,Forced closing,6,Injection fault,7,Emergency ctrl.,8,Modulating ctrl.,9,Melt period,10,Door open,11,Case cleaning,12,Cutout,13,Forced cooling,14,Shut down,15
+13,e,ThermostatToggle,3,No action,0,Toggle ON,1,Toggle OFF,2
+14,e,ThermostatBandSelect,2,Band 1,1,Band 2,2
+15,e,LightConfig,5,Day and night,1,Network,2,Door switch,3,Network (ON),4,Digital input,5
+16,e,RailheatControlMode,3,ON,0,Day/Night timer,1,Dew point ctrl.,2
+17,e,LightAtMainSwOff,2,OFF,0,Normal ctrl.,1
+18,e,ShMode,2,Adaptive,1,Load based,2
+19,e,CaseApplMode_Multicoil,5,1 Evap. MT/LT,1,2 Evap. MT/LT,2,3 Evap. MT,3,Coldroom 2 MT/HT,4,Coldroom 2 MT/LT,5
+20,e,Refrigerant,50,Not selected,0,R13,6,R13b1,7,R22,2,R23,8,R32,14,R114,11,R134a,3,R142b,12,R170,24,R227,15,R290,25,R401A,16,R402A,18,R404A,19,R407A,21,R407B,22,R407C,20,R407F,37,R407H,49,R410A,23,R413A,32,R417A,30,R422A,31,R422D,33,R427A,34,R438A,35,R448A,40,R449A,41,R449B,48,R450A,43,R452B,44,R454B,45,R500,9,R502,4,R503,10,R507,17,R513A,36,R600,26,R600a,27,R717,5,R744,28,R1233zdE,46,R1234ze,38,R1234yf,39,R1234zeZ,47,R1270,29,R452A,42,Custom display,1,Custom,13
+21,e,DIConfigCase,19,None,0,DI status,1,Door function,2,Door alarm,3,Defrost start,4,Main switch,5,Night setback,6,Thermostat band,7,Alarm at closed,8,Alarm at open,9,Case cleaning,10,Forced cooling,11,Open blinds,12,Coordinated def.,13,Forced closing,14,Shutdown,15,Light control,16,Leak detection,20,Adap liquid ctrl,21
+22,e,TempInputSignal_Temp,4,Pt 1000,0,PTC 1000,1,NTC 5k,2,NTC 10k,3
+23,e,FoodType,6,None,0,Vegetables,1,Dairy,2,Meat and fish,3,Frozen food,4,Ice cream,5
+24,e,ControlState,48,Normal ctrl.,0,Hold after def.,1,Min ON timer,2,Min OFF timer,3,Drip off,4,Restart timer,5,Ctrl_Sout,6,Ctrl_Sin,7,Cut in delay,8,Cut out delay,9,Main switch OFF,10,Ther. cutout,11,Frost protect S4,12,Not_used,13,Defrost,14,Fan delay,15,Door open,17,Melt period,18,Modulating temp.,19,Emergency ctrl.,20,Injection error,21,Charging evap.,22,Adaptive SH ctrl,23,Start injection,24,Manual control,25,No refrigerant,26,Forced closing,16,Forced_cooling1,27,AmbientMode,28,Case cleaning,29,Forced cooling,30,Door open,31,Power up delay,32,Air heating,33,Cooling_ON_B,35,Cooling_OFF_B,36,Cooling_ON_C,37,Cooling_OFF_C,38,Cooling_ON_D,39,Cooling_OFF_D,40,High_Sc,41,Heat_Recovery,42,S43,43,Sensor_error_recovery,44,Shut down,45,Power_Module,46,Load_shed,47,Adap. liq. ctrl.,48
+25,e,AO_CaseConfig,2,None,0,Rail heat PWM,1
+26,e,Ther_sensor,3,Ther. air A,1,Average all,2,Maximum all,3
+27,e,UnitTypeTemp,2,Celsius,0,Fahrenheit,1
+28,e,MAN_OFFON,2,MAN OFF,0,MAN ON,1
+29,e,Weekday,7,Monday,1,Tuesday,2,Wednesday,3,Thursday,4,Friday,5,Saturday,6,Sunday,7
+30,e,AlarmRelayPriority,4,Not used,0,High priority,1,Medium priority,2,All,3
+31,e,AlarmPriority,4,Disabled,0,Low,3,Medium,2,High,1
+<DYN_LIST_END>
+
+<DEVICE_SPECIFIC_START>
+<0000_MAIN_SWITCH> 1
+<0001_POLLING_INDEXES> 0
+<0003_SUMMARY_SET_LIST> 5 1 3 94 95 91
+<0004_SUMMARY_MSR_LIST> 15 158 152 204 205 153 206 207 200 233 234 235 155 236 237 238
+<0009_POLLING_PERIOD> 0
+<0011_SERVICE_PIN> 178
+<0014_QUICK_SETUPS> 132
+<0015_CONFIGURATION_LOCK> 1
+<0017_BT_LOCK> 165
+<0018_RESTORE_MODE> 202
+<0101_EVAP_MAX_CASES> 3
+<0102_EVAP_NUM_OF_CASES_IDX> 227
+<0103_EVAP_STATUS_MLC_CODES> 16 1 0 0 0 2 1 1 1 1 0 1 1 1 1 1 1
+<0105_EVAP_CASE_TEMP1> 153
+<0106_EVAP_CASE_TEMP2> 206
+<0107_EVAP_CASE_TEMP3> 207
+<0109_EVAP_CASE_STATUS1> 152
+<0110_EVAP_CASE_STATUS2> 204
+<0111_EVAP_CASE_STATUS3> 205
+<0113_EVAP_CASE_CUTIN1> 74
+<0114_EVAP_CASE_CUTIN2> 74
+<0115_EVAP_CASE_CUTIN3> 74
+<0117_EVAP_CASE_CUTOUT1> 75
+<0118_EVAP_CASE_CUTOUT2> 75
+<0119_EVAP_CASE_CUTOUT3> 75
+<0121_EVAP_CASE_DEFROST_OFF> 18
+<0122_EVAP_DEWPOINT_CONTROL> 167
+<0129_EVAP_VIP_TEMP_ALM_HI1> 1 263
+<0130_EVAP_VIP_TEMP_ALM_HI2> 1 274
+<0131_EVAP_VIP_TEMP_ALM_HI3> 1 278
+<0133_EVAP_VIP_TEMP_ALM_LO1> 1 264
+<0134_EVAP_VIP_TEMP_ALM_LO2> 1 275
+<0135_EVAP_VIP_TEMP_ALM_LO3> 1 279
+<0137_EVAP_CASE_DEFROST> 17
+<0138_EVAP_CASE_NIGHTSB> 73
+<0139_EVAP_CASE_INJECT_ON> 82
+<0140_EVAP_CASE_LIGHT> 101
+<0141_EVAP_DEFROST_RELAYS> 90
+<0142_EVAP_DEFROST_START> 88
+<0143_EVAP_DEFROST_HOLD> 86
+<0144_EVAP_STATUS_NSB> 77
+<0145_EVAP_STATUS_FAN> 242
+<0146_EVAP_STATUS_ASH> 245
+<0147_EVAP_STATUS_LIGHT> 248
+<0149_EVAP_MAX_DEFROST1> 22
+<0150_EVAP_MAX_DEFROST2> 22
+<0151_EVAP_MAX_DEFROST3> 22
+<0153_EVAP_CASE_SETPOINT1> 3
+<0154_EVAP_CASE_SETPOINT2> 3
+<0155_EVAP_CASE_SETPOINT3> 3
+<0157_EVAP_CASE_DIFF1> 4
+<0158_EVAP_CASE_DIFF2> 4
+<0159_EVAP_CASE_DIFF3> 4
+<0161_EVAP_REG_STATUS1> 66
+<0162_EVAP_REG_STATUS2> 214
+<0163_EVAP_REG_STATUS3> 215
+<0166_EVAP_CLEAN_MODE> 60
+<0167_EVAP_REG_STATE_LIST> 12
+<0171_EVAP_WR_TARGET_TYPE>  1
+<0173_EVAP_DEMRESP_CANCEL_LIST> 3 263 274 278
+<0184_EVAP_THER_TOGGLE> 69
+<0185_EVAP_LOAD_REQUEST> 70
+<0186_EVAP_MAX_TE_OFFSET1> 72
+<0190_EVAP_MIN_DELTAT1> 179
+<0194_EVAP_LOAD_FACTOR_PO1> 71
+<0198_EVAP_FLOOD_INJECT> 130
+<DEVICE_SPECIFIC_END>
+
+<BASE_DESCRIPTION_END>
+
+<EDF_EOF> ------------

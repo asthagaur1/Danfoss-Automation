@@ -1,0 +1,50 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+1,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Click_Button,?,,True
+2,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Tooltip,Home,,True
+3,:_MenuItem,Tooltip,Help,,True
+4,,Snooze,,,True
+5,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+6,:KoolProg_Image_4,Enable,,true,True
+7,:KoolProg.BROWSE_Button,Enable,,true,True
+8,:KoolProg.BROWSE_Button,Click_Button,,,True
+9,:Open_Dialog,Window,,Dialog,True
+10,:Open_Edit,Text_box,,EETa 2W,080N0014
+11,:KoolProg.BROWSE_Button,Click_Button,,,True
+12,:Open_Dialog,Window,,Dialog,True
+13,:Open_Edit,Text_box,,EETa 2W,080N0014_1
+14,:KoolProg.Not compliant controller_Label,Text,,Not compliant controller,True
+16,,Snooze,,,True
+17,,File_Generation,,,True
+18,,Compatibility,,,None
+19,,Snooze,,,True
+20,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Click_Button,,,True
+21,:Product information_Window,Window,,Window,True
+22,:Product information.X_Button,Click_Button,,,True
+23,,Snooze,,,True
+24,{container=':KoolProg_Window' text='System.Windows.Controls.DockPanel' type='Button'},Enable,,true,True
+25,:KoolProg.START_Label,Click_Button,,,True
+26,,Snooze,,,True
+27,:MessageBoxDisplay_Window,Window,,Window,True
+28,:MessageBoxDisplay.OK_Button,Click_Button,,,True
+29,:KoolProg_Window,Window,,Window,True
+30,,Snooze,,,True
+31,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+32,:KoolProg.Single controller programming_RadioButton,Click_Button,,,True
+33,:KoolProg.Multiple controller programming_RadioButton,Click_Button,,,True
+34,:KoolProg_Edit,Enable,,true,True
+35,:KoolProg_Edit,Text,,1,True
+36,":KoolProg.Countdown Timer(,,,",0)_RadioButton,Click_Button,,
+37,:KoolProg_Edit,Text,,1,True
+38,,CountDownrange,,3,True
+39,,Snooze,,,True
+40,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+41,:KoolProg.Single controller programming_RadioButton,Click_Button,,,True
+42,:KoolProg.Multiple controller programming_RadioButton,Click_Button,,,True
+43,:KoolProg_Edit,Text,,1,True
+44,:KoolProg.CountUp Timer(0,",,,)_RadioButton",Click_Button,,
+45,,Snooze,,,True
+46,:KoolProg.START_Label,Click_Button,,,True
+47,:MessageBoxDisplay_Window,Window,,Window,True
+48,:MessageBoxDisplay.OK_Button,Click_Button,,,True
+49,,Snooze,,,True
+50,:KoolProg_Window,Window,,Window,True

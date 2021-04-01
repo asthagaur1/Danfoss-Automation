@@ -1,0 +1,428 @@
+Group,ParameterName,MenuCode
+Start / Stop,Main switch,r12
+Start / Stop,Delay of outputs at power up,o01
+Configuration,Application mode,o61
+Configuration,AO1 Configuration,q09
+Configuration,DI1 Configuration,o02
+Configuration,DI2 Configuration,o37
+Configuration,DI3 Configuration,o84
+Configuration,Refrigerant,o30
+Configuration,Refrigerant factor K1,P83
+Configuration,Refrigerant factor K2,P84
+Configuration,Refrigerant factor K3,P85
+Configuration,Refrigerant factor A1,
+Configuration,Refrigerant factor A2,
+Configuration,Refrigerant factor A3,
+Configuration,Pe sensor - Min range,o20
+Configuration,Pe sensor - Max range,o21
+Configuration,Temperature sensor type,o06
+Configuration,Defrost method,d01
+Configuration,Defrost stop method,d10
+Configuration,Defrost stop limit A,d02
+Configuration,Food type,r89
+Configuration,Food temp. sensor,q39
+Configuration,Network address,o03
+Configuration,Service pin,o04
+Configuration,DO1 Function,U61
+Configuration,DO2 Function,U62
+Configuration,DO3 Function,U63
+Configuration,DO4 Function,U64
+Configuration,DO5 Function,U65
+Configuration,DO6 Function,U66
+Configuration,DO7 Function,U67
+Configuration,DI1 Function,Y55
+Configuration,DI2 Function,Y56
+Configuration,DI3 Function,Y57
+Configuration,AI1 Function,Y58
+Configuration,AI2 Function,Y59
+Configuration,AI3 Function,Y60
+Configuration,AI4 Function,Y61
+Configuration,AI5 Function,Y62
+Configuration,AI6 Function,Y63
+Configuration,AI7 Function,Y64
+Configuration,AO1 Function,U69
+Thermostat control,Control state A,u00
+Thermostat control,Control state B,U74
+Thermostat control,Control state C,U83
+Thermostat control,Thermostat air temp. A,u17
+Thermostat control,Thermostat air temp. B,U77
+Thermostat control,Thermostat air temp. C,U86
+Thermostat control,Food temperature A,U72
+Thermostat control,S4 Air OFF evap. A,u16
+Thermostat control,S4 Air OFF evap. B,U76
+Thermostat control,S4 Air OFF evap. C,U85
+Thermostat control,Night condition,u13
+Thermostat control,Thermostat cutin temp.,u90
+Thermostat control,Thermostat cutout temp.,u91
+Thermostat control,Thermostat runtime A,u18
+Thermostat control,Thermostat runtime B,U78
+Thermostat control,Thermostat runtime C,U87
+Thermostat control,Thermostat band,u86
+Thermostat control,Thermostat mode,r14
+Thermostat control,Thermostat sensor,r99
+Thermostat control,Cutout 1,r00
+Thermostat control,Cutout 2,r21
+Thermostat control,Differential,r01
+Thermostat control,Max cutout limit,r02
+Thermostat control,Min cutout limit,r03
+Thermostat control,Night offset,r13
+Thermostat control,Air heater neutral zone,r62
+Thermostat control,Air heater start delay,r63
+Thermostat control,Melt interval,r16
+Thermostat control,Melt period,r17
+Alarm limits and delays,Alarm status,
+Alarm limits and delays,Control state A,u00
+Alarm limits and delays,Control state B,U74
+Alarm limits and delays,Control state C,U83
+Alarm limits and delays,Alarm air temp. A,u57
+Alarm limits and delays,Alarm air temp. B,U34
+Alarm limits and delays,Alarm air temp. C,U92
+Alarm limits and delays,High alarm limit,
+Alarm limits and delays,Low alarm limit,
+Alarm limits and delays,S4 Air OFF evap. A,u16
+Alarm limits and delays,S4 Air OFF evap. B,U76
+Alarm limits and delays,S4 Air OFF evap. C,U85
+Alarm limits and delays,Reset alarms,
+Alarm limits and delays,High alarm limit 1,A13
+Alarm limits and delays,Low alarm limit 1,A14
+Alarm limits and delays,High alarm limit 2,A20
+Alarm limits and delays,Low alarm limit 2,A21
+Alarm limits and delays,Alarm delay A,A03
+Alarm limits and delays,Alarm delay pulldown A,A12
+Alarm limits and delays,Door open alarm delay,A04
+Alarm limits and delays,Door restart inj. delay,o89
+Alarm limits and delays,Alarm delay DI 1,A27
+Alarm limits and delays,Alarm delay DI 2,A28
+Alarm limits and delays,Defrost sensor temperature B,U93
+Humidity control,Control state A,u00
+Humidity control,Humidity sensor,U57
+Humidity control,Humidity control,h31
+Humidity control,Humidity cutin,h23
+Humidity control,Humidity differential,h24
+Humidity control,Humidity high alarm limit,h25
+Humidity control,Humidity low alarm limit,h26
+Humidity control,Humidity alarm delay,h27
+Humidity control,Humidity sensor - Min signal,h29
+Humidity control,Humidity sensor - Max signal,h30
+Humidity control,Humidity ctrl. at defrost,h28
+Injection control-Injection control A,Control state A,u00
+Injection control-Injection control A,Thermostat air temp. A,u17
+Injection control-Injection control A,S4 Air OFF evap. A,u16
+Injection control-Injection control A,AKV opening A,u23
+Injection control-Injection control A,Pe Evap. pressure,u25
+Injection control-Injection control A,Te Evap. temp.,u26
+Injection control-Injection control A,S2 Gas outlet A,u20
+Injection control-Injection control A,Superheat A,u21
+Injection control-Injection control A,Superheat reference A,u22
+Injection control-Injection control A,Min superheat limit,n10
+Injection control-Injection control A,Max superheat limit,n09
+Injection control-Injection control A,MOP temperature,n11
+Injection control-Injection control A,AKV Period time,n13
+Injection control-Injection control A,Min superheat liquid ctrl,P87
+Injection control-Injection control A,Max superheat liquid ctrl.,P86
+Injection control-Injection control B,Control state B,U74
+Injection control-Injection control B,Thermostat air temp. B,U77
+Injection control-Injection control B,S4 Air OFF evap. B,U76
+Injection control-Injection control B,AKV opening B,U82
+Injection control-Injection control B,Pe Evap. pressure,u25
+Injection control-Injection control B,Te Evap. temp.,u26
+Injection control-Injection control B,S2 Gas outlet B,U79
+Injection control-Injection control B,Superheat B,U80
+Injection control-Injection control B,Superheat reference B,U81
+Injection control-Injection control C,Control state C,U83
+Injection control-Injection control C,Thermostat air temp. C,U86
+Injection control-Injection control C,S4 Air OFF evap. C,U85
+Injection control-Injection control C,AKV opening C,U91
+Injection control-Injection control C,Pe Evap. pressure,u25
+Injection control-Injection control C,Te Evap. temp.,u26
+Injection control-Injection control C,S2 Gas outlet C,U88
+Injection control-Injection control C,Superheat C,U89
+Injection control-Injection control C,Superheat reference C,U90
+Defrost control,Control state A,u00
+Defrost control,Defrost sensor temperature A,U73
+Defrost control,Defrost sensor temperature B,U93
+Defrost control,Defrost sensor temperature C,U94
+Defrost control,S5 Evaporator A,u09
+Defrost control,S5 Evaporator B,u75
+Defrost control,Defrost A,u60
+Defrost control,Defrost B,u83
+Defrost control,Defrost time A,u11
+Defrost control,Defrost time B,U75
+Defrost control,Defrost time C,U84
+Defrost control,Start defrost,
+Defrost control,Stop defrost,
+Defrost control,Defrost method,d01
+Defrost control,Defrost stop method,d10
+Defrost control,Defrost stop limit A,d02
+Defrost control,Max defrost time,d04
+Defrost control,Defrost start interval,d03
+Defrost control,Time staggering power up,d05
+Defrost control,Max thermostat runtime,d18
+Defrost control,Pump down delay,d16
+Defrost control,Drip off time,d06
+Defrost control,Max hold time,o16
+Defrost control,Fan control during defrost,d09
+Defrost control,Fan start delay,d07
+Defrost control,Fan start temperature,d08
+Defrost control,Fan stop temperature,d41
+Defrost control,Rail heat during defrost,d27
+Defrost control,Display delay after defrost,d40
+Defrost schedules,Defrost schedule,t00
+Defrost schedules,Def. start 1 - Hours,t01
+Defrost schedules,Def. start 1 - Minutes,t11
+Defrost schedules,Def. start 2 - Hours,t02
+Defrost schedules,Def. start 2 - Minutes,t12
+Defrost schedules,Def. start 3 - Hours,t03
+Defrost schedules,Def. start 3 - Minutes,t13
+Defrost schedules,Def. start 4 - Hours,t04
+Defrost schedules,Def. start 4 - Minutes,t14
+Defrost schedules,Def. start 5 - Hours,t05
+Defrost schedules,Def. start 5 - Minutes,t15
+Defrost schedules,Def. start 6 - Hours,t06
+Defrost schedules,Def. start 6 - Minutes,t16
+Defrost schedules,Monday - Follow schedule,t51
+Defrost schedules,Tuesday - Follow schedule,t52
+Defrost schedules,Wednesday - Follow schedule,t53
+Defrost schedules,Thursday - Follow schedule,t54
+Defrost schedules,Friday - Follow schedule,t55
+Defrost schedules,Saturday - Follow schedule,t56
+Defrost schedules,Sunday - Follow schedule,t57
+Fan control,Control state A,u00
+Fan control,Fan,u59
+Fan control,Fan pulsing mode,F05
+Fan control,Fan period time,F06
+Fan control,Fan ON cycle,F07
+Fan control,Fan stop high S5 temp.,F04
+Fan control,Fan at forced closing,o90
+Railheat control,Control state A,u00
+Railheat control,Dewpoint,
+Railheat control,Railheat power,u85
+Railheat control,Rail heat PWM,U59
+Railheat control,Rail heat control mode,o85
+Railheat control,Rail heat ON cycle day,o41
+Railheat control,Rail heat ON cycle night,o42
+Railheat control,Rail heat period time,o43
+Railheat control,Rail heat PWM - Period time,P82
+Railheat control,Rail heat min ON cycle,o88
+Railheat control,Dewpoint min limit,o86
+Railheat control,Dewpoint max limit,o87
+Light/Cleaning control,Control state A,u00
+Light/Cleaning control,Night condition,u13
+Light/Cleaning control,Light,u63
+Light/Cleaning control,Light control mode,o38
+Light/Cleaning control,Light at Main switch OFF,o98
+Light/Cleaning control,Case cleaning mode,o46
+Display control,Control state A,u00
+Display control,Display readout A,u56
+Display control,Display readout B,U35
+Display control,Display readout,o97
+Display control,Display readout adjustment,
+Display control,Temperature unit,r05
+Display control,Display lock,P89
+Alarm relay priorities,Alarm relay priority,P41
+Alarm relay priorities,Mute alarm,
+Alarm relay priorities,High temperature - Priority,
+Alarm relay priorities,Low temperature - Priority,
+Alarm relay priorities,Sensor errors - Priority,
+Alarm relay priorities,DI alarms - Priority,
+Alarm relay priorities,Defrost - Priority,
+Alarm relay priorities,Miscellaneous - Priority,
+Alarm relay priorities,Injection - Priority,
+Alarm relay priorities,Control stopped - Priority,
+Alarm relay priorities,Leak detection - Priority,
+Alarm relay priorities,Humidity ctrl. - Priority,
+Miscellaneous-Access codes,Access code 3,o05
+Miscellaneous-Access codes,Access code 2,o64
+Miscellaneous-Access codes,Access code 1,P88
+Miscellaneous-Network,Network status,U45
+Miscellaneous-Network,Network address,o03
+Miscellaneous-Network,Baudrate,
+Miscellaneous-Network,Parity and stop bit,
+Miscellaneous-Sensor adjustment,S4 Air OFF evap. A - Adjustment,r09
+Miscellaneous-Sensor adjustment,S4 Air OFF evap. B - Adjustment,q43
+Miscellaneous-Sensor adjustment,S4 Air OFF evap. C - Adjustment,q44
+Miscellaneous-Factory reset,Make new factory,o67
+Miscellaneous-Factory reset,Reset to factory settings,z06
+Advanced-Advanced injection control,Superheat ctrl. mode A,
+Advanced-Advanced injection control,Superheat close A,
+Advanced-Advanced injection control,AFidentForce A,
+Advanced-Advanced injection control,Superheat Kp min A,
+Advanced-Advanced injection control,Superheat Kp max A,
+Advanced-Advanced injection control,Superheat Tn A,
+Advanced-Advanced injection control,Te feedback gain A,
+Advanced-Advanced injection control,Kp MTR control A,
+Advanced-Advanced injection control,Tn MTR control A,
+Advanced-Advanced injection control,AFident A,
+Advanced-Advanced injection control,Calculated Max OD A,
+Advanced-Advanced injection control,Superheat close liquid ctrl. A,
+Advanced-Advanced injection control,AFident Ee,
+Advanced-Advanced injection control,Aver.OD Ee,
+Advanced-Advanced injection control,AFidentForce B,
+Advanced-Advanced injection control,AFident B,
+Advanced-Advanced injection control,Calculated Max OD B,
+Advanced-Advanced injection control,AFidentForce C,
+Advanced-Advanced injection control,AFident C,
+Advanced-Advanced injection control,Calculated Max OD C,
+Advanced-Advanced injection control,AFident Ee,
+Advanced-Advanced injection control,Aver.OD Ee,
+Advanced-Advanced injection control,AFident Ee,
+Advanced-Advanced injection control,Aver.OD Ee,
+Advanced-Master control,Control state A,u00
+Advanced-Master control,Regulation condition A,
+Advanced-Master control,Regulation condition B,
+Advanced-Master control,Regulation condition C,
+Advanced-Master control,MC Actual cutin temp.,
+Advanced-Master control,MC Actual cutout temp.,
+Advanced-Master control,MC Ther. toggle,
+Advanced-Master control,MC Load request,
+Advanced-Master control,MC Max Te offset,
+Advanced-Master control,MC Liquid control,
+Advanced-Master control,MC Night setback,
+Advanced-Master control,MC Case shutdown,
+Advanced-Master control,MC Forced closing,
+Advanced-Master control,MC Forced cooling,
+Advanced-Master control,MC Defrost start,
+Advanced-Master control,MC Defrost state,
+Advanced-Master control,MC Hold after defrost,
+Advanced-Master control,MC Stop defrost,
+Advanced-Master control,MC Light signal,o39
+Advanced-Master control,MC Actual dewpoint,
+Advanced-Master control,MC Po load factor,
+Advanced-Master control,MC Bluetooth lock,
+Advanced-Master control,MC Min delta T,
+Advanced-Master control,No. of case sections,
+Invisible-Simulation,AI1 Simulering,
+Invisible-Simulation,AI2 Simulering,
+Invisible-Simulation,AI3 Simulering,
+Invisible-Simulation,AI4 Simulering,
+Invisible-Simulation,AI5 Simulering,
+Invisible-Simulation,AI6 Simulering,
+Invisible-Simulation,AI7 Simulering,
+Invisible-Simulation,DI1 Simulate,
+Invisible-Simulation,DI2 Simulate,
+Invisible-Simulation,DI3 Simulate,
+Invisible-Controller identification,Ordering number,
+Invisible-Controller identification,Controller model,
+Invisible-Controller identification,Device ID,
+Invisible-Controller identification,Software version,x00
+Invisible-Controller identification,Ordering number low,
+Invisible-Controller identification,Software suffix,
+Invisible-Controller identification,Software reset,
+Invisible-Controller identification,Fast forward,
+Invisible-Controller identification,Wink state,
+Invisible-Controller identification,Restore mode,
+Invisible-Controller identification,Cooling state,
+Invisible-Controller identification,No. of alarms,
+Invisible-Controller identification,Application mode,U71
+Invisible-Alarm destinations,Hardware failure,E01
+Invisible-Alarm destinations,Clock lost time,E06
+Invisible-Alarm destinations,Pe Evap. pressure A - Sensor error,E20
+Invisible-Alarm destinations,S2 Gas outlet A - Sensor error,E24
+Invisible-Alarm destinations,S4 Air OFF evap. A - Sensor error,E26
+Invisible-Alarm destinations,S5 Evaporator A - Sensor error,E27
+Invisible-Alarm destinations,S5 Evaporator B - Sensor error,E37
+Invisible-Alarm destinations,Humidity sensor - Sensor error,E59
+Invisible-Alarm destinations,S4 Air OFF evap. B - Sensor error,E60
+Invisible-Alarm destinations,S4 Air OFF evap. C - Sensor error,E61
+Invisible-Alarm destinations,S2 Gas outlet B - Sensor error,E62
+Invisible-Alarm destinations,S2 Gas outlet C - Sensor error,E63
+Invisible-Alarm destinations,High temperature alarm A,A01
+Invisible-Alarm destinations,Low temperature alarm A,A02
+Invisible-Alarm destinations,Door open alarm,A04
+Invisible-Alarm destinations,Max defrost hold time exceeded,A05
+Invisible-Alarm destinations,Refrigerant not selected,A11
+Invisible-Alarm destinations,DI alarm 1,A15
+Invisible-Alarm destinations,DI alarm 2,A16
+Invisible-Alarm destinations,Main switch set OFF,A45
+Invisible-Alarm destinations,Case in cleaning mode,A59
+Invisible-Alarm destinations,High temperature alarm B,A70
+Invisible-Alarm destinations,Low temperature alarm B,A71
+Invisible-Alarm destinations,CO2 leak detected,AA2
+Invisible-Alarm destinations,Refrigerant leak detected,AA3
+Invisible-Alarm destinations,High humidity alarm,a02
+Invisible-Alarm destinations,Low humidity alarm,a03
+Invisible-Alarm destinations,High temperature alarm C,a05
+Invisible-Alarm destinations,Low temperature alarm C,a06
+Invisible-Alarm destinations,Max defrost time exceeded A,Z01
+Invisible-Alarm destinations,Max defrost time exceeded B,Z02
+Invisible-Alarm destinations,Max defrost time exceeded C,Z03
+Invisible-Virtual I/O-Virtual AI,Pe Evap. pressure,u25
+Invisible-Virtual I/O-Virtual AI,S2 Gas outlet A,u20
+Invisible-Virtual I/O-Virtual AI,S4 Air OFF evap. A,u16
+Invisible-Virtual I/O-Virtual AI,S5 Evaporator A,u09
+Invisible-Virtual I/O-Virtual AI,S5 Evaporator B,u75
+Invisible-Virtual I/O-Virtual DI,Digital input status,
+Invisible-Virtual I/O-Virtual DI,Door function,
+Invisible-Virtual I/O-Virtual DI,Door alarm,
+Invisible-Virtual I/O-Virtual DI,Defrost start,
+Invisible-Virtual I/O-Virtual DI,Main switch,
+Invisible-Virtual I/O-Virtual DI,Night setback,
+Invisible-Virtual I/O-Virtual DI,Thermostat band,
+Invisible-Virtual I/O-Virtual DI,Alarm at closed,
+Invisible-Virtual I/O-Virtual DI,Alarm at open,
+Invisible-Virtual I/O-Virtual DI,Case cleaning,
+Invisible-Virtual I/O-Virtual DI,Forced cooling,
+Invisible-Virtual I/O-Virtual DI,Open blinds,
+Invisible-Virtual I/O-Virtual DI,Coordinated def.,
+Invisible-Virtual I/O-Virtual DI,Forced closing,
+Invisible-Virtual I/O-Virtual DI,Shut down,
+Invisible-Virtual I/O-Virtual DI,Light control,
+Invisible-Virtual I/O-Virtual DI,Leak detection,
+Invisible-Virtual I/O-Virtual DI,Adap liquid ctrl,
+Invisible-Virtual I/O-Virtual AO,Rail heat PWM,U59
+Invisible-Virtual I/O-Virtual DO,AKV opening A,u23
+Invisible-Virtual I/O-Virtual DO,Fan,u59
+Invisible-Virtual I/O-Virtual DO,Humidifier,U58
+Invisible-Virtual I/O-Virtual DO,Light,u63
+Invisible-Virtual I/O-Virtual DO,Air heater,u84
+Invisible-Virtual I/O-Virtual DO,Defrost A,u60
+Invisible-Virtual I/O-Virtual DO,Defrost B,u83
+Invisible-Virtual I/O-Virtual DO,Rail heat,u61
+Invisible-Virtual I/O-Virtual DO,Alarm,u62
+Invisible-Real time clock,Time hours,t07
+Invisible-Real time clock,Time minutes,t08
+Invisible-Real time clock,Time weekday,
+Invisible-Real time clock,Time seconds,
+Invisible-Real time clock,Time year,t47
+Invisible-Real time clock,Time month,t46
+Invisible-Real time clock,Time date,t45
+Invisible-Real time clock,Time zone,
+Invisible-Real time clock,Daylight saving,
+Invisible-Real time clock,Current time,
+Invisible-Service-Analogue inputs,Pe Evap. pressure,u25
+Invisible-Service-Analogue inputs,Te Evap. temp.,u26
+Invisible-Service-Analogue inputs,S2 Gas outlet A,u20
+Invisible-Service-Analogue inputs,S2 Gas outlet B,U79
+Invisible-Service-Analogue inputs,S2 Gas outlet C,U88
+Invisible-Service-Analogue inputs,S4 Air OFF evap. A,u16
+Invisible-Service-Analogue inputs,S4 Air OFF evap. B,U76
+Invisible-Service-Analogue inputs,S4 Air OFF evap. C,U85
+Invisible-Service-Analogue inputs,S5 Evaporator A,u09
+Invisible-Service-Analogue inputs,S5 Evaporator B,u75
+Invisible-Service-Analogue inputs,Humidity sensor,U57
+Invisible-Service-Digital inputs,DI1 Status,u10
+Invisible-Service-Digital inputs,DI2 Status,u37
+Invisible-Service-Digital inputs,DI3 Status,u87
+Invisible-Service-Digital outputs,AKV opening A,u23
+Invisible-Service-Digital outputs,Alarm,u62
+Invisible-Service-Digital outputs,Rail heat,u61
+Invisible-Service-Digital outputs,Defrost A,u60
+Invisible-Service-Digital outputs,Defrost B,u83
+Invisible-Service-Digital outputs,Light,u63
+Invisible-Service-Digital outputs,Fan,u59
+Invisible-Service-Digital outputs,Humidifier,U58
+Invisible-Service-Digital outputs,Air heater,u84
+Invisible-Service-Digital outputs,Main switch,r12
+Invisible-Service-Digital outputs,AKV override A,q11
+Invisible-Service-Digital outputs,Alarm - override,q16
+Invisible-Service-Digital outputs,Rail heat - override,q15
+Invisible-Service-Digital outputs,Defrost A - override,q14
+Invisible-Service-Digital outputs,Defrost B - override,q22
+Invisible-Service-Digital outputs,Light - override,q17
+Invisible-Service-Digital outputs,Fan - override,q13
+Invisible-Service-Digital outputs,Humidifier - override,q26
+Invisible-Service-Digital outputs,Air heater - override,q23
+Invisible-Service-Digital outputs,AKV override B,q41
+Invisible-Service-Digital outputs,AKV override C,q42
+Invisible-Service-Analogue outputs,Rail heat PWM,U59
+Invisible-Service-Analogue outputs,Rail heat PWM - override,q27

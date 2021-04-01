@@ -1,0 +1,199 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+,,,,,
+2,:KoolProg_Window,Enable,,TRUE,TRUE1
+,,,,,
+3,:KoolProg_Window,Type,,Window,TRUE
+,,,,,
+4,{container=':KoolProg_Window' type='Image'},Enable,,TRUE,TRUE
+,,,,,
+5,:KoolProg.KoolProg®_Label,Enable,,TRUE,TRUE
+,,,,,
+6,:KoolProg.KoolProg®_Label,Text,,KoolProg®,TRUE
+,,,,,
+7,:_MenuItem,Enable,,TRUE,TRUE
+,,,,,
+8,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+9,:KoolProg.User_Label,Enable,,TRUE,TRUE
+,,,,,
+10,:KoolProg.User_Label,Text,,User,TRUE
+,,,,,
+11,:_MenuItem,Tooltip,Help,,TRUE
+,,,,,
+12,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,TRUE
+,,,,,
+13,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,TRUE,TRUE
+,,,,,
+14,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,TRUE,TRUE
+,,,,,
+15,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,TRUE,TRUE
+,,,,,
+16,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,TRUE
+,,,,,
+17,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,TRUE
+,,,,,
+18,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,TRUE
+,,,,,
+19,:KoolProg.Set parameters_Label,Text,,Set parameters,TRUE
+,,,,,
+20,:KoolProg.Copy to controller_Label,Text,,Copy to controller,TRUE
+,,,,,
+21,:KoolProg.Service and test_Label,Text,,Service and test,TRUE
+,,,,,
+24,:KoolProg.www.danfoss.com_Label,Enable,,TRUE,TRUE
+,,,,,
+25,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,TRUE
+,,,,,
+27,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Click_Button,,,TRUE
+,,,,,
+28,:SetParameters_Window,Enable,,TRUE,TRUE
+,,,,,
+29,:SetParameters_Window,Type,,Window,TRUE
+,,,,,
+30,:_MenuItem,Enable_Popup,,FALSE,TRUE
+,,,,,
+31,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+32,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable_S,,TRUE,TRUE
+,,,,,
+33,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable_Popup,,FALSE,TRUE
+,,,,,
+34,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable_Popup,,FALSE,TRUE
+,,,,,
+37,:SetParameters.X_Button,Enable,,TRUE,TRUE
+,,,,,
+38,:SetParameters.X_Button,Tooltip,Close,,TRUE
+,,,,,
+40,:SetParameters.Recent Projects_Label,Enable,,TRUE,TRUE
+,,,,,
+41,:SetParameters.Recent Projects_Label,Text,,Recent Projects,TRUE
+,,,,,
+42,:SetParameters.Project_Label,Enable,,TRUE,TRUE
+,,,,,
+43,:SetParameters.Project_Label,Text,,Project,TRUE
+,,,,,
+44,:System.Windows.Controls.DockPanel.New_Label,Enable,,TRUE,TRUE
+,,,,,
+45,:System.Windows.Controls.DockPanel.Upload  from controller_Label,Enable,,TRUE,TRUE
+,,,,,
+46,:System.Windows.Controls.DockPanel.Open_Label,Enable,,TRUE,TRUE
+,,,,,
+47,:System.Windows.Controls.DockPanel.New_Label,Tooltip,Create a new configuration,,TRUE
+,,,,,
+48,:System.Windows.Controls.DockPanel.Upload  from controller_Label,Tooltip,Upload a configuration from controller to KoolProg,,TRUE
+,,,,,
+49,:System.Windows.Controls.DockPanel.Open_Label,Tooltip,Open a config file,,TRUE
+,,,,,
+50,:System.Windows.Controls.DockPanel.New_Label,Text,,New,TRUE
+,,,,,
+51,:System.Windows.Controls.DockPanel.Upload  from controller_Label,Text,,Upload  from controller,TRUE
+,,,,,
+52,:System.Windows.Controls.DockPanel.Open_Label,Text,,Open,TRUE
+,,,,,
+54,:System.Windows.Controls.DockPanel.Upload  from controller_Label,Click_Button,,,TRUE
+,,,,,
+55,,Snooze,,,TRUE
+,,,,,
+57,:MessageBoxDisplay_Window,Enable,,TRUE,TRUE
+,,,,,
+58,:MessageBoxDisplay_Window,Type,,Window,TRUE
+,,,,,
+59,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+60,{container=':KoolProg_Window' name='btnOpen' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+61,{container=':KoolProg_Window' name='btnSave' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+62,{container=':KoolProg_Window' name='btnSaveAs' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+63,{container=':KoolProg_Window' name='btnDownload' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+64,{container=':KoolProg_Window' name='btnUpload' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+65,{container=':KoolProg_Window' name='btnPrinter' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,FALSE,TRUE
+,,,,,
+66,:_MenuItem,Enable_Popup,,FALSE,TRUE
+,,,,,
+69,:MessageBoxDisplay.X_Button,Enable,,TRUE,TRUE
+,,,,,
+70,:MessageBoxDisplay.X_Button,Tooltip,Close,,TRUE
+,,,,,
+71,:MessageBoxDisplay.X_Button,Text,,X,TRUE
+,,,,,
+72,:MessageBoxDisplay.Import completed._Label,Enable,,TRUE,TRUE
+,,,,,
+73,:MessageBoxDisplay.Import completed._Label,Text,,Import completed. ,TRUE
+,,,,,
+74,:MessageBoxDisplay.OK_Button,Enable,,TRUE,TRUE
+,,,,,
+75,:MessageBoxDisplay.OK_Button,Text,,OK,TRUE
+,,,,,
+76,:MessageBoxDisplay.OK_Button,Click_Button,,,TRUE
+,,,,,
+78,:KoolProg_Window,Enable,,TRUE,TRUE
+,,,,,
+79,:KoolProg_Window,Type,,Window,TRUE
+,,,,,
+81,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+82,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Tooltip,Home,,TRUE
+,,,,,
+83,{container=':KoolProg_Window' name='btnOpen' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+84,{container=':KoolProg_Window' name='btnOpen' text='System.Windows.Controls.Image' type='Button'},Tooltip,Open,,TRUE
+,,,,,
+85,{container=':KoolProg_Window' name='btnSave' text='System.Windows.Controls.Image' type='Button'},Enable,,FALSE,TRUE
+,,,,,
+86,{container=':KoolProg_Window' name='btnSave' text='System.Windows.Controls.Image' type='Button'},Tooltip,Save,,TRUE
+,,,,,
+87,{container=':KoolProg_Window' name='btnSaveAs' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+88,{container=':KoolProg_Window' name='btnSaveAs' text='System.Windows.Controls.Image' type='Button'},Tooltip,SaveAs,,TRUE
+,,,,,
+89,{container=':KoolProg_Window' name='btnDownload' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+90,{container=':KoolProg_Window' name='btnDownload' text='System.Windows.Controls.Image' type='Button'},Tooltip,Export parameter values into connected controller,,TRUE
+,,,,,
+91,{container=':KoolProg_Window' name='btnUpload' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+92,{container=':KoolProg_Window' name='btnUpload' text='System.Windows.Controls.Image' type='Button'},Tooltip,Import parameter values from connected controller to KoolProg (PC),,TRUE
+,,,,,
+93,{container=':KoolProg_Window' name='btnPrinter' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+94,{container=':KoolProg_Window' name='btnPrinter' text='System.Windows.Controls.Image' type='Button'},Tooltip,Print,,TRUE
+,,,,,
+95,:_MenuItem,Enable,,TRUE,TRUE
+,,,,,
+96,:_MenuItem,Text,Help,,TRUE
+,,,,,
+97,:KoolProg.User_Label,Enable,,TRUE,TRUE
+,,,,,
+98,:KoolProg.User_Label,Text,,User,TRUE
+,,,,,
+99,:KoolProg.SET PARAMETERS_Label,Enable,,TRUE,TRUE
+,,,,,
+100,:KoolProg.SET PARAMETERS_Label,Text,,SET PARAMETERS,TRUE
+,,,,,
+103,{container=':KoolProg_Window' name='btnexpandinfo' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+104,{container=':KoolProg_Window' name='btnexpandinfo' text='System.Windows.Controls.Image' type='Button'},Tooltip,Expand/Collapse,,TRUE
+,,,,,
+105,{container=':KoolProg_Window' name='btnexpandParamHelp' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+106,{container=':KoolProg_Window' name='btnexpandParamHelp' text='System.Windows.Controls.Image' type='Button'},Tooltip,Expand/Collapse,,TRUE
+,,,,,
+107,{container=':KoolProg_Window' name='btnFactoryReset' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+108,{container=':KoolProg_Window' name='btnFactoryReset' text='System.Windows.Controls.Image' type='Button'},Tooltip,Factory reset,,TRUE
+,,,,,
+109,{container=':KoolProg_Window' name='btnSearchParameters' text='System.Windows.Controls.Image' type='Button'},Enable,,TRUE,TRUE
+,,,,,
+111,:KoolProg.View more_Label,Enable,,TRUE,TRUE
+,,,,,
+112,:KoolProg.View more_Label,Text,,View more,TRUE
+,,,,,
+115,:KoolProg.www.danfoss.com_Label,Enable,,TRUE,TRUE
+,,,,,
+116,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,TRUE
+,,,,,
+118,,DataGrid_Verification_Online,,,TRUE

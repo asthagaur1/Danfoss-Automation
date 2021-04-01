@@ -1,0 +1,32 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+TC_0001,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Tooltip,Create and work on configuration files offline,,True
+TC_0002,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Click_Button,,,True
+TC_0003,:SetParameters_Window,Window,,SetParameters,True
+TC_0004,:System.Windows.Controls.DockPanel.New_Label,Tooltip,Create a new configuration,,True
+TC_0005,:System.Windows.Controls.StackPanel.Import controller model_Label,Tooltip,Import controller model,,True
+TC_0006,:System.Windows.Controls.StackPanel.Import controller model_Label,Click_Button,,,True
+TC_0007,:Open_Dialog,Window,,Open,True
+TC_0008,:Open_Edit,Text_box,,C:\gitworkspace\KoolProg,TestAutomation\Master_Functions\Test_Automation\SourceCode\Dependent_Files\CDFs\Compact_1.70\edf\084B4081.cdf
+,,Snooze,,,True
+TC_0009,:MessageBoxDisplay.OK_Button,Click_Button,,,True
+TC_0010,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Click_Button,,,True
+TC_0011,:SetParameters_Window,Window,,SetParameters,True
+TC_0012,:System.Windows.Controls.DockPanel.New_Label,Click_Button,,,True
+TC_0013,:Newproject_Window,Window,,Newproject,True
+TC_0014,:Newproject_TabFolder,Enable,,true,True
+TC_0015,:Newproject_TabFolder,Select_Controller,,AK,CC55
+TC_0016,{container=':Newproject_Window' name='btnRightArrow'  text='NEXT >' type='Button'},Text,,NEXT >,True
+TC_0017,{container=':Newproject_Window' name='btnRightArrow'  text='NEXT >' type='Button'},Click_Button,,,True
+TC_0018,:Newproject.Select Controller Code number and Software version_Label,Text,,Select Controller Code number and Software version_Label,True
+TC_0019,,AKCC_App_Wizard,,,None
+TC_0020,:Product Name.System.Windows.Controls.StackPanel_Edit,Text_box,,Compact_1.70,True
+TC_0021,:Product Name.Project Description (Max 250 Characters)_Edit,Text_box,,Description, 250 characters
+TC_0022,:Newproject.< BACK _Button,Text,,< BACK ,True
+TC_0023,:Newproject.< BACK _Button,Click_Button,,,True
+TC_0024,{container=':Newproject_Window' name='btnRightArrow'  text='NEXT >' type='Button'},Click_Button,,,True
+TC_0025,:Newproject.Use a wizard for controller configuration_CheckBox,Click_Button,,,True
+TC_0026,:Newproject.FINISH_Button,Text,,FINISH,True
+TC_0027,:Newproject.FINISH_Button,Finish_Button,,,True
+TC_0028,,Snooze,,,True
+TC_0029,:KoolProg.ucParameterDisplay_WPFControl,Click_All,,,None
+TC_0030,,AKCC_SG,,,None

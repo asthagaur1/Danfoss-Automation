@@ -1,0 +1,193 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+2,:KoolProg_Window,Enable,,true,True
+3,:KoolProg_Window,Type,,Window,True
+4,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+5,:KoolProg.KoolProg®_Label,Enable,,true,True
+6,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+7,:_MenuItem,Enable,,true,True
+8,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+9,:KoolProg.User_Label,Enable,,true,True
+10,:KoolProg.User_Label,Text,,User,True
+11,:_MenuItem,Tooltip,Help,,True
+12,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+13,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+14,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+15,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+16,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+17,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+18,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+19,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+20,:KoolProg.On,line service_Label,Text,,On
+21,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+22,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True
+24,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Click_Button,,,True
+25,:KoolProg_Window,Enable,,true,True
+26,:KoolProg_Window,Type,,Window,True
+27,,Snooze,,,True
+28,,Snooze,,,True
+29,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+30,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Tooltip,Home,,True
+31,:_MenuItem,Enable,,true,True
+32,:_MenuItem,Tooltip,Help,,True
+33,:KoolProg.User_Label,Enable,,true,True
+34,:KoolProg.User_Label,Text,,User,True
+35,:KoolProg.COPY TO CONTROLLER_Label,Enable,,true,True
+36,:KoolProg.COPY TO CONTROLLER_Label,Text,,COPY TO CONTROLLER,True
+37,:KoolProg.Select file:_Label,Enable,,true,True
+38,:KoolProg.Select file:_Label,Text,,Select file:,True
+39,:_Edit,Enable,,true,True
+40,:KoolProg.BROWSE_Button,Enable,,true,True
+41,:KoolProg.BROWSE_Button,Text,,BROWSE,True
+43,:KoolProg.SET AS FAVOURITE_Button,Enable,,true,True
+44,:KoolProg.SET AS FAVOURITE_Button,Visible_F,,false,True
+45,{container=':KoolProg_Window' name='dgFavoriteFiles' type='Table'},Enable,,true,True
+46,{container=':KoolProg_Window' name='dgFavoriteFiles' type='Table'},Visible_F,,false,True
+48,:KoolProg_Image_4,Enable,,true,True
+49,:KoolProg_Image_4,Type,,Image,True
+50,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Tooltip,Info,,True
+52,,Snooze,,,True
+53,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Click_Button,,,True
+54,:Product information_Window,Enable,,true,True
+55,:Product information_Window,Type,,Window,True
+56,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable_Popup,,false,True
+57,:_MenuItem,Enable_Popup,,false,True
+58,:KoolProg.BROWSE_Button,Enable_Popup,,false,True
+59,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Enable_S,,true,True
+60,:KoolProg.Single controller programming_RadioButton,Enable_Popup,,false,True
+61,:KoolProg.Multiple controller programming_RadioButton,Enable_Popup,,false,True
+62,:KoolProg.START_Label,Enable_Popup,,false,True
+63,:Product information.Product information_Label,Enable,,true,True
+64,:Product information.Product information_Label,Text,,Product information,True
+65,:Product information.X_Button,Enable,,true,True
+66,:Product information.X_Button,Tooltip,Close,,True
+67,:Product information.X_Button,Text,,X,True
+68,{container=':Product information_Window' name='imgProductimage' type='Image'},Enable,,true,True
+69,{container=':Product information_Window' name='imgProductimage' type='Image'},Type,,Image,True
+71,:Product information.X_Button,Click_Button,,,True
+73,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+74,:_MenuItem,Enable,,true,True
+75,:KoolProg.BROWSE_Button,Enable,,true,True
+76,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Enable,,true,True
+77,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+78,:KoolProg.Multiple controller programming_RadioButton,Enable,,true,True
+79,:KoolProg.START_Label,Enable,,false,True
+81,:KoolProg.Single or multiple controller programming:_Label,Enable,,true,True
+82,:KoolProg.Single or multiple controller programming:_Label,Text,,Single or multiple controller programming:,True
+83,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+84,:KoolProg.Single controller programming_RadioButton,Text,,Single controller programming,True
+85,:KoolProg.Single controller programming_RadioButton,Selected,,true,False
+86,:KoolProg.Multiple controller programming_RadioButton,Enable,,true,True
+87,:KoolProg.Multiple controller programming_RadioButton,Text,,Multiple controller programming,True
+88,:KoolProg.Multiple controller programming_RadioButton,Selected,,false,False
+90,:KoolProg.Multiple controller programming_RadioButton,Click_Button,,,True
+91,:KoolProg.Set Counter:_Label,Enable,,true,True
+92,:KoolProg.Set Counter:_Label,Text,,Set Counter:,True
+93,:KoolProg_Edit,Enable,,true,True
+94,:KoolProg_Edit,Text,,1,True
+95,:KoolProg.CountUp Timer(0,",,,)_RadioButton",Enable,,true
+96,:KoolProg.CountUp Timer(0,",,,)_RadioButton",Text,,CountUp Timer(0
+97,:KoolProg.CountUp Timer(0,",,,)_RadioButton",Selected,,true
+98,":KoolProg.Countdown Timer(,,,",0)_RadioButton,Enable,,true
+99,":KoolProg.Countdown Timer(,,,",0)_RadioButton,Text,,"Countdown Timer(,,,"
+100,":KoolProg.Countdown Timer(,,,",0)_RadioButton,Selected,,true
+101,:KoolProg.Set Counter:_Label,Enable,,true,True
+102,:KoolProg.Set Counter:_Label,Text,,Set Counter:,True
+103,:KoolProg.0_Label,Enable,,true,True
+104,:KoolProg.0_Label,Text,,0,True
+106,:KoolProg.START_Label,Enable,,false,True
+107,:KoolProg.START_Label,Text,,START,True
+108,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+110,,Snooze,,,True
+111,,File_Generation,,,True
+113,:_MenuItem,Enable,,true,True
+114,:KoolProg.BROWSE_Button,Enable,,true,True
+115,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Enable,,true,True
+116,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+117,:KoolProg.Multiple controller programming_RadioButton,Enable,,true,True
+119,:KoolProg.SET AS FAVOURITE_Button,Enable,,true,True
+120,:KoolProg.SET AS FAVOURITE_Button,Text,,SET AS FAVOURITE,True
+122,{container=':KoolProg_Window' name='imgProductleft' type='Image'},Enable,,true,True
+123,{container=':KoolProg_Window' name='imgProductleft' type='Image'},Type,,Image,True
+124,{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'},Tooltip,Info,,True
+125,{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'},Text,,i,True
+127,,Snooze,,,True
+128,{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'},Click_Button,,,True
+129,:Product information_Window,Enable,,true,True
+130,:Product information_Window,Type,,Window,True
+131,:_MenuItem,Enable_Popup,,false,True
+132,:KoolProg.BROWSE_Button,Enable_Popup,,false,True
+133,:KoolProg.SET AS FAVOURITE_Button,Enable_Popup,,false,True
+134,{container=':KoolProg_Window' name='imgProductleft' type='Image'},Enable_S,,false,True
+135,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Enable_Popup,,false,True
+136,:KoolProg.Single controller programming_RadioButton,Enable_Popup,,false,True
+137,:KoolProg.Multiple controller programming_RadioButton,Enable_Popup,,false,True
+138,:KoolProg.START_Label,Enable_Popup,,false,True
+139,:Product information.Product information_Label,Enable,,true,True
+140,:Product information.Product information_Label,Text,,Product information,True
+141,:Product information.X_Button,Enable,,true,True
+142,:Product information.X_Button,Tooltip,Close,,True
+143,:Product information.X_Button,Text,,X,True
+144,{container=':Product information_Window' name='imgProductimage' type='Image'},Enable,,true,True
+145,{container=':Product information_Window' name='imgProductimage' type='Image'},Type,,Image,True
+147,:Product information.X_Button,Click_Button,,,True
+148,{container=':KoolProg_Window' name='imgProductleft' type='Image'},Enable,,true,True
+149,:KoolProg.START_Label,Enable,,true,True
+151,:KoolProg.Product Name:_Label,Enable,,true,True
+152,:KoolProg.Product Name:_Label,Text,,Product Name:,True
+153,:KoolProg.Code Number : _Label,Text,,Code Number:,True
+155,:KoolProg.SET AS FAVOURITE_Button,Enable,,true,True
+156,:KoolProg.SET AS FAVOURITE_Button,Text,,SET AS FAVOURITE,True
+157,:KoolProg.SET AS FAVOURITE_Button,Click_Button,,,True
+158,:KoolProg.FAVOURITE FILES_Label,Enable,,true,True
+159,:KoolProg.FAVOURITE FILES_Label,Text,,FAVOURITE FILES,True
+161,{container=':KoolProg_Window' name='dgFavoriteFiles' type='Table'},Enable,,true,True
+162,{container=':KoolProg_Window' name='dgFavoriteFiles' type='Table'},Visible_S,,true,True
+163,:Project name_HeaderItem,Enable,,true,True
+164,:Project path_HeaderItem,Text,,Project path,True
+165,:Controller type_HeaderItem,Enable,,true,True
+166,:Controller type_HeaderItem,Text,,Controller type,True
+167,:Actions_HeaderItem,Text,,Actions,True
+169,:0_2_TableCell,Enable,,true,True
+171,{container=':0_3_TableCell' text='System.Windows.Controls.Image' type='Button'},Click_Button,,,True
+172,:0_3_TableCell,Enable,,true,True
+174,:_Edit,Enable,,true,True
+176,{container=':KoolProg_Window' name='imgProductleft' type='Image'},Enable,,true,True
+177,{container=':KoolProg_Window' name='imgProductleft' type='Image'},Type,,Image,True
+178,{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'},Enable,,true,True
+179,{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'},Tooltip,Info,,True
+180,{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'},Text,,i,True
+182,{container=':KoolProg_Window' name='btnInfo' text='i' type='Button'},Click_Button,,,True
+183,:Product information_Window,Enable,,true,True
+184,:Product information_Window,Type,,Window,True
+185,:_MenuItem,Enable_Popup,,false,True
+186,:KoolProg.SET AS FAVOURITE_Button,Enable_Popup,,false,True
+187,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Enable_Popup,,false,True
+188,:KoolProg.Single controller programming_RadioButton,Enable_Popup,,false,True
+189,:KoolProg.Multiple controller programming_RadioButton,Enable_Popup,,false,True
+190,:KoolProg.START_Label,Enable_Popup,,false,True
+191,:Product information.Product information_Label,Enable,,true,True
+192,:Product information.Product information_Label,Text,,Product information,True
+193,:Product information.X_Button,Enable,,true,True
+194,:Product information.X_Button,Tooltip,Close,,True
+195,:Product information.X_Button,Text,,X,True
+196,{container=':Product information_Window' name='imgProductimage' type='Image'},Enable,,true,True
+198,:Product information.X_Button,Click_Button,,,True
+200,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+201,:_MenuItem,Enable,,true,True
+202,:KoolProg.BROWSE_Button,Enable,,true,True
+203,:KoolProg.SET AS FAVOURITE_Button,Enable,,true,True
+204,{container=':KoolProg_Window' name='imgProductleft' type='Image'},Enable,,true,True
+205,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Enable,,true,True
+206,:KoolProg.Single controller programming_RadioButton,Enable,,true,True
+207,:KoolProg.Multiple controller programming_RadioButton,Enable,,true,True
+208,:KoolProg.START_Label,Enable,,true,True
+210,:KoolProg.Product Name:_Label,Enable,,true,True
+211,:KoolProg.Product Name:_Label,Text,,Product Name:,True
+212,:KoolProg.Code Number : _Label,Enable,,true,True
+213,:KoolProg.Code Number : _Label,Text,,Code Number:,True
+214,:KoolProg.SWVersion: _Label,Enable,,true,True
+215,:KoolProg.SWVersion: _Label,Text,,SWVersion: ,True
+217,:KoolProg.SET AS FAVOURITE_Button,Enable,,true,True
+218,:KoolProg.SET AS FAVOURITE_Button,Visible_S,,true,True
+220,{container=':KoolProg_Window' name='dgFavoriteFiles' type='Table'},Enable,,true,True
+221,{container=':KoolProg_Window' name='dgFavoriteFiles' type='Table'},Visible_F,,false,True

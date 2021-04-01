@@ -1,0 +1,345 @@
+﻿Name,Enum
+Main switch,"0:Off,1:On"
+Operation mode,"0:SH control,1:Valve driver"
+Application select,"0:ChillerPlate,1:AirCoil frost,2:AirCoil,3:HP A2W,4:HP W2W,5:Gen. SH Ctrl."
+Compressor capacity,
+Sensor select,"0:S3,1:S4"
+Thermostatic mode,"0:Not Used,1:CutIn/CutOut,2:MTR"
+Temperature setpoint,
+Differential,
+Ext. ref offset max.,
+Ext. ref offset min,
+S2 Correction,
+S3 Correction,
+S4 Correction,
+Pe Correction,
+Pc Correction,
+MTR Tn,
+MTR Kp,
+Refrigerant,"0:Undef,1:R12,2:R22,3:R134a,4:R502,5:R717,6:R13,7:R13b1,8:R23,9:R500,10:R503,11:R114,12:R142b,13:R user,14:R32,15:R227,16:R401A,17:R507,18:R402A,19:R404A,20:R407C,21:R407A,22:R407B,23:R410A,24:R170,25:R290,26:R600,27:R600a,28:R744,29:R1270,30:R417A,31:R422A,32:R413A,33:R422D,34:R427A,35:R438A,36:XP10,37:R407F,38:R1234ze,39:R1234yf,40:R448A,41:R449A,42:R452A"
+Antonie constant A1,
+Antonie constant A2,
+Antonie constant A3,
+Refrigerant min. temperature,
+Refrigerant max. temperature,
+Startup mode,"0:Prop. Ctrl,1:Fix OD w prot,2:Fix OD wo prot"
+Startup time,
+Min. startup time,
+Startup OD,
+SH reference mode,"0:Fixed sp.,1:Loadap,2:MSS,3:Delta temp"
+SH fixed setpoint,
+SH max.,
+SH min.,
+SH ref. delta temp. factor,
+SH Tn,
+SH Kp Min.,
+SH Kp,
+SH KpTe,
+Minimum OD,
+Maximum OD,
+SH close function,"0:Off,1:On"
+SH close setpoint,
+SH close Tn divide,
+SH close Kp factor,
+Limit Kp,
+Limit Tn,
+Min. S4 mode,"0:Off,1:On"
+Min. S4 setpoint,
+Stability,
+T0 varians factor,
+MOP function,"0:Off,1:On"
+MOP setpoint,
+LOP function,"0:Off,1:On"
+LOP setpoint,
+LOP priority mode,"0:Off,1:On"
+LOP max. time,
+High cond. temp protection function,"0:Off,1:On"
+High cond. temp. protection setpoint,
+Comp. speed feed forward Function,"0:Off,1:On"
+Comp FF low cap. point,
+Comp FF SH Tn factor,
+Average  OD,
+Estimated KpTe,
+Average delta temperature,
+SH control sensor error action,"0:Stop,1:Fixed OD,2:Average"
+Thermostatic sensor error action,"0:Stop,1:Fixed OD,2:Average"
+Fixed OD during emergency cooling,
+Heat startup time,
+Heat min. startup time,
+Heat startup OD,
+Heat SH fixed setpoint,
+Heat SH max.,
+Heat SH min.,
+Heat SH ref. delta temp. factor,
+Heat SH Tn,
+Heat SH Kp min.,
+Heat SH Kp,
+Heat SH KpTe,
+Heat SH close setpoint,
+Heat limit Tn,
+Heat limit Kp,
+Defrost start low pressure limit,
+Defrost start time,
+Defrost OD,
+Defrost end closed time,
+Defrost end OD time,
+Defrost end OD,
+Low Min S4 delay,
+Low Min S4 band,
+Upper temperature alarm,
+Lower temperature alarm,
+Temperature alarm delay,
+Battery alarm,"0:Off,1:On"
+MOP alarm delay,
+MOP alarm differential,
+LOP alarm delay,
+LOP alarm differential,
+Cond.temp alarm delay,
+Cond. temp.alarm differential,
+High SH alarm delay,
+High SH alarm differential,
+Low SH alarm delay,
+Low SH alarm differential,
+Lack of capacity alarm delay,
+AI1 configuration 1B/C,"0:Not Used,1:S3,2:S4"
+AI4 configuration 1C,"0:Not Used,1:ExtRef,2:pc"
+AI4 configuration 1A/B,"0:Not Used,1:ExtRef"
+AI5 configuration 1C,"0:Not Used,1:S3,2:S4"
+DI1 configuration,"0:Not Used,1:Main Switch"
+DI2 configuration,"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool"
+DI3 configuration,"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool"
+DO1 configuration,"0:Alarm,1:LLSV,2:Max cap"
+S2 sensor configuration 1C,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS"
+S2 sensor configuration 1B,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared"
+S2 sensor configuration 1A,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP"
+S3 sensor configuration 1C,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS"
+S3 sensor configuration 1B,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared"
+S4 sensor configuration 1C,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS"
+S4 sensor configuration 1B,"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared"
+Pe transmitter configuration 1C,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current"
+Pe transmitter configuration 1B,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared"
+Pe transmitter configuration 1A,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage"
+Pe ratio. low,
+Pe ratio high,
+Pe voltage low 1C,
+Pe voltage low 1A/B,
+Pe voltage high 1C,
+Pe voltage high 1A/B,
+Pe current low,
+Pe current high,
+Pe transmitter min.,
+Pe transmitter max.,
+Pc transmitter configuration 1C,"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current"
+Pc ratio. low,
+Pc ratio high,
+Pc voltage low,
+Pc voltage high,
+Pc current low,
+Pc current high,
+Pc transmitter min.,
+Pc transmitter max,
+Valve configuration,"0:no valve,1:UserDef,2:ETS 12C,3:ETS 24C,4:ETS 25C,5:ETS 50C,6:ETS 100C,7:ETS 6,8:ETS 12.5,9:ETS 25,10:ETS 50,11:ETS 100,12:ETS 250,13:ETS 400,14:KVS 2C,15:KVS 3C,16:KVS 5C,17:KVS 15,18:KVS 42,19:CCMT 0,20:CCMT 1,21:CCMT 2,22:CCMT 4,23:CCMT 8,24:CCMT 16,25:CCMT 24,26:CCMT 30,27:CCMT 42,28:CCM 10,29:CCM 20,30:CCM 30,31:CCM 40,32:CTR 25"
+Valve motor type,"0:Unipolar,1:Bipolar"
+Valve drive current,
+Valve step positioning,"0:Fullstep,1:Halfstep,2:Auto"
+Valve total steps,
+Valve speed,
+Valve start speed,
+Valve emergency speed,
+Valve acceleration current,
+Valve acceleration time,
+Valve holding current,
+Valve step mode,"0:Full,1:Half,2:1/4,3:1/8,4:1/16"
+Valve duty cycle,
+Valve OD during stop,
+Start backlash,
+Compensation backlash,
+Overdrive,
+Overdrive enable OD,
+Overdrive block time,
+Valve motor decay mode,"0:Fast,1:Slow,2:Mixed"
+Valve excitation time after stop,
+Preset OD,
+Valve neutral zone,
+Ext ref. configuration 1A,"0:Not Used,1:V->SH,2:V->Max OD"
+Ext ref. configuration 1B,"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T."
+Ext ref. configuration 1C,"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.,7:mA->SH,8:mA->Max OD,9:mA->Temp"
+Ext ref. voltage high,
+Ext ref. current low,
+Ext ref. current high,
+Ext ref voltage low,
+Driver reference configuration 1B,"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps"
+Driver reference configuration 1C,"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps,3:Current to OD"
+AI4 lowpass bandwidth,"0:None,1:4 Hz,2:2 Hz,3:1 Hz,4:1/2 Hz,5:1/5 Hz"
+Language,"0:English,1:Chinese,2:Portuguese,3:Russian,4:Spanish,5:French,6:German,7:Italian"
+Login timeout,
+Backlight timeout,
+Password daily,
+Password service,
+Password commission,
+Contrast,
+Brightness,
+Display unit,"0:MET,1:IMP"
+Opening degree unit,"0:Percentage,1:Step"
+Controller adr.,
+CAN bus min. update interval,
+Modbus min. update interval,
+Modbus baudrate,"0:0,1:1200,2:2400,3:4800,4:9600,5:14400,6:19200,7:28800,8:38400"
+Modbus mode,"0:8N1,1:8E1,2:8N2"
+Modbus mapping,"0:Operation,1:Configuration"
+Can baudrate,"0:20k,1:50k,2:125k,3:250k,4:500k,5:1M"
+Signal sharing Pe,"0:Off,1:On"
+Signal sharing Pc,"0:Off,1:On"
+Signal sharing S3,"0:Off,1:On"
+Operation status,"0:Power up,1:Stop,2:Manual,3:Service,4:Safe State,5:Defrosting,6:Valve driver,7:Ther. Cutout,8:Emer. cooling,9:SH ctrl err.,10:SH start Pctrl,11:SH start fix OD,12:SH ctrl normal,13:SH ctrl MTR,14:SH ctrl LOP,15:SH ctrl minPC,16:SH ctrl MOP,17:SH ctrl maxPc,18:SH ctrl SH cl,19:SH ctrl minS4,20:SH ctrl Tc"
+Actual SH reference,
+Actual superheat,
+Actual OD,
+Actual step,
+Actual temperature reference,
+S2 suction pipe,
+S3 media inlet,
+S4 media outlet,
+Pe evaporator,
+Te saturated evaporation temperature,
+Pc condenser,
+Tc saturated condenser temperature,
+Actual battery voltage,
+Liquid line solenoid valve,"0:Off,1:On"
+Alarm relay,"0:Off,1:On"
+External reference signal,
+External reference signal,
+Act. ext. ref. temperature offset,
+Act. ext. ref. SH offset,
+Act. ext.ref. max. OD,
+DI main switch,"0:Off,1:On"
+DI defrost start,"0:Off,1:On"
+DI preset OD,"0:Off,1:On"
+DI heating,"0:Off,1:On"
+Thermostat cut-in time,
+Thermostat average cut-in time,
+Thermostat average cut-out time,
+Average temperature,
+Average SH,
+Manual mode,"0:Off,1:On"
+Manual mode timeout,
+Manual OD,
+Manual step,
+Manual homing,"0:Off,1:On"
+Manual relay DO1,"0:Off,1:On"
+Apply defaults,"0:None,1:Factory,2:EKD 316 like,3:EKC 316 like"
+Enter service state,"0:Off,1:On"
+Temperature difference,
+Valve Dim,
+Heat valve dim,
+Heat temperature difference,
+Modbus Heating,"0:Off,1:On"
+Modbus preset OD,"0:Off,1:On"
+Modbus defrost start,"0:Off,1:On"
+Modbus main switch,"0:Off,1:On"
+Bus shared Pc,
+Bus shared  Pe,
+Bus shared S2,
+Bus shared S3,
+Bus shared S4,
+Bus ext. ref.,
+event log Enabled,"0:Off,1:On"
+event log Clear,
+Life time,
+Maximum execution time,
+Number of active alarms,
+Alarm notification,"0:No alarms,1:Alarms active"
+Alarm status,"0:Off,1:On"
+Warning status,"0:Off,1:On"
+Error status,"0:Off,1:On"
+Main switch status,
+Injection state,"0:Off,1:Startup,2:Injection,3:Error,4:Ther. Cutout"
+Controller state,"0:Powerup,1:Stop,2:Operation,3:Manual,4:Service,5:Safe"
+Injection details,"0:Off,1:SH ctrl normal,2:SH ctrl MTR,3:SH ctrl LOP,4:SH ctrl MOP,5:SH ctrl minPC,6:SH ctrl maxPc,7:SH ctrl SH cl,8:SH ctrl minS4,9:Start P.Control,10:Start Fixed,11:Manual,12:SH ctrl Tc"
+Actual operation,"0:None,1:Defrosting,2:Thermostat,3:Injection,4:Driver,5:Emer. cooling"
+Valve Version High,
+Valve Version Low,
+Valve Version Major,
+Valve Version Minor,
+Valve Date High,
+Valve Date Low,
+Valve current position,
+Valve target position,
+Valve current state,"0:Init,1:Config,2:Init Close,3:Auto,4:Manual,5:Service,6:Overdrive,7:Man. Overdrive,8:Emer Close,9:Emer Close Comp.,10:Batt Disable,11:Reset,12:Stepper Fault,13:OC Fault,14:Voltage too low"
+Start overdrive command,"0:IDLE,1:START,2:CMD_SENT,3:RUNNING"
+Service number of steps,
+EKE 1V Variant,"0:EKE 1A,1:EKE 1B,2:EKE 1C"
+Power fault enabled,"0:Off,1:On"
+Stepper fault enabled,"0:Off,1:On"
+Communication fault enabled,"0:Off,1:On"
+Open circuit fault enabled,"0:Off,1:On"
+Max. diff. between coil current and setting,
+Max. diff. between coil currents,
+User controls LEDs,"0:Off,1:On"
+Green LED pattern,
+Red LED pattern,
+AI1 configuration (internal),"0:Not Used,1:S3,2:S4"
+AI4 configuration (internal),"0:Not Used,1:ExtRef,2:pc"
+AI5 configuration (internal),"0:Not Used,1:S3,2:S4"
+S2 sensor configuration (internal),"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS"
+S3 sensor configuration (internal),"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS"
+S4 sensor configuration (internal),"0:Not defined,1:EKS 221,2:ACCPBT NTC10K,3:MBT 153 10K,4:112CP,5:Bus Shared,6:AKS"
+Pe transmitter configuration (internal),"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current"
+Pe voltage low (internal),
+Pe voltage high (internal),
+Pc transmitter configuration (internal),"0:Not defined,1:AKS 32R,2:ACCPBP Ratio,3:112CP,4:OEM Ratio,5:NSK,6:AKS 32 1-5V,7:OEM Voltage,8:Bus shared,9:AKS 32 1-6V,10:AKS 32 0-10V,11:AKS 33,12:XSK,13:ACCPBP Current,14:OEM Current"
+Ext ref. configuration (internal),"0:Not Used,1:V->SH,2:V->Max OD,3:V->Temp,4:Modbus->SH,5:Modbus->Max OD,6:Modbus->T.,7:mA->SH,8:mA->Max OD,9:mA->Temp"
+Driver reference configuration (internal),"0:Voltage to OD,1:Modbus to OD,2:Modbus to steps,3:Current to OD"
+DI3 configuration (internal),"0:Not Used,1:Defrost Start,2:Preset OD,3:Heat/Cool"
+Valve configuration error,"0:Off,1:On"
+Configuration error,"0:Off,1:On"
+Sensor supply overload,"0:Off,1:On"
+S2 suction pipe sensor error,"0:Off,1:On"
+S3 media inlet sensor error,"0:Off,1:On"
+S4 media outlet sensor error,"0:Off,1:On"
+Pe evaporator transmitter error,"0:Off,1:On"
+Pc condenser transmitter error,"0:Off,1:On"
+External reference signal alarm,"0:Off,1:On"
+No refrigerant selected,"0:Off,1:On"
+No valve configured,"0:Off,1:On"
+Shared signal timeout,"0:Off,1:On"
+Ext. ref. via modbus timeout,"0:Off,1:On"
+Battery critical low voltage,"0:Off,1:On"
+Battery too high voltage,"0:Off,1:On"
+Battery low voltage,"0:Off,1:On"
+Low S4 media outlet temperature,"0:Off,1:On"
+High temperature,"0:Off,1:On"
+Low temperature,"0:Off,1:On"
+High evaporation pressure (MOP),"0:Off,1:On"
+Low evaporation pressure (LOP),"0:Off,1:On"
+High condensing temperature,"0:Off,1:On"
+High superheat,"0:Off,1:On"
+Low superheat,"0:Off,1:On"
+Lack of valve capacity,"0:Off,1:On"
+Standby mode,"0:Off,1:On"
+Manual control,"0:Off,1:On"
+SH reference too close to SH close setpoint,"0:Off,1:On"
+LOP setpoint too close to MOP setpoint,"0:Off,1:On"
+No sensor configured for S4,"0:Off,1:On"
+No sensor configured for S3,"0:Off,1:On"
+SH min higher than SH max,"0:Off,1:On"
+OD min higher than OD max,"0:Off,1:On"
+No transmitter configured for Pc,"0:Off,1:On"
+Check valve step mode vs positioning,"0:Off,1:On"
+Valve speed too fast,"0:Off,1:On"
+Valve speed to slow,"0:Off,1:On"
+Valve emergency speed too fast,"0:Off,1:On"
+Valve emergency speed too slow,"0:Off,1:On"
+Valve start speed too slow,"0:Off,1:On"
+DI1 unstable input,"0:Off,1:On"
+DI2 unstable input,"0:Off,1:On"
+DI3 unstable input,"0:Off,1:On"
+Open circuit on valve,"0:Off,1:On"
+AI5 cant operate with AKS sensor,"0:Off,1:On"
+Valve short circuit or driver too hot,"0:Off,1:On"
+Thermostatic signal missing,"0:Off,1:On"
+SH control signal missing,"0:Off,1:On"
+Low supply voltage,"0:Off,1:On"
+No sensor configured for S2,"0:Off,1:On"
+No transmitter configured for Pe,"0:Off,1:On"
+Ext. ref configuration error,"0:Off,1:On"

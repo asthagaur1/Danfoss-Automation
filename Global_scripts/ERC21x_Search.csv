@@ -1,0 +1,107 @@
+﻿Name,MenuCode,GroupName
+Alarm delay - Normal conditions,A03,Alarm
+Alarm delay - pulldown/startup/def,A12,Alarm
+High temp alarm,A13,Alarm
+Low temp alarm,A14,Alarm
+DI1 delay,A27,Alarm
+DI2 delay,A28,Alarm
+Condenser High temp alarm,A37,Alarm
+Condenser High block limit,A54,Alarm
+Voltage protection,A72,Alarm
+Min cut-in voltage,A73,Alarm
+Min cut-out voltage,A74,Alarm
+Max voltage,A75,Alarm
+Compressor min ON time,C01,Compressor
+Compressor min OFF time,C02,Compressor
+Comp OFF delay at open door,C04,Compressor
+Zero crossing,C70,Compressor
+Sensor type,o06,Configuration
+DO4 config,o36,Configuration
+Temperature Setpoint,r00,Reference
+Differential,r01,Reference
+Min set point limit,r02,Reference
+Max set point limit,r03,Reference
+Display offset,r04,Reference
+Display Unit,r05,Reference
+Calibration of Sair,r09,Reference
+Night Set back,r13,Reference
+Offset reference displacement,r40,Reference
+Pull down duration,r96,Reference
+Pull down temp limit,r97,Reference
+Defrost Method,d01,Defrost
+Defrost stop temperature,d02,Defrost
+Defrost Interval,d03,Defrost
+Max defrost Time,d04,Defrost
+Defrost delay at power up,d05,Defrost
+Drip delay,d06,Defrost
+Fan delay after defrost,d07,Defrost
+Fan start temp after defrost,d08,Defrost
+Fan ON during defrost,d09,Defrost
+Defrost stop sensor,d10,Defrost
+Comp accumulated runtime,d18,Defrost
+Defrost on demand,d19,Defrost
+Defrost delay after pulldown ,d30,Defrost
+Fan at compressor cutout,F01,Fan control
+Fan stop evaporator temp,F04,Fan control
+Fan ON time,F07,Fan control
+Fan OFF time,F08,Fan control
+Delay of outputs at startup,o01,Others
+DI1 configuration,o02,Others
+Serial address,o03,Others
+Password,o05,Others
+Cooling/Heating,o07,Others
+Display Resolution ,o15,Others
+DI2 configuration,o37,Others
+Light Control ,o38,Others
+"Save settings as factory
+",o67,Others
+"Display during defrost
+ ",o91,Others
+DI1 polarity,P73,Polarity
+DI2 polarity,P74,Polarity
+Invert alarm relay,P75,Polarity
+Keyboard lock,P76,Polarity
+Defrost Method,d01,Defrost
+Defrost Stop Sensor,d10,Defrost
+DO2 Config,o71,Others
+DI2 polarity,P74,Polarity
+Invert alarm relay,P75,Polarity
+Keyboard lock,P76,Polarity
+"Controller status
+",u00,Read outs
+Air temperature (Sair),u01,Read outs
+Present regulation reference,u02,Read outs
+Evaporator temperature (S5),u09,Read outs
+DI1 status,u10,Read outs
+Night mode,u13,Read outs
+DI2 status,u37,Read outs
+Condenser temperature (Sc),U09,Read outs
+Compressor relay status,u58,Read outs
+Fan relay status,u59,Read outs
+Defrost relay status,u60,Read outs
+Light relay status,u63,Read outs
+Firmware version,u80,Read outs
+Database version,,Read outs
+Order No Low,,Read outs
+Defrost Method,d01,Defrost
+Defrost Stop Sensor,d10,Defrost
+Predefined applications,61,Configuration
+DO2 Config,o71,Others
+Air temperature sensor(Sair) error,E29,Read outs
+Defrost sensor (S5) error,E27,Read outs
+Condensor sensor(Sc) error,E30,Read outs
+High temperature alarm,A01,Read outs
+Low temperature alarm,A02,Read outs
+High voltage alarm,A99,Read outs
+Low voltage alarm,AA1,Read outs
+High condenser temperature alarm,A61,Read outs
+Door alarm,A04,Read outs
+DI external alarm,A15,Read outs
+High temperature alarm,A01,Read outs
+Low temperature alarm,A02,Read outs
+High voltage alarm,A99,Read outs
+Low voltage alarm,AA1,Read outs
+High condenser temperature alarm,A61,Read outs
+Door alarm,A04,Read outs
+DI external alarm,A15,Read outs
+Sensor 2 Error,E27,Read outs

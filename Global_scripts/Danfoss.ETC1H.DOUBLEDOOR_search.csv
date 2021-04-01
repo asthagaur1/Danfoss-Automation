@@ -1,0 +1,87 @@
+﻿GroupCode,MenuCode,Name
+Information (for internal use),TID,ID low part
+Information (for internal use),TID,ID high part
+Information (for internal use),TID,Serial Number
+Information (for internal use),TYN,Type Number 091X
+Information (for internal use),TYN,Type Number 077F
+Information (for internal use),TYN,TypeNumber
+Information (for internal use),SWV,Software version
+Service Information,HWV,Hardware version
+Information (for internal use),PAV,Parameter version
+Service Information,AID,Application ID
+Ref Thermostat,RCC,Refrigerator Cold Cut-out
+Ref Thermostat,RWC,Refrigerator Warm Cut-out
+Ref Thermostat,RUS,Refrigerator User Setpoint
+Ref Thermostat,RCD,Refrigerator Cold Differential
+Ref Thermostat,RWD,Refrigerator Warm Differential
+Ref Fan,FSC,Fan stops on compressor cutout
+Ref Compressor,RMR,Refrigerator Min Runtime
+Ref Compressor,RMS,Refrigerator Min Stoptime
+Ref Compressor,SCT,Super Cool Time
+Ref Compressor,RER,Refrigerator Error Runtime
+Ref Compressor,RES,Refrigerator Error Stoptime
+Ref Alarm,RUA,Refrigerator Overtemp Alarm
+Ref Alarm,ROA,Refrigerator Undertemp Alarm
+Ref Alarm,RCO,Refrigerator Cold Overtemp Alarm
+Ref Alarm,RWO,Refrigerator Warm Overtemp Alarm
+Ref Alarm,RCU,Refrigerator Cold Undertemp Alarm
+Ref Alarm,RWU,Refrigerator Warm Undertemp Alarm
+Ref Alarm,RAD,Refrigerator Alarm Delay
+Refrigerator_Defrost,DEM,Defrost method
+Refrigerator_Defrost,FOD,Fan on during defrost
+Refrigerator_Defrost,DTT,Defrost Terminate Temperature
+Refrigerator_Defrost,MIT,Minimum Defrost Time
+Refrigerator_Defrost,MAT,Maximum Defrost Time
+Refrigerator_Defrost,MII,Minimum Defrost Interval
+Ref Fan,FSA,Fan Start Delay
+Ref Fan,FSO,Fan Stop Delay
+Ref ETP R1 Remote Display,RLD,Remote Lock at Defrost
+Ref ETP R1 Remote Display,RSO,Refrigerator Remote Offset
+Ref ETP R1 Remote Display,RSD,Refrigerator Remote Deviation
+Ref ETP R1 Remote Display,RST,Refrigerator Remote sample time
+Ref ETP R1 Remote Display,RDL,Refrigerator Remote Display Locktime
+Service Information,,Control temp Freezer
+Service Information,,Condenser temperature
+Service Information,,User set
+Service Information,,Voltage
+Service Information,,RelayCount
+Service Information,,Cutin Cpr Refrigerator
+Service Information,,Cutout Cpr Refrigerator
+Service Information,,Alarm high temp Refrigerator
+Service Information,,Alarm low temp Refrigerator
+Service Information,,Compressor freezer
+Service Information,,Fan ref
+Service Information,,Compressor ref
+Service Information,,Status refrigerator
+Service Information,,Alarm
+Service Information,,Factory test
+Service Information, ,Control temp Refrigerator
+Thermostat, ,Panel Spindle Selection
+Freezer Compressor,,Zero Cross Switching
+Freezer Alarm,FUA,Freezer Undertemp Alarm
+Freezer Alarm,FOA,Freezer Overtemp Alarm
+Freezer Thermostat,FCC,Freezer Cold Cut-out
+Freezer Thermostat,FWC,Freezer Warm Cut-out
+Freezer Thermostat,FUS,Freezer User Setpoint
+Freezer Thermostat,FCD,Freezer Cold Differential
+Freezer Thermostat,FWD,Freezer Warm Differential
+Freezer Compressor,FMS,Freezer Min Stoptime
+Freezer Compressor,FMR,Freezer Min Runtime
+Freezer Compressor,FES,Freezer Error Stoptime
+Freezer Compressor,FER,Freezer Error Runtime
+Freezer Compressor,SFT,Super freeze time
+Freezer Compressor,FZC,Freezer Zero-Cross switching
+Freezer Alarm,FCO,Freezer Cold Overtemp Alarm
+Freezer Alarm,FWO,Freezer Warm Overtemp Alarm
+Freezer Alarm,FCU,Freezer Cold Undertemp Alarm
+Freezer Alarm,FWU,Freezer Warm Undertemp alarm
+Freezer Alarm,FAD,Freezer Alarm Delay
+Freezer ETP R1 Remote Display,RSO,Freezer Remote Offset
+Freezer ETP R1 Remote Display,RSD,Freezer Remote Deviation
+Freezer ETP R1 Remote Display,RST,Freezer Remote sample time
+Refrigerator and freezer Section,,Type of application
+Service Information,,Cutin Cpr Freezer
+Service Information,,Cutout Cpr Freezer
+Service Information,,Alarm high temp Freezer
+Service Information,,Alarm low temp Freezer
+Service Information,,Status freezer

@@ -1,0 +1,108 @@
+DB_Parameter_Name,KP_Parameter_Name,KP_Random_Value,KP_Current_Value,Result
+Fan Control Method,Fan Control Method,"FAo",FAo,True
+ECO Mode ON/OFF,ECO Mode ON/OFF,"Yes",Yes,True
+Voltage Protection function,Voltage Protection function,"Yes",No,False
+Operating mode,Operating mode,"Service Mode",Normal Mode,False
+Initial pull down ON/OFF,Initial pull down ON/OFF,"On",On,True
+Relay 1 Switch,Relay 1 Switch,"Off",On,True
+Relay 2 Switch,Relay 2 Switch,"Off",On,True
+Control sensor error handling type,Control sensor error handling type,"No",Aut,False
+Zero Cross Config,Zero Cross Config,"No",Yes,False
+Sensor Type,Sensor Type,"NTC5K",PTC,False
+S2 Config,S2 Config,"EUA",Pud,False
+Relay 2 Config,Relay 2 Config,"Scc",Scc,True
+Defrost type,Defrost type,"EL",No,False
+Defrost On accumulated Compressor Run Time,Defrost On accumulated Compressor Run Time,"No",No,True
+Fan ON during Defrost,Fan ON during Defrost,"No",Yes,False
+S3 Config,S3 Config,"dES",dES,True
+Relay 3 Config,Relay 3 Config,"nc",Scc,False
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),"dor",oFF,False
+Cabinet light control (ECO mode),Cabinet light control (ECO mode),"on",dor,False
+Holiday Mode ,Holiday Mode ,"No",No,True
+Automatic Heater Control Mode ,Automatic Heater Control Mode ,"Yes",No,False
+Fan Control Method,Fan Control Method,"FPL",FAo,False
+ECO Mode ON/OFF,ECO Mode ON/OFF,"No",Yes,False
+Voltage Protection function,Voltage Protection function,"No",No,True
+Operating mode,Operating mode,"Service Mode",Normal Mode,False
+Initial pull down ON/OFF,Initial pull down ON/OFF,"On",On,True
+Relay 1 Switch,Relay 1 Switch,"On",On,True
+Relay 2 Switch,Relay 2 Switch,"On",On,True
+Control sensor error handling type,Control sensor error handling type,"No",Aut,False
+Zero Cross Config,Zero Cross Config,"No",Yes,False
+Sensor Type,Sensor Type,"NTC5K",PTC,False
+S2 Config,S2 Config,"dES",Pud,False
+Relay 2 Config,Relay 2 Config,"ALA",Scc,False
+Defrost type,Defrost type,"No",No,True
+Defrost On accumulated Compressor Run Time,Defrost On accumulated Compressor Run Time,"No",No,True
+Fan ON during Defrost,Fan ON during Defrost,"Yes",Yes,True
+S3 Config,S3 Config,"dES",dES,True
+Relay 3 Config,Relay 3 Config,"dEF",Scc,False
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),"oFF",oFF,True
+Cabinet light control (ECO mode),Cabinet light control (ECO mode),"on",dor,False
+Holiday Mode ,Holiday Mode ,"No",No,True
+Automatic Heater Control Mode ,Automatic Heater Control Mode ,"Yes",No,False
+Lowest Temperature Differential,Lowest Temperature Differential,"30.52",30.52,True
+Highest Temperature Differential,Highest Temperature Differential,"4.31",4.31,True
+Fan Control Method,Fan Control Method,"FAo",FAo,True
+Fan ON Delay,Fan ON Delay,"215",215,True
+Fan Stop Delay,Fan Stop Delay,"151",151,True
+Fan On Cycle,Fan On Cycle,"146",146,True
+Fan Stop Cycle,Fan Stop Cycle,"747",747,True
+Fan Stop Time on Door Open,Fan Stop Time on Door Open,"18",18,True
+Fan Minimum Stop Time,Fan Minimum Stop Time,"408",408,True
+Fan Limit Temperature,Fan Limit Temperature,"40.33",40.33,True
+Min Run time,Min Run time,"1110",1110,True
+Min Stop time,Min Stop time,"1479",1479,True
+Compressor Door open delay,Compressor Door open delay,"8",8,True
+Power On Delay,Power On Delay,"237",237,True
+Low temp Alarm delay,Low temp Alarm delay,"39",39,True
+High temp Alarm delay,High temp Alarm delay,"32",32,True
+Alarm Door open delay,Alarm Door open delay,"12",12,True
+ECO Mode ON/OFF,ECO Mode ON/OFF,"Yes",Yes,True
+Voltage Protection function,Voltage Protection function,"No",No,True
+Operating mode,Operating mode,"Normal Mode",Normal Mode,True
+Alarm delay during Pull Down/ Power up /defrost,Alarm delay during Pull Down/ Power up /defrost,"251",251,True
+Initial pull down ON/OFF,Initial pull down ON/OFF,"On",On,True
+Relay 1 Switch,Relay 1 Switch,"On",On,True
+Relay 2 Switch,Relay 2 Switch,"Off",On,True
+IPD and Pull down Duration,IPD and Pull down Duration,"53",53,True
+Pull down and IPD Initiate Temp,Pull down and IPD Initiate Temp,"51.31",51.31,True
+Pull Down Limit Temp,Pull Down Limit Temp,"-86.63",-86.63,True
+Eco Offset,Eco Offset,"-9.3",-9.30,False
+Eco Door Delay,Eco Door Delay,"142",142,True
+Control sensor error handling type,Control sensor error handling type,"Aut",Aut,True
+Error Run Time,Error Run Time,"60",60,True
+Error Stop Time,Error Stop Time,"23",23,True
+Zero Cross Config,Zero Cross Config,"Yes",Yes,True
+Sensor Type,Sensor Type,"PTC",PTC,True
+S2 Config,S2 Config,"Pud",Pud,True
+Relay 2 Config,Relay 2 Config,"Scc",Scc,True
+OEM low ,OEM low ,"15481",15481,True
+Defrost type,Defrost type,"No",No,True
+Maximum defrost Time,Maximum defrost Time,"262",262,True
+Defrost Terminate Temp,Defrost Terminate Temp,"5.87",5.87,True
+Defrost On accumulated Compressor Run Time,Defrost On accumulated Compressor Run Time,"No",No,True
+Defrost Start by Evap Temp,Defrost Start by Evap Temp,"-61.85",-61.85,True
+Drip Off time,Drip Off time,"58",58,True
+Fan Delay After Defrost,Fan Delay After Defrost,"146",146,True
+Fan Start Temperature after defrost,Fan Start Temperature after defrost,"9.0",9.00,False
+Fan ON during Defrost,Fan ON during Defrost,"Yes",Yes,True
+Initial Defrost Interval,Initial Defrost Interval,"4191",4191,True
+Initial defrost duration,Initial defrost duration,"319",319,True
+S3 Config,S3 Config,"dES",dES,True
+Relay 3 Config,Relay 3 Config,"Scc",Scc,True
+Second Compressor start delay,Second Compressor start delay,"404",404,True
+Leakage Alarm Compressor Run Time,Leakage Alarm Compressor Run Time,"15",15,True
+Minimum defrost time,Minimum defrost time,"142",142,True
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),"oFF",oFF,True
+Cabinet light control (ECO mode),Cabinet light control (ECO mode),"dor",dor,True
+Light OFF delay,Light OFF delay,"194",194,True
+Holiday Mode ,Holiday Mode ,"No",No,True
+Holiday Length,Holiday Length,"91",91,True
+Holiday Temperature offset,Holiday Temperature offset,"19.01",19.01,True
+Automatic Heater Control Mode ,Automatic Heater Control Mode ,"No",No,True
+Heater low set point,Heater low set point,"-6.9",-6.90,False
+Heater high set point,Heater high set point,"-60.27",-60.27,True
+Heater low differential,Heater low differential,"17.05",17.05,True
+Heater High differential,Heater High differential,"11.93",11.93,True
+Energy mode delay,Energy mode delay,"87",87,True

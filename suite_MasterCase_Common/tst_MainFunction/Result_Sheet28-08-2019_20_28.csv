@@ -1,0 +1,81 @@
+ID,Object_Name,Keyword,Tooltip,Value,Result
+2,:KoolProg_Window,Enable,,true,True
+3,:KoolProg_Window,Type,,Window,True
+4,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+5,:KoolProg.KoolProg®_Label,Enable,,true,True
+6,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+7,:_MenuItem,Enable,,true,True
+8,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+9,:KoolProg.User_Label,Enable,,true,True
+10,:KoolProg.User_Label,Text,,User,True
+11,:_MenuItem,Tooltip,Help,,True
+12,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+13,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,true,True
+14,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+15,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+16,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+17,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+18,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+19,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+20,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+21,:KoolProg.On,line service_Label,Text,,On
+22,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+23,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True
+25,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Click_Button,,,True
+26,:KoolProg_Window,Enable,,true,True
+27,:KoolProg_Window,Type,,Window,True
+28,,Snooze,,,True
+29,,Snooze,,,True
+30,,Snooze,,,True
+31,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+32,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Tooltip,Home,,True
+33,:_MenuItem,Enable,,true,True
+34,:_MenuItem,Tooltip,Help,,True
+35,:KoolProg.User_Label,Enable,,true,True
+36,:KoolProg.User_Label,Text,,User,True
+37,:KoolProg.COPY TO CONTROLLER_Label,Enable,,true,True
+38,:KoolProg.COPY TO CONTROLLER_Label,Text,,COPY TO CONTROLLER,True
+39,:KoolProg.Select file:_Label,Enable,,true,True
+40,:KoolProg.Select file:_Label,Text,,Select Setting file:,True
+41,:_Edit,Enable,,true,True
+42,:KoolProg.BROWSE_Button,Enable,,false,True
+43,:KoolProg.BROWSE_Button,Text,,BROWSE,True
+44,:KoolProg.Please connect a controller!_Label,Enable,,true,True
+45,:KoolProg.Please connect a controller!_Label,Text,,Please connect a controller!,True
+46,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Enable,,true,True
+47,{container=':KoolProg_Window' name='btnConnectedDeviceInfo' text='i' type='Button'},Visible_F,,false,True
+48,:KoolProg.Single or multiple controller programming:_Label,Enable,,true,True
+49,:KoolProg.Single or multiple controller programming:_Label,Text,,Single or multiple controller programming:,True
+50,:KoolProg.Single controller programming_RadioButton,Enable,,false,True
+51,:KoolProg.Single controller programming_RadioButton,Text,,Single controller programming,True
+52,:KoolProg.Single controller programming_RadioButton,Selected,,true,False
+53,:KoolProg.Multiple controller programming_RadioButton,Enable,,false,True
+54,:KoolProg.Multiple controller programming_RadioButton,Text,,Multiple controller programming,True
+55,:KoolProg.Multiple controller programming_RadioButton,Selected,,false,False
+56,:KoolProg.START_Label,Enable,,false,True
+57,:KoolProg.START_Label,Text,,START,True
+58,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+59,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True
+61,{container=':KoolProg_Window' name='btnHome' text='System.Windows.Controls.Image' type='Button'},Click_Button,,,True
+62,:KoolProg_Window,Enable,,true,True
+63,:KoolProg_Window,Type,,Window,True
+64,{container=':KoolProg_Window' type='Image'},Enable,,true,True
+65,:KoolProg.KoolProg®_Label,Enable,,true,True
+66,:KoolProg.KoolProg®_Label,Text,,KoolProg®,True
+67,:_MenuItem,Enable,,true,True
+68,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Enable,,true,True
+69,:KoolProg.User_Label,Enable,,true,True
+70,:KoolProg.User_Label,Text,,User,True
+71,:_MenuItem,Tooltip,Help,,True
+72,{container=':KoolProg_Window' name='btnSettings' text='System.Windows.Controls.Image' type='Button'},Tooltip,Preferences,,True
+73,{container=':KoolProg_Window' name='imgSetParams' type='Image'},Enable,,true,True
+74,{container=':KoolProg_Window' name='imgCopycontroller' type='Image'},Enable,,true,True
+75,{container=':KoolProg_Window' name='imgServicetest' type='Image'},Enable,,true,True
+76,{container=':KoolProg_Window' name='btnSetparameters'  text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Create and work on configuration files offline,,True
+77,{container=':KoolProg_Window' name='btnCopytocontroller' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,Program controllers with saved configurations on your PC/Laptop,,True
+78,{container=':KoolProg_Window' name='btnServiceTest' text='System.Windows.Controls.DockPanel' type='Button'},Tooltip,"Trend, monitor and analyze controller behaviour",,True
+79,:KoolProg.Set parameters_Label,Text,,Set parameters,True
+80,:KoolProg.Copy to controller_Label,Text,,Copy to controller,True
+81,:KoolProg.On,line service_Label,Text,,On
+82,:KoolProg.www.danfoss.com_Label,Enable,,true,True
+83,:KoolProg.www.danfoss.com_Label,Text,,www.danfoss.com,True

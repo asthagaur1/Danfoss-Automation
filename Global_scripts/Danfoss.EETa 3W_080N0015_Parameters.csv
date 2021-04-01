@@ -1,0 +1,109 @@
+﻿Parameter Name,Enum
+Sensor Type,"0:NTC5K,1:NTC10K,2:PTC"
+S2 Configuration,"0:nC,1:Con,2:EuA,3:doC,4:doo,5:ESP,6:Est,7:Pud,8:dES
+"
+S3 Configuration,"0:nC,1:Con,2:EuA,3:doC,4:doo,5:ESP,6:Est,7:Pud,8:dES
+"
+Relay 2 Config,"0:nC,1:dEF,2:Fan,3:Lig,4:ALA,5:Scc
+"
+Relay 3 Config,"0:nC,1:dEF,2:Fan,3:Lig,4:ALA,5:Scc
+"
+Lowest Temperature Limit,
+Highest Temperature Limit,
+Lowest Temperature Differential,
+Highest Temperature Differential,
+Initial pull down ON/OFF,"0:OFF,1:ON"
+IPD and Pull down Duration,
+IPD and Pull down Initiate temperature,
+Pull Down Limit temperature,
+Min Run time,
+Min Stop time,
+Compressor stop delay on door open,
+System Resume after door open,
+Second Compressor start delay,
+Power On Delay,
+Low temp Alarm limit,
+High temp Alarm limit,
+Low temp Alarm delay,
+High temp Alarm delay,
+Alarm Door open delay,
+Alarm delay during Pull Down/ Power up /defrost,
+Leakage Alarm Compressor Run Time,
+Defrost type,"0: no,1:nAt,2:EL,3:Hgd"
+Minimum defrost Interval,
+Maximum defrost Interval,
+Minimum defrost time,
+Maximum defrost Time,
+Defrost Terminate Temp,
+Defrost on accumulated Compressor Run Time,
+Defrost Start by Evap Temp,
+Drip Off time,
+Fan Delay After Defrost,
+Fan Start Temperature after defrost,
+Fan ON during Defrost,"0:No,1:Yes"
+Initial Defrost Interval,
+Initial Defrost duration,
+Fan Control Method,"0:Fao,1:FFc,2:FPL"
+Fan ON Delay,
+Fan Stop Delay,
+Fan On Cycle,
+Fan Stop Cycle,
+Fan stop delay on door open,
+Fan Minimum Stop Time,
+Fan Limit Temperature,
+Cabinet Light Control (Normal mode),"0:ON,1:OFF,2:dor"
+Cabinet Light Control (ECO mode),"0:ON,1:OFF,2:dor"
+Light OFF delay,
+ECO Mode Enable,"0:No,1:Yes"
+ECO Offset,
+ECO Door Delay,
+Holiday Mode ,"0:No,1:Yes"
+Holiday Length,
+Holiday Temperature offset,
+Automatic Heater Control Mode,"0:No,1:Yes"
+Heater low set point,
+Heater high set point,
+Heater low differential,
+Heater high differential,
+Energy mode delay,
+Voltage Protection function,"0:No,1:Yes"
+Minimum Cut-in Voltage ,
+Minimum Cut out Voltage ,
+Maximum cut out Voltage ,
+Condenser Alarm Limit,
+Condenser Block Limit,
+Condenser OK Limit,
+Control sensor error handling type,"0:no,1:Set,2:Aut"
+Error Run Time,
+Error Stop Time,
+Zero Cross Config,"0:No,1:Yes"
+Operating mode,"0:Manual,1:Normal,2:Self test"
+Relay 1,"0:OFF,1:ON"
+Relay 2,"0:OFF,1:ON"
+Relay 3,"0:OFF,1:ON"
+Parameter Version ,
+Software Version,
+Hardware Version ,
+Code number,
+OEM code low ,
+OEM code High,
+Thermostat cut in temperature,
+Themostat cut out temperature,
+Cabinet Air temperature,
+Evaporator 1 temperature,
+Evaporator 2 temperature,
+Condenser temperature,
+Door Status on S2,"0:close,1:Open,2:Not Configured"
+Door Status on S3,"0:close,1:Open,2:Not Configured"
+Di Switch Status on S2,"0:Open,1:Close,2:Not Configured"
+Di Switch Status on S3,"0:Open,1:Close,2:Not Configured"
+Spindle position,
+Relay 1 Status,"0:OFF,1:ON"
+Relay 2 Status,"0:OFF,1:ON"
+Relay 3 Status,"0:OFF,1:ON"
+Thermostat status,"0:Initial state,1:Serving mode,2:Eco Mode,3:Initial pull down,4:Pull down,5:Emergency mode,6:Main Switch off,7:Holiday mode,8:Automatic Heater Control mode,9:Energy mode delay"
+Defrost status (stages),"0:Idle,1:Ice off,2:Drip off,3:Cooling Preperation"
+Defrost interval counter - Comp. run time,
+Defrost Interval counter - Elapsed time,
+Alarm status,
+Main Voltage ,

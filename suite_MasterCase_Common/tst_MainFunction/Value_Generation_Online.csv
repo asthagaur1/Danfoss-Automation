@@ -1,0 +1,76 @@
+DB_Parameter_Name,KP_Parameter_Name,KP_Random_Value
+Sensor Type,Sensor Type,NTC5K
+S2 Configuration,S2 Configuration,ESP
+S3 Configuration,S3 Configuration,doo
+Relay 2 Config,Relay 2 Config,ALA
+Initial pull down ON/OFF,Initial pull down ON/OFF,ON
+Defrost type,Defrost type,EL
+Fan ON during Defrost,Fan ON during Defrost,Yes
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),dor
+ECO Mode Enable,ECO Mode Enable,No
+Holiday Mode ,Holiday Mode ,Yes
+Voltage Protection function,Voltage Protection function,No
+Control sensor error handling type,Control sensor error handling type,Aut
+Zero Cross Config,Zero Cross Config,Yes
+Sensor Type,Sensor Type,NTC10K
+S2 Configuration,S2 Configuration,dES
+S3 Configuration,S3 Configuration,ESP
+Relay 2 Config,Relay 2 Config,Fan
+Initial pull down ON/OFF,Initial pull down ON/OFF,OFF
+Defrost type,Defrost type,Hgd
+Fan ON during Defrost,Fan ON during Defrost,Yes
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),OFF
+ECO Mode Enable,ECO Mode Enable,No
+Holiday Mode ,Holiday Mode ,Yes
+Voltage Protection function,Voltage Protection function,Yes
+Control sensor error handling type,Control sensor error handling type,Aut
+Zero Cross Config,Zero Cross Config,No
+Sensor Type,Sensor Type,NTC5K
+S2 Configuration,S2 Configuration,EuA
+S3 Configuration,S3 Configuration,ESP
+Relay 2 Config,Relay 2 Config,dEF
+Lowest Temperature Differential,Lowest Temperature Differential,17.67
+Highest Temperature Differential,Highest Temperature Differential,3.53
+Initial pull down ON/OFF,Initial pull down ON/OFF,OFF
+IPD and Pull down Duration,IPD and Pull down Duration,92
+Min Run time,Min Run time,1633
+Min Stop time,Min Stop time,1144
+System Resume after door open,System Resume after door open,14
+Second Compressor start delay,Second Compressor start delay,892
+Power On Delay,Power On Delay,235
+Low temp Alarm delay,Low temp Alarm delay,178
+High temp Alarm delay,High temp Alarm delay,117
+Alarm Door open delay,Alarm Door open delay,30
+Alarm delay during Pull Down/ Power up /defrost,Alarm delay during Pull Down/ Power up /defrost,890
+Defrost type,Defrost type,EL
+Minimum defrost time,Minimum defrost time,106
+Maximum defrost Time,Maximum defrost Time,417
+Defrost Terminate Temp,Defrost Terminate Temp,25.28
+Defrost Start by Evap Temp,Defrost Start by Evap Temp,-95.41
+Drip Off time,Drip Off time,14
+Fan Delay After Defrost,Fan Delay After Defrost,927
+Fan Start Temperature after defrost,Fan Start Temperature after defrost,18.27
+Fan ON during Defrost,Fan ON during Defrost,No
+Initial Defrost Interval,Initial Defrost Interval,4222
+Initial Defrost duration,Initial Defrost duration,763
+Fan ON Delay,Fan ON Delay,103
+Fan Stop Delay,Fan Stop Delay,166
+Fan On Cycle,Fan On Cycle,650
+Fan Stop Cycle,Fan Stop Cycle,940
+Fan Minimum Stop Time,Fan Minimum Stop Time,25
+Fan Limit Temperature,Fan Limit Temperature,38.58
+Cabinet Light Control (Normal mode),Cabinet Light Control (Normal mode),dor
+Light OFF delay,Light OFF delay,125
+ECO Mode Enable,ECO Mode Enable,No
+Holiday Mode ,Holiday Mode ,No
+Holiday Length,Holiday Length,138
+Holiday Temperature offset,Holiday Temperature offset,-4.2
+Heater low set point,Heater low set point,-21.0
+Heater high set point,Heater high set point,57.65
+Heater low differential,Heater low differential,25.4
+Energy mode delay,Energy mode delay,262
+Voltage Protection function,Voltage Protection function,Yes
+Control sensor error handling type,Control sensor error handling type,Aut
+Error Run Time,Error Run Time,2
+Error Stop Time,Error Stop Time,49
+Zero Cross Config,Zero Cross Config,No

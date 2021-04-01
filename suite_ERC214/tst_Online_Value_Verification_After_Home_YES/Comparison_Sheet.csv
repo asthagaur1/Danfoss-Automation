@@ -1,0 +1,79 @@
+Parameter_Name,Random_Value,,
+Voltage protection,Yes
+Sensor type,pt1
+Display Unit,°C
+Defrost Method,None
+DI1 configuration,doA
+Cooling/Heating,Cooling
+Display Resolution ,0.1
+"Save settings as factory
+",yes
+"Display during defrost
+ ",Air
+DI1 polarity,nc
+Keyboard lock,yes
+Defrost Method,Natural
+Defrost Stop Sensor,None
+Voltage protection,Yes
+Sensor type,n5
+Display Unit,°F
+Defrost Method,Hotgas
+DI1 configuration,rFd
+Cooling/Heating,Cooling
+Display Resolution ,1
+"Save settings as factory
+",No
+"Display during defrost
+ ",FrE
+DI1 polarity,no
+Keyboard lock,yes
+Defrost Method,None
+Defrost Stop Sensor,Sair temp Sensor
+Alarm delay - Normal conditions,Alarm delay - Normal conditions,11
+Alarm delay - pulldown/startup/def,Alarm delay - pulldown/startup/def,23
+High temp alarm,High temp alarm,142.29
+Low temp alarm,Low temp alarm,-96.71
+DI1 delay,DI1 delay,40
+Condenser High temp alarm,Condenser High temp alarm,178.4
+Condenser High block limit,Condenser High block limit,59.26
+Voltage protection,No
+Min cut-in voltage,Min cut-in voltage,129
+Min cut-out voltage,Min cut-out voltage,38
+Max voltage,Max voltage,21
+Compressor min ON time,Compressor min ON time,1
+Compressor min OFF time,Compressor min OFF time,20
+Comp OFF delay at open door,Comp OFF delay at open door,15
+Sensor type,ptc
+Temperature Setpoint,Temperature Setpoint,117.87
+Differential,Differential,2.88
+Min set point limit,Min set point limit,40.77
+Max set point limit,Max set point limit,-45.72
+Display offset,Display offset,-7.41
+Display Unit,°C
+Calibration of Sair,Calibration of Sair,-15.0
+Night Set back,Night Set back,15.01
+Offset reference displacement,Offset reference displacement,-5.09
+Pull down duration,Pull down duration,780
+Pull down temp limit,Pull down temp limit,-85.09
+Defrost Method,Electric
+Defrost stop temperature,Defrost stop temperature,27.96
+Defrost Interval,Defrost Interval,11
+Max defrost Time,Max defrost Time,123
+Defrost delay at power up,Defrost delay at power up,95
+Drip delay,Drip delay,55
+Comp accumulated runtime,Comp accumulated runtime,41
+Defrost delay after pulldown ,Defrost delay after pulldown ,278
+Delay of outputs at startup,Delay of outputs at startup,338
+DI1 configuration,doA
+Serial address,Serial address,169
+Password,Password,139
+Cooling/Heating,Heating
+Display Resolution ,1
+"Save settings as factory
+",No
+"Display during defrost
+ ",-d-
+DI1 polarity,nc
+Keyboard lock,No
+Defrost Method,None
+Defrost Stop Sensor,Sair temp Sensor

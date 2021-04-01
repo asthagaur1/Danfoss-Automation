@@ -1,0 +1,214 @@
+﻿GroupCode,MenuCode,GroupName
+tHE,iCi,Thermostat
+dEF,Add,Defrost
+dEF,dCt,Defrost
+CoP,uPt,Compressor
+diS,rLt,Display
+diS,SSC,Display
+diS,SHo,Display
+diS,SdF,Display
+ALA,uAL,Alarm
+ALA,ACA,Alarm
+ASi,uSA,Assignments
+SEr,ouS,Service
+dEF,dFt,Defrost
+CoP,EHd,Compressor
+diS,CFu,Display
+diS,trS,Display
+diS,rES,Display
+ASi,S1C,Assignments
+ASi,S2C,Assignments
+ASi,S1A,Assignments
+ASi,S2A,Assignments
+ASi,o1C,Assignments
+ASi,b1C,Assignments
+ASi,b1L,Assignments
+ASi,b2C,Assignments
+ASi,b2L,Assignments
+ASi,b3C,Assignments
+ASi,b3L,Assignments
+ASi,b4C,Assignments
+ASi,b4L,Assignments
+tHE,SEt,Thermostat
+tHE,SPr,Thermostat
+tHE,diF,Thermostat
+tHE,HSE,Thermostat
+tHE,LSE,Thermostat
+Pud,PLt,Pull Down
+dEF,dtt,Defrost
+dEF,dEt,Defrost
+dEF,ddt,Defrost
+dEF,drt,Defrost
+CoP,Pot,Compressor
+diS,doF,Display
+ALA,HAt,Alarm
+ALA,LAt,Alarm
+ECA,Hto,ECO management
+ASi,t1A,Assignments
+ASi,t2A,Assignments
+Pud,Pcy,Pull Down
+Pud,Pdi,Pull Down
+Pud,Pdd,Pull Down
+dEF,dii,Defrost
+dEF,dAt,Defrost
+dEF,dAi,Defrost
+dEF,dit,Defrost
+dEF,doC,Defrost
+dEF,idi,Defrost
+dEF,idd,Defrost
+CoP,uLi,Compressor
+CoP,uLo,Compressor
+CoP,uHi,Compressor
+CoP,Ert,Compressor
+CoP,ESt,Compressor
+CoP,CSt,Compressor
+CoP,Crt,Compressor
+CoP,Cot,Compressor
+CoP,Pod,Compressor
+Con,CAL,Condenser Protection
+Con,CbL,Condenser Protection
+Con,CoL,Condenser Protection
+Con,CLL,Condenser Protection
+diS,din,Display
+diS,ddL,Display
+diS,dLt,Display
+ALA,Htd,Alarm
+ALA,Ltd,Alarm
+ALA,Pdd,Alarm
+ALA,LEA,Alarm
+ALA,Abd,Alarm
+ECS,tto,ECO strategy
+ASi,PS1,Assignments
+ASi,PS2,Assignments
+ASi,PS3,Assignments
+SEr,ACt,Service
+SEr,AEt,Service
+SEr,uAC,Service
+SEr,rL1,Service
+SEr,int,Service
+SEr,dnt,Service
+SEr,Snu,Service
+SEr,Fir,Service
+SEr,HAr,Service
+SEr,onL,Service
+SEr,oEL,Service
+SEr,oEn,Service
+SEr,oEH,Service
+SEr,PAr,Service
+SEr,CHd,Service
+Sts,Ctt,Sts
+Sts,Et1,Sts
+Sts,Aus,Sts
+Sts,Att,Sts
+dis,Scs,Display
+dis,Sds,Display
+Cop,PF1,Compressor
+SEr,dbr,Service
+Acc.tHE,iCi,Access Thermostat
+Acc.dEF,Add,Access Defrost
+Acc.dEF,dCt,Access Defrost
+Acc.CoP,uPt,Access Compressor
+Acc.diS,rLt,Access Display
+Acc.diS,SSC,Access Display
+Acc.diS,SHo,Access Display
+Acc.diS,SdF,Access Display
+Acc.ALA,uAL,Access Alarm
+Acc.ALA,ACA,Access Alarm
+Acc.ASi,uSA,Access Assignments
+Acc.SEr,ouS,Access Service
+Acc.dEF,dFt,Access Defrost
+Acc.CoP,EHd,Access Compressor
+Acc.diS,CFu,Access Display
+Acc.diS,trS,Access Display
+Acc.diS,rES,Access Display
+Acc.ASi,S1C,Access Assignments
+Acc.ASi,S2C,Access Assignments
+Acc.ASi,S1A,Access Assignments
+Acc.ASi,S2A,Access Assignments
+Acc.ASi,o1C,Access Assignments
+Acc.ASi,b1C,Access Assignments
+Acc.ASi,b1L,Access Assignments
+Acc.ASi,b2C,Access Assignments
+Acc.ASi,b2L,Access Assignments
+Acc.ASi,b3C,Access Assignments
+Acc.ASi,b3L,Access Assignments
+Acc.ASi,b4C,Access Assignments
+Acc.ASi,b4L,Access Assignments
+Acc.tHE,SEt,Access Thermostat
+Acc.tHE,SPr,Access Thermostat
+Acc.tHE,diF,Access Thermostat
+Acc.tHE,HSE,Access Thermostat
+Acc.tHE,LSE,Access Thermostat
+Acc.Pud,PLt,Access Pull Down
+Acc.dEF,dtt,Access Defrost
+Acc.dEF,dEt,Access Defrost
+Acc.dEF,ddt,Access Defrost
+Acc.dEF,drt,Access Defrost
+Acc.CoP,Pot,Access Compressor
+Acc.diS,doF,Access Display
+Acc.ALA,HAt,Access Alarm
+Acc.ALA,LAt,Access Alarm
+Acc.ECA,Hto,Access ECO management
+Acc.ASi,t1A,Access Assignments
+Acc.ASi,t2A,Access Assignments
+Acc.Pud,Pcy,Access Pull Down
+Acc.Pud,Pdi,Access Pull Down
+Acc.Pud,Pdd,Access Pull Down
+Acc.dEF,dii,Access Defrost
+Acc.dEF,dAt,Access Defrost
+Acc.dEF,dAi,Access Defrost
+Acc.dEF,dit,Access Defrost
+Acc.dEF,doC,Access Defrost
+Acc.dEF,idi,Access Defrost
+Acc.dEF,idd,Access Defrost
+Acc.CoP,uLi,Access Compressor
+Acc.CoP,uLo,Access Compressor
+Acc.CoP,uHi,Access Compressor
+Acc.CoP,Ert,Access Compressor
+Acc.CoP,ESt,Access Compressor
+Acc.CoP,CSt,Access Compressor
+Acc.CoP,Crt,Access Compressor
+Acc.CoP,Cot,Access Compressor
+Acc.CoP,Pod,Access Compressor
+Acc.Con,CAL,Access Condenser Protection
+Acc.Con,CbL,Access Condenser Protection
+Acc.Con,CoL,Access Condenser Protection
+Acc.Con,CLL,Access Condenser Protection
+Acc.diS,din,Access Display
+Acc.diS,ddL,Access Display
+Acc.diS,dLt,Access Display
+Acc.ALA,Htd,Access Alarm
+Acc.ALA,Ltd,Access Alarm
+Acc.ALA,Pdd,Access Alarm
+Acc.ALA,LEA,Access Alarm
+Acc.ALA,Abd,Access Alarm
+Acc.ECS,tto,Access ECO strategy
+Acc.ASi,PS1,Access Assignments
+Acc.ASi,PS2,Access Assignments
+Acc.ASi,PS3,Access Assignments
+Acc.SEr,ACt,Access Service
+Acc.SEr,AEt,Access Service
+Acc.SEr,uAC,Access Service
+Acc.SEr,rL1,Access Service
+Acc.SEr,int,Access Service
+Acc.SEr,dnt,Access Service
+Acc.SEr,Snu,Access Service
+Acc.SEr,Fir,Access Service
+Acc.SEr,HAr,Access Service
+Acc.SEr,onL,Access Service
+Acc.SEr,oEL,Access Service
+Acc.SEr,oEn,Access Service
+Acc.SEr,oEH,Access Service
+Acc.SEr,PAr,Access Service
+Acc.SEr,CHd,Access Service
+Acc.Sts,Ctt,Access Sts
+Acc.Sts,Et1,Access Sts
+Acc.Sts,Aus,Access Sts
+Acc.Sts,Att,Access Sts
+Acc.dis,Scs,Access Display
+Acc.dis,Sds,Access Display
+Acc.Cop,PF1,Access Compressor
+Acc.SEr,dbr,Access Service
+SEr,ous,Service
+dis,idP,Display
+Acc.dis,idP,Access Display

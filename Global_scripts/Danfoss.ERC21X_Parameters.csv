@@ -1,0 +1,107 @@
+﻿Name,Enum
+Alarm delay - Normal conditions,
+Alarm delay - pulldown/startup/def,
+High temp alarm,
+Low temp alarm,
+DI1 delay,
+DI2 delay,
+Condenser High temp alarm,
+Condenser High block limit,
+Voltage protection,"0:No,1:Yes"
+Min cut-in voltage,
+Min cut-out voltage,
+Max voltage,
+Compressor min ON time,
+Compressor min OFF time,
+Comp OFF delay at open door,
+Zero crossing,"0:No,1:yes"
+Main switch ,"0:Service,1:Off,2:On"
+Predefined applications,"0:App0,1:App1,2:App2,3:App3,4:App4,5:App5,6:App6"
+Sensor type,"0:n5,1:n10,2:pt1,3:ptc"
+DO4 config,"0:ALA,1:Lig"
+Temperature Setpoint,
+Differential,
+Min set point limit,
+Max set point limit,
+Display offset,
+Display Unit,"0:°C,1:°F"
+Calibration of Sair,
+Night Set back,
+Offset reference displacement,
+Pull down duration,
+Pull down temp limit,
+Defrost Method,"0:None,1:Natural,2:Electric,3:Hotgas"
+Defrost stop temperature,
+Defrost Interval,
+Max defrost Time,
+Defrost delay at power up,
+Drip delay,
+Fan delay after defrost,
+Fan start temp after defrost,
+Fan ON during defrost,"0:Off,1:On"
+Defrost stop sensor,"0:None,1:Sair temp Sensor,2:S5 Defrost sensor"
+Comp accumulated runtime,
+Defrost on demand,
+Defrost delay after pulldown ,
+Fan at compressor cutout,"0:FFC,1:FAo,2:FPL"
+Fan stop evaporator temp,
+Fan ON time,
+Fan OFF time,
+Delay of outputs at startup,
+DI1 configuration,"0:Off,1:Sdc,2:doo,3:doA,4:SCH,5:nig,6:rFd,7:EAL,8:dEF,9:Pud,10:Sc"
+Serial address,
+Password,
+Cooling/Heating,"0:Cooling,1:Heating"
+Display Resolution ,"0:0.1,1:0.5,2:1"
+Relay 1 counter,
+Relay 2 counter,
+Relay 3 counter,
+Relay 4 counter,
+DI2 configuration,"0:Off,1:Sdc,2:doo,3:doA,4:SCH,5:nig,6:rFd,7:EAL,8:dEF,9:Pud,10:Sc"
+Light Control ,"0:ON,1:dAn,2:doo"
+"Save settings as factory
+","0:No,1:yes"
+"Display during defrost
+ ","0:Air,1:FrE,2:-d-"
+DI1 polarity,"0:nc,1:no"
+DI2 polarity,"0:nc,1:no"
+Invert alarm relay,"0:Normal,1:Invert relay action"
+Keyboard lock,"0:No,1:yes"
+"Controller status
+","0:S25,1:S32,2:S10,3:S30,4:S14,5:S4,6:S17,7:S15,8:S2,9:S3,10:S20,11:s0,12:S20"
+Air temperature (Sair),
+Present regulation reference,
+Evaporator temperature (S5),
+DI1 status,"0:Off,1:On"
+Night mode,"0:Off,1:On"
+DI2 status,"0:Off,1:On"
+Condenser temperature (Sc),
+Compressor relay status,"0:Off,1:On"
+Fan relay status,"0:Off,1:On"
+Defrost relay status,"0:Off,1:On"
+Light relay status,"0:Off,1:On"
+Firmware version,
+Database version,
+Order No Low,
+Defrost Method,"0:None,1:Natural"
+Defrost Stop Sensor,"0:None,1:Sair temp Sensor"
+Predefined applications,"0:App0,1:App1,2:App2,3:App3,4:App4,5:App5"
+DO2 Config,"0:def,1:ALA"
+Air temperature sensor(Sair) error,
+Defrost sensor (S5) error,
+Condensor sensor(Sc) error, 
+High temperature alarm,
+Low temperature alarm,
+High voltage alarm,
+Low voltage alarm,
+High condenser temperature alarm,
+Door alarm, 
+DI external alarm, 
+High temperature alarm,
+Low temperature alarm,
+High voltage alarm,
+Low voltage alarm,
+High condenser temperature alarm,
+Door alarm, 
+DI external alarm, 
+Sensor 2 Error,

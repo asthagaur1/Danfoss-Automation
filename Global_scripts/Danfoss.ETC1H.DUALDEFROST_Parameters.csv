@@ -1,0 +1,88 @@
+﻿Name,Enum
+ID low part,
+ID high part,
+Serial Number,
+Type Number 091X,
+TypeNumber 077F,
+TypeNumber,
+Software version,
+Hardware version,
+Parameter version,
+Application ID,"1:STANDARD,2:WINECOOLER,3:DOUBLEDOOR,4:COND101,5:GDM101,6:DUALBAND102,7:DUALDEFROST,13:DFNOFROST100,14:VFGDM100,15:MEDICINECOOLER,16:CondMKS100,17:KIR_NOFROST100"
+Cold Cut-out,
+Warm Cut-out,
+Default Temp Set,
+Cold Differential,
+Warm Differential,
+Fan stops on compressor cutout,"1:Enable,0:Disable"
+Min Runtime,
+Min Stoptime,
+Max Runtime function,"1:Enable,0:Disable"
+Max Stoptime Function,"1:Enable,0:Disable"
+Max Runtime,
+Max Stoptime,
+Error RunTime,
+Error StopTime,
+Alarm low function,"1:Enable,0:Disable"
+Alarm high function,"1:Enable,0:Disable"
+Alarm on Heater relay,"1:Enable,0:Disable"
+Alarm on Fan relay ,"1:Enable,0:Disable"
+Alarm on Relay Inverted,"1:Enable,0:Disable"
+Cold Overtemp Alarm,
+Warm Overtemp Alarm,
+Cold Undertemp Alarm,
+Warm Undertemp Alarm,
+Alarm Delay,
+Defrost Method (name),"0:No defrost,1:Start;Time Stop;Control temp,2:Start;Time Stop;Defrost temp,3:Start & Stop;Defrost temp"
+Fan on during defrost,"1:Enable,0:Disable"
+Hot-Gas Defrost,"1:Enable,0:Disable"
+Defrost Terminate Temperature,
+Defrost Reset Temperature,
+Defrost Start Temperature,
+Drip-off Time,
+Minimum Defrost Time,
+Maximum Defrost Time,
+Minimum Defrost Interval,
+Maximum Defrost Interval,
+Fan delay After Defrost,
+Fan Start Delay,
+Fan Stop Delay,
+Condenser Warning Temperature,
+Condenser Stop Temperature,
+Voltage Protect function,"1:Enable,0:Disable"
+Minimum Cut-inVoltage,
+Voltage Threshold,
+Maximum Cut-in Voltage,
+Stop function,"1:Enable,0:Disable"
+Zero-Cross switching Function,"1:Enable,0:Disable"
+Sensor Type (name),"0:Shibuara,1:Epcos"
+Zero-Cross Switching,
+Remote display fahrenheit,"1:Enable,0:Disable"
+Remote display 1 decimal,"1:Enable,0:Disable"
+Remote Lock at Defrost,"1:Enable,0:Disable"
+Remote Indicate Defrost,"1:Enable,0:Disable"
+Remote  Lock to Setpoint,"1:Enable,0:Disable"
+Remote Stop Function,"1:Enable,0:Disable"
+"Remote Sensor Offset
+",
+Remote Sensor Deviation,
+Remote Sample Time,
+Remote Display Locktime,
+Defrost temperature,
+Condenser temperature,
+User set,
+Voltage,
+RelayCount,
+Cutin Cpr,
+Cutout Cpr,
+Alarm high temp,
+Alarm low temp,
+Compressor,"1:On,0:Off"
+Fan,"1:On,0:Off"
+Heater,"1:On,0:Off"
+Status,"0:CTR_Run,1:CTR_Standby,2:CTR_Defrost,3:CTR_Error,4:CTR_Start,5:CTR_Test,6:CTR_Off,7:Def End,8:Fac test"
+Alarm,"0:None,1:Control,2:Defrost,3:Condensor,4:Compressor,5:Heater,6:POT,7:Voltage_low,8:Voltage_high,9:Condensor_hot,10:Condensor_Warm,11:Over_Temp_Alarm,12:Under_Temp_Alarm"
+Factory test,
+Control temperature, 
+Panel Spindle Selection,"0:Panel,1:Panel+Spindle with Stop Function,2:Panel + Spindle without stop function"
+Condensor Watch,"1:Enable,0:Disable"

@@ -1,0 +1,90 @@
+Name,Enum
+Lowest Temperature limit,
+Highest temperature limit,
+Lowest Temperature Differential,
+Highest Temperature Differential,
+Fan control method,"0: Always On(FAo),1:Fan follow Compressor(FFc) ,2:Fan Control(FPL)
+"
+Fan ON Delay,
+Fan Stop Delay,
+Fan On Cycle,
+Fan Stop Cycle,
+Fan Minimum Stop Time,
+Fan Stop Time on Door Open,
+Fan Limit Temperature,
+Defrost type,"0:no,1:Natural Defrost(nAt),2:Electric Defrost(EL),3:Hot Gas Defrost(Hgd)
+"
+Defrost Terminate Temp,
+Defrost Minimum Interval,
+Defrost Maximum Interval,
+Defrost Maximum Time,
+Defrost Start by Evap Temp,
+Defrost On Compressor Run Time,"0:No,1:Yes"
+Drip Off time,
+Fan Delay After Defrost,
+Fan Start Temperature,
+Fan ON during Defrost,"0:No,1:Yes"
+Min Runtime,
+Min Stoptime,
+Compressor Door open Delay,
+System Resume time,
+Power On Delay,
+Low Temp Alarm,
+High Temp Alarm,
+Low temp Alarm delay,
+High temp Alarm delay,
+Alarm delay during  Pull Down/ Power up Delay,
+Eco Offset,
+IPD/Pull down Duration,
+Pulldown/IPD Initiate Temp,
+Pull Down Limit Temp,
+Eco Door Delay,
+Eco Mode,
+Minimum Cut-in Voltage,
+Minimum Cut out Voltage,
+Maximum Voltage,
+Voltage Protection function,
+Condenser Alarm Limit,
+Condenser Block Limit,
+Condenser OK Limit,
+Zero Cross Config,"0:No,1:Yes"
+S2Config,"NC:Not Used,Con:Condenser, Def:defrost Sensor,Doc:Door closed Sensor,Doo:Door open Sensor,ES:Eco Switch, Pull down"
+Sensor Type,"0:NTC5K,1:NTC10K"
+Relay 2 Config,"0:Not used, 1:Defrost,1:Fan"
+Enter Test mode,"0:Normal Mode,1:Test mode , -1: Service Mode"
+Test mode setpoint,
+Test mode differential ,
+Order No Low,
+Order No high,
+OEM low ,
+OEM High,
+Cabinet Air Temp,
+Evap Temp,
+Condenser Temp,
+Door Status,"0:On,1:Off"
+Di Switch Status,"0:Act,1:Deact"
+Compressor Status,"0:Off,1:On,2:NA"
+Defrost Relay Status,"0:On,1:Off,2:NA"
+Fan Relay Status,"0:On,1:Off,2:NA"
+Software Version,
+Application ID,
+Parameter Version,
+Thermostat cut in,
+Themosatat cut out,
+Default Setpoint,
+Relay Status in Service Mode,
+Initial Defrost Interval,
+Initial defrost duration,
+Alarm Door,
+IPD On/Off,
+Condenser OK Limit,"0:No,1:Set, 2:Aut"
+Condenser OK Limit,
+Condenser OK Limit,
+Hardware Version,
+Alarm status,
+Spindle position,
+Thermostat status,"1:Initial State,2:Serving; 3: Economic Mode, 4: Initial pull down, 5:Pull down, 6:Emergency Mode,7:Main switch Off "
+Defrost status,"1:Idle,2:Ice off; 3: Drip off, 4: Cooling preperation"
+Main Voltage ,
+THERMOSTAT PREVIOUS STATE ,
+USER SETPOINT,
